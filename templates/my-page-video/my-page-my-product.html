@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/static/css/my-page/my-page.css" />
+        <link
+            rel="stylesheet"
+            href="/static/css/my-page-video/my-page-my-product.css"
+        />
         <title>Document</title>
     </head>
     <body>
@@ -24,7 +27,7 @@
                                 class="body-2 sidebar-menu-name"
                                 data-page="scrapbook"
                                 name="btn-link"
-                                style="margin-left: 8px; font-weight: 550"
+                                style="margin-left: 8px; font-weight: 400"
                             >
                                 내 활동내역
                             </div>
@@ -43,10 +46,19 @@
                                 data-page="scrapbook-detail"
                                 data-scrapbook-id="56122"
                                 name="btn-link"
+                                style="
+                                    background-color: #f6f3f8;
+                                    border-radius: 8px;
+                                    transition: background-color 0.3s ease,
+                                        border-radius 0.3s ease;
+                                "
                             >
                                 <div class="icon-scrap-off"></div>
 
-                                <div class="body-2 sidebar-menu-name">
+                                <div
+                                    class="body-2 sidebar-menu-name"
+                                    style="color: #6b16ee; font-weight: 550"
+                                >
                                     내 작품
                                 </div>
                                 <div
@@ -245,168 +257,167 @@
                     </div>
                 </div>
                 <div class="main-content-container">
-                    <div class="content-container main-content">
-                        <div class="content">
-                            <div class="sub-title-box">
-                                <div
-                                    class="subtitle-2-medium text900"
-                                    style="font-weight: 600"
-                                >
-                                    나의 활동내역
-                                </div>
+                    <div class="main-content read-news-list">
+                        <div class="content-title-with-btn">
+                            <div class="subtitle-1 text900 content-title">
+                                내 작품 목록
                             </div>
-                            <div class="last-open-scrapbooks">
-                                <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="내 작품"
-                                    name="btn-link"
-                                >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
-                                    />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            내 작품
+                        </div>
+                        <div class="content">
+                            <div class="list-item">
+                                <div class="news-list">
+                                    <div class="flex-box">
+                                        <div class="news-text">
+                                            <a href="/magazine/detail/2789"
+                                                ><p class="scrap-news-title">
+                                                    글의 제목이 들어 갈 자리
+                                                </p></a
+                                            >
+                                            <div class="scrap-news-info">
+                                                <a href="/magazine/list/design/"
+                                                    ><p
+                                                        class="btn body-3-medium text600 scrap-news-category"
+                                                    >
+                                                        예능
+                                                    </p></a
+                                                >
+                                                <div class="divider"></div>
+                                                <div class="flex-box">
+                                                    <img
+                                                        class="mr-4"
+                                                        src="/static/renewal/img/news/icon-clock.png"
+                                                        srcset="
+                                                            /static/renewal/img/news/icon-clock.png    1x,
+                                                            /static/renewal/img/news/icon-clock@2x.png 2x,
+                                                            /static/renewal/img/news/icon-clock@3x.png 3x
+                                                        "
+                                                    />
+                                                    <div class="body-3 text600">
+                                                        몇 시간 전인지
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="/magazine/detail/2789"
+                                                ><p
+                                                    class="body-3 text500 news-description"
+                                                >
+                                                    글의 내용
+                                                </p></a
+                                            >
                                         </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="내가 구매한 작품"
-                                    name="btn-link"
-                                >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
-                                    />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            내가 구매한 작품
-                                        </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="나의 펀딩"
-                                    name="btn-link"
-                                >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
-                                    />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            나의 펀딩
-                                        </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
+                                        <div class="btn news-image">
+                                            <a href="/magazine/detail/2789"
+                                                ><img
+                                                    src="/media/news/2789/shapeofai.png"
+                                            /></a>
                                         </div>
                                     </div>
-                                </div>
-                                <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="결제한 펀딩"
-                                    name="btn-link"
-                                >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
-                                    />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            결제한 펀딩
+                                    <div class="flex-box news-author-box">
+                                        <div class="author-info flex-box">
+                                            <img
+                                                class="author-image"
+                                                src="https://cdn.wishket.com/news_profiles/80513_20230718_2bcfacbf16d5d1a2.jpg"
+                                            />
+                                            <p class="author-name">
+                                                지금 써보러 갑니다
+                                            </p>
                                         </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="나의 모집"
-                                    name="btn-link"
-                                >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
-                                    />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            나의 모집
-                                        </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="내가 신청한 모집"
-                                    name="btn-link"
-                                >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
-                                    />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            내가 신청한 모집
-                                        </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="내가 단 리뷰"
-                                    name="btn-link"
-                                >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
-                                    />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            내가 단 리뷰
-                                        </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
+                                        <div class="flex-box">
+                                            <div class="btn-wrapper">
+                                                <button
+                                                    class="btn btn-action btn-icon-edit-scrap"
+                                                    data-news-id="2789"
+                                                    data-scrap-related=""
+                                                    data-toggle="detail_scrap_box"
+                                                    name="toggle_btn"
+                                                    type="button"
+                                                >
+                                                    <p
+                                                        class="action-tooltip bottom-action caption-2 edit-scrap-off"
+                                                    >
+                                                        스크랩
+                                                    </p>
+                                                    <p
+                                                        class="action-tooltip bottom-action caption-2 edit-scrap-on"
+                                                        style="display: none"
+                                                    >
+                                                        스크랩됨
+                                                    </p>
+                                                    <div class="edit-scrap-off">
+                                                        <div
+                                                            class="icon-scrap-edit-off"
+                                                        ></div>
+                                                    </div>
+                                                    <div
+                                                        class="edit-scrap-on"
+                                                        style="display: none"
+                                                    >
+                                                        <div
+                                                            class="icon-scrap-edit-on"
+                                                        ></div>
+                                                    </div>
+                                                </button>
+                                                <div
+                                                    class="scrap-scrapbook-list animated fast sizeUpTopToDownPC"
+                                                    style="display: none"
+                                                >
+                                                    <div
+                                                        class="list-header only-mobile"
+                                                    >
+                                                        <div
+                                                            class="header-title"
+                                                        >
+                                                            저장<img
+                                                                onclick="closeScrapbookList()"
+                                                                src="/static/renewal/img/news/icon_m_gnb_close.png"
+                                                                srcset="
+                                                                    /static/renewal/img/news/icon_m_gnb_close.png    1x,
+                                                                    /static/renewal/img/news/icon_m_gnb_close@2x.png 2x,
+                                                                    /static/renewal/img/news/icon_m_gnb_close@3x.png 3x
+                                                                "
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-body">
+                                                        <div
+                                                            class="user-scrapbook-list scrapbook-list2789"
+                                                        ></div>
+                                                    </div>
+                                                    <div
+                                                        class="list-footer only-mobile"
+                                                    >
+                                                        <button
+                                                            class="body-1 btn btn-common full-width btn-8-20 btn-gray"
+                                                            onclick="closeScrapbookList()"
+                                                            type="button"
+                                                        >
+                                                            닫기</button
+                                                        ><button
+                                                            class="body-1 btn btn-common full-width btn-8-20 btn-violet"
+                                                            onclick="closeScrapbookList()"
+                                                            type="button"
+                                                        >
+                                                            완료
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrapper">
+                                                <button
+                                                    class="btn btn-action icon-delete-read-news"
+                                                    data-read-news-id="303592"
+                                                    type="button"
+                                                >
+                                                    <div
+                                                        class="icon-scrap-delete"
+                                                    ></div>
+                                                    <p
+                                                        class="action-tooltip bottom-action caption-2"
+                                                    >
+                                                        삭제
+                                                    </p>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -418,5 +429,5 @@
         </div>
     </body>
 
-    <script src="/static/js/my-page/my-page.js"></script>
+    <script src="/static/js/my-page-video/my-page-my-product.js"></script>
 </html>
