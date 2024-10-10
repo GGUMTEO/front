@@ -98,6 +98,7 @@ a {
     align-items: flex-start;
 }
 
+
 .text900 {
     color: #212121;
 }
@@ -158,7 +159,7 @@ a {
 
 .btn-kakao {
     color: black;
-    background-color: #f7e632;
+    background-color: #ffeb10;
 }
 
 .btn-common-3 {
@@ -173,6 +174,7 @@ a {
 .btn {
     cursor: pointer;
 }
+
 
 
 
