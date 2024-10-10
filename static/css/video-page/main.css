@@ -230,10 +230,6 @@ a {
     margin: 24px 0 6px 0;
 }
 
-.text500 {
-    color: #757575;
-}
-
 .card-item-link {
     display: block;
 }
@@ -275,4 +271,123 @@ a {
 
 .featured-sub-list > :last-child {
     border-bottom: none;
+}
+.main-page {
+    margin-bottom: 80px;
+}
+.slackbot-guide-section {
+    width: 100%;
+    background-color: #fafafa;
+    padding: 12px 0;
+}
+.slackbot-guide-section {
+    color: #212121;
+}
+.slackbot-guide-main-contents {
+    display: flex;
+}
+.funding-guide-img {
+    width: 124px;
+    height: 93px;
+}
+.funding-guide {
+    margin-left: 16px;
+    word-break: keep-all;
+    width: 628px;
+    margin-top: 19px;
+    font-size: 18px;
+    line-height: 1.56;
+}
+.funding-guide p {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.56;
+}
+.funding-guide span {
+    font-weight: bold;
+}
+.funding-button-box {
+    width: 30%;
+    margin-top: 23px;
+    text-align: right;
+}
+.funding-button-box button {
+    width: 200px;
+    cursor: pointer;
+    padding: 11px 24px;
+    border-radius: 8px;
+    background-color: #6b16ee;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    height: 48px;
+}
+button {
+    background: none;
+}
+.main-list .main-list-title {
+    justify-content: space-between;
+}
+.main-list-title {
+    margin-bottom: 0;
+}
+.main-list-title div {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+}
+.main-list-row {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.list-item-link {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.list-item-link {
+    width: 320px;
+}
+.list-item {
+    width: 100%;
+}
+.list-item-thumbnail {
+    margin-bottom: 24px;
+}
+.thumbnail-image {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid #e0e0e0;
+}
+.item-main {
+    display: block;
+}
+.item-title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.content-meta-sep {
+    width: 1px;
+    color: #e0e0e0;
+}
+.mr-2 {
+    margin-right: 2px !important;
+}
+.text700 {
+    color: #424242;
+}
+.list-item-description {
+    margin: 12px 0px 16px 0px;
+    word-break: break-all;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.main-list .main-list-row .list-item-link + .list-item-link {
+    margin-left: 56px;
 }
