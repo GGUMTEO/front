@@ -98,14 +98,6 @@ a {
     align-items: flex-start;
 }
 
-/*  */
-
-.sub-navigation:focus {
-    color: blue;
-}
-
-/*  */
-
 .text900 {
     color: #212121;
 }
@@ -180,6 +172,44 @@ a {
 
 .btn {
     cursor: pointer;
+}
+
+/* 로그인 시 */
+
+.header-gnb .header-gnb-wrapper .profile-image {
+    padding: 16px 0 0 12px;
+    height: 64px;
+    cursor: pointer;
+}
+
+.header-gnb .header-gnb-wrapper .icon-box img.authenticated-user-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: solid 1px #e0e0e0;
+}
+
+.header-gnb .header-gnb-wrapper .profile-image .authenticated-user-image {
+    padding: 2px;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.btn-logout {
+    color: #2a2a2a;
+}
+
+.alarm-container {
+    width: 30px;
+    margin-left: 15px;
+    padding: 1px 0;
+    cursor: pointer;
+}
+
+.alarm {
+    width: 22px;
 }
 
 
