@@ -98,16 +98,13 @@ a {
     align-items: flex-start;
 }
 
-/*  */
-
-.sub-navigation:focus {
-    color: blue;
-}
-
-/*  */
 
 .text900 {
     color: #212121;
+}
+
+.text900:hover {
+    color: #002fff;
 }
 
 .body-2-medium {
@@ -121,9 +118,13 @@ a {
 }
 
 .search-box {
-    padding: 8px;
-    border-radius: 8px;
+    padding: 7px;
     margin-right: 4px;
+    border-radius: 8px;
+}
+
+.search-box:hover {
+    background-color: #fafafa;
 }
 
 .btn {
@@ -166,7 +167,7 @@ a {
 
 .btn-kakao {
     color: black;
-    background-color: #f7e632;
+    background-color: #ffeb10;
 }
 
 .btn-common-3 {
@@ -181,6 +182,7 @@ a {
 .btn {
     cursor: pointer;
 }
+
 
 
 
