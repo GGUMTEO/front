@@ -103,6 +103,10 @@ a {
     color: #212121;
 }
 
+.text900:hover {
+    color: #002fff;
+}
+
 .body-2-medium {
     font-weight: 500;
 }
@@ -114,9 +118,13 @@ a {
 }
 
 .search-box {
-    padding: 8px;
-    border-radius: 8px;
+    padding: 7px;
     margin-right: 4px;
+    border-radius: 8px;
+}
+
+.search-box:hover {
+    background-color: #fafafa;
 }
 
 .btn {
