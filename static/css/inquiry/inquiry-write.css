@@ -293,9 +293,18 @@
     border-color: #00a878;
 }
 
-body.partners_profile .textarea__border.error {
+.textarea__border.error {
     border: solid 1px #e52929;
 }
+
+.ui-textarea-partner>.textarea__border.error.active{
+    border-color: #e52929;
+}
+
+.ui-textarea-partner>.textarea__border.error.active{
+    border-color: #e52929;
+}
+
 
 .ui-textarea-partner>.textarea__border>textarea.expand {
     resize: vertical;
