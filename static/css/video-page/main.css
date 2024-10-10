@@ -53,7 +53,7 @@ body {
 .main-header .container {
     display: flex;
     padding-left: 2px;
-    gap: 32px;
+    gap: 50px;
 }
 
 .container {
@@ -70,13 +70,14 @@ a {
     padding: 12px 0;
     height: 100%;
     display: inline-block;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.71;
     letter-spacing: normal;
     color: #424242;
+    font-weight: 600;
 }
 .main-key-visual {
     background: url("https://yozm.wishket.com/static/renewal/img/news/img_main_gradation.png");
@@ -212,6 +213,9 @@ a {
     letter-spacing: normal;
     color: #9e9e9e;
 }
+.author-name a {
+    cursor: default;
+}
 .text400 {
     color: #9e9e9e;
 }
@@ -291,7 +295,7 @@ a {
     height: 93px;
 }
 .funding-guide {
-    margin-left: 16px;
+    margin-left: 20px;
     word-break: keep-all;
     width: 628px;
     margin-top: 19px;
@@ -390,4 +394,37 @@ button {
 }
 .main-list .main-list-row .list-item-link + .list-item-link {
     margin-left: 56px;
+}
+.sub-navigation {
+    position: relative;
+    text-decoration: none;
+}
+
+.sub-navigation div {
+    position: relative;
+    display: inline-block;
+}
+
+.sub-navigation div::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    transition: width 0.3s ease;
+}
+
+.sub-navigation div:hover::after {
+    width: 100%;
+}
+
+.link-underline:hover {
+    text-decoration: underline; /* 마우스를 올리면 밑줄 생김 */
+}
+.card-category .key-visual-guide-point-word {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 600;
 }
