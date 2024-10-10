@@ -264,3 +264,56 @@
     overflow: hidden;
     border: 1px solid #e0e0e0;
 }
+
+.wishket-textarea {
+    padding: 9px 13px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+}
+
+.ui-textarea-partner>.textarea__border>textarea {
+    position: relative;
+    display: block;
+    padding: 8px 12px;
+    width: 100%;
+    min-height: 200px;
+    font-size: 14px;
+    color: #616161;
+    line-height: 24px;
+    resize: none;
+    overflow: auto;
+    border: 0;
+}
+
+.ui-textarea-partner>.textarea__border>textarea.expand {
+    resize: vertical;
+}
+
+.ui-textarea-partner>span {
+    font-size: 0.813rem;
+    font-weight: 400;
+    font-size: 13px;
+    font-weight: 400;
+    color: #9e9e9e;
+    display: inline-block;
+}
+
+.ui-textarea-partner>span.error-text {
+    float: left;
+    padding: 8px 12px 0 12px;
+}
+
+.ui-textarea-partner:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.ui-textarea-partner>span.word-length {
+    float: right;
+    padding: 8px 12px 0 0;
+}
+
+.inquiry-add-content-box .inquiry-description-box .word-length {
+    display: none;
+}
