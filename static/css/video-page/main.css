@@ -1,0 +1,278 @@
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 700;
+    src: url("/fonts/NotoSansKR-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 500;
+    src: url("/fonts/NotoSansKR-Medium.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 400;
+    src: url("/fonts/NotoSansKR-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 300;
+    src: url("/fonts/NotoSansKR-Light.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 100;
+    src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "NotoSansKR", Sans-serif;
+    line-height: 1rem;
+}
+
+body {
+    height: 100%;
+}
+
+.main-header {
+    height: 48px;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-header .container {
+    display: flex;
+    padding-left: 2px;
+    gap: 32px;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.sub-navigation div {
+    padding: 12px 0;
+    height: 100%;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #424242;
+}
+.main-key-visual {
+    background: url("https://yozm.wishket.com/static/renewal/img/news/img_main_gradation.png");
+    background-size: 100% 100%;
+}
+
+.key-visual-guide {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #212121;
+    position: relative;
+    padding: 64px 0px;
+}
+.key-visual-guide-point-word {
+    font-weight: 500;
+    display: inline-block;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #313131;
+}
+
+.featured-items {
+    margin-bottom: 80px;
+}
+
+.featured-items .featured-main-card {
+    display: inline-block;
+    width: 620px;
+    vertical-align: top;
+    padding-right: 40px;
+}
+.featured-items .featured-main-card .card-item-link .card-item {
+    width: 100%;
+}
+.card-thumbnail {
+    margin-bottom: 24px;
+}
+.card-image {
+    border-radius: 12px;
+    border: solid 1px #e0e0e0;
+    width: 580px;
+    height: 277px;
+    object-fit: cover;
+}
+.text500 {
+    color: #757575;
+}
+.card-category {
+    margin-bottom: 6px;
+}
+.link-text {
+    text-decoration: none;
+    display: inline-block;
+}
+.body-3 {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.link-text {
+    color: inherit !important;
+}
+.text900 {
+    color: #212121;
+}
+.card-title {
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: normal;
+    margin-bottom: 8px;
+}
+.link-text.card-title {
+    display: block;
+}
+.content-meta {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    color: #424242;
+}
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+.meta-icon {
+    width: 16px;
+    height: 16px;
+}
+.content-meta-elem {
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 8px;
+}
+.mr-4 {
+    margin-right: 4px !important;
+}
+
+.card-description {
+    margin: 12px 0px 16px 0px;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #757575;
+}
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+.author-image {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border: solid 1px #e0e0e0;
+    border-radius: 10px;
+}
+.author-name {
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #9e9e9e;
+}
+.text400 {
+    color: #9e9e9e;
+}
+.featured-items .featured-sub-list {
+    padding-left: 40px;
+    width: 456px;
+    border-left: 1px solid #eee;
+    display: inline-block;
+    vertical-align: top;
+}
+.card-category:first-child {
+    margin-top: 0;
+}
+
+.card-category {
+    margin: 24px 0 6px 0;
+}
+
+.text500 {
+    color: #757575;
+}
+
+.card-item-link {
+    display: block;
+}
+
+.featured-sub-card {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+.card-title {
+    margin-bottom: 8px;
+}
+.subtitle-2-medium {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+.content-meta {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    color: #424242;
+}
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+
+.sub-card-description {
+    margin: 8px 0px 16px 0;
+    font-size: 13px;
+    line-height: 1.54;
+    color: #757575;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.featured-sub-list > :last-child {
+    border-bottom: none;
+}
