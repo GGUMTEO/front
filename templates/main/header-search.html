@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/static/css/main/header-search.css" />
         <title>검색</title>
     </head>
     <body>
@@ -14,16 +15,16 @@
         >
             <div class="search-part">
                 <div class="container">
-                    <img src="/static/images/main/search-icon.png" /><input
-                        name="csrfmiddlewaretoken"
-                        type="hidden"
-                    /><input
+                    <img
+                        class="search-icon"
+                        src="/static/images/main/search-icon.png"
+                    /><input name="csrfmiddlewaretoken" type="hidden" /><input
                         class="news-search-input"
                         id="searchInput"
                         placeholder="키워드, 작가 이름 검색하기"
                         type="text"
                     /><img
-                        class="icon-close"
+                        class="close-icon"
                         src="/static/images/main/close-icon.png"
                     />
                 </div>
