@@ -98,14 +98,6 @@ a {
     align-items: flex-start;
 }
 
-/*  */
-
-.sub-navigation:focus {
-    color: blue;
-}
-
-/*  */
-
 .text900 {
     color: #212121;
 }
