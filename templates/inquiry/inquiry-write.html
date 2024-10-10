@@ -6,5 +6,163 @@
         <title>문의사항 작성하기</title>
         <link rel="stylesheet" href="/static/css/inquiry/inquiry-write.css" />
     </head>
-    <body></body>
+    <body>
+        <header></header>
+        <main>
+            <div class="gaia">
+                <div class="profile-header edit-header">
+                    <div class="background"></div>
+                    <div class="container">
+                        <div class="profile-box inquiry">
+                            <form
+                                action=""
+                                id="inquiry-form"
+                                enctype="multipart/form-data"
+                            >
+                                <input type="hidden" name="" value="" />
+                                <div class="inquiry-add-view">
+                                    <div
+                                        class="subtitle-1 text900 inquiry-add-title"
+                                    >
+                                        문의사항 등록
+                                    </div>
+                                    <div class="inquiry-add-content-box">
+                                        <div
+                                            class="inquiry-name inquiry-detail"
+                                        >
+                                            <div class="label-input-partner">
+                                                <input
+                                                    class="required theme-partner wishket-label-input"
+                                                    data-type="label"
+                                                    name="title"
+                                                    onkeyup="max_input(this, 100)"
+                                                    type="text"
+                                                    value=""
+                                                />
+                                                <!-- <input
+                                                    class="required theme-partner wishket-label-input error"
+                                                    data-type="label"
+                                                    name="title"
+                                                    onkeyup="max_input(this, 100)"
+                                                    type="text"
+                                                    value=""
+                                                /> -->
+                                                <label>문의사항 제목 *</label>
+                                            </div>
+                                            <span
+                                                class="error-text"
+                                                style="display: none"
+                                                >에러상세 메시지</span
+                                            >
+                                        </div>
+                                        <div class="input-guide-helpertext">
+                                            접수하실 문의사항에 제목을
+                                            작성해주세요. 예) 결제관련
+                                            문의드립니다.
+                                        </div>
+                                        <div
+                                            class="mb24 inquiry-description-box inquiry-detail"
+                                        >
+                                            <div
+                                                class="mb16 body-2-bold text900"
+                                            >
+                                                문의내용 작성
+                                                <span class="star">*</span>
+                                            </div>
+                                            <input
+                                                hidden=""
+                                                id="is_changed_textarea"
+                                                type="checkbox"
+                                            />
+                                            <div class="ui-textarea-partner">
+                                                <div class="textarea__border">
+                                                    <textarea
+                                                        class="required wishket-textarea theme-partner expand"
+                                                        maxlength="5000"
+                                                        name="description"
+                                                        style="
+                                                            min-height: 402px;
+                                                        "
+                                                    ></textarea>
+                                                </div>
+                                                <span class="error-text"
+                                                    >에러상세 메시지</span
+                                                ><span class="word-length"
+                                                    >0/5000</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inquiry-footer"></div>
+                            </form>
+                        </div>
+                        <div class="active" id="inquiry-footer-moving"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const inputElement = document.querySelector(
+                ".label-input-partner input"
+            );
+            const labelInputPartner = document.querySelector(
+                ".label-input-partner"
+            );
+
+            if (inputElement) {
+                inputElement.style.outline = "none"; // Remove default focus outline
+
+                inputElement.addEventListener("focus", function () {
+                    labelInputPartner.classList.add("label-effect");
+                    if (!inputElement.classList.contains("error")) {
+                        inputElement.style.borderColor = "#00a878";
+                    }
+                });
+
+                inputElement.addEventListener("blur", function () {
+                    if (!inputElement.value) {
+                        labelInputPartner.classList.remove("label-effect");
+                        inputElement.classList.add("error");
+                        inputElement.style.borderColor = "#e52929";
+                    } else {
+                        inputElement.classList.remove("error");
+                        inputElement.style.borderColor = "";
+                    }
+                });
+
+                inputElement.addEventListener("input", function () {
+                    if (inputElement.classList.contains("error")) {
+                        inputElement.classList.remove("error");
+                        inputElement.style.borderColor = "#00a878";
+                    }
+                    labelInputPartner.classList.add("label-effect");
+                });
+
+                inputElement.addEventListener("mouseover", function () {
+                    if (!inputElement.classList.contains("error")) {
+                        inputElement.style.borderColor = "#00a878";
+                    }
+                });
+
+                inputElement.addEventListener("mouseout", function () {
+                    if (
+                        !inputElement.value &&
+                        !inputElement.classList.contains("error")
+                    ) {
+                        inputElement.style.borderColor = "";
+                    }
+                });
+
+                inputElement.addEventListener("keydown", function (event) {
+                    if (event.key === "Enter") {
+                        event.preventDefault(); // Prevent any action when Enter key is pressed
+                    }
+                });
+            }
+        });
+    </script>
 </html>
