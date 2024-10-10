@@ -285,6 +285,18 @@
     border: 0;
 }
 
+.ui-textarea-partner>.textarea__border:hover{
+    border-color: #00a878;
+}
+
+.ui-textarea-partner>.textarea__border.active{
+    border-color: #00a878;
+}
+
+body.partners_profile .textarea__border.error {
+    border: solid 1px #e52929;
+}
+
 .ui-textarea-partner>.textarea__border>textarea.expand {
     resize: vertical;
 }
