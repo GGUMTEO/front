@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const iconFold = document.querySelector(".icon-fold");
+    const sidebarMenu = document.querySelector(".sidebar-menu.scrapbook");
     const scrapbookListBox = document.querySelector(".scrapbook-list-box");
+    const iconFold = document.querySelector(".icon-fold");
 
-    iconFold.addEventListener("click", function () {
+    sidebarMenu.addEventListener("click", function () {
         // `scrapbook-list-box`를 숨기거나 표시
         if (
             scrapbookListBox.style.display === "none" ||
