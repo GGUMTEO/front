@@ -236,3 +236,31 @@
     line-height: 20px;
     font-weight: 400;
 }
+
+.mb24 {
+    margin-bottom: 24px;
+}
+
+.body-2-bold{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.body-2-bold {
+    font-weight: 700;
+}
+
+.text900 {
+    color: #212121;
+}
+
+.star {
+    color: #ff6b21;
+}
+
+.ui-textarea-partner>.textarea__border {
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
