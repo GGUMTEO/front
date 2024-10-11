@@ -27,6 +27,7 @@
 html {
     height: 100%;
     font-size: 16px;
+    position: inherit;
 }
 
 * {
@@ -46,20 +47,24 @@ a {
     color: #212121;
 }
 
-
-/*  */
-.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
+body {
+    position: inherit;
+    width: inherit;
 }
-/*  */
 
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, .8);
+    width: 100%;
+}
 
 .header-gnb {
     display: flex;
     background-color: #fff;
     height: 72px;
+    border-bottom: 1px solid #eee;
 }
 
 .container {
@@ -112,6 +117,8 @@ a {
 }
 
 .body-2-medium {
+    font-size: 14px;
+    line-height: 24px;
     font-weight: 500;
 }
 
@@ -123,7 +130,7 @@ a {
 
 .search-box {
     padding: 7px;
-    margin-right: 4px;
+    margin-right: 6px;
     border-radius: 8px;
 }
 
@@ -158,7 +165,6 @@ a {
 .icon-box .search-icon {
     height: 25px;
     padding: 4px;
-    margin-right: 4px;
 }
 
 .button-group-box {
@@ -166,18 +172,20 @@ a {
 }
 
 .kakao-icon {
-    width: 12px;
+    width: 11px;
+    margin-right: 1px;
 }
 
 .btn-kakao {
-    color: black;
+    color: rgb(32, 32, 32);
     background-color: #ffeb10;
+    font-weight: 500;
 }
 
 .btn-common-3 {
     padding: 4px 18px;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.71;
     letter-spacing: normal;
     text-align: center;
@@ -186,6 +194,172 @@ a {
 .btn {
     cursor: pointer;
 }
+
+/* 검색 (search) */
+
+.search-full-modal {
+    z-index: 10001;
+    display: none;
+}
+
+.full-modal, .yozm-full-modal, .account-full-modal, .search-full-modal {
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    z-index: 2;
+}
+
+.search-full-modal .search-part {
+    z-index: 2;
+    border-bottom: solid 1px #e0e0e0;
+}
+
+.search-full-modal .search-part .container {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.search-full-modal .search-icon{
+    width: 14px;
+}
+
+.search-full-modal .close-icon {
+    width: 18px;
+}
+
+.search-full-modal .search-part .news-search-input {
+    width: calc(100% - 72px);
+    margin: 0 12px;
+    border: none;
+    font-size: 16px;
+    padding: 20px 0 19px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    color: #616161;
+}
+
+.search-full-modal .search-part .close-icon {
+    cursor: pointer;
+}
+
+.search-full-modal .search-sub-part {
+    position: relative;
+    z-index: 2;
+    padding: 32px 0 48px;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.search-full-modal .search-sub-part .title {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    color: #212121;
+}
+
+.search-full-modal .search-sub-part .title .sub-action {
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #9e9e9e;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper.empty {
+    margin-top: 48px;
+}
+
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper {
+    margin-top: 24px;
+}
+
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper.empty .empty-recent-keyword {
+    display: block;
+}
+
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .empty-recent-keyword {
+    display: none;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #9e9e9e;
+}
+
+/* .search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper.empty .recent-keyword-list {
+    display: none;
+} */
+
+.full-modal .background-overlay, .yozm-full-modal .background-overlay, .account-full-modal .background-overlay, .search-full-modal .background-overlay {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 2;
+}
+
+.delete-icon {
+    width: 10px;
+}
+
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword {
+    display: flex;
+    align-items: center;
+}
+
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword .keyword-title {
+    max-width: calc(100% - 24px);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #616161;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword img {
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword+.recent-keyword {
+    margin-top: 8px;
+}
+
 
 
 

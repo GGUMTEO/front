@@ -217,10 +217,7 @@ a {
 }
 
 
-
-/* search */
-
-
+/* 검색 (search) */
 
 .search-full-modal {
     z-index: 10001;
@@ -250,8 +247,12 @@ a {
     margin: 0 auto;
 }
 
-.search-icon, .close-icon {
-    width: 15px;
+.search-icon{
+    width: 14px;
+}
+
+.close-icon {
+    width: 18px;
 }
 
 .search-full-modal .search-part .news-search-input {
@@ -347,7 +348,7 @@ a {
 }
 
 .delete-icon {
-    width: 13px;
+    width: 10px;
 }
 
 .search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword {
