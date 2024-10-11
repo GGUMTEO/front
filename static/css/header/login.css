@@ -158,10 +158,6 @@ body {
     margin-left: 15px;
 }
 
-.btn {
-    cursor: pointer;
-}
-
 /* 로그인 시 */
 
 .header-gnb .header-gnb-wrapper .profile-image {
@@ -270,7 +266,6 @@ body {
 /* 검색 (search) */
 
 .search-full-modal {
-    /* z-index: 10001; */
     display: none;
 }
 
@@ -291,11 +286,6 @@ body {
 .search-full-modal .search-part .container {
     display: flex;
     align-items: center;
-}
-
-.container {
-    width: 1080px;
-    margin: 0 auto;
 }
 
 .search-full-modal .icon-search{
@@ -328,11 +318,6 @@ body {
     position: relative;
     z-index: 2;
     padding: 32px 0 48px;
-}
-
-.container {
-    width: 1080px;
-    margin: 0 auto;
 }
 
 .search-full-modal .search-sub-part .title {
@@ -382,10 +367,6 @@ body {
     text-align: center;
     color: #9e9e9e;
 }
-
-/* .search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper.empty .recent-keyword-list {
-    display: none;
-} */
 
 .full-modal .background-overlay, .yozm-full-modal .background-overlay, .account-full-modal .background-overlay, .search-full-modal .background-overlay {
     content: "";
