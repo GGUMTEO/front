@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>오디션 목록 페이지</title>
+        <link rel="stylesheet" href="/static/css/audition/audition-list.css" />
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <div class="gaia">
+                <div class="container audition-list-view">
+                    <form
+                        id="search-audition-list-form"
+                        action=""
+                        onsubmit="return false"
+                    >
+                        <div class="search-header">
+                            <div class="page-title subtitle-1-medium">
+                                프로젝트 찾기
+                            </div>
+                            <div
+                                class="text-search-box"
+                                id="inner_text_search_box"
+                            >
+                                <div class="default-input-type icon-right">
+                                    <div
+                                        class="default-input-wishket icon-right"
+                                    >
+                                        <input
+                                            autocomplete="off"
+                                            class="theme-wishket wishket-text search-text"
+                                            data-input-type="text-input"
+                                            name="search_text"
+                                            type="text"
+                                            style="padding-right: 48px"
+                                        /><span
+                                            class="text-unit active"
+                                            data-action-icon="search"
+                                            ><img
+                                                src="/static/images/audition/icon-search@2x.png"
+                                                style="
+                                                    margin-right: 8px;
+                                                    cursor: pointer;
+                                                "
+                                        /></span>
+                                    </div>
+                                    <span class="error-text"
+                                        >에러상세 메시지</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>
