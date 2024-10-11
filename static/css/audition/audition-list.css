@@ -24,6 +24,12 @@
     src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
 }
 
+body {
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -121,7 +127,7 @@
     right: 13px;
 }
 
-.project-search .container .search-header #inner_text_search_box .text-unit {
+.container .search-header #inner_text_search_box .text-unit {
     opacity: 1 !important;
 }
 
@@ -147,6 +153,10 @@
     font-size: 13px;
     background: #fff;
     border-radius: 16px;
+}
+
+.section_search .content {
+    position: relative;
 }
 
 .section_search:nth-of-type(1) {
@@ -181,4 +191,288 @@
     clear: both;
     content: "";
     table-layout: fixed;
+}
+
+.item_recruit {
+    padding: 21px 39px 20px;
+    border-top: 1px solid #e6e6e6;
+    line-height: 20px;
+}
+
+.item_recruit:first-child {
+    border: none;
+}
+
+.item_recruit .area_badge {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item_recruit .area_badge .badge {
+    display: inline-flex;
+    padding: 0 6px;
+    border-radius: 4px;
+    /* color: #475067; */
+    font-size: 12px;
+    line-height: 24px;
+    background-color: #f4f6fa;
+    align-items: center;
+}
+
+.item_recruit .area_badge .badge>svg {
+    margin-right: 2px;
+    width: 14px;
+    height: 14px;
+}
+
+.item_recruit .area_job, .item_recruit .area_corp {
+    float: left;
+    box-sizing: border-box;
+}
+
+.item_recruit .area_job {
+    position: relative;
+    width: 77%;
+}
+
+.item_recruit .area_job .job_tit {
+    display: inline-block;
+    overflow: hidden;
+    padding-right: 3px;
+    max-width: calc(100% - 180px);
+    font-size: 15px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+.item_recruit .job_tit a, .item_recruit .corp_name a {
+    color: #222;
+    vertical-align: top;
+}
+
+.item_recruit .area_job .job_date {
+    display: inline-block;
+    margin: 2px 0 0 1px;
+    color: #949494;
+    vertical-align: top;
+}
+
+.item_recruit .area_job .job_date .date {
+    display: inline-block;
+    line-height: 17px;
+    vertical-align: top;
+}
+
+.sri_btn_xs {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 18px;
+    border: 0;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.content > .item_recruit .sri_btn_xs {
+    background: #fff;
+}
+
+.item_recruit .area_job .job_date .sri_btn_xs {
+    margin: 1px 0 0 3px;
+}
+
+.sri_btn_xs span {
+    display: inline-block;
+    padding-top: 1px;
+    width: 78px;
+    height: 18px;
+    border: 1px solid #dce2ef;
+    box-sizing: border-box;
+    color: var(--gray100);
+    font-size: 12px !important;
+    line-height: 12px;
+    vertical-align: top;
+    background: var(--white);
+}
+
+.sri_btn_xs span.sri_btn_immediately{
+    position: relative;
+    width: 52px;
+    border: 1px solid #d63131;;
+    color: #d63131;;
+}
+
+.item_recruit .area_job .job_condition {
+    overflow: hidden;
+    margin-top: 3px;
+    width: 100%;
+    color: #555;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.item_recruit .area_job .job_condition span {
+    float: left;
+    margin-right: 10px;
+}
+
+.item_recruit .area_job .job_condition a {
+    color: inherit;
+}
+
+.item_recruit .area_job .job_sector {
+    overflow: hidden;
+    margin-top: 10px;
+    color: #949494;
+    font-size: 12px;
+    line-height: 16px;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.item_recruit .area_job .job_day {
+    display: inline;
+    color: #999;
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: top;
+}
+
+.item_recruit .area_job .job_day:before {
+    display: inline-block;
+    margin: 4px 4px 0 3px;
+    width: 1px;
+    height: 10px;
+    vertical-align: top;
+    background: #e9e9e9;
+    content: "";
+}
+
+.item_recruit .area_job, .item_recruit .area_corp {
+    float: left;
+    box-sizing: border-box;
+}
+
+.item_recruit .area_corp {
+    padding-left: 17px;
+    width: 23%;
+}
+
+.item_recruit .area_corp .corp_name {
+    display: inline-block;
+    overflow: hidden;
+    padding-right: 2px;
+    max-width: 142px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.item_recruit .job_tit a, .item_recruit .corp_name a {
+    color: #222;
+    vertical-align: top;
+}
+
+.item_recruit .area_corp .corp_affiliate {
+    display: block;
+    overflow: hidden;
+    margin-top: 7px;
+    max-width: 166px;
+    color: #949494;
+    font-size: 12px;
+    line-height: 16px;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.similar_recruit {
+    display: none;
+    clear: both;
+    position: relative;
+    margin: 0 -39px -20px;
+    padding-top: 20px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.item_recruit:after {
+    display: table;
+    clear: both;
+    content: "";
+    table-layout: fixed;
+}
+
+.section_search .content_bottom {
+    padding: 12px 39px;
+    min-height: 20px;
+    border-top: 1px solid #e6e6e6;
+    text-align: right;
+}
+
+.pagination {
+    margin-top: 30px;
+    font-size: 0;
+    text-align: center;
+}
+
+.content_bottom .pagination {
+    margin: 9px 0 10px;
+}
+
+.pagination span.page, .pagination button.page, .pagination a.page {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 0 2px;
+    min-width: 32px;
+    height: 32px;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 14px;
+    line-height: 30px;
+    vertical-align: middle;
+    background: #fff;
+}
+
+.pagination span.page {
+    border: 1px solid #444;
+    color: #444;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pagination .btnPrev {
+    margin-right: 19px;
+    padding-left: 10px;
+    background: url(//www.saraminimage.co.kr/sri/common/ico/bul_page_prev.png) 0 50% no-repeat;
+}
+
+.pagination .btnNext {
+    margin-left: 14px;
+    padding-right: 10px;
+    background: url(//www.saraminimage.co.kr/sri/common/ico/bul_page_next.png) 100% 50% no-repeat;
+}
+
+.pagination .btnPrev, .pagination .btnNext {
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 33px;
+    vertical-align: middle;
+    color: #444;
 }
