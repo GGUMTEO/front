@@ -216,9 +216,13 @@ a {
     width: 22px;
 }
 
+
+
 /* search */
+
+
+
 .search-full-modal {
-    /* display: none; */
     z-index: 10001;
 }
 
@@ -327,9 +331,9 @@ a {
     color: #9e9e9e;
 }
 
-.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper.empty .recent-keyword-list {
+/* .search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper.empty .recent-keyword-list {
     display: none;
-}
+} */
 
 .full-modal .background-overlay, .yozm-full-modal .background-overlay, .account-full-modal .background-overlay, .search-full-modal .background-overlay {
     content: "";
@@ -342,7 +346,39 @@ a {
     z-index: 2;
 }
 
+.delete-icon {
+    width: 13px;
+}
 
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword {
+    display: flex;
+    align-items: center;
+}
+
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword .keyword-title {
+    max-width: calc(100% - 24px);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #616161;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword img {
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword+.recent-keyword {
+    margin-top: 8px;
+}
 
 
 
