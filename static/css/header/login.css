@@ -70,14 +70,14 @@ body {
     align-items: center;
 }
 
-.header-gnb .header-gnb-wrapper .sub-navigation-logo {
+.header-gnb .header-gnb-wrapper .category-navigation-logo {
     display: flex;
     align-items: center;
     margin-right: 10px;
     padding: 26px 0;
 }
 
-.logo-test {
+.test-logo {
     width: 90px;
 }
 
@@ -85,29 +85,24 @@ body {
     display: flex !important;
 }
 
-.flex-box {
-    display: flex;
-    align-items: center;
-}
-
-.header-gnb .sub-navigation-wrapper .sub-navigation {
+.header-gnb .category-navigation-wrapper .category-navigation {
     padding: 24px 16px;
 }
 
-.header-gnb .sub-navigation-wrapper .sub-navigation div {
+.header-gnb .category-navigation-wrapper .category-navigation div {
     display: flex;
     align-items: flex-start;
 }
 
-.text900 {
+.text-color {
     color: #212121;
 }
 
-.text900:hover {
+.text-color:hover {
     color: #002fff;
 }
 
-.body-2-medium {
+.category {
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;
@@ -149,35 +144,18 @@ body {
     background-color: #e0e0e0;
 }
 
+/* icon : cursor 맞출지 */
 .header-gnb .icon {
     cursor: pointer;
 }
 
-.icon-box .search-icon {
+.icon-box .icon-search {
     height: 25px;
     padding: 4px;
 }
 
 .button-group-box {
     margin-left: 15px;
-}
-
-.kakao-icon {
-    width: 12px;
-}
-
-.btn-kakao {
-    color: black;
-    background-color: #ffeb10;
-}
-
-.btn-common-3 {
-    padding: 4px 18px;
-    border-radius: 8px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: normal;
-    text-align: center;
 }
 
 .btn {
@@ -192,14 +170,14 @@ body {
     cursor: pointer;
 }
 
-.header-gnb .header-gnb-wrapper .icon-box img.authenticated-user-image {
+.header-gnb .header-gnb-wrapper .icon-box img.authenticated-member-image {
     width: 32px;
     height: 32px;
     border-radius: 16px;
     border: solid 1px #e0e0e0;
 }
 
-.header-gnb .header-gnb-wrapper .profile-image .authenticated-user-image {
+.header-gnb .header-gnb-wrapper .profile-image .authenticated-member-image {
     padding: 2px;
 }
 
@@ -207,9 +185,15 @@ body {
     float: right !important;
 }
 
-.btn-logout {
+.logout {
     color: #7e7e7e;
     font-weight: 500;
+    padding: 4px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
 }
 
 /* 알림 (alarm) */
@@ -222,12 +206,7 @@ body {
     cursor: pointer;
 }
 
-.cursor-pointer {
-    position: relative;
-    width: 100px;
-}
-
-.alarm {
+.icon-alarm {
     padding-top: 3px;
     width: 24px;
 }
@@ -245,7 +224,7 @@ body {
 }
 
 
-.alarm-box {
+.alarm-modal {
     font-size: 14px;
     top: 40px;
     position: absolute;
@@ -265,7 +244,7 @@ body {
     font-weight: 500;
 }
 
-.alarm-name-div {
+.alarm-item {
     font-weight: 700;
     color: #343434;
     cursor: pointer;
@@ -319,11 +298,11 @@ body {
     margin: 0 auto;
 }
 
-.search-full-modal .search-icon{
+.search-full-modal .icon-search{
     width: 14px;
 }
 
-.search-full-modal .close-icon {
+.search-full-modal .icon-close {
     width: 18px;
 }
 
@@ -341,7 +320,7 @@ body {
     color: #616161;
 }
 
-.search-full-modal .search-part .close-icon {
+.search-full-modal .search-part .icon-close {
     cursor: pointer;
 }
 
@@ -419,7 +398,7 @@ body {
     z-index: 2;
 }
 
-.delete-icon {
+.icon-delete {
     width: 10px;
 }
 

@@ -7,56 +7,54 @@
         <title>로그인</title>
     </head>
     <body>
-        <header id="header" class="header-nav">
+        <header id="header-nav" class="header-nav">
             <div class="header-gnb">
                 <div class="container">
                     <div class="header-gnb-wrapper">
-                        <a class="sub-navigation-logo" href=""
+                        <a class="category-navigation-logo" href=""
                             ><img
-                                class="logo-test" src="/static/images/main/logo-test.png"
+                                class="test-logo" src="/static/images/header/test-logo.png"
                         /></a>
-                        <div class="sub-navigation-wrapper flex-box pc-only">
+                        <div class="category-navigation-wrapper flex-box pc-only">
                             <a
-                                class="sub-navigation"
-                                href=""
-                                ><div class="body-2-medium text900">
+                                class="category-navigation"  href=""
+                                ><div class="category text-color">
                                     영상
                                 </div></a
                             >
-                            <a class="sub-navigation" href=""
-                                ><div class="body-2-medium text900">
+                            <a class="category-navigation"  href=""
+                                ><div class="category text-color">
                                     글
                                 </div></a
                             >
                             <a
-                                class="sub-navigation new-menu"
-                                href=""
-                                ><div class="body-2-medium text900">
+                                class="category-navigation"  href=""
+                                ><div class="category text-color">
                                     공지사항
                                 </div></a
                             >
                         </div>
                         <div class="icon-box">
                             <div id="search-box" class="btn search-box flex-box">
+                                <!-- icon : cursor 맞출지 -->
                                 <img
-                                class="icon search-icon only-mobile"
-                                src="/static/images/main/search-Icon.png"
+                                class="icon icon-search"
+                                src="/static/images/header/icon-search.png"
                             />
                             </div>
                             <div class="icon-box">
                                 <div class="divider only-pc"></div>
                                 <!-- 알림 없을 시 -->
                                 <div id="alarm-container-1" class="alarm-container">
-                                    <div class="cursor-pointer"></div>
-                                    <img class="alarm" src="/static/images/main/alarm.png" />
+                                    <img class="icon-alarm" src="/static/images/header/icon-alarm.png" />
                                     <!-- 내 알림 div -->
-                                    <div id="alarm-box-1" class="alarm-box">
+                                    <div id="alarm-modal-1" class="alarm-modal">
                                         <p class="alarm-title">내 알림</p>
-                                        <div class="alarm-name-div margin-botton-15px">
-                                            <p class="alarm-name">영상</p>
+                                        <div class="alarm-item margin-botton-15px">
+                                            <p>영상</p>
                                         </div>
-                                        <div class="alarm-name-div">
-                                            <p class="alarm-name">글</p>
+                                        <div class="alarm-item">
+                                            <p>글</p>
                                         </div>
                                     </div>
                                 </div>
@@ -65,40 +63,40 @@
                                     <div class="alarm-dot-div">
                                         <img
                                             class="alarm-dot"
-                                            src="/static/images/main/alarm-dot.png"
+                                            src="/static/images/header/alarm-dot.png"
                                         />
                                     </div>
-                                    <img class="alarm" src="/static/images/main/alarm.png" />
+                                    <img class="icon-alarm" src="/static/images/header/icon-alarm.png" />
                                     <!-- 내 알림 div -->
-                                    <div id="alarm-box-2" class="alarm-box">
+                                    <div id="alarm-modal-2" class="alarm-modal">
                                         <p class="alarm-title">내 알림</p>
-                                        <div class="alarm-name-div margin-botton-15px">
+                                        <div class="alarm-item margin-botton-15px">
                                             <div class="dot-div-1">
                                                 <img
                                                     class="alarm-dot"
-                                                    src="/static/images/main/alarm-dot.png"
+                                                    src="/static/images/header/alarm-dot.png"
                                                 />
                                             </div>
-                                            <p class="alarm-name">영상</p>
+                                            <p>영상</p>
                                         </div>
-                                        <div class="alarm-name-div">
+                                        <div class="alarm-item">
                                             <div class="dot-div-2">
                                                 <img
                                                     class="alarm-dot"
-                                                    src="/static/images/main/alarm-dot.png"
+                                                    src="/static/images/header/alarm-dot.png"
                                                 />
                                             </div>
-                                            <p class="alarm-name">글</p>
+                                            <p>글</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="profile-image" id="profileImage">
-                                <img class="authenticated-user-image user-img pull-right" 
-                                src="/static/images/main/profile-img.png"></div>
-                            <div class="button-group-box" id="buttonGroupBox">
+                            <div class="profile-image">
+                                <img class="authenticated-member-image pull-right" 
+                                src="/static/images/header/profile-image.png"></div>
+                            <div class="button-group-box">
                                 <a
-                                    class="btn btn-common-3 btn-logout"
+                                    class="btn logout"
                                     href=""
                                     >
                                     로그아웃</a
@@ -113,16 +111,15 @@
             <div class="search-part">
                 <div class="container">
                     <img
-                    class="search-icon"
-                    src="/static/images/main/search-gray-icon.png"/>
+                    class="icon-search"
+                    src="/static/images/header/icon-search-gray.png"/>
                     <input name="csrfmiddlewaretoken" type="hidden" /><input
                     class="news-search-input"
-                    id="searchInput"
                     placeholder="키워드, 작가 이름 검색하기"/>
                     <img
-                    id="close-icon"
-                    class="close-icon"
-                    src="/static/images/main/close-icon.png"/>
+                    id="icon-close"
+                    class="icon-close"
+                    src="/static/images/header/icon-close.png"/>
                 </div>
             </div>
             <div class="search-sub-part">
@@ -157,36 +154,36 @@
                                 <div class="recent-keyword">
                                         <div class="keyword-title">정지수</div>
                                     <img
-                                        class="delete-icon"
-                                        src="/static/images/main/delete-icon.png"
+                                        class="icon-delete"
+                                        src="/static/images/header/icon-delete.png"
                                     />
                                 </div>
                                 <div class="recent-keyword">
                                     <div class="keyword-title">텀블러</div>
                                     <img
-                                        class="delete-icon"
-                                        src="/static/images/main/delete-icon.png"
+                                        class="icon-delete"
+                                        src="/static/images/header/icon-delete.png"
                                     />
                                 </div>
                                 <div class="recent-keyword">
                                     <div class="keyword-title">작가</div>
                                     <img
-                                        class="delete-icon"
-                                        src="/static/images/main/delete-icon.png"
+                                        class="icon-delete"
+                                        src="/static/images/header/icon-delete.png"
                                     />
                                 </div>
                                 <div class="recent-keyword">
                                     <div class="keyword-title">키워드</div>
                                     <img
-                                        class="delete-icon"
-                                        src="/static/images/main/delete-icon.png"
+                                        class="icon-delete"
+                                        src="/static/images/header/icon-delete.png"
                                     />
                                 </div>
                                 <div class="recent-keyword">
                                     <div class="keyword-title">프론트엔드</div>
                                     <img
-                                        class="delete-icon"
-                                        src="/static/images/main/delete-icon.png"
+                                        class="icon-delete"
+                                        src="/static/images/header/icon-delete.png"
                                     />
                                 </div>
                             </div>
@@ -197,6 +194,6 @@
             <div id="background-overlay" class="background-overlay"></div>  
         </div>
     </body>
-    <script src="/static/js/header/alarm-box.js"></script>
+    <script src="/static/js/header/alarm-modal.js"></script>
     <script src="/static/js/header/search.js"></script>
 </html>
