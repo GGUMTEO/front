@@ -172,27 +172,7 @@ body {
 }
 
 .kakao-icon {
-    width: 11px;
-    margin-right: 1px;
-}
-
-.btn-kakao {
-    color: rgb(32, 32, 32);
-    background-color: #ffeb10;
-    font-weight: 500;
-}
-
-.btn-common-3 {
-    padding: 4px 18px;
-    border-radius: 8px;
-    font-size: 13px;
-    line-height: 1.71;
-    letter-spacing: normal;
-    text-align: center;
-}
-
-.btn {
-    cursor: pointer;
+    width: 150px;
 }
 
 /* 검색 (search) */
