@@ -272,7 +272,7 @@ html {
 } 
    .container.scrapbook .main-content-container .main-content .content .list-item {
     padding: 32px 0px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid;
 }
 .flex-box {
     display: flex;
@@ -528,7 +528,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 .body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
     font-size: 14px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .setting-td:first-child {
     padding-left: 16px;
@@ -558,7 +558,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
     overflow: hidden;
 }
 .setting-td.with-sub {
-    padding: 12px 16px;
+    padding: 12px 11px;
 }
 .major-span{
     color: #212121;
@@ -566,9 +566,11 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 
 .mb4 {
     margin-bottom: 4px;
+    margin-left: 5px;
 }
 .sub-span {
     color: #757575;
+    margin-left: 5px;
 }
 .caption-1, #profile_image_edit_modal .modal__body .modal-info-body .base-dot-list .dot-line, .caption-1-bold, .caption-1-medium, .caption-1-light {
     font-size: 12px;
@@ -577,44 +579,43 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 }
 .setting-td.with-text.primary {
     color: #00a878;
+    font-weight: 600;
 }
 .setting-td.with-text {
     
     vertical-align:middle;
 }
-body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setting-tr .setting-td.with-btn {
-    padding: 16px;
-}
-body.partners_profile .btn-group.choice-group {
+
+.btn-group.choice-group {
     float: right;
     display: inline-block;
     background-color: #eee;
     border-radius: 4px;
 }
-body.partners_profile .btn-group.choice-group .btn-choice.active {
+.btn-choice.active {
     border: solid 1px #00a878;
     background-color: #fff;
     color: #00a878;
     border-radius: 4px;
 }
-body.partners_profile .btn-group.choice-group .btn-choice {
+.btn-choice {
     display: inline-block;
     cursor: pointer;
     width: 80px;
     padding: 8px 0;
     color: #bdbdbd;
 }
-body.partners_profile .btn-group.choice-group .btn-choice .radio-value {
+.radio-value {
     display: none;
 }
-body.partners_profile .btn-group.choice-group .btn-choice.active .name {
+.btn-choice.active .name {
     font-weight: 500 !important;
 }
-body.partners_profile .btn-group.choice-group .btn-choice .name {
+.btn-choice .name {
     position: relative;
-    top: 1px;
+   left: -1px;
 }
-body.partners_profile .btn-group.choice-group .btn-secret {
+.btn-secret {
     border-left: none;
 }
 .setting-th{
