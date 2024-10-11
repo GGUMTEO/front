@@ -39,16 +39,56 @@
                         <div class="icon-box">
                             <div class="btn search-box flex-box">
                                 <img
-                                    src=""
-                                />
-                            </div>
-                            <img
                                 class="icon search-icon only-mobile"
                                 src="/static/images/main/search-Icon.png"
                             />
-                            <div class="divider only-pc"></div>
-                            <div class="alarm-container">
-                                <img class="alarm" src="/static/images/main/alarm.png">
+                            </div>
+                            <div class="icon-box">
+                                <div class="divider only-pc"></div>
+                                <!-- 알림 없을 시 -->
+                                <div class="alarm-container">
+                                    <img class="alarm" src="/static/images/main/alarm.png" />
+                                    <div class="alarm-box">
+                                        <p class="alarm-title">내 알림</p>
+                                        <div class="alarm-name-div margin-botton-15px">
+                                            <p class="alarm-name">영상</p>
+                                        </div>
+                                        <div class="alarm-name-div">
+                                            <p class="alarm-name">글</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 알림 있을 시 -->
+                                <div class="alarm-container">
+                                    <div class="alarm-dot-div">
+                                        <img
+                                            class="alarm-dot"
+                                            src="/static/images/main/alarm-dot.png"
+                                        />
+                                    </div>
+                                    <img class="alarm" src="/static/images/main/alarm.png" />
+                                    <div class="alarm-box">
+                                        <p class="alarm-title">내 알림</p>
+                                        <div class="alarm-name-div margin-botton-15px">
+                                            <div class="dot-div-1">
+                                                <img
+                                                    class="alarm-dot"
+                                                    src="/static/images/main/alarm-dot.png"
+                                                />
+                                            </div>
+                                            <p class="alarm-name">영상</p>
+                                        </div>
+                                        <div class="alarm-name-div">
+                                            <div class="dot-div-2">
+                                                <img
+                                                    class="alarm-dot"
+                                                    src="/static/images/main/alarm-dot.png"
+                                                />
+                                            </div>
+                                            <p class="alarm-name">글</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="profile-image" id="profileImage">
                                 <img class="authenticated-user-image user-img pull-right" 
@@ -66,4 +106,5 @@
             </div>
         </header>
     </body>
+    <script src="/static/js/main/header-login.js"></script>
 </html>
