@@ -134,3 +134,51 @@
 .error-text {
     display: none;
 }
+
+.search-filter-part {
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 24px;
+}
+
+.section_search {
+    margin-top: 50px;
+    border: 1px solid #e5e6eb;
+    font-size: 13px;
+    background: #fff;
+    border-radius: 16px;
+}
+
+.section_search:nth-of-type(1) {
+    margin-top: 0;
+}
+
+.section_search > .header {
+    position: relative;
+    padding: 18px 39px 0;
+    height: 60px;
+    border-bottom: 1px solid #d6d6d6;
+    box-sizing: border-box;
+}
+
+.section_search > .header .tit_section {
+    float: left;
+    margin-right: 10px;
+    color: #222;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.section_search > .header .cnt_result {
+    float: left;
+    margin-top: 8px;
+    color: #949494;
+    line-height: 17px;
+}
+
+.section_search > .header:after {
+    display: table;
+    clear: both;
+    content: "";
+    table-layout: fixed;
+}
