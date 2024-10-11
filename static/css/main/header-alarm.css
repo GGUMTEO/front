@@ -205,7 +205,10 @@ a {
     color: #2a2a2a;
 }
 
+/* 알림 테스트 */
+
 .alarm-container {
+    position: relative;
     width: 30px;
     margin-left: 15px;
     padding: 1px 0;
@@ -216,23 +219,53 @@ a {
     width: 22px;
 }
 
-
-/* 알림 테스트 */
-.alarm-dot {
+.alarm-dot-div {
+    position: absolute;
     display: flex;
     padding: 0 5px;
-    box-sizing: border-box;
-    box-shadow: 0 2px 4px 0 rgba(244, 54, 30, .16);
-    border: 1px solid rgba(0, 0, 0, .04);
-    border-radius: 10px;
-    background-color: #f4361e;
     transform: translateX(50%);
-    width: 9px;
-    height: 12px;
+    bottom: 19px;
 }
 
+.alarm-dot {
+    width: 11px;
+}
 
+.alarm-box {
+    top: 30px;
+    position: absolute;
+    width: 100px;
+    border: solid 1px rgb(87, 87, 87);
+    padding: 12px 12px 14px 12px;
+    border-radius: 9px;
+}
 
+.alarm-title {
+    margin-bottom: 20px;
+    color: #b8b8b8;
+    font-weight: 500;
+}
+
+.alarm-name-div {
+    font-weight: 700;
+    color: #343434;
+}
+
+.margin-botton-15px {
+    margin-bottom: 15px;
+}
+
+.dot-div-1 {
+    position: absolute;
+    top: 38px;
+    left: 40px;
+}
+
+.dot-div-2 {
+    position: absolute;
+    top: 70px;
+    left: 26px;
+}
 
 
 
