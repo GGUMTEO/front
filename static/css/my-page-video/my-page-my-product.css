@@ -623,3 +623,20 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 
     border-bottom: solid 1px #e0e0e0;
 }
+.container.scrapbook .main-content-container .main-content.read-news-list .content-title-with-btn .all-delete-read-news {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.body-2-medium {
+    font-weight: 500;
+}
+.all-delete-read-news .icon-edit-delete {
+    margin-right: 6px;
+}
+.icon-edit-delete {
+    width: 16px;
+    height: 16px;
+    margin-right: 22px;
+    background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_edit_delete.png);
+}
