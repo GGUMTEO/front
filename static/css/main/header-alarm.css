@@ -102,13 +102,8 @@ a {
     align-items: flex-start;
 }
 
-
 .text900 {
     color: #212121;
-}
-
-.text900:hover {
-    color: #002fff;
 }
 
 .body-2-medium {
@@ -122,13 +117,9 @@ a {
 }
 
 .search-box {
-    padding: 7px;
-    margin-right: 4px;
+    padding: 8px;
     border-radius: 8px;
-}
-
-.search-box:hover {
-    background-color: #fafafa;
+    margin-right: 4px;
 }
 
 .btn {
@@ -171,7 +162,7 @@ a {
 
 .btn-kakao {
     color: black;
-    background-color: #ffeb10;
+    background-color: #f7e632;
 }
 
 .btn-common-3 {
@@ -187,9 +178,94 @@ a {
     cursor: pointer;
 }
 
+/* 로그인 시 */
 
+.header-gnb .header-gnb-wrapper .profile-image {
+    padding: 16px 0 0 12px;
+    height: 64px;
+    cursor: pointer;
+}
 
+.header-gnb .header-gnb-wrapper .icon-box img.authenticated-user-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: solid 1px #e0e0e0;
+}
 
+.header-gnb .header-gnb-wrapper .profile-image .authenticated-user-image {
+    padding: 2px;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.btn-logout {
+    color: #2a2a2a;
+}
+
+/* 알림 테스트 */
+
+.alarm-container {
+    position: relative;
+    width: 30px;
+    margin-left: 15px;
+    padding: 1px 0;
+    cursor: pointer;
+}
+
+.alarm {
+    width: 22px;
+}
+
+.alarm-dot-div {
+    position: absolute;
+    display: flex;
+    padding: 0 5px;
+    transform: translateX(50%);
+    bottom: 19px;
+}
+
+.alarm-dot {
+    width: 11px;
+}
+
+.alarm-box {
+    top: 30px;
+    position: absolute;
+    width: 100px;
+    border: solid 1px rgb(87, 87, 87);
+    padding: 12px 12px 14px 12px;
+    border-radius: 9px;
+}
+
+.alarm-title {
+    margin-bottom: 20px;
+    color: #b8b8b8;
+    font-weight: 500;
+}
+
+.alarm-name-div {
+    font-weight: 700;
+    color: #343434;
+}
+
+.margin-botton-15px {
+    margin-bottom: 15px;
+}
+
+.dot-div-1 {
+    position: absolute;
+    top: 38px;
+    left: 40px;
+}
+
+.dot-div-2 {
+    position: absolute;
+    top: 70px;
+    left: 26px;
+}
 
 
 
