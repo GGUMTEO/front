@@ -248,6 +248,12 @@ a {
     font-weight: 400;
     margin-bottom: 10px;
 }
+.caption-2 {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
 .text600 {
     color: #616161;
 }

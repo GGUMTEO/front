@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>영상상세</title>
+        <link rel="stylesheet" href="/static/css/video-page/detail.css" />
+    </head>
+    <body>
+        <div class="main-header">
+            <div class="container">
+                <a class="sub-navigation" href="">
+                    <div>작품</div>
+                </a>
+                <a class="sub-navigation" href="">
+                    <div>펀딩</div>
+                </a>
+                <a class="sub-navigation" href="">
+                    <div>모집</div>
+                </a>
+            </div>
+        </div>
+        <div class="layout">
+            <!-- 중간메인내용 -->
+            <div class="container-wrapper">
+                <!-- 메인내용 -->
+                <div class="content-container-wrapper" style="display: flex">
+                    <!-- 메인 왼쪽내용 -->
+                    <div class="content-container" name="content-container">
+                        <!-- 작품 썸네일, 제목 -->
+                        <div class="detail-header">
+                            <a href="" class="category">장르</a>
+                            <h1 class="title">작품 제목</h1>
+                            <div class="detail-info">
+                                <div class="flex-box author-info content-meta">
+                                    <img
+                                        src="https://cdn.wishket.com/news_profiles/318743_20240926_4c9cbec414bb32ee.png"
+                                        class="content-meta-elem author-image pc-only"
+                                    />
+                                    <div class="content-meta-elem pc-only">
+                                        <p class="link-underline-text text700">
+                                            작성자
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="content-meta-elem content-meta-sep pc-only"
+                                    ></div>
+                                    <img
+                                        src="https://yozm.wishket.com/static/renewal/img/news/icon-clock.png"
+                                        class="content-meta-elem meta-icon mr-2"
+                                    />
+                                    <div class="content-meta-elem time">
+                                        2024.10.25
+                                    </div>
+                                    <div class="content-meta-view flex-box">
+                                        <img
+                                            src="https://yozm.wishket.com/static/renewal/img/news/icon-view.png"
+                                        />
+                                        10
+                                    </div>
+                                </div>
+                                <div class="thumbnail">
+                                    <img
+                                        src="/static/images/vidio-page/ex-image.jpg"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 작품 내용 -->
+                        <div class="content">
+                            <p style="text-align: justify">
+                                IT 지식이 무엇보다 중요해진 요즘, 여러분은
+                                어떻게 공부하고 있나요? 가장 먼저 눈길이 가는 건
+                                다양한 IT 강의 영상일 겁니다. 강의를 제공하는
+                                교육 기업들과 함께, 요즘IT에서 ‘IT 강의
+                                시리즈’를 준비했습니다. 엄선한 교육 영상을
+                                텍스트로 읽고 필요한 정보를 빠르게 가져가세요.
+                            </p>
+                            <hr />
+                            <!-- 띄어쓰기용 -->
+                            <p style="text-align: justify">&nbsp;</p>
+                            <div class="attachment" style="width: 100%">
+                                <!-- 예시용
+                                <iframe
+                                    width="100%"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/kTyXFL1TYDY"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                    class="attachment-video"
+                                >
+                                </iframe> -->
+                                <!-- 첨부파일로 받아온 영상올리는 부분 -->
+                                <video width="100%" height="315" controls>
+                                    <source
+                                        src="첨부된_비디오_파일_URL"
+                                        type="video/mp4"
+                                    />
+                                </video>
+                                <p style="text-align: justify">&nbsp;</p>
+                                <p
+                                    style="text-align: justify"
+                                    class="attachment-video-content"
+                                >
+                                    영상설명
+                                </p>
+                                <p style="text-align: justify">&nbsp;</p>
+                            </div>
+                        </div>
+                        <!-- 좋아요 댓글수이모티콘 자리 -->
+                        <div class="detail-btn-wrapper">
+                            <div class="detail-btn-container">
+                                <div class="btn-group">
+                                    <div class="btn-wrapper mr-6">
+                                        <!-- 별점
+                                        <div class="star-rating">
+                                            <span class="star" data-value="1"
+                                                >&#9733;</span
+                                            >
+                                            <span class="star" data-value="2"
+                                                >&#9733;</span
+                                            >
+                                            <span class="star" data-value="3"
+                                                >&#9733;</span
+                                            >
+                                            <span class="star" data-value="4"
+                                                >&#9733;</span
+                                            >
+                                            <span class="star" data-value="5"
+                                                >&#9733;</span
+                                            >
+                                        </div> -->
+                                        <div class="btn-wrapper">
+                                            <p
+                                                class="action-tooltip bottom-action caption-2"
+                                            >
+                                                댓글
+                                            </p>
+                                            <button
+                                                class="reply-btn"
+                                                id="bottom-comment-icon"
+                                            >
+                                                <div
+                                                    class="flex-box btn-box with-text"
+                                                >
+                                                    <img
+                                                        src="https://yozm.wishket.com/static/renewal/img/news/icon_toolbar_comment.png"
+                                                    />
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 댓글내용,작성 -->
+                        <div></div>
+                    </div>
+                    <!-- 메인 오른쪽내용 -->
+                    <div></div>
+                </div>
+                <!-- 댓글과 코드잇사이 여백 -->
+                <div></div>
+            </div>
+            <!-- 왼쪽에 고정되어 있는 버튼들 좋아요 댓글 -->
+            <section class="left-sidebar animated"></section>
+            <!-- 같은 작성자의 다른 작품 -->
+            <div class="detail-footer"></div>
+        </div>
+    </body>
+    <script src="/static/js/video-page/detail.js"></script>
+</html>
