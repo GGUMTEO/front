@@ -61,3 +61,15 @@ replyBtn.addEventListener("mouseover", () => {
 replyBtn.addEventListener("mouseout", () => {
     replyPtag.style.display = "none";
 });
+
+const chargeIimage = document.querySelector(".charge-image");
+
+const chargePtag = document.querySelector(".charge-p");
+
+chargeIimage.addEventListener("mouseover", () => {
+    chargePtag.style.display = "block";
+});
+
+chargeIimage.addEventListener("mouseout", () => {
+    chargePtag.style.display = "none";
+});
