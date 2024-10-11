@@ -100,7 +100,7 @@ html {
 .body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
     font-size: 14px;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .scrapbook-list-box {
@@ -116,6 +116,7 @@ html {
 .scrapbook-list-box .sidebar-menu .sidebar-menu-name-img-set {
     padding: 12px 0px 12px 44px;
 }
+
 
 
 .sidebar-menu .scrapbook-scraps-count {
@@ -266,7 +267,7 @@ html {
 } 
    .container.scrapbook .main-content-container .main-content .content .list-item {
     padding: 32px 0px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #e0e0e0;
 }
 .flex-box {
     display: flex;
@@ -511,122 +512,8 @@ ul li {
     background-repeat: no-repeat;
     transform: rotate(-180deg);
 }
-body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setting-th {
-    padding: 12px 0;
-    border-top: solid 1px #212121;
-    border-bottom: solid 1px #e0e0e0;
-}
-.body-2-medium {
-    font-weight: 500;
-}
 .body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;
-}
-.setting-td:first-child {
-    padding-left: 16px;
-}.setting-td {
-    display: inline-block;
-}
-.size-l {
-    width: 350px;
-}
-.size-s {
-    width: 120px;
-}
-.center-text, body.partners_profile .resume-status-box .status-box {
-    text-align: center;
-}
-.size-m {
-    width: 192px;
-}
-.setting-tr-group {
-    display: inline-block;
-    padding-bottom: 12px;
-    margin-bottom: 12px;
-    border-bottom: solid 1px #e0e0e0;
-}
-.setting-tr {
-    height: auto;
-    overflow: hidden;
-}
-.setting-td.with-sub {
-    padding: 12px 11px;
-}
-.major-span{
-    color: #212121;
-}
-
-.mb4 {
-    margin-bottom: 4px;
-    margin-left: 5px;
-}
-.sub-span {
-    color: #757575;
-    margin-left: 5px;
-}
-.caption-1, #profile_image_edit_modal .modal__body .modal-info-body .base-dot-list .dot-line, .caption-1-bold, .caption-1-medium, .caption-1-light {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-}
-.setting-td.with-text.primary {
-    color: #00a878;
-    font-weight: 600;
-}
-.setting-td.with-text {
-    
-    vertical-align:middle;
-}
-
-.btn-group.choice-group {
-    float: right;
-    display: inline-block;
-    background-color: #eee;
-    border-radius: 4px;
-}
-.btn-choice.active {
-    border: solid 1px #00a878;
-    background-color: #fff;
-    color: #00a878;
-    border-radius: 4px;
-}
-.btn-choice {
-    display: inline-block;
-    cursor: pointer;
-    width: 80px;
-    padding: 8px 0;
-    color: #bdbdbd;
-}
-.radio-value {
-    display: none;
-}
-.btn-choice.active .name {
-    font-weight: 500 !important;
-}
-.btn-choice .name {
-    position: relative;
-   left: -1px;
-}
-.btn-secret {
-    border-left: none;
-}
-.setting-th{
-    padding: 12px 0;
-
-    border-bottom: solid 1px #e0e0e0;
-}
-.container.scrapbook .main-content-container .main-content.read-news-list .content-title-with-btn .all-delete-read-news {
-    display: flex;
-    gap: 6px;
-    align-items: center;
-}
-.body-2-medium {
-    font-weight: 500;
-}
-#replybackornext {
-    margin-bottom: -150px;
-    margin-top: -40px;
-    margin-right: -573px;
 }
