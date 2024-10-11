@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/static/css/main/header-login.css">
-        <title>헤더-로그인</title>
+        <link rel="stylesheet" href="/static/css/main/header-logout.css">
+        <title>헤더-로그아웃</title>
     </head>
     <body>
-        <header class="header-nav sticky-header">
+        <header id="header" class="header-nav">
             <div class="header-gnb">
                 <div class="container">
                     <div class="header-gnb-wrapper">
@@ -43,65 +43,12 @@
                                 src="/static/images/main/search-Icon.png"
                             />
                             </div>
-                            <div class="icon-box">
-                                <div class="divider only-pc"></div>
-                                <!-- 알림 없을 시 -->
-                                <div id="alarm-container-1" class="alarm-container">
-                                    <div class="cursor-pointer"></div>
-                                    <img class="alarm" src="/static/images/main/alarm.png" />
-                                    <!-- 내 알림 div -->
-                                    <div id="alarm-box-1" class="alarm-box">
-                                        <p class="alarm-title">내 알림</p>
-                                        <div class="alarm-name-div margin-botton-15px">
-                                            <p class="alarm-name">영상</p>
-                                        </div>
-                                        <div class="alarm-name-div">
-                                            <p class="alarm-name">글</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 알림 있을 시 -->
-                                <div id="alarm-container-2" class="alarm-container">
-                                    <div class="alarm-dot-div">
-                                        <img
-                                            class="alarm-dot"
-                                            src="/static/images/main/alarm-dot.png"
-                                        />
-                                    </div>
-                                    <img class="alarm" src="/static/images/main/alarm.png" />
-                                    <!-- 내 알림 div -->
-                                    <div id="alarm-box-2" class="alarm-box">
-                                        <p class="alarm-title">내 알림</p>
-                                        <div class="alarm-name-div margin-botton-15px">
-                                            <div class="dot-div-1">
-                                                <img
-                                                    class="alarm-dot"
-                                                    src="/static/images/main/alarm-dot.png"
-                                                />
-                                            </div>
-                                            <p class="alarm-name">영상</p>
-                                        </div>
-                                        <div class="alarm-name-div">
-                                            <div class="dot-div-2">
-                                                <img
-                                                    class="alarm-dot"
-                                                    src="/static/images/main/alarm-dot.png"
-                                                />
-                                            </div>
-                                            <p class="alarm-name">글</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="profile-image" id="profileImage">
-                                <img class="authenticated-user-image user-img pull-right" 
-                                src="/static/images/main/profile-img.png"></div>
+                            <div class="divider only-pc"></div>
                             <div class="button-group-box" id="buttonGroupBox">
                                 <a
-                                    class="btn btn-common-3 btn-logout"
+                                    class="btn"
                                     href=""
-                                    >
-                                    로그아웃</a
+                                    > <img class="kakao-icon" src="/static/images/main/kakao_login_medium_narrow.png"></a
                                 >
                         </div>
                     </div>
@@ -197,6 +144,5 @@
             <div id="background-overlay" class="background-overlay"></div>  
         </div>
     </body>
-    <script src="/static/js/main/header-alarm.js"></script>
     <script src="/static/js/main/header-search.js"></script>
 </html>

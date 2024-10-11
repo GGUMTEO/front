@@ -52,14 +52,6 @@ body {
     width: inherit;
 }
 
-
-.sticky-header {
-    position: sticky;
-    top: 0;
-    background-color: rgba(255, 255, 255, .8);
-    width: 100%;
-}
-
 .header-gnb {
     display: flex;
     background-color: #fff;
@@ -172,135 +164,13 @@ body {
 }
 
 .kakao-icon {
-    width: 12px;
+    width: 150px;
 }
-
-.btn-kakao {
-    color: black;
-    background-color: #ffeb10;
-}
-
-.btn-common-3 {
-    padding: 4px 18px;
-    border-radius: 8px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: normal;
-    text-align: center;
-}
-
-.btn {
-    cursor: pointer;
-}
-
-/* 로그인 시 */
-
-.header-gnb .header-gnb-wrapper .profile-image {
-    padding: 16px 0 0 12px;
-    height: 64px;
-    cursor: pointer;
-}
-
-.header-gnb .header-gnb-wrapper .icon-box img.authenticated-user-image {
-    width: 32px;
-    height: 32px;
-    border-radius: 16px;
-    border: solid 1px #e0e0e0;
-}
-
-.header-gnb .header-gnb-wrapper .profile-image .authenticated-user-image {
-    padding: 2px;
-}
-
-.pull-right {
-    float: right !important;
-}
-
-.btn-logout {
-    color: #7e7e7e;
-    font-weight: 500;
-}
-
-/* 알림 (alarm) */
-
-.alarm-container {
-    position: relative;
-    width: 30px;
-    margin: 0 15px;
-    padding: 1px 0;
-    cursor: pointer;
-}
-
-.cursor-pointer {
-    position: relative;
-    width: 100px;
-}
-
-.alarm {
-    padding-top: 3px;
-    width: 24px;
-}
-
-.alarm-dot {
-    width: 11px;
-}
-
-.alarm-dot-div {
-    position: absolute;
-    display: flex;
-    padding: 0 5px;
-    transform: translateX(55%);
-    bottom: 21px;
-}
-
-
-.alarm-box {
-    font-size: 14px;
-    top: 40px;
-    position: absolute;
-    width: 100px;
-    border: solid 1px rgba(201, 201, 201, 0.329);
-    background: #ffffff;
-    padding: 12px 12px 14px 12px;
-    border-radius: 9px;
-    display: none;
-    cursor: default;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
-}
-
-.alarm-title {
-    margin-bottom: 20px;
-    color: #b8b8b8;
-    font-weight: 500;
-}
-
-.alarm-name-div {
-    font-weight: 700;
-    color: #343434;
-    cursor: pointer;
-}
-
-.margin-botton-15px {
-    margin-bottom: 15px;
-}
-
-.dot-div-1 {
-    position: absolute;
-    top: 38px;
-    left: 40px;
-}
-
-.dot-div-2 {
-    position: absolute;
-    top: 70px;
-    left: 26px;
-}
-
 
 /* 검색 (search) */
 
 .search-full-modal {
-    /* z-index: 10001; */
+    z-index: 10001;
     display: none;
 }
 
@@ -461,6 +331,9 @@ body {
 .search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword+.recent-keyword {
     margin-top: 8px;
 }
+
+
+
 
 
 
