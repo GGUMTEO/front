@@ -1,0 +1,319 @@
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 700;
+    src: url("/fonts/NotoSansKR-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 500;
+    src: url("/fonts/NotoSansKR-Medium.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 400;
+    src: url("/fonts/NotoSansKR-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 300;
+    src: url("/fonts/NotoSansKR-Light.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 100;
+    src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
+}
+
+body {
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: "NotoSansKR", "Sans-serif";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+}
+
+.gaia {
+    min-width: 1080px;
+    height: auto;
+    min-height: 70%;
+}
+
+.project-detail-view {
+    margin-top: 20px;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.project-detail-view .container {
+    width: 1080px;
+}
+
+.project-detail-view .detail-section {
+    display: flex;
+}
+
+.project-detail-view .detail-section .project-section {
+    width: 800px;
+}
+
+.project-detail-view .detail-section .client-section-wrap {
+    position: relative;
+    margin-left: 24px;
+}
+
+.project-detail-view .detail-section::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.project-detail-view .container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.project-detail-view::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.gaia:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.mb24 {
+    margin-bottom: 24px;
+}
+
+.project-detail-view .project-content-layer {
+    padding: 24px 32px 32px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
+}
+
+.mb8, .wishket-bg-card-tip .wishket-bg-card-tip-contents .tip-content .tip-content-box .tip-content-title {
+    margin-bottom: 8px;
+}
+
+.subtitle-1, .subtitle-1-bold, .subtitle-1-medium, .subtitle-1-light {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.subtitle-1-medium {
+    font-weight: 500;
+}
+
+.body-1, #profile_image_edit_modal .modal__footer button, .body-1-bold, .body-1-medium, .body-1-light {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.mb12 {
+    margin-bottom: 12px;
+}
+
+.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.body-3, .body-3-bold, .body-3-medium, .body-3-light {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.body-3-bold {
+    font-weight: 700;
+}
+
+.text900 {
+    color: #212121;
+}
+
+.project-detail-view .detail-section .layer-divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.project-content-layer .project-important-condition.term_based {
+    display: flex;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info {
+    border-radius: 8px;
+    padding: 20px 24px 24px 24px;
+    background-color: #fff;
+    border: 1px solid #e6ebf0;
+    border-left: 4px solid #00a878;
+    width: 100%;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-role {
+    border-bottom: 1px solid #e6ebf0;
+    padding-bottom: 20px;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail {
+    padding-top: 20px;
+}
+
+.text500 {
+    color: #757575;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info.level {
+    width: 140px;
+}
+
+.tooltip-group {
+    position: relative;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info .label-inline-tooltip {
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.tooltip-group .tooltip-hover, .tooltip-group .tooltip-click {
+    cursor: pointer;
+}
+
+.project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info.level img {
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 4px;
+    margin-top: 3px;
+}
+
+.tooltip-group .tooltip-text {
+    margin-top: -50%;
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    visibility: hidden;
+    background-color: #fff;
+    padding: 24px;
+    position: absolute;
+    left: 125%;
+    z-index: 300;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
+    opacity: 0;
+    word-break: keep-all;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info .label-inline-tooltip .tooltip-text {
+    width: 300px;
+}
+
+.tooltip-group .tooltip-text:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info.experience {
+    width: calc(100% - 342px);
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info.budget {
+    text-align: right;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row {
+    margin-top: 12px;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info.level {
+    width: 140px;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info-wrapper {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 539px;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info.experience {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info.experience:after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    border-bottom: dashed 1px #e6ebf0;
+    margin: 0 16px;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info.budget {
+    text-align: right;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-condition {
+    padding: 12px 16px 16px;
+    margin-top: 24px;
+    background-color: #f7fafc;
+    border-radius: 8px;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-condition .target-condition-row .condition-row-title {
+    width: 108px;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-condition .target-condition-row .condition-row-data {
+    display: inline-block;
+}
+

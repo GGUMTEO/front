@@ -476,3 +476,11 @@ a {
     vertical-align: middle;
     color: #444;
 }
+
+.default-input-wishket.icon-right>input:hover {
+    border-color: #3ba3c7;
+}
+
+.default-input-wishket.icon-right>input:focus {
+    border-color: #3ba3c7;
+}
