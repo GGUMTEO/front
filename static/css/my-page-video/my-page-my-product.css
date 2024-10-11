@@ -100,7 +100,7 @@ html {
 .body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
     font-size: 14px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .scrapbook-list-box {
@@ -117,12 +117,6 @@ html {
     padding: 12px 0px 12px 44px;
 }
 
-.icon-scrap-off {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-    background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_menu_scrap_off.png);
-}
 
 .sidebar-menu .scrapbook-scraps-count {
     margin: 0px 6px;
@@ -630,13 +624,4 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 }
 .body-2-medium {
     font-weight: 500;
-}
-.all-delete-read-news .icon-edit-delete {
-    margin-right: 6px;
-}
-.icon-edit-delete {
-    width: 16px;
-    height: 16px;
-    margin-right: 22px;
-    background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_edit_delete.png);
 }

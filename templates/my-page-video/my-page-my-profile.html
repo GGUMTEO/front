@@ -3,8 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/static/css/my-page-video/my-page.css" />
-        <title>내 활동 내역</title>
+        <link
+            rel="stylesheet"
+            href="/static/css/my-page-video/my-page-my-profile.css"
+        />
+        <title>내 정보 수정</title>
     </head>
     <body>
         <div class="layout">
@@ -240,163 +243,80 @@
                                     class="subtitle-2-medium text900"
                                     style="font-weight: 600"
                                 >
-                                    나의 활동내역
+                                    내 정보 수정
                                 </div>
                             </div>
-                            <div class="last-open-scrapbooks">
-                                <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="내 작품"
-                                    name="btn-link"
-                                >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
-                                    />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            내 작품
-                                        </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
-                                        </div>
+                            <div class="inquiry-add-content-box">
+                                <div class="inquiry-name inquiry-detail">
+                                    <div class="label-input-partner">
+                                        <input
+                                            class="required theme-partner wishket-label-input"
+                                            data-type="label"
+                                            name="title"
+                                            onkeyup="max_input(this, 100)"
+                                            type="text"
+                                            value=""
+                                        />
+                                        <label>문의사항 제목 *</label>
                                     </div>
+                                    <span
+                                        class="error-text"
+                                        style="display: none"
+                                        >에러상세 메시지</span
+                                    >
+                                </div>
+                                <div class="input-guide-helpertext">
+                                    접수하실 문의사항에 제목을 작성해주세요. 예)
+                                    결제관련 문의드립니다.
                                 </div>
                                 <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="내가 구매한 작품"
-                                    name="btn-link"
+                                    class="mb24 inquiry-description-box inquiry-detail"
                                 >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
+                                    <div class="mb16 body-2-bold text900">
+                                        문의내용 작성
+                                        <span class="star">*</span>
+                                    </div>
+                                    <input
+                                        hidden=""
+                                        id="is_changed_textarea"
+                                        type="checkbox"
                                     />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            내가 구매한 작품
+                                    <div class="ui-textarea-partner">
+                                        <div class="textarea__border">
+                                            <textarea
+                                                class="required wishket-textarea theme-partner expand"
+                                                maxlength="5000"
+                                                name="description"
+                                                style="min-height: 402px"
+                                            ></textarea>
                                         </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
-                                        </div>
+                                        <span
+                                            class="error-text"
+                                            style="display: none"
+                                            >에러상세 메시지</span
+                                        ><span class="word-length">0/5000</span>
                                     </div>
                                 </div>
-                                <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="나의 펀딩"
-                                    name="btn-link"
-                                >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
-                                    />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            나의 펀딩
-                                        </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="inquiry-footer">
+                                <div class="button-box">
+                                    <button
+                                        class="btn btn-11-24 btn-gray btn-back"
+                                    >
+                                        취소</button
+                                    ><button
+                                        class="btn btn-11-24 btn-partner btn-submit"
+                                        type="button"
+                                    >
+                                        등록
+                                    </button>
                                 </div>
                                 <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="결제한 펀딩"
-                                    name="btn-link"
+                                    class="body-3 btn-help-box"
+                                    style="display: none"
                                 >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
-                                    />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            결제한 펀딩
-                                        </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="나의 모집"
-                                    name="btn-link"
-                                >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
-                                    />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            나의 모집
-                                        </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="내가 신청한 모집"
-                                    name="btn-link"
-                                >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
-                                    />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            내가 신청한 모집
-                                        </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="btn last-open-scrapbook"
-                                    data-page="scrapbook-detail"
-                                    data-scrapbook-id="56256"
-                                    data-scrapbook-title="내가 단 리뷰"
-                                    name="btn-link"
-                                >
-                                    <img
-                                        class="only-pc"
-                                        src="https://yozm.wishket.com/static/renewal/img/news/m_icon_scrap_folder.png"
-                                    />
-                                    <div class="last-open-scrapbook-info">
-                                        <div
-                                            class="body-1-medium scrapbook-title"
-                                        >
-                                            내가 단 리뷰
-                                        </div>
-                                        <div class="body-2 text600">
-                                            0개의 콘텐츠
-                                        </div>
-                                    </div>
+                                    <span class="star"><b>* 필수 항목</b></span
+                                    >을 모두 작성해 주세요.
                                 </div>
                             </div>
                         </div>
@@ -406,5 +326,5 @@
         </div>
     </body>
 
-    <script src="/static/js/my-page-video/my-page.js"></script>
+    <script src="/static/js/my-page-video/my-page-my-profile.js"></script>
 </html>
