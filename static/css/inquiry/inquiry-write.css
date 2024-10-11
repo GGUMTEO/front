@@ -338,3 +338,66 @@
 .inquiry-add-content-box .inquiry-description-box .word-length {
     display: none;
 }
+
+.inquiry-footer {
+    border-top: solid 1px #e0e0e0;
+    padding: 20px;
+}
+
+.inquiry-footer {
+    padding: 32px 32px;
+}
+
+.button-box {
+    margin-top: -4px;
+    float: right;
+}
+
+.inquiry-footer .button-box {
+    margin: -24px;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+.btn-11-24, .body-1-bold, .form-input-label, .btn-lg, .body-1-medium, .meeting-apply-modal .modal-inner .modal-body .modal-main-content .modal-main-content-pick .modal-main-content-pick-date .pick-date-set .pick-date-set-day, .body-1-light {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-11-24 {
+    padding: 11px 24px;
+}
+
+.btn-gray {
+    background-color: #a1a6ad;
+    color: #fff;
+}
+
+.button-box .btn {
+    width: 96px;
+}
+
+.btn-partner, .btn-partner-not-active {
+    background-color: #00a878;
+    color: #fff;
+    border: #00a878;
+}
+
+.button-box .btn+.btn {
+    margin-left: 16px;
+}
