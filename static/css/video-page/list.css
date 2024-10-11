@@ -247,6 +247,7 @@ a {
     line-height: 18px;
     font-weight: 400;
     margin-bottom: 10px;
+    justify-content: space-between;
 }
 .caption-2 {
     font-size: 12px;
@@ -353,4 +354,16 @@ li:last-child > .page-link {
     color: #3ba3c7;
     border-color: #bdbdbd;
     border-radius: 2px;
+}
+.content-meta-elem.meta-icon {
+    width: 16px;
+    height: 16px;
+}
+.content-meta-elem {
+    display: inline-block;
+    line-height: 20px;
+}
+.mr-4 {
+    margin-right: -100px !important;
+    margin-top: 2px;
 }
