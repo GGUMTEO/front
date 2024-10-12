@@ -334,7 +334,7 @@ button {
 }
 .comment-box {
     padding: 24px 0px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #e0e0e0;
 }
 .comment-writer-img {
     position: absolute;
@@ -532,6 +532,7 @@ li:last-child > .page-link {
     font-size: 13px;
     line-height: 20px;
 }
+/* 미디어쿼리 minwidth 1080 */
 .right-content-container {
     margin-top: 80px;
     width: 280px;
@@ -544,7 +545,7 @@ li:last-child > .page-link {
     box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.04);
     height: 230px;
     position: fixed;
-    right: 130px;
+    right: 320px;
 }
 .right-content-list {
     position: relative;
@@ -675,6 +676,7 @@ li:last-child > .page-link {
     width: 720px;
 }
 .other-list-title-layer {
+    border-top: 2px solid #eee;
     display: flex;
     justify-content: space-between;
     padding: 40px 0 32px 0;
@@ -741,4 +743,74 @@ li:last-child > .page-link {
 .item-main {
     width: 100%;
     display: block;
+}
+.list-item-category {
+    display: inline-block;
+    margin-bottom: 6px;
+}
+.body-3 {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.item-main .item-title {
+    font-size: 18px;
+    line-height: 28px;
+    width: 100%;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+.link-text {
+    font-weight: 500;
+    color: inherit !important;
+}
+.content-meta {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    color: #424242;
+}
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+.meta-icon {
+    width: 16px;
+    height: 16px;
+}
+.content-meta-elem {
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 8px;
+}
+
+.mr-4 {
+    margin-right: 4px !important;
+}
+.author-info {
+    margin-top: 16px;
+}
+.author-image {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border: solid 1px #e0e0e0;
+    border-radius: 10px;
+}
+.author-name {
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #9e9e9e;
+}
+.line-divider {
+    max-width: 720px;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #eee;
 }
