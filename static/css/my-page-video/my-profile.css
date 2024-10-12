@@ -393,7 +393,15 @@ button {
     font-weight: 500;
 }
 textarea.wishket-label-input {
+    font-family: 'NotoSansKR', Sans-serif; /* 동일한 글씨체로 설정 */
+    font-size: 14px; /* 동일한 글자 크기 */
+    line-height: 24px;
+    color: #616161;
     min-height: 100px;
     max-height: 300px;
     resize: none; /* 사용자가 크기를 변경하지 못하게 설정 */
+}
+
+.inquiry-name{
+    margin-bottom: 15px;
 }

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             rel="stylesheet"
-            href="/static/css/my-page-video/my-page-my-profile.css"
+            href="/static/css/my-page-video/my-profile.css"
         />
         <title>내 정보 수정</title>
     </head>
@@ -268,7 +268,8 @@
                                                 name="title"
                                                 onkeyup="max_input(this, 100)"
                                                 type="text"
-                                                placeholder="이름"
+                                                id="name"
+                                                placeholder="예) 홍길동"
                                                 value=""
                                                 style="
                                                     outline: none;
@@ -290,7 +291,8 @@
                                                 name="title"
                                                 onkeyup="max_input(this, 100)"
                                                 type="text"
-                                                placeholder="나이"
+                                                id="age"
+                                                placeholder="예) 21"
                                                 value=""
                                                 style="
                                                     outline: none;
@@ -312,7 +314,8 @@
                                                 name="title"
                                                 onkeyup="max_input(this, 100)"
                                                 type="text"
-                                                placeholder="이메일"
+                                                id="email"
+                                                placeholder="예) ggumteo@naver.com"
                                                 value=""
                                                 style="
                                                     outline: none;
@@ -334,7 +337,8 @@
                                                 name="title"
                                                 onkeyup="max_input(this, 100)"
                                                 type="text"
-                                                placeholder="전화번호"
+                                                id="phonenumber"
+                                                placeholder="예) 01099999999 (-는 작성하지 않습니다)"
                                                 value=""
                                                 style="
                                                     outline: none;
@@ -357,9 +361,10 @@
                                                 class="required theme-partner wishket-label-input"
                                                 data-type="label"
                                                 name="description"
+                                                id="addwrite"
                                                 oninput="resizeTextarea(this)"
                                                 rows="3"
-                                                placeholder="추가사항을 입력하세요"
+                                                placeholder="추가사항을 입력해주세요"
                                                 maxlength="969"
                                                 style="
                                                     outline: none;
@@ -403,5 +408,5 @@
         </div>
     </body>
 
-    <script src="/static/js/my-page-video/my-page-my-profile.js"></script>
+    <script src="/static/js/my-page-video/my-profile.js"></script>
 </html>
