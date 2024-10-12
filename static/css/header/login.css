@@ -94,11 +94,11 @@ body {
     align-items: flex-start;
 }
 
-.text-color {
+.category-color {
     color: #212121;
 }
 
-.text-color:hover {
+.category-color:hover {
     color: #002fff;
 }
 
@@ -128,11 +128,6 @@ body {
     cursor: pointer;
 }
 
-.flex-box {
-    display: flex;
-    align-items: center;
-}
-
 .icon-box .divider {
     height: 16px;
     margin: 0px 4px;
@@ -144,7 +139,6 @@ body {
     background-color: #e0e0e0;
 }
 
-/* icon : cursor 맞출지 */
 .header-gnb .icon {
     cursor: pointer;
 }
@@ -154,7 +148,7 @@ body {
     padding: 4px;
 }
 
-.button-group-box {
+.btn-box {
     margin-left: 15px;
 }
 
