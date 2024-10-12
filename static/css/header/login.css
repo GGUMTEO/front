@@ -52,14 +52,6 @@ body {
     width: inherit;
 }
 
-
-.sticky-header {
-    position: sticky;
-    top: 0;
-    background-color: rgba(255, 255, 255, .8);
-    width: 100%;
-}
-
 .header-gnb {
     display: flex;
     background-color: #fff;
@@ -78,14 +70,14 @@ body {
     align-items: center;
 }
 
-.header-gnb .header-gnb-wrapper .sub-navigation-logo {
+.header-gnb .header-gnb-wrapper .category-navigation-logo {
     display: flex;
     align-items: center;
     margin-right: 10px;
     padding: 26px 0;
 }
 
-.logo-test {
+.test-logo {
     width: 90px;
 }
 
@@ -93,30 +85,24 @@ body {
     display: flex !important;
 }
 
-.flex-box {
-    display: flex;
-    align-items: center;
-}
-
-.header-gnb .sub-navigation-wrapper .sub-navigation {
+.header-gnb .category-navigation-wrapper .category-navigation {
     padding: 24px 16px;
 }
 
-.header-gnb .sub-navigation-wrapper .sub-navigation div {
+.header-gnb .category-navigation-wrapper .category-navigation div {
     display: flex;
     align-items: flex-start;
 }
 
-
-.text900 {
+.category-color {
     color: #212121;
 }
 
-.text900:hover {
+.category-color:hover {
     color: #002fff;
 }
 
-.body-2-medium {
+.category {
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;
@@ -142,11 +128,6 @@ body {
     cursor: pointer;
 }
 
-.flex-box {
-    display: flex;
-    align-items: center;
-}
-
 .icon-box .divider {
     height: 16px;
     margin: 0px 4px;
@@ -162,25 +143,37 @@ body {
     cursor: pointer;
 }
 
-.icon-box .search-icon {
+.icon-box .icon-search {
     height: 25px;
     padding: 4px;
 }
 
-.button-group-box {
+.btn-box {
     margin-left: 15px;
 }
 
-.kakao-icon {
-    width: 12px;
+/* 로그인 시 */
+
+.header-gnb-wrapper .profile-image {
+    padding: 16px 0 0 12px;
+    height: 64px;
+    cursor: pointer;
 }
 
-.btn-kakao {
-    color: black;
-    background-color: #ffeb10;
+.icon-box img.authenticated-member-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: solid 1px #e0e0e0;
 }
 
-.btn-common-3 {
+.profile-image .authenticated-member-image {
+    padding: 2px;
+}
+
+.logout {
+    color: #7e7e7e;
+    font-weight: 500;
     padding: 4px 18px;
     border-radius: 8px;
     font-size: 14px;
@@ -189,41 +182,9 @@ body {
     text-align: center;
 }
 
-.btn {
-    cursor: pointer;
-}
+/* 알림 (notification) */
 
-/* 로그인 시 */
-
-.header-gnb .header-gnb-wrapper .profile-image {
-    padding: 16px 0 0 12px;
-    height: 64px;
-    cursor: pointer;
-}
-
-.header-gnb .header-gnb-wrapper .icon-box img.authenticated-user-image {
-    width: 32px;
-    height: 32px;
-    border-radius: 16px;
-    border: solid 1px #e0e0e0;
-}
-
-.header-gnb .header-gnb-wrapper .profile-image .authenticated-user-image {
-    padding: 2px;
-}
-
-.pull-right {
-    float: right !important;
-}
-
-.btn-logout {
-    color: #7e7e7e;
-    font-weight: 500;
-}
-
-/* 알림 (alarm) */
-
-.alarm-container {
+.noti-bell-container {
     position: relative;
     width: 30px;
     margin: 0 15px;
@@ -231,21 +192,16 @@ body {
     cursor: pointer;
 }
 
-.cursor-pointer {
-    position: relative;
-    width: 100px;
-}
-
-.alarm {
+.icon-noti-bell {
     padding-top: 3px;
     width: 24px;
 }
 
-.alarm-dot {
+.noti-dot {
     width: 11px;
 }
 
-.alarm-dot-div {
+.noti-dot-div {
     position: absolute;
     display: flex;
     padding: 0 5px;
@@ -254,7 +210,7 @@ body {
 }
 
 
-.alarm-box {
+.noti-modal {
     font-size: 14px;
     top: 40px;
     position: absolute;
@@ -268,19 +224,19 @@ body {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
 }
 
-.alarm-title {
+.noti-header {
     margin-bottom: 20px;
     color: #b8b8b8;
     font-weight: 500;
 }
 
-.alarm-name-div {
+.noti-item {
     font-weight: 700;
     color: #343434;
     cursor: pointer;
 }
 
-.margin-botton-15px {
+.margin-bottom-15px {
     margin-bottom: 15px;
 }
 
@@ -300,11 +256,7 @@ body {
 /* 검색 (search) */
 
 .search-full-modal {
-    /* z-index: 10001; */
     display: none;
-}
-
-.full-modal, .yozm-full-modal, .account-full-modal, .search-full-modal {
     left: 0;
     top: 0;
     width: 100%;
@@ -323,20 +275,11 @@ body {
     align-items: center;
 }
 
-.container {
-    width: 1080px;
-    margin: 0 auto;
-}
-
-.search-full-modal .search-icon{
+.search-full-modal .icon-search{
     width: 14px;
 }
 
-.search-full-modal .close-icon {
-    width: 18px;
-}
-
-.search-full-modal .search-part .news-search-input {
+.search-full-modal .search-part .search-input {
     width: calc(100% - 72px);
     margin: 0 12px;
     border: none;
@@ -350,8 +293,9 @@ body {
     color: #616161;
 }
 
-.search-full-modal .search-part .close-icon {
+.search-full-modal .search-part .icon-close {
     cursor: pointer;
+    width: 18px;
 }
 
 .search-full-modal .search-sub-part {
@@ -360,12 +304,7 @@ body {
     padding: 32px 0 48px;
 }
 
-.container {
-    width: 1080px;
-    margin: 0 auto;
-}
-
-.search-full-modal .search-sub-part .title {
+.search-full-modal .search-sub-part .recent-keyword-label {
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -377,7 +316,7 @@ body {
     color: #212121;
 }
 
-.search-full-modal .search-sub-part .title .sub-action {
+.search-full-modal .search-sub-part .recent-keyword-label .sub-action {
     font-size: 13px;
     font-weight: 500;
     font-stretch: normal;
@@ -413,11 +352,7 @@ body {
     color: #9e9e9e;
 }
 
-/* .search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper.empty .recent-keyword-list {
-    display: none;
-} */
-
-.full-modal .background-overlay, .yozm-full-modal .background-overlay, .account-full-modal .background-overlay, .search-full-modal .background-overlay {
+.search-full-modal .background-overlay {
     content: "";
     display: block;
     position: fixed;
@@ -428,7 +363,7 @@ body {
     z-index: 2;
 }
 
-.delete-icon {
+.icon-delete {
     width: 10px;
 }
 
@@ -437,7 +372,7 @@ body {
     align-items: center;
 }
 
-.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword .keyword-title {
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword .keyword-text {
     max-width: calc(100% - 24px);
     cursor: pointer;
     font-size: 14px;

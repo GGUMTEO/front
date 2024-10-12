@@ -1,13 +1,13 @@
 const searchBox = document.getElementById("search-box");
 const searchFullModal = document.getElementById("search-full-modal");
-const closeIcon = document.getElementById("close-icon");
+const iconClose = document.getElementById("icon-close");
 const backgroundOverlay = document.getElementById("background-overlay");
 
 searchBox.addEventListener("click", () => {
     searchFullModal.style.display = "block";
 });
 
-closeIcon.addEventListener("click", () => {
+iconClose.addEventListener("click", () => {
     searchFullModal.style.display = "none";
 });
 
