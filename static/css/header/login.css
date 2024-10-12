@@ -94,11 +94,11 @@ body {
     align-items: flex-start;
 }
 
-.text-color {
+.category-color {
     color: #212121;
 }
 
-.text-color:hover {
+.category-color:hover {
     color: #002fff;
 }
 
@@ -128,11 +128,6 @@ body {
     cursor: pointer;
 }
 
-.flex-box {
-    display: flex;
-    align-items: center;
-}
-
 .icon-box .divider {
     height: 16px;
     margin: 0px 4px;
@@ -144,7 +139,6 @@ body {
     background-color: #e0e0e0;
 }
 
-/* icon : cursor 맞출지 */
 .header-gnb .icon {
     cursor: pointer;
 }
@@ -154,7 +148,7 @@ body {
     padding: 4px;
 }
 
-.button-group-box {
+.btn-box {
     margin-left: 15px;
 }
 
@@ -188,9 +182,9 @@ body {
     text-align: center;
 }
 
-/* 알림 (alarm) */
+/* 알림 (notification) */
 
-.alarm-container {
+.noti-bell-container {
     position: relative;
     width: 30px;
     margin: 0 15px;
@@ -198,16 +192,16 @@ body {
     cursor: pointer;
 }
 
-.icon-alarm {
+.icon-noti-bell {
     padding-top: 3px;
     width: 24px;
 }
 
-.alarm-dot {
+.noti-dot {
     width: 11px;
 }
 
-.alarm-dot-div {
+.noti-dot-div {
     position: absolute;
     display: flex;
     padding: 0 5px;
@@ -216,7 +210,7 @@ body {
 }
 
 
-.alarm-modal {
+.noti-modal {
     font-size: 14px;
     top: 40px;
     position: absolute;
@@ -230,19 +224,19 @@ body {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
 }
 
-.alarm-title {
+.noti-header {
     margin-bottom: 20px;
     color: #b8b8b8;
     font-weight: 500;
 }
 
-.alarm-item {
+.noti-item {
     font-weight: 700;
     color: #343434;
     cursor: pointer;
 }
 
-.margin-botton-15px {
+.margin-bottom-15px {
     margin-bottom: 15px;
 }
 
