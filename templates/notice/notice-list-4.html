@@ -1,0 +1,250 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* 배경색 유지 */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px; /* 컨테이너 너비 조정 */
+            margin: 30px auto; /* 상하 마진 조정 */
+            background-color: #f5f5f5; /* 배경색과 동일하게 설정 */
+            padding: 20px;
+        }
+
+        /* Title과 Subtitle을 하나의 박스로 묶기 */
+        .title-subtitle-box {
+            padding: 30px 15px 15px 15px; /* 위쪽 padding을 키우고 나머지 유지 */
+            margin-bottom: 10px; /* 두 박스 사이 간격 최소화 */
+            background-color: white; /* 배경색을 흰색으로 설정 */
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 가벼운 그림자 효과 */
+        }
+
+        h1 {
+            text-align: left;
+            font-size: 20px; /* 글자 크기 유지 */
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: left;
+            font-size: 12px; /* 글자 크기 유지 */
+            color: gray;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 10px; /* 두 박스 간격 최소화 */
+        }
+
+        .search-bar input {
+            padding: 4px 6px; /* 위아래 padding을 줄여서 더 납작하게 */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 12px; /* 검색창 글자 크기 축소 */
+            width: 180px; /* 검색창 너비 축소 */
+        }
+
+        .search-bar button {
+            padding: 6px 10px; /* 검색 버튼도 위아래 padding을 줄여 납작하게 */
+            background-color: #005f99; /* 검색 버튼 색을 진한 파랑으로 설정 */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        /* Table과 Pagination을 하나의 박스로 묶기 */
+        .table-pagination-box {
+            padding: 15px; /* 패딩 균형 맞춤 */
+            margin-bottom: 20px;
+            background-color: white; /* 배경색 흰색으로 설정 */
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 가벼운 그림자 효과 */
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 14px; /* 테이블 글자 크기 축소 */
+        }
+
+        table th, table td {
+            padding: 8px; /* 패딩 축소 */
+            border: 1px solid #ddd;
+            text-align: left; 
+        }
+
+        /* 번호, 구분, 등록일 열만 중앙 정렬 */
+        table th:nth-child(1),
+        table th:nth-child(2),
+        table th:nth-child(4),
+        table td:nth-child(1),
+        table td:nth-child(2),
+        table td:nth-child(4) {
+            text-align: center;
+        }
+
+        /* 제목만 가운데 정렬 */
+        .center-title {
+            text-align: center;
+        }
+
+        table th {
+            background-color: #f7f7f7;
+            font-weight: bold;
+        }
+
+        table td {
+            white-space: nowrap;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination span {
+            display: inline-block;
+            padding: 8px 12px;
+            margin: 0 4px;
+            color: #333;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .pagination span:hover {
+            color: #005f99;
+        }
+
+        .pagination span.active {
+            color: #005f99;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Title과 Subtitle을 하나의 박스로 묶음 -->
+    <div class="title-subtitle-box">
+        <h1>공지사항</h1>
+        <div class="subtitle">꿈터의 새로운 소식을 확인할 수 있습니다.</div>
+    </div>
+
+    <div class="search-bar">
+        <input type="text">
+        <button>검색</button>
+    </div>
+
+    <!-- Table과 Pagination을 하나의 박스로 묶음 -->
+    <div class="table-pagination-box">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>구분</th>
+                        <th class="center-title">제목</th> <!-- 제목만 가운데 정렬 -->
+                        <th>등록일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>273</td>
+                        <td>공지사항</td>
+                        <td>[공지사항] 꿈터 이용약관 및 개인정보 처리방침 일부 개정 안내</td>
+                        <td>2024.03.14</td>
+                    </tr>
+                    <tr>
+                        <td>272</td>
+                        <td>공지사항</td>
+                        <td>[공지사항] 2024년 설 연휴 꿈터 휴무 안내</td>
+                        <td>2024.02.07</td>
+                    </tr>
+                    <tr>
+                        <td>271</td>
+                        <td>공지사항</td>
+                        <td>[공지사항] 2023년 추석 연휴 꿈터 휴무 안내</td>
+                        <td>2023.09.26</td>
+                    </tr>
+                    <tr>
+                        <td>270</td>
+                        <td>꿈터 이용 팀</td>
+                        <td>정부지원사업 창업가를 위한 꿈터 이용 가이드</td>
+                        <td>2023.09.14</td>
+                    </tr>
+                    <tr>
+                        <td>269</td>
+                        <td>프로젝트 성공사례</td>
+                        <td>MVP 제작, 외주로 개발하려는 스타트업이 꼭 알아야 할 3가지</td>
+                        <td>2023.08.24</td>
+                    </tr>
+                    <tr>
+                        <td>268</td>
+                        <td>꿈터 이용 팀</td>
+                        <td>정부지원사업 앱/웹 개발, 외주 플랫폼 써도 될까? 5분 팩트 체크</td>
+                        <td>2023.03.24</td>
+                    </tr>
+                    <tr>
+                        <td>267</td>
+                        <td>꿈터 이용 팀</td>
+                        <td>정부지원사업 외주 개발사, 어떤 기준으로 골라야 할까?</td>
+                        <td>2023.03.24</td>
+                    </tr>
+                    <tr>
+                        <td>266</td>
+                        <td>프로젝트 성공사례</td>
+                        <td>정부지원사업 선정기기 개발사 13군데 만나보고 얻은 외주 노하우</td>
+                        <td>2023.03.24</td>
+                    </tr>
+                    <tr>
+                        <td>265</td>
+                        <td>프로젝트 성공사례</td>
+                        <td>기획만 있던 매출도 없는 메시지 프로젝트, 아웃소싱으로 해낸 후기: S사 시스템 운영팀 김동주님 인터뷰</td>
+                        <td>2023.03.09</td>
+                    </tr>
+                    <tr>
+                        <td>264</td>
+                        <td>프로젝트 성공사례</td>
+                        <td>IT 아웃소싱이 회사 성장에 ‘도움이 된다'는 확신이 든 순간: 씨드로닉스 CTO 김한근 님 인터뷰</td>
+                        <td>2023.03.09</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>→</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
