@@ -160,25 +160,21 @@ body {
 
 /* 로그인 시 */
 
-.header-gnb .header-gnb-wrapper .profile-image {
+.header-gnb-wrapper .profile-image {
     padding: 16px 0 0 12px;
     height: 64px;
     cursor: pointer;
 }
 
-.header-gnb .header-gnb-wrapper .icon-box img.authenticated-member-image {
+.icon-box img.authenticated-member-image {
     width: 32px;
     height: 32px;
     border-radius: 16px;
     border: solid 1px #e0e0e0;
 }
 
-.header-gnb .header-gnb-wrapper .profile-image .authenticated-member-image {
+.profile-image .authenticated-member-image {
     padding: 2px;
-}
-
-.pull-right {
-    float: right !important;
 }
 
 .logout {
@@ -267,9 +263,6 @@ body {
 
 .search-full-modal {
     display: none;
-}
-
-.full-modal, .yozm-full-modal, .account-full-modal, .search-full-modal {
     left: 0;
     top: 0;
     width: 100%;
@@ -292,11 +285,7 @@ body {
     width: 14px;
 }
 
-.search-full-modal .icon-close {
-    width: 18px;
-}
-
-.search-full-modal .search-part .news-search-input {
+.search-full-modal .search-part .search-input {
     width: calc(100% - 72px);
     margin: 0 12px;
     border: none;
@@ -312,6 +301,7 @@ body {
 
 .search-full-modal .search-part .icon-close {
     cursor: pointer;
+    width: 18px;
 }
 
 .search-full-modal .search-sub-part {
@@ -320,7 +310,7 @@ body {
     padding: 32px 0 48px;
 }
 
-.search-full-modal .search-sub-part .title {
+.search-full-modal .search-sub-part .recent-keyword-label {
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -332,7 +322,7 @@ body {
     color: #212121;
 }
 
-.search-full-modal .search-sub-part .title .sub-action {
+.search-full-modal .search-sub-part .recent-keyword-label .sub-action {
     font-size: 13px;
     font-weight: 500;
     font-stretch: normal;
@@ -368,7 +358,7 @@ body {
     color: #9e9e9e;
 }
 
-.full-modal .background-overlay, .yozm-full-modal .background-overlay, .account-full-modal .background-overlay, .search-full-modal .background-overlay {
+.search-full-modal .background-overlay {
     content: "";
     display: block;
     position: fixed;
@@ -388,7 +378,7 @@ body {
     align-items: center;
 }
 
-.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword .keyword-title {
+.search-full-modal .search-sub-part .recent-keyword-part .recent-keyword-part-wrapper .recent-keyword-list .recent-keyword .keyword-text {
     max-width: calc(100% - 24px);
     cursor: pointer;
     font-size: 14px;
