@@ -36,7 +36,6 @@ html {
     font-family: "NotoSansKR", Sans-serif;
     line-height: 1rem;
 }
-
 body {
     height: 100%;
 }
@@ -532,7 +531,7 @@ li:last-child > .page-link {
     font-size: 13px;
     line-height: 20px;
 }
-/* 미디어쿼리 minwidth 1080 */
+/* 기본 스타일 */
 .right-content-container {
     margin-top: 80px;
     width: 280px;
@@ -547,11 +546,29 @@ li:last-child > .page-link {
     position: fixed;
     right: 320px;
 }
+
+@media screen and (max-width: 1405px) {
+    .right-content-container {
+        right: 100px;
+    }
+}
+
 .right-content-list {
     position: relative;
     z-index: 2;
 }
+.right-content-list-2 {
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+}
 .right-content-title {
+    align-items: center;
+    margin-bottom: 16px;
+}
+.right-content-title-2 {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
 }
@@ -813,4 +830,36 @@ li:last-child > .page-link {
     margin: 0 auto;
     height: 1px;
     background-color: #eee;
+}
+.side-card-list-box-2 {
+    display: flex;
+    flex-direction: column;
+}
+.side-card-list-2 {
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    gap: 16px;
+}
+.thumbnail-other-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    object-fit: cover;
+}
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.text900 {
+    color: #212121;
+}
+.body-2-medium {
+    font-weight: 500;
+}
+.body-2-medium {
+    font-size: 14px;
+    line-height: 24px;
 }
