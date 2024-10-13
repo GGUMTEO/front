@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>오디션 신청하기</title>
+        <link rel="stylesheet" href="/static/css/audition/application.css" />
+    </head>
+    <body>
+        <header class="header"></header>
+        <a class="advertisement" id="nav_advertisement"></a>
+        <main>
+            <div class="gaia">
+                <div class="project-create-formview">
+                    <div
+                        class="container"
+                        style="
+                            display: flex;
+                            flex-direction: row;
+                            gap: 33px;
+                            justify-content: center;
+                        "
+                    >
+                        <div style="width: 256px"></div>
+                        <div
+                            class="project-create-form-section"
+                            id="form_project_consulting"
+                            style="width: 460px"
+                        >
+                            <div class="form-section-header">
+                                <p class="form-section-title subtitle-1">
+                                    오디션 신청 양식
+                                </p>
+                            </div>
+                            <div class="form-input-section-box">
+                                <form
+                                    class="form-group-light"
+                                    method=""
+                                    onsubmit="event.preventDefault(); return validateForm();"
+                                >
+                                    <div id="temporary_project_phase_create">
+                                        <div
+                                            class="form-input"
+                                            style="margin-bottom: 48px"
+                                        >
+                                            <label
+                                                class="form-group-title body-1-bold mb16"
+                                                >신청자 이름
+                                                <span class="required"
+                                                    >*</span
+                                                ></label
+                                            >
+                                            <div class="ui-textarea-wishket">
+                                                <div class="textarea__border">
+                                                    <input
+                                                        class="wishket-textarea theme-wishket body-2 text600"
+                                                        maxlength="5000"
+                                                        name="name"
+                                                        placeholder="이름을 입력해주세요."
+                                                        style="
+                                                            width: 100%;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            height: 30px;
+                                                        "
+                                                    ></input>
+                                                </div>
+                                                <span class="error-text" style="display: none; color: red;">내용을 입력해주세요.</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form-input"
+                                            style="margin-bottom: 48px"
+                                        >
+                                            <label
+                                                class="form-group-title body-1-bold mb16"
+                                                >신청자 나이
+                                                <span class="required"
+                                                    >*</span
+                                                ></label
+                                            >
+                                            <div class="ui-textarea-wishket">
+                                                <div class="textarea__border">
+                                                    <input
+                                                        class="wishket-textarea theme-wishket body-2 text600"
+                                                        maxlength="5000"
+                                                        name="age"
+                                                        placeholder="나이를 입력해주세요."
+                                                        style="
+                                                            width: 100%;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            height: 30px;
+                                                        "
+                                                    ></input>
+                                                </div>
+                                                <span class="error-text" style="display: none; color: red;">내용을 입력해주세요.</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form-input"
+                                            style="margin-bottom: 48px"
+                                        >
+                                            <label
+                                                class="form-group-title body-1-bold mb16"
+                                                >신청자 이메일
+                                                <span class="required"
+                                                    >*</span
+                                                ></label
+                                            >
+                                            <div class="ui-textarea-wishket">
+                                                <div class="textarea__border">
+                                                    <input
+                                                        class="wishket-textarea theme-wishket body-2 text600"
+                                                        maxlength="5000"
+                                                        name="email"
+                                                        placeholder="이메일을 입력해주세요."
+                                                        style="
+                                                            width: 100%;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            height: 30px;
+                                                        "
+                                                    ></input>
+                                                </div>
+                                                <span class="error-text" style="display: none; color: red;">내용을 입력해주세요.</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form-input"
+                                            style="margin-bottom: 48px"
+                                        >
+                                            <label
+                                                class="form-group-title body-1-bold mb16"
+                                                >신청자 전화번호
+                                                <span class="required"
+                                                    >*</span
+                                                ></label
+                                            >
+                                            <div class="ui-textarea-wishket">
+                                                <div class="textarea__border">
+                                                    <input
+                                                        class="wishket-textarea theme-wishket body-2 text600"
+                                                        maxlength="5000"
+                                                        name="phone"
+                                                        placeholder="전화번호를 입력해주세요."
+                                                        style="
+                                                            width: 100%;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            height: 30px;
+                                                        "
+                                                    ></input>
+                                                </div>
+                                                <span class="error-text" style="display: none; color: red;">내용을 입력해주세요.</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form-input"
+                                            style="margin-bottom: 48px"
+                                        >
+                                            <label
+                                                class="form-group-title body-1-bold mb16"
+                                                >추가 작성사항
+                                                <span class="required"
+                                                    >*</span
+                                                ></label
+                                            >
+                                            <div class="ui-textarea-wishket">
+                                                <div class="textarea__border">
+                                                    <textarea
+                                                        class="wishket-textarea theme-wishket body-2 text600"
+                                                        maxlength="5000"
+                                                        name="additional"
+                                                        placeholder="추가로 작성하실 사항을 입력해주세요. 
+자기소개 등도 좋습니다." 
+                                                        style="
+                                                            width: 100%;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            height: 240px;
+                                                        "
+                                                    ></textarea>
+                                                </div>
+                                                <span class="error-text" style="display: none; color: red;">내용을 입력해주세요.</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form-input"
+                                            style="margin-bottom: 48px"
+                                        >
+                                            <label
+                                                class="form-group-title body-1-bold mb16"
+                                                >첨부파일
+                                                <span class="required">*</span></label
+                                            >
+                                            <div class="ui-textarea-wishket">
+                                                <div class="textarea__border">
+                                                    <input
+                                                        class="wishket-textarea theme-wishket body-2 text600"
+                                                        type="file"
+                                                        name="attachment"
+                                                        accept=".jpg, .jpeg, .png, .pdf"
+                                                        style="
+                                                            width: 100%;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            height: 40px;
+                                                        "
+                                                    ></input>
+                                                </div>
+                                                <span class="error-text" style="display: none; color: red;">파일을 선택해주세요.</span>
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="btn btn-wishket btn-11-24 btn-block"
+                                            id="consulting_apply_button"
+                                            type="button"
+                                        >
+                                            오디션 신청 하기
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div style="
+              width: 256px;
+              height: 286px;
+              border-radius: 8px;
+              box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
+              background: #FFF;
+              padding: 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+          "><img height="48" src="/static/images/audition/icon_call.svg" width="48">
+          <p class="body-1-medium text900">부담 없이, 걱정 없이<br>신청해 보세요!</p><p class="body-2 text700">꿈터는 여러분의 꿈을 응원합니다. </p><p class="body-2 text700">자신의 꿈을 향해 거침없이 도전하세요. 꿈터가 도와드립니다.</p></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="/static/js/audition/application.js">
+        </script>
+    </body>
+</html>

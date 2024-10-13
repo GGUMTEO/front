@@ -48,10 +48,12 @@ a {
 }
 
 footer.footer {
+    min-width: 1080px;
     background-color: #f5f5f5;
 }
 
 footer.footer .container {
+    width: 1080px;
     padding: 0 0 40px;
 }
 
@@ -65,10 +67,10 @@ footer.footer .footer-main {
     margin-top: 32px;
 }
 
-footer.footer .footer-contact {
-    width: 292px;
-    margin-right: 48px;
-    float: left;
+footer.footer .footer-main:after {
+    display: table;
+    content: "";
+    clear: both;
 }
 
 footer.footer .footer-main .footer-contact .footer-menu-title {
@@ -92,6 +94,10 @@ footer.footer .footer-menu-list .footer-menu-title {
 .flex-box {
     display: flex;
     align-items: center;
+}
+
+.footer-menu-title.flex-box img {
+    width: 25px;
 }
 
 footer.footer .footer-contact .footer-contact-tel {
@@ -131,6 +137,12 @@ footer.footer .footer-menu-list {
     width: 185px;
 }
 
+footer.footer .footer-contact {
+    width: 292px;
+    margin-right: 48px;
+    float: left;
+}
+
 footer.footer .footer-menu-list .footer-menu-title {
     color: #616161;
     margin-bottom: 12px;
@@ -149,6 +161,16 @@ footer.footer .footer-menu-list .footer-menu-item {
 
 footer.footer .footer-menu-list .footer-menu-item+.footer-menu-item {
     margin-top: 8px;
+}
+
+footer.footer .footer-menu-list a.footer-menu-title.link-title:after {
+    content: "";
+    display: inline-block;
+    background-size: 12px 12px;
+    margin-left: 2px;
+    height: 12px;
+    width: 12px;
+    background-image: url(/static/images/footer/icon-link-go.png);
 }
 
 footer.footer .footer-company-info {
