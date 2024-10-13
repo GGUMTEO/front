@@ -367,3 +367,21 @@ li:last-child > .page-link {
     margin-right: -100px !important;
     margin-top: 2px;
 }
+.box-group {
+    display: inline-block;
+    margin-left: 605px;
+}
+.write-box {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    height: 36px;
+    padding: 5px 12px;
+    border: solid 1px #3ba3c7;
+    background-color: #fff;
+    color: #616161;
+    font-size: 15px;
+    line-height: 24px;
+    border-radius: 13px;
+    font-weight: 500;
+}
