@@ -18,3 +18,22 @@ document.addEventListener("DOMContentLoaded", function () {
         iconFold.classList.toggle("fold-on");
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const choiceGroups = document.querySelectorAll(".btn-group.choice-group");
+
+    choiceGroups.forEach(function (group) {
+        const btnPublic = group.querySelector(".btn-choice.btn-public");
+        const btnSecret = group.querySelector(".btn-choice.btn-secret");
+
+        // 클릭 이벤트 설정
+        function toggleActiveClass(event) {
+            // 두 버튼에 active 클래스를 교환
+            btnPublic.classList.toggle("active");
+            btnSecret.classList.toggle("active");
+        }
+
+        // 각 버튼에 이벤트 리스너 추가
+        btnPublic.addEventListener("click", toggleActiveClass);
+        btnSecret.addEventListener("click", toggleActiveClass);
+    });
+});
