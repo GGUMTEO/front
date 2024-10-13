@@ -1,0 +1,31 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Web Icon">
+<path id="Ellipse" d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12" stroke="#4D525C" stroke-width="0.9"/>
+<path id="Bubble" fill-rule="evenodd" clip-rule="evenodd" d="M18.9384 18.7327C20.2262 17.1758 21 15.1783 21 13C21 8.02944 16.9706 4 12 4C7.02944 4 3 8.02944 3 13C3 17.9706 7.02944 22 12 22C13.8636 22 15.595 21.4336 17.0312 20.4635L19.5855 21.1479L18.9384 18.7327Z" fill="url(#paint0_radial_16_1177)"/>
+<ellipse id="Ellipse_2" cx="10.25" cy="10.5" rx="0.75" ry="1" fill="#383D47"/>
+<ellipse id="Ellipse_3" cx="13.75" cy="10.5" rx="0.75" ry="1" fill="#383D47"/>
+<path id="Ellipse_4" d="M13 12.3379C13.2761 12.3379 13.5014 12.5647 13.4321 12.8319C13.2417 13.5658 12.6725 14.3379 12 14.3379C11.3275 14.3379 10.7583 13.5658 10.5679 12.8319C10.4986 12.5647 10.7239 12.3379 11 12.3379H13Z" fill="#ED6666"/>
+<path id="Vector" d="M2 15V15C2 16.6569 3.34315 18 5 18H8" stroke="#4D525C" stroke-width="0.9" stroke-linecap="round"/>
+<rect id="Rectangle" x="0.5" y="10" width="3.5" height="6.5" rx="1" fill="url(#paint1_linear_16_1177)"/>
+<rect id="Rectangle_2" x="23.5" y="16.5" width="3.5" height="6.5" rx="1" transform="rotate(-180 23.5 16.5)" fill="url(#paint2_linear_16_1177)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_16_1177" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(8.625 9.625) rotate(36.0274) scale(15.3017 16.1029)">
+<stop stop-color="#7FD3F1"/>
+<stop offset="0.285" stop-color="#77CEED"/>
+<stop offset="0.525" stop-color="#6BC7E8"/>
+<stop offset="0.892885" stop-color="#3DACD3"/>
+<stop offset="0.932298" stop-color="#29A0C9"/>
+</radialGradient>
+<linearGradient id="paint1_linear_16_1177" x1="4" y1="13.5" x2="0.25" y2="13.5" gradientUnits="userSpaceOnUse">
+<stop offset="0.68" stop-color="#4D525C"/>
+<stop offset="0.88" stop-color="#61656E"/>
+<stop offset="1" stop-color="#555A64"/>
+</linearGradient>
+<linearGradient id="paint2_linear_16_1177" x1="27" y1="20" x2="23.25" y2="20" gradientUnits="userSpaceOnUse">
+<stop offset="0.68" stop-color="#4D525C"/>
+<stop offset="0.88" stop-color="#61656E"/>
+<stop offset="1" stop-color="#555A64"/>
+</linearGradient>
+</defs>
+</svg>
