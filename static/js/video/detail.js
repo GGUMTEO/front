@@ -62,8 +62,10 @@ replyBtn.addEventListener("mouseout", () => {
     replyPtag.style.display = "none";
 });
 
+// 수수료 물음표 아이콘
 const chargeIimage = document.querySelector(".charge-image");
 
+// 수수료 말풍선
 const chargePtag = document.querySelector(".charge-p");
 
 chargeIimage.addEventListener("mouseover", () => {
