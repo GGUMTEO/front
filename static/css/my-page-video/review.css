@@ -738,3 +738,25 @@ a {
     line-height: 1.5;
     color: #bdbdbd;
 }
+.comment-review {
+    float: right;
+}
+.review-box {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+.star-box {
+    margin-right: 8px;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+.body-3-medium {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+}
+.review-score {
+    color: #424242;
+}
