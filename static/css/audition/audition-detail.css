@@ -116,8 +116,58 @@ a {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
 }
 
+.project-status-label {
+    position: relative;
+    display: flex;
+}
+
 .mb8, .wishket-bg-card-tip .wishket-bg-card-tip-contents .tip-content .tip-content-box .tip-content-title {
     margin-bottom: 8px;
+}
+
+.project-status-label.recruiting-status .recruiting-mark {
+    border-color: #93dbc6;
+    background-color: #ebfff9;
+    color: #009c6f;
+}
+
+.project-status-label div.status-mark {
+    display: flex;
+    align-items: center;
+    padding: 1px 7px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.project-status-label.recruiting-status .project-type-mark {
+    border-color: #e0e0e0;
+    background-color: #fff;
+    color: #616161;
+}
+
+.body-3, .body-3-bold, .body-3-medium, .body-3-light {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.text300 {
+    color: #bdbdbd;
+}
+
+.project-detail-view .project-content-layer .project-content-title .project-recruit-guide {
+    float: right;
+    margin-top: 2px;
+    display: flex;
+    margin-left: auto;
+}
+
+.project-status-label div.status-mark+.status-mark {
+    margin-left: 8px;
+}
+
+.project-status-label div.status-mark.with-img {
+    padding: 1px 7px 1px 3px;
 }
 
 .subtitle-1, .subtitle-1-bold, .subtitle-1-medium, .subtitle-1-light {
@@ -250,7 +300,7 @@ a {
 }
 
 .project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info.experience {
-    width: calc(100% - 342px);
+    width: calc(100% - 62px);
 }
 
 .project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info.budget {
@@ -273,7 +323,7 @@ a {
 .project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info-wrapper {
     display: inline-flex;
     justify-content: space-between;
-    width: 539px;
+    width: 678px;
 }
 
 .project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info {
@@ -317,3 +367,267 @@ a {
     display: inline-block;
 }
 
+.project-content-layer .project-important-condition.term_based .project-target-info .project-target-condition .target-condition-row+.target-condition-row {
+    margin-top: 8px;
+}
+
+.skills-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-content-layer .project-detail-condition.term_based .project-detail-condition-row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.project-content-layer .project-detail-condition.term_based .project-detail-condition-row .condition-title {
+    display: flex;
+    align-items: center;
+    width: 156px;
+    flex-shrink: 0;
+}
+
+.project-content-layer .project-detail-condition.term_based .project-detail-condition-row .condition-title .condition-icon {
+    width: 4px;
+    height: 4px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: #e6ebf0;
+}
+
+.class-splitter {
+    vertical-align: top;
+}
+
+.project-content-layer .project-detail-condition.term_based .project-detail-condition-row .condition-data .condition-accent {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+    color: #ff6b21;
+}
+
+.mb32 {
+    margin-bottom: 32px;
+}
+
+.project-detail-condition.term_based .project-detail-condition-row .condition-title {
+    display: flex;
+    align-items: center;
+    width: 156px;
+    flex-shrink: 0;
+}
+
+.project-content-layer .divide {
+    margin: 12px 0;
+    padding: 12px 0;
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.project-content-layer .divide.term-based {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.detail-section .layer-divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.project-detail-view .detail-section .layer-divider.mt40mb32 {
+    margin: 40px 0 32px;
+}
+
+.subtitle-2-medium, .subtitle-2-light {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.subtitle-2-medium {
+    font-weight: 500;
+}
+
+.project-content-layer .project-description .project-description-box {
+    word-break: break-all;
+}
+
+.detail-section .client-section-wrap {
+    position: relative;
+    margin-left: 24px;
+}
+
+detail-section .client-section-wrap .client-section {
+    display: inline-block;
+    width: 256px;
+    position: sticky;
+    top: 81px;
+}
+
+.detail-section .client-section-wrap .client-section .action-layer {
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+    padding: 24px;
+    gap: 12px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
+    margin-bottom: 20px;
+}
+
+.detail-section .client-section-wrap .client-section .action-layer.partners {
+    margin-bottom: 24px;
+}
+
+.btn-11-24{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.btn-block {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-partner, .btn-partner-not-active {
+    background-color: #00a878;
+    color: #fff;
+    border: #00a878;
+}
+
+.btn-11-24 {
+    padding: 11px 24px;
+}
+
+.mb8, .wishket-bg-card-tip .wishket-bg-card-tip-contents .tip-content .tip-content-box .tip-content-title {
+    margin-bottom: 8px;
+}
+
+.mb12 {
+    margin-bottom: 12px;
+}
+
+.client-account-info {
+    position: relative;
+    min-height: 54px;
+}
+
+.client-account-info-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+}
+
+.mb8, .wishket-bg-card-tip .wishket-bg-card-tip-contents .tip-content .tip-content-box .tip-content-title {
+    margin-bottom: 8px;
+}
+
+.client-account-info .client-account-info-base {
+    margin-left: 62px;
+}
+
+.body-2-bold, .body-2-medium, .body-2-light {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.body-2-bold {
+    font-weight: 700;
+}
+
+.client-account-info-base-username {
+    display: inline-block;
+    max-width: 110px;
+}
+
+.caption-1-medium, .caption-1-light {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.user-type-label.client-label {
+    background-color: #e3edfa;
+    color: #2e6baa;
+}
+
+.client-account-info-base-label {
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+.caption-1{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.btn-white {
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    color: #616161;
+}
+
+.ui-tooltip {
+    position: relative;
+    font-style: normal;
+    cursor: pointer;
+    text-align: left;
+}
+
+.action-layer .interest-button {
+    align-items: center;
+    text-align: center;
+}
+
+.client-section {
+    position: fixed;
+    
+    width: 300px; /* 너비 조정 가능 */
+    z-index: 1000;
+}
+
+.btn-8-16 {
+    padding: 8px 16px;
+}
+
+.client-account-info-badge {
+    margin-left: 57px;
+}
+
+.client-badge-box {
+    display: inline-block;
+    position: relative;
+}
+
+.client-badge-box .client-badge-name {
+    display: inline-block;
+    margin-left: 4px;
+}
