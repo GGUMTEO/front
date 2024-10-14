@@ -100,7 +100,7 @@ html {
 .body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
     font-size: 14px;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .scrapbook-list-box {
@@ -116,6 +116,7 @@ html {
 .scrapbook-list-box .sidebar-menu .sidebar-menu-name-img-set {
     padding: 12px 0px 12px 44px;
 }
+
 
 
 .sidebar-menu .scrapbook-scraps-count {
@@ -302,10 +303,8 @@ a {
 .text600 {
     color: #616161;
 }
-.body-3-medium {
-    font-weight: 500;
-}
-.body-3, .body-3-bold, .body-3-medium, .body-3-light {
+
+.timeandcontent {
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
@@ -451,7 +450,7 @@ p {
     display: block !important;
     text-align: center;
     line-height: 40px;
-    padding: 48px 0px 120px 0px;
+    padding: 30px 0px 120px 0px;
 }
 ul {
     list-style: none;
@@ -565,8 +564,11 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 .sub-span {
     color: #757575;
     margin-left: 5px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
 }
-.caption-1, #profile_image_edit_modal .modal__body .modal-info-body .base-dot-list .dot-line, .caption-1-bold, .caption-1-medium, .caption-1-light {
+.sub-span, #profile_image_edit_modal .modal__body .modal-info-body .base-dot-list .dot-line, .caption-1-bold, .caption-1-medium, .caption-1-light {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -614,7 +616,8 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 }
 .setting-th{
     padding: 12px 0;
-
+    font-weight: 500;
+    font-size: 14px;
     border-bottom: solid 1px #e0e0e0;
 }
 .container.scrapbook .main-content-container .main-content.read-news-list .content-title-with-btn .all-delete-read-news {
@@ -625,8 +628,33 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 .body-2-medium {
     font-weight: 500;
 }
+
+.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+}
 #replybackornext {
     margin-bottom: -150px;
     margin-top: -40px;
     margin-right: -573px;
+}
+.sidebar-menu-name{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.scrapbook-scraps-count{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #9e9e9e;
+}
+.content {
+    color: #757575;
+}
+.price-member {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
 }

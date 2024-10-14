@@ -156,15 +156,7 @@ html {
     color: #212121;
 }
 
-.subtitle-2-medium {
-    font-weight: 500;
-}
 
-.subtitle-2, .subtitle-2-bold, .subtitle-2-medium, .subtitle-2-light {
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-}
 
 .container.scrapbook .main-content-container .main-content .last-open-scrapbooks {
     flex-wrap: wrap;
@@ -299,13 +291,13 @@ a {
     color: #616161;
     margin-bottom: 12px;
 }
-.text600 {
+.smooth {
     color: #616161;
 }
-.body-3-medium {
+.smooth {
     font-weight: 500;
 }
-.body-3, .body-3-bold, .body-3-medium, .body-3-light {
+.timeandcontent {
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
@@ -323,7 +315,7 @@ p {
     height: 13px;
     background-color: #e0e0e0;
 }
-.mr-4 {
+.time {
     margin-right: 4px !important;
 }
 .container.scrapbook .main-content-container .news-list .news-description {
@@ -444,7 +436,7 @@ p {
     border: 1px solid #e0e0e0;
     object-fit: cover;
 }
-.text500 {
+.content {
     color: #757575;
 }
 .pagination {
@@ -538,8 +530,9 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 .center-text, body.partners_profile .resume-status-box .status-box {
     text-align: center;
 }
-.size-m {
+.trueorfalse {
     width: 192px;
+    margin-left: 20px;
 }
 .setting-tr-group {
     display: inline-block;
@@ -630,7 +623,23 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
     margin-top: -40px;
     margin-right: -573px;
 }
-.caption-1.sub-span {
-    white-space: normal; /* 줄바꿈 허용 */
-    word-wrap: break-word; /* 긴 단어도 줄바꿈 */
+.sidebar-menu-name{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.scrapbook-scraps-count{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #9e9e9e;
+}
+.setting-th{
+    font-weight: 500;
+    font-size: 14px;
+}
+.price-member{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
 }
