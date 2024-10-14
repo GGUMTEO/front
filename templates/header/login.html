@@ -15,7 +15,9 @@
                             ><img
                                 class="test-logo" src="/static/images/header/test-logo.png"
                         /></a>
-                        <div class="category-navigation-wrapper flex-box pc-only">
+                        <!-- pc-only 메인 페이지 다 완성 후 필요한지, 필요하지 않은지 판단하고
+                            수정하기 -->
+                        <div class="category-navigation-wrapper pc-only">
                             <a
                                 class="category-navigation"  href=""
                                 ><div class="category category-color">
@@ -35,13 +37,14 @@
                             >
                         </div>
                         <div class="icon-box">
-                            <div id="search-box" class="btn search-box flex-box">
+                            <div id="search-box" class="btn search-box">
                                 <img
                                 class="icon icon-search"
                                 src="/static/images/header/icon-search.png"
                             />
                             </div>
-                            <div class="icon-box">
+                            <div class="noti-box">
+                                <!-- only-pc 메인 페이지 다 완성 후 수정하기 -->
                                 <div class="divider only-pc"></div>
                                 <!-- 알림 없을 시 -->
                                 <div id="noti-bell-container-1" class="noti-bell-container">
@@ -49,7 +52,7 @@
                                     <!-- 내 알림 div -->
                                     <div id="noti-modal-1" class="noti-modal">
                                         <p class="noti-header">내 알림</p>
-                                        <div class="noti-item margin-bottom-15px">
+                                        <div class="noti-item">
                                             <p>영상</p>
                                         </div>
                                         <div class="noti-item">
@@ -69,7 +72,7 @@
                                     <!-- 내 알림 div -->
                                     <div id="noti-modal-2" class="noti-modal">
                                         <p class="noti-header">내 알림</p>
-                                        <div class="noti-item margin-bottom-15px">
+                                        <div class="noti-item">
                                             <div class="dot-div-1">
                                                 <img
                                                     class="noti-dot"
@@ -113,8 +116,9 @@
                     class="icon-search"
                     src="/static/images/header/icon-search-gray.png"/>
                     <input type="hidden" /><input
+                    id="search-input"
                     class="search-input"
-                    placeholder="키워드, 작가 이름 검색하기"/>
+                    placeholder="키워드, 작가(??) 이름 검색하기"/>
                     <img
                     id="icon-close"
                     class="icon-close"

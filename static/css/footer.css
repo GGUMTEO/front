@@ -87,16 +87,13 @@ footer.footer .footer-menu-list .footer-menu-title {
 }
 
 footer.footer .footer-menu-list .footer-menu-title {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 24px;
 }
 
-.flex-box {
-    display: flex;
-    align-items: center;
-}
-
-.footer-menu-title.flex-box img {
+.footer-menu-title img {
     width: 25px;
 }
 
