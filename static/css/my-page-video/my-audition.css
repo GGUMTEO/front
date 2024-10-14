@@ -665,3 +665,10 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
     display: inline-block;
     cursor: pointer;
 }
+
+.page-link:hover {
+    z-index: 2;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
