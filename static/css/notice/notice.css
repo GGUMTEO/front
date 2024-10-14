@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 700;
+    src: url("/fonts/NotoSansKR-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 500;
+    src: url("/fonts/NotoSansKR-Medium.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 400;
+    src: url("/fonts/NotoSansKR-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 300;
+    src: url("/fonts/NotoSansKR-Light.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 100;
+    src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
+}
+body {
+    background-color: #f5f5f5; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px; 
+    margin: 30px auto; 
+    background-color: #f5f5f5; 
+    padding: 20px;
+}
+
+.title-subtitle-box {
+    padding: 10px 15px 15px 15px; 
+    margin-bottom: 10px; 
+    background-color: white; 
+    border: 1px solid #ddd; 
+}
+
+
+h1 {
+    text-align: left;
+    font-size: 20px; 
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: left;
+    font-size: 12px; 
+    color: gray;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px; 
+}
+
+.search-bar input {
+    padding: 4px 6px; 
+    border: 1px solid #ccc;
+    font-size: 12px; 
+    width: 180px; 
+}
+
+.search-bar button {
+    padding: 6px 10px; 
+    background-color: #005f99; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.table-pagination-box {
+    padding: 15px; 
+    margin-bottom: 20px;
+    background-color: white; 
+    border: 1px solid #ddd;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table td {
+    color:#535353;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+table th, table td {
+    padding: 8px; 
+    border: 1px solid #ddd;
+    text-align: left; 
+}
+
+table th:nth-child(1),
+table th:nth-child(2),
+table th:nth-child(4),
+table td:nth-child(1),
+table td:nth-child(2),
+table td:nth-child(4) {
+    text-align: center;
+}
+
+.center-title {
+    text-align: center;
+}
+
+table th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+table td {
+    white-space: nowrap;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination span {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 4px;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pagination span:hover {
+    color: #005f99;
+}
+
+.pagination span.active {
+    color: #005f99;
+}
+
+a {
+    text-decoration: none;
+}

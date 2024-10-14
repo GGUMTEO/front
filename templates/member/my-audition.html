@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/static/css/member/my-audition.css" />
+        <title>나의 모집</title>
+    </head>
+    <body>
+        <div class="layout">
+            <div class="container scrapbook">
+                <div class="pc-sidebar" style="width: 280px">
+                    <div
+                        class="sidebar-menu scrapbook fold start-scroll active-menu no-scroll"
+                        id="scrapbook-fold"
+                        style="padding: 0px"
+                    >
+                        <div class="sidebar-menu-name-img-set">
+                            <div
+                                class="sidebar-menu-img icon-fold"
+                                style="margin-left: 13px"
+                            ></div>
+                            <div
+                                class="sidebar-menu-name"
+                                data-page="scrapbook"
+                                name="btn-link"
+                                style="margin-left: 8px; font-weight: 500"
+                            >
+                                내 활동내역
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="scrapbook-list-box no-scroll"
+                        style="overflow-y: hidden; padding-bottom: 20px"
+                    >
+                        <div
+                            class="sidebar-menu sidebar-menu scrapbook"
+                            data-title="내 작품"
+                        >
+                            <div
+                                class="sidebar-menu-name-img-set scrapbook-link"
+                                data-page="scrapbook-detail"
+                                name="btn-link"
+                            >
+                                <div class="icon-scrap-off"></div>
+
+                                <div class="sidebar-menu-name">내 작품</div>
+                                <div
+                                    class="scrapbook-scraps-count"
+                                    style="margin-right: 6px"
+                                >
+                                    (0)
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="sidebar-menu sidebar-menu scrapbook"
+                            data-title="내가 구매한 작품"
+                        >
+                            <div
+                                class="sidebar-menu-name-img-set scrapbook-link"
+                                data-page="scrapbook-detail"
+                                name="btn-link"
+                            >
+                                <div class="icon-scrap-off"></div>
+
+                                <div class="sidebar-menu-name">
+                                    내가 구매한 작품
+                                </div>
+                                <div
+                                    class="scrapbook-scraps-count"
+                                    style="margin-right: 6px"
+                                >
+                                    (0)
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="sidebar-menu sidebar-menu scrapbook"
+                            data-title="나의 펀딩"
+                        >
+                            <div
+                                class="sidebar-menu-name-img-set scrapbook-link"
+                                data-page="scrapbook-detail"
+                                name="btn-link"
+                            >
+                                <div class="icon-scrap-off"></div>
+
+                                <div class="sidebar-menu-name">나의 펀딩</div>
+                                <div
+                                    class="scrapbook-scraps-count"
+                                    style="margin-right: 6px"
+                                >
+                                    (0)
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="sidebar-menu sidebar-menu scrapbook"
+                            data-title="결제한 펀딩"
+                        >
+                            <div
+                                class="sidebar-menu-name-img-set scrapbook-link"
+                                data-page="scrapbook-detail"
+                                name="btn-link"
+                            >
+                                <div class="icon-scrap-off"></div>
+
+                                <div class="sidebar-menu-name">결제한 펀딩</div>
+                                <div
+                                    class="scrapbook-scraps-count"
+                                    style="margin-right: 6px"
+                                >
+                                    (0)
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="sidebar-menu sidebar-menu scrapbook"
+                            data-title="나의 모집"
+                        >
+                            <div
+                                class="sidebar-menu-name-img-set scrapbook-link"
+                                data-page="scrapbook-detail"
+                                name="btn-link"
+                                style="
+                                    background-color: #f6f3f8;
+                                    border-radius: 8px;
+                                    transition: background-color 0.3s ease,
+                                        border-radius 0.3s ease;
+                                "
+                            >
+                                <div class="icon-scrap-off"></div>
+
+                                <div
+                                    class="sidebar-menu-name"
+                                    style="color: #6b16ee; font-weight: 550"
+                                >
+                                    나의 모집
+                                </div>
+                                <div
+                                    class="scrapbook-scraps-count"
+                                    style="margin-right: 6px"
+                                >
+                                    (0)
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="sidebar-menu sidebar-menu scrapbook"
+                            data-title="내가 신청한 모집"
+                        >
+                            <div
+                                class="sidebar-menu-name-img-set scrapbook-link"
+                                data-page="scrapbook-detail"
+                                name="btn-link"
+                            >
+                                <div class="icon-scrap-off"></div>
+
+                                <div class="sidebar-menu-name">
+                                    내가 신청한 모집
+                                </div>
+                                <div
+                                    class="scrapbook-scraps-count"
+                                    style="margin-right: 6px"
+                                >
+                                    (0)
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="sidebar-menu sidebar-menu scrapbook"
+                            data-title="내가 단 리뷰"
+                        >
+                            <div
+                                class="sidebar-menu-name-img-set scrapbook-link"
+                                data-page="scrapbook-detail"
+                                name="btn-link"
+                            >
+                                <div class="icon-scrap-off"></div>
+
+                                <div class="sidebar-menu-name">
+                                    내가 단 리뷰
+                                </div>
+                                <div
+                                    class="scrapbook-scraps-count"
+                                    style="margin-right: 6px"
+                                >
+                                    (0)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-divide" style="margin: 20px 0px"></div>
+                    <div
+                        class="sidebar-menu highlight-memo"
+                        data-page="highlight-memo"
+                        name="btn-link"
+                        style="
+                            margin-bottom: -5px;
+                            margin-top: -15px;
+                            height: 20px;
+                            width: 250px;
+                        "
+                    >
+                        <div class="sidebar-menu-name">내 정보 수정</div>
+                    </div>
+                    <div
+                        class="sidebar-menu read-news"
+                        data-page="read-news"
+                        name="btn-link"
+                        style="margin-bottom: -20px; height: 20px; width: 250px"
+                    >
+                        <div class="sidebar-menu-name">문의 내역</div>
+                    </div>
+                    <div
+                        class="sidebar-menu read-news"
+                        data-page="read-news"
+                        name="btn-link"
+                        style="
+                            margin-bottom: -20px;
+                            height: 20px;
+                            margin-top: 16px;
+                            width: 250px;
+                        "
+                    >
+                        <div class="sidebar-menu-name">알림</div>
+                    </div>
+                </div>
+                <div
+                    class="main-content-container"
+                    style="width: 864px; margin: 0 auto"
+                >
+                    <div
+                        class="content-container main-content"
+                        style="width: 864px; margin: 0 0"
+                    >
+                        <div class="content">
+                            <section
+                                class="section_search"
+                                id="recruit_info"
+                                style="margin-right: 0px"
+                            >
+                                <div class="header">
+                                    <h2 class="tit_section">나의 모집</h2>
+                                </div>
+                                <div id="recruit_info_list" main-search="y">
+                                    <div class="content">
+                                        <div class="item">
+                                            <div class="item_recruit">
+                                                <div class="area_job">
+                                                    <h2 class="job_tit">
+                                                        <a
+                                                            target="_blank"
+                                                            title="[역삼역] 단편영화 배우모집합니다."
+                                                            href=""
+                                                        >
+                                                            <span>
+                                                                [역삼역]
+                                                                단편영화 배우
+                                                                모집합니다.
+                                                                <b>배우</b>
+                                                                채용
+                                                            </span>
+                                                        </a>
+                                                    </h2>
+                                                    <div class="job_date">
+                                                        <span class="date"
+                                                            >~ 11/07(목)</span
+                                                        >
+                                                        <button
+                                                            class="sri_btn_xs"
+                                                            title="클릭하면 입사지원할 수 있는 창이 뜹니다."
+                                                        >
+                                                            <span
+                                                                class="sri_btn_immediately"
+                                                                >모집중</span
+                                                            >
+                                                        </button>
+                                                    </div>
+                                                    <div class="job_condition">
+                                                        <span
+                                                            ><a
+                                                                target="_blank"
+                                                                href=""
+                                                                >서울</a
+                                                            >
+                                                            <a
+                                                                target="_blank"
+                                                                href=""
+                                                                >강남구</a
+                                                            ></span
+                                                        >
+                                                        <span>신입·경력</span>
+                                                    </div>
+                                                    <div class="job_sector">
+                                                        <b
+                                                            ><a
+                                                                target="_blank"
+                                                                href=""
+                                                                >200000원</a
+                                                            ></b
+                                                        >,
+                                                        <b
+                                                            ><a
+                                                                target="_blank"
+                                                                href=""
+                                                                >5명</a
+                                                            ></b
+                                                        >,
+
+                                                        <span class="job_day"
+                                                            >등록일
+                                                            24/10/08</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="area_corp">
+                                                    <strong
+                                                        class="corp_name"
+                                                        style="margin-top: 43px"
+                                                    >
+                                                        <a
+                                                            href=""
+                                                            target="_blank"
+                                                            class="track_event data_layer"
+                                                        >
+                                                            홍길동
+                                                        </a>
+                                                    </strong>
+                                                    <span class="corp_affiliate"
+                                                        >홍길동@gmail.com</span
+                                                    >
+
+                                                    <div
+                                                        class="btn-wrapper"
+                                                        id="toggleReplyBtn"
+                                                        data-reply="1"
+                                                        style="
+                                                            left: -90px;
+                                                            bottom: 12px;
+                                                        "
+                                                    >
+                                                        <button
+                                                            class="btn btn-action btn-icon-edit-scrap"
+                                                            data-news-id="2789"
+                                                            data-scrap-related=""
+                                                            data-toggle="detail_scrap_box"
+                                                            name="toggle_btn"
+                                                            type="button"
+                                                            style="
+                                                                background: white;
+                                                                border: none;
+                                                            "
+                                                        >
+                                                            <p
+                                                                class="action-tooltip bottom-action caption-2 edit-scrap-off"
+                                                            >
+                                                                지원자 상세보기
+                                                            </p>
+                                                            <div
+                                                                class="edit-scrap-off"
+                                                            >
+                                                                <div
+                                                                    class="icon-scrap-edit-off"
+                                                                ></div>
+                                                            </div>
+                                                            <div
+                                                                class="edit-scrap-on"
+                                                                style="
+                                                                    display: none;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="icon-scrap-edit-on"
+                                                                ></div>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="similar_recruit"
+                                                    style="display: none"
+                                                ></div>
+                                            </div>
+                                            <!-- js에서 id="replySection1", id="replySection2" 이런 식으로 구분합니다 참고해주세요 -->
+                                            <div
+                                                class="reply"
+                                                id="replySection1"
+                                                style="display: none"
+                                            >
+                                                <div class="item_recruit">
+                                                    <div
+                                                        class="setting-table"
+                                                        style="
+                                                            border-top: 1px
+                                                                solid
+                                                                rgb(
+                                                                    224,
+                                                                    224,
+                                                                    224
+                                                                );
+                                                            display: block;
+                                                        "
+                                                    >
+                                                        <div class="setting-th">
+                                                            <div
+                                                                class="setting-td size-l"
+                                                            >
+                                                                이름/이메일
+                                                            </div>
+                                                            <div
+                                                                class="center-text setting-td size-s"
+                                                            >
+                                                                지원 분야
+                                                            </div>
+                                                            <div
+                                                                class="center-text setting-td size-m"
+                                                            >
+                                                                확인 여부
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="setting-tr-group"
+                                                            style="
+                                                                border-bottom: solid
+                                                                    1px #e0e0e0;
+                                                                padding-bottom: 0px;
+                                                            "
+                                                        >
+                                                            <div
+                                                                class="setting-tr"
+                                                                style="
+                                                                    padding-top: 7px;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="setting-td with-sub size-l"
+                                                                >
+                                                                    <div
+                                                                        class="mb4 major-span"
+                                                                    >
+                                                                        멤버
+                                                                        이름
+                                                                    </div>
+                                                                    <div
+                                                                        class="sub-span"
+                                                                    >
+                                                                        멤버
+                                                                        이메일
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-text primary size-s"
+                                                                    style="
+                                                                        margin-bottom: 35px;
+                                                                    "
+                                                                >
+                                                                    배우
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-btn size-m"
+                                                                >
+                                                                    <div
+                                                                        class="btn-group choice-group"
+                                                                    >
+                                                                        <div
+                                                                            class="btn-choice btn-public active"
+                                                                        >
+                                                                            <input
+                                                                                checked=""
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="false"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >미확인</span
+                                                                            >
+                                                                        </div>
+                                                                        <div
+                                                                            class="btn-choice btn-secret"
+                                                                        >
+                                                                            <input
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="true"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >확인</span
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="setting-tr"
+                                                                style="
+                                                                    padding-top: 7px;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="setting-td with-sub size-l"
+                                                                >
+                                                                    <div
+                                                                        class="mb4 major-span"
+                                                                    >
+                                                                        멤버
+                                                                        이름
+                                                                    </div>
+                                                                    <div
+                                                                        class="sub-span"
+                                                                    >
+                                                                        멤버
+                                                                        이메일
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-text primary size-s"
+                                                                    style="
+                                                                        margin-bottom: 35px;
+                                                                    "
+                                                                >
+                                                                    배우
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-btn size-m"
+                                                                >
+                                                                    <div
+                                                                        class="btn-group choice-group"
+                                                                    >
+                                                                        <div
+                                                                            class="btn-choice btn-public active"
+                                                                        >
+                                                                            <input
+                                                                                checked=""
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="false"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >미확인</span
+                                                                            >
+                                                                        </div>
+                                                                        <div
+                                                                            class="btn-choice btn-secret"
+                                                                        >
+                                                                            <input
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="true"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >확인</span
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="setting-tr"
+                                                                style="
+                                                                    padding-top: 7px;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="setting-td with-sub size-l"
+                                                                >
+                                                                    <div
+                                                                        class="mb4 major-span"
+                                                                    >
+                                                                        멤버
+                                                                        이름
+                                                                    </div>
+                                                                    <div
+                                                                        class="sub-span"
+                                                                    >
+                                                                        멤버
+                                                                        이메일
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-text primary size-s"
+                                                                    style="
+                                                                        margin-bottom: 35px;
+                                                                    "
+                                                                >
+                                                                    스텝
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-btn size-m"
+                                                                >
+                                                                    <div
+                                                                        class="btn-group choice-group"
+                                                                    >
+                                                                        <div
+                                                                            class="btn-choice btn-public active"
+                                                                        >
+                                                                            <input
+                                                                                checked=""
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="false"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >미확인</span
+                                                                            >
+                                                                        </div>
+                                                                        <div
+                                                                            class="btn-choice btn-secret"
+                                                                        >
+                                                                            <input
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="true"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >확인</span
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="setting-tr"
+                                                                style="
+                                                                    padding-top: 7px;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="setting-td with-sub size-l"
+                                                                >
+                                                                    <div
+                                                                        class="mb4 major-span"
+                                                                    >
+                                                                        멤버
+                                                                        이름
+                                                                    </div>
+                                                                    <div
+                                                                        class="sub-span"
+                                                                    >
+                                                                        멤버
+                                                                        이메일
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-text primary size-s"
+                                                                    style="
+                                                                        margin-bottom: 35px;
+                                                                    "
+                                                                >
+                                                                    스텝
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-btn size-m"
+                                                                >
+                                                                    <div
+                                                                        class="btn-group choice-group"
+                                                                    >
+                                                                        <div
+                                                                            class="btn-choice btn-public active"
+                                                                        >
+                                                                            <input
+                                                                                checked=""
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="false"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >미확인</span
+                                                                            >
+                                                                        </div>
+                                                                        <div
+                                                                            class="btn-choice btn-secret"
+                                                                        >
+                                                                            <input
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="true"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >확인</span
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul
+                                                            class="pagination theme-yozm scrapbook-page"
+                                                            id="replybackornext"
+                                                            style="
+                                                                margin-top: -2px;
+                                                            "
+                                                        >
+                                                            <li
+                                                                class="page-item"
+                                                            >
+                                                                <a
+                                                                    class="page-link"
+                                                                    id="back"
+                                                                ></a>
+                                                            </li>
+                                                            <li
+                                                                class="page-item"
+                                                            >
+                                                                <a
+                                                                    class="page-link"
+                                                                ></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item_recruit">
+                                                <div class="area_job">
+                                                    <h2 class="job_tit">
+                                                        <a
+                                                            target="_blank"
+                                                            title="[역삼역] 단편영화 배우모집합니다."
+                                                            href=""
+                                                        >
+                                                            <span>
+                                                                [역삼역]
+                                                                단편영화 배우
+                                                                모집합니다.
+                                                                <b>배우</b>
+                                                                채용
+                                                            </span>
+                                                        </a>
+                                                    </h2>
+                                                    <div class="job_date">
+                                                        <span class="date"
+                                                            >~ 11/07(목)</span
+                                                        >
+                                                        <button
+                                                            class="sri_btn_xs"
+                                                            title="클릭하면 입사지원할 수 있는 창이 뜹니다."
+                                                        >
+                                                            <span
+                                                                class="sri_btn_immediately"
+                                                                >모집중</span
+                                                            >
+                                                        </button>
+                                                    </div>
+                                                    <div class="job_condition">
+                                                        <span
+                                                            ><a
+                                                                target="_blank"
+                                                                href=""
+                                                                >서울</a
+                                                            >
+                                                            <a
+                                                                target="_blank"
+                                                                href=""
+                                                                >강남구</a
+                                                            ></span
+                                                        >
+                                                        <span>신입·경력</span>
+                                                    </div>
+                                                    <div class="job_sector">
+                                                        <b
+                                                            ><a
+                                                                target="_blank"
+                                                                href=""
+                                                                >200000원</a
+                                                            ></b
+                                                        >,
+                                                        <b
+                                                            ><a
+                                                                target="_blank"
+                                                                href=""
+                                                                >5명</a
+                                                            ></b
+                                                        >,
+
+                                                        <span class="job_day"
+                                                            >등록일
+                                                            24/10/08</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="area_corp">
+                                                    <strong
+                                                        class="corp_name"
+                                                        style="margin-top: 43px"
+                                                    >
+                                                        <a
+                                                            href=""
+                                                            target="_blank"
+                                                            class="track_event data_layer"
+                                                        >
+                                                            홍길동
+                                                        </a>
+                                                    </strong>
+                                                    <span class="corp_affiliate"
+                                                        >홍길동@gmail.com</span
+                                                    >
+                                                    <div
+                                                        class="btn-wrapper"
+                                                        id="toggleReplyBtn"
+                                                        data-reply="2"
+                                                        style="
+                                                            left: -90px;
+                                                            bottom: 12px;
+                                                        "
+                                                    >
+                                                        <button
+                                                            class="btn btn-action btn-icon-edit-scrap"
+                                                            data-news-id="2789"
+                                                            data-scrap-related=""
+                                                            data-toggle="detail_scrap_box"
+                                                            name="toggle_btn"
+                                                            type="button"
+                                                            style="
+                                                                background: white;
+                                                                border: none;
+                                                            "
+                                                        >
+                                                            <p
+                                                                class="action-tooltip bottom-action caption-2 edit-scrap-off"
+                                                            >
+                                                                지원자 상세보기
+                                                            </p>
+                                                            <div
+                                                                class="edit-scrap-off"
+                                                            >
+                                                                <div
+                                                                    class="icon-scrap-edit-off"
+                                                                ></div>
+                                                            </div>
+                                                            <div
+                                                                class="edit-scrap-on"
+                                                                style="
+                                                                    display: none;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="icon-scrap-edit-on"
+                                                                ></div>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="similar_recruit"
+                                                    style="display: none"
+                                                ></div>
+                                            </div>
+                                            <div
+                                                class="reply"
+                                                id="replySection2"
+                                                style="display: none"
+                                            >
+                                                <div class="item_recruit">
+                                                    <div
+                                                        class="setting-table"
+                                                        style="
+                                                            border-top: 1px
+                                                                solid
+                                                                rgb(
+                                                                    224,
+                                                                    224,
+                                                                    224
+                                                                );
+                                                            display: block;
+                                                        "
+                                                    >
+                                                        <div class="setting-th">
+                                                            <div
+                                                                class="setting-td size-l"
+                                                            >
+                                                                이름/이메일
+                                                            </div>
+                                                            <div
+                                                                class="center-text setting-td size-s"
+                                                            >
+                                                                지원 분야
+                                                            </div>
+                                                            <div
+                                                                class="center-text setting-td size-m"
+                                                            >
+                                                                확인 여부
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="setting-tr-group"
+                                                            style="
+                                                                border-bottom: solid
+                                                                    1px #e0e0e0;
+                                                                padding-bottom: 0px;
+                                                            "
+                                                        >
+                                                            <div
+                                                                class="setting-tr"
+                                                                style="
+                                                                    padding-top: 7px;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="setting-td with-sub size-l"
+                                                                >
+                                                                    <div
+                                                                        class="mb4 major-span"
+                                                                    >
+                                                                        멤버
+                                                                        이름
+                                                                    </div>
+                                                                    <div
+                                                                        class="sub-span"
+                                                                    >
+                                                                        멤버
+                                                                        이메일
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-text primary size-s"
+                                                                    style="
+                                                                        margin-bottom: 35px;
+                                                                    "
+                                                                >
+                                                                    배우
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-btn size-m"
+                                                                >
+                                                                    <div
+                                                                        class="btn-group choice-group"
+                                                                    >
+                                                                        <div
+                                                                            class="btn-choice btn-public active"
+                                                                        >
+                                                                            <input
+                                                                                checked=""
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="false"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >미확인</span
+                                                                            >
+                                                                        </div>
+                                                                        <div
+                                                                            class="btn-choice btn-secret"
+                                                                        >
+                                                                            <input
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="true"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >확인</span
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="setting-tr"
+                                                                style="
+                                                                    padding-top: 7px;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="setting-td with-sub size-l"
+                                                                >
+                                                                    <div
+                                                                        class="mb4 major-span"
+                                                                    >
+                                                                        멤버
+                                                                        이름
+                                                                    </div>
+                                                                    <div
+                                                                        class="sub-span"
+                                                                    >
+                                                                        멤버
+                                                                        이메일
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-text primary size-s"
+                                                                    style="
+                                                                        margin-bottom: 35px;
+                                                                    "
+                                                                >
+                                                                    배우
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-btn size-m"
+                                                                >
+                                                                    <div
+                                                                        class="btn-group choice-group"
+                                                                    >
+                                                                        <div
+                                                                            class="btn-choice btn-public active"
+                                                                        >
+                                                                            <input
+                                                                                checked=""
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="false"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >미확인</span
+                                                                            >
+                                                                        </div>
+                                                                        <div
+                                                                            class="btn-choice btn-secret"
+                                                                        >
+                                                                            <input
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="true"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >확인</span
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="setting-tr"
+                                                                style="
+                                                                    padding-top: 7px;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="setting-td with-sub size-l"
+                                                                >
+                                                                    <div
+                                                                        class="mb4 major-span"
+                                                                    >
+                                                                        멤버
+                                                                        이름
+                                                                    </div>
+                                                                    <div
+                                                                        class="sub-span"
+                                                                    >
+                                                                        멤버
+                                                                        이메일
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-text primary size-s"
+                                                                    style="
+                                                                        margin-bottom: 35px;
+                                                                    "
+                                                                >
+                                                                    스텝
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-btn size-m"
+                                                                >
+                                                                    <div
+                                                                        class="btn-group choice-group"
+                                                                    >
+                                                                        <div
+                                                                            class="btn-choice btn-public active"
+                                                                        >
+                                                                            <input
+                                                                                checked=""
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="false"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >미확인</span
+                                                                            >
+                                                                        </div>
+                                                                        <div
+                                                                            class="btn-choice btn-secret"
+                                                                        >
+                                                                            <input
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="true"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >확인</span
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="setting-tr"
+                                                                style="
+                                                                    padding-top: 7px;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="setting-td with-sub size-l"
+                                                                >
+                                                                    <div
+                                                                        class="mb4 major-span"
+                                                                    >
+                                                                        멤버
+                                                                        이름
+                                                                    </div>
+                                                                    <div
+                                                                        class="sub-span"
+                                                                    >
+                                                                        멤버
+                                                                        이메일
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-text primary size-s"
+                                                                    style="
+                                                                        margin-bottom: 35px;
+                                                                    "
+                                                                >
+                                                                    스텝
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-btn size-m"
+                                                                >
+                                                                    <div
+                                                                        class="btn-group choice-group"
+                                                                    >
+                                                                        <div
+                                                                            class="btn-choice btn-public active"
+                                                                        >
+                                                                            <input
+                                                                                checked=""
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="false"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >미확인</span
+                                                                            >
+                                                                        </div>
+                                                                        <div
+                                                                            class="btn-choice btn-secret"
+                                                                        >
+                                                                            <input
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="true"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >확인</span
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul
+                                                            class="pagination theme-yozm scrapbook-page"
+                                                            id="replybackornext"
+                                                            style="
+                                                                margin-top: -2px;
+                                                            "
+                                                        >
+                                                            <li
+                                                                class="page-item"
+                                                            >
+                                                                <a
+                                                                    class="page-link"
+                                                                    id="back"
+                                                                ></a>
+                                                            </li>
+                                                            <li
+                                                                class="page-item"
+                                                            >
+                                                                <a
+                                                                    class="page-link"
+                                                                ></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item_recruit">
+                                                <div class="area_job">
+                                                    <h2 class="job_tit">
+                                                        <a
+                                                            target="_blank"
+                                                            title="[역삼역] 단편영화 배우모집합니다."
+                                                            href=""
+                                                        >
+                                                            <span>
+                                                                [역삼역]
+                                                                단편영화 배우
+                                                                모집합니다.
+                                                                <b>배우</b>
+                                                                채용
+                                                            </span>
+                                                        </a>
+                                                    </h2>
+                                                    <div class="job_date">
+                                                        <span class="date"
+                                                            >~ 11/07(목)</span
+                                                        >
+                                                        <button
+                                                            class="sri_btn_xs"
+                                                            title="클릭하면 입사지원할 수 있는 창이 뜹니다."
+                                                        >
+                                                            <span
+                                                                class="sri_btn_immediately"
+                                                                >모집중</span
+                                                            >
+                                                        </button>
+                                                    </div>
+                                                    <div class="job_condition">
+                                                        <span
+                                                            ><a
+                                                                target="_blank"
+                                                                href=""
+                                                                >서울</a
+                                                            >
+                                                            <a
+                                                                target="_blank"
+                                                                href=""
+                                                                >강남구</a
+                                                            ></span
+                                                        >
+                                                        <span>신입·경력</span>
+                                                    </div>
+                                                    <div class="job_sector">
+                                                        <b
+                                                            ><a
+                                                                target="_blank"
+                                                                href=""
+                                                                >200000원</a
+                                                            ></b
+                                                        >,
+                                                        <b
+                                                            ><a
+                                                                target="_blank"
+                                                                href=""
+                                                                >5명</a
+                                                            ></b
+                                                        >,
+
+                                                        <span class="job_day"
+                                                            >등록일
+                                                            24/10/08</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="area_corp">
+                                                    <strong
+                                                        class="corp_name"
+                                                        style="margin-top: 43px"
+                                                    >
+                                                        <a
+                                                            href=""
+                                                            target="_blank"
+                                                            class="track_event data_layer"
+                                                        >
+                                                            홍길동
+                                                        </a>
+                                                    </strong>
+                                                    <span class="corp_affiliate"
+                                                        >홍길동@gmail.com</span
+                                                    >
+                                                    <div
+                                                        class="btn-wrapper"
+                                                        id="toggleReplyBtn"
+                                                        data-reply="3"
+                                                        style="
+                                                            left: -90px;
+                                                            bottom: 12px;
+                                                        "
+                                                    >
+                                                        <button
+                                                            class="btn btn-action btn-icon-edit-scrap"
+                                                            data-news-id="2789"
+                                                            data-scrap-related=""
+                                                            data-toggle="detail_scrap_box"
+                                                            name="toggle_btn"
+                                                            type="button"
+                                                            style="
+                                                                background: white;
+                                                                border: none;
+                                                            "
+                                                        >
+                                                            <p
+                                                                class="action-tooltip bottom-action caption-2 edit-scrap-off"
+                                                            >
+                                                                지원자 상세보기
+                                                            </p>
+                                                            <div
+                                                                class="edit-scrap-off"
+                                                            >
+                                                                <div
+                                                                    class="icon-scrap-edit-off"
+                                                                ></div>
+                                                            </div>
+                                                            <div
+                                                                class="edit-scrap-on"
+                                                                style="
+                                                                    display: none;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="icon-scrap-edit-on"
+                                                                ></div>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="similar_recruit"
+                                                    style="display: none"
+                                                ></div>
+                                            </div>
+                                            <div
+                                                class="reply"
+                                                id="replySection3"
+                                                style="display: none"
+                                            >
+                                                <div class="item_recruit">
+                                                    <div
+                                                        class="setting-table"
+                                                        style="
+                                                            border-top: 1px
+                                                                solid
+                                                                rgb(
+                                                                    224,
+                                                                    224,
+                                                                    224
+                                                                );
+                                                            display: block;
+                                                        "
+                                                    >
+                                                        <div class="setting-th">
+                                                            <div
+                                                                class="setting-td size-l"
+                                                            >
+                                                                이름/이메일
+                                                            </div>
+                                                            <div
+                                                                class="center-text setting-td size-s"
+                                                            >
+                                                                지원 분야
+                                                            </div>
+                                                            <div
+                                                                class="center-text setting-td size-m"
+                                                            >
+                                                                확인 여부
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="setting-tr-group"
+                                                            style="
+                                                                border-bottom: solid
+                                                                    1px #e0e0e0;
+                                                                padding-bottom: 0px;
+                                                            "
+                                                        >
+                                                            <div
+                                                                class="setting-tr"
+                                                                style="
+                                                                    padding-top: 7px;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="setting-td with-sub size-l"
+                                                                >
+                                                                    <div
+                                                                        class="mb4 major-span"
+                                                                    >
+                                                                        멤버
+                                                                        이름
+                                                                    </div>
+                                                                    <div
+                                                                        class="sub-span"
+                                                                    >
+                                                                        멤버
+                                                                        이메일
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-text primary size-s"
+                                                                    style="
+                                                                        margin-bottom: 35px;
+                                                                    "
+                                                                >
+                                                                    배우
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-btn size-m"
+                                                                >
+                                                                    <div
+                                                                        class="btn-group choice-group"
+                                                                    >
+                                                                        <div
+                                                                            class="btn-choice btn-public active"
+                                                                        >
+                                                                            <input
+                                                                                checked=""
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="false"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >미확인</span
+                                                                            >
+                                                                        </div>
+                                                                        <div
+                                                                            class="btn-choice btn-secret"
+                                                                        >
+                                                                            <input
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="true"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >확인</span
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="setting-tr"
+                                                                style="
+                                                                    padding-top: 7px;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="setting-td with-sub size-l"
+                                                                >
+                                                                    <div
+                                                                        class="mb4 major-span"
+                                                                    >
+                                                                        멤버
+                                                                        이름
+                                                                    </div>
+                                                                    <div
+                                                                        class="sub-span"
+                                                                    >
+                                                                        멤버
+                                                                        이메일
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-text primary size-s"
+                                                                    style="
+                                                                        margin-bottom: 35px;
+                                                                    "
+                                                                >
+                                                                    배우
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-btn size-m"
+                                                                >
+                                                                    <div
+                                                                        class="btn-group choice-group"
+                                                                    >
+                                                                        <div
+                                                                            class="btn-choice btn-public active"
+                                                                        >
+                                                                            <input
+                                                                                checked=""
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="false"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >미확인</span
+                                                                            >
+                                                                        </div>
+                                                                        <div
+                                                                            class="btn-choice btn-secret"
+                                                                        >
+                                                                            <input
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="true"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >확인</span
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="setting-tr"
+                                                                style="
+                                                                    padding-top: 7px;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="setting-td with-sub size-l"
+                                                                >
+                                                                    <div
+                                                                        class="mb4 major-span"
+                                                                    >
+                                                                        멤버
+                                                                        이름
+                                                                    </div>
+                                                                    <div
+                                                                        class="sub-span"
+                                                                    >
+                                                                        멤버
+                                                                        이메일
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-text primary size-s"
+                                                                    style="
+                                                                        margin-bottom: 35px;
+                                                                    "
+                                                                >
+                                                                    스텝
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-btn size-m"
+                                                                >
+                                                                    <div
+                                                                        class="btn-group choice-group"
+                                                                    >
+                                                                        <div
+                                                                            class="btn-choice btn-public active"
+                                                                        >
+                                                                            <input
+                                                                                checked=""
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="false"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >미확인</span
+                                                                            >
+                                                                        </div>
+                                                                        <div
+                                                                            class="btn-choice btn-secret"
+                                                                        >
+                                                                            <input
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="true"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >확인</span
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="setting-tr"
+                                                                style="
+                                                                    padding-top: 7px;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    class="setting-td with-sub size-l"
+                                                                >
+                                                                    <div
+                                                                        class="mb4 major-span"
+                                                                    >
+                                                                        멤버
+                                                                        이름
+                                                                    </div>
+                                                                    <div
+                                                                        class="sub-span"
+                                                                    >
+                                                                        멤버
+                                                                        이메일
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-text primary size-s"
+                                                                    style="
+                                                                        margin-bottom: 35px;
+                                                                    "
+                                                                >
+                                                                    스텝
+                                                                </div>
+                                                                <div
+                                                                    class="center-text setting-td with-btn size-m"
+                                                                >
+                                                                    <div
+                                                                        class="btn-group choice-group"
+                                                                    >
+                                                                        <div
+                                                                            class="btn-choice btn-public active"
+                                                                        >
+                                                                            <input
+                                                                                checked=""
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="false"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >미확인</span
+                                                                            >
+                                                                        </div>
+                                                                        <div
+                                                                            class="btn-choice btn-secret"
+                                                                        >
+                                                                            <input
+                                                                                class="radio-value"
+                                                                                name="is_secret_employment"
+                                                                                type="radio"
+                                                                                value="true"
+                                                                            /><span
+                                                                                class="name"
+                                                                                >확인</span
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul
+                                                            class="pagination theme-yozm scrapbook-page"
+                                                            id="replybackornext"
+                                                            style="
+                                                                margin-top: -2px;
+                                                            "
+                                                        >
+                                                            <li
+                                                                class="page-item"
+                                                            >
+                                                                <a
+                                                                    class="page-link"
+                                                                    id="back"
+                                                                ></a>
+                                                            </li>
+                                                            <li
+                                                                class="page-item"
+                                                            >
+                                                                <a
+                                                                    class="page-link"
+                                                                ></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content_bottom">
+                                        <div class="pagination">
+                                            <a
+                                                href=""
+                                                class="btnPrev page_move track_event"
+                                                data-track_event="total_search|search_recruit|pagination|10"
+                                                page="10"
+                                                title="이전"
+                                                >이전</a
+                                            >
+                                            <span class="page">1</span>
+                                            <a
+                                                href=""
+                                                page="2"
+                                                class="page page_move track_event"
+                                                data-track_event="total_search|search_recruit|pagination|2"
+                                                ><span>2</span></a
+                                            >
+                                            <a
+                                                href=""
+                                                page="3"
+                                                class="page page_move track_event"
+                                                data-track_event="total_search|search_recruit|pagination|3"
+                                                ><span>3</span></a
+                                            >
+                                            <a
+                                                href=""
+                                                page="4"
+                                                class="page page_move track_event"
+                                                data-track_event="total_search|search_recruit|pagination|4"
+                                                ><span>4</span></a
+                                            >
+                                            <a
+                                                href=""
+                                                page="5"
+                                                class="page page_move track_event"
+                                                data-track_event="total_search|search_recruit|pagination|5"
+                                                ><span>5</span></a
+                                            >
+                                            <a
+                                                href=""
+                                                page="6"
+                                                class="page page_move track_event"
+                                                data-track_event="total_search|search_recruit|pagination|6"
+                                                ><span>6</span></a
+                                            >
+                                            <a
+                                                href=""
+                                                page="7"
+                                                class="page page_move track_event"
+                                                data-track_event="total_search|search_recruit|pagination|7"
+                                                ><span>7</span></a
+                                            >
+                                            <a
+                                                href=""
+                                                page="8"
+                                                class="page page_move track_event"
+                                                data-track_event="total_search|search_recruit|pagination|8"
+                                                ><span>8</span></a
+                                            >
+                                            <a
+                                                href=""
+                                                page="9"
+                                                class="page page_move track_event"
+                                                data-track_event="total_search|search_recruit|pagination|9"
+                                                ><span>9</span></a
+                                            >
+                                            <a
+                                                href=""
+                                                page="10"
+                                                class="page page_move track_event"
+                                                data-track_event="total_search|search_recruit|pagination|10"
+                                                ><span>10</span></a
+                                            >
+                                            <a
+                                                href=""
+                                                class="btnNext page_move track_event"
+                                                data-track_event="total_search|search_recruit|pagination|11"
+                                                page="11"
+                                                title="다음"
+                                                >다음</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="/static/js/member/my-audition.js"></script>
+</html>

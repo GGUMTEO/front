@@ -14,3 +14,9 @@ iconClose.addEventListener("click", () => {
 backgroundOverlay.addEventListener("click", () => {
     searchFullModal.style.display = "none";
 });
+
+const searchInput = document.getElementById("search-input");
+
+searchInput.focus();
+
+console.log(searchInput.focus());

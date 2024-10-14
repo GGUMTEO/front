@@ -525,6 +525,36 @@ li:last-child > .page-link {
 .review-score {
     color: #424242;
 }
+.other-review-box {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;
+    transform: translate(-12px, -47px);
+}
+.other-star-box {
+    margin-right: 8px;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+.other-review-score {
+    color: #424242;
+}
+.other-time {
+    font-size: 10px;
+    position: absolute;
+    transform: translate(6px, 5px);
+}
+.other-img {
+    margin-top: 2px;
+    position: absolute;
+    transform: translate(-10px, 4px);
+}
+.other-title {
+    position: absolute;
+    transform: translate(-10px, 0px);
+}
 .body-3-medium {
     font-weight: 500;
     font-size: 13px;
@@ -559,6 +589,12 @@ li:last-child > .page-link {
     margin-top: 40px;
     position: relative;
     z-index: 2;
+    width: 280px;
+    padding: 36px;
+    border-radius: 16px;
+    border: 1px solid #eee;
+    box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.04);
+    margin-left: -38px;
 }
 .right-content-title {
     align-items: center;
@@ -792,8 +828,8 @@ li:last-child > .page-link {
     align-items: center;
 }
 .meta-icon {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
 }
 .content-meta-elem {
     display: inline-block;
@@ -837,12 +873,13 @@ li:last-child > .page-link {
     border: none;
     display: flex;
     align-items: center;
-    padding: 16px 0;
+    padding: 6px 0;
     gap: 16px;
+    position: relative;
 }
 .thumbnail-other-image {
-    width: 64px;
-    height: 64px;
+    width: 75px;
+    height: 75px;
     border-radius: 12px;
     border: 1px solid #e0e0e0;
     object-fit: cover;
@@ -915,6 +952,7 @@ body.modal-open {
     background-color: lightpink;
     padding: 10px 10px;
     border-radius: 10px;
+    border: none;
 }
 
 textarea {
@@ -923,8 +961,8 @@ textarea {
     border: 2px solid #ccc;
     border-radius: 8px;
     font-size: 13px;
-    resize: vertical;
     transition: border-color 0.3s ease;
+    resize: none; /* 크기 조절 기능 비활성화 */
 }
 
 textarea:focus {
