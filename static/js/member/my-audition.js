@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     // 사이드바 메뉴 토글 기능
-    const sidebarMenu = document.querySelector(".sidebar-menu.scrapbook");
-    const scrapbookListBox = document.querySelector(".scrapbook-list-box");
+    const sidebarMenu = document.querySelector(".sidebar-menu.mypage");
+    const mypageListBox = document.querySelector(".mypage-list-box");
     const iconFold = document.querySelector(".icon-fold");
 
     if (sidebarMenu) {
         sidebarMenu.addEventListener("click", function () {
-            // `scrapbook-list-box`를 숨기거나 표시
+            // `mypage-list-box`를 숨기거나 표시
             if (
-                scrapbookListBox.style.display === "none" ||
-                scrapbookListBox.style.display === ""
+                mypageListBox.style.display === "none" ||
+                mypageListBox.style.display === ""
             ) {
-                scrapbookListBox.style.display = "block";
+                mypageListBox.style.display = "block";
             } else {
-                scrapbookListBox.style.display = "none";
+                mypageListBox.style.display = "none";
             }
 
             // 아이콘 방향 변경

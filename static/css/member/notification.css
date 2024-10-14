@@ -29,7 +29,7 @@ html {
     line-height: 1rem;
     font-size: 16px
 }
-.container.scrapbook {
+.container.mypage {
     display: flex;
     padding-top: 48px;
     text-overflow: ellipsis;
@@ -77,19 +77,19 @@ html {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
+.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .noti-more, .body-2-light {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
 }
-.scrapbook-list-box {
+.mypage-list-box {
     width: 280px;
     max-height: 317px;
     overflow: hidden;
 }
-.scrapbook-list-box .sidebar-menu {
+.mypage-list-box .sidebar-menu {
     padding: 0px 16px 0px 0px;
-}.scrapbook-list-box .sidebar-menu .sidebar-menu-name-img-set {
+}.mypage-list-box .sidebar-menu .sidebar-menu-name-img-set {
     padding: 12px 0px 12px 44px;
 }.sidebar-menu .sidebar-menu-name-img-set {
     display: flex;
@@ -97,7 +97,7 @@ html {
     width: calc(100% - 24px);
 }
 
-.sidebar-menu .scrapbook-scraps-count {
+.sidebar-menu .mypage-mys-count {
     margin: 0px 6px;
 }
 .text400 {
@@ -117,11 +117,11 @@ html {
     margin-right: 12px;
     display: block;
 }
-.container.scrapbook .main-content-container {
+.container.mypage .main-content-container {
     width: 800px;
     padding-left: 118px;
 }
-.container.scrapbook .main-content-container .main-content {
+.container.mypage .main-content-container .main-content {
     width: 720px;
 }.text900 {
     color: #212121;
@@ -135,13 +135,13 @@ html {
     line-height: 28px;
     font-weight: 400;
 }
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks {
+.container.mypage .main-content-container .main-content .last-open-mypages {
     flex-wrap: wrap;
     display: flex;
     gap: 24px;
     padding: 32px 0px 40px 0px;
 }
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks .last-open-scrapbook {
+.container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage {
     display: inline-flex;
     border: solid 1px #e0e0e0;
     border-radius: 12px;
@@ -152,10 +152,10 @@ html {
 .btn {
     cursor: pointer;
 }
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks .last-open-scrapbook .last-open-scrapbook-info {
+.container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage .last-open-mypage-info {
     margin-left: 24px;
 }
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks .last-open-scrapbook .last-open-scrapbook-info .scrapbook-title {
+.container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage .last-open-mypage-info .mypage-title {
     width: 222px;
     height: 26px;
     overflow: hidden;
@@ -174,13 +174,13 @@ html {
     height: 16px;
     background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_menu_open_on.png);
 }
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks .last-open-scrapbook:hover {
+.container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage:hover {
     border: 1px solid #6b16ee;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
     transform: translateY(-4px);
     transition-duration: .5s;
 }
-.scrapbook-link:hover {
+.mypage-link:hover {
     background-color: #f0f0f0; /* 아주 연한 회색 배경 */
     border-radius: 8px; /* 모서리를 부드럽게 깎음 */
     transition: background-color 0.3s ease, border-radius 0.3s ease; /* 부드러운 전환 효과 */
@@ -210,7 +210,7 @@ html {
 .icon-fold.fold-on {
     transform: rotate(-0deg); /* 오른쪽을 가리키도록 회전 */
 }
-.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
+.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .noti-more, .body-2-light {
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;
@@ -268,11 +268,12 @@ html {
     cursor: default;
 }
  .noti-body>.noti-box:first-child .noti-box-wrapper {
-    padding: 32px 40px 16px 36px;
+    padding: 5px 40px 0px 36px;
 }
  .noti-box.date-box .noti-box-wrapper .noti-date-title {
     color: #212121;
     font-weight: 650;
+
 }
 .body-1-bold {
     font-weight: 700;
@@ -343,14 +344,14 @@ html {
     font-weight: 400;
 }
 
-.wishket-bg-card-newbie-process-footer {
+.ifclick {
     padding: 20px 0;
     border-top: solid 1px #e0e0e0;
     color: #757575;
     cursor: pointer;
     text-align: center;
 }
-.wishket-bg-card-newbie-process-footer img {
+.ifclick img {
     position: absolute;
     margin-left: 8px;
     margin-top: 5px;
@@ -361,7 +362,7 @@ html {
     line-height: 24px;
     font-weight: 500;
 }
-.scrapbook-scraps-count{
+.mypage-mys-count{
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;

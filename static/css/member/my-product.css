@@ -36,7 +36,7 @@ html {
     transition: background-color 0.3s ease, border-radius 0.3s ease; 
 } */
 
-.container.scrapbook {
+.container.mypage {
     display: flex;
     padding-top: 48px;
     text-overflow: ellipsis;
@@ -103,22 +103,22 @@ html {
     font-weight: 500;
 }
 
-.scrapbook-list-box {
+.mypage-list-box {
     width: 280px;
     max-height: 317px;
     overflow: hidden;
 }
 
-.scrapbook-list-box .sidebar-menu {
+.mypage-list-box .sidebar-menu {
     padding: 0px 16px 0px 0px;
 }
 
-.scrapbook-list-box .sidebar-menu .sidebar-menu-name-img-set {
+.mypage-list-box .sidebar-menu .sidebar-menu-name-img-set {
     padding: 12px 0px 12px 44px;
 }
 
 
-.sidebar-menu .scrapbook-scraps-count {
+.sidebar-menu .mypage-mys-count {
     margin: 0px 6px;
 }
 
@@ -143,12 +143,12 @@ html {
     display: block;
 }
 
-.container.scrapbook .main-content-container {
+.container.mypage .main-content-container {
     width: 800px;
     padding-left: 80px;
 }
 
-.container.scrapbook .main-content-container .main-content {
+.container.mypage .main-content-container .main-content {
     width: 720px;
 }
 
@@ -158,14 +158,14 @@ html {
 
 
 
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks {
+.container.mypage .main-content-container .main-content .last-open-mypages {
     flex-wrap: wrap;
     display: flex;
     gap: 24px;
     padding: 32px 0px 40px 0px;
 }
 
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks .last-open-scrapbook {
+.container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage {
     display: inline-flex;
     border: solid 1px #e0e0e0;
     border-radius: 12px;
@@ -178,11 +178,11 @@ html {
     cursor: pointer;
 }
 
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks .last-open-scrapbook .last-open-scrapbook-info {
+.container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage .last-open-mypage-info {
     margin-left: 24px;
 }
 
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks .last-open-scrapbook .last-open-scrapbook-info .scrapbook-title {
+.container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage .last-open-mypage-info .mypage-title {
     width: 222px;
     height: 26px;
     overflow: hidden;
@@ -205,14 +205,14 @@ html {
     background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_menu_open_on.png);
 }
 
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks .last-open-scrapbook:hover {
+.container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage:hover {
     border: 1px solid #6b16ee;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
     transform: translateY(-4px);
     transition-duration: .5s;
 }
 
-.scrapbook-link:hover, .highlight-memo:hover, .read-news:hover, #scrapbook-fold:hover {
+.mypage-link:hover, .highlight-memo:hover, .read-products:hover, #mypage-fold:hover {
     background-color: #f0f0f0; /* 아주 연한 회색 배경 */
     border-radius: 8px; /* 모서리를 부담게 까임 */
     transition: background-color 0.3s ease, border-radius 0.3s ease; /* 부담한 전환 후과 */
@@ -231,23 +231,23 @@ html {
     transform: rotate(-0deg); /* 오른쪽을 가리할 만큼 회전 */
 }
 
-.container.scrapbook .main-content-container {
+.container.mypage .main-content-container {
     width: 800px;
     padding-left: 80px;
 }  
-  .container.scrapbook .main-content-container .main-content {
+  .container.mypage .main-content-container .main-content {
     width: 720px;
 }
-.container.scrapbook .main-content-container .main-content.read-news-list .content-title-with-btn {
+.container.mypage .main-content-container .main-content.read-products-list .content-title-with-btn {
     justify-content: space-between;
     display: flex;
     align-items: center;
     margin-bottom: 8px;
 }
-.container.scrapbook .main-content-container .main-content.read-news-list .content-title-with-btn .content-title {
+.container.mypage .main-content-container .main-content.read-products-list .content-title-with-btn .content-title {
     margin-bottom: 0px;
 }
-.container.scrapbook .main-content-container .main-content .content-title {
+.container.mypage .main-content-container .main-content .content-title {
     gap: 6px;
     display: flex;
     align-items: center;
@@ -256,7 +256,7 @@ html {
 .text900 {
     color: #212121;
 } 
-   .container.scrapbook .main-content-container .main-content .content .list-item {
+   .container.mypage .main-content-container .main-content .content .list-item {
     padding: 32px 0px;
     border-bottom: 1px solid;
 }
@@ -264,7 +264,7 @@ html {
     display: flex;
     align-items: center;
 }
-.container.scrapbook .main-content-container .news-list .news-text {
+.container.mypage .main-content-container .products-list .products-text {
     width: 562px;
     margin-right: 48px;
 }
@@ -272,7 +272,7 @@ a {
     text-decoration: none;
     color: #212121;
 }
-.container.scrapbook .main-content-container .news-list .news-text .scrap-news-title {
+.container.mypage .main-content-container .products-list .products-text .my-products-title {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -281,7 +281,7 @@ a {
     text-overflow: ellipsis;
     overflow: hidden;
 }
-.container.scrapbook .main-content-container .news-list .news-text .scrap-news-info {
+.container.mypage .main-content-container .products-list .products-text .my-products-info {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -318,7 +318,7 @@ p {
 .time {
     margin-right: 4px !important;
 }
-.container.scrapbook .main-content-container .news-list .news-description {
+.container.mypage .main-content-container .products-list .products-description {
     display: block;
     line-height: 22px; /* 각 줄의 높이 설정 */
     height: 44px; /* 두 줄의 높이로 고정 */
@@ -334,7 +334,7 @@ p {
 
 
 
-.container.scrapbook .main-content-container .news-list .news-author-box {
+.container.mypage .main-content-container .products-list .products-author-box {
     width: 562px;
     justify-content: space-between;
     align-items: center;
@@ -362,7 +362,7 @@ p {
     width: max-content;
     border-radius: 8px;
 }
-.container.scrapbook .main-content-container .news-list .news-author-box .btn {
+.container.mypage .main-content-container .products-list .products-author-box .btn {
     padding: 8px;
     border: 0px;
     background: white;
@@ -410,26 +410,26 @@ p {
     left: 50%;
     transform: translateX(-50%);
 }
-.icon-scrap-edit-off {
+.icon-my-edit-off {
     width: 24px;
     height: 24px;
     background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_toolbar_scrap_off.png);
 }
 
-.icon-scrap-edit-on {
+.icon-my-edit-on {
     width: 24px;
     height: 24px;
     background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_toolbar_scrap_on.png);
 }
-.container.scrapbook .main-content-container .news-list .news-author-box .btn {
+.container.mypage .main-content-container .products-list .products-author-box .btn {
     padding: 8px;
 }
-.icon-scrap-delete {
+.icon-my-delete {
     width: 24px;
     height: 24px;
     background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_scrap_delete.png);
 }
-.container.scrapbook .main-content-container .news-list .news-image img {
+.container.mypage .main-content-container .products-list .products-image img {
     width: 110px;
     height: 110px;
     border-radius: 8px;
@@ -549,6 +549,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 }
 .major-span{
     color: #212121;
+    margin-left: 4px;
 }
 
 .mb4 {
@@ -558,6 +559,8 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 .sub-span {
     color: #757575;
     margin-left: 5px;
+    font-size: 12px;
+    font-weight: 400;
 }
 .caption-1, #profile_image_edit_modal .modal__body .modal-info-body .base-dot-list .dot-line, .caption-1-bold, .caption-1-medium, .caption-1-light {
     font-size: 12px;
@@ -610,7 +613,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 
     border-bottom: solid 1px #e0e0e0;
 }
-.container.scrapbook .main-content-container .main-content.read-news-list .content-title-with-btn .all-delete-read-news {
+.container.mypage .main-content-container .main-content.read-products-list .content-title-with-btn .all-delete-read-products {
     display: flex;
     gap: 6px;
     align-items: center;
@@ -628,7 +631,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
     line-height: 24px;
     font-weight: 500;
 }
-.scrapbook-scraps-count{
+.mypage-mys-count{
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
