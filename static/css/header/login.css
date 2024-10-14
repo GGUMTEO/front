@@ -53,7 +53,7 @@ body {
 }
 
 header .header {
-    min-width: 1080px;
+    /* min-width: 1080px; */
 }
 
 header.header .header-nav {
@@ -125,14 +125,14 @@ header.header .container {
     border-radius: 8px;
 }
 
+.search-box:hover {
+    background-color: #fafafa;
+}
+
 .noti-box {
     display: flex;
     align-items: center;
     margin-left: auto;
-}
-
-.search-box:hover {
-    background-color: #fafafa;
 }
 
 .btn {
