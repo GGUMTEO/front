@@ -119,7 +119,7 @@ html {
 }
 .container.scrapbook .main-content-container {
     width: 800px;
-    padding-left: 150px;
+    padding-left: 118px;
 }
 .container.scrapbook .main-content-container .main-content {
     width: 720px;
@@ -343,3 +343,16 @@ html {
     font-weight: 400;
 }
 
+.wishket-bg-card-newbie-process-footer {
+    padding: 20px 0;
+    border-top: solid 1px #e0e0e0;
+    color: #757575;
+    cursor: pointer;
+    text-align: center;
+}
+.wishket-bg-card-newbie-process-footer img {
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 5px;
+    rotate: 180deg;
+}
