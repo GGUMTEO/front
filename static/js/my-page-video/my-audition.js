@@ -1,38 +1,56 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // 사이드바 메뉴 토글 기능
     const sidebarMenu = document.querySelector(".sidebar-menu.scrapbook");
     const scrapbookListBox = document.querySelector(".scrapbook-list-box");
     const iconFold = document.querySelector(".icon-fold");
 
-    sidebarMenu.addEventListener("click", function () {
-        // `scrapbook-list-box`를 숨기거나 표시
-        if (
-            scrapbookListBox.style.display === "none" ||
-            scrapbookListBox.style.display === ""
-        ) {
-            scrapbookListBox.style.display = "block";
-        } else {
-            scrapbookListBox.style.display = "none";
-        }
+    if (sidebarMenu) {
+        sidebarMenu.addEventListener("click", function () {
+            // `scrapbook-list-box`를 숨기거나 표시
+            if (
+                scrapbookListBox.style.display === "none" ||
+                scrapbookListBox.style.display === ""
+            ) {
+                scrapbookListBox.style.display = "block";
+            } else {
+                scrapbookListBox.style.display = "none";
+            }
 
-        // 아이콘 방향 변경
-        iconFold.classList.toggle("fold-on");
+            // 아이콘 방향 변경
+            iconFold.classList.toggle("fold-on");
+        });
+    }
+
+    const toggleReplyBtns = document.querySelectorAll(".btn-wrapper");
+
+    toggleReplyBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+            const replyId = this.getAttribute("data-reply"); // 각 버튼에 설정된 data-reply 값 가져오기
+            const replySection = document.getElementById(
+                `replySection${replyId}`
+            ); // data-reply에 해당하는 replySection 찾기
+            if (
+                replySection.style.display === "none" ||
+                replySection.style.display === ""
+            ) {
+                replySection.style.display = "block"; // 보이도록 변경
+            } else {
+                replySection.style.display = "none"; // 다시 숨김
+            }
+        });
     });
-});
-document.addEventListener("DOMContentLoaded", function () {
+
     const choiceGroups = document.querySelectorAll(".btn-group.choice-group");
 
     choiceGroups.forEach(function (group) {
         const btnPublic = group.querySelector(".btn-choice.btn-public");
         const btnSecret = group.querySelector(".btn-choice.btn-secret");
 
-        // 클릭 이벤트 설정
-        function toggleActiveClass(event) {
-            // 두 버튼에 active 클래스를 교환
+        function toggleActiveClass() {
             btnPublic.classList.toggle("active");
             btnSecret.classList.toggle("active");
         }
 
-        // 각 버튼에 이벤트 리스너 추가
         btnPublic.addEventListener("click", toggleActiveClass);
         btnSecret.addEventListener("click", toggleActiveClass);
     });
