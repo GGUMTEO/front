@@ -154,3 +154,12 @@ table td {
 a {
     text-decoration: none;
 }
+
+.fa-arrow-right:before {
+    content: "\f061";
+}
+
+*:before, {
+    -moz-box-sizing: 
+    box-sizing: border-box;
+}
