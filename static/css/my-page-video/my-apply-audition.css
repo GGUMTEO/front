@@ -118,7 +118,7 @@ html {
 }
 .container.scrapbook .main-content-container {
     width: 800px;
-    padding-left: 45px;
+    padding-left: 80px;
 }
 .container.scrapbook .main-content-container .main-content {
     width: 720px;
@@ -264,7 +264,7 @@ html {
     border: none;
 }
 .item_recruit {
-    padding: 0px 39px 5px;
+    padding: 21px 39px 20px;
     border-top: 1px solid #e6e6e6;
     line-height: 20px;
     display: flex;
@@ -664,86 +664,4 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 .pagination li {
     display: inline-block;
     cursor: pointer;
-}
-
-.page-link:hover {
-    z-index: 2;
-    border-radius: 8px;
-    background-color: #fafafa;
-}
-
-.news-author-box .btn {
-    padding: 8px;
-}
-.container.scrapbook .main-content-container .news-list .news-author-box .btn {
-    padding: 8px;
-    border: 0px;
-    background: white;
-}
-.btn-wrapper .action-tooltip.bottom-action {
-    top: -44px;
-    left: 50%;
-    transform: translate(-50%, 16px);
-}
-.btn-wrapper .action-tooltip {
-    opacity: 0;
-    transition: all .4s ease-in-out;
-    cursor: default;
-    position: absolute;
-    width: max-content;
-    color: #fff;
-    background-color: #212121;
-    border-radius: 6px;
-    padding: 2px 6px;
-    font-size: 11px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.27;
-}
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-.icon-scrap-edit-off {
-    width: 24px;
-    height: 24px;
-    background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_toolbar_scrap_off.png);
-}
-.btn-wrapper {
-    display: flex;
-    position: relative;
-    width: max-content;
-    border-radius: 8px;
-}
-.btn-wrapper .action-tooltip.bottom-action:after {
-    border-top: 4px solid #212121;
-    border-left: 3px solid rgba(0, 0, 0, 0);
-    border-right: 3px solid rgba(0, 0, 0, 0);
-    border-bottom: 4px solid rgba(0, 0, 0, 0);
-    content: "";
-    position: absolute;
-    top: 18px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.btn-action {
-    cursor: pointer;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-}
-
-.btn:hover .action-tooltip {
-    opacity: 1;
-    display: block;
-}
-
-.item{
-    border-bottom: 1px solid #d6d6d6;
 }

@@ -68,7 +68,7 @@ body {
     width: 1080px;
 }
 
-.project-create-form-section {
+.application-create-form-section {
     background-color: #fff;
     width: 800px;
     float: left;
@@ -143,7 +143,7 @@ a {
     font-weight: bold;
 }
 
-.select-project-box-group {
+.select-application-box-group {
     display: flex;
 }
 
@@ -267,7 +267,7 @@ button {
     border: #2099bb;
 }
 
-.project-create-form-section::after {
+.application-create-form-section::after {
     content: "";
     display: table;
     clear: both;
@@ -302,7 +302,7 @@ button {
     font-weight: 400;
 }
 
-body.project-create .project-create-formview .container::after {
+body.application-create .application-create-formview .container::after {
     content: "";
     display: table;
     clear: both;
