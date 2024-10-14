@@ -72,6 +72,13 @@ body {
     font-size: 23px;
     line-height: 28px;
 }
+.funding-category {
+    color: #7e7e7e;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+}
 .report {
     display: flex;
     width: 87px;
@@ -118,16 +125,6 @@ button {
 .funding-content-wrapper {
     width: 100%;
     padding-top: 24px;
-}
-.funding-thumbnail {
-    padding: 20px 24px 20px 22px;
-    border-radius: 8px;
-    background-color: #f7fafc;
-    border-left: solid 2px #ccd1d6;
-    margin-bottom: 32px;
-}
-.thumbnail {
-    width: 100%;
 }
 .content-title {
     color: #424242;
@@ -303,4 +300,171 @@ button {
     line-height: 20px;
     font-weight: 400;
     margin-top: 8px;
+}
+.funding-product-container {
+    margin-top: 30px;
+    max-height: 400px; /* 필요한 높이로 설정 */
+    overflow-y: auto; /* 콘텐츠가 넘칠 때 세로 스크롤 활성화 */
+}
+.funding-product {
+    padding: 20px 24px 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px 0 rgba(230, 235, 240, 0.8);
+    border: solid 1px #e6ebf0;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.product-header-title {
+    color: #424242;
+    display: flex;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+.buy-product {
+    margin-left: auto;
+    display: flex;
+    color: #3ba3c7;
+    gap: 4px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+a {
+    text-decoration: none;
+}
+.product-info {
+    display: flex;
+    position: relative;
+}
+.product-name {
+    color: #424242;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+.product-number {
+    color: #53b97e;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+.product-price {
+    margin-bottom: 8px;
+}
+.more-info-box {
+    border-top: solid 1px #e0e0e0;
+    padding-top: 32px;
+}
+.similar-header-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.body-1-medium-title {
+    color: #3ba3c7;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+.content-list {
+    margin-bottom: 8px;
+}
+.similar-link {
+    float: left;
+}
+.link-box {
+    display: inline-block;
+    border-radius: 8px;
+    height: 196px;
+    background-color: #fff;
+}
+.img-box {
+    width: 200px;
+    height: 200px;
+    margin-right: 16px;
+}
+.similar-thumbnail-image {
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+.similar-thumbnail-title {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    width: 160px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 20px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 60px;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    z-index: 10;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.report-submit {
+    cursor: pointer;
+    float: right;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: lightpink;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: border-color 0.3s ease;
+    resize: none; /* 크기 조절 기능 비활성화 */
+}
+
+textarea:focus {
+    outline: none;
 }

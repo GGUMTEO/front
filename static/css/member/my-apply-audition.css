@@ -351,7 +351,7 @@ a {
 }
 .sri_btn_xs span {
     display: inline-block;
-    padding-top: 1px;
+    padding-top: 2px;
     width: 78px;
     height: 18px;
     border: 1px solid #dce2ef;
@@ -665,98 +665,14 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
     display: inline-block;
     cursor: pointer;
 }
-.comment-box {
-    padding: 10px 0px;
-    border-bottom: 1px solid #e0e0e0;
-}
-.write-user {
-    margin: 9px 0px 0px 12px;
-}
-.comment-writer-img {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    margin: 1px 7px 1px 0px;
-    border-radius: 10px;
-    border: solid 1px #e0e0e0;
-}
-.comment-writer-name {
+.sidebar-menu-name{
     font-size: 14px;
-    line-height: 1.71;
-    margin-left: 27px;
-    color: #212121;
+    line-height: 24px;
     font-weight: 500;
 }
-.writer-name {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-}
-.btn-comment-action {
-    float: inline-end;
-    margin-right: 17px;
-    color: #9e9e9e;
-}
-.btn-comment-delete {
-    display: inline-block;
-    font-size: 13px;
-    line-height: 1.54;
-    border: none;
-    background-color: #fff;
-    color: #9e9e9e;
-}
-.cursor {
-    cursor: pointer;
-}
-.comment-wrapper .comment {
-    margin: 4px 0px 2px 0px;
-    font-size: 14px;
-    line-height: 1.71;
-    word-break: break-word;
-}
-.comment {
-    font-size: 14px;
-    line-height: 1.71;
-    resize: none;
-    border: none;
-    color: #424242;
-    word-break: break-word;
-    padding: 0px 12px 0px 12px;
-    margin: 8px 0px 2px 0px;
-    overflow: auto;
-    width: 718px;
-    height: 72px;
-    outline: #757575;
-}
-a {
-    text-decoration: none;
-    color: #212121;
-}
-.comment-date-created {
-    margin-left: 12px;
+.scrapbook-scraps-count{
     font-size: 12px;
-    line-height: 1.5;
-    color: #bdbdbd;
-}
-.comment-review {
-    float: right;
-}
-.review-box {
-    display: flex;
-    align-items: center;
-    margin-right: 24px;
-}
-.star-box {
-    margin-right: 8px;
-    display: flex;
-    gap: 2px;
-    align-items: center;
-}
-.body-3-medium {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 20px;
-}
-.review-score {
-    color: #424242;
+    line-height: 18px;
+    font-weight: 400;
+    color: #9e9e9e;
 }
