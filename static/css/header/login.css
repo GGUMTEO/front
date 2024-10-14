@@ -47,13 +47,21 @@ a {
     color: #212121;
 }
 
+/* height: 100%; */
 body {
     position: inherit;
     width: inherit;
 }
 
-header .header {
-    /* min-width: 1080px; */
+header.header {
+    min-width: 1080px;
+}
+
+/* z-index 없어도 구현되지만, 메인페이지 완성 후 한번 더 테스트 하려고 함 */
+header.header .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header.header .header-nav {
@@ -63,7 +71,7 @@ header.header .header-nav {
     border-bottom: 1px solid #eee;
 }
 
-header.header .container {
+.container {
     width: 1080px;
     margin: 0 auto;
 }
@@ -266,6 +274,7 @@ header.header .container {
 
 /* 검색 (search) */
 
+/* z-index: 10001; */
 .search-full-modal {
     display: none;
     left: 0;
@@ -273,11 +282,10 @@ header.header .container {
     width: 100%;
     background: #fff;
     position: fixed;
-    z-index: 2;
+    z-index: 10001;
 }
 
 .search-full-modal .search-part {
-    z-index: 2;
     border-bottom: solid 1px #e0e0e0;
 }
 
