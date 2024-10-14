@@ -470,7 +470,7 @@ a {
     margin-left: 24px;
 }
 
-detail-section .client-section-wrap .client-section {
+.detail-section .client-section-wrap .client-section {
     display: inline-block;
     width: 256px;
     position: sticky;
@@ -636,4 +636,10 @@ detail-section .client-section-wrap .client-section {
 .client-badge-box .client-badge-name {
     display: inline-block;
     margin-left: 4px;
+}
+
+.status-mark{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
 }
