@@ -62,8 +62,6 @@
                                     신청자 정보
                                     <small class="small-text"
                                         >신청자 정보를 수정할 수 있습니다.
-                                        <br />
-                                        마이페이지 내용은 바뀌지 않습니다.
                                     </small>
                                 </h3>
                             </div>
@@ -137,7 +135,7 @@
                                         border-bottom: 1px dashed #dedede;
                                         padding-bottom: 25px;
                                         margin-bottom: 25px;
-                                        height: 800px;
+                                        height: 100%;
                                     "
                                 >
                                     <div class="form-group">
@@ -235,6 +233,24 @@
                                                         ></i>
                                                     </div>
                                                     연도
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                        stroke-width="1.5"
+                                                        stroke="currentColor"
+                                                        class="size-6"
+                                                        style="
+                                                            width: 10px;
+                                                            margin-left: 20px;
+                                                        "
+                                                    >
+                                                        <path
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                                                        />
+                                                    </svg>
                                                 </div>
                                                 <div
                                                     class="dropdown-customize-container"
@@ -888,6 +904,24 @@
                                                         ></i>
                                                     </div>
                                                     월
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                        stroke-width="1.5"
+                                                        stroke="currentColor"
+                                                        class="size-6"
+                                                        style="
+                                                            width: 10px;
+                                                            margin-left: 30px;
+                                                        "
+                                                    >
+                                                        <path
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                                                        />
+                                                    </svg>
                                                 </div>
                                                 <div
                                                     class="dropdown-customize-container"
@@ -997,6 +1031,24 @@
                                                         ></i>
                                                     </div>
                                                     일
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                        stroke-width="1.5"
+                                                        stroke="currentColor"
+                                                        class="size-6"
+                                                        style="
+                                                            width: 10px;
+                                                            margin-left: 30px;
+                                                        "
+                                                    >
+                                                        <path
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                                                        />
+                                                    </svg>
                                                 </div>
                                                 <div
                                                     class="dropdown-customize-container"
@@ -1166,8 +1218,6 @@
                                                     class="form-control dropdown-customize-select"
                                                     data-exception="yes"
                                                     data-select-type="birth"
-                                                    id="id_date_of_birth_day"
-                                                    name="date_of_birth_day"
                                                     style="display: none"
                                                 >
                                                     <option></option>
@@ -1214,45 +1264,17 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label"
-                                            >세금계산서용 이메일</label
+                                            >이메일</label
                                         >
                                         <div class="control-wrapper">
                                             <input
                                                 class="form-control"
                                                 data-exception="yes"
-                                                id="email_for_tax"
-                                                name="email_for_tax"
-                                                placeholder="여러 이메일을 입력하려면 쉼표(,)로 구분해 주세요."
+                                                placeholder="이메일을 입력하세요."
                                                 type="text"
-                                                value="topaz7107@gmail.com"
+                                                value=""
                                             />
-                                            <div style="padding-top: 6px">
-                                                <input
-                                                    checked=""
-                                                    id="tax_user_email_equal"
-                                                    name="tax_user_email_equal"
-                                                    style="
-                                                        float: left;
-                                                        margin-right: 8px;
-                                                    "
-                                                    type="checkbox"
-                                                /><label
-                                                    for="tax_user_email_equal"
-                                                    style="
-                                                        font-weight: normal;
-                                                        color: #333;
-                                                        font-size: 14px;
-                                                    "
-                                                    >이메일과 동일합니다.</label
-                                                >
-                                            </div>
-                                            <span
-                                                class="help-block"
-                                                style="margin-bottom: 0"
-                                                >세금계산서용 이메일은 최대
-                                                2개까지 입력할 수
-                                                있습니다.</span
-                                            >
+
                                             <div class="error-message">
                                                 <i
                                                     class="fa fa-exclamation-circle"
@@ -1262,6 +1284,118 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="form-group">
+                                        <label class="control-label"
+                                            >연락처</label
+                                        >
+                                        <div class="control-wrapper">
+                                            <input
+                                                class="form-control"
+                                                data-exception="yes"
+                                                placeholder="전화번호를 입력하세요."
+                                                type="text"
+                                                value=""
+                                            />
+                                            <div class="error-message">
+                                                <i
+                                                    class="fa fa-exclamation-circle"
+                                                ></i>
+                                                올바른 전화번호를 입력해주세요.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label"
+                                            >추가 작성사항</label
+                                        >
+                                        <div class="control-wrapper">
+                                            <textarea
+                                                class="form-control form-textarea"
+                                                placeholder="추가로 입력할 내용을 입력하세요."
+                                                value=""
+                                                style="height: 340px"
+                                            ></textarea>
+                                            <div class="error-message">
+                                                <i
+                                                    class="fa fa-exclamation-circle"
+                                                ></i>
+                                                간단한 자기소개를 입력해주세요.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="form-group"
+                                        style="margin-top: 360px"
+                                    >
+                                        <label class="control-label"
+                                            >첨부파일</label
+                                        >
+                                        <div class="control-wrapper">
+                                            <input
+                                                accept=".pdf, .docx, .doc, .hwp"
+                                                class="temp-upload-resume"
+                                                hidden=""
+                                                type="file"
+                                            />
+
+                                            <div class="selected-file-viewer">
+                                                <input
+                                                    class="remove-request"
+                                                    hidden=""
+                                                    name="remove_request"
+                                                    type="checkbox"
+                                                />
+                                                <p
+                                                    class="placeholder-attachment"
+                                                >
+                                                    이력서를 제출해주세요.
+                                                </p>
+                                                <div class="tooltip-group">
+                                                    <img
+                                                        class="viewer-file-icon"
+                                                        src="/static/images/audition/attachment_file_icon@2x.png"
+                                                        style="width: 15px"
+                                                    /><a
+                                                        download=""
+                                                        id="resume_download"
+                                                        ><p
+                                                            class="file-name-viewer text300 body-2-medium"
+                                                            id="selected_file_name_viewer"
+                                                        ></p></a
+                                                    ><img
+                                                        class="btn-delete-resume"
+                                                        id="btn_delete_resume"
+                                                        src="/static/images/audition/chip_btn_delete_normal@2x.png"
+                                                        style="width: 15px"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <button
+                                                class="btn btn-file-select btn-8-16 body-2 text600"
+                                                id="file_select_btn"
+                                                type="button"
+                                            >
+                                                <img
+                                                    src="/static/images/audition/btn_icon_add@2x.png"
+                                                    style="width: 15px"
+                                                />이력서 선택
+                                            </button>
+                                            <div class="error-message">
+                                                <i
+                                                    class="fa fa-exclamation-circle"
+                                                ></i>
+                                                첨부파일을 선택해주세요.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button
+                                        class="form-btn btn-wishket btn-11-24 btn-block"
+                                        id="consulting_apply_button"
+                                        type="button"
+                                    >
+                                        오디션 신청 하기
+                                    </button>
                                 </form>
                             </div>
                         </div>
@@ -1271,4 +1405,13 @@
         </main>
         <footer></footer>
     </body>
+    <script src="/static/js/audition/application2.js"></script>
+    <script src="/static/js/audition/application-date.js"></script>
+    <script>
+        document
+            .getElementById("file_select_btn")
+            .addEventListener("click", function () {
+                document.querySelector(".temp-upload-resume").click();
+            });
+    </script>
 </html>
