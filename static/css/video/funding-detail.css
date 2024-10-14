@@ -1,0 +1,306 @@
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 700;
+    src: url("/fonts/NotoSansKR-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 500;
+    src: url("/fonts/NotoSansKR-Medium.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 400;
+    src: url("/fonts/NotoSansKR-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 300;
+    src: url("/fonts/NotoSansKR-Light.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 100;
+    src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "NotoSansKR", Sans-serif;
+    line-height: 1rem;
+}
+
+body {
+    height: 100%;
+}
+.ggumteo-funding {
+    background-color: #fff;
+}
+.funding-detail-page {
+    min-width: 1080px;
+    height: auto;
+    min-height: 70%;
+}
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+.ggumteo-funding-wrapper {
+    padding: 36px 0 80px;
+    display: flex;
+    gap: 32px;
+}
+.left-side {
+    width: 736px;
+}
+.header {
+    padding-bottom: 24px;
+    border-bottom: solid 1px #e0e0e0;
+}
+.header-title {
+    color: #212121;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+}
+.report {
+    display: flex;
+    width: 87px;
+    height: 28px;
+    padding: 4px 9px;
+    margin-left: 16px;
+    border-radius: 4px;
+    border: solid 1px #e0e0e0;
+}
+.btn {
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+}
+button {
+    background: none;
+}
+.copy-img {
+    margin: 3px 4px 3px 0;
+}
+.text500 {
+    color: #757575;
+}
+.body-3-medium {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+}
+.header-subtitle {
+    display: flex;
+    margin-top: 8px;
+    gap: 8px;
+    align-items: center;
+}
+
+.header-subtitle-content {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0059ff;
+}
+.funding-content-wrapper {
+    width: 100%;
+    padding-top: 24px;
+}
+.funding-thumbnail {
+    padding: 20px 24px 20px 22px;
+    border-radius: 8px;
+    background-color: #f7fafc;
+    border-left: solid 2px #ccd1d6;
+    margin-bottom: 32px;
+}
+.thumbnail {
+    width: 100%;
+}
+.content-title {
+    color: #424242;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.funding-content {
+    color: #424242;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    border-bottom: solid 1px #e0e0e0;
+    padding-bottom: 30px;
+}
+.funding-img {
+    margin-top: 32px;
+}
+.funding-img img {
+    width: 726px;
+    border-radius: 8px;
+}
+.funding-img-content {
+    color: #424242;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #e0e0e0;
+}
+.funding-video-content {
+    color: #424242;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    margin-top: 20px;
+    border-bottom: solid 1px #e0e0e0;
+    padding-bottom: 30px;
+}
+.right-side {
+    float: left;
+    border-radius: 0 4px 4px 0;
+    width: 312px;
+}
+.right-side-wrapper {
+    position: sticky;
+    top: 52px;
+}
+.funding-box {
+    padding: 24px 24px 24px 27px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px 0 rgba(230, 235, 240, 0.8);
+    border: solid 1px #e6ebf0;
+    background-color: #fff;
+}
+.funding-box-title {
+    color: #424242;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+.process-subject {
+    display: flex;
+    align-items: center;
+    color: #424242;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+}
+.process-subject-icon {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: solid 2px #3ba3c7;
+    margin-right: 16px;
+}
+.process-content {
+    display: flex;
+}
+.process-bar {
+    width: 2px;
+    border-radius: 1px;
+    margin-left: 3px;
+    background-color: #e6ebf0;
+}
+.process-content-detail {
+    padding: 8px 0 24px 19px;
+}
+.funding-intro {
+    color: #424242;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.funding-intro-detail {
+    display: flex;
+    align-items: flex-start;
+}
+.funding-start-date {
+    color: #757575;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+.start-date {
+    margin-left: 5px;
+}
+.funding-investor {
+    color: #424242;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.funding-end-date {
+    color: #757575;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+.funding-money {
+    color: #424242;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.funding-today-money {
+    color: #757575;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.funding-persent-div {
+    margin-top: 10px;
+}
+.funding-writer {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+.profile-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.profile-name {
+    color: #424242;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.writer-email {
+    color: #424242;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+.write-intro {
+    color: #424242;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 8px;
+}

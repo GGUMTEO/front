@@ -50,7 +50,7 @@ body {
     min-height: 70%;
 }
 
-.project-detail-view {
+.detail-detail-view {
     margin-top: 20px;
 }
 
@@ -59,36 +59,36 @@ body {
     margin: 0 auto;
 }
 
-.project-detail-view .container {
+.detail-detail-view .container {
     width: 1080px;
 }
 
-.project-detail-view .detail-section {
+.detail-detail-view .detail-section {
     display: flex;
 }
 
-.project-detail-view .detail-section .project-section {
+.detail-detail-view .detail-section .detail-section {
     width: 800px;
 }
 
-.project-detail-view .detail-section .client-section-wrap {
+.detail-detail-view .detail-section .client-section-wrap {
     position: relative;
     margin-left: 24px;
 }
 
-.project-detail-view .detail-section::after {
+.detail-detail-view .detail-section::after {
     content: " ";
     display: block;
     clear: both;
 }
 
-.project-detail-view .container::after {
+.detail-detail-view .container::after {
     content: "";
     display: block;
     clear: both;
 }
 
-.project-detail-view::after {
+.detail-detail-view::after {
     content: "";
     display: block;
     clear: both;
@@ -109,14 +109,14 @@ a {
     margin-bottom: 24px;
 }
 
-.project-detail-view .project-content-layer {
+.detail-detail-view .detail-content-layer {
     padding: 24px 32px 32px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
 }
 
-.project-status-label {
+.detail-status-label {
     position: relative;
     display: flex;
 }
@@ -125,13 +125,19 @@ a {
     margin-bottom: 8px;
 }
 
-.project-status-label.recruiting-status .recruiting-mark {
+.detail-status-label.recruiting-status .recruiting-mark {
     border-color: #93dbc6;
     background-color: #ebfff9;
     color: #009c6f;
 }
 
-.project-status-label div.status-mark {
+.detail-status-label.recruiting-status .recruiting-mark-end{
+    border-color: #a1a6ad;
+    background-color: #e6ebf0;
+    color: #242933;
+}
+
+.detail-status-label div.status-mark {
     display: flex;
     align-items: center;
     padding: 1px 7px;
@@ -139,7 +145,7 @@ a {
     border-radius: 8px;
 }
 
-.project-status-label.recruiting-status .project-type-mark {
+.detail-status-label.recruiting-status .detail-type-mark {
     border-color: #e0e0e0;
     background-color: #fff;
     color: #616161;
@@ -155,18 +161,18 @@ a {
     color: #bdbdbd;
 }
 
-.project-detail-view .project-content-layer .project-content-title .project-recruit-guide {
+.detail-detail-view .detail-content-layer .detail-content-title .detail-recruit-guide {
     float: right;
     margin-top: 2px;
     display: flex;
     margin-left: auto;
 }
 
-.project-status-label div.status-mark+.status-mark {
+.detail-status-label div.status-mark+.status-mark {
     margin-left: 8px;
 }
 
-.project-status-label div.status-mark.with-img {
+.detail-status-label div.status-mark.with-img {
     padding: 1px 7px 1px 3px;
 }
 
@@ -210,16 +216,16 @@ a {
     color: #212121;
 }
 
-.project-detail-view .detail-section .layer-divider {
+.detail-detail-view .detail-section .layer-divider {
     border: none;
     border-top: 1px solid #e0e0e0;
 }
 
-.project-content-layer .project-important-condition.term_based {
+.detail-content-layer .detail-important-condition.term_based {
     display: flex;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info {
     border-radius: 8px;
     padding: 20px 24px 24px 24px;
     background-color: #fff;
@@ -228,12 +234,12 @@ a {
     width: 100%;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-role {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-role {
     border-bottom: 1px solid #e6ebf0;
     padding-bottom: 20px;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail {
     padding-top: 20px;
 }
 
@@ -241,13 +247,13 @@ a {
     color: #757575;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-header .detail-header-info {
     display: inline-block;
     vertical-align: top;
     position: relative;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info.level {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-header .detail-header-info.level {
     width: 140px;
 }
 
@@ -255,7 +261,7 @@ a {
     position: relative;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info .label-inline-tooltip {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-header .detail-header-info .label-inline-tooltip {
     position: absolute;
     top: 0;
     left: 30px;
@@ -265,7 +271,7 @@ a {
     cursor: pointer;
 }
 
-.project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info.level img {
+.detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-header .detail-header-info.level img {
     vertical-align: top;
     display: inline-block;
     margin-left: 4px;
@@ -288,7 +294,7 @@ a {
     word-break: keep-all;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info .label-inline-tooltip .tooltip-text {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-header .detail-header-info .label-inline-tooltip .tooltip-text {
     width: 300px;
 }
 
@@ -299,46 +305,46 @@ a {
     right: 100%;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info.experience {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-header .detail-header-info.experience {
     width: calc(100% - 62px);
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-header .detail-header-info.budget {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-header .detail-header-info.budget {
     text-align: right;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-row {
     margin-top: 12px;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-row .detail-target-detail-row-info {
     display: inline-block;
     vertical-align: top;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info.level {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-row .detail-target-detail-row-info.level {
     width: 140px;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info-wrapper {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-row .detail-target-detail-row-info-wrapper {
     display: inline-flex;
     justify-content: space-between;
     width: 678px;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-row .detail-target-detail-row-info {
     display: inline-block;
     vertical-align: top;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info.experience {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-row .detail-target-detail-row-info.experience {
     display: inline-flex;
     flex: 1;
     align-items: center;
     white-space: nowrap;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info.experience:after {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-row .detail-target-detail-row-info.experience:after {
     content: "";
     height: 1px;
     width: 100%;
@@ -346,28 +352,28 @@ a {
     margin: 0 16px;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-detail .project-target-detail-row .project-target-detail-row-info.budget {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-row .detail-target-detail-row-info.budget {
     text-align: right;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-condition {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-condition {
     padding: 12px 16px 16px;
     margin-top: 24px;
     background-color: #f7fafc;
     border-radius: 8px;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-condition .target-condition-row .condition-row-title {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-condition .target-condition-row .condition-row-title {
     width: 108px;
     display: inline-block;
     margin-right: 16px;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-condition .target-condition-row .condition-row-data {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-condition .target-condition-row .condition-row-data {
     display: inline-block;
 }
 
-.project-content-layer .project-important-condition.term_based .project-target-info .project-target-condition .target-condition-row+.target-condition-row {
+.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-condition .target-condition-row+.target-condition-row {
     margin-top: 8px;
 }
 
@@ -377,19 +383,19 @@ a {
     gap: 8px;
 }
 
-.project-content-layer .project-detail-condition.term_based .project-detail-condition-row {
+.detail-content-layer .detail-detail-condition.term_based .detail-detail-condition-row {
     display: flex;
     align-items: flex-start;
 }
 
-.project-content-layer .project-detail-condition.term_based .project-detail-condition-row .condition-title {
+.detail-content-layer .detail-detail-condition.term_based .detail-detail-condition-row .condition-title {
     display: flex;
     align-items: center;
     width: 156px;
     flex-shrink: 0;
 }
 
-.project-content-layer .project-detail-condition.term_based .project-detail-condition-row .condition-title .condition-icon {
+.detail-content-layer .detail-detail-condition.term_based .detail-detail-condition-row .condition-title .condition-icon {
     width: 4px;
     height: 4px;
     margin-right: 8px;
@@ -401,7 +407,7 @@ a {
     vertical-align: top;
 }
 
-.project-content-layer .project-detail-condition.term_based .project-detail-condition-row .condition-data .condition-accent {
+.detail-content-layer .detail-detail-condition.term_based .detail-detail-condition-row .condition-data .condition-accent {
     display: inline-block;
     vertical-align: top;
     margin-top: 3px;
@@ -412,21 +418,21 @@ a {
     margin-bottom: 32px;
 }
 
-.project-detail-condition.term_based .project-detail-condition-row .condition-title {
+.detail-detail-condition.term_based .detail-detail-condition-row .condition-title {
     display: flex;
     align-items: center;
     width: 156px;
     flex-shrink: 0;
 }
 
-.project-content-layer .divide {
+.detail-content-layer .divide {
     margin: 12px 0;
     padding: 12px 0;
     border-top: 1px solid #f5f5f5;
     border-bottom: 1px solid #f5f5f5;
 }
 
-.project-content-layer .divide.term-based {
+.detail-content-layer .divide.term-based {
     border-bottom: none;
     padding-bottom: 0;
 }
@@ -441,7 +447,7 @@ a {
     border-top: 1px solid #e0e0e0;
 }
 
-.project-detail-view .detail-section .layer-divider.mt40mb32 {
+.detail-detail-view .detail-section .layer-divider.mt40mb32 {
     margin: 40px 0 32px;
 }
 
@@ -455,7 +461,7 @@ a {
     font-weight: 500;
 }
 
-.project-content-layer .project-description .project-description-box {
+.detail-content-layer .detail-description .detail-description-box {
     word-break: break-all;
 }
 
@@ -592,7 +598,7 @@ detail-section .client-section-wrap .client-section {
 .btn-white {
     border: 1px solid #e0e0e0;
     background-color: #fff;
-    color: #616161;
+    color: red;
 }
 
 .ui-tooltip {
