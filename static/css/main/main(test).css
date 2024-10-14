@@ -109,7 +109,7 @@ a {
     clear: both;
 }
 
-.introduction-detail-container-part {
+.introduction-detail-part {
     border-top: 1px solid #e6ebf0;
     background-color: #f7fafc;
 }
@@ -119,12 +119,12 @@ a {
     margin: 0 auto;
 }
 
-.introduction-detail-container-part .intro-part-2 {
+.introduction-detail-part .intro-part {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.introduction-detail-container-part .intro-part-2 .part-guide-box {
+.introduction-detail-part .intro-part .part-guide-box {
     width: 500px;
     margin-right: 80px;
     display: inline-block;
@@ -152,17 +152,17 @@ a {
 }
 /*  */
 
-.introduction-detail-container-part .intro-part-2 .part-number-box {
+.introduction-detail-part .intro-part .part-number-box {
     display: inline-block;
     vertical-align: top;
     width: 500px;
 }
 
-.introduction-detail-container-part .intro-part-2 .part-number-box .number-info.upper {
+.introduction-detail-part .intro-part .part-number-box .number-info.upper {
     margin-bottom: 32px;
 }
 
-.introduction-detail-container-part .intro-part-2 .part-number-box .number-info {
+.introduction-detail-part .intro-part .part-number-box .number-info {
     display: inline-block;
     margin-right: 32px;
     width: 218px;

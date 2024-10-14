@@ -81,6 +81,7 @@ body {
     width: 90px;
 }
 
+/* pc-only */
 .pc-only {
     display: flex !important;
 }
@@ -118,6 +119,12 @@ body {
     padding: 7px;
     margin-right: 6px;
     border-radius: 8px;
+}
+
+.noti-box {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .search-box:hover {
@@ -236,7 +243,7 @@ body {
     cursor: pointer;
 }
 
-.margin-bottom-15px {
+.icon-box .noti-item {
     margin-bottom: 15px;
 }
 
@@ -291,6 +298,10 @@ body {
     line-height: 1.63;
     letter-spacing: normal;
     color: #616161;
+}
+
+.search-input::placeholder {
+    color: #bdbdbd;
 }
 
 .search-full-modal .search-part .icon-close {
