@@ -100,7 +100,7 @@ html {
 .body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
     font-size: 14px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .scrapbook-list-box {
@@ -116,7 +116,6 @@ html {
 .scrapbook-list-box .sidebar-menu .sidebar-menu-name-img-set {
     padding: 12px 0px 12px 44px;
 }
-
 
 
 .sidebar-menu .scrapbook-scraps-count {
@@ -452,7 +451,7 @@ p {
     display: block !important;
     text-align: center;
     line-height: 40px;
-    padding: 30px 0px 120px 0px;
+    padding: 48px 0px 120px 0px;
 }
 ul {
     list-style: none;
@@ -530,7 +529,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 }.setting-td {
     display: inline-block;
 }
-.size-l {
+.manager {
     width: 350px;
 }
 .size-s {
@@ -557,6 +556,8 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 }
 .major-span{
     color: #212121;
+    margin-bottom: 10px;
+    margin-left: 5px;
 }
 
 .mb4 {
@@ -626,14 +627,24 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 .body-2-medium {
     font-weight: 500;
 }
-
-.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 500;
-}
 #replybackornext {
     margin-bottom: -150px;
     margin-top: -40px;
     margin-right: -573px;
+}
+.sub-span {
+    font-size: 13px;
+    white-space: normal; /* 줄바꿈 허용 */
+    word-wrap: break-word; /* 긴 단어도 줄바꿈 */
+}
+.sidebar-menu-name{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.scrapbook-scraps-count{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #9e9e9e;
 }
