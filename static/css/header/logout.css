@@ -197,6 +197,10 @@ body {
     color: #616161;
 }
 
+.search-input::placeholder {
+    color: #bdbdbd;
+}
+
 .search-full-modal .search-part .icon-close {
     cursor: pointer;
     width: 18px;
