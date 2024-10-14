@@ -17,6 +17,6 @@ backgroundOverlay.addEventListener("click", () => {
 
 const searchInput = document.getElementById("search-input");
 
-searchInput.focus();
+searchInput.focus;
 
-console.log(searchInput.focus());
+console.log(searchInput.focus);
