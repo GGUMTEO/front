@@ -1,0 +1,231 @@
+<!DOCTYPE html>   
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="/static/css/notice/notice.css">
+    <style>
+        body {
+            background-color: #f5f5f5; 
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px; 
+            margin: 30px auto; 
+            background-color: #f5f5f5; 
+            padding: 20px;
+        }
+
+        .title-subtitle-box {
+            padding: 10px 15px 15px 15px; 
+            margin-bottom: 10px; 
+            background-color: white; 
+            border: 1px solid #ddd; 
+        }
+
+
+        h1 {
+            text-align: left;
+            font-size: 20px; 
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: left;
+            font-size: 12px; 
+            color: gray;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 10px; 
+        }
+
+        .search-bar input {
+            padding: 4px 6px; 
+            border: 1px solid #ccc;
+            font-size: 12px; 
+            width: 180px; 
+        }
+
+        .search-bar button {
+            padding: 6px 10px; 
+            background-color: #005f99; 
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .table-pagination-box {
+            padding: 15px; 
+            margin-bottom: 20px;
+            background-color: white; 
+            border: 1px solid #ddd;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table td {
+            color:#535353;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        table th, table td {
+            padding: 8px; 
+            border: 1px solid #ddd;
+            text-align: left; 
+        }
+
+        table th:nth-child(1),
+        table th:nth-child(2),
+        table th:nth-child(4),
+        table td:nth-child(1),
+        table td:nth-child(2),
+        table td:nth-child(4) {
+            text-align: center;
+        }
+
+        .center-title {
+            text-align: center;
+        }
+
+        table th {
+            background-color: #f7f7f7;
+            font-weight: bold;
+        }
+
+        table td {
+            white-space: nowrap;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination span {
+            display: inline-block;
+            padding: 8px 12px;
+            margin: 0 4px;
+            color: #333;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .pagination span:hover {
+            color: #005f99;
+        }
+
+        .pagination span.active {
+            color: #005f99;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="content-header"> 
+        <h1 class="header-text"></h1>
+        "공지사항"
+        <h1 class="header-text">공지사항</h1>
+        <small class="small-text">꿈터의 새로운 소식을 확인할 수 있습니다.</small>
+    </h1>
+    </div>
+    <div class="content-inner"> 
+    <input class="news-center-search" id="news_center_search"name="q"type="text"> == $0
+    <span class=""news-center-search-add-on" id="news-center-search-submit">검색</span>
+   </form>
+  </div>
+</div>
+<div class="tab-content"> 
+    <div class="news-center-table" style="margin-top:0; margin-bottom:20px">
+        <table class="news-center-table" style=""margin-top:0; margin-bottom: 20px;"> == $0
+            <colgroup> 
+                <col style="width: 57px;">
+                <col style="width: 132px;">
+                <col style="width: 703px;">
+                <col style="width: 104px;">
+            </colgroup>
+            <thead class="news-center-table-head">  
+               <tr>
+                <th>번호</th>
+                <th>구분</th>
+                <th>제목</th>
+                <th>등록일</th>
+               </tr>
+            </thead>
+            <tr class="news-data-rows" data-forloop="1">>
+              <td class="news-center-table-body-number">273</td>
+              <td class="news-center-table-body-category">공지사항</td>
+              <td class="news-center-table-body-title">
+              <a href="/news-center/detail/812/" style="color: #535353;">
+              <span style="cursor:pointer;">[공지사항] 위시켓 이용약관 및 개인정보 처리방침 일부 개정 안내</span>
+              </a>  
+              </td>
+              </tr>
+            <tr class="news-data-rows" data-forloop="2">
+                <td class="news-center-table-body-number">272</td>
+                <td class="news-center-table-body-category">공지사항</td>
+                <td class="news-center-table-body-title"></td>
+                  <a herf="/news-center/detail/811/" style="color: #535353">
+                  <span style="cursor: pointer;">[공지사항]2024년 설연휴 꿈터 휴무 안내</span>  
+                  </a>
+                </td>
+                 <td class="news-data-rows" data-forloop="3">
+                    <td class="news-center-table-body-number">271</td>"
+                    <td class="news-center-table-body-category">공지사항</td>
+                 <td class="/news-center/detail/810/"style="color: #535353;"></td>
+                 <span style "cursor: pointer;">[공지사항]2023년 추석 연휴 꿈터 휴무 안내</span>
+                 </a>
+                 </td>
+                 <td class="news-center-table-body-date">2023.09.26</td>
+                 </tr>
+                 <tr class="news-data-rows" data-forloop="4">
+                  <td class="news-center-table-body-number">270</td>
+                  <td class="news-center-table-body-category">꿈터 이용팁</td>
+                  <td class="news-center-table-body-title">
+                    <a href="/news-center/detail/809/"style="color: #535353;">
+                      <span style="cursor: pointer;">정부지원사업 창업가를 위한 꿈터 이용 가이드</span>
+                    </a>
+                    </td>
+                    <td class="news-center-table-body-date">2023.09.14</td>
+                    </tr>
+                    <tr class="news-data-rows"data-forloop="5">
+                      <td class="news-center-table-body-number">269</td>
+                      <td class="news-center-table-body-category"프로젝트 성공사례</td>
+                      <td class="news-center-table-body-title">
+                      < <a href="/news-center/dtail/808/"style="color: #535353;">
+                        <span style="cursor:pointer;">MVP 제작, 외주로 개발하려는 스타트업이 꼭 알아야 할 3가지</span>
+                      </a>
+                      </td>
+                      <td class="news-center-table-body-date">2023.08.24</td>
+                    </tr>
+                    <tr class="news-data-rows" data-forloop="6">
+                      <td class="news-center-table-body-number">268</td>
+                      <td class="news-center-table-body-category">꿈터 이용팁</td>
+                      <td class="news-center-table-body-title">
+                        <a href="" 
+
+
+
+                    </tr>
+                  </td>  
+                 </tr>

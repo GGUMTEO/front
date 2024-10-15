@@ -47,8 +47,6 @@ a {
     text-decoration: none;
 }
 
-/************/
-
 .main {
     min-width: 1080px;
     height: auto;
@@ -75,33 +73,25 @@ a {
     vertical-align: middle;
 }
 
-.ggumteo-do-not-fail .fail-question .fail-question-title {
+.text-white {
     color: #fff;
 }
 
-.ggumteo-do-not-fail .fail-question .fail-question-title {
-    margin-bottom: 16px;
-}
 
-.ggumteo-do-not-fail .fail-question .fail-question-title,
-.service-introduction-detail .detail-intro .guide-box .guide-title,
-.service-introduction-detail .detail-intro .number-box .number-info-count,
-.service-introdution-group .service-introdution-box .introdution-info-layer .subtitle {
+.title-2-bold {
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
 }
 
-.ggumteo-do-not-fail .fail-question .fail-question-subtitle,
-.service-introdution-group .service-introdution-box .appeal-info-layer .explanation {
+.mb16 {
+    margin-bottom: 16px;
+}
+
+.subtitle-2 {
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
-}
-
-.service-introduction-detail .detail-intro .guide-box, .guide-title,
-.service-introdution-group .service-introdution-box .introdution-info-layer .subtitle {
-    color: #212121;
 }
 
 .ggumteo-do-not-fail .container .fail-answer {
@@ -142,15 +132,22 @@ a {
     vertical-align: top;
 }
 
-.service-introduction-detail .guide-subtitle {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 20px;
+.text900 {
+    color: #212121;
+}
+
+.text400 {
     color: #9e9e9e;
 }
 
+.body-3-medium {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+}
+
 /*  */
-.service-introduction-detail .guide-subtitle img {
+.part-guide-box .body-3-medium img {
     margin-right: 8px;
     vertical-align: middle;
 }
