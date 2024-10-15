@@ -1,0 +1,160 @@
+.SortFilterOptions {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    white-space: nowrap;
+    margin-right: 20px;
+}
+
+.sort-filter-option.selected {
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.sort-filter-option {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filter_wrap{
+    justify-content: space-between;
+    display: flex;
+}
+
+.addServiceBtn, .deleteSelectedBtn{
+    height: 40px;
+    border-radius: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #f9fafb;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.addServiceBtn, .deleteSelectedBtn {
+    white-space: nowrap; /* 버튼 텍스트가 한 줄에 표시되도록 설정 */
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #f5f7fa; /* 배경색 조정 */
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.addServiceBtn:hover, .deleteSelectedBtn:hover {
+    background-color: #e2e8f0; /* 버튼에 호버 효과 추가 */
+}
+
+.addServiceBtn.clicked, .deleteSelectedBtn.clicked {
+    background-color: rgb(0, 196, 196) !important;
+}
+
+/* 공용 모달창 스타일 */
+.modal {
+    display: none; /* 기본적으로 모달창은 보이지 않음 */
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* 모달창을 화면 중앙에 위치 */
+    width: 60%; /* 화면의 70%를 차지 */
+    height: 90%; /* 화면의 70%를 차지 */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* 모달창 안에만 스크롤바 표시 */
+    border-radius: 8px;
+}
+
+/* 공용 모달창 외부를 어둡게 처리 */
+.modal-overlay {
+    display: none; /* 기본적으로 오버레이는 보이지 않음 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 반투명 검은색 */
+    z-index: 999;
+}
+
+/* 닫기 버튼 공용 스타일 */
+.close-button {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
+/* 닫기 버튼 */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#saveChanges {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#saveChanges:hover {
+    background-color: #0056b3;
+}
+
+.Filter_searchInput {
+    flex-grow: 1;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    min-width: 0;
+    transition: border-color 0.3s;
+}
+
+.Filter_searchInput:focus {
+    border-color: #00c4c4;
+}

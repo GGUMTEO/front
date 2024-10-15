@@ -1,0 +1,222 @@
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://static.wadiz.kr/studio/funding/static/media/Pretendard-Regular.subset.876e22b0.woff2) format("woff2"),url(https://static.wadiz.kr/studio/funding/static/media/Pretendard-Regular.subset.e17e49fe.woff) format("woff"),url(https://static.wadiz.kr/studio/funding/static/media/Pretendard-Regular.subset.9645d39e.otf) format("opentype");
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-style: normal;
+    src: url(https://static.wadiz.kr/studio/funding/static/media/Pretendard-Medium.subset.c6c0fe2b.woff2) format("woff2"),url(https://static.wadiz.kr/studio/funding/static/media/Pretendard-Medium.subset.2216ab02.woff) format("woff"),url(https://static.wadiz.kr/studio/funding/static/media/Pretendard-Medium.subset.11fc9454.otf) format("opentype");
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-style: normal;
+    src: url(https://static.wadiz.kr/studio/funding/static/media/Pretendard-Bold.subset.12541844.woff2) format("woff2"),url(https://static.wadiz.kr/studio/funding/static/media/Pretendard-Bold.subset.fd82943b.woff) format("woff"),url(https://static.wadiz.kr/studio/funding/static/media/Pretendard-Bold.subset.c817dbf1.otf) format("opentype");
+    font-display: swap
+}
+
+.ServiceLayout_container{
+    width: 1300px;
+}
+
+.Service_wrapper {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_wrapper{
+    width: 1300px;
+}
+
+.ServiceTable_row_wrapper{
+    width: 1300px;
+}
+
+
+.ServiceHeader_container .ServiceHeader_title {
+    line-height: 44px;
+    font-size: 36px;
+    margin: 0 0 16px;
+    font-weight: 700;
+}
+
+.ServiceHeader_container .ServiceHeader_description {
+    margin-bottom: 32px;
+    line-height: 24px;
+    color: #495057;
+    font-size: 17px;
+    margin: 0 0 32px;
+}
+
+
+.ServiceTable_container {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    display: table;
+    table-layout: auto;
+    text-align: center;
+}
+
+.ServiceTable_header, .ServiceTable_row{
+    display: table-row;
+    width: 100%; /* 행의 전체 너비를 100%로 설정 */
+}
+
+.ServiceTable_header {
+    background-color: #f8f9fa;
+    
+    font-weight: bold;
+    
+}
+
+.ServiceTable_cell {
+    display: table-cell;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle; /* 수직 가운데 정렬 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.editBtn {
+   
+    
+    
+    
+}
+
+.editBtn button{
+        
+        background: #007bff;
+        width: 67px;
+        height: 25px;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;    
+}
+
+.editBtn button:hover {
+    opacity: 0.8;
+}
+
+/* 각 열의 너비를 퍼센트로 설정 */
+.headerCell:nth-child(1),
+.ServiceTable_cell:nth-child(1) {
+    width: 49px; /* 체크박스 열 너비 */
+}
+
+.headerCell:nth-child(2),
+.ServiceTable_cell:nth-child(2) {
+    width: 49px; /* ID 열 너비 */
+}
+
+.headerCell:nth-child(3),
+.ServiceTable_cell:nth-child(3) {
+    width: 190px; /* Name 열 너비 */
+}
+
+.headerCell:nth-child(4),
+.ServiceTable_cell:nth-child(4) {
+    width: 200px; /* Name 열 너비 */
+}
+
+.headerCell:nth-child(5),
+.ServiceTable_cell:nth-child(5) {
+    width: 330px; /* Email 열 너비 */
+}
+
+.headerCell:nth-child(6),
+.ServiceTable_cell:nth-child(6) {
+    width: 100px; /* Role 열 너비 */
+}
+
+.headerCell:nth-child(7),
+.ServiceTable_cell:nth-child(7) {
+    
+    width: 190px; /* Role 열 너비 */
+    
+}
+
+.headerCell:nth-child(8),
+.ServiceTable_cell:nth-child(8) {
+    
+    width: 100px; /* Role 열 너비 */
+    
+}
+
+.headerCell:nth-child(9),
+.ServiceTable_cell:nth-child(9) {
+    width: 99px; /* Role 열 너비 */
+    
+}
+
+.pagination {
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    height: 45px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+}
+
+.pagination-list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    height: auto;
+}
+
+.pagination-first, .pagination-prev, .pagination-next, .pagination-last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-list li {
+    margin: 0 2px;
+}
+
+.pagination-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px; /* 아이콘과 숫자 크기를 조절 */
+    text-decoration: none;
+    color: black; /* 필요에 따라 색상을 변경하세요 */
+    border: 1px solid #ccc; /* 필요에 따라 테두리 스타일을 변경하세요 */
+    border-radius: 3px; /* 필요에 따라 버튼 모양을 변경하세요 */
+}
+
+.pagination-list a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.pagination-list .active a {
+    background-color: #000000; /* 배경을 검정색으로 */
+    color: #ffffff; /* 글자를 하얀색으로 */
+}
+

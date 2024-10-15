@@ -1,0 +1,447 @@
+article, aside, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+.Page_container {
+    position: relative;
+    padding: 24px 16px;
+    width: 100%;
+}
+
+.Page_container {
+    padding: 40px 64px;
+    width: calc(100vw - 360px);
+    min-width: 800px;
+    max-width: 1280px;
+}
+
+.Page_container .Page_title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.Page_container .Page_title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.Page_container .Page_description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+.Page_container .Page_description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.Section_container {
+    position: relative;
+}
+
+.spacing-9 {
+    margin-bottom: 80px;
+}
+
+.Section_container .Section_header {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.Section_container .Section_header .Section_title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.BlindText_textHidden {
+    position: absolute;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.Section_container .Section_header .Section_title.Section_isRequired:after {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 4px;
+    color: #f66;
+    content: "*";
+}
+
+.Section_container .Section_description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    color: #868e96;
+}
+
+.spacing-4 {
+    margin-bottom: 12px;
+}
+
+.MessageBox_messageBox {
+    display: flex;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.MessageBox_messageBox.MessageBox_primary {
+    background-color: #e7f9f9;
+    color: #00b2b2;
+}
+
+.withIcon_icon {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.withIcon_icon {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.MessageBox_messageBox.MessageBox_primary .MessageBox_icon {
+    color: #00c4c4;
+}
+
+.MessageBox_messageBox .MessageBox_title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 8px;
+    text-align: left;
+}
+
+.MessageBox_messageBox.MessageBox_vertical .MessageBox_title {
+    margin-bottom: 8px;
+}
+
+.MessageBox_messageBox .MessageBox_description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    color: #495057;
+}
+
+.MessageBox_messageBox .MessageBox_title+.MessageBox_description {
+    margin-left: -20px;
+}
+
+.MessageBox_messageBox .MessageBox_description ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li, ol, ul {
+    list-style: none;
+}
+
+.MessageBox_messageBox .MessageBox_description ul li {
+    display: flex;
+    margin-bottom: 4px;
+    line-height: 18px;
+}
+
+.Section_container .Section_description ul>li, .Section_container__3md8M .Section_guideMessage__3XqrM ul>li, [class*=Tooltip_tooltip]:not([class*=Tooltip_hide]) ul>li {
+    position: relative;
+    padding-left: 1em;
+}
+
+
+
+.Section_container .Section_description ul>li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.MessageBox_messageBox .MessageBox_description ul li:before {
+    display: inline-flex;
+    flex-shrink: 0;
+    padding-left: 4px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-size: 14px;
+    content: "•";
+}
+
+.Section_container .Section_description ul>li:before, .Section_container__3md8M .Section_guideMessage__3XqrM ul>li:before, [class*=Tooltip_tooltip]:not([class*=Tooltip_hide]) ul>li:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "•";
+}
+
+.spacing-5 {
+    margin-bottom: 16px;
+}
+
+.Section_container__3md8M .Section_content {
+    position: relative;
+}
+
+.ImageFieldContent_popper {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.PopperRenew_container:not(.PopperRenew_hasOutsideChildren__IKaQy) {
+    position: relative;
+}
+
+.ImageUploadButton_container {
+    position: relative;
+    -ms-flex: none;
+    flex: none;
+    margin-right: 8px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    background: #fff;
+    padding: 0 40px;
+    width: 120px;
+    height: 88px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.ImageUploadButton_container .ImageUploadButton_imageUploadContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -40%);
+    transform: translate(-50%, -40%);
+    color: #495057;
+}
+
+.ImageUploadButton_container .ImageUploadButton_imageUploadContent .ImageUploadButton_cameraIcon {
+    margin: 0 auto 4px;
+}
+
+.ImageUploadButton_container .ImageUploadButton_count {
+    -webkit-transform: scale(.8) translateY(-7px);
+    transform: scale(.8) translateY(-7px);
+}
+
+.ImageUploadButton_container .ImageUploadButton_count dd, .ImageUploadButton_container .ImageUploadButton_count dl, .ImageUploadButton_container .ImageUploadButton_count dt {
+    display: inline-block;
+    font-size: 12px;
+}
+.ImageUploadButton_container .ImageUploadButton_blindText {
+    position: absolute;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.ImageUploadButton_container .ImageUploadButton_count dd {
+    margin: 0 3px;
+}
+
+.ImageUploadButton_container .ImageUploadButton_uploadLabel {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+    width: 120px;
+    height: 88px;
+}
+
+.UploadedImageList_container {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+}
+
+.UploadedImageList_container .UploadedImageList_listItem {
+    margin-left: 8px;
+}
+.UploadedImageList_container .UploadedImageList_listItem:first-child {
+    margin-left: 0;
+}
+
+
+.UploadedImage_container {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    border-radius: 4px;
+    background-position: 50%;
+    background-size: cover;
+    cursor: pointer;
+    width: 120px;
+    height: 88px;
+    overflow: hidden;
+}
+
+.UploadedImage_container .UploadedImage_editButton {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 32px;
+    background: rgba(0, 0, 0, .2);
+    padding: 0 4px;
+    height: 20px;
+    color: #fff;
+}
+
+.UploadedImage_container button {
+    cursor: pointer;
+    padding: 0;
+}
+
+.UploadedImage_container .UploadedImage_removeButton {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border: 1px solid #e9ecef;
+    border-radius: 32px;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+}
+
+.UploadedImage_container .UploadedImage_removeButton svg {
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+}
+
+.ImageUploader_container {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.StoryImageField_imageUploader {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 1200px;
+    max-width: 1200px;
+    position: relative;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .modal-footer .left-actions,
+  .modal-footer .right-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .modal-footer .left-actions button,
+  .modal-footer .right-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-footer .left-actions button svg,
+  .modal-footer .right-actions button svg {
+    width: 32px; /* 아이콘 크기를 적절히 조정합니다. */
+    height: 32px;
+    fill: #333;
+  }
+  
+  .modal-footer .right-actions button {
+    background-color: #00aaff;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .modal-footer .right-actions button:hover {
+    background-color: #0088cc;
+  }
+  
+.ImageEditor_tool {
+    margin: 0 32px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.ImageEditor_crop_1 {
+    background-image: url(/static/images/adminPage/bannerTools/tools01.svg);
+}
+.ImageEditor_crop_2 {
+    background-image: url(/static/images/adminPage/bannerTools/tools02.svg);
+}
