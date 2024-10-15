@@ -511,10 +511,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
     color: #212121;
 }
 
-.mb4 {
-    margin-bottom: 4px;
-    margin-left: 5px;
-}
+
 .sub-span {
     color: #757575;
     margin-left: 5px;
@@ -578,7 +575,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 #replybackornext {
     margin-bottom: -220px;
     margin-top: -40px;
-    margin-right: -573px;
+    padding-left: 615px;
 }
 .reply{
    

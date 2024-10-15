@@ -235,6 +235,7 @@ html {
     font-size: 13px;
     background: #fff;
     border-radius: 16px;
+    margin-right: 250px;
 }
 .section_search .content {
     position: relative;
@@ -243,7 +244,7 @@ html {
     border: none;
 }
 .item_recruit {
-    padding: 21px 39px 20px;
+    padding: 7px 35px 15px;
     border-top: 1px solid #e6e6e6;
     line-height: 20px;
     display: flex;
@@ -569,16 +570,8 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
     align-items: center;
 }
 
-#replybackornext {
-    margin-bottom: -220px;
-    margin-top: -40px;
-    margin-right: -573px;
-}
-.reply{
-   
-    padding-bottom: 200px;
-    padding-left: 85px;
-}
+
+
 .pagination {
     display: block !important;
     text-align: center;
