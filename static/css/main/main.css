@@ -47,8 +47,6 @@ a {
     color: #212121;
 }
 
-/************/
-
 .main {
     min-width: 1080px;
     height: auto;
@@ -91,23 +89,19 @@ body.body .ggumteo-do-not-fail .container .fail-question {
     vertical-align: middle;
 }
 
-/* text-white */
 .ggumteo-do-not-fail .fail-question-title {
     color: #fff;
 }
 
-/* text-white */
 .ggumteo-do-not-fail .fail-question-title {
     margin-bottom: 16px;
 }
 
-/*  */
 .ggumteo-do-not-fail .fail-question-subtitle {
     color: #fff;
     opacity: 0.65;
 }
 
-/* title-2-bold */
 .ggumteo-do-not-fail .fail-question-title,
 .service-introduction-detail .guide-title,
 .service-introduction-detail .number-info-count,
@@ -117,7 +111,6 @@ body.body .ggumteo-do-not-fail .container .fail-question {
     line-height: 48px;
 }
 
-/* subtitle-2 */
 .ggumteo-do-not-fail .fail-question-subtitle,
 .service-introdution-group .service-introdution-box .appeal-info-layer .explanation {
     font-size: 18px;
@@ -125,7 +118,6 @@ body.body .ggumteo-do-not-fail .container .fail-question {
     font-weight: 400;
 }
 
-/* text900 */
 .service-introduction-detail .detail-intro .guide-box, .guide-title,
 .service-introdution-group .service-introdution-box .introdution-info-layer .subtitle {
     color: #212121;
@@ -141,8 +133,6 @@ body.body .ggumteo-do-not-fail .container .fail-answer {
     width: 500px;
 }
 
-
-/* 1 */
 .service-introduction-detail {
     border-top: 1px solid #e6ebf0;
     background-color: #f7fafc;
@@ -202,13 +192,11 @@ body.body .ggumteo-do-not-fail .container .fail-answer {
     color: #0098c8;
 }
 
-/* text600 */
 .service-introduction-detail .number-box .number-info-text,
 .service-introdution-group .service-introdution-box .introdution-info-layer .explanation {
     color: #616161;
 }
 
-/* body-2 */
 .service-introduction-detail .number-box .number-info-text {
     font-size: 14px;
     line-height: 24px;
@@ -222,15 +210,13 @@ body.body .ggumteo-do-not-fail .container .fail-answer {
     margin-left: 2px;
 }
 
-
-/* service-introdution-group */
 .service-introdution-group {
     background-color: #f2faff;
 }
 
 .service-introdution-group .container {
-    padding-top: 35px;
-    padding-bottom: 50px;
+    padding-top: 33px;
+    padding-bottom: 42px;
 }
 
 .service-introdution-group .service-introdution-box {
@@ -249,29 +235,24 @@ body.body .ggumteo-do-not-fail .container .fail-answer {
     padding-top: 55px;
 }
 
-/* text-wishket */
 .service-introdution-group .service-introdution-box .introdution-info-layer .title {
     color: #3ba3c7;
 }
 
-/* body-1-bold */
 .service-introdution-group .service-introdution-box .introdution-info-layer .title {
     font-weight: 700;
     font-size: 16px;
     line-height: 26px;
 }
 
-/* mb12 */
 .service-introdution-group .service-introdution-box .introdution-info-layer .title {
     margin-bottom: 12px;
 }
 
-/* mg16 */
 .service-introdution-group .service-introdution-box .introdution-info-layer .subtitle {
     margin-bottom: 12px;
 }
 
-/* subtitle-2 */
 .service-introdution-group .service-introdution-box .introdution-info-layer .explanation {
     font-size: 18px;
     line-height: 28px;
@@ -287,7 +268,6 @@ body.body .ggumteo-do-not-fail .container .fail-answer {
     width: 500px;
 }
 
-/* 버튼 */
 .service-introdution-group-button {
     height: 48px;
     padding: 0;

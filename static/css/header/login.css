@@ -47,7 +47,6 @@ a {
     color: #212121;
 }
 
-/* height: 100%; */
 body {
     position: inherit;
     width: inherit;
@@ -57,7 +56,6 @@ header.header {
     min-width: 1080px;
 }
 
-/* z-index 없어도 구현되지만, 메인페이지 완성 후 한번 더 테스트 하려고 함 */
 header.header .sticky {
     position: fixed;
     top: 0;
@@ -95,9 +93,11 @@ header.header .header-nav {
     width: 90px;
 }
 
-/* pc-only */
-.pc-only {
+.header-nav .category-navigation-wrapper {
+    /* pc 버전*/
     display: flex !important;
+    /* 반응형 안하면 ↑ important 빼도 될 것 같다. */
+    /* 반응형 하게 되면, 이 부분 생각해보기 */  
 }
 
 .header-nav .category-navigation-wrapper .category-navigation {
@@ -222,14 +222,13 @@ header.header .header-nav {
     width: 11px;
 }
 
-.noti-dot-div {
+.noti-dot-wrapper {
     position: absolute;
     display: flex;
     padding: 0 5px;
     transform: translateX(55%);
     bottom: 21px;
 }
-
 
 .noti-modal {
     font-size: 14px;
@@ -261,13 +260,13 @@ header.header .header-nav {
     margin-bottom: 15px;
 }
 
-.dot-div-1 {
+.dot-vedio {
     position: absolute;
     top: 38px;
     left: 40px;
 }
 
-.dot-div-2 {
+.dot-writing {
     position: absolute;
     top: 70px;
     left: 26px;
@@ -276,7 +275,6 @@ header.header .header-nav {
 
 /* 검색 (search) */
 
-/* z-index: 10001; */
 .search-full-modal {
     display: none;
     left: 0;

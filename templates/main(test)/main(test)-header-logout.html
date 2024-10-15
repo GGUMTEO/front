@@ -4,23 +4,21 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/static/css/main/main.css" />
-        <link rel="stylesheet" href="/static/css/header/logout.css">
-        <link rel="stylesheet" href="/static/css/footer/footer.css">
+        <link rel="stylesheet" href="/static/css/header/logout.css" />
+        <link rel="stylesheet" href="/static/css/footer/footer.css" />
         <title>메인 테스트-로그아웃</title>
     </head>
     <body class="body">
         <!-- 로그아웃 -->
         <header id="header" class="header">
-            <div class="header-nav sticky">
+            <div class="header-nav">
                 <div class="container">
                     <div class="header-nav-wrapper">
                         <a class="category-navigation-logo" href=""
                             ><img
                                 class="test-logo" src="/static/images/header/test-logo.png"
                         /></a>
-                        <!-- pc-only 메인 페이지 다 완성 후 필요한지, 필요하지 않은지 판단하고
-                            수정하기 / 반응형 해야 함. -->
-                        <div class="category-navigation-wrapper pc-only">
+                        <div class="category-navigation-wrapper">
                             <a
                                 class="category-navigation"  href=""
                                 ><div class="category category-color">
@@ -46,8 +44,7 @@
                                 src="/static/images/header/icon-search.png"
                             />
                             </div>
-                            <!-- only-pc -->
-                            <div class="divider only-pc"></div>
+                            <div class="divider"></div>
                             <div class="btn-box">
                                 <a
                                     class="btn"
@@ -168,7 +165,6 @@
                     <div class="fail-answer">
                         <img src="/static/images/footer/not-fail.svg" />
                     </div>
-                    <!-- ::after -->
                 </section>
             </div>
             <div class="service-introduction-detail">
@@ -361,7 +357,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-main">
-                    <div class="footer-menu-list footer-contact">
+                    <!-- <div class="footer-menu-list footer-contact">
                         <p class="footer-menu-title">
                             <img src="/static/images/footer/icon-contact.png" />
                             고객 문의
@@ -377,7 +373,7 @@
                                 help@ggumteo.com
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="footer-menu-list">
                         <p class="footer-menu-title">작품</p>
                         <a class="footer-menu-item" href="">영상</a>
@@ -401,28 +397,29 @@
                 </div>
                 <div class="footer-company-info">
                     <div class="footer-company-info-list">
-                        <div class="footer-company-info-item">(주)꿈터</div>
+                        <div class="footer-company-info-item">
+                            코리아IT아카데미
+                        </div>
                         <div class="divider"></div>
                         <div class="footer-company-info-item">
-                            공통대표 : 최대환, 오현준, 용호중, 정지수, 한보리
+                            2차 프로젝트 : K-문화 컨텐츠 창작 지원 플랫폼
                         </div>
                     </div>
                     <div class="footer-company-info-list">
-                        <div class="footer-company-info-item">
-                            서울특별시 강남구 꿈터로 99 꿈터빌딩 13층 (주)꿈터
-                        </div>
+                        <div class="footer-company-info-item">팀명: 꿈터</div>
                         <div class="divider"></div>
                         <div class="footer-company-info-item">
-                            사업자등록번호 : 241-00-41108
+                            팀원 : 최대환(팀장), 오현준(부팀장), 용호중, 정지수,
+                            한보리
                         </div>
                     </div>
                     <div class="footer-company-info-copyright">
-                        © 2024 GgumTeo Corp.
+                        2024.10.04 ~ 11.08
                     </div>
                 </div>
             </div>
         </footer>
     </body>
-    <script src="/static/js/main/button.js"></script>
-    <script src="/static/js/header/search.js"></script>
+    <script src="/static/js/main/main.js"></script>
+    <script src="/static/js/header/header-logout.js"></script>
 </html>

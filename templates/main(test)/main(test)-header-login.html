@@ -4,8 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/static/css/main/main.css" />
-        <link rel="stylesheet" href="/static/css/header/login.css">
-        <link rel="stylesheet" href="/static/css/footer/footer.css">
+        <link rel="stylesheet" href="/static/css/header/login.css" />
+        <link rel="stylesheet" href="/static/css/footer/footer.css" />
         <title>메인 테스트-로그인</title>
     </head>
     <body class="body">
@@ -18,9 +18,7 @@
                             ><img
                                 class="test-logo" src="/static/images/header/test-logo.png"
                         /></a>
-                        <!-- pc-only 메인 페이지 다 완성 후 필요한지, 필요하지 않은지 판단하고
-                            수정하기 / 반응형 해야 함. -->
-                        <div class="category-navigation-wrapper pc-only">
+                        <div class="category-navigation-wrapper">
                             <a
                                 class="category-navigation"  href=""
                                 ><div class="category category-color">
@@ -48,8 +46,7 @@
                             </div>
                             <!-- 알림박스 (notification.js 있음) -->
                             <div class="noti-box">
-                                <!-- only-pc 메인 페이지 다 완성 후 수정하기 -->
-                                <div class="divider only-pc"></div>
+                                <div class="divider"></div>
                                 <!-- 알림 없을 시 -->
                                 <div id="noti-bell-container-1" class="noti-bell-container">
                                     <img class="icon-noti-bell" src="/static/images/header/icon-noti-bell.png" />
@@ -70,7 +67,7 @@
                                 </div>
                                 <!-- 알림 있을 시 -->
                                 <div id="noti-bell-container-2" class="noti-bell-container">
-                                    <div class="noti-dot-div">
+                                    <div class="noti-dot-wrapper">
                                         <img
                                             class="noti-dot"
                                             src="/static/images/header/noti-dot.png"
@@ -82,7 +79,7 @@
                                         <p class="noti-header">내 알림</p>
                                         <div class="noti-item">
                                             <a href="">
-                                                <div class="dot-div-1">
+                                                <div class="dot-vedio">
                                                     <img
                                                         class="noti-dot"
                                                         src="/static/images/header/noti-dot.png"
@@ -93,7 +90,7 @@
                                         </div>
                                         <div class="noti-item">
                                             <a href=""></a>
-                                                <div class="dot-div-2">
+                                                <div class="dot-writing">
                                                     <img
                                                         class="noti-dot"
                                                         src="/static/images/header/noti-dot.png"
@@ -209,7 +206,6 @@
             </div>
             <div id="background-overlay" class="background-overlay"></div>  
         </div>
-        <!-- 메인 -->
         <main class="main">
             <div class="ggumteo-do-not-fail">
                 <section class="container">
@@ -228,7 +224,6 @@
                     <div class="fail-answer">
                         <img src="/static/images/footer/not-fail.svg" />
                     </div>
-                    <!-- ::after -->
                 </section>
             </div>
             <div class="service-introduction-detail">
@@ -421,7 +416,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-main">
-                    <div class="footer-menu-list footer-contact">
+                    <!-- <div class="footer-menu-list footer-contact">
                         <p class="footer-menu-title">
                             <img src="/static/images/footer/icon-contact.png" />
                             고객 문의
@@ -437,7 +432,7 @@
                                 help@ggumteo.com
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="footer-menu-list">
                         <p class="footer-menu-title">작품</p>
                         <a class="footer-menu-item" href="">영상</a>
@@ -461,30 +456,29 @@
                 </div>
                 <div class="footer-company-info">
                     <div class="footer-company-info-list">
-                        <div class="footer-company-info-item">(주)꿈터</div>
+                        <div class="footer-company-info-item">
+                            코리아IT아카데미
+                        </div>
                         <div class="divider"></div>
                         <div class="footer-company-info-item">
-                            공통대표 : 최대환, 오현준, 용호중, 정지수, 한보리
+                            2차 프로젝트 : K-문화 컨텐츠 창작 지원 플랫폼
                         </div>
                     </div>
                     <div class="footer-company-info-list">
-                        <div class="footer-company-info-item">
-                            서울특별시 강남구 꿈터로 99 꿈터빌딩 13층 (주)꿈터
-                        </div>
+                        <div class="footer-company-info-item">팀명: 꿈터</div>
                         <div class="divider"></div>
                         <div class="footer-company-info-item">
-                            사업자등록번호 : 241-00-41108
+                            팀원 : 최대환(팀장), 오현준(부팀장), 용호중, 정지수,
+                            한보리
                         </div>
                     </div>
                     <div class="footer-company-info-copyright">
-                        © 2024 GgumTeo Corp.
+                        2024.10.04 ~ 11.08
                     </div>
                 </div>
             </div>
         </footer>
     </body>
-    <script src="/static/js/main/button.js"></script>
-    <script src="/static/js/header/search.js"></script>
-    <script src="/static/js/header/notification.js"></script>
-    <script src="/static/js/header/scroll.js"></script>
+    <script src="/static/js/header/header-login.js"></script>
+    <script src="/static/js/main/main.js"></script>
 </html>
