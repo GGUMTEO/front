@@ -643,6 +643,7 @@ ul, ol {
     border: 1px solid #e0e0e0;
     background-color: #fff;
     border-radius: 4px;
+    height: 45px;
 }
 
 .placeholder-attachment{
@@ -662,7 +663,7 @@ ul, ol {
 
 .tooltip-group .viewer-file-icon {
     position: absolute;
-    top: 5px;
+    /* top: 5px; */
 }
 
 .btn-file-select {
@@ -682,4 +683,21 @@ ul, ol {
     margin-top: 7px;
     vertical-align: top;
     margin-right: 6px;
+}
+
+.btn-delete-resume {
+    position: absolute;
+    cursor: pointer;
+    right: 1px;
+    top: 0px;
+}
+
+.tooltip-group .file-name-viewer {
+    margin-left: 22px;
+    max-width: 548px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #3ba3c7;
+    font-weight: 500;
 }
