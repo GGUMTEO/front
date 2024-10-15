@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>모집 작성하기</title>
-        <link rel="stylesheet" href="/static/css/audition/video/write.css" />
+        <link rel="stylesheet" href="/static/css/audition/write/write.css" />
     </head>
     <body>
         <header></header>
@@ -64,7 +64,30 @@
                                                             class="project-category-box"
                                                         >
                                                             <label
-                                                                for="romance"
+                                                                for="thumbnail"
+                                                                class="checkbox-partner"
+                                                            >
+                                                                <span>
+                                                                    <input
+                                                                        type="radio"
+                                                                        name="category"
+                                                                    />
+                                                                    <span
+                                                                        class="Thumbnail"
+                                                                    ></span>
+                                                                </span>
+                                                                <span
+                                                                    class="category-span"
+                                                                    >썸네일</span
+                                                                >
+                                                            </label>
+                                                        </div>
+                                                        <div
+                                                            class="project-category-box"
+                                                        >
+                                                            <label
+                                                                for="
+                                                                illustration"
                                                                 class="checkbox-partner"
                                                             >
                                                                 <span>
@@ -78,7 +101,7 @@
                                                                 </span>
                                                                 <span
                                                                     class="category-span"
-                                                                    >배우</span
+                                                                    >일러스트</span
                                                                 >
                                                             </label>
                                                         </div>
@@ -86,7 +109,7 @@
                                                             class="project-category-box"
                                                         >
                                                             <label
-                                                                for="comedy"
+                                                                for="webtoon"
                                                                 class="checkbox-partner"
                                                             >
                                                                 <span>
@@ -100,7 +123,7 @@
                                                                 </span>
                                                                 <span
                                                                     class="category-span"
-                                                                    >스텝</span
+                                                                    >웹툰</span
                                                                 >
                                                             </label>
                                                         </div>
@@ -108,29 +131,7 @@
                                                             class="project-category-box"
                                                         >
                                                             <label
-                                                                for="horror"
-                                                                class="checkbox-partner"
-                                                            >
-                                                                <span>
-                                                                    <input
-                                                                        type="radio"
-                                                                        name="category"
-                                                                    />
-                                                                    <span
-                                                                        class="arrow"
-                                                                    ></span>
-                                                                </span>
-                                                                <span
-                                                                    class="category-span"
-                                                                    >감독</span
-                                                                >
-                                                            </label>
-                                                        </div>
-                                                        <div
-                                                            class="project-category-box"
-                                                        >
-                                                            <label
-                                                                for="action"
+                                                                for="etc"
                                                                 class="checkbox-partner"
                                                             >
                                                                 <span>
@@ -166,6 +167,7 @@
                                                             <input
                                                                 class="theme-partner wishket-label-input not-required-field"
                                                                 data-type="label"
+                                                                name="experience"
                                                                 type="text"
                                                                 value=""
                                                             /><label
@@ -183,7 +185,7 @@
                                                     </div>
                                                     <div
                                                         class="input-box"
-                                                        style="width: 59.7%"
+                                                        style="width: 59%"
                                                     >
                                                         <div
                                                             class="label-input-partner"
@@ -191,11 +193,14 @@
                                                             <input
                                                                 class="theme-partner wishket-label-input not-required-field"
                                                                 data-type="label"
+                                                                name="amount"
                                                                 type="text"
                                                                 value=""
                                                             /><label
-                                                                >예상
-                                                                금액</label
+                                                                >예상 금액:
+                                                                일급일 경우
+                                                                금액/일로
+                                                                작성해주세요.</label
                                                             >
                                                         </div>
                                                         <span
@@ -289,7 +294,7 @@
                                                                 name="participation_rate"
                                                                 onkeypress="filter_percent(this)"
                                                                 onkeyup="only_number(this)"
-                                                                placeholder="ex) 1명"
+                                                                placeholder="예) 1명"
                                                                 type="text"
                                                                 value=""
                                                                 style="
@@ -309,6 +314,66 @@
                                                             >에러상세
                                                             메시지</span
                                                         >
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-detail">
+                                                    <div class="audition-tool">
+                                                        모집 배경
+                                                    </div>
+                                                    <div
+                                                        class="input-box"
+                                                        style="width: 100%"
+                                                    >
+                                                        <div
+                                                            class="default-input-partner"
+                                                        >
+                                                            <input
+                                                                class="theme-partner wishket-text not-required-field"
+                                                                name="reference_url"
+                                                                onkeyup="max_input(this, 500)"
+                                                                placeholder=""
+                                                                type="text"
+                                                                value=""
+                                                            />
+                                                        </div>
+                                                        <span class="error-text"
+                                                            >에러상세
+                                                            메시지</span
+                                                        >
+                                                        <p class="input_guide">
+                                                            이 모집을 시작한
+                                                            배경을 작성해주세요.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolio-detail">
+                                                    <div class="audition-tool">
+                                                        모집 유형
+                                                    </div>
+                                                    <div
+                                                        class="input-box"
+                                                        style="width: 100%"
+                                                    >
+                                                        <div
+                                                            class="default-input-partner"
+                                                        >
+                                                            <input
+                                                                class="theme-partner wishket-text not-required-field"
+                                                                name="reference_url"
+                                                                onkeyup="max_input(this, 500)"
+                                                                placeholder=""
+                                                                type="text"
+                                                                value=""
+                                                            />
+                                                        </div>
+                                                        <span class="error-text"
+                                                            >에러상세
+                                                            메시지</span
+                                                        >
+                                                        <p class="input_guide">
+                                                            이 모집의 유형을
+                                                            작성해주세요.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -453,7 +518,7 @@
                                             </div>
                                         </div>
                                         <!-- 썸내일추가 -->
-                                        <div class="thumbnail-box">
+                                        <!-- <div class="thumbnail-box">
                                             <div class="work-name">
                                                 작품글 표지
                                                 <span class="star">*</span>
@@ -491,7 +556,7 @@
                                                         기본이미지가 적용됩니다
                                                     </div>
                                                 </div>
-                                                <!-- 오른쪽부분 -->
+
                                                 <div class="right-box">
                                                     <div class="sample-box">
                                                         <div
@@ -546,7 +611,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="write-footer">
@@ -570,5 +635,6 @@
         </main>
         <footer></footer>
     </body>
-    <script src="/static/js/video/write.js"></script>
+    <script src="/static/js/audition/write.js"></script>
+    <script src="/static/js/audition/write2.js"></script>
 </html>
