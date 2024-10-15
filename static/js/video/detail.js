@@ -52,7 +52,7 @@ function getNextSiblings(elem) {
 const replyBtn = document.querySelector(".reply-btn");
 
 // 댓글 말풍선
-const replyPtag = document.querySelector(".action-tooltip");
+const replyPtag = document.querySelector(".action-tooltip-reply");
 
 replyBtn.addEventListener("mouseover", () => {
     replyPtag.style.display = "block";

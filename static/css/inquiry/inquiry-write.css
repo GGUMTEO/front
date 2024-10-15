@@ -124,26 +124,11 @@
     height: 80px;
 }
 
-.subtitle-1, .subtitle-1-bold, footer.footer .footer-contact .footer-cs-tel, .subtitle-1-medium, .subtitle-1-light {
+.subtitle{
     font-size: 24px;
     line-height: 36px;
     font-weight: 400;
-}
-
-.text900 {
     color: #212121;
-}
-
-.subtitle-1, .subtitle-1-bold, .subtitle-1-medium, .subtitle-1-light {
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 400;
-}
-
-.subtitle-1, .subtitle-1-bold, .subtitle-1-medium, .subtitle-1-light {
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 400;
 }
 
 .inquiry-add-view .inquiry-add-title {
@@ -172,6 +157,8 @@
     transition: all .3s;
     -webkit-transition: all .3s;
     padding: 24px 12px 8px 12px;
+    outline: none;
+    border: 1px solid rgb(224, 224, 224);
 }
 
 .label-input-partner>input:hover {
@@ -237,22 +224,15 @@
     font-weight: 400;
 }
 
-.mb24 {
-    margin-bottom: 24px;
-}
-
-.body-2-bold{
+.body-content{
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-}
-
-.body-2-bold {
-    font-weight: 700;
-}
-
-.text900 {
     color: #212121;
+}
+
+.body-content {
+    font-weight: 700;
 }
 
 .star {
@@ -337,6 +317,7 @@
 
 .inquiry-add-content-box .inquiry-description-box .word-length {
     display: none;
+    margin-bottom: 24px;
 }
 
 .inquiry-footer {
@@ -377,9 +358,6 @@ button {
     user-select: none;
     border-radius: 4px;
     border: none;
-}
-
-.btn-11-24 {
     padding: 11px 24px;
 }
 

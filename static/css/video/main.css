@@ -139,11 +139,6 @@ a {
     line-height: 20px;
     font-weight: 400;
 }
-.body-3 {
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: 400;
-}
 .link-text {
     color: inherit !important;
 }
@@ -243,9 +238,6 @@ a {
 }
 .author-name a {
     cursor: default;
-}
-.text400 {
-    color: #9e9e9e;
 }
 .link-underline-text {
     color: #9e9e9e;
@@ -405,9 +397,6 @@ button {
 .content-meta-sep {
     width: 1px;
     color: #e0e0e0;
-}
-.mr-2 {
-    margin-right: 2px !important;
 }
 .list-item-description {
     margin: 12px 0px 16px 0px;
