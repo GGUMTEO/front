@@ -77,11 +77,7 @@ html {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .noti-more, .body-2-light {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-}
+
 .mypage-list-box {
     width: 280px;
     max-height: 317px;
@@ -100,14 +96,8 @@ html {
 .sidebar-menu .mypage-mys-count {
     margin: 0px 6px;
 }
-.text400 {
-    color: #9e9e9e;
-}
-.caption-1, #profile_image_edit_modal .modal__body .modal-info-body .base-dot-list .dot-line, .caption-1-bold, .caption-1-medium, .caption-1-light {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-}
+
+
 .content-divide {
     width: 100%;
     height: 1px;
@@ -123,8 +113,6 @@ html {
 }
 .container.mypage .main-content-container .main-content {
     width: 720px;
-}.text900 {
-    color: #212121;
 }
 .subtitle-2-medium {
     font-weight: 500;
@@ -163,12 +151,7 @@ html {
     white-space: nowrap;
     margin-bottom: 2px;
 }
-.body-1-medium {
-    font-weight: 500;
-}
-.text600 {
-    color: #616161;
-}
+
 .fold.active-menu .icon-fold {
     width: 16px;
     height: 16px;
@@ -210,11 +193,7 @@ html {
 .icon-fold.fold-on {
     transform: rotate(-0deg); /* 오른쪽을 가리키도록 회전 */
 }
-.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .noti-more, .body-2-light {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 500;
-}
+
 .right-side {
     float: right;
     width: 800px;
@@ -275,14 +254,8 @@ html {
     font-weight: 650;
 
 }
-.body-1-bold {
-    font-weight: 700;
-}
-.body-1,  .endless_loading, .body-1-bold, .body-1-medium, .body-1-light {
-    font-size: 16px;
-    line-height: 0px;
-    font-weight: 400;
-}
+
+
  .noti-box.unread {
     background-color: #f2fcff;
 }
@@ -304,7 +277,7 @@ html {
     margin-top: 4px;
     color: #9e9e9e;
 }
-.caption-1,  .noti-box .noti-box-content .noti-date, .caption-1-bold, .caption-1-medium, .caption-1-light {
+.noti-box .noti-box-content .noti-date{
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -337,14 +310,14 @@ html {
 }
 .noti-box .noti-box-wrapper.with-img .noti-box-content .noti-title {
     color: #212121;
-}
-.body-3,  .noti-box .noti-box-content .noti-more-info-box .info,  .noti-box .noti-box-content .noti-more-info,  .noti-box .noti-box-content .noti-meeting-info,  .noti-box .noti-box-content .noti-title,  .noti-box.no-data,  .noti-box.no-contents,  .noti-box .noti-box-wrapper.with-img .noti-box-content .noti-title, .body-3-bold, .body-3-medium,  .noti-box .noti-box-content .noti-more-info-box .writer .writer-name, .body-3-light {
+}.noti-box .noti-box-content .noti-more-info-box .info,  .noti-box .noti-box-content .noti-more-info,  .noti-box .noti-box-content .noti-meeting-info,  .noti-box .noti-box-content .noti-title,  .noti-box.no-data,  .noti-box.no-contents,  .noti-box .noti-box-wrapper.with-img .noti-box-content .noti-title,  .noti-box .noti-box-content .noti-more-info-box .writer .writer-name {
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
 }
 
 .ifclick {
+    font-size: 14px;
     padding: 20px 0;
     border-top: solid 1px #e0e0e0;
     color: #757575;

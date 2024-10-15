@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>모집 작성하기</title>
-        <link rel="stylesheet" href="/static/css/audition/video/write.css" />
+        <title>펀딩글작성</title>
+        <link rel="stylesheet" href="/static/css/video/funding-write.css" />
     </head>
     <body>
         <header></header>
@@ -17,11 +17,11 @@
                             <form action="" id="write-form">
                                 <div class="write-add-view">
                                     <div class="subtitle-1 write-add-title">
-                                        모집 작성하기
+                                        펀딩글 올리기
                                     </div>
                                     <div class="write-add-content-box">
                                         <div class="write-title">
-                                            모집 제목
+                                            펀딩글제목
                                             <span class="star">*</span>
                                         </div>
                                         <div class="write-name write-detail">
@@ -44,281 +44,133 @@
                                             >
                                         </div>
                                         <div class="input-guide-helpertext">
-                                            모집 목록에 가장먼저 보이는
+                                            펀딩 목록에 가장먼저 보이는
                                             제목입니다
                                         </div>
-
-                                        <div class="portfolio-detail-box">
-                                            <div
-                                                class="portfolio-detail-box-wrapper"
-                                            >
-                                                <div class="detail-box-wrapper">
-                                                    <div class="write-category">
-                                                        모집 분야
-                                                        <span class="star"
-                                                            >*</span
+                                        <div class="detail-box-wrapper">
+                                            <div class="write-category">
+                                                펀딩 장르
+                                                <span class="star">*</span>
+                                            </div>
+                                            <div class="work-detail">
+                                                <div
+                                                    class="project-category-box"
+                                                >
+                                                    <label
+                                                        for="romance"
+                                                        class="checkbox-partner"
+                                                    >
+                                                        <span>
+                                                            <input
+                                                                type="radio"
+                                                                name="category"
+                                                            />
+                                                            <span
+                                                                class="arrow"
+                                                            ></span>
+                                                        </span>
+                                                        <span
+                                                            class="category-span"
+                                                            >로맨스</span
                                                         >
-                                                    </div>
-                                                    <div class="work-detail">
-                                                        <div
-                                                            class="project-category-box"
-                                                        >
-                                                            <label
-                                                                for="romance"
-                                                                class="checkbox-partner"
-                                                            >
-                                                                <span>
-                                                                    <input
-                                                                        type="radio"
-                                                                        name="category"
-                                                                    />
-                                                                    <span
-                                                                        class="arrow"
-                                                                    ></span>
-                                                                </span>
-                                                                <span
-                                                                    class="category-span"
-                                                                    >배우</span
-                                                                >
-                                                            </label>
-                                                        </div>
-                                                        <div
-                                                            class="project-category-box"
-                                                        >
-                                                            <label
-                                                                for="comedy"
-                                                                class="checkbox-partner"
-                                                            >
-                                                                <span>
-                                                                    <input
-                                                                        type="radio"
-                                                                        name="category"
-                                                                    />
-                                                                    <span
-                                                                        class="arrow"
-                                                                    ></span>
-                                                                </span>
-                                                                <span
-                                                                    class="category-span"
-                                                                    >스텝</span
-                                                                >
-                                                            </label>
-                                                        </div>
-                                                        <div
-                                                            class="project-category-box"
-                                                        >
-                                                            <label
-                                                                for="horror"
-                                                                class="checkbox-partner"
-                                                            >
-                                                                <span>
-                                                                    <input
-                                                                        type="radio"
-                                                                        name="category"
-                                                                    />
-                                                                    <span
-                                                                        class="arrow"
-                                                                    ></span>
-                                                                </span>
-                                                                <span
-                                                                    class="category-span"
-                                                                    >감독</span
-                                                                >
-                                                            </label>
-                                                        </div>
-                                                        <div
-                                                            class="project-category-box"
-                                                        >
-                                                            <label
-                                                                for="action"
-                                                                class="checkbox-partner"
-                                                            >
-                                                                <span>
-                                                                    <input
-                                                                        type="radio"
-                                                                        name="category"
-                                                                    />
-                                                                    <span
-                                                                        class="arrow"
-                                                                    ></span>
-                                                                </span>
-                                                                <span
-                                                                    class="category-span"
-                                                                    >기타</span
-                                                                >
-                                                            </label>
-                                                        </div>
-                                                    </div>
+                                                    </label>
                                                 </div>
-                                                <div class="portfolio-detail">
-                                                    <div
-                                                        class="experience-amount"
+                                                <div
+                                                    class="project-category-box"
+                                                >
+                                                    <label
+                                                        for="comedy"
+                                                        class="checkbox-partner"
                                                     >
-                                                        경력 사항 및 예상 금액
-                                                    </div>
-                                                    <div
-                                                        class="input-box"
-                                                        style="width: 38.1%"
-                                                    >
-                                                        <div
-                                                            class="label-input-partner"
-                                                        >
+                                                        <span>
                                                             <input
-                                                                class="theme-partner wishket-label-input not-required-field"
-                                                                data-type="label"
-                                                                type="text"
-                                                                value=""
-                                                            /><label
-                                                                >경력</label
-                                                            >
-                                                        </div>
+                                                                type="radio"
+                                                                name="category"
+                                                            />
+                                                            <span
+                                                                class="arrow"
+                                                            ></span>
+                                                        </span>
                                                         <span
-                                                            class="error-text"
-                                                            style="
-                                                                display: none;
-                                                            "
-                                                            >에러상세
-                                                            메시지</span
+                                                            class="category-span"
+                                                            >코미디</span
                                                         >
-                                                    </div>
-                                                    <div
-                                                        class="input-box"
-                                                        style="width: 59.7%"
-                                                    >
-                                                        <div
-                                                            class="label-input-partner"
-                                                        >
-                                                            <input
-                                                                class="theme-partner wishket-label-input not-required-field"
-                                                                data-type="label"
-                                                                type="text"
-                                                                value=""
-                                                            /><label
-                                                                >예상
-                                                                금액</label
-                                                            >
-                                                        </div>
-                                                        <span
-                                                            class="error-text"
-                                                            style="
-                                                                display: none;
-                                                            "
-                                                            >에러상세
-                                                            메시지</span
-                                                        >
-                                                    </div>
+                                                    </label>
                                                 </div>
-                                                <div class="portfolio-detail">
-                                                    <div class="date-box">
-                                                        근무시작일/ 모집마감일/
-                                                        모집인원
-                                                        <span class="star"
-                                                            >*</span
-                                                        >
-                                                    </div>
-                                                    <div
-                                                        class="input-box date-input-box"
-                                                        style="width: 132px"
+                                                <div
+                                                    class="project-category-box"
+                                                >
+                                                    <label
+                                                        for="horror"
+                                                        class="checkbox-partner"
                                                     >
-                                                        <div
-                                                            class="label-input-partner label-placeholder label-effect"
-                                                        >
+                                                        <span>
                                                             <input
-                                                                class="required theme-partner wishket-label-input date-input"
-                                                                data-type="label-placeholder"
-                                                                name="date_started"
-                                                                onkeypress="filter_number(this, 'm')"
-                                                                onkeyup="only_number(this, 'm')"
-                                                                placeholder="YYYY.MM.DD"
-                                                                type="text"
-                                                                value=""
-                                                            /><label
-                                                                >근무시작일
-                                                                *</label
-                                                            >
-                                                        </div>
+                                                                type="radio"
+                                                                name="category"
+                                                            />
+                                                            <span
+                                                                class="arrow"
+                                                            ></span>
+                                                        </span>
                                                         <span
-                                                            class="error-text"
-                                                            style="
-                                                                display: none;
-                                                            "
-                                                            >에러상세
-                                                            메시지</span
+                                                            class="category-span"
+                                                            >공포</span
                                                         >
-                                                    </div>
-                                                    <div
-                                                        class="input-box date-input-box"
-                                                        style="width: 132px"
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="project-category-box"
+                                                >
+                                                    <label
+                                                        for="action"
+                                                        class="checkbox-partner"
                                                     >
-                                                        <div
-                                                            class="label-input-partner label-placeholder label-effect"
-                                                        >
+                                                        <span>
                                                             <input
-                                                                class="required theme-partner wishket-label-input date-input"
-                                                                data-type="label-placeholder"
-                                                                name="date_started"
-                                                                onkeypress="filter_number(this, 'm')"
-                                                                onkeyup="only_number(this, 'm')"
-                                                                placeholder="YYYY.MM.DD"
-                                                                type="text"
-                                                                value=""
-                                                            /><label
-                                                                >모집마감일
-                                                                *</label
-                                                            >
-                                                        </div>
+                                                                type="radio"
+                                                                name="category"
+                                                            />
+                                                            <span
+                                                                class="arrow"
+                                                            ></span>
+                                                        </span>
                                                         <span
-                                                            class="error-text"
-                                                            style="
-                                                                display: none;
-                                                            "
-                                                            >에러상세
-                                                            메시지</span
+                                                            class="category-span"
+                                                            >액션</span
                                                         >
-                                                    </div>
-                                                    <div
-                                                        class="input-box"
-                                                        style="width: 120px"
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="project-category-box"
+                                                >
+                                                    <label
+                                                        for="drama"
+                                                        class="checkbox-partner"
                                                     >
-                                                        <div
-                                                            class="label-input-partner label-placeholder label-effect"
-                                                        >
+                                                        <span>
                                                             <input
-                                                                class="required theme-partner wishket-label-input participation_rate"
-                                                                data-type="label-placeholder"
-                                                                name="participation_rate"
-                                                                onkeypress="filter_percent(this)"
-                                                                onkeyup="only_number(this)"
-                                                                placeholder="ex) 1명"
-                                                                type="text"
-                                                                value=""
-                                                                style="
-                                                                    padding-right: 39px;
-                                                                "
-                                                                data-gtm-form-interact-field-id="0"
-                                                            /><label
-                                                                >모집인원
-                                                                *</label
-                                                            >
-                                                        </div>
+                                                                type="radio"
+                                                                name="category"
+                                                            />
+                                                            <span
+                                                                class="arrow"
+                                                            ></span>
+                                                        </span>
                                                         <span
-                                                            class="error-text"
-                                                            style="
-                                                                display: none;
-                                                            "
-                                                            >에러상세
-                                                            메시지</span
+                                                            class="category-span"
+                                                            >드라마</span
                                                         >
-                                                    </div>
+                                                    </label>
                                                 </div>
                                             </div>
+                                            <div></div>
                                         </div>
-
                                         <div
                                             class="write-description-box write-detail"
                                         >
                                             <div class="write-content">
-                                                작품설명
+                                                펀딩글 설명
                                                 <span class="star">*</span>
                                             </div>
                                             <input
@@ -343,6 +195,42 @@
                                                 >
                                             </div>
                                         </div>
+                                        <div class="info-text-content">
+                                            펀딩 소개글
+                                            <span class="star">*</span>
+                                        </div>
+                                        <div class="funding-info-text">
+                                            <input
+                                                type="text"
+                                                class="info-text"
+                                                name="funding-info"
+                                                placeholder="펀딩상세페이지 우측에 들어가는 소개글입니다."
+                                            />
+                                        </div>
+                                        <div class="hope-text-content">
+                                            원하는 투자자수
+                                            <span class="star">*</span>
+                                        </div>
+                                        <div class="funding-hope-text">
+                                            <input
+                                                type="text"
+                                                class="hope-text"
+                                                name="hope-people"
+                                                placeholder="ex) 10명"
+                                            />
+                                        </div>
+                                        <div class="hope-money-text-content">
+                                            목표금액
+                                            <span class="star">*</span>
+                                        </div>
+                                        <div class="funding-hope-money-text">
+                                            <input
+                                                type="text"
+                                                class="hope-text"
+                                                name="hope-people"
+                                                placeholder="ex) 1,000,000원"
+                                            />
+                                        </div>
                                         <div class="work-img-box">
                                             <div class="title-img-box">
                                                 <img
@@ -350,8 +238,8 @@
                                                     class="title-img"
                                                 />
                                                 <span class="title-text">
-                                                    작품의 사진, 영상을 올려
-                                                    결과물에 더욱 신뢰감을 줄 수
+                                                    사진, 영상을 올려 결과물에
+                                                    더욱 신뢰감을 줄 수
                                                     있습니다.
                                                 </span>
                                             </div>
@@ -393,15 +281,14 @@
                                                                 <div
                                                                     class="img-box-title"
                                                                 >
-                                                                    작품 영상,
-                                                                    이미지 등록
+                                                                    영상, 이미지
+                                                                    등록
                                                                 </div>
                                                                 <div
                                                                     class="img-box-text"
                                                                 >
-                                                                    작품 결과물
-                                                                    혹은 설명을
-                                                                    돕는
+                                                                    결과물 혹은
+                                                                    설명을 돕는
                                                                     이미지를
                                                                     선택해
                                                                     주세요.
@@ -409,7 +296,11 @@
                                                                 <div
                                                                     class="img-box-help"
                                                                 >
-                                                                    <span>
+                                                                    <span
+                                                                        style="
+                                                                            margin-left: 26px;
+                                                                        "
+                                                                    >
                                                                         · 이미지
                                                                         최적
                                                                         사이즈:
@@ -449,19 +340,37 @@
                                                 <img
                                                     src="https://www.wishket.com/static/renewal/img/partner/profile/btn_icon_add.png"
                                                 />
-                                                작품 추가
+                                                추가
+                                            </div>
+                                        </div>
+                                        <!-- 상품추가 -->
+                                        <div class="product-container">
+                                            <div class="product-title-content">
+                                                <img
+                                                    src="/static/images/video/money-icon.png"
+                                                    class="product-img"
+                                                />
+                                                <span class="title-text">
+                                                    가격별 상품들을
+                                                    등록해보세요.
+                                                </span>
+                                            </div>
+                                            <div class="product-add">
+                                                <div class="add-box">
+                                                    <div>adas</div>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- 썸내일추가 -->
                                         <div class="thumbnail-box">
                                             <div class="work-name">
-                                                작품글 표지
+                                                펀딩글 표지
                                                 <span class="star">*</span>
                                             </div>
                                             <div class="work-name-content">
-                                                작품글 표지는 작품목록에 처음
+                                                펀딩글 표지는 펀딩목록에 처음
                                                 보이는 사진으로 더욱 돋보이고
-                                                눈길이 가게 작품을 등록해보세요!
+                                                눈길이 가게 표지를 등록해보세요!
                                             </div>
                                             <div class="thumbnail-content-box">
                                                 <div class="left-box">
@@ -478,14 +387,14 @@
                                                         type="button"
                                                         onclick="document.getElementById('thumbnail-upload').click()"
                                                     >
-                                                        작품 표지 등록
+                                                        펀딩 표지 등록
                                                     </button>
                                                     <p class="input_guide">
-                                                        작품 표지 규격: 480px
+                                                        펀딩 표지 규격: 480px
                                                         480px
                                                     </p>
                                                     <div class="help-text">
-                                                        작품 표지를 등록하지
+                                                        펀딩 표지를 등록하지
                                                         않으면<br />
                                                         꿈터에서 제공하는
                                                         기본이미지가 적용됩니다
@@ -517,17 +426,17 @@
                                                             <div
                                                                 class="work-thumbnail-title"
                                                             >
-                                                                작품 제목 샘플
+                                                                펀딩 제목 샘플
                                                             </div>
                                                             <div
                                                                 class="work-category"
                                                             >
-                                                                작품 장르
+                                                                펀딩 장르
                                                             </div>
                                                             <div
                                                                 class="work-content"
                                                             >
-                                                                작품의 간단한
+                                                                펀딩의 간단한
                                                                 요약
                                                             </div>
                                                             <div
@@ -570,5 +479,5 @@
         </main>
         <footer></footer>
     </body>
-    <script src="/static/js/video/write.js"></script>
+    <script src="/static/js/video/funding-write.js"></script>
 </html>

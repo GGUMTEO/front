@@ -97,11 +97,7 @@ html {
     white-space: nowrap;
 }
 
-.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-}
+
 
 .mypage-list-box {
     width: 280px;
@@ -123,15 +119,7 @@ html {
     margin: 0px 6px;
 }
 
-.text400 {
-    color: #9e9e9e;
-}
 
-.caption-1, #profile_image_edit_modal .modal__body .modal-info-body .base-dot-list .dot-line, .caption-1-bold, .caption-1-medium, .caption-1-light {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-}
 
 .content-divide {
     width: 100%;
@@ -153,9 +141,7 @@ html {
     width: 720px;
 }
 
-.text900 {
-    color: #212121;
-}
+
 
 .subtitle-2-medium {
     font-weight: 500;
@@ -200,13 +186,8 @@ html {
     margin-bottom: 2px;
 }
 
-.body-1-medium {
-    font-weight: 500;
-}
 
-.text600 {
-    color: #616161;
-}
+
 
 .fold.active-menu .icon-fold {
     width: 16px;
@@ -262,9 +243,7 @@ html {
     align-items: center;
     margin-bottom: 40px;
 }
-.text900 {
-    color: #212121;
-} 
+
    .container.mypage .main-content-container .main-content .content .list-item {
     padding: 32px 0px;
     border-bottom: 1px solid #e0e0e0;
@@ -300,12 +279,7 @@ a {
     color: #616161;
     margin-bottom: 12px;
 }
-.text600 {
-    color: #616161;
-}
-.body-3-medium {
-    font-weight: 500;
-}
+
 .timeandcontent {
     font-size: 13px;
     line-height: 20px;
@@ -423,13 +397,13 @@ p {
 .icon-my-edit-off {
     width: 24px;
     height: 24px;
-    background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_toolbar_my_off.png);
+    background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_toolbar_scrap_off.png);
 }
 
 .icon-my-edit-on {
     width: 24px;
     height: 24px;
-    background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_toolbar_my_on.png);
+    background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_toolbar_scrap_on.png);
 }
 .container.mypage .main-content-container .funding-list .funding-author-box .btn {
     padding: 8px;
@@ -437,7 +411,7 @@ p {
 .icon-my-delete {
     width: 24px;
     height: 24px;
-    background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_my_delete.png);
+    background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_scrap_delete.png);
 }
 .container.mypage .main-content-container .funding-list .funding-image img {
     width: 110px;
@@ -446,9 +420,7 @@ p {
     border: 1px solid #e0e0e0;
     object-fit: cover;
 }
-.text500 {
-    color: #757575;
-}
+
 .pagination {
     display: block !important;
     text-align: center;
@@ -512,11 +484,6 @@ ul li {
     background-position: center;
     background-repeat: no-repeat;
     transform: rotate(-180deg);
-}
-.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 500;
 }
 
 .sidebar-menu-name{
