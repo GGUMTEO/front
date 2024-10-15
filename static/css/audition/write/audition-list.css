@@ -213,10 +213,10 @@ body {
     display: inline-flex;
     padding: 0 6px;
     border-radius: 4px;
-    /* color: #475067; */
+    color: #f4f6fa;
     font-size: 12px;
     line-height: 24px;
-    background-color: #f4f6fa;
+    background-color: #00a878;
     align-items: center;
 }
 
@@ -307,8 +307,8 @@ a {
 .sri-btn-xs span.sri-btn-immediately{
     position: relative;
     width: 52px;
-    border: 1px solid #d63131;;
-    color: #d63131;;
+    border: 1px solid #00a878;
+    color: #00a878;
 }
 
 .item-recruit .area-job .job-condition {
