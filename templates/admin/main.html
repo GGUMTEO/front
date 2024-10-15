@@ -4,12 +4,24 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        
-        <link rel="stylesheet" href="/static/css/admin_page/amdin_main/sub_main.css">
-        <link rel="stylesheet" href="/static/css/admin_page/amdin_main/common_main.css" />
+        <link
+            rel="stylesheet"
+            href="/static/css/admin_page/amdin_main/sub_main.css"
+        />
+        <link
+            rel="stylesheet"
+            href="/static/css/admin_page/amdin_main/common_main.css"
+        />
+        <link
+            rel="stylesheet"
+            href="/static/css/admin_page/admin_service/sub_service.css"
+        />
+        <link
+            rel="stylesheet"
+            href="/static/css/admin_page/admin_service/main_service.css"
+        />
     </head>
     <body>
-        <noscript>#</noscript>
         <div id="root">
             <div id="AppLayot_Container" class="AppLayout_container">
                 <div class="AppGNBNavbar_container">
@@ -22,9 +34,6 @@
                             ></button>
                             <div class="Admin_page_logo">관리자 페이지</div>
                         </div>
-                        <!-- <div class="StudioStatus_stateBox">
-                            <span class="StudioStatus_state">작업 중</span>
-                        </div> -->
                     </div>
                     <div class="AppGNBNavbar_flex AppGNBNavbar_rightBox_1">
                         <div class="ProjectInfo_container">
@@ -36,76 +45,9 @@
                             >
                                 관리자 ID:
                                 <span class="ProjectInfo_emphasis">Yanawa</span>
-                                <!-- <span class="ProjectInfo_text_info">정보</span> -->
-                                <!-- <svg
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    focusable="false"
-                                    role="presentation"
-                                    class="withIcon_icon"
-                                    aria-hidden="true"
-                                    style="height: 12px"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
-                                    ></path>
-                                </svg> -->
                             </button>
-                            <!-- <div
-                                class="ProjectInfo_infoBox"
-                                role="region"
-                                aria-labelledby="project-info"
-                            >
-                                <dl>
-                                   
-                                    <dd class="ProjectInfo_content">
-                                        
-                                        <span
-                                            class="Avatar_avatar Avatar_img_admin ProjectInfo_profileImage_admin"
-                                        >
-                                            <span class="Avatar_inner">
-                                                <img
-                                                    src="https://static.wadiz.kr/studio/funding/static/media/default-zingugi.de76a099.svg"
-                                                    alt=""
-                                                />
-                                            </span>
-                                        </span>
-                                       
-                                        <span class="ProjectInfo_makerName">
-                                            관리자: "이름"
-                                        </span>
-                                    </dd>
-                                    
-                                    <dt class="BlindText_textHidden">상태</dt>
-                                    <dd
-                                        class="ProjectInfo_content ProjectInfo_stateBox_1"
-                                    >
-                                       
-                                        <span class="ProjectInfo_state-1"
-                                            >작업 중</span
-                                        >
-                                    </dd>
-                                </dl>
-                                
-                            </div> -->
                         </div>
-                        <!-- <div class="AnnouncementButton_container_1-1">
-                           
-                            <img
-                                class="AnnouncementButton_icon"
-                                src="https://static.wadiz.kr/studio/funding/static/media/announcement.56f4b8e3.svg"
-                                alt=""
-                                aria-hidden="true"
-                            />
-                            <span
-                                class="Badge_container AnnouncementButton_badge"
-                            ></span>
-                        </div> -->
-                        <!-- 미리보기/로그아웃 버튼/ 로그아웃 버튼은 로그아웃 버튼으로 변경 /미리보기 미정-->
                         <div class="PreviewExitButtons_container">
-                            <!-- <button class="Button_button PreviewExitButtons_button" type="button"><span><span class="Button_children">미리보기</span></span></button> -->
                             <button
                                 class="Button_button PreviewExitButtons_button"
                                 type="button"
@@ -118,7 +60,7 @@
                             </button>
                         </div>
                     </div>
-                </div>    
+                </div>
                 <!-- 메인컨텐츠 영역 -->
                 <div class="AppLayout_main_1">
                     <!-- 사이드바 영역 -->
@@ -126,177 +68,873 @@
                         <div class="AppSidebarLayout_content">
                             <!-- 관리자페이지 서비스 기능 카테고리 -->
                             <div class="MenuItems_section">
-
                                 <!-- 대카테고리 -->
-                                <a aria-current="page" class="MenuItems_menu MenuItems_hasSubmenu MenuItems_active" href="">
+                                <a
+                                    aria-current="page"
+                                    class="MenuItems_menu MenuItems_hasSubmenu MenuItems_active"
+                                    href=""
+                                >
                                     <span class="MenuItems_label">
-                                        <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon" aria-hidden="true">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            focusable="false"
+                                            role="presentation"
+                                            class="withIcon_icon"
+                                            aria-hidden="true"
+                                        >
                                             <!-- 이미지 -->
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.656 3.944a1.4 1.4 0 0 1 .92-.344h9.448c.375 0 .735.15.998.417l2.84 2.883H3.258l3.398-2.956zM2.6 8.1V19A1.4 1.4 0 0 0 4 20.4h16a1.4 1.4 0 0 0 1.4-1.4V8.1H2.6zm4.976-5.7a2.6 2.6 0 0 0-1.706.638L2.293 6.15a2.6 2.6 0 0 0-.894 1.962V19A2.6 2.6 0 0 0 4 21.6h16a2.6 2.6 0 0 0 2.6-2.6V8.02a2.6 2.6 0 0 0-.747-1.825l-2.976-3.02a2.6 2.6 0 0 0-1.852-.775h-9.45zM9.4 12a.6.6 0 0 1 .6-.6h4a.6.6 0 1 1 0 1.2h-4a.6.6 0 0 1-.6-.6z">
-                                            </path>
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M6.656 3.944a1.4 1.4 0 0 1 .92-.344h9.448c.375 0 .735.15.998.417l2.84 2.883H3.258l3.398-2.956zM2.6 8.1V19A1.4 1.4 0 0 0 4 20.4h16a1.4 1.4 0 0 0 1.4-1.4V8.1H2.6zm4.976-5.7a2.6 2.6 0 0 0-1.706.638L2.293 6.15a2.6 2.6 0 0 0-.894 1.962V19A2.6 2.6 0 0 0 4 21.6h16a2.6 2.6 0 0 0 2.6-2.6V8.02a2.6 2.6 0 0 0-.747-1.825l-2.976-3.02a2.6 2.6 0 0 0-1.852-.775h-9.45zM9.4 12a.6.6 0 0 1 .6-.6h4a.6.6 0 1 1 0 1.2h-4a.6.6 0 0 1-.6-.6z"
+                                            ></path>
                                         </svg>
                                         <!-- 기획안 대로 카테고리 변경 -->
                                         회원 관리
                                         <!-- 클릭이벤트 이미지 -->
-                                        <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon MenuItems_downIcon MenuItems_open_1" aria-hidden="true">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            focusable="false"
+                                            role="presentation"
+                                            class="withIcon_icon MenuItems_downIcon MenuItems_open_1"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                            ></path>
                                         </svg>
                                     </span>
                                 </a>
                                 <!-- 중카테고리 -->
-                                <div class="MenuItems_submenuContainer ">
-                                    <a class="MenuItems_submenu" href="">회원 목록 조회</a>
-                                    
-                                    
+                                <div class="MenuItems_submenuContainer">
+                                    <a class="MenuItems_submenu" href=""
+                                        >회원 목록 조회</a
+                                    >
                                 </div>
 
-
                                 <!-- 대카테고리 -->
-                                <a aria-current="page" class="MenuItems_menu MenuItems_hasSubmenu MenuItems_active" href="">
+                                <a
+                                    aria-current="page"
+                                    class="MenuItems_menu MenuItems_hasSubmenu MenuItems_active"
+                                    href=""
+                                >
                                     <span class="MenuItems_label">
-                                        <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon" aria-hidden="true">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            focusable="false"
+                                            role="presentation"
+                                            class="withIcon_icon"
+                                            aria-hidden="true"
+                                        >
                                             <!-- 이미지 -->
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.656 3.944a1.4 1.4 0 0 1 .92-.344h9.448c.375 0 .735.15.998.417l2.84 2.883H3.258l3.398-2.956zM2.6 8.1V19A1.4 1.4 0 0 0 4 20.4h16a1.4 1.4 0 0 0 1.4-1.4V8.1H2.6zm4.976-5.7a2.6 2.6 0 0 0-1.706.638L2.293 6.15a2.6 2.6 0 0 0-.894 1.962V19A2.6 2.6 0 0 0 4 21.6h16a2.6 2.6 0 0 0 2.6-2.6V8.02a2.6 2.6 0 0 0-.747-1.825l-2.976-3.02a2.6 2.6 0 0 0-1.852-.775h-9.45zM9.4 12a.6.6 0 0 1 .6-.6h4a.6.6 0 1 1 0 1.2h-4a.6.6 0 0 1-.6-.6z">
-                                            </path>
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M6.656 3.944a1.4 1.4 0 0 1 .92-.344h9.448c.375 0 .735.15.998.417l2.84 2.883H3.258l3.398-2.956zM2.6 8.1V19A1.4 1.4 0 0 0 4 20.4h16a1.4 1.4 0 0 0 1.4-1.4V8.1H2.6zm4.976-5.7a2.6 2.6 0 0 0-1.706.638L2.293 6.15a2.6 2.6 0 0 0-.894 1.962V19A2.6 2.6 0 0 0 4 21.6h16a2.6 2.6 0 0 0 2.6-2.6V8.02a2.6 2.6 0 0 0-.747-1.825l-2.976-3.02a2.6 2.6 0 0 0-1.852-.775h-9.45zM9.4 12a.6.6 0 0 1 .6-.6h4a.6.6 0 1 1 0 1.2h-4a.6.6 0 0 1-.6-.6z"
+                                            ></path>
                                         </svg>
                                         <!-- 기획안 대로 카테고리 변경 -->
                                         고객 지원
                                         <!-- 클릭이벤트 이미지 -->
-                                        <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon MenuItems_downIcon MenuItems_open_1" aria-hidden="true">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            focusable="false"
+                                            role="presentation"
+                                            class="withIcon_icon MenuItems_downIcon MenuItems_open_1"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                            ></path>
                                         </svg>
                                     </span>
                                 </a>
                                 <!-- 중카테고리 -->
-                                <div class="MenuItems_submenuContainer ">
-                                    <!-- <a class="MenuItems_submenu" href="">문의 답변</a> -->
-                                    <a class="MenuItems_submenu" href="">공지 사항</a>
-                                </div>
-                                
-                                 <!-- 대카테고리 -->
-                                 <a aria-current="page" class="MenuItems_menu MenuItems_hasSubmenu MenuItems_active" href="">
-                                    <span class="MenuItems_label">
-                                        <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon" aria-hidden="true">
-                                            <!-- 이미지 -->
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.656 3.944a1.4 1.4 0 0 1 .92-.344h9.448c.375 0 .735.15.998.417l2.84 2.883H3.258l3.398-2.956zM2.6 8.1V19A1.4 1.4 0 0 0 4 20.4h16a1.4 1.4 0 0 0 1.4-1.4V8.1H2.6zm4.976-5.7a2.6 2.6 0 0 0-1.706.638L2.293 6.15a2.6 2.6 0 0 0-.894 1.962V19A2.6 2.6 0 0 0 4 21.6h16a2.6 2.6 0 0 0 2.6-2.6V8.02a2.6 2.6 0 0 0-.747-1.825l-2.976-3.02a2.6 2.6 0 0 0-1.852-.775h-9.45zM9.4 12a.6.6 0 0 1 .6-.6h4a.6.6 0 1 1 0 1.2h-4a.6.6 0 0 1-.6-.6z">
-                                            </path>
-                                        </svg>
-                                        <!-- 기획안 대로 카테고리 변경 -->
-                                        게시판 관리
-                                        <!-- 클릭이벤트 이미지 -->
-                                        <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon MenuItems_downIcon MenuItems_open_1" aria-hidden="true">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
-                                        </svg>
-                                    </span>
-                                </a>
-                                <!-- 중카테고리 -->
-                                <div class="MenuItems_submenuContainer ">
-                                    <a class="MenuItems_submenu" href="">게시판 목록 조회</a>
-                                    <a class="MenuItems_submenu" href="">게시글 작성</a>
-                                    <!-- <a class="MenuItems_submenu" href="">게시판 수정</a>
-                                    <a class="MenuItems_submenu" href="">댓글 수정</a> -->
-                                    
+                                <div class="MenuItems_submenuContainer">
+                                    <a class="MenuItems_submenu" href=""
+                                        >공지 사항</a
+                                    >
+                                    <a class="MenuItems_submenu" href=""
+                                        >문의 답변</a
+                                    >
                                 </div>
 
-                                 <!-- 대카테고리 -->
-                                 <a aria-current="page" class="MenuItems_menu MenuItems_hasSubmenu MenuItems_active" href="">
+                                <!-- 대카테고리 -->
+                                <a
+                                    aria-current="page"
+                                    class="MenuItems_menu MenuItems_hasSubmenu MenuItems_active"
+                                    href=""
+                                >
                                     <span class="MenuItems_label">
-                                        <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon" aria-hidden="true">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            focusable="false"
+                                            role="presentation"
+                                            class="withIcon_icon"
+                                            aria-hidden="true"
+                                        >
                                             <!-- 이미지 -->
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.656 3.944a1.4 1.4 0 0 1 .92-.344h9.448c.375 0 .735.15.998.417l2.84 2.883H3.258l3.398-2.956zM2.6 8.1V19A1.4 1.4 0 0 0 4 20.4h16a1.4 1.4 0 0 0 1.4-1.4V8.1H2.6zm4.976-5.7a2.6 2.6 0 0 0-1.706.638L2.293 6.15a2.6 2.6 0 0 0-.894 1.962V19A2.6 2.6 0 0 0 4 21.6h16a2.6 2.6 0 0 0 2.6-2.6V8.02a2.6 2.6 0 0 0-.747-1.825l-2.976-3.02a2.6 2.6 0 0 0-1.852-.775h-9.45zM9.4 12a.6.6 0 0 1 .6-.6h4a.6.6 0 1 1 0 1.2h-4a.6.6 0 0 1-.6-.6z">
-                                            </path>
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M6.656 3.944a1.4 1.4 0 0 1 .92-.344h9.448c.375 0 .735.15.998.417l2.84 2.883H3.258l3.398-2.956zM2.6 8.1V19A1.4 1.4 0 0 0 4 20.4h16a1.4 1.4 0 0 0 1.4-1.4V8.1H2.6zm4.976-5.7a2.6 2.6 0 0 0-1.706.638L2.293 6.15a2.6 2.6 0 0 0-.894 1.962V19A2.6 2.6 0 0 0 4 21.6h16a2.6 2.6 0 0 0 2.6-2.6V8.02a2.6 2.6 0 0 0-.747-1.825l-2.976-3.02a2.6 2.6 0 0 0-1.852-.775h-9.45zM9.4 12a.6.6 0 0 1 .6-.6h4a.6.6 0 1 1 0 1.2h-4a.6.6 0 0 1-.6-.6z"
+                                            ></path>
+                                        </svg>
+                                        <!-- 기획안 대로 카테고리 변경 -->
+                                        작품 관리
+                                        <!-- 클릭이벤트 이미지 -->
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            focusable="false"
+                                            role="presentation"
+                                            class="withIcon_icon MenuItems_downIcon MenuItems_open_1"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <!-- 중카테고리 -->
+                                <div class="MenuItems_submenuContainer">
+                                    <a class="MenuItems_submenu" href=""
+                                        >영상</a
+                                    >
+                                    <a class="MenuItems_submenu" href="">글</a>
+                                    <!-- <a class="MenuItems_submenu" href="">게시판 수정</a>
+                                    <a class="MenuItems_submenu" href="">댓글 수정</a> -->
+                                </div>
+
+                                <!-- 대카테고리 -->
+                                <a
+                                    aria-current="page"
+                                    class="MenuItems_menu MenuItems_hasSubmenu MenuItems_active"
+                                    href=""
+                                >
+                                    <span class="MenuItems_label">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            focusable="false"
+                                            role="presentation"
+                                            class="withIcon_icon"
+                                            aria-hidden="true"
+                                        >
+                                            <!-- 이미지 -->
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M6.656 3.944a1.4 1.4 0 0 1 .92-.344h9.448c.375 0 .735.15.998.417l2.84 2.883H3.258l3.398-2.956zM2.6 8.1V19A1.4 1.4 0 0 0 4 20.4h16a1.4 1.4 0 0 0 1.4-1.4V8.1H2.6zm4.976-5.7a2.6 2.6 0 0 0-1.706.638L2.293 6.15a2.6 2.6 0 0 0-.894 1.962V19A2.6 2.6 0 0 0 4 21.6h16a2.6 2.6 0 0 0 2.6-2.6V8.02a2.6 2.6 0 0 0-.747-1.825l-2.976-3.02a2.6 2.6 0 0 0-1.852-.775h-9.45zM9.4 12a.6.6 0 0 1 .6-.6h4a.6.6 0 1 1 0 1.2h-4a.6.6 0 0 1-.6-.6z"
+                                            ></path>
+                                        </svg>
+                                        <!-- 기획안 대로 카테고리 변경 -->
+                                        펀딩 관리
+                                        <!-- 클릭이벤트 이미지 -->
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            focusable="false"
+                                            role="presentation"
+                                            class="withIcon_icon MenuItems_downIcon MenuItems_open_1"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <!-- 중카테고리 -->
+                                <div class="MenuItems_submenuContainer">
+                                    <a class="MenuItems_submenu" href=""
+                                        >영상</a
+                                    >
+                                    <a class="MenuItems_submenu" href="">글</a>
+                                    <!-- <a class="MenuItems_submenu" href="">게시판 수정</a>
+                                    <a class="MenuItems_submenu" href="">댓글 수정</a> -->
+                                </div>
+
+                                <!-- 대카테고리 -->
+                                <a
+                                    aria-current="page"
+                                    class="MenuItems_menu MenuItems_hasSubmenu MenuItems_active"
+                                    href=""
+                                >
+                                    <span class="MenuItems_label">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            focusable="false"
+                                            role="presentation"
+                                            class="withIcon_icon"
+                                            aria-hidden="true"
+                                        >
+                                            <!-- 이미지 -->
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M6.656 3.944a1.4 1.4 0 0 1 .92-.344h9.448c.375 0 .735.15.998.417l2.84 2.883H3.258l3.398-2.956zM2.6 8.1V19A1.4 1.4 0 0 0 4 20.4h16a1.4 1.4 0 0 0 1.4-1.4V8.1H2.6zm4.976-5.7a2.6 2.6 0 0 0-1.706.638L2.293 6.15a2.6 2.6 0 0 0-.894 1.962V19A2.6 2.6 0 0 0 4 21.6h16a2.6 2.6 0 0 0 2.6-2.6V8.02a2.6 2.6 0 0 0-.747-1.825l-2.976-3.02a2.6 2.6 0 0 0-1.852-.775h-9.45zM9.4 12a.6.6 0 0 1 .6-.6h4a.6.6 0 1 1 0 1.2h-4a.6.6 0 0 1-.6-.6z"
+                                            ></path>
+                                        </svg>
+                                        <!-- 기획안 대로 카테고리 변경 -->
+                                        모집 관리
+                                        <!-- 클릭이벤트 이미지 -->
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            focusable="false"
+                                            role="presentation"
+                                            class="withIcon_icon MenuItems_downIcon MenuItems_open_1"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <!-- 중카테고리 -->
+                                <div class="MenuItems_submenuContainer">
+                                    <a class="MenuItems_submenu" href=""
+                                        >영상</a
+                                    >
+                                    <a class="MenuItems_submenu" href="">글</a>
+                                    <!-- <a class="MenuItems_submenu" href="">게시판 수정</a>
+                                    <a class="MenuItems_submenu" href="">댓글 수정</a> -->
+                                </div>
+
+                                <!-- 대카테고리 -->
+                                <a
+                                    aria-current="page"
+                                    class="MenuItems_menu MenuItems_hasSubmenu MenuItems_active"
+                                    href=""
+                                >
+                                    <span class="MenuItems_label">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            focusable="false"
+                                            role="presentation"
+                                            class="withIcon_icon"
+                                            aria-hidden="true"
+                                        >
+                                            <!-- 이미지 -->
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M6.656 3.944a1.4 1.4 0 0 1 .92-.344h9.448c.375 0 .735.15.998.417l2.84 2.883H3.258l3.398-2.956zM2.6 8.1V19A1.4 1.4 0 0 0 4 20.4h16a1.4 1.4 0 0 0 1.4-1.4V8.1H2.6zm4.976-5.7a2.6 2.6 0 0 0-1.706.638L2.293 6.15a2.6 2.6 0 0 0-.894 1.962V19A2.6 2.6 0 0 0 4 21.6h16a2.6 2.6 0 0 0 2.6-2.6V8.02a2.6 2.6 0 0 0-.747-1.825l-2.976-3.02a2.6 2.6 0 0 0-1.852-.775h-9.45zM9.4 12a.6.6 0 0 1 .6-.6h4a.6.6 0 1 1 0 1.2h-4a.6.6 0 0 1-.6-.6z"
+                                            ></path>
                                         </svg>
                                         <!-- 기획안 대로 카테고리 변경 -->
                                         결제 관리
                                         <!-- 클릭이벤트 이미지 -->
-                                        <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon MenuItems_downIcon MenuItems_open_1" aria-hidden="true">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            focusable="false"
+                                            role="presentation"
+                                            class="withIcon_icon MenuItems_downIcon MenuItems_open_1"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                            ></path>
                                         </svg>
                                     </span>
                                 </a>
                                 <!-- 중카테고리 -->
-                                <div class="MenuItems_submenuContainer ">
-                                    <a class="MenuItems_submenu" href="">결제 관리</a>
-                                    
+                                <div class="MenuItems_submenuContainer">
+                                    <a class="MenuItems_submenu" href=""
+                                        >결제 관리</a
+                                    >
                                 </div>
-
-                                 <!-- 대카테고리 -->
-                                 <a aria-current="page" class="MenuItems_menu MenuItems_hasSubmenu MenuItems_active" href="">
-                                    <span class="MenuItems_label">
-                                        <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon" aria-hidden="true">
-                                            <!-- 이미지 -->
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.656 3.944a1.4 1.4 0 0 1 .92-.344h9.448c.375 0 .735.15.998.417l2.84 2.883H3.258l3.398-2.956zM2.6 8.1V19A1.4 1.4 0 0 0 4 20.4h16a1.4 1.4 0 0 0 1.4-1.4V8.1H2.6zm4.976-5.7a2.6 2.6 0 0 0-1.706.638L2.293 6.15a2.6 2.6 0 0 0-.894 1.962V19A2.6 2.6 0 0 0 4 21.6h16a2.6 2.6 0 0 0 2.6-2.6V8.02a2.6 2.6 0 0 0-.747-1.825l-2.976-3.02a2.6 2.6 0 0 0-1.852-.775h-9.45zM9.4 12a.6.6 0 0 1 .6-.6h4a.6.6 0 1 1 0 1.2h-4a.6.6 0 0 1-.6-.6z">
-                                            </path>
-                                        </svg>
-                                        <!-- 기획안 대로 카테고리 변경 -->
-                                        배너 관리
-                                        <!-- 클릭이벤트 이미지 -->
-                                        <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon MenuItems_downIcon MenuItems_open_1" aria-hidden="true">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
-                                        </svg>
-                                    </span>
-                                </a>
-                                <!-- 중카테고리 -->
-                                <div class="MenuItems_submenuContainer ">
-                                    <a class="MenuItems_submenu" href="">메인 배너 이미지 변경</a>
-                                </div>
-
-                               
-                                <!-- 서비스 대카테고리 -->
-                                <a aria-current="page" class="MenuItems_menu MenuItems_hasSubmenu MenuItems_active" href="">
-                                   <span class="MenuItems_label">
-                                       <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon" aria-hidden="true">
-                                           <!-- 이미지 -->
-                                           <path fill-rule="evenodd" clip-rule="evenodd" d="M6.656 3.944a1.4 1.4 0 0 1 .92-.344h9.448c.375 0 .735.15.998.417l2.84 2.883H3.258l3.398-2.956zM2.6 8.1V19A1.4 1.4 0 0 0 4 20.4h16a1.4 1.4 0 0 0 1.4-1.4V8.1H2.6zm4.976-5.7a2.6 2.6 0 0 0-1.706.638L2.293 6.15a2.6 2.6 0 0 0-.894 1.962V19A2.6 2.6 0 0 0 4 21.6h16a2.6 2.6 0 0 0 2.6-2.6V8.02a2.6 2.6 0 0 0-.747-1.825l-2.976-3.02a2.6 2.6 0 0 0-1.852-.775h-9.45zM9.4 12a.6.6 0 0 1 .6-.6h4a.6.6 0 1 1 0 1.2h-4a.6.6 0 0 1-.6-.6z">
-                                           </path>
-                                       </svg>
-                                       <!-- 기획안 대로 카테고리 변경 -->
-                                       팀 관리
-                                       <!-- 클릭이벤트 이미지 -->
-                                       <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon MenuItems_downIcon MenuItems_open_1" aria-hidden="true">
-                                           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
-                                       </svg>
-                                   </span>
-                               </a>
-                               <!-- 서비스 중카테고리 -->
-                               <div class="MenuItems_submenuContainer ">
-                                   <a class="MenuItems_submenu" href="">팀 목록 조회</a>
-                                   <a class="MenuItems_submenu" href="">팀 활동 내역 조회</a>
-                               </div>
-
-                                 <!-- 서비스 대카테고리 -->
-                                 <a aria-current="page" class="MenuItems_menu MenuItems_hasSubmenu MenuItems_active" href="">
-                                    <span class="MenuItems_label">
-                                        <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon" aria-hidden="true">
-                                            <!-- 이미지 -->
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.656 3.944a1.4 1.4 0 0 1 .92-.344h9.448c.375 0 .735.15.998.417l2.84 2.883H3.258l3.398-2.956zM2.6 8.1V19A1.4 1.4 0 0 0 4 20.4h16a1.4 1.4 0 0 0 1.4-1.4V8.1H2.6zm4.976-5.7a2.6 2.6 0 0 0-1.706.638L2.293 6.15a2.6 2.6 0 0 0-.894 1.962V19A2.6 2.6 0 0 0 4 21.6h16a2.6 2.6 0 0 0 2.6-2.6V8.02a2.6 2.6 0 0 0-.747-1.825l-2.976-3.02a2.6 2.6 0 0 0-1.852-.775h-9.45zM9.4 12a.6.6 0 0 1 .6-.6h4a.6.6 0 1 1 0 1.2h-4a.6.6 0 0 1-.6-.6z">
-                                            </path>
-                                        </svg>
-                                        <!-- 기획안 대로 카테고리 변경 -->
-                                        서비스 관리
-                                        <!-- 클릭이벤트 이미지 -->
-                                        <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="withIcon_icon MenuItems_downIcon MenuItems_open_1" aria-hidden="true">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
-                                        </svg>
-                                    </span>
-                                </a>
-                                <!-- 서비스 중카테고리 -->
-                                <div class="MenuItems_submenuContainer ">
-                                    <a class="MenuItems_submenu" href="">경기 매칭 게시판</a>
-                                    <a class="MenuItems_submenu" href="">모아모아 모집 게시판</a>
-                                    <a class="MenuItems_submenu" href="">장소 대여 게시판</a>
-                                    
-                                </div>
-                            
                             </div>
                         </div>
                     </div>
-                    <div id="AppLayout_Contents" class="AppLayout_contents_mainContent">
-                        
+                    <div
+                        id="AppLayout_Contents"
+                        class="AppLayout_contents_mainContent"
+                    >
+                        <div class="Service_wrapper">
+                            <!-- body_header -->
+                            <div class="ServiceHeader_container">
+                                <h2 class="ServiceHeader_title">게시글 관리</h2>
+                                <p class="ServiceHeader_description">
+                                    게시글 목록을 조회합니다.
+                                </p>
+                            </div>
+                            <hr
+                                class="Divider_divider Divider_horizontal Divider_lightBG Divider_spacing3 Divider_caption2 FriendsList_divider"
+                            />
+                            <!-- body_layout -->
+                            <div class="ServiceLayout_container">
+                                <div class="filter_wrap">
+                                    <div class="SortFilterOptions">
+                                        <span
+                                            class="sort-filter-option selected"
+                                            >작성일 순</span
+                                        >/
+                                        <span class="sort-filter-option"
+                                            >조회수 순</span
+                                        >/
+                                        <span class="sort-filter-option"
+                                            >댓글수 순</span
+                                        >
+                                    </div>
+                                    <!-- Action Buttons -->
+                                    <div class="action-buttons">
+                                        <input
+                                            type="text"
+                                            class="Filter_searchInput"
+                                            placeholder="검색어 입력"
+                                        />
+                                        <button
+                                            id="addServiceBtn"
+                                            class="addServiceBtn"
+                                        >
+                                            게시글 추가
+                                        </button>
+                                        <button
+                                            id="deleteSelectedBtn"
+                                            class="deleteSelectedBtn"
+                                        >
+                                            게시글 삭제
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr
+                                    class="Divider_divider Divider_horizontal Divider_lightBG Divider_spacing3 Divider_caption2 FriendsList_divider"
+                                />
+                                <div class="ServiceTable_container">
+                                    <div class="header_wrapper">
+                                        <div
+                                            class="ServiceTable_row ServiceTable_header"
+                                        >
+                                            <div
+                                                class="ServiceTable_cell headerCell selectAllCell"
+                                            >
+                                                <input
+                                                    type="checkbox"
+                                                    id="selectAll"
+                                                />
+                                            </div>
+                                            <div class="ServiceTable_cell
+                                            headerCell" style= > ID
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell headerCell"
+                                        >
+                                            작성자
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell headerCell"
+                                        >
+                                            작성일
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell headerCell"
+                                        >
+                                            게시글 제목
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell headerCell"
+                                        >
+                                            조회수
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell headerCell"
+                                        >
+                                            댓글수
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell headerCell"
+                                        >
+                                            유형
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell headerCell"
+                                        >
+                                            Actions
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 목록 리스트 -->
+                                <div class="ServiceTable_row_wrapper">
+                                    <div class="ServiceTable_row">
+                                        <div class="ServiceTable_cell">
+                                            <input
+                                                type="checkbox"
+                                                class="userCheckbox"
+                                            />
+                                        </div>
+                                        <div class="ServiceTable_cell post_ID">
+                                            1
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell user_name"
+                                        >
+                                            John Doe
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell Join_date"
+                                        >
+                                            2024-08-20
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell post_title"
+                                        >
+                                            어제 챔스 하이라이트 봄?
+                                        </div>
+                                        <div class="ServiceTable_cell hit_ctn">
+                                            152
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell reply_ctn"
+                                        >
+                                            56
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell post_kind"
+                                        >
+                                            잡담
+                                        </div>
+                                        <div class="ServiceTable_cell editBtn">
+                                            <button class="">수정</button>
+                                        </div>
+                                    </div>
+                                    <div class="ServiceTable_row">
+                                        <div class="ServiceTable_cell">
+                                            <input
+                                                type="checkbox"
+                                                class="userCheckbox"
+                                            />
+                                        </div>
+                                        <div class="ServiceTable_cell post_ID">
+                                            2
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell user_name"
+                                        >
+                                            도우너
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell Join_date"
+                                        >
+                                            2024-08-21
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell post_title"
+                                        >
+                                            XXX팀 여기 들어갈만 한가요?
+                                        </div>
+                                        <div class="ServiceTable_cell hit_ctn">
+                                            22
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell reply_ctn"
+                                        >
+                                            3
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell post_kind"
+                                        >
+                                            질문
+                                        </div>
+                                        <div class="ServiceTable_cell editBtn">
+                                            <button class="">수정</button>
+                                        </div>
+                                    </div>
+                                    <div class="ServiceTable_row">
+                                        <div class="ServiceTable_cell">
+                                            <input
+                                                type="checkbox"
+                                                class="userCheckbox"
+                                            />
+                                        </div>
+                                        <div class="ServiceTable_cell post_ID">
+                                            3
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell user_name"
+                                        >
+                                            둘리
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell Join_date"
+                                        >
+                                            2024-08-23
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell post_title"
+                                        >
+                                            송파 배드민턴장 대여 후기
+                                        </div>
+                                        <div class="ServiceTable_cell hit_ctn">
+                                            98
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell reply_ctn"
+                                        >
+                                            13
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell post_kind"
+                                        >
+                                            후기
+                                        </div>
+                                        <div class="ServiceTable_cell editBtn">
+                                            <button class="">수정</button>
+                                        </div>
+                                    </div>
+                                    <div class="ServiceTable_row">
+                                        <div class="ServiceTable_cell">
+                                            <input
+                                                type="checkbox"
+                                                class="userCheckbox"
+                                            />
+                                        </div>
+                                        <div class="ServiceTable_cell post_ID">
+                                            4
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell user_name"
+                                        >
+                                            고길동
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell Join_date"
+                                        >
+                                            2024-08-25
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell post_title"
+                                        >
+                                            어제 둘리팀이랑 경기하고 왔습니다.
+                                        </div>
+                                        <div class="ServiceTable_cell hit_ctn">
+                                            43
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell reply_ctn"
+                                        >
+                                            22
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell post_kind"
+                                        >
+                                            후기
+                                        </div>
+                                        <div class="ServiceTable_cell editBtn">
+                                            <button class="">수정</button>
+                                        </div>
+                                    </div>
+                                    <div class="ServiceTable_row">
+                                        <div class="ServiceTable_cell">
+                                            <input
+                                                type="checkbox"
+                                                class="userCheckbox"
+                                            />
+                                        </div>
+                                        <div class="ServiceTable_cell post_ID">
+                                            5
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell user_name"
+                                        >
+                                            마이콜
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell Join_date"
+                                        >
+                                            2024-08-27
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell post_title"
+                                        >
+                                            로또 3등 당첨됨
+                                            asdfasdfasdfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                                        </div>
+                                        <div class="ServiceTable_cell hit_ctn">
+                                            98
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell reply_ctn"
+                                        >
+                                            54
+                                        </div>
+                                        <div
+                                            class="ServiceTable_cell post_kind"
+                                        >
+                                            잡담
+                                        </div>
+                                        <div class="ServiceTable_cell editBtn">
+                                            <button class="">수정</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- 목록 리스트 -->
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="pagination">
+                            <ul class="pagination-list">
+                                <!-- 처음 페이지로 이동하는 버튼 -->
+                                <li class="pagination-first">
+                                    <a
+                                        href="#"
+                                        class="pagination-first-link"
+                                        rel="nofollow"
+                                    >
+                                        <span
+                                            class="pagination-first-icon"
+                                            aria-hidden="true"
+                                            >«</span
+                                        >
+                                    </a>
+                                </li>
+                                <!-- 이전 페이지로 이동하는 버튼 -->
+                                <li class="pagination-prev">
+                                    <a
+                                        href="#"
+                                        class="pagination-prev-link"
+                                        rel="prev nofollow"
+                                    >
+                                        <span
+                                            class="pagination-prev-icon"
+                                            aria-hidden="true"
+                                            >‹</span
+                                        >
+                                    </a>
+                                </li>
+                                <!-- 페이지 번호 버튼 -->
+                                <li class="pagination-page active">
+                                    <a href="#" class="pagination-page-link"
+                                        >1</a
+                                    >
+                                </li>
+                                <li class="pagination-page">
+                                    <a href="#" class="pagination-page-link"
+                                        >2</a
+                                    >
+                                </li>
+                                <li class="pagination-page">
+                                    <a href="#" class="pagination-page-link"
+                                        >3</a
+                                    >
+                                </li>
+                                <li class="pagination-page">
+                                    <a href="#" class="pagination-page-link"
+                                        >4</a
+                                    >
+                                </li>
+                                <li class="pagination-page">
+                                    <a href="#" class="pagination-page-link"
+                                        >5</a
+                                    >
+                                </li>
+                                <li class="pagination-page">
+                                    <a href="#" class="pagination-page-link"
+                                        >6</a
+                                    >
+                                </li>
+                                <li class="pagination-page">
+                                    <a href="#" class="pagination-page-link"
+                                        >7</a
+                                    >
+                                </li>
+                                <li class="pagination-page">
+                                    <a href="#" class="pagination-page-link"
+                                        >8</a
+                                    >
+                                </li>
+                                <li class="pagination-page">
+                                    <a href="#" class="pagination-page-link"
+                                        >9</a
+                                    >
+                                </li>
+                                <li class="pagination-page">
+                                    <a href="#" class="pagination-page-link"
+                                        >10</a
+                                    >
+                                </li>
+                                <!-- 다음 페이지로 이동하는 버튼 -->
+                                <li class="pagination-next">
+                                    <a
+                                        href="#"
+                                        class="pagination-next-link"
+                                        rel="next nofollow"
+                                    >
+                                        <span
+                                            class="pagination-next-icon"
+                                            aria-hidden="true"
+                                            >›</span
+                                        >
+                                    </a>
+                                </li>
+                                <!-- 마지막 페이지로 이동하는 버튼 -->
+                                <li class="pagination-last">
+                                    <a
+                                        href="#"
+                                        class="pagination-last-link"
+                                        rel="nofollow"
+                                    >
+                                        <span
+                                            class="pagination-last-icon"
+                                            aria-hidden="true"
+                                            >»</span
+                                        >
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
+
+                    <!-- 모달창 -->
+                    <div id="editModal" class="modal">
+                        <div
+                            class="modal-content"
+                            style="
+                                max-height: 80vh;
+                                overflow-y: auto;
+                                display: flex;
+                                flex-direction: column;
+                            "
+                        >
+                            <span
+                                class="close-button"
+                                style="align-self: flex-end"
+                                >&times;</span
+                            >
+                            <h2 style="text-align: center">게시글 수정</h2>
+                            <form
+                                id="editForm"
+                                style="
+                                    flex-grow: 1;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                "
+                            >
+                                <div
+                                    style="
+                                        flex-grow: 1;
+                                        overflow-y: auto;
+                                        margin-bottom: 20px;
+                                    "
+                                >
+                                    <label for="editPostTitle"
+                                        >게시글 제목:</label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="editPostTitle"
+                                        name="editPostTitle"
+                                        style="
+                                            width: 100%;
+                                            padding: 8px;
+                                            margin-bottom: 10px;
+                                            border: 1px solid #999;
+                                        "
+                                    />
+
+                                    <label for="editPostContent"
+                                        >게시글 내용:</label
+                                    >
+                                    <textarea
+                                        id="editPostContent"
+                                        name="editPostContent"
+                                        style="
+                                            width: 100%;
+                                            height: 200px;
+                                            padding: 8px;
+                                            margin-bottom: 10px;
+                                            border: 1px solid #999;
+                                        "
+                                    ></textarea>
+
+                                    <label for="editFiles">첨부파일:</label>
+                                    <input
+                                        type="file"
+                                        id="editFiles"
+                                        name="editFiles"
+                                        accept="image/*, video/*"
+                                        multiple
+                                        style="
+                                            width: 100%;
+                                            padding: 8px;
+                                            margin-bottom: 10px;
+                                        "
+                                    />
+
+                                    <!-- 첨부된 이미지/동영상 미리보기 -->
+                                    <div
+                                        id="filePreviewContainer"
+                                        style="
+                                            margin-top: 20px;
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            gap: 10px;
+                                        "
+                                    ></div>
+
+                                    <h3 style="margin-top: 30px">댓글 목록</h3>
+                                    <ul
+                                        id="commentList"
+                                        style="
+                                            list-style-type: none;
+                                            padding: 0;
+                                            min-height: 200px;
+                                            overflow-y: auto;
+                                            max-height: 300px;
+                                        "
+                                    ></ul>
+                                </div>
+
+                                <!-- 저장 버튼은 맨 아래에 배치 -->
+                                <button
+                                    type="button"
+                                    id="saveChanges"
+                                    style="
+                                        width: 100%;
+                                        padding: 12px;
+                                        background-color: #1890ff;
+                                        color: white;
+                                        font-size: 16px;
+                                        border: none;
+                                        cursor: pointer;
+                                    "
+                                >
+                                    저장
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- 여기까지 모달창 -->
                 </div>
-            
+            </div>
         </div>
     </body>
     <script src="/static/js/adminPage/admin_page/admin.js"></script>
+    <script src="/static/js/adminPage/admin_service/service_Main.js"></script>
+    <script src="/static/js/adminPage/admin_post/postList_filter.js"></script>
 </html>
