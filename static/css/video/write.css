@@ -63,17 +63,17 @@
     font-smoothing: antialiased;
 }
 
-.gaia {
+.main {
     min-width: 1080px;
     height: auto;
     min-height: 70%;
 }
 
-.profile-header {
+.header {
     display: block;
 }
 
-.profile-header .background {
+.header .background {
     height: 144px;
     margin-top: -1px;
     background-size: cover;
@@ -87,7 +87,7 @@
     );
 }
 
-.profile-header.edit-header .background {
+.header.edit-header .background {
     height: 144px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@
     margin: 0 auto;
 }
 
-.profile-header .profile-box {
+.header .profile-box {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
@@ -113,7 +113,7 @@
     margin-top: -96px;
 }
 
-.profile-header .profile-box.inquiry {
+.header .profile-box.write {
     width: 848px;
     margin: 0 auto;
     position: relative;
@@ -121,14 +121,14 @@
     border-radius: 4px;
 }
 
-#inquiry-footer-moving {
+#write-footer-moving {
     width: 1080px;
     position: sticky;
     bottom: 0;
     z-index: 100;
 }
 
-#inquiry-footer-moving.active {
+#write-footer-moving.active {
     height: 80px;
 }
 
@@ -164,15 +164,22 @@ footer.footer .footer-contact .footer-cs-tel,
     font-weight: 400;
 }
 
-.inquiry-add-view .inquiry-add-title {
+.write-add-view .write-add-title {
     padding: 26px 32px;
     border-bottom: solid 1px #e0e0e0;
+    color: #212121;
 }
 
-.inquiry-add-view .inquiry-add-content-box {
+.write-add-view .write-add-content-box {
     padding: 32px 32px 60px 32px;
 }
-
+.write-category {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
 .label-input-partner {
     position: relative;
 }
@@ -231,7 +238,7 @@ footer.footer .footer-contact .footer-cs-tel,
     color: #00a878 !important;
 }
 
-.wishket-label-input.error,
+.label-input.error,
 body.partners_profile .calendar-input.error,
 body.partners_profile .addon-input.error,
 body.partners_profile .ui-autocomplete.error {
@@ -248,7 +255,7 @@ body.partners_profile .ui-autocomplete.error {
     display: block;
 }
 
-.inquiry-add-content-box .input-guide-helpertext {
+.write-add-content-box .input-guide-helpertext {
     margin: 8px 0 16px;
     padding: 0 13px;
     width: 758px;
@@ -286,7 +293,7 @@ body.partners_profile .ui-autocomplete.error {
     border: 1px solid #e0e0e0;
 }
 
-.wishket-textarea {
+.textarea {
     padding: 9px 13px;
     border-radius: 4px;
     border: 1px solid #e0e0e0;
@@ -328,6 +335,8 @@ body.partners_profile .ui-autocomplete.error {
 
 .ui-textarea-partner > .textarea__border > textarea.expand {
     resize: vertical;
+    min-height: 402px;
+    resize: none;
 }
 
 .ui-textarea-partner > span {
@@ -355,16 +364,16 @@ body.partners_profile .ui-autocomplete.error {
     padding: 8px 12px 0 0;
 }
 
-.inquiry-add-content-box .inquiry-description-box .word-length {
+.write-add-content-box .write-description-box .word-length {
     display: none;
 }
 
-.inquiry-footer {
+.write-footer {
     border-top: solid 1px #e0e0e0;
     padding: 20px;
 }
 
-.inquiry-footer {
+.write-footer {
     padding: 32px 32px;
 }
 
@@ -373,7 +382,7 @@ body.partners_profile .ui-autocomplete.error {
     float: right;
 }
 
-.inquiry-footer .button-box {
+.write-footer .button-box {
     margin: -24px;
 }
 
@@ -411,7 +420,9 @@ button {
     border-radius: 4px;
     border: none;
 }
-
+.write-detail {
+    margin-bottom: 24px;
+}
 .btn-11-24 {
     padding: 11px 24px;
 }
@@ -485,9 +496,23 @@ button {
     padding: 20px 24px 24px 24px;
     border-radius: 8px;
     background-color: #f7fafc;
+    margin-bottom: 48px;
+}
+.img-box-text {
+    color: #616161;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 32px;
 }
 .mb48 {
     margin-bottom: 48px;
+}
+.title-img-box {
+    color: #616161;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
 }
 .text600 {
     color: #616161;
@@ -522,7 +547,24 @@ button {
 .center-text {
     text-align: center;
 }
-.mb12 {
+.write-title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+.write-content {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+.img-tag {
+    margin-bottom: 12px;
+}
+.video-tag {
     margin-bottom: 12px;
 }
 .img-box-title {
