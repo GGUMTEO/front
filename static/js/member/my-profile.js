@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const sidebarMenu = document.querySelector(".sidebar-menu.scrapbook");
-    const scrapbookListBox = document.querySelector(".scrapbook-list-box");
+    const sidebarMenu = document.querySelector(".sidebar-menu.mypage");
+    const mypageListBox = document.querySelector(".mypage-list-box");
     const iconFold = document.querySelector(".icon-fold");
 
     // 사이드바 메뉴 접기/펼치기 기능
     sidebarMenu.addEventListener("click", function () {
         if (
-            scrapbookListBox.style.display === "none" ||
-            scrapbookListBox.style.display === ""
+            mypageListBox.style.display === "none" ||
+            mypageListBox.style.display === ""
         ) {
-            scrapbookListBox.style.display = "block";
+            mypageListBox.style.display = "block";
         } else {
-            scrapbookListBox.style.display = "none";
+            mypageListBox.style.display = "none";
         }
         iconFold.classList.toggle("fold-on");
     });
