@@ -6,15 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (sidebarToggle && mypageListBox && iconFold) {
         sidebarToggle.addEventListener("click", function () {
-            // `mypage-list-box`를 숨기거나 표시 (사이드바의 나머지 항목들 접기/펼치기)
-            mypageListBox.style.display =
-                mypageListBox.style.display === "none" ? "block" : "none";
+            // `hidden` 클래스를 토글하여 접기/펼치기 구현
+            mypageListBox.classList.toggle("hidden");
 
             // 아이콘 방향 변경
-            iconFold.classList.toggle("fold-on");
+            iconFold.classList.toggle(" fold-on");
         });
     }
-
     // 페이지가 처음 로드될 때 기본 콘텐츠 표시 (my-main)
     const defaultContent = document.getElementById("my-main");
     if (defaultContent) {
@@ -61,8 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         });
-});
-document.addEventListener("DOMContentLoaded", function () {
+
+    // 두 번째 기능: 공개/비공개 선택 버튼 클릭 이벤트 설정
     const choiceGroups = document.querySelectorAll(".btn-group.choice-group");
 
     choiceGroups.forEach(function (group) {
@@ -80,9 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
         btnPublic.addEventListener("click", toggleActiveClass);
         btnSecret.addEventListener("click", toggleActiveClass);
     });
-});
-document.addEventListener("DOMContentLoaded", function () {
-    // "구매한 사람들" 버튼을 선택합니다.
+
+    // 세 번째 기능: "구매한 사람들" 버튼 클릭 시 설정 테이블 표시/숨김
     const toggleButtons = document.querySelectorAll(
         '.btn-icon-edit-my[name="toggle_btn"]'
     );
@@ -107,10 +104,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    // 네 번째 기능: 나의 모집에서 답글 섹션 표시/숨김
     const toggleReplyBtns = document.querySelectorAll(".btn-wrapper");
 
     toggleReplyBtns.forEach(function (btn) {
-        // 나의모집에서 씁니다 여기부터
         btn.addEventListener("click", function () {
             const replyId = this.getAttribute("data-reply"); // 각 버튼에 설정된 data-reply 값 가져오기
             const replySection = document.getElementById(
@@ -125,5 +123,159 @@ document.addEventListener("DOMContentLoaded", function () {
                 replySection.style.display = "none"; // 다시 숨김
             }
         });
+    });
+
+    // 추가 기능: 사이드바 메뉴 접기/펼치기 기능
+    const sidebarMenu = document.querySelector(".sidebar-menu.mypage");
+    if (sidebarMenu && mypageListBox && iconFold) {
+        sidebarMenu.addEventListener("click", function () {
+            if (
+                mypageListBox.style.display === "none" ||
+                mypageListBox.style.display === ""
+            ) {
+                mypageListBox.style.display = "block";
+            } else {
+                mypageListBox.style.display = "none";
+            }
+            iconFold.classList.toggle("fold-on");
+        });
+    }
+
+    // 각 입력 필드의 유효성 검사를 위한 정규식 패턴 정의
+    const validationPatterns = {
+        name: /^[가-힣]{2,4}$/, // 한글 2~4자만 허용 예) 홍길동
+        age: /^[0-9]{1,2}$/, // 숫자만 1~2자 허용 예) 21
+        email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, // 일반 이메일 형식 예) ggumteo@naver.com
+        phonenumber: /^010\d{7,8}$/, // 010으로 시작하고 숫자가 10~11자 예) 01099999999
+    };
+
+    // 모든 필수 입력 필드 선택
+    const inputFields = document.querySelectorAll(".required");
+
+    // 입력 필드 변화 시 유효성 검사 적용
+    inputFields.forEach(function (input) {
+        input.addEventListener("input", function () {
+            validateInput(input);
+        });
+    });
+
+    // 유효성 검사 함수
+    function validateInput(input) {
+        const fieldId = input.id;
+        const pattern = validationPatterns[fieldId];
+
+        // 각 필드의 id에 해당하는 패턴이 있을 때만 검사
+        if (pattern) {
+            if (!pattern.test(input.value.trim())) {
+                input.classList.remove("input-valid");
+                input.classList.add("input-invalid");
+            } else {
+                input.classList.remove("input-invalid");
+                input.classList.add("input-valid");
+            }
+        } else {
+            // 추가사항 작성은 비어 있어도 valid 처리
+            if (fieldId === "addwrite") {
+                if (input.value.trim() === "") {
+                    input.classList.remove("input-valid");
+                    input.classList.remove("input-invalid");
+                } else {
+                    input.classList.remove("input-invalid");
+                    input.classList.add("input-valid");
+                }
+            }
+        }
+    }
+
+    // 폼 제출 시 모든 필수 항목이 유효한지 확인
+    const submitButton = document.querySelector(".btn-submit");
+    if (submitButton) {
+        submitButton.addEventListener("click", function (event) {
+            let isValid = true;
+
+            // 제출 시 모든 필드 재검사
+            inputFields.forEach(function (input) {
+                validateInput(input);
+
+                // 유효성 검사를 통과하지 못하면 isValid를 false로 설정
+                if (
+                    input.classList.contains("input-invalid") ||
+                    !input.classList.contains("input-valid")
+                ) {
+                    isValid = false;
+                }
+            });
+
+            // 유효하지 않은 경우 경고 메시지 표시 및 제출 막기
+            if (!isValid) {
+                event.preventDefault();
+                alert("예시 형식에 맞게 필수 항목을 모두 작성해 주세요.");
+            } else {
+                alert("성공적으로 제출되었습니다.");
+            }
+        });
+    }
+
+    // textarea 크기 조절 함수
+    function resizeTextarea(textarea) {
+        textarea.style.height = "auto"; // 높이를 초기화하여 스크롤이 생기지 않게 함
+        textarea.style.height = textarea.scrollHeight + 70 + "px"; // 내용을 포함할 만큼 높이 조절
+    }
+
+    // 페이지 로딩 후 초기화
+    const textarea = document.querySelector("textarea[name='description']");
+    if (textarea) {
+        resizeTextarea(textarea);
+    }
+});
+// 추가 기능: "내 작품" 등 클릭 시 사이드바 메뉴와 동일한 효과
+document.querySelectorAll(".btn.last-open-mypage").forEach((button) => {
+    button.addEventListener("click", function () {
+        const mypageTitle = this.querySelector(".mypage-title").innerText;
+        let targetSidebarMenu;
+
+        switch (mypageTitle) {
+            case "내 작품":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-product']"
+                );
+                break;
+            case "내가 구매한 작품":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-buy-product']"
+                );
+                break;
+            case "나의 펀딩":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-funding']"
+                );
+                break;
+            case "결제한 펀딩":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-buy-funding']"
+                );
+                break;
+            case "나의 모집":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-audition']"
+                );
+                break;
+            case "내가 신청한 모집":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-apply-audition']"
+                );
+                break;
+            case "내가 단 리뷰":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-review']"
+                );
+                break;
+            default:
+                return;
+        }
+
+        if (targetSidebarMenu) {
+            targetSidebarMenu.click();
+        }
     });
 });
