@@ -612,17 +612,17 @@ ul, ol {
 }
 
 .btn-wishket {
-    background-color: #2099bb;
+    background-color: #00a878;
     color: #fff;
-    border: #2099bb;
+    border: #00a878;
 }
 
 .form-control:hover {
-    border-color: #3ba3c7;
+    border-color: #00a878;
 }
 
 .form-control.active {
-    border-color: #3ba3c7;
+    border-color: #00a878;
 }
 
 .form-control.error{
