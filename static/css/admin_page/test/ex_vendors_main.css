@@ -1,0 +1,118 @@
+.withIcon_icon__2IQiS {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.BlindText_textHidden__1W0aB {
+    position: absolute;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.Avatar_avatar__1mOG5 {
+    display: inline-flex;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.Avatar_avatar__1mOG5.Avatar_sm__V_6km {
+    width: 56px;
+    height: 56px;
+}
+
+.Avatar_avatar__1mOG5>.Avatar_inner__hN779 {
+    display: inline-block;
+    border: 1px solid #e9ecef;
+    border-radius: 100%;
+}
+
+.Avatar_avatar__1mOG5>.Avatar_inner__hN779>img {
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.Button_button__35X6_ {
+    position: relative;
+    transition-property: background-color, border-color, color, opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 9px 23px;
+    height: 48px;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #495057;
+    font-size: 16px;
+    
+}
+
+.Button_button__35X6_ span {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+.Button_button__35X6_ span svg {
+    display: inline-block;
+}
+
+.Button_button__35X6_ svg.Button_icon__2I54k {
+    width: 16px;
+    height: 16px;
+}
+
+.Button_button__35X6_ svg.Button_icon__2I54k:first-child {
+    margin-right: 6px;
+}
+
+.Button_button__35X6_.Button_sm__3vobZ svg.Button_icon__2I54k {
+    width: 16px;
+    height: 16px;
+}
+
+.Button_button__35X6_.Button_sm__3vobZ svg.Button_icon__2I54k:first-child {
+    margin-right: 4px;
+}
+
+.Button_button__35X6_ .Button_children__1TD4r {
+    vertical-align: top;
+}
+
+.ProjectInfo_stateBox__705_4 {
+    grid-gap: 4px;
+    gap: 4px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.ProjectInfo_stateBox__705_4 .ProjectInfo_state__1Aqkt {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 4px;
+    background-color: #f2f4f6;
+    padding: 1px 6px;
+    color: #495057;
+}
+

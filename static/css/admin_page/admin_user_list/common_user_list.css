@@ -1,0 +1,267 @@
+.RecommendedUsersPage_container{
+display: flex;
+justify-content: center;
+background-color: #f9fafb;
+height: calc(100% - 56px);
+width: 100%;
+}
+.AppLayout_contents_mainContent .RecommendedUsersPage-inner {
+    width: 100%;
+    
+    position: relative;
+    padding: 0 16px 40px;
+    background-color: #fff;
+}
+
+.UserFilter_wrapper{
+    position: sticky;
+    z-index: 8;
+    top: 0;
+    background-color: #fff;
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    justify-content: center;
+}
+
+.UserFilter_wrapper .UsersFilter_filterButton {
+    height: 40px;
+    border-radius: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #f9fafb;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* .UserFilter_wrapper .UsersFilter_selected {
+    background-color: #00c4c4;
+    color: #fff;
+} */
+
+.Users-list-container {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.users-list-wrapper .userList-title {
+    color: #212529;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+hr {
+    margin: 0;
+    border: 0;
+    background-color: #f2f4f6;
+    width: 100%;
+    height: 8px;
+}
+
+.Divider_divider {
+    margin: 0;
+    border: 0;
+    position: relative;
+}
+
+.Divider_divider.Divider_horizontal {
+    margin: 16px 0;
+    background-color: #f2f4f6;
+    height: 1px;
+}
+
+.users-list-wrapper .UsersList_divider{
+    width: calc(100% + 32px);
+    margin-left: -16px !important;
+}
+
+.Divider_divider.Divider_horizontal.Divider_lightBG {
+    background-color: #f2f4f6;
+    opacity: 1;
+}
+
+.Divider_divider.Divider_horizontal.Divider_spacing3 {
+    margin: 8px 0;
+}
+
+.users-list-wrapper .UserList_userList{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.UserItem_container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.UserItem_container .UserItem_content{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 100%;
+}
+
+.UserItem_container .UserItem_etcInfo{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4px;
+    padding-left: 40px;
+    width: 100%;
+    height: 18px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.UserItem_avatarWrapper{
+    position: relative;
+    margin-right: 16px;
+}
+
+.Avatar_avatar.Avatar_xs{
+    width: 36px;
+    height: 36px;
+}
+
+.UserItem_container .UserItem_content .UserItem_avatarWrapper .UserItem_avatar {
+    min-width: 36px;
+}
+
+.Avatar_avatar .Avatar_inner{
+    display: inline-block;
+    border: 1px solid #e9ecef;
+    border-radius: 100%;
+}
+
+.UserItem_container .UserItem_content .UserItem_info {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 44px);
+    min-width: 0;
+}
+
+.UserItem_container .UserItem_content .UserItem_info .UserItem_innerWrapper {
+    width: 100%;
+}
+
+.UserItem_container .UserItem_content .UserItem_info .UserItem_innerWrapper .UserItem_nickName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 8px;
+    width: 100%;
+    color: #212529;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.UserItem_container .UserItem_content .UserItem_info .UserItem_innerWrapper .UserItem_nickName .UserItem_name {
+    max-width: calc(100% - 30px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.UserItem_container .UserItem_content .UserItem_info .UserItem_innerWrapper .UserItem_email {
+    height: 18px;
+    color: #212529;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.UserItem_container .UserItem_etcInfo div:first-child {
+    margin-right: 8px;
+}
+
+.UserItem_container .UserItem_etcInfo b {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.UserItem_container .UserItem_etcInfo .UserItem_spacer {
+    border-left: 1px solid #dde2e6;
+    height: 8px;
+}
+
+.UserItem_container .UserItem_etcInfo div:last-child {
+    margin-left: 8px;
+}
+
+.AllSettingToggle_title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 8px;
+    width: 100%;
+    color: #212529;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.users-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.userList-title {
+    margin-right: auto;
+}
+
+.UserFilter_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* 검색창과 버튼 간의 간격 */
+    flex-wrap: nowrap;
+    width: 400px; /* 검색창 width값 */
+}
+
+.UserFilter_searchInput {
+    flex-grow: 1; /* 남는 공간을 검색창이 차지하도록 설정 */
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    min-width: 0; /* 검색창이 너무 좁아지지 않도록 최소 너비 설정 */
+    transition: border-color 0.3s;
+}
+
+.UserFilter_searchInput:focus {
+    border-color: #00c4c4;
+}
+
+.UsersFilter_filterButton {
+    white-space: nowrap; /* 버튼 텍스트가 한 줄에 표시되도록 설정 */
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #f5f7fa; /* 배경색 조정 */
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.UsersFilter_filterButton:hover {
+    background-color: #e2e8f0; /* 버튼에 호버 효과 추가 */
+}

@@ -1,0 +1,277 @@
+@font-face{
+    font-family: "pretendard";
+    src: url("/fonts/Pretendard-1.3.9/web/static/woff/Pretendard-Black.woff")
+    format("woff");
+}
+@font-face{
+    font-family: "pretendardvariable";
+    src: url("/fonts/Pretendard-1.3.9/web/variable/woff2/PretendardVariable.woff2")  
+    format("woff2");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Nanum Gothic", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "AppleGothic", "돋움", Dotum, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.428571429;
+    color: #555;
+    /* background-color: #f5f5f5; */
+    height: 100%;
+}
+
+section {
+    display: block;
+}
+
+form {
+    margin: 0;
+}
+
+input {
+    margin: 0;
+    vertical-align: middle;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+table {
+    border-spacing: 0;
+    max-width: 100%;
+    background-color: transparent;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    margin: 0 auto -250px;
+    padding: 0 0 250px;
+    min-width: 1080px;
+}
+
+.page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+}
+
+.content {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 1060px;
+    border-radius: 3px;
+}
+
+.content-header {
+    border: 1px solid #dedede;
+    background-color: #fff;
+    border-radius: 3px;
+    border-bottom-width: 2px;
+    padding: 30px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+    text-rendering: optimizelegibility;
+    font-size: 24px;
+}
+
+.content-header .header-text {
+    margin: 0;
+}
+
+h3 small {
+    font-weight: normal;
+    color: #999;
+    font-size: 65%;
+}
+
+.content-header .small-text {
+    margin-top: 10px;
+    display: block;
+    line-height: 20px;
+}
+
+.content-inner {
+    border: 1px solid #dedede;
+    background-color: #fff;
+    border-radius: 3px;
+    border-bottom-width: 2px;
+    padding: 0 30px 30px;
+}
+
+.news-center .news-center-search-box-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* 밑에 두 개 내가 임의로 추가 */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.news-center .news-center-search-box-container .news-center-search-box {
+    float: right;
+}
+
+.news-center .news-center-search-box-container .news-center-search-box .news-center-search {
+    width: 250px;
+    height: 26px;
+    margin-right: 6px;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+}
+
+.news-center .news-center-search-box-container .news-center-search-box .news-center-search-add-on:hover {
+    cursor: pointer;
+}
+
+.news-center .news-center-search-box-container .news-center-search-box .news-center-search-add-on {
+    padding: 5px 10px;
+    background-color: #2099bb;
+    border: solid 1px #1c87a5;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.news-center-table {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.news-center-table .news-center-table-head tr th {
+    height: 40px;
+    background-color: #f7f7f7;
+    border-top: 2px solid #dedede;
+    border-bottom: 2px solid #dedede;
+    text-align: center;
+    border-left: 1px solid #dedede;
+}
+
+.news-center-table .news-center-table-body tr td {
+    height: 36px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    font-size: 16px;
+    line-height: 60px;
+    color: #535353;
+    text-align: center;
+    cursor: pointer;
+}
+
+.news-center-table .news-center-table-body tr td+td {
+    border-left: 1px solid #dedede;
+}
+
+.news-center-table .news-center-table-body tr .news-center-table-body-title {
+    text-align: left;
+    padding-left: 14px;
+}
+
+.pagination-wrapper {
+    text-align: center;
+    height: 100%;
+}
+
+.pagination {
+display: inline-block;
+padding-left: 0;
+margin: 10px 0;
+vertical-align: top;
+}
+
+.content-inner div ul {
+    margin-left: 40px;
+}
+
+.news-center .tab-content .pagination {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pagination>li {
+    display: inline;
+}
+
+.content-inner ul li {
+    line-height: 24px;
+}
+
+.content-inner div ul li, .content-inner div ul li {
+    margin-top: 0;
+}
+
+.pagination>.active>a {
+    z-index: 2;
+    color: #2099bb;
+}
+
+.pagination>li>a {
+    position: relative;
+    float: left;
+    padding: 4px 8px;
+    line-height: 20px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    color: #999;
+    margin-left: 10px;
+}
+
+.pagination>li>a:hover {
+    color: #2099bb;
+}
+
+/* .pagination>li>a.prev {
+    visibility: hidden;
+} */
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+*:before {
+    box-sizing: border-box;
+}
+
+.fa-arrow-left:before {
+    content: "\f060";
+}
+
+.fa-arrow-right:before {
+    content: "\f061";
+}

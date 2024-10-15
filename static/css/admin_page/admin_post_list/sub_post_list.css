@@ -1,0 +1,170 @@
+.Allselect_Toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.SettingsToggle_toggle .SettingToggle_input {
+    position: absolute;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+}
+
+.SettingsToggle_toggle {
+    display: flex;
+    margin-right: 16px;
+}
+
+.SettingsToggle_toggle .SettingToggle_switch {
+    display: block;
+    top: 0px;
+    position: relative;
+    opacity: 1;
+    border: solid 2px rgba(0, 0, 0, .06);
+    border-radius: 16px;
+    background-color: #f5f7fa;
+    cursor: pointer;
+    width: 24px;
+    height: 16px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.SettingsToggle_toggle .SettingToggle_switch.SettingToggle_active {
+    border-color: #00c4c4;
+    background-color: #00c4c4;
+}
+
+.SettingsToggle_toggle .SettingToggle_switch:after {
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    transition: .3s all;
+    border-radius: 12px;
+    box-shadow: 0 6px 6px -1px rgba(10, 22, 70, .1), 0 0 5px rgba(10, 22, 70, .06);
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    content: "";
+}
+
+.SettingsToggle_toggle .SettingToggle_switch.SettingToggle_active:after {
+    left: 9px; /* 가상 요소가 오른쪽으로 이동 */
+}
+
+.Allselect_Toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* 필요시 % 값을 더 늘려주세요 */
+}
+
+.Allselect_Toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* 필요시 % 값을 더 늘려주세요 */
+}
+
+.SettingsToggle_toggle .SettingToggle_switch_all {
+    top: 0px;
+}
+
+input, textarea {
+    background: none;
+}
+
+.SortFilterOptions {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    white-space: nowrap;
+    margin-right: 20px;
+}
+
+.sort-filter-option {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.sort-filter-option.selected {
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.pagination {
+    margin: auto;
+    text-align: center;
+}
+
+.pagination-list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    height: auto;
+}
+
+.pagination-list li {
+    margin: 0 2px;
+}
+
+.pagination-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px; /* 아이콘과 숫자 크기를 조절 */
+    text-decoration: none;
+    color: black; /* 필요에 따라 색상을 변경하세요 */
+    border: 1px solid #ccc; /* 필요에 따라 테두리 스타일을 변경하세요 */
+    border-radius: 3px; /* 필요에 따라 버튼 모양을 변경하세요 */
+}
+
+.pagination-list a:hover {
+    background-color: #f0f0f0; /* 마우스를 올렸을 때 배경색 */
+}
+
+.pagination-first-icon,
+.pagination-prev-icon,
+.pagination-next-icon,
+.pagination-last-icon {
+    font-size: 14px; /* 아이콘 크기를 숫자와 일치하도록 조절 */
+    height: 20px;
+}
+
+.pagination-first,
+.pagination-prev,
+.pagination-next,
+.pagination-last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 현재 페이지를 나타내는 버튼의 스타일 */
+.pagination-list .active a {
+    background-color: #000000; /* 배경을 검정색으로 */
+    color: #ffffff; /* 글자를 하얀색으로 */
+}
+
+/* 마우스를 올렸을 때 배경색을 검정색으로 설정 */
+.pagination-list a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.row {
+    justify-content: flex-start;
+    margin-left: -10px;
+}
+
+.section_container{
+    justify-content: flex-start;
+}

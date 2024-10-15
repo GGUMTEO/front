@@ -1,0 +1,616 @@
+body {
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: pretendard, -apple-system, blinkmacsystemfont, system-ui, roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --scrollbar-width: 0;
+}
+
+#root, body {
+    height: 100%;
+    overflow: auto;
+}
+
+
+body, button, html, input, select, textarea {
+    color: inherit;
+    font-family: pretendard, -apple-system, blinkmacsystemfont, system-ui, roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+button {
+    background-color: transparent;
+}
+
+
+a, address, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, label, legend, li, mark, menu, nav, object, ol, p, pre, section, select, small, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, u, ul, var, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+canvas, img, picture, video {
+    max-width: 100%;
+}
+
+
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+
+#root, body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* element.style {
+} */
+
+.AppLayout_container {
+    position: relative;
+}
+
+/* @media screen and (min-width: 1096px) {
+    .AppLayout_container {
+        overflow-y: auto;
+    }
+} */
+
+.AppGNBNavbar_container {
+    box-shadow: 0 1px 0 0 rgba(10, 22, 70, .06);
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    z-index: 16;
+    background-color: #fff;
+    padding: 0 16px;
+    width: 100%;
+    height: 56px;
+}
+
+@media screen and (min-width: 1096px) {
+    .AppGNBNavbar_container {
+        height: 72px;
+    }
+}
+
+a, address, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, label, legend, li, mark, menu, nav, object, ol, p, pre, section, select, small, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, u, ul, var, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.AppGNBNavbar_flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.AppGNBNavbar_rightBox_1 {
+    justify-content: flex-end;
+    grid-gap: 24px;
+    gap: 24px;
+}
+
+
+.StudioLogo_container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px 16px;
+}
+
+@media screen and (min-width: 1096px) {
+    .StudioLogo_container {
+        padding: 0;
+    }
+}
+
+.StudioStatus_stateBox {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    grid-gap: 4px;
+    gap: 4px;
+}
+
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.StudioLogo_logo {
+    display: block;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    outline: 0;
+    /* url삭제 혹은 수정 */
+    background-image: url(https://static.wadiz.kr/studio/funding/static/media/wadiz-studio-logo-mobile.ddb73433.svg);
+    background-size: cover;
+    width: 132px;
+    height: 14px;
+}
+
+@media screen and (min-width: 1096px) {
+    .StudioLogo_logo {
+        /*로고 이미지 바꾸기 20/08/26*/
+        background-image: url(https://static.wadiz.kr/studio/funding/static/media/wadiz-studio-logo.db1cb560.svg);
+        width: 190px;
+        height: 21px;
+    }
+}
+
+button {
+    color: inherit;
+}
+
+button, input, span, textarea {
+    font-family: inherit;
+}
+
+
+body, button, html, input, select, textarea {
+    color: inherit;
+    font-family: pretendard, -apple-system, blinkmacsystemfont, system-ui, roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+button {
+    background-color: transparent;
+}
+
+a, button {
+    outline: none;
+    /* -webkit-appearance: none; */
+}
+
+
+.Admin_page_logo {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-right: 8px;
+    color: #868e96;
+}
+
+@media screen and (min-width: 1096px) {
+    .Admin_page_logo {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+}
+
+.StudioStatus_stateBox {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    grid-gap: 4px;
+    gap: 4px;
+}
+
+.StudioStatus_stateBox .StudioStatus_state {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 4px;
+    background-color: #f2f4f6;
+    padding: 1px 6px;
+    color: #495057;
+}
+
+
+
+.AppGNBNavbar_flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.AppGNBNavbar_rightBox_1 {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    grid-gap: 24px;
+    gap: 24px;
+}
+
+.ProjectInfo_container {
+    position: relative;
+    margin-right: 0;
+    padding: 16px;
+}
+
+@media screen and (min-width: 1096px) {
+    .ProjectInfo_container {
+        padding: 0;
+    }
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.ProjectInfo_infoButton {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #f2f4f6;
+    background-color: #f9fafb;
+    padding: 0 16px;
+    width: 100%;
+    height: 53px;
+    color: #868e96;
+    grid-gap: 4px;
+    gap: 4px;
+}
+
+@media screen and (min-width: 1096px) {
+    .ProjectInfo_infoButton {
+        height: 37px;
+    }
+}
+
+
+button, input, span, textarea {
+    font-family: inherit;
+}
+
+a, button {
+    outline: none;
+}
+
+.ProjectInfo_infoButton .ProjectInfo_emphasis {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #00c4c4;
+}
+
+.ProjectInfo_infoButton .ProjectInfo_text_info {
+    margin-left: 12px;
+    color: #495057;
+}
+
+.ProjectInfo_infoButton[aria-expanded=true] [class*=withIcon_icon] {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* path[속성 스타일] {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+} */
+
+.ProjectInfo_infoBox {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    grid-gap: 16px;
+    gap: 16px;
+    padding: 24px;
+}
+
+@media screen and (min-width: 1096px) {
+    .ProjectInfo_infoBox {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        margin-top: 8px;
+        border-radius: 16px;
+        box-shadow: 0 0 5px 0 rgba(33, 37, 41, .06), 0 32px 40px -2px rgba(33, 37, 41, .12);
+        background-color: #fff;
+        width: 280px;
+    }
+}
+
+
+
+.Button_button.Button_contained {
+    border-color: #495057;
+    background-color: #495057;
+    color: #fff;
+}
+
+.Button_button.Button_primary {
+    border-color: #00c4c4;
+    color: #00c4c4;
+}
+
+.Button_button.Button_sm {
+    padding: 6px 11px;
+    height: 32px;
+    font-size: 14px;
+}
+
+.Button_button.Button_primary.Button_contained {
+    border-color: #00c4c4;
+    background-color: #00c4c4;
+    color: #fff;
+}
+
+.Button_button.Button_block {
+    width: 100%;
+}
+
+.ProjectInfo_infoBox .ProjectInfo_content {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 16px;
+    grid-gap: 8px;
+    gap: 8px;
+}
+
+
+iframe, img, video {
+    vertical-align: top;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+.ProjectInfo_infoBox .ProjectInfo_content:first-of-type {
+    margin-top: 0;
+}
+
+.ProjectInfo_infoBox .ProjectInfo_profileImage_admin {
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: 50%;
+    background-color: #fff;
+    width: 24px;
+    height: 24px;
+}
+
+.ProjectInfo_container img {
+    object-fit: cover;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.ProjectInfo_infoBox .ProjectInfo_makerName {
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.AnnouncementButton_container_1-1 {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    transition: background-color .3s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.AnnouncementButton_icon {
+    padding: 4px;
+}
+
+.Badge_container {
+    position: relative;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+.AnnouncementButton_badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.PreviewExitButtons_container {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-gap: 0;
+    gap: 0;
+}
+
+.PreviewExitButtons_container .PreviewExitButtons_button[class*=Button_button] {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: block;
+    border-radius: 0;
+    border-color: #e9ecef;
+    padding: 8px 24px;
+    height: auto;
+    color: #495057;
+}
+
+.PreviewExitButtons_container .PreviewExitButtons_button[class*=Button_button]:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.PreviewExitButtons_container .PreviewExitButtons_button[class*=Button_button]~.PreviewExitButtons_button {
+    margin-left: -1px;
+    border-left: 1px solid #e9ecef;
+}
+
+.PreviewExitButtons_container .PreviewExitButtons_button[class*=Button_button]:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.AppLayout_container .AppLayout_main_1 {
+    padding-top: 56px;
+}
+
+@media screen and (min-width: 1096px) {
+    .AppLayout_container .AppLayout_main_1 {
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 72px;
+        height: 100%;
+    }
+}
+
+.AppSidebarLayout_content {
+    padding-bottom: 80px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.AppSidebarLayout_container {
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-transform: translateX(-180%);
+    transform: translateX(-180%);
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+    z-index: 16;
+    background-color: #fff;
+    width: 324px;
+}
+
+@media screen and (min-width: 1096px) {
+    .AppSidebarLayout_container {
+        position: relative;
+        -webkit-transform: none;
+        transform: none;
+        transition: none;
+        z-index: 0;
+        width: 240px;
+        height: 100%;
+    }
+}
+.MenuItems_section {
+    padding: 0;
+}
+
+.MenuItems_section:first-of-type, .MenuItems_section:nth-of-type(2) {
+    border-bottom: 1px solid #f2f4f6;
+}
+
+.MenuItems_menu {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px 16px;
+    width: 100%;
+}
+
+.MenuItems_menu.MenuItems_hasSubmenu {
+    display: block;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.MenuItems_menu .MenuItems_label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #495057;
+    grid-gap: 12px;
+    gap: 12px;
+}
+
+.MenuItems_active .MenuItems_label {
+    color: #212529;
+    font-weight: 700;
+}
+
+.MenuItems_menu .MenuItems_label svg {
+    width: 16px;
+    height: 16px;
+}
+
+.MenuItems_menu.MenuItems_hasSubmenu .MenuItems_downIcon {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    margin-top: -8px;
+    color: #adb5bd;
+}
+
+.MenuItems_menu.MenuItems_hasSubmenu .MenuItems_downIcon.MenuItems_open_1 {
+    
+    transform: rotate(0deg);
+}
+
+.MenuItems_submenuContainer {
+    transition: height .3s ease-out;
+    height: 0;
+    overflow-y: hidden;
+}
+.MenuItems_submenuContainer.MenuItems_show {
+    height: auto;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.MenuItems_submenuContainer .MenuItems_submenu {
+    display: block;
+    background-color: #f9fafb;
+    cursor: pointer;
+    padding: 12px 16px 12px 44px;
+    color: #495057;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
