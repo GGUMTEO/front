@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>오디션 목록 페이지</title>
+        <link
+            rel="stylesheet"
+            href="/static/css/audition/video/audition-list.css"
+        />
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <div class="gaia">
+                <div class="container audition-list-view">
+                    <form
+                        id="search-audition-list-form"
+                        action=""
+                        onsubmit="return false"
+                    >
+                        <div class="search-header">
+                            <div class="page-title subtitle">모집 찾기</div>
+                            <div
+                                class="text-search-box"
+                                id="inner-text-search-box"
+                            >
+                                <div class="default-input-type icon-right">
+                                    <div
+                                        class="default-input-wishket icon-right"
+                                    >
+                                        <input
+                                            autocomplete="off"
+                                            class="theme-wishket wishket-text search-text"
+                                            data-input-type="text-input"
+                                            name="search-text"
+                                            type="text"
+                                            style="padding-right: 48px"
+                                        /><span
+                                            class="text-unit active"
+                                            data-action-icon="search"
+                                            ><img
+                                                src="/static/images/audition/icon-search@2x.png"
+                                                style="
+                                                    margin-right: 0px;
+                                                    cursor: pointer;
+                                                "
+                                        /></span>
+                                    </div>
+                                    <span class="error-text"
+                                        >에러상세 메시지</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-filter-part"></div>
+                        <section class="section-search" id="recruit-info">
+                            <div class="header">
+                                <h2 class="tit-section">모집정보</h2>
+                                <span class="cnt-result">총 38,947건</span>
+                            </div>
+                            <div id="recruit-info-list" main-search="y">
+                                <div class="content">
+                                    <div class="item-recruit">
+                                        <div class="area-badge">
+                                            <span class="badge"> 배우 </span>
+                                        </div>
+                                        <div class="area-job">
+                                            <h2 class="job-tit">
+                                                <a
+                                                    target="-blank"
+                                                    title="[역삼역] 단편영화 배우모집합니다."
+                                                    href=""
+                                                >
+                                                    <span>
+                                                        [역삼역] 단편영화 배우
+                                                        모집합니다.
+                                                        <b>배우</b>
+                                                        채용
+                                                    </span>
+                                                </a>
+                                            </h2>
+                                            <div class="job-date">
+                                                <span class="date"
+                                                    >~ 11/07(목)</span
+                                                >
+                                                <button class="sri-btn-xs">
+                                                    <span
+                                                        class="sri-btn-immediately"
+                                                        >모집중</span
+                                                    >
+                                                </button>
+                                            </div>
+                                            <div class="job-condition">
+                                                <span
+                                                    ><a target="-blank" href=""
+                                                        >서울</a
+                                                    >
+                                                    <a target="-blank" href=""
+                                                        >강남구</a
+                                                    ></span
+                                                >
+                                                <span>신입·경력</span>
+                                            </div>
+                                            <div class="job-sector">
+                                                <b>200000원</b>| <b>5명</b
+                                                ><span class="job-day"
+                                                    >등록일 24/10/08</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="area-corp">
+                                            <strong class="corp-name">
+                                                <a
+                                                    href=""
+                                                    target="-blank"
+                                                    class="track-event data-layer"
+                                                >
+                                                    홍길동
+                                                </a>
+                                            </strong>
+                                            <span class="corp-affiliate"
+                                                >홍길동@gmail.com</span
+                                            >
+                                        </div>
+                                        <div
+                                            class="similar-recruit"
+                                            style="display: none"
+                                        ></div>
+                                    </div>
+                                    <div class="item-recruit">
+                                        <div class="area-badge">
+                                            <span class="badge"> 배우 </span>
+                                        </div>
+                                        <div class="area-job">
+                                            <h2 class="job-tit">
+                                                <a
+                                                    target="-blank"
+                                                    title="[역삼역] 단편영화 배우모집합니다."
+                                                    href=""
+                                                >
+                                                    <span>
+                                                        [역삼역] 단편영화 배우
+                                                        모집합니다.
+                                                        <b>배우</b>
+                                                        채용
+                                                    </span>
+                                                </a>
+                                            </h2>
+                                            <div class="job-date">
+                                                <span class="date"
+                                                    >~ 11/07(목)</span
+                                                >
+                                                <button class="sri-btn-xs">
+                                                    <span
+                                                        class="sri-btn-immediately"
+                                                        >모집중</span
+                                                    >
+                                                </button>
+                                            </div>
+                                            <div class="job-condition">
+                                                <span
+                                                    ><a target="-blank" href=""
+                                                        >서울</a
+                                                    >
+                                                    <a target="-blank" href=""
+                                                        >강남구</a
+                                                    ></span
+                                                >
+                                                <span>신입·경력</span>
+                                            </div>
+                                            <div class="job-sector">
+                                                <b>200000원</b>| <b>5명</b>
+
+                                                <span class="job-day"
+                                                    >등록일 24/10/08</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="area-corp">
+                                            <strong class="corp-name">
+                                                <a
+                                                    href=""
+                                                    target="-blank"
+                                                    class="track-event data-layer"
+                                                >
+                                                    홍길동
+                                                </a>
+                                            </strong>
+                                            <span class="corp-affiliate"
+                                                >홍길동@gmail.com</span
+                                            >
+                                        </div>
+                                        <div
+                                            class="similar-recruit"
+                                            style="display: none"
+                                        ></div>
+                                    </div>
+                                    <div class="item-recruit">
+                                        <div class="area-badge">
+                                            <span class="badge"> 배우 </span>
+                                        </div>
+                                        <div class="area-job">
+                                            <h2 class="job-tit">
+                                                <a
+                                                    target="-blank"
+                                                    title="[역삼역] 단편영화 배우모집합니다."
+                                                    href=""
+                                                >
+                                                    <span>
+                                                        [역삼역] 단편영화 배우
+                                                        모집합니다.
+                                                        <b>배우</b>
+                                                        채용
+                                                    </span>
+                                                </a>
+                                            </h2>
+                                            <div class="job-date">
+                                                <span class="date"
+                                                    >~ 11/07(목)</span
+                                                >
+                                                <button class="sri-btn-xs">
+                                                    <span
+                                                        class="sri-btn-immediately"
+                                                        >모집중</span
+                                                    >
+                                                </button>
+                                            </div>
+                                            <div class="job-condition">
+                                                <span
+                                                    ><a target="-blank" href=""
+                                                        >서울</a
+                                                    >
+                                                    <a target="-blank" href=""
+                                                        >강남구</a
+                                                    ></span
+                                                >
+                                                <span>신입·경력</span>
+                                            </div>
+                                            <div class="job-sector">
+                                                <b>200000원</b>| <b>5명</b
+                                                ><span class="job-day"
+                                                    >등록일 24/10/08</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="area-corp">
+                                            <strong class="corp-name">
+                                                <a
+                                                    href=""
+                                                    target="-blank"
+                                                    class="track-event data-layer"
+                                                >
+                                                    홍길동
+                                                </a>
+                                            </strong>
+                                            <span class="corp-affiliate"
+                                                >홍길동@gmail.com</span
+                                            >
+                                        </div>
+                                        <div
+                                            class="similar-recruit"
+                                            style="display: none"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="content-bottom">
+                                    <div class="pagination">
+                                        <a
+                                            href="#recruit-info"
+                                            class="btnPrev page-move track-event"
+                                            data-track-event="total-search|search-recruit|pagination|10"
+                                            page="10"
+                                            title="이전"
+                                            >이전</a
+                                        >
+                                        <span class="page">1</span>
+                                        <a
+                                            href="#recruit-info"
+                                            page="2"
+                                            class="page page-move track-event"
+                                            data-track-event="total-search|search-recruit|pagination|2"
+                                            ><span>2</span></a
+                                        >
+                                        <a
+                                            href="#recruit-info"
+                                            page="3"
+                                            class="page page-move track-event"
+                                            data-track-event="total-search|search-recruit|pagination|3"
+                                            ><span>3</span></a
+                                        >
+                                        <a
+                                            href="#recruit-info"
+                                            page="4"
+                                            class="page page-move track-event"
+                                            data-track-event="total-search|search-recruit|pagination|4"
+                                            ><span>4</span></a
+                                        >
+                                        <a
+                                            href="#recruit-info"
+                                            page="5"
+                                            class="page page-move track-event"
+                                            data-track-event="total-search|search-recruit|pagination|5"
+                                            ><span>5</span></a
+                                        >
+                                        <a
+                                            href="#recruit-info"
+                                            page="6"
+                                            class="page page-move track-event"
+                                            data-track-event="total-search|search-recruit|pagination|6"
+                                            ><span>6</span></a
+                                        >
+                                        <a
+                                            href="#recruit-info"
+                                            page="7"
+                                            class="page page-move track-event"
+                                            data-track-event="total-search|search-recruit|pagination|7"
+                                            ><span>7</span></a
+                                        >
+                                        <a
+                                            href="#recruit-info"
+                                            page="8"
+                                            class="page page-move track-event"
+                                            data-track-event="total-search|search-recruit|pagination|8"
+                                            ><span>8</span></a
+                                        >
+                                        <a
+                                            href="#recruit-info"
+                                            page="9"
+                                            class="page page-move track-event"
+                                            data-track-event="total-search|search-recruit|pagination|9"
+                                            ><span>9</span></a
+                                        >
+                                        <a
+                                            href="#recruit-info"
+                                            page="10"
+                                            class="page page-move track-event"
+                                            data-track-event="total-search|search-recruit|pagination|10"
+                                            ><span>10</span></a
+                                        >
+                                        <a
+                                            href="#recruit-info"
+                                            class="btnNext page-move track-event"
+                                            data-track-event="total-search|search-recruit|pagination|11"
+                                            page="11"
+                                            title="다음"
+                                            >다음</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+    <script src="/static/js/audition/audition-list.js"></script>
+</html>
