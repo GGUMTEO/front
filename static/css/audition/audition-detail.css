@@ -151,21 +151,20 @@ a {
     color: #616161;
 }
 
-.body-3, .body-3-bold, .body-3-medium, .body-3-light {
+.font-size{
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
 }
 
-.text300 {
-    color: #bdbdbd;
-}
+
 
 .detail-detail-view .detail-content-layer .detail-content-title .detail-recruit-guide {
     float: right;
     margin-top: 2px;
     display: flex;
     margin-left: auto;
+    color: #bdbdbd;
 }
 
 .detail-status-label div.status-mark+.status-mark {
@@ -176,49 +175,52 @@ a {
     padding: 1px 7px 1px 3px;
 }
 
-.subtitle-1, .subtitle-1-bold, .subtitle-1-medium, .subtitle-1-light {
+.subtitle-1{
     font-size: 24px;
     line-height: 36px;
     font-weight: 400;
+    margin-bottom: 24px;
+    color: #212121;
 }
 
-.subtitle-1-medium {
+.subtitle-1{
     font-weight: 500;
 }
 
-.body-1, #profile_image_edit_modal .modal__footer button, .body-1-bold, .body-1-medium, .body-1-light {
+.font-size-2, #profile_image_edit_modal .modal__footer button{
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
+    color: #212121;
 }
 
-.mb12 {
-    margin-bottom: 12px;
-}
-
-.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
+.font-size-3, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .font-size-3-bold, .font-size-3-medium, .font-size-3-light {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
 }
 
-.body-3, .body-3-bold, .body-3-medium, .body-3-light {
+.font-size, .font-size-bold, .font-size-medium, .font-size-light {
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
 }
 
-.body-3-bold {
+.font-size-bold {
     font-weight: 700;
 }
 
-.text900 {
+.condition-data {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
     color: #212121;
 }
 
-.detail-detail-view .detail-section .layer-divider {
+.detail-section .layer-divider {
     border: none;
     border-top: 1px solid #e0e0e0;
+    margin-bottom: 24px;
 }
 
 .detail-content-layer .detail-important-condition.term_based {
@@ -243,17 +245,21 @@ a {
     padding-top: 20px;
 }
 
-.text500 {
+.condition-label {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
     color: #757575;
 }
 
-.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-header .detail-header-info {
+ .detail-target-detail-header .detail-header-info {
     display: inline-block;
     vertical-align: top;
     position: relative;
+    color: #757575;
 }
 
-.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-header .detail-header-info.level {
+ .detail-target-detail-header .detail-header-info.level {
     width: 140px;
 }
 
@@ -261,7 +267,7 @@ a {
     position: relative;
 }
 
-.detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-header .detail-header-info .label-inline-tooltip {
+.detail-target-detail-header .detail-header-info .label-inline-tooltip {
     position: absolute;
     top: 0;
     left: 30px;
@@ -350,6 +356,7 @@ a {
     width: 100%;
     border-bottom: dashed 1px #e6ebf0;
     margin: 0 16px;
+    color: #212121;
 }
 
 .detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-detail .detail-target-detail-row .detail-target-detail-row-info.budget {
@@ -367,10 +374,12 @@ a {
     width: 108px;
     display: inline-block;
     margin-right: 16px;
+    color: #757575;
 }
 
 .detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-condition .target-condition-row .condition-row-data {
     display: inline-block;
+    color: #212121;
 }
 
 .detail-content-layer .detail-important-condition.term_based .detail-target-info .detail-target-condition .target-condition-row+.target-condition-row {
@@ -451,17 +460,24 @@ a {
     margin: 40px 0 32px;
 }
 
-.subtitle-2-medium, .subtitle-2-light {
+.subcontent, .subtitle-2-light {
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
+    color: #212121;
+    margin-bottom: 16px;
 }
 
-.subtitle-2-medium {
+.subcontent {
     font-weight: 500;
 }
 
 .detail-content-layer .detail-description .detail-description-box {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #212121;
     word-break: break-all;
 }
 
@@ -474,7 +490,7 @@ a {
     display: inline-block;
     width: 256px;
     position: sticky;
-    top: 81px;
+    top: 20px;
 }
 
 .detail-section .client-section-wrap .client-section .action-layer {
@@ -529,13 +545,10 @@ a {
     margin-bottom: 8px;
 }
 
-.mb12 {
-    margin-bottom: 12px;
-}
-
 .client-account-info {
     position: relative;
     min-height: 54px;
+    margin-bottom: 12px;
 }
 
 .client-account-info-img {
@@ -553,16 +566,17 @@ a {
 }
 
 .client-account-info .client-account-info-base {
+    margin-bottom: 8px;
     margin-left: 62px;
 }
 
-.body-2-bold, .body-2-medium, .body-2-light {
+.font-size-3-bold, .font-size-3-medium, .font-size-3-light {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
 }
 
-.body-2-bold {
+.font-size-3-bold {
     font-weight: 700;
 }
 
@@ -593,6 +607,8 @@ a {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
+    color: #212121;
+    
 }
 
 .btn-white {

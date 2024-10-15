@@ -59,13 +59,13 @@ body {
     margin: 48px 0 38px;
 }
 
-.subtitle-1, .subtitle-1-bold, .subtitle-1-medium, .subtitle-1-light {
+.subtitle-1{
     font-size: 24px;
     line-height: 36px;
     font-weight: 400;
 }
 
-.subtitle-1-medium {
+.subtitle {
     font-weight: 500;
 }
 
