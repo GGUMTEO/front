@@ -189,9 +189,7 @@ html {
 
 
 
-.icon-fold.fold-on {
-    transform: rotate(-0deg); /* 오른쪽을 가리키도록 회전 */
-}
+
 
 .sidebar-menu-name{
     font-size: 14px;
@@ -1652,4 +1650,7 @@ p {
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
+}
+.hidden {
+    display: none;
 }

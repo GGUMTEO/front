@@ -6,15 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (sidebarToggle && mypageListBox && iconFold) {
         sidebarToggle.addEventListener("click", function () {
-            // `mypage-list-box`를 숨기거나 표시 (사이드바의 나머지 항목들 접기/펼치기)
-            mypageListBox.style.display =
-                mypageListBox.style.display === "none" ? "block" : "none";
+            // `hidden` 클래스를 토글하여 접기/펼치기 구현
+            mypageListBox.classList.toggle("hidden");
 
             // 아이콘 방향 변경
-            iconFold.classList.toggle("fold-on");
+            iconFold.classList.toggle(" fold-on");
         });
     }
-
     // 페이지가 처음 로드될 때 기본 콘텐츠 표시 (my-main)
     const defaultContent = document.getElementById("my-main");
     if (defaultContent) {
@@ -229,4 +227,55 @@ document.addEventListener("DOMContentLoaded", function () {
     if (textarea) {
         resizeTextarea(textarea);
     }
+});
+// 추가 기능: "내 작품" 등 클릭 시 사이드바 메뉴와 동일한 효과
+document.querySelectorAll(".btn.last-open-mypage").forEach((button) => {
+    button.addEventListener("click", function () {
+        const mypageTitle = this.querySelector(".mypage-title").innerText;
+        let targetSidebarMenu;
+
+        switch (mypageTitle) {
+            case "내 작품":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-product']"
+                );
+                break;
+            case "내가 구매한 작품":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-buy-product']"
+                );
+                break;
+            case "나의 펀딩":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-funding']"
+                );
+                break;
+            case "결제한 펀딩":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-buy-funding']"
+                );
+                break;
+            case "나의 모집":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-audition']"
+                );
+                break;
+            case "내가 신청한 모집":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-apply-audition']"
+                );
+                break;
+            case "내가 단 리뷰":
+                targetSidebarMenu = document.querySelector(
+                    ".sidebar-menu[name='my-review']"
+                );
+                break;
+            default:
+                return;
+        }
+
+        if (targetSidebarMenu) {
+            targetSidebarMenu.click();
+        }
+    });
 });
