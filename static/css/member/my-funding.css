@@ -97,11 +97,6 @@ html {
     white-space: nowrap;
 }
 
-.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-}
 
 .mypage-list-box {
     width: 280px;
@@ -123,15 +118,7 @@ html {
     margin: 0px 6px;
 }
 
-.text400 {
-    color: #9e9e9e;
-}
 
-.caption-1, #profile_image_edit_modal .modal__body .modal-info-body .base-dot-list .dot-line, .caption-1-bold, .caption-1-medium, .caption-1-light {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-}
 
 .content-divide {
     width: 100%;
@@ -151,10 +138,6 @@ html {
 
 .container.mypage .main-content-container .main-content {
     width: 720px;
-}
-
-.text900 {
-    color: #212121;
 }
 
 .subtitle-2-medium {
@@ -200,13 +183,7 @@ html {
     margin-bottom: 2px;
 }
 
-.body-1-medium {
-    font-weight: 500;
-}
 
-.text600 {
-    color: #616161;
-}
 
 .fold.active-menu .icon-fold {
     width: 16px;
@@ -262,9 +239,7 @@ html {
     align-items: center;
     margin-bottom: 40px;
 }
-.text900 {
-    color: #212121;
-} 
+
    .container.mypage .main-content-container .main-content .content .list-item {
     padding: 32px 0px;
     border-bottom: 1px solid;
@@ -299,9 +274,6 @@ a {
     line-height: 20px;
     color: #616161;
     margin-bottom: 12px;
-}
-.text600 {
-    color: #616161;
 }
 
 .timeandcontent {
@@ -515,14 +487,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
     border-top: solid 1px #212121;
     border-bottom: solid 1px #e0e0e0;
 }
-.body-2-medium {
-    font-weight: 500;
-}
-.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 500;
-}
+
 .setting-td:first-child {
     padding-left: 16px;
 }.setting-td {
@@ -568,11 +533,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
     line-height: 18px;
     font-weight: 400;
 }
-.sub-span, #profile_image_edit_modal .modal__body .modal-info-body .base-dot-list .dot-line, .caption-1-bold, .caption-1-medium, .caption-1-light {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-}
+
 .setting-td.with-text.primary {
     color: #00a878;
     font-weight: 600;
@@ -625,15 +586,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
     gap: 6px;
     align-items: center;
 }
-.body-2-medium {
-    font-weight: 500;
-}
 
-.body-2, #profile_image_edit_modal .modal__body .modal-body-wrapper .body-btn-group .body-btn, #profile_image_edit_modal .modal__body .modal-body-wrapper .modal-content, .body-2-bold, .body-2-medium, .body-2-light {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 500;
-}
 #replybackornext {
     margin-bottom: -150px;
     margin-top: -40px;
