@@ -217,6 +217,18 @@ html {
     font-weight: 400;
     color: #9e9e9e;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 /* 미디어 쿼리: 화면 너비가 430px 이하일 때 적용 */
 @media (max-width: 430px) {
     .highlight-memo, .read-news {

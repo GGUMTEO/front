@@ -191,13 +191,13 @@ footer.footer .footer-contact .footer-cs-tel,
 .label-input-partner > input:hover {
     position: inherit;
     z-index: 15;
-    border-color: #2099bb;
+    border-color: #00a878;
 }
 
 .label-input-partner > input:focus {
     position: inherit;
     z-index: 15;
-    border-color: #2099bb;
+    border-color: #00a878;
 }
 
 .label-input-partner > label {
@@ -224,7 +224,7 @@ footer.footer .footer-contact .footer-cs-tel,
 }
 
 .label-input-partner.label-effect > input:focus ~ label {
-    color: #2099bb !important;
+    color: #00a878 !important;
 }
 
 .label-input.error,
@@ -286,11 +286,11 @@ body.partners_profile .ui-autocomplete.error {
 }
 
 .ui-textarea-partner > .textarea__border:hover {
-    border-color: #2099bb;
+    border-color: #00a878;
 }
 
 .ui-textarea-partner > .textarea__border.active {
-    border-color: #2099bb;
+    border-color: #00a878;
 }
 
 .textarea__border.error {
@@ -399,10 +399,19 @@ button {
     padding: 11px 24px;
 }
 
-.btn-rewrite{
-    background-color: #2099bb;
+.btn-back {
+    background-color: #a1a6ad;
     color: #fff;
-    border: #2099bb;
+    padding: 11px 24px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.btn-rewrite{
+    background-color: #00a878;
+    color: #fff;
+    border: #00a878;
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -418,22 +427,13 @@ button {
     font-weight: 400;
 }
 
-.btn-back {
-    background-color: #a1a6ad;
-    color: #fff;
-    padding: 11px 24px;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
-}
-
 .button-box .btn {
     width: 96px;
 }
 .btn-submit {
-    background-color: #2099bb;
+    background-color: #00a878;
     color: #fff;
-    border: #2099bb;
+    border: #00a878;
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -441,9 +441,9 @@ button {
 }
 .btn-partner,
 .btn-partner-not-active {
-    background-color: #2099bb;
+    background-color: #00a878;
     color: #fff;
-    border: #2099bb;
+    border: #00a878;
 }
 
 .button-box .btn + .btn {
@@ -853,13 +853,13 @@ img {
 .label-input-partner>input:hover{
     position: inherit;
     z-index: 15;
-    border-color: #2099bb;
+    border-color: #00a878;
 }
 
 .label-input-partner>input:focus{
     position: inherit;
     z-index: 15;
-    border-color: #2099bb;
+    border-color: #00a878;
 }
 
 .label-input-partner>input:hover~label {
@@ -876,7 +876,7 @@ img {
 }
 
 .label-input-partner.label-effect>input:focus~label {
-    color: #2099bb !important;
+    color: #00a870 !important;
 }
 
 .date-box{
@@ -934,9 +934,9 @@ z-index: 2;
 
 
 .default-input-partner > input:hover{
-    border-color: #2099bb;
+    border-color: #00a878;
 }
 
 .default-input-partner > input:focus{
-    border-color: #2099bb;
+    border-color: #00a878;
 }

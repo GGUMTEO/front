@@ -198,7 +198,7 @@ button {
 .process-subject {
     display: flex;
     align-items: center;
-    color: #424242;
+    color: #2099bb;
     font-weight: 500;
     font-size: 13px;
     line-height: 20px;
@@ -317,6 +317,10 @@ button {
     border: solid 1px #e6ebf0;
     background-color: #fff;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+.funding-product:hover {
+    background-color: #f0f8ff;
 }
 .product-header-title {
     color: #424242;
@@ -326,16 +330,6 @@ button {
     line-height: 20px;
     margin-bottom: 12px;
 }
-.buy-product {
-    margin-left: auto;
-    display: flex;
-    color: #3ba3c7;
-    gap: 4px;
-    align-items: center;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-}
 a {
     text-decoration: none;
 }
@@ -344,18 +338,21 @@ a {
     position: relative;
 }
 .product-name {
-    color: #424242;
+    color: #3ba3c7;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 8px;
 }
 .product-number {
-    color: #53b97e;
+    color: #424242;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 4px;
+}
+.number {
+    color: #ff0000;
 }
 .product-price {
     margin-bottom: 8px;

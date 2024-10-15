@@ -190,13 +190,13 @@ footer.footer .footer-contact .footer-cs-tel,
 .label-input-partner > input:hover {
     position: inherit;
     z-index: 15;
-    border-color: #00a878;
+    border-color: #2099bb;
 }
 
 .label-input-partner > input:focus {
     position: inherit;
     z-index: 15;
-    border-color: #00a878;
+    border-color: #2099bb;
 }
 
 .label-input-partner > label {
@@ -223,7 +223,7 @@ footer.footer .footer-contact .footer-cs-tel,
 }
 
 .label-input-partner.label-effect > input:focus ~ label {
-    color: #00a878 !important;
+    color: #2099bb !important;
 }
 
 .label-input.error,
@@ -284,11 +284,11 @@ body.partners_profile .ui-autocomplete.error {
 }
 
 .ui-textarea-partner > .textarea__border:hover {
-    border-color: #00a878;
+    border-color: #2099bb;
 }
 
 .ui-textarea-partner > .textarea__border.active {
-    border-color: #00a878;
+    border-color: #2099bb;
 }
 
 .textarea__border.error {
@@ -410,9 +410,9 @@ button {
     width: 96px;
 }
 .btn-submit {
-    background-color: #00a878;
+    background-color: #2099bb;
     color: #fff;
-    border: #00a878;
+    border: #2099bb;
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -420,9 +420,9 @@ button {
 }
 .btn-partner,
 .btn-partner-not-active {
-    background-color: #00a878;
+    background-color: #2099bb;
     color: #fff;
-    border: #00a878;
+    border: #2099bb;
 }
 
 .button-box .btn + .btn {
@@ -438,6 +438,7 @@ button {
     border: solid 1px #e6ebf0;
     border-radius: 8px;
     display: inline-block;
+    cursor: pointer;
 }
 .checkbox-partner {
     width: 100%;
@@ -732,7 +733,6 @@ img {
 .sample {
     padding: 86px;
     border: dashed 2px #e0e0e0;
-    cursor: pointer;
 }
 .preview-img {
     width: 240px;
