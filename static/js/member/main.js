@@ -23,9 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 사이드바 메뉴 클릭 이벤트 설정 (내 활동내역 이외의 메뉴들)
     document
-        .querySelectorAll(".sidebar-menu.mypage:not(#mypage-fold)")
+        .querySelectorAll(".sidebar-menu.mypage, .highlight-memo, .read-news")
         .forEach((menu) => {
             menu.addEventListener("click", function () {
+                if (this.id === "mypage-fold") {
+                    // "나의 활동내역"을 클릭했을 때 현재 콘텐츠 유지
+                    return;
+                }
+
                 // 모든 콘텐츠에서 active 클래스 제거 (콘텐츠 숨기기)
                 document
                     .querySelectorAll(".main-content-container .content")
@@ -47,6 +52,78 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // 클릭된 메뉴에 active-menu 클래스 추가
                 this.classList.add("active-menu");
+
+                // "나의 활동내역" 아이콘 상태 업데이트 (접힌 상태일 때 아이콘이 올바르게 표시되도록)
+                if (mypageListBox.style.display === "none") {
+                    iconFold.classList.add("fold-on");
+                } else {
+                    iconFold.classList.remove("fold-on");
+                }
             });
         });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const choiceGroups = document.querySelectorAll(".btn-group.choice-group");
+
+    choiceGroups.forEach(function (group) {
+        const btnPublic = group.querySelector(".btn-choice.btn-public");
+        const btnSecret = group.querySelector(".btn-choice.btn-secret");
+
+        // 클릭 이벤트 설정
+        function toggleActiveClass(event) {
+            // 두 버튼에 active 클래스를 교환
+            btnPublic.classList.toggle("active");
+            btnSecret.classList.toggle("active");
+        }
+
+        // 각 버튼에 이벤트 리스너 추가
+        btnPublic.addEventListener("click", toggleActiveClass);
+        btnSecret.addEventListener("click", toggleActiveClass);
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    // "구매한 사람들" 버튼을 선택합니다.
+    const toggleButtons = document.querySelectorAll(
+        '.btn-icon-edit-my[name="toggle_btn"]'
+    );
+
+    // 모든 setting-table을 숨깁니다.
+    const settingTables = document.querySelectorAll(".setting-table");
+    settingTables.forEach(function (table) {
+        table.style.display = "none"; // 처음엔 숨김
+    });
+
+    // 버튼 클릭 시 설정 테이블을 표시/숨김 처리하는 이벤트 리스너
+    toggleButtons.forEach(function (button, index) {
+        button.addEventListener("click", function () {
+            const settingTable = settingTables[index];
+            if (
+                settingTable.style.display === "none" ||
+                settingTable.style.display === ""
+            ) {
+                settingTable.style.display = "block"; // 보여줍니다.
+            } else {
+                settingTable.style.display = "none"; // 숨깁니다.
+            }
+        });
+    });
+    const toggleReplyBtns = document.querySelectorAll(".btn-wrapper");
+
+    toggleReplyBtns.forEach(function (btn) {
+        // 나의모집에서 씁니다 여기부터
+        btn.addEventListener("click", function () {
+            const replyId = this.getAttribute("data-reply"); // 각 버튼에 설정된 data-reply 값 가져오기
+            const replySection = document.getElementById(
+                `replySection${replyId}`
+            ); // data-reply에 해당하는 replySection 찾기
+            if (
+                replySection.style.display === "none" ||
+                replySection.style.display === ""
+            ) {
+                replySection.style.display = "block"; // 보이도록 변경
+            } else {
+                replySection.style.display = "none"; // 다시 숨김
+            }
+        });
+    });
 });
