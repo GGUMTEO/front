@@ -79,9 +79,13 @@ a {
     color: #fff;
 }
 
+.ggumteo-do-not-fail .fail-question .fail-question-title {
+    margin-bottom: 16px;
+}
+
 .ggumteo-do-not-fail .fail-question .fail-question-title,
-.service-introduction-detail .detail-intro .guide-box, .guide-title
-.service-introduction-detail .detail-intro .number-box, .number-info-count
+.service-introduction-detail .detail-intro .guide-box .guide-title,
+.service-introduction-detail .detail-intro .number-box .number-info-count,
 .service-introdution-group .service-introdution-box .introdution-info-layer .subtitle {
     font-weight: 700;
     font-size: 32px;

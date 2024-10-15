@@ -30,7 +30,7 @@ html {
     font-size: 16px;
 }
 
-.container.scrapbook {
+.container.mypage {
     display: flex;
     padding-top: 48px;
     text-overflow: ellipsis;
@@ -94,17 +94,17 @@ html {
     font-weight: 400;
 }
 
-.scrapbook-list-box {
+.mypage-list-box {
     width: 280px;
     max-height: 317px;
     overflow: hidden;
 }
 
-.scrapbook-list-box .sidebar-menu {
+.mypage-list-box .sidebar-menu {
     padding: 0px 16px 0px 0px;
 }
 
-.scrapbook-list-box .sidebar-menu .sidebar-menu-name-img-set {
+.mypage-list-box .sidebar-menu .sidebar-menu-name-img-set {
     padding: 12px 0px 12px 44px;
 }
 
@@ -114,7 +114,7 @@ html {
     width: calc(100% - 24px);
 }
 
-.sidebar-menu .scrapbook-scraps-count {
+.sidebar-menu .mypage-mys-count {
     margin: 0px 6px;
 }
 
@@ -139,12 +139,12 @@ html {
     display: block;
 }
 
-.container.scrapbook .main-content-container {
+.container.mypage .main-content-container {
     width: 800px;
     padding-left: 80px;
 }
 
-.container.scrapbook .main-content-container .main-content {
+.container.mypage .main-content-container .main-content {
     width: 720px;
 }
 
@@ -162,14 +162,14 @@ html {
     font-weight: 400;
 }
 
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks {
+.container.mypage .main-content-container .main-content .last-open-mypages {
     flex-wrap: wrap;
     display: flex;
     gap: 24px;
     padding: 32px 0px 40px 0px;
 }
 
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks .last-open-scrapbook {
+.container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage {
     display: inline-flex;
     border: solid 1px #e0e0e0;
     border-radius: 12px;
@@ -182,11 +182,11 @@ html {
     cursor: pointer;
 }
 
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks .last-open-scrapbook .last-open-scrapbook-info {
+.container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage .last-open-mypage-info {
     margin-left: 24px;
 }
 
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks .last-open-scrapbook .last-open-scrapbook-info .scrapbook-title {
+.container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage .last-open-mypage-info .mypage-title {
     width: 222px;
     height: 26px;
     overflow: hidden;
@@ -209,14 +209,14 @@ html {
     background-image: url(https://yozm.wishket.com/static/renewal/img/news/icon_menu_open_on.png);
 }
 
-.container.scrapbook .main-content-container .main-content .last-open-scrapbooks .last-open-scrapbook:hover {
+.container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage:hover {
     border: 1px solid #6b16ee;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
     transform: translateY(-4px);
     transition-duration: .5s;
 }
 
-.scrapbook-link:hover, .highlight-memo:hover, .read-news:hover, #scrapbook-fold:hover {
+.mypage-link:hover, .highlight-memo:hover, .read-news:hover, #mypage-fold:hover {
     background-color: #f0f0f0;
     border-radius: 8px;
     transition: background-color 0.3s ease, border-radius 0.3s ease;
@@ -344,8 +344,8 @@ html {
     color: #fff;
 }
 
-.btn-11-24 {
-    padding: 11px 24px;
+.btn-submit, .btn-back {
+    padding: 17px 24px;
 }
 
 .btn {
@@ -410,7 +410,7 @@ textarea.wishket-label-input {
     line-height: 24px;
     font-weight: 500;
 }
-.scrapbook-scraps-count{
+.mypage-mys-count{
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
