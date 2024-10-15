@@ -189,6 +189,9 @@ html {
     transition: background-color 0.3s ease, border-radius 0.3s ease; /* 부드러운 전환 효과 */
 }
 
+.pc-sidebar{
+    width: 280px;
+}
 
 .icon-fold {
     width: 16px;
@@ -213,4 +216,141 @@ html {
     line-height: 18px;
     font-weight: 400;
     color: #9e9e9e;
+}
+/* 미디어 쿼리: 화면 너비가 430px 이하일 때 적용 */
+@media (max-width: 430px) {
+    .highlight-memo, .read-news {
+        display: flex !important;
+        width: 25% !important;
+        height: auto !important;
+        margin: 10px 4px !important;
+        align-items: center;
+        padding: 10px !important;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        flex-direction: column;
+    }
+
+    .highlight-memo:hover, .read-news:hover {
+        background-color: #e6e6e6;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .container {
+    width: 95% !important;
+    padding: 0 10px !important;
+    margin: 0 auto !important;
+    min-height: 100vh !important;
+    overflow-y: visible !important;
+}
+
+    .container.mypage {
+    padding-top: 20px !important;
+    margin-bottom: 60px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    min-height: 100vh !important;
+    overflow-y: auto !important;
+}
+    #mypage-fold {
+        display: none;
+    }
+    .mypage-list-box {
+        display: none !important;
+    }
+
+    .pc-sidebar {
+        display: flex;
+        width: 77% !important;
+        padding: 0 0px !important;
+        margin-bottom: -35px !important;
+        margin-left: 140px;
+    }
+
+    .sidebar-menu-name {
+        display: flex !important;
+        font-size: 12px !important;
+        max-width: 80% !important;
+    }
+
+    .content-divide {
+       display: none;
+    }
+
+    .main-content-container {
+    width: 95% !important;
+    padding-left: 0 !important;
+    min-height: 100vh !important;
+    overflow-y: visible !important;
+}
+
+    .main-content {
+        width: 95% !important;
+    }
+
+    .sub-title-box .subtitle-2-medium {
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+
+    .last-open-mypages {
+        gap: 12px !important;
+        padding: 20px 0 !important;
+    }
+
+    .last-open-mypage {
+        width: 90% !important;
+        padding: 16px !important;
+        height: auto !important;
+        border-radius: 8px !important;
+    }
+
+    .last-open-mypage-info {
+        margin-left: 16px !important;
+    }
+
+    .mypage-title {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    .howmany {
+        font-size: 12px !important;
+    }
+
+    .sidebar-menu {
+        padding: 0px !important;
+    }
+
+    .sidebar-menu .sidebar-menu-img {
+        margin-left: 8px !important;
+    }
+
+    .sidebar-menu-name-img-set {
+        padding: 8px 0 8px 32px !important;
+    }
+
+    .icon-fold {
+        width: 14px !important;
+        height: 14px !important;
+    }
+
+    .sidebar-menu .mypage-mys-count {
+        font-size: 10px !important;
+        margin-right: 4px !important;
+    }
+
+    img.only-pc {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .layout {
+        overflow-x: hidden !important; overflow-y: auto !important;
+    }
+    body {
+        overflow-x: hidden !important; overflow-y: auto !important;
+    }
 }
