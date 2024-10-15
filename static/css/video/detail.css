@@ -84,7 +84,9 @@ a {
     position: relative;
     display: inline-block;
 }
-
+.content p {
+    text-align: justify;
+}
 .sub-navigation div::after {
     content: "";
     position: absolute;
@@ -110,6 +112,7 @@ a {
 .content-container-wrapper {
     width: 1080px;
     margin: 0 auto;
+    display: flex;
 }
 .content-container {
     position: relative;
@@ -138,8 +141,22 @@ a {
     line-height: normal;
     letter-spacing: normal;
     color: #212121;
-    font-size: 32px;
+    font-size: 23px;
     margin: 8px 0 24px 0;
+    font-weight: 500;
+    color: #212121;
+}
+.same-category-title {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #212121;
+    font-size: 23px;
+    margin: 8px 0 24px 0;
+    font-weight: 500;
+    color: #212121;
 }
 .detail-info {
     padding-bottom: 32px;
@@ -155,10 +172,6 @@ a {
     display: flex;
     align-items: center;
 }
-.content-meta-elem {
-    line-height: 20px;
-    margin-right: 10px;
-}
 .author-image {
     width: 20px;
     height: 20px;
@@ -168,7 +181,7 @@ a {
 .pc-only {
     display: flex !important;
 }
-.text700 {
+.link-underline-text {
     color: #424242;
 }
 .content-meta-sep {
@@ -178,8 +191,6 @@ a {
 .meta-icon {
     width: 16px;
     height: 16px;
-}
-.mr-2 {
     margin-right: 2px !important;
 }
 .content-meta-view {
@@ -220,6 +231,7 @@ a {
     margin-top: 16px;
     margin-bottom: 16px;
     margin: 0 auto;
+    width: 100%;
 }
 .content div {
     margin: 0 auto;
@@ -242,8 +254,9 @@ a {
     position: relative;
     width: max-content;
     border-radius: 8px;
+    margin-right: 6px !important;
 }
-.mr-6 {
+.with-text img {
     margin-right: 6px !important;
 }
 .star-rating {
@@ -262,15 +275,15 @@ a {
     color: gold; /* 선택되거나 마우스를 올릴 때 별 색상 */
 }
 
-.action-tooltip {
+.action-tooltip-reply {
     display: none;
 }
-.btn-wrapper .action-tooltip.bottom-action {
+.btn-wrapper .action-tooltip-reply.bottom-action {
     top: -24px;
     left: 50%;
     transform: translate(-70%, 10px);
 }
-.btn-wrapper .action-tooltip {
+.btn-wrapper .action-tooltip-reply {
     transition: all 0.4s ease-in-out;
     cursor: default;
     position: absolute;
@@ -286,7 +299,7 @@ a {
     line-height: 1.27;
 }
 
-.btn-wrapper .action-tooltip.bottom-action:after {
+.btn-wrapper .action-tooltip-reply.bottom-action:after {
     border-top: 4px solid #212121;
     border-left: 3px solid rgba(0, 0, 0, 0);
     border-right: 3px solid rgba(0, 0, 0, 0);
@@ -524,6 +537,12 @@ li:last-child > .page-link {
 }
 .review-score {
     color: #424242;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
 }
 .other-review-box {
     display: flex;
@@ -540,6 +559,9 @@ li:last-child > .page-link {
 }
 .other-review-score {
     color: #424242;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
 }
 .other-time {
     font-size: 10px;
@@ -550,10 +572,14 @@ li:last-child > .page-link {
     margin-top: 2px;
     position: absolute;
     transform: translate(-10px, 4px);
+    margin-right: 2px !important;
 }
 .other-title {
     position: absolute;
     transform: translate(-10px, 0px);
+    font-size: 14px;
+    font-weight: 500;
+    color: #212121;
 }
 .body-3-medium {
     font-weight: 500;
@@ -606,15 +632,13 @@ li:last-child > .page-link {
     align-items: center;
     margin-bottom: 16px;
 }
-.text900 {
+.work-price {
+    font-weight: 500;
     color: #212121;
 }
-.body-1-medium {
+.other-content {
     font-weight: 500;
-}
-.body-1-medium {
-    font-size: 16px;
-    line-height: 26px;
+    color: #212121;
 }
 .side-card-list-box {
     display: flex;
@@ -732,9 +756,6 @@ li:last-child > .page-link {
     justify-content: space-between;
     padding: 40px 0 32px 0;
 }
-.text900 {
-    color: #212121;
-}
 .subtitle-2-medium {
     font-weight: 500;
 }
@@ -798,6 +819,9 @@ li:last-child > .page-link {
 .list-item-category {
     display: inline-block;
     margin-bottom: 6px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
 }
 .body-3 {
     font-size: 13px;
@@ -835,10 +859,8 @@ li:last-child > .page-link {
     display: inline-block;
     line-height: 20px;
     margin-right: 8px;
-}
-
-.mr-4 {
-    margin-right: 4px !important;
+    line-height: 20px;
+    margin-right: 10px;
 }
 .author-info {
     margin-top: 16px;
@@ -887,19 +909,16 @@ li:last-child > .page-link {
 .card-text {
     overflow: hidden;
     text-overflow: ellipsis;
-}
-.text900 {
     color: #212121;
-}
-.body-2-medium {
     font-weight: 500;
-}
-.body-2-medium {
-    font-size: 14px;
-    line-height: 24px;
 }
 .comment-review {
     float: right;
+}
+.report img {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
 }
 .report button {
     color: red;
@@ -927,11 +946,13 @@ li:last-child > .page-link {
     position: relative;
     z-index: 10;
 }
-
+.modal textarea {
+    height: 218px;
+    resize: none;
+}
 body.modal-open {
     overflow: hidden;
 }
-
 .close {
     color: #aaa;
     float: right;

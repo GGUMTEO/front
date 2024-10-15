@@ -176,7 +176,7 @@ document.querySelector(".img-add").addEventListener("click", function () {
                 <div class="default-img" id="default-img-${timestamp}">
                     <img id="preview-${timestamp}" src="https://www.wishket.com/static/renewal/img/partner/profile/icon_btn_add_portfolio_image.png" class="img-tag" />
                     <video id="video-preview-${timestamp}" class="video-tag" style="display: none;" controls></video> <!-- 비디오 미리보기 추가 -->
-                    <div class="mb4 img-box-title">작품 영상, 이미지 등록</div>
+                    <div class="img-box-title">작품 영상, 이미지 등록</div>
                     <div class="img-box-text">작품 결과물 혹은 설명을 돕는 이미지를 선택해 주세요.</div>
                     <div class="img-box-help"><span>· 이미지 최적 사이즈: 가로 720px</span></div>
                     <input id="file-upload-${timestamp}" type="file" accept="image/*,video/*" style="display: none;" />

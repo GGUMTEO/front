@@ -88,6 +88,17 @@ body {
     border-radius: 4px;
     border: solid 1px #e0e0e0;
 }
+.report-img img {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+.report-div {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #757575;
+}
 .btn {
     cursor: pointer;
     text-align: center;
@@ -100,14 +111,6 @@ button {
 }
 .copy-img {
     margin: 3px 4px 3px 0;
-}
-.text500 {
-    color: #757575;
-}
-.body-3-medium {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 20px;
 }
 .header-subtitle {
     display: flex;
@@ -269,6 +272,7 @@ button {
 
 .funding-persent-div {
     margin-top: 10px;
+    color: #0059ff;
 }
 .funding-writer {
     display: flex;
@@ -366,7 +370,7 @@ a {
     margin-bottom: 10px;
 }
 
-.body-1-medium-title {
+.same-category-funding-list {
     color: #3ba3c7;
     font-weight: 600;
     font-size: 16px;
@@ -427,7 +431,10 @@ a {
     position: relative;
     z-index: 10;
 }
-
+.modal-content textarea {
+    height: 218px;
+    resize: none;
+}
 body.modal-open {
     overflow: hidden;
 }
