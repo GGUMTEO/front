@@ -1407,47 +1407,4 @@
     </body>
     <script src="/static/js/audition/application2.js"></script>
     <script src="/static/js/audition/application-date.js"></script>
-    <script>
-        document
-            .getElementById("file_select_btn")
-            .addEventListener("click", function () {
-                const fileInput = document.querySelector(".temp-upload-resume");
-                fileInput.click();
-
-                fileInput.addEventListener("change", function () {
-                    const selectedFile = fileInput.files[0];
-                    if (selectedFile) {
-                        const fileName = selectedFile.name;
-
-                        // 파일명을 p 태그에 넣기
-                        const fileNameViewer = document.getElementById(
-                            "selected_file_name_viewer"
-                        );
-                        fileNameViewer.textContent = fileName;
-
-                        // 파일명을 a 태그의 download 속성에 넣기
-                        const resumeDownloadLink =
-                            document.getElementById("resume_download");
-                        resumeDownloadLink.setAttribute("download", fileName);
-
-                        // 파일명이 너무 길 경우 잘라서 표시 (예: 15자 이상일 때)
-                        if (fileName.length > 15) {
-                            fileNameViewer.textContent =
-                                fileName.substring(0, 12) + "...";
-                        }
-
-                        // tooltip-group을 block으로 변경
-                        const tooltipGroup =
-                            document.querySelector(".tooltip-group");
-                        tooltipGroup.style.display = "block";
-
-                        // placeholder-attachment를 none으로 변경
-                        const placeholderAttachment = document.querySelector(
-                            ".placeholder-attachment"
-                        );
-                        placeholderAttachment.style.display = "none";
-                    }
-                });
-            });
-    </script>
 </html>
