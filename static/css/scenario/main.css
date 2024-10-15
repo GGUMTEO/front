@@ -1,0 +1,486 @@
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 700;
+    src: url("/fonts/NotoSansKR-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 500;
+    src: url("/fonts/NotoSansKR-Medium.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 400;
+    src: url("/fonts/NotoSansKR-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 300;
+    src: url("/fonts/NotoSansKR-Light.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 100;
+    src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "NotoSansKR", Sans-serif;
+    line-height: 1rem;
+}
+
+body {
+    height: 100%;
+}
+
+.main-header {
+    height: 48px;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-header .container {
+    display: flex;
+    padding-left: 2px;
+    gap: 50px;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.sub-navigation div {
+    padding: 12px 0;
+    height: 100%;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #424242;
+    font-weight: 600;
+}
+.main-div {
+    background: url("https://yozm.wishket.com/static/renewal/img/news/img_main_gradation.png");
+    background-size: 100% 100%;
+}
+
+.ggumteo-content {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #212121;
+    position: relative;
+    padding: 64px 0px;
+}
+.guide-point-word {
+    font-weight: 500;
+    display: inline-block;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #313131;
+}
+
+.items {
+    margin-bottom: 80px;
+}
+
+.items .main-card {
+    display: inline-block;
+    width: 620px;
+    vertical-align: top;
+    padding-right: 40px;
+}
+.items .main-card .card-item-link .card-item {
+    width: 100%;
+}
+.card-thumbnail {
+    margin-bottom: 24px;
+}
+.card-image {
+    border-radius: 12px;
+    border: solid 1px #e0e0e0;
+    width: 580px;
+    height: 277px;
+    object-fit: cover;
+}
+.card-category {
+    margin-bottom: 6px;
+    color: #757575;
+}
+.link-text {
+    text-decoration: none;
+    display: inline-block;
+    color: #757575;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.link-text {
+    color: inherit !important;
+}
+.item-main-h3 {
+    color: #212121;
+}
+.popular-funding {
+    color: #212121;
+}
+.card-main .content-meta-view {
+    display: flex;
+}
+.card-main-h3 {
+    color: #212121;
+}
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+.content-meta-view {
+    margin-left: auto;
+    line-height: 1.54;
+    font-weight: normal;
+    color: #9e9e9e;
+}
+.card-title {
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: normal;
+    margin-bottom: 8px;
+}
+.link-text.card-title {
+    display: block;
+}
+.person-card-title {
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: normal;
+    margin-bottom: 8px;
+}
+.content-meta {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    color: #424242;
+}
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+.meta-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px !important;
+}
+.content-meta-elem {
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 8px;
+    color: #424242;
+}
+.popular-funding-text {
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 8px;
+    color: #0059ff;
+    font-size: 17px;
+    font-weight: 600;
+}
+.author-time {
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 8px;
+    color: #424242;
+}
+.popular-work-time {
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 8px;
+    color: #424242;
+}
+.card-description {
+    margin: 12px 0px 16px 0px;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #757575;
+}
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+.author-image {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border: solid 1px #e0e0e0;
+    border-radius: 10px;
+}
+.author-name {
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #9e9e9e;
+}
+.author-name a {
+    cursor: default;
+}
+.link-underline-text {
+    color: #9e9e9e;
+}
+.items .sub-list {
+    padding-left: 40px;
+    width: 456px;
+    border-left: 1px solid #eee;
+    display: inline-block;
+    vertical-align: top;
+}
+.card-category:first-child {
+    margin-top: 0;
+}
+
+.card-category {
+    margin: 24px 0 6px 0;
+}
+
+.card-item-link {
+    display: block;
+}
+
+.sub-card {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+.subtitle-2-medium {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+.content-meta {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    color: #424242;
+}
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+
+.person-card-description {
+    margin: 8px 0px 16px 0;
+    font-size: 13px;
+    line-height: 1.54;
+    color: #757575;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.sub-list > :last-child {
+    border-bottom: none;
+}
+.main-page {
+    margin-bottom: 80px;
+}
+.guide-section {
+    width: 100%;
+    background-color: #fafafa;
+    padding: 12px 0;
+}
+.guide-section {
+    color: #212121;
+}
+.guide-main-contents {
+    display: flex;
+}
+.funding-guide-img {
+    width: 124px;
+    height: 93px;
+}
+.funding-guide {
+    margin-left: 20px;
+    word-break: keep-all;
+    width: 628px;
+    margin-top: 19px;
+    font-size: 18px;
+    line-height: 1.56;
+}
+.funding-guide p {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.56;
+}
+.funding-guide span {
+    font-weight: bold;
+}
+.funding-button-box {
+    width: 30%;
+    margin-top: 23px;
+    text-align: right;
+}
+.funding-button-box button {
+    width: 200px;
+    cursor: pointer;
+    padding: 11px 24px;
+    border-radius: 8px;
+    background-color: #6b16ee;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    height: 48px;
+}
+button {
+    background: none;
+}
+.main-list .main-list-title {
+    justify-content: space-between;
+}
+.main-list-title {
+    margin-bottom: 0;
+}
+.main-list-title div {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+}
+.main-list-row {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.list-item-link {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.list-item-link {
+    width: 320px;
+}
+.list-item {
+    width: 100%;
+}
+.list-item-thumbnail {
+    margin-bottom: 24px;
+}
+.thumbnail-image {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid #e0e0e0;
+}
+.item-main {
+    display: block;
+}
+.item-title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.content-meta-sep {
+    width: 1px;
+    color: #e0e0e0;
+}
+.list-item-description {
+    margin: 12px 0px 16px 0px;
+    word-break: break-all;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #757575;
+}
+.main-list .main-list-row .list-item-link + .list-item-link {
+    margin-left: 56px;
+}
+.sub-navigation {
+    position: relative;
+    text-decoration: none;
+}
+
+.sub-navigation div {
+    position: relative;
+    display: inline-block;
+}
+
+.sub-navigation div::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    transition: width 0.3s ease;
+}
+
+.sub-navigation div:hover::after {
+    width: 100%;
+}
+
+.link-underline:hover {
+    text-decoration: underline; /* 마우스를 올리면 밑줄 생김 */
+}
+.card-category .guide-point-word {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.review-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-left: 500px;
+}
+.star-box {
+    margin-right: 8px;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+.review-score {
+    color: #424242;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+}
