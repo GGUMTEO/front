@@ -79,12 +79,12 @@ a {
     color: #424242;
     font-weight: 600;
 }
-.main-key-visual {
+.main-div {
     background: url("https://yozm.wishket.com/static/renewal/img/news/img_main_gradation.png");
     background-size: 100% 100%;
 }
 
-.key-visual-guide {
+.ggumteo-content {
     font-size: 24px;
     line-height: 36px;
     font-weight: 300;
@@ -95,7 +95,7 @@ a {
     position: relative;
     padding: 64px 0px;
 }
-.key-visual-guide-point-word {
+.guide-point-word {
     font-weight: 500;
     display: inline-block;
     font-stretch: normal;
@@ -104,17 +104,17 @@ a {
     color: #313131;
 }
 
-.featured-items {
+.items {
     margin-bottom: 80px;
 }
 
-.featured-items .featured-main-card {
+.items .main-card {
     display: inline-block;
     width: 620px;
     vertical-align: top;
     padding-right: 40px;
 }
-.featured-items .featured-main-card .card-item-link .card-item {
+.items .main-card .card-item-link .card-item {
     width: 100%;
 }
 .card-thumbnail {
@@ -127,15 +127,17 @@ a {
     height: 277px;
     object-fit: cover;
 }
-.text500 {
-    color: #757575;
-}
 .card-category {
     margin-bottom: 6px;
+    color: #757575;
 }
 .link-text {
     text-decoration: none;
     display: inline-block;
+    color: #757575;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
 }
 .body-3 {
     font-size: 13px;
@@ -145,9 +147,16 @@ a {
 .link-text {
     color: inherit !important;
 }
-.text900 {
+.item-main-h3 {
     color: #212121;
 }
+.popular-funding {
+    color: #212121;
+}
+.card-main-h3 {
+    color: #212121;
+}
+
 .card-title {
     font-size: 22px;
     font-weight: 500;
@@ -159,6 +168,15 @@ a {
 }
 .link-text.card-title {
     display: block;
+}
+.person-card-title {
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: normal;
+    margin-bottom: 8px;
 }
 .content-meta {
     width: 100%;
@@ -173,16 +191,26 @@ a {
 .meta-icon {
     width: 16px;
     height: 16px;
+    margin-right: 4px !important;
 }
 .content-meta-elem {
     display: inline-block;
     line-height: 20px;
     margin-right: 8px;
+    color: #424242;
 }
-.mr-4 {
-    margin-right: 4px !important;
+.author-time {
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 8px;
+    color: #424242;
 }
-
+.popular-work-time {
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 8px;
+    color: #424242;
+}
 .card-description {
     margin: 12px 0px 16px 0px;
     font-size: 13px;
@@ -219,7 +247,10 @@ a {
 .text400 {
     color: #9e9e9e;
 }
-.featured-items .featured-sub-list {
+.link-underline-text {
+    color: #9e9e9e;
+}
+.items .sub-list {
     padding-left: 40px;
     width: 456px;
     border-left: 1px solid #eee;
@@ -238,14 +269,11 @@ a {
     display: block;
 }
 
-.featured-sub-card {
+.sub-card {
     padding-bottom: 24px;
     border-bottom: 1px solid #eee;
 }
 
-.card-title {
-    margin-bottom: 8px;
-}
 .subtitle-2-medium {
     font-weight: 500;
     font-size: 18px;
@@ -262,7 +290,7 @@ a {
     align-items: center;
 }
 
-.sub-card-description {
+.person-card-description {
     margin: 8px 0px 16px 0;
     font-size: 13px;
     line-height: 1.54;
@@ -273,21 +301,21 @@ a {
     -webkit-box-orient: vertical;
 }
 
-.featured-sub-list > :last-child {
+.sub-list > :last-child {
     border-bottom: none;
 }
 .main-page {
     margin-bottom: 80px;
 }
-.slackbot-guide-section {
+.guide-section {
     width: 100%;
     background-color: #fafafa;
     padding: 12px 0;
 }
-.slackbot-guide-section {
+.guide-section {
     color: #212121;
 }
-.slackbot-guide-main-contents {
+.guide-main-contents {
     display: flex;
 }
 .funding-guide-img {
@@ -381,9 +409,6 @@ button {
 .mr-2 {
     margin-right: 2px !important;
 }
-.text700 {
-    color: #424242;
-}
 .list-item-description {
     margin: 12px 0px 16px 0px;
     word-break: break-all;
@@ -391,6 +416,10 @@ button {
     overflow: hidden;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #757575;
 }
 .main-list .main-list-row .list-item-link + .list-item-link {
     margin-left: 56px;
@@ -423,7 +452,7 @@ button {
 .link-underline:hover {
     text-decoration: underline; /* 마우스를 올리면 밑줄 생김 */
 }
-.card-category .key-visual-guide-point-word {
+.card-category .guide-point-word {
     margin-bottom: 25px;
     font-size: 20px;
     font-weight: 600;

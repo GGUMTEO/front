@@ -9,46 +9,34 @@
     <body>
         <header></header>
         <main>
-            <div class="gaia">
-                <div class="profile-header edit-header">
+            <div class="main">
+                <div class="header edit-header">
                     <div class="background"></div>
                     <div class="container">
-                        <div class="profile-box inquiry">
-                            <form
-                                action=""
-                                id="inquiry-form"
-                                enctype="multipart/form-data"
-                            >
-                                <input type="hidden" name="" value="" />
-                                <div class="inquiry-add-view">
-                                    <div
-                                        class="subtitle-1 text900 inquiry-add-title"
-                                    >
+                        <div class="profile-box write">
+                            <form action="" id="write-form">
+                                <div class="write-add-view">
+                                    <div class="subtitle-1 write-add-title">
                                         내 작품올리기
                                     </div>
-                                    <div class="inquiry-add-content-box">
-                                        <div class="mb12 body-2-bold text900">
+                                    <div class="write-add-content-box">
+                                        <div class="write-title">
                                             작품제목
                                             <span class="star">*</span>
                                         </div>
-                                        <div
-                                            class="inquiry-name inquiry-detail"
-                                        >
+                                        <div class="write-name write-detail">
                                             <div class="label-input-partner">
                                                 <input
-                                                    class="required theme-partner wishket-label-input"
-                                                    data-type="label"
+                                                    class="required label-input"
                                                     name="title"
-                                                    onkeyup="max_input(this, 100)"
                                                     type="text"
                                                     value=""
                                                 />
-                                                <label
+                                                <label for="title"
                                                     >제목을 입력해주세요
                                                     *</label
                                                 >
                                             </div>
-
                                             <span
                                                 class="error-text"
                                                 style="display: none"
@@ -59,12 +47,8 @@
                                             작품 목록에 가장먼저 보이는
                                             제목입니다
                                         </div>
-                                        <div
-                                            class="portfolio-detail-box-wrapper"
-                                        >
-                                            <div
-                                                class="mb12 body-2-bold text900"
-                                            >
+                                        <div class="detail-box-wrapper">
+                                            <div class="write-category">
                                                 작품장르
                                                 <span class="star">*</span>
                                             </div>
@@ -73,7 +57,7 @@
                                                     class="project-category-box"
                                                 >
                                                     <label
-                                                        for=""
+                                                        for="romance"
                                                         class="checkbox-partner"
                                                     >
                                                         <span>
@@ -95,7 +79,7 @@
                                                     class="project-category-box"
                                                 >
                                                     <label
-                                                        for=""
+                                                        for="comedy"
                                                         class="checkbox-partner"
                                                     >
                                                         <span>
@@ -117,7 +101,7 @@
                                                     class="project-category-box"
                                                 >
                                                     <label
-                                                        for=""
+                                                        for="horror"
                                                         class="checkbox-partner"
                                                     >
                                                         <span>
@@ -139,7 +123,7 @@
                                                     class="project-category-box"
                                                 >
                                                     <label
-                                                        for=""
+                                                        for="action"
                                                         class="checkbox-partner"
                                                     >
                                                         <span>
@@ -161,7 +145,7 @@
                                                     class="project-category-box"
                                                 >
                                                     <label
-                                                        for=""
+                                                        for="drama"
                                                         class="checkbox-partner"
                                                     >
                                                         <span>
@@ -183,11 +167,9 @@
                                             <div></div>
                                         </div>
                                         <div
-                                            class="mb24 inquiry-description-box inquiry-detail"
+                                            class="write-description-box write-detail"
                                         >
-                                            <div
-                                                class="mb16 body-2-bold text900"
-                                            >
+                                            <div class="write-content">
                                                 작품설명
                                                 <span class="star">*</span>
                                             </div>
@@ -199,12 +181,9 @@
                                             <div class="ui-textarea-partner">
                                                 <div class="textarea__border">
                                                     <textarea
-                                                        class="required wishket-textarea theme-partner expand"
+                                                        class="required textarea expand"
                                                         maxlength="5000"
                                                         name="description"
-                                                        style="
-                                                            min-height: 402px;
-                                                        "
                                                     ></textarea>
                                                 </div>
                                                 <span
@@ -216,8 +195,8 @@
                                                 >
                                             </div>
                                         </div>
-                                        <div class="mb48 work-img-box">
-                                            <div class="mb20 body-2 text600">
+                                        <div class="work-img-box">
+                                            <div class="title-img-box">
                                                 <img
                                                     src="https://www.wishket.com/static/renewal/img/partner/profile/icon_portfolio_image_upload.png"
                                                     class="title-img"
@@ -256,11 +235,11 @@
                                                                 <img
                                                                     id="preview"
                                                                     src="https://www.wishket.com/static/renewal/img/partner/profile/icon_btn_add_portfolio_image.png"
-                                                                    class="mb12"
+                                                                    class="img-tag"
                                                                 />
                                                                 <video
                                                                     id="video-preview"
-                                                                    class="mb12"
+                                                                    class="video-tag"
                                                                     style="
                                                                         display: none;
                                                                         width: 100%;
@@ -268,13 +247,13 @@
                                                                     controls
                                                                 ></video>
                                                                 <div
-                                                                    class="mb4 img-box-title"
+                                                                    class="img-box-title"
                                                                 >
                                                                     작품 영상,
                                                                     이미지 등록
                                                                 </div>
                                                                 <div
-                                                                    class="mb32 body-3 text600 img-box-text"
+                                                                    class="img-box-text"
                                                                 >
                                                                     작품 결과물
                                                                     혹은 설명을
@@ -322,6 +301,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- 여기서부터 클래스명 정리 -->
                                             <div class="body-1-medium img-add">
                                                 <img
                                                     src="https://www.wishket.com/static/renewal/img/partner/profile/btn_icon_add.png"
@@ -433,7 +413,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="inquiry-footer">
+                                <div class="write-footer">
                                     <div class="button-box">
                                         <button
                                             class="btn btn-11-24 btn-gray btn-back"
@@ -457,12 +437,12 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="active" id="inquiry-footer-moving"></div>
+                        <div class="active" id="write-footer-moving"></div>
                     </div>
                 </div>
             </div>
         </main>
         <footer></footer>
     </body>
-    <script src="/static/js/video/wirte.js"></script>
+    <script src="/static/js/video/write.js"></script>
 </html>
