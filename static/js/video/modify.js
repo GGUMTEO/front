@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         inputElement.addEventListener("focus", function () {
             labelInputPartner.classList.add("label-effect");
             if (!inputElement.classList.contains("error")) {
-                inputElement.style.borderColor = "#00a878";
+                inputElement.style.borderColor = "#2099bb";
                 inputElement.style.borderWidth = "1px";
                 inputElement.style.borderStyle = "solid";
             }
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         inputElement.addEventListener("input", function () {
             if (inputElement.classList.contains("error")) {
                 inputElement.classList.remove("error");
-                inputElement.style.borderColor = "#00a878";
+                inputElement.style.borderColor = "#2099bb";
                 inputElement.style.borderWidth = "1px";
                 inputElement.style.borderStyle = "solid";
             }
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         inputElement.addEventListener("mouseover", function () {
             if (!inputElement.classList.contains("error")) {
-                inputElement.style.borderColor = "#00a878";
+                inputElement.style.borderColor = "#2099bb";
                 inputElement.style.borderWidth = "1px";
                 inputElement.style.borderStyle = "solid";
             }
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (textareaBorder.classList.contains("error")) {
                 textareaBorder.style.borderColor = "#e52929";
             } else {
-                textareaBorder.style.borderColor = "#00a878";
+                textareaBorder.style.borderColor = "#2099bb";
             }
         });
 
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
         textareaElement.addEventListener("input", function () {
             if (textareaBorder.classList.contains("error")) {
                 textareaBorder.classList.remove("error");
-                textareaBorder.style.borderColor = "#00a878";
+                textareaBorder.style.borderColor = "#2099bb";
             }
         });
 
@@ -266,3 +266,27 @@ function previewImage(event) {
         reader.readAsDataURL(file); // 업로드된 파일을 데이터 URL로 읽습니다
     }
 }
+// radio-div 어디를 눌러도 클릭되게 함
+document.addEventListener("click", () => {
+    const categoryBoxes = document.querySelectorAll(".project-category-box");
+
+    categoryBoxes.forEach((box) => {
+        // div 클릭 시 내부 라디오 버튼 체크
+        box.addEventListener("click", () => {
+            const radioInput = box.querySelector('input[type="radio"]');
+            if (radioInput) {
+                radioInput.checked = true;
+            }
+        });
+
+        // 마우스 올렸을 때 배경색 변경
+        box.addEventListener("mouseenter", () => {
+            box.style.backgroundColor = "#f7fafc";
+        });
+
+        // 마우스 뗐을 때 배경색 원래대로 변경
+        box.addEventListener("mouseleave", () => {
+            box.style.backgroundColor = ""; // 원래 배경색으로 복원
+        });
+    });
+});
