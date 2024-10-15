@@ -27,7 +27,6 @@
 html {
     height: 100%;
     font-size: 16px;
-    position: inherit;
 }
 
 * {
@@ -45,7 +44,10 @@ body {
 
 a {
     text-decoration: none;
+    color: #212121;
 }
+
+/************/
 
 .main {
     min-width: 1080px;
@@ -53,54 +55,27 @@ a {
     min-height: 70%;
 }
 
-.ggumteo-is-what {
+.main:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+
+body.body .ggumteo-do-not-fail {
     background-color: #0a223f;
 }
 
-.ggumteo-is-what .container {
+body.body .ggumteo-do-not-fail .container {
     padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     width: 1080px;
     margin: 0 auto;
-}
-
-.ggumteo-is-what .container .what-question {
-    display: inline-block;
-    width: 500px;
-    margin-right: 80px;
-    vertical-align: middle;
-}
-
-.text-white {
-    color: #fff;
-}
-
-.title-bold {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 48px;
-}
-
-.margin-bottom {
-    margin-bottom: 16px;
-}
-
-.subtitle {
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-}
-
-.ggumteo-is-what .container .what-answer {
-    display: inline-block;
-    width: 500px;
-    vertical-align: middle;
-}
-
-.ggumteo-is-what .container .what-answer img{
-    width: 500px;
 }
 
 .container::after {
@@ -109,67 +84,254 @@ a {
     clear: both;
 }
 
-.introduction-detail {
+body.body .ggumteo-do-not-fail .container .fail-question {
+    display: inline-block;
+    width: 500px;
+    margin-right: 80px;
+    vertical-align: middle;
+}
+
+/* text-white */
+.ggumteo-do-not-fail .fail-question-title {
+    color: #fff;
+}
+
+/* text-white */
+.ggumteo-do-not-fail .fail-question-title {
+    margin-bottom: 16px;
+}
+
+/*  */
+.ggumteo-do-not-fail .fail-question-subtitle {
+    color: #fff;
+    opacity: 0.65;
+}
+
+/* title-2-bold */
+.ggumteo-do-not-fail .fail-question-title,
+.service-introduction-detail .guide-title,
+.service-introduction-detail .number-info-count,
+.service-introdution-group .introdution-info-layer .subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+/* subtitle-2 */
+.ggumteo-do-not-fail .fail-question-subtitle,
+.service-introdution-group .service-introdution-box .appeal-info-layer .explanation {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+/* text900 */
+.service-introduction-detail .detail-intro .guide-box, .guide-title,
+.service-introdution-group .service-introdution-box .introdution-info-layer .subtitle {
+    color: #212121;
+}
+
+body.body .ggumteo-do-not-fail .container .fail-answer {
+    display: inline-block;
+    width: 500px;
+    vertical-align: middle;
+}
+
+.ggumteo-do-not-fail .container .fail-answer img{
+    width: 500px;
+}
+
+
+/* 1 */
+.service-introduction-detail {
     border-top: 1px solid #e6ebf0;
     background-color: #f7fafc;
 }
 
-.container {
-    width: 1080px;
-    margin: 0 auto;
-}
-
-.introduction-detail .intro-part {
+.service-introduction-detail .detail-intro {
     padding-top: 100px;
     padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.introduction-detail .intro-part .part-guide-box {
+.service-introduction-detail .detail-intro .guide-box {
     width: 500px;
     margin-right: 80px;
     display: inline-block;
     vertical-align: top;
 }
 
-.text900 {
-    color: #212121;
+.service-introduction-detail .detail-intro .guide-box .guide-title {
+    margin-bottom: 64px;
 }
 
-.text400 {
-    color: #9e9e9e;
-}
-
-.body-3-medium {
+.service-introduction-detail .guide-subtitle {
     font-weight: 500;
     font-size: 13px;
     line-height: 20px;
+    color: #9e9e9e;
 }
 
-/*  */
-.part-guide-box .body-3-medium img {
+.service-introduction-detail .guide-subtitle img {
     margin-right: 8px;
     vertical-align: middle;
 }
-/*  */
 
-.introduction-detail .intro-part .part-number-box {
-    display: inline-block;
+/* 2 */
+.service-introduction-detail .detail-intro .number-box {
+    display: inline-table;
     vertical-align: top;
     width: 500px;
 }
 
-.introduction-detail .intro-part .part-number-box .number-info.upper {
+.service-introduction-detail .detail-intro .number-box .number-info:nth-child(1),
+.service-introduction-detail .detail-intro .number-box .number-info:nth-child(2) {
     margin-bottom: 32px;
 }
 
-.introduction-detail .intro-part .part-number-box .number-info {
+.service-introduction-detail .detail-intro .number-box .number-info {
     display: inline-block;
     margin-right: 32px;
     width: 218px;
 }
 
+.service-introduction-detail .detail-intro .number-box .number-info .number-info-count {
+    margin-bottom: 4px;
+    color: #0098c8;
+}
+
+/* text600 */
+.service-introduction-detail .number-box .number-info-text,
+.service-introdution-group .service-introdution-box .introdution-info-layer .explanation {
+    color: #616161;
+}
+
+/* body-2 */
+.service-introduction-detail .number-box .number-info-text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.service-introduction-detail .number-box .number-info-count img {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 7px;
+    margin-left: 2px;
+}
 
 
+/* service-introdution-group */
+.service-introdution-group {
+    background-color: #f2faff;
+}
+
+.service-introdution-group .container {
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+
+.service-introdution-group .service-introdution-box {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.service-introdution-group .service-introdution-box:first-child {
+    margin-bottom: 60px;
+}
+
+.service-introdution-group .service-introdution-box .introdution-info-layer {
+    justify-items: center;
+    width: 500px;
+    padding-top: 55px;
+}
+
+/* text-wishket */
+.service-introdution-group .service-introdution-box .introdution-info-layer .title {
+    color: #3ba3c7;
+}
+
+/* body-1-bold */
+.service-introdution-group .service-introdution-box .introdution-info-layer .title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* mb12 */
+.service-introdution-group .service-introdution-box .introdution-info-layer .title {
+    margin-bottom: 12px;
+}
+
+/* mg16 */
+.service-introdution-group .service-introdution-box .introdution-info-layer .subtitle {
+    margin-bottom: 12px;
+}
+
+/* subtitle-2 */
+.service-introdution-group .service-introdution-box .introdution-info-layer .explanation {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;  
+}
+
+.service-introdution-group .service-introdution-box .introdution-image-layer {
+    width: 500px;
+    text-align: center;
+}
+
+.service-introdution-group .service-introdution-box .introdution-image-layer img {
+    width: 500px;
+}
+
+/* 버튼 */
+.service-introdution-group-button {
+    height: 48px;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.service-introdution-group-button .container {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+}
+
+.service-introdution-group-button > .container {
+    padding-left: 2px;
+    gap: 32px;
+}
+
+.service-introdution-group-button .group-button div {
+    padding: 12px 0;
+    height: 100%;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #424242;
+    cursor: pointer;
+}
+
+.service-introdution-group-button .group-button.active div {
+    padding: 12px 0 10px 0;
+    color: #212121;
+    font-weight: 500;
+    border-bottom: solid 2px #0098c8;
+}
+
+.service-introdution-wrapper#writing-introdution {
+    display: none;
+}
 
 
 
