@@ -111,10 +111,6 @@ ul {
     opacity: 0.8;
 }
 
-/* 1300px */
-
-/* 20 40 70 110 310 60 200 200 60 70 50 */
-
 /* 각 열의 너비를 퍼센트로 설정 */
 .headerCell:nth-child(1),
 .funding-table-cell:nth-child(1) {
@@ -123,12 +119,12 @@ ul {
 
 .headerCell:nth-child(2),
 .funding-table-cell:nth-child(2) {
-    width: 60px; /* ID 열 너비 */
+    width: 50px; /* ID 열 너비 */
 }
 
 .headerCell:nth-child(3),
 .funding-table-cell:nth-child(3) {
-    width: 70px; /* 작성자 열 너비 */
+    width: 100px; /* 작성자 열 너비 */
 }
 
 .headerCell:nth-child(4),
@@ -138,33 +134,38 @@ ul {
 
 .headerCell:nth-child(5),
 .funding-table-cell:nth-child(5) {
-    width: 320px; /* 게시글 제목 열 너비 */
+    width: 350px; /* 게시글 제목 열 너비 */
 }
 
 .headerCell:nth-child(6),
 .funding-table-cell:nth-child(6) {
-    width: 65px; /* 조회수 열 너비 */
+    width: 70px; /* 조회수 열 너비 */
 }
 
 .headerCell:nth-child(7),
 .funding-table-cell:nth-child(7) {
-    width: 210px; /* 현재모인 금액 열 너비 */ 
+    width: 180px; /* 현재모인 금액 열 너비 */ 
 }
 
 .headerCell:nth-child(8),
 .funding-table-cell:nth-child(8) {
-    width: 135px; /* 목표금액 유형 열 너비 */
+    width: 180px; /* 목표금액 유형 열 너비 */
 }
 
 .headerCell:nth-child(9),
 .funding-table-cell:nth-child(9) {
-    width: 120px; /* 투자자수 열 너비 */
+    width: 70px; /* 투자자수 열 너비 */
 }
 
 .headerCell:nth-child(10),
 .funding-table-cell:nth-child(10) {
-    width: 75px; /* 신고상태 열 너비 */
+    width: 70px; /* 신고상태 열 너비 */
 }
+
+.headerCell:nth-child(11),
+.funding-table-cell:nth-child(11) {
+    width: 80px; /* Actions 열 너비 */
+}                                                                                                                                                                                                                   
 
 .pagination {
     margin: auto;
