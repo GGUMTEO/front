@@ -5,8 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
     <link rel="stylesheet" href="/static/css/notice/notice.css">
-    <style>    
-     .content-header {
+     
+     @font-face {
+    font-family: "NotoSansKR";
+    font-weight: 700;
+    src: url("/fonts/NotoSansKR-Bold.woff2") format("woff2");
+    }
+    @font-face {
+    font-family: "NotoSansKR";
+    font-weight: 500;
+    src: url("/fonts/NotoSansKR-Medium.woff2") format("woff2");
+    }
+    @font-face {
+    font-family: "NotoSansKR";
+    font-weight: 400;
+    src: url("/fonts/NotoSansKR-Regular.woff2") format("woff2");
+    }
+    @font-face {
+    font-family: "NotoSansKR";
+    font-weight: 300;
+    src: url("/fonts/NotoSansKR-Light.woff2") format("woff2");
+    }
+    @font-face {
+    font-family: "NotoSansKR";
+    font-weight: 100;
+    src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
+    }
+     
+    body 
+    h3
+    input 
+    
+    .content-header {
+>>>>>>> hbr:templates/notice/notice-list-update-241016.html
         margin-bottom: 5px;
      }
      .content-header {
@@ -25,16 +56,113 @@
      * {
        box-sizing: border-box;
      }
+
      body {
         margin: 0;
-        font-family: "Nanum Gothic", "Apple SD Gothic Neo" "맑은 고딕", "Malgun Gothic" "AppleGothic", "돋움" ,Dotum, Helvetica, Arial, sans-serif;
+        font-family:"NotoSansKR";
         font-size: 14px;
         line-height: 1.428571429;
         color: #555;
-        background-color: #f5f5f5; 
+        background-color: #f5f5f5; ㄴ
+<<<<<<< HEAD:templates/notice/notice-list-update-2.html
     } 
     
     </style>
+=======
+    }
+    .content-header .header-text {
+      margin: 0;
+    }
+
+    h3{
+      line-height: 1.1;
+    }
+
+   .news-center {
+    margin-top: 15px;
+    margin-bottom: 15px;
+   }
+   
+   .news-center-search-box-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+   }
+
+   .news-center {
+    float: right;
+   }
+    
+   .news-center-search-box-container {
+    float: right;
+   }
+   
+   .news-center-search-box {
+    float: right;
+   }
+
+   .news-center{
+    height: 26px;
+    margin-right: 6px;
+    border:1px solid #dedede;
+   } 
+    
+   .news-center-search-box-container{
+    height: 26px;
+    margin-right: 6px;
+    border:1px solid #dedede;
+   } 
+   .news-center-search-box {
+    height: 26px;
+    margin-right: 6px;
+    border:1px solid #dedede;
+   } 
+   .news-center-search{
+    height: 26px;
+    margin-right: 6px;
+    border:1px solid #dedede;
+   } 
+   input {
+   line-height: normal; 
+   } 
+   
+   .news-center {
+   padding: 5px 10px;
+   background-color: #2099bb;
+   border: solid 1px #1c87a5;
+   font-size: 12px;
+   font-weight: bold;
+   color: #fff
+   } 
+
+   .news-center-search-box-container {
+   padding: 5px 10px;
+   background-color: #2099bb;
+   border: solid 1px #1c87a5;
+   font-size: 12px;
+   font-weight: bold;
+   color: #fff
+   } 
+
+   .news-center-search-box {
+   padding: 5px 10px;
+   background-color: #2099bb;
+   border: solid 1px #1c87a5;
+   font-size: 12px;
+   font-weight: bold;
+   color: #fff
+   } 
+
+   .news-center-search-add-on {
+   padding: 5px 10px;
+   background-color: #2099bb;
+   border: solid 1px #1c87a5;
+   font-size: 12px;
+   font-weight: bold;
+   color: #fff
+   } 
+   
+   </style>
+>>>>>>> hbr:templates/notice/notice-list-update-241016.html
 </head>
 <body>
 <div class="content">
@@ -46,14 +174,14 @@
     </h1>
     </div>
     <div class="content-inner"> 
-    <input class="news-center-search" id="news_center_search"name="q"type="text"> == $0
-    <span class=""news-center-search-add-on" id="news-center-search-submit">검색</span>
+    <input class="news-center-search" id="news_center_search"name="q"type="text">
+    <span class="news-center-search-add-on" id="news-center-search-submit">검색</span>
    </form>
   </div>
 </div>
 <div class="tab-content"> 
     <div class="news-center-table" style="margin-top:0; margin-bottom:20px">
-        <table class="news-center-table" style="margin-top:0; margin-bottom: 20px;"> == $0
+        <table class="news-center-table" style="margin-top:0; margin-bottom: 20px;">
             <colgroup> 
                 <col style="width: 57px;">
                 <col style="width: 132px;">
@@ -202,4 +330,4 @@
                     </li>
                     </ul>
                     </div>
-                
+                    
