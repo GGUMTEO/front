@@ -57,6 +57,8 @@ body {
 
 .container .search-header {
     margin: 48px 0 38px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .subtitle-1{
@@ -70,6 +72,8 @@ body {
 }
 
 .container .search-header .page-title {
+    font-size: 24px;
+    line-height: 36px;
     display: inline-block;
 }
 
@@ -154,6 +158,53 @@ body {
     background: #fff;
     border-radius: 16px;
 }
+
+/* 검색어 css 이식 */
+
+.text-input-ggumteo.icon-right {
+    position: relative;
+}
+
+.text-input-ggumteo.icon-right div {
+    position: relative;
+}
+
+.text-input-ggumteo.icon-right > div > input {
+    display: block;
+    border-radius: 4px;
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #616161;
+    font-weight: 400;
+    background: #fff;
+    width: 100%;
+    height: inherit;
+    padding: 8px 38px 8px 12px;
+    outline-color: #87ceed;
+}
+
+.search-btn {
+    cursor: pointer;
+}
+
+.text-input-ggumteo.icon-right div > i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 0;
+    right: 12px;
+}
+
+.text-input-ggumteo.icon-right div .search-input {
+    width: 310px;
+    height: 42px;
+    padding-right: 40px;
+}
+
+/* 여기까지 */
+
 
 .section-search .content {
     position: relative;
@@ -483,4 +534,289 @@ a {
 
 .default-input-wishket.icon-right>input:focus {
     border-color: #00a878;
+}
+
+.section-search-media{
+    display: none;
+}
+
+.main-header {
+    height: 48px;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+}
+
+.main-header .container {
+    display: flex;
+    padding-left: 2px;
+    gap: 50px;
+}
+
+.sub-navigation {
+    position: relative;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.sub-navigation div {
+    padding: 12px 0;
+    height: 100%;
+    display: inline-block;
+    font-size: 17px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #424242;
+    font-weight: 600;
+}
+
+.sub-navigation div {
+    position: relative;
+    display: inline-block;
+}
+
+.sub-navigation div::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    transition: width 0.3s ease;
+}
+
+@media screen and (max-width: 430px) {
+    .gaia {
+        min-width: 100% !important;
+        height: auto !important;
+        min-height: 70% !important;
+        background-color: #f5f5f5;
+    }
+    .container {
+        width: 100% !important;
+    }
+
+    .search-header{
+        padding: 0 20px;
+    }
+
+    .section-search{
+        display: none;
+    }
+
+    .section-search-media{
+        display: block;
+        border: 1px solid #e5e6eb;
+        background-color: #fff;
+        border-radius: 16px;
+    }
+
+    .recruit-container-media{
+        position: relative;
+        width: auto;
+        
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+    .item-recruit{
+        position: relative;
+        margin: 0 20px;
+        padding: 16px 0;
+    }
+
+    .item-recruit > span[class*="badge"] +.tit {
+        width: 100%;
+    }
+
+    .tit {
+        overflow: hidden;
+        width: calc(100% - 27px);
+        color: #373f57;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 22px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .meta {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2px;
+        align-items: center;
+    }
+
+    .meta span {
+        color: #5c667b;
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .meta span+span:before {
+        display: inline-block;
+        margin: 0 4px;
+        content: '·';
+    }
+
+    .corp {
+        display: flex;
+        margin-top: 4px;
+        align-items: center;
+    }
+
+    .corp_name {
+        color: #373f57;
+        font-size: 14px;
+        line-height: 24px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .corp_thumb {
+        margin-left: 10px;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        display: inline-block;
+        flex-shrink: 0;
+    }
+
+    .size-s > img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        max-width: 100%;
+        width: auto;
+        max-height: 100%;
+        height: auto;
+        transform: translateY(-50%);
+        border-radius: 20px;
+    }
+    .applicant {
+        display: flex;
+        margin-top: 4px;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .date {
+        color: #8491a7;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .sri_btn_sm {
+        position: absolute;
+        top: 50px;
+        right: 12px;
+        margin-right: 10px;
+    }
+
+    .pagination-media{
+        font-size: 16px;
+        text-align: center;
+        padding: 15px 0 27px;
+    }
+
+    .pagination-media .page {
+        display: inline-block;
+        margin-left: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #ededed;
+        box-sizing: border-box;
+        color: #999;
+        font-size: 16px;
+        line-height: 30px;
+        vertical-align: middle;
+        background: #fff;
+    }
+
+    .pagination-media .page:first-child, .pagiNation .btnPrev+.page {
+        margin-left: 0;
+    }
+
+    .pagination-media .page.on {
+        border: 1px solid #4075ff;
+        color: #fff;
+        background: #4075ff;
+        margin-left: 0;
+    }
+
+    .pagination-media .btnPrev, .pagination-media .btnNext {
+
+        display: inline-block;
+        position: relative;
+        width: 40px;
+        height: 30px;
+        border: 1px solid #d8d8d8;
+        box-sizing: border-box;
+        line-height: 33px;
+        text-indent: -9999em;
+        vertical-align: middle;
+        background: #fdfdfd;
+        padding: 0;
+        border-radius: 0;
+        font-size: 14px;
+    }
+
+    .pagination-media .btnNext {
+        margin-left: 1px;
+    }
+
+    .hide, .blind {
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+        position: absolute;
+        width: 1px;
+        height: 1px;
+    }
+
+    .pagination-media .btnNext:after {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 17px;
+        width: 6px;
+        height: 11px;
+        background: url(/static/images/audition/bul_page_next.png) no-repeat 0 0;
+        /* background-size: 8px 8px; */
+        content: "";
+    }
+
+    .pagination-media .btnPrev:after{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 17px;
+        width: 6px;
+        height: 11px;
+        background: url(/static/images/audition/bul_page_prev.png) no-repeat 0 0;
+        /* background-size: 8px 8px; */
+        content: "";
+    }
+
+    .btnNext:after {
+        background-position: -6px -12px;
+    }
+
+    .main-header .container{
+        margin-left: 30px;
+    }
+
+    .text-input-ggumteo.icon-right div .search-input {
+        width: 194px;
+    }
+
 }
