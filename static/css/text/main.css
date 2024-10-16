@@ -119,12 +119,15 @@ a {
 }
 .card-thumbnail {
     margin-bottom: 24px;
+    width: 300px;
+    height: 300px;
+}
+.card-thumbnail img {
+    width: 100%;
 }
 .card-image {
-    border-radius: 12px;
     border: solid 1px #e0e0e0;
-    width: 246px;
-    height: 246px;
+    height: 300px;
     object-fit: cover;
 }
 .card-category {

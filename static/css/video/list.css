@@ -368,3 +368,46 @@ li:last-child > .page-link {
     border-radius: 13px;
     font-weight: 500;
 }
+
+@media (max-width: 430px) {
+    .main-header {
+        padding: 15px;
+    }
+    .main {
+        min-width: 430px;
+    }
+    .container {
+        width: 100%;
+    }
+    .box-group {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 286px;
+    }
+    .text-ggumteo {
+        color: #3ba3c7;
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 26px;
+        margin-left: 15px;
+    }
+    .title-2 {
+        font-size: 30px;
+        line-height: 48px;
+        font-weight: 400;
+        color: #212121;
+        margin-left: 13px;
+    }
+    .title-header {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .search-input {
+        margin-top: 20px;
+    }
+    .filter-box-group:first-child {
+        margin-left: 13px;
+    }
+}
