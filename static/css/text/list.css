@@ -209,20 +209,19 @@ a {
 .list-box-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
 }
 .box {
-    width: 246px;
+    width: 213px;
     margin-bottom: 16px;
     cursor: pointer;
 }
-.thumbnail-img {
-    background-image: url("/static/images/video/ex-image.jpg");
+.box:first-child {
+    margin-left: 15px;
 }
 .thumbnail {
-    border-radius: 8px;
-    width: 246px;
-    padding-bottom: 75%;
+    border: none;
+    width: 180px;
+    height: 246px;
     background-size: cover;
     background-position: center center;
 }
@@ -269,13 +268,13 @@ a {
 .portfolio-detail-seperator {
     width: 1px;
     height: 12px;
-    margin: 0 58px;
     background-color: #eee;
+    margin-left: 5px;
 }
 .partner-profile {
     width: 30px;
     height: 30px;
-    margin-right: 8px;
+    margin-left: 9px;
     border: solid 1px #e0e0e0;
     border-radius: 10px;
 }
@@ -284,6 +283,7 @@ a {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-right: 25px;
 }
 .filter-box:hover {
     border-color: #00a878;
@@ -347,7 +347,7 @@ li:last-child > .page-link {
 .content-meta-elem {
     display: inline-block;
     line-height: 20px;
-    margin-right: -100px !important;
+    margin-right: -42px !important;
     margin-top: 2px;
 }
 .box-group {
@@ -367,4 +367,7 @@ li:last-child > .page-link {
     line-height: 24px;
     border-radius: 13px;
     font-weight: 500;
+}
+.list-time {
+    margin-right: 39px;
 }

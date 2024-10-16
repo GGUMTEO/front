@@ -1,0 +1,465 @@
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 700;
+    src: url("/fonts/NotoSansKR-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 500;
+    src: url("/fonts/NotoSansKR-Medium.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 400;
+    src: url("/fonts/NotoSansKR-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 300;
+    src: url("/fonts/NotoSansKR-Light.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 100;
+    src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "NotoSansKR", Sans-serif;
+    line-height: 1rem;
+}
+
+body {
+    height: 100%;
+}
+.ggumteo-funding {
+    background-color: #fff;
+}
+.funding-detail-page {
+    min-width: 1080px;
+    height: auto;
+    min-height: 70%;
+}
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+.ggumteo-funding-wrapper {
+    padding: 36px 0 80px;
+    display: flex;
+    gap: 32px;
+}
+.left-side {
+    width: 736px;
+}
+.header {
+    padding-bottom: 24px;
+    border-bottom: solid 1px #e0e0e0;
+}
+.header-title {
+    color: #212121;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+}
+.funding-category {
+    color: #7e7e7e;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.report {
+    display: flex;
+    width: 87px;
+    height: 28px;
+    padding: 4px 9px;
+    margin-left: 16px;
+    border-radius: 4px;
+    border: solid 1px #e0e0e0;
+}
+.report-img img {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+.report-div {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #757575;
+}
+.btn {
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+}
+button {
+    background: none;
+}
+.copy-img {
+    margin: 3px 4px 3px 0;
+}
+.header-subtitle {
+    display: flex;
+    margin-top: 8px;
+    gap: 8px;
+    align-items: center;
+}
+
+.header-subtitle-content {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #008000;
+}
+.funding-content-wrapper {
+    width: 100%;
+    padding-top: 24px;
+}
+.content-title {
+    color: #424242;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.funding-content {
+    color: #424242;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    border-bottom: solid 1px #e0e0e0;
+    padding-bottom: 30px;
+}
+.funding-img {
+    margin-top: 32px;
+}
+.funding-img img {
+    width: 726px;
+    border-radius: 8px;
+}
+.funding-img-content {
+    color: #424242;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #e0e0e0;
+}
+.right-side {
+    float: left;
+    border-radius: 0 4px 4px 0;
+    width: 312px;
+}
+.right-side-wrapper {
+    position: sticky;
+    top: 52px;
+}
+.funding-box {
+    padding: 24px 24px 24px 27px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px 0 rgba(230, 235, 240, 0.8);
+    border: solid 1px #e6ebf0;
+    background-color: #fff;
+}
+.funding-box-title {
+    color: #424242;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+.process-subject {
+    display: flex;
+    align-items: center;
+    color: #00a878;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+}
+.process-subject-icon {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: solid 2px #00a878;
+    margin-right: 16px;
+}
+.process-content {
+    display: flex;
+}
+.process-bar {
+    width: 2px;
+    border-radius: 1px;
+    margin-left: 3px;
+    background-color: #e6ebf0;
+}
+.process-content-detail {
+    padding: 8px 0 24px 19px;
+}
+.funding-intro {
+    color: #424242;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.funding-intro-detail {
+    display: flex;
+    align-items: flex-start;
+}
+.funding-start-date {
+    color: #757575;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+.start-date {
+    margin-left: 5px;
+}
+.funding-investor {
+    color: #424242;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.funding-end-date {
+    color: #757575;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+.funding-money {
+    color: #424242;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.funding-today-money {
+    color: #757575;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.funding-persent-div {
+    font-weight: 500;
+    margin-top: 10px;
+    color: #008000;
+}
+.funding-writer {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+.profile-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.profile-name {
+    color: #424242;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.writer-email {
+    color: #424242;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+.write-intro {
+    color: #424242;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+.funding-product-container {
+    margin-top: 30px;
+    max-height: 400px; /* 필요한 높이로 설정 */
+    overflow-y: auto; /* 콘텐츠가 넘칠 때 세로 스크롤 활성화 */
+}
+.funding-product {
+    padding: 20px 24px 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px 0 rgba(230, 235, 240, 0.8);
+    border: solid 1px #e6ebf0;
+    background-color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.funding-product:hover {
+    background-color: #f0f8ff;
+}
+.product-header-title {
+    color: #424242;
+    display: flex;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+a {
+    text-decoration: none;
+}
+.product-info {
+    display: flex;
+    position: relative;
+}
+.product-name {
+    color: #00a878;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+.product-number {
+    color: #424242;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+.number {
+    color: #ff0000;
+}
+.product-price {
+    margin-bottom: 8px;
+}
+.more-info-box {
+    border-top: solid 1px #e0e0e0;
+    padding-top: 32px;
+}
+.similar-header-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.same-category-funding-list {
+    color: #00a878;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+.content-list {
+    margin-bottom: 8px;
+}
+.similar-link {
+    float: left;
+}
+.link-box {
+    display: inline-block;
+    border-radius: 8px;
+    height: 196px;
+    background-color: #fff;
+}
+.img-box {
+    width: 200px;
+    height: 200px;
+    margin-right: 16px;
+}
+.similar-thumbnail-image {
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+.similar-thumbnail-title {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    width: 160px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 20px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 60px;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    z-index: 10;
+}
+.modal-content textarea {
+    height: 218px;
+    resize: none;
+}
+body.modal-open {
+    overflow: hidden;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.report-submit {
+    cursor: pointer;
+    float: right;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: lightpink;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: border-color 0.3s ease;
+    resize: none; /* 크기 조절 기능 비활성화 */
+}
+
+textarea:focus {
+    outline: none;
+}

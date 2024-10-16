@@ -215,12 +215,12 @@ a {
     cursor: pointer;
 }
 .thumbnail-img {
-    background-image: url("/static/images/video/ex-image.jpg");
+    width: 100%;
 }
 .thumbnail {
-    border-radius: 8px;
+    border: none;
     width: 246px;
-    padding-bottom: 75%;
+    height: 180px;
     background-size: cover;
     background-position: center center;
 }
