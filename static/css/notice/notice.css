@@ -26,7 +26,7 @@
 .content-header {
     margin-bottom: 5px;
  }
- .content-header {
+.content-header {
     padding: 30px;
  }
  .content-header {
@@ -44,7 +44,7 @@
  }
  body {
     margin: 0;
-    font-family: "Nanum Gothic", "Apple SD Gothic Neo" "맑은 고딕", "Malgun Gothic" "AppleGothic", "돋움" ,Dotum, Helvetica, Arial, sans-serif;
+    font-family: "NotoSansKR";
     font-size: 14px;
     line-height: 1.428571429;
     color: #555;
