@@ -36,7 +36,7 @@ subMenus.forEach((subMenu, index) => {
 });
 
 // 정보 버튼 클릭 시 정보 박스 표시/숨김
-const infoButton = document.querySelector(".ProjectInfo_infoButton");
+const infoButton = document.querySelector(".admin-info-button");
 
 infoButton.addEventListener("click", () => {
     const isExpanded = infoButton.getAttribute("aria-expanded") === "true";
