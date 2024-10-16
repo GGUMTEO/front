@@ -1659,8 +1659,10 @@ p {
 
 /* 미디어 쿼리 시작 */
 @media (max-width: 430px) {
-   
+    
+    
     body {
+       
         overflow-x: hidden !important;
         margin: 0;
         padding: 0;
@@ -1678,8 +1680,8 @@ p {
 
     .container {
         width: 100% !important;
-        padding: 0 15px !important; /* 양쪽 여백 추가 */
-        margin: 0 auto !important;
+        padding: 0 0px !important; /* 양쪽 여백 추가 */
+        margin: 35px auto !important;
     }
 
     .pc-sidebar {
