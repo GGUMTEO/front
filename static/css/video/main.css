@@ -484,3 +484,177 @@ button {
     font-size: 13px;
     line-height: 20px;
 }
+
+@media (max-width: 430px) {
+    .main-header {
+        padding-left: 13px;
+    }
+    .ggumteo-content {
+        margin-left: 24px;
+    }
+    .layout {
+        min-height: 480px;
+    }
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .items {
+        padding: 32px 24px 0 24px;
+    }
+    .items .main-card {
+        display: inline-block;
+        width: 405px;
+        vertical-align: top;
+        padding-right: 0px;
+    }
+    .card-thumbnail {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .card-image {
+        border-radius: 12px;
+        border: solid 1px #e0e0e0;
+        width: 95%;
+        height: 214px;
+        object-fit: cover;
+    }
+    .link-text {
+        font-size: 17px;
+    }
+    .card-category {
+        font-size: 12px;
+    }
+    .recent-category {
+        font-size: 12px;
+    }
+    .popular-work-time {
+        display: inline-block;
+        line-height: 20px;
+        margin-right: 8px;
+        color: #424242;
+        font-size: 11px;
+    }
+    .star-box img {
+        margin-left: 17px;
+    }
+    .review-score {
+        color: #424242;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .card-title {
+        font-size: 17px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 32px;
+        letter-spacing: normal;
+        margin-bottom: 8px;
+    }
+    .meta-icon {
+        width: 14px;
+        height: 14px;
+        margin-right: 4px !important;
+    }
+    .content-meta {
+        width: 100%;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .card-description {
+        margin: 12px 30px 16px 0px;
+        font-size: 10px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.54;
+        letter-spacing: normal;
+        color: #757575;
+    }
+    .review-box {
+        margin-left: 290px;
+    }
+    .author-image {
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+        border: solid 1px #e0e0e0;
+        border-radius: 10px;
+    }
+    .author-name {
+        font-size: 13px;
+    }
+    .sub-list {
+        margin-top: 50px;
+    }
+    .items .sub-list {
+        padding-left: 10px;
+        width: 375px;
+        border-left: 1px solid #eee;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .guide-section {
+        margin-left: 22px;
+        width: 89%;
+        background-color: #fafafa;
+        padding: 12px 25px;
+    }
+    .guide-main-contents {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .funding-guide-img {
+        width: 90px;
+        height: 60px;
+    }
+    .funding-guide {
+        word-break: keep-all;
+        width: 200px;
+        margin-top: 19px;
+        font-size: 18px;
+        line-height: 1.56;
+        margin-left: 0px;
+    }
+    .funding-guide p {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1.56;
+    }
+    .funding-button-box button {
+        width: 334px;
+        cursor: pointer;
+        padding: 11px 24px;
+        border-radius: 8px;
+        background-color: #6b16ee;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        height: 48px;
+    }
+    .main-list-title {
+        margin-left: 28px;
+    }
+    .popular-funding-list:first-child {
+        margin-left: 30px;
+    }
+    .thumbnail-image {
+        width: 117%;
+        height: 180px;
+        border-radius: 12px;
+        object-fit: cover;
+        border: 1px solid #e0e0e0;
+    }
+    .item-main-h3 .item-title {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .main-list .main-list-row .list-item-link + .list-item-link {
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+}

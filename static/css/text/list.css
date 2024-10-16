@@ -91,6 +91,11 @@ a {
     font-weight: 400;
     margin-bottom: 10px;
     color: #9e9e9e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+    margin-right: 36px;
 }
 .sub-navigation div::after {
     content: "";
