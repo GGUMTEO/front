@@ -1757,5 +1757,16 @@ p {
         line-height: 28px !important;
         font-weight: 500 !important;
     }
+    .time{
+        margin-top: 0px;
+        height: 15px;
+        width: 15px;
+    }
+    .container.mypage .main-content-container .products-list .products-author-box{
+        width: 363px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    }
    
 }
