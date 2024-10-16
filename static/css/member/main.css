@@ -1642,7 +1642,35 @@ p {
 .hidden {
     display: none;
 }
-
+.pagination3{
+    display: none;
+    text-align: center;
+    line-height: 40px;
+}
+.pagination3 a.page {
+    margin: 0 5px 0 0;
+    padding: 3px 8px;
+    min-width: 32px;
+    height: 32px;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 14px;
+    line-height: 30px;
+    vertical-align: middle;
+    background: #fff;
+}
+.pagination3 span.page {
+    padding: 3px 8px;
+    
+    line-height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #444;
+    color: #444;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle;
+}
 
 
 
@@ -1768,5 +1796,162 @@ p {
     align-items: center;
     margin-top: 8px;
     }
-   
+    .size-l {
+        width: 80px;
+    }
+    .trueorfalse {
+        width: 192px;
+        margin-left: -17px;
+    }
+    #replybackornext {
+        display: none !important;
+        margin-bottom: -220px;
+        margin-top: -40px;
+        padding-left: 288px;
+    }
+    .btn-group.choice-group {
+        display: none;
+    }
+    .switch, .no-send{
+        display: inline-block !important;
+    }
+    .switch {
+        right: 135px;
+        bottom: 18px;
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        vertical-align:middle;
+      }
+      
+      /* Hide default HTML checkbox */
+      .switch input {display:none;}
+      
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+      
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      
+      p {
+          margin:0px;
+          display:inline-block;
+          font-size:15px;
+          font-weight:bold;
+      }
+      .star-box img{
+        height: 13px;
+        width: 13px;
+        margin-right: 0px;
+        margin-top: 0px;
+        display: flex;
+        gap: 2px;
+        align-items: center;
+    }
+    .comment {
+        font-size: 14px;
+        line-height: 1.71;
+        resize: none;
+        border: none;
+        color: #424242;
+        word-break: break-word;
+        padding: 0px 12px 0px 12px;
+        margin: 8px 0px 2px 0px;
+        overflow: auto;
+        width: 330px;
+        height: 125px;
+        outline: #757575;
+        white-space: normal;
+    }
+    .pagination2{
+        display: none !important;
+    }
+    
+    .setting-tr-group {
+        width: 100%;}
+    
+    .pagination{
+        display: none !important;
+    }    
+    .item_recruit {
+        padding: 0px 0px 0px;
+        border-top: 1px solid #e6e6e6;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .section_search > .header {
+        position: relative;
+        padding: 13px 0px 0;
+        height: 60px;
+        border-bottom: 1px solid #d6d6d6;
+        box-sizing: border-box;
+    }
+    .size-m {
+        width: 186px;
+    }
+    #my-audition-content .content-container .main-content{
+        margin: 0 -30px !important;
+    }
+    #my-review-content .section_search {
+        width: auto;
+        padding-left: 5px;
+        border: 1px solid #e5e6eb;
+        font-size: 13px;
+        background: #fff;
+        border-radius: 16px;
+    }
+
+
+    .section_search {
+        width: 419px;
+        padding-left: 5px;
+        border: 1px solid #e5e6eb;
+        font-size: 13px;
+        background: #fff;
+        border-radius: 16px;
+    }
 }
