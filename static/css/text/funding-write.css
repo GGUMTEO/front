@@ -573,11 +573,6 @@ button {
     font-size: 16px;
     line-height: 26px;
 }
-.body-1-medium {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-}
 .img-add img {
     position: relative;
     top: 2px;
@@ -773,4 +768,199 @@ img {
     margin-left: 142px;
     color: #212121;
     font-weight: 500;
+}
+.info-text {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #616161;
+    font-weight: 400;
+    background: #fff;
+    width: 100%;
+    padding: 12px 12px 8px 12px;
+    margin-bottom: 24px;
+    outline: none;
+}
+.info-text-content {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+.hope-text {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #616161;
+    font-weight: 400;
+    background: #fff;
+    width: 100%;
+    padding: 12px 12px 8px 12px;
+    margin-bottom: 24px;
+    outline: none;
+}
+.hope-text-content {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+.hope-money-text {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #616161;
+    font-weight: 400;
+    background: #fff;
+    width: 100%;
+    padding: 12px 12px 8px 12px;
+    margin-bottom: 24px;
+    outline: none;
+}
+.hope-money-text-content {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+.product-container {
+    padding: 20px 24px 24px 24px;
+    border-radius: 8px;
+    background-color: #f7fafc;
+    margin-bottom: 48px;
+    position: relative;
+}
+.product-title-content {
+    color: #616161;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.product-img {
+    width: 26px;
+    position: absolute;
+}
+.product-add {
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px 0 rgba(230, 235, 240, 0.8);
+    border: solid 1px #e6ebf0;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+.add-box {
+    padding: 30px 100px;
+    border-radius: 4px;
+    border: dashed 2px #e0e0e0;
+}
+.product-name {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+.product-name-input {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #616161;
+    font-weight: 400;
+    background: #fff;
+    width: 100%;
+    padding: 12px 12px 8px 12px;
+    margin-bottom: 24px;
+    outline: none;
+}
+.product-price {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+.product-price-input {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #616161;
+    font-weight: 400;
+    background: #fff;
+    width: 100%;
+    padding: 12px 12px 8px 12px;
+    margin-bottom: 24px;
+    outline: none;
+}
+.product-quantity {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+.product-quantity-input {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #616161;
+    font-weight: 400;
+    background: #fff;
+    width: 100%;
+    padding: 12px 12px 8px 12px;
+    margin-bottom: 24px;
+    outline: none;
+}
+.product-div-add {
+    margin-top: 16px;
+    color: #3ba3c7;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+.product-div-add img {
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+}
+.product-cancel {
+    position: relative;
+    display: none;
+}
+.product-cancel img {
+    position: absolute;
+    transform: translate(441px, 4px);
+    width: 22px;
+}
+
+.product-cancel-btn {
+    float: right;
+    cursor: pointer;
+    color: #3ba3c7;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+input {
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+input:hover {
+    border-color: #00a878;
 }

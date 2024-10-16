@@ -769,3 +769,11 @@ img {
     color: #212121;
     font-weight: 500;
 }
+input {
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+input:hover {
+    border-color: #2099bb;
+}

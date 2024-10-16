@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>펀딩글수정</title>
-        <link rel="stylesheet" href="/static/css/video/funding-modify.css" />
+        <title>작품올리기</title>
+        <link rel="stylesheet" href="/static/css/text/write.css" />
     </head>
     <body>
         <header></header>
@@ -17,11 +17,11 @@
                             <form action="" id="write-form">
                                 <div class="write-add-view">
                                     <div class="subtitle-1 write-add-title">
-                                        펀딩글 수정하기
+                                        내 작품올리기
                                     </div>
                                     <div class="write-add-content-box">
                                         <div class="write-title">
-                                            펀딩글 제목 수정
+                                            작품제목
                                             <span class="star">*</span>
                                         </div>
                                         <div class="write-name write-detail">
@@ -44,12 +44,12 @@
                                             >
                                         </div>
                                         <div class="input-guide-helpertext">
-                                            펀딩 목록에 가장먼저 보이는
+                                            작품 목록에 가장먼저 보이는
                                             제목입니다
                                         </div>
                                         <div class="detail-box-wrapper">
                                             <div class="write-category">
-                                                펀딩 장르 변경
+                                                작품장르
                                                 <span class="star">*</span>
                                             </div>
                                             <div class="work-detail">
@@ -170,7 +170,7 @@
                                             class="write-description-box write-detail"
                                         >
                                             <div class="write-content">
-                                                펀딩글 설명 수정
+                                                작품설명
                                                 <span class="star">*</span>
                                             </div>
                                             <input
@@ -195,42 +195,6 @@
                                                 >
                                             </div>
                                         </div>
-                                        <div class="info-text-content">
-                                            펀딩 소개글 수정
-                                            <span class="star">*</span>
-                                        </div>
-                                        <div class="funding-info-text">
-                                            <input
-                                                type="text"
-                                                class="info-text"
-                                                name="funding-info"
-                                                placeholder="펀딩상세페이지 우측에 들어가는 소개글입니다."
-                                            />
-                                        </div>
-                                        <div class="hope-text-content">
-                                            원하는 투자자수 수정
-                                            <span class="star">*</span>
-                                        </div>
-                                        <div class="funding-hope-text">
-                                            <input
-                                                type="text"
-                                                class="hope-text"
-                                                name="hope-people"
-                                                placeholder="ex) 10명"
-                                            />
-                                        </div>
-                                        <div class="hope-money-text-content">
-                                            목표금액 수정
-                                            <span class="star">*</span>
-                                        </div>
-                                        <div class="funding-hope-money-text">
-                                            <input
-                                                type="text"
-                                                class="hope-text"
-                                                name="hope-people"
-                                                placeholder="ex) 1,000,000원"
-                                            />
-                                        </div>
                                         <div class="work-img-box">
                                             <div class="title-img-box">
                                                 <img
@@ -238,8 +202,8 @@
                                                     class="title-img"
                                                 />
                                                 <span class="title-text">
-                                                    사진, 영상을 올려 결과물에
-                                                    더욱 신뢰감을 줄 수
+                                                    작품의 사진, 영상을 올려
+                                                    결과물에 더욱 신뢰감을 줄 수
                                                     있습니다.
                                                 </span>
                                             </div>
@@ -281,14 +245,15 @@
                                                                 <div
                                                                     class="img-box-title"
                                                                 >
-                                                                    영상, 이미지
-                                                                    등록
+                                                                    작품 영상,
+                                                                    이미지 등록
                                                                 </div>
                                                                 <div
                                                                     class="img-box-text"
                                                                 >
-                                                                    결과물 혹은
-                                                                    설명을 돕는
+                                                                    작품 결과물
+                                                                    혹은 설명을
+                                                                    돕는
                                                                     이미지를
                                                                     선택해
                                                                     주세요.
@@ -340,87 +305,19 @@
                                                 <img
                                                     src="https://www.wishket.com/static/renewal/img/partner/profile/btn_icon_add.png"
                                                 />
-                                                추가
-                                            </div>
-                                        </div>
-                                        <!-- 상품추가 -->
-                                        <div class="product-container">
-                                            <div class="product-title-content">
-                                                <img
-                                                    src="/static/images/video/money-icon.png"
-                                                    class="product-img"
-                                                />
-                                                <span class="title-text">
-                                                    가격별 상품을 수정해보세요.
-                                                </span>
-                                            </div>
-                                            <div class="product-add">
-                                                <div class="add-box">
-                                                    <div class="product-name">
-                                                        상품명
-                                                        <span class="star"
-                                                            >*</span
-                                                        >
-                                                    </div>
-                                                    <input
-                                                        type="text"
-                                                        class="product-name-input"
-                                                        placeholder="등록할 상품명을 입력해주세요."
-                                                    />
-                                                    <div class="product-price">
-                                                        상품가격
-                                                        <span class="star"
-                                                            >*</span
-                                                        >
-                                                    </div>
-                                                    <input
-                                                        type="text"
-                                                        class="product-price-input"
-                                                        placeholder="등록할 상품가격을 입력해주세요."
-                                                    />
-                                                    <div
-                                                        class="product-quantity"
-                                                    >
-                                                        상품수량
-                                                        <span class="star"
-                                                            >*</span
-                                                        >
-                                                    </div>
-                                                    <input
-                                                        type="text"
-                                                        class="product-quantity-input"
-                                                        placeholder="등록할 상품수량을 입력해주세요."
-                                                    />
-                                                    <div class="product-cancel">
-                                                        <img
-                                                            src="/static/images/video/cancel.png"
-                                                        />
-                                                        <button
-                                                            class="product-cancel-btn"
-                                                            type="button"
-                                                        >
-                                                            취소
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="product-div-add">
-                                                <img
-                                                    src="https://www.wishket.com/static/renewal/img/partner/profile/btn_icon_add.png"
-                                                />
-                                                추가
+                                                작품 추가
                                             </div>
                                         </div>
                                         <!-- 썸내일추가 -->
                                         <div class="thumbnail-box">
                                             <div class="work-name">
-                                                펀딩글 표지 수정
+                                                작품글 표지
                                                 <span class="star">*</span>
                                             </div>
                                             <div class="work-name-content">
-                                                펀딩글 표지는 펀딩목록에 처음
+                                                작품글 표지는 작품목록에 처음
                                                 보이는 사진으로 더욱 돋보이고
-                                                눈길이 가게 표지를 등록해보세요!
+                                                눈길이 가게 작품을 등록해보세요!
                                             </div>
                                             <div class="thumbnail-content-box">
                                                 <div class="left-box">
@@ -437,14 +334,14 @@
                                                         type="button"
                                                         onclick="document.getElementById('thumbnail-upload').click()"
                                                     >
-                                                        펀딩 표지 수정
+                                                        작품 표지 등록
                                                     </button>
                                                     <p class="input_guide">
-                                                        펀딩 표지 규격: 246px
-                                                        180px
+                                                        작품 표지 규격: 246px
+                                                        246px
                                                     </p>
                                                     <div class="help-text">
-                                                        펀딩 표지를 등록하지
+                                                        작품 표지를 등록하지
                                                         않으면<br />
                                                         꿈터에서 제공하는
                                                         기본이미지가 적용됩니다
@@ -476,17 +373,17 @@
                                                             <div
                                                                 class="work-thumbnail-title"
                                                             >
-                                                                펀딩 제목 샘플
+                                                                작품 제목 샘플
                                                             </div>
                                                             <div
                                                                 class="work-category"
                                                             >
-                                                                펀딩 장르
+                                                                작품 장르
                                                             </div>
                                                             <div
                                                                 class="work-content"
                                                             >
-                                                                펀딩의 간단한
+                                                                작품의 간단한
                                                                 요약
                                                             </div>
                                                             <div
@@ -516,7 +413,7 @@
                                             class="btn btn-submit"
                                             type="submit"
                                         >
-                                            수정
+                                            등록
                                         </button>
                                     </div>
                                 </div>
@@ -529,5 +426,5 @@
         </main>
         <footer></footer>
     </body>
-    <script src="/static/js/video/funding-modify.js"></script>
+    <script src="/static/js/text/write.js"></script>
 </html>

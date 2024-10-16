@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>작품올리기</title>
-        <link rel="stylesheet" href="/static/css/scenario/write.css" />
+        <title>올린작품수정</title>
+        <link rel="stylesheet" href="/static/css/text/modify.css" />
     </head>
     <body>
         <header></header>
@@ -17,11 +17,11 @@
                             <form action="" id="write-form">
                                 <div class="write-add-view">
                                     <div class="subtitle-1 write-add-title">
-                                        내 작품올리기
+                                        내 작품 수정
                                     </div>
                                     <div class="write-add-content-box">
                                         <div class="write-title">
-                                            작품제목
+                                            작품제목수정
                                             <span class="star">*</span>
                                         </div>
                                         <div class="write-name write-detail">
@@ -49,7 +49,7 @@
                                         </div>
                                         <div class="detail-box-wrapper">
                                             <div class="write-category">
-                                                작품장르
+                                                작품장르변경
                                                 <span class="star">*</span>
                                             </div>
                                             <div class="work-detail">
@@ -170,7 +170,7 @@
                                             class="write-description-box write-detail"
                                         >
                                             <div class="write-content">
-                                                작품설명
+                                                작품설명수정
                                                 <span class="star">*</span>
                                             </div>
                                             <input
@@ -202,9 +202,8 @@
                                                     class="title-img"
                                                 />
                                                 <span class="title-text">
-                                                    작품의 사진, 영상을 올려
-                                                    결과물에 더욱 신뢰감을 줄 수
-                                                    있습니다.
+                                                    올린 작품의 사진, 영상
+                                                    수정하기
                                                 </span>
                                             </div>
                                             <div id="img-box-container">
@@ -240,6 +239,10 @@
                                                                 <video
                                                                     id="video-preview"
                                                                     class="video-tag"
+                                                                    style="
+                                                                        display: none;
+                                                                        width: 100%;
+                                                                    "
                                                                     controls
                                                                 ></video>
                                                                 <div
@@ -311,7 +314,7 @@
                                         <!-- 썸내일추가 -->
                                         <div class="thumbnail-box">
                                             <div class="work-name">
-                                                작품글 표지
+                                                작품글 표지 변경
                                                 <span class="star">*</span>
                                             </div>
                                             <div class="work-name-content">
@@ -334,11 +337,11 @@
                                                         type="button"
                                                         onclick="document.getElementById('thumbnail-upload').click()"
                                                     >
-                                                        작품 표지 등록
+                                                        작품 표지 수정
                                                     </button>
                                                     <p class="input_guide">
-                                                        작품 표지 규격: 480px
-                                                        480px
+                                                        작품 표지 규격: 246px
+                                                        246px
                                                     </p>
                                                     <div class="help-text">
                                                         작품 표지를 등록하지
@@ -413,7 +416,7 @@
                                             class="btn btn-submit"
                                             type="submit"
                                         >
-                                            등록
+                                            수정
                                         </button>
                                     </div>
                                 </div>
@@ -426,5 +429,5 @@
         </main>
         <footer></footer>
     </body>
-    <script src="/static/js/scenario/write.js"></script>
+    <script src="/static/js/text/modify.js"></script>
 </html>
