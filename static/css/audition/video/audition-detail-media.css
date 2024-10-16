@@ -1,0 +1,32 @@
+@media screen and (max-width: 430px) {
+    .gaia {
+        min-width: 100px !important;
+        height: auto !important;
+        min-height: 70% !important;
+        background-color: #f5f5f5;
+    }
+
+    .container {
+        width: 100% !important;
+    }
+
+    .detail-content-layer{
+        padding: 24px !important;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    
+    .detail-content-title {
+        padding-bottom: 12px;
+    }
+
+    .layer-divider {
+        border: none;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .detail-status-label {
+        position: relative;
+    }
+    /* 더 작은 해상도에서 필요한 스타일 추가 */
+}

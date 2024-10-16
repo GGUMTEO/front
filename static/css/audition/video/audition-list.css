@@ -24,6 +24,20 @@
     src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
 }
 
+@media screen and (max-width: 1290px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .item-recruit .area-job {
+        width: 100%;
+        font-size: 14px;
+    }
+    /* 필요한 다른 스타일 수정 */
+}
+
+
+
 body {
     height: 100%;
     background-color: #f5f5f5;
