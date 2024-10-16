@@ -38,7 +38,7 @@ html {
 }
 .container {
     width: 1080px;
-    margin: 0 20px;
+    margin: 0 auto;
 }
 .fold.sidebar-menu {
     justify-content: space-between;
@@ -1080,7 +1080,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 .reply{
    
     padding-bottom: 200px;
-    padding-left: 41px;
+    padding-left: 10px;
 }
 .pagination2 {
     display: block !important;
