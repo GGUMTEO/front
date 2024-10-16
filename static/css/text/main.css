@@ -123,8 +123,8 @@ a {
 .card-image {
     border-radius: 12px;
     border: solid 1px #e0e0e0;
-    width: 580px;
-    height: 277px;
+    width: 246px;
+    height: 246px;
     object-fit: cover;
 }
 .card-category {
@@ -210,7 +210,7 @@ a {
     display: inline-block;
     line-height: 20px;
     margin-right: 8px;
-    color: #0059ff;
+    color: #00a878;
     font-size: 17px;
     font-weight: 600;
 }

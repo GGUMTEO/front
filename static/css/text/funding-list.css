@@ -85,13 +85,7 @@ a {
     position: relative;
     display: inline-block;
 }
-.content {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    color: #9e9e9e;
-}
+
 .sub-navigation div::after {
     content: "";
     position: absolute;
@@ -118,16 +112,20 @@ a {
     margin-bottom: 40px;
 }
 .text-ggumteo {
-    color: #3ba3c7;
-    margin-bottom: 8px;
+    color: #00a878;
     font-weight: 700;
     font-size: 16px;
     line-height: 26px;
+    margin-bottom: 8px;
 }
+
 .title-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.upload-time {
+    color: #212121;
 }
 .title-2,
 .title-2-bold,
@@ -162,7 +160,7 @@ a {
     width: 100%;
     height: inherit;
     padding: 8px 38px 8px 12px;
-    outline-color: #87ceed;
+    outline-color: #00a878;
 }
 .search-btn {
     cursor: pointer;
@@ -212,17 +210,14 @@ a {
     gap: 32px;
 }
 .box {
-    width: 246px;
+    width: 216px;
     margin-bottom: 16px;
     cursor: pointer;
 }
-.thumbnail-img {
-    width: 100%;
-}
 .thumbnail {
     border: none;
-    width: 246px;
-    height: 180px;
+    width: 200px;
+    height: 246px;
     background-size: cover;
     background-position: center center;
 }
@@ -239,10 +234,6 @@ a {
 .detail {
     display: flex;
     align-items: center;
-    color: #9e9e9e;
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -250,26 +241,22 @@ a {
     justify-content: space-between;
     color: #9e9e9e;
 }
-.review-box {
+
+.funding-box {
     display: flex;
     align-items: center;
+    width: 200px;
 }
-.star-box {
-    margin-right: 8px;
-    display: flex;
-    gap: 2px;
-    align-items: center;
-}
-.review-score {
-    color: #424242;
-    font-weight: 500;
-    font-size: 13px;
+.funding-score {
+    color: #00a878;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 20px;
 }
-.portfolio-detail-seperator {
+.detail-seperator {
     width: 1px;
     height: 12px;
-    margin: 0 58px;
+    margin: 0 -20px;
     background-color: #eee;
 }
 .partner-profile {
@@ -279,14 +266,14 @@ a {
     border: solid 1px #e0e0e0;
     border-radius: 10px;
 }
-.name-box {
+.partner-name-box {
     max-width: 180px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 .filter-box:hover {
-    border-color: #87ceed;
+    border-color: #00a878;
 }
 .pagination-box {
     display: flex;
@@ -336,20 +323,28 @@ li:last-child > .page-link {
 }
 /* 페이지 이동시 페이지 번호에 생기는 스타일 */
 .active {
-    color: #3ba3c7;
+    color: #00a878;
     border-color: #bdbdbd;
     border-radius: 2px;
 }
 .content-meta-elem.meta-icon {
     width: 16px;
     height: 16px;
+    margin-right: -100px !important;
+    margin-top: 2px;
 }
 .content-meta-elem {
     display: inline-block;
     line-height: 20px;
-    margin-right: -100px !important;
-    margin-top: 2px;
 }
+.content {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #9e9e9e;
+}
+
 .box-group {
     display: inline-block;
     margin-left: 605px;
@@ -360,7 +355,7 @@ li:last-child > .page-link {
     cursor: pointer;
     height: 36px;
     padding: 5px 12px;
-    border: solid 1px #3ba3c7;
+    border: solid 1px #00a878;
     background-color: #fff;
     color: #616161;
     font-size: 15px;
