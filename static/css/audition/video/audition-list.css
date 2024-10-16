@@ -84,6 +84,8 @@ body {
 }
 
 .container .search-header .page-title {
+    font-size: 24px;
+    line-height: 36px;
     display: inline-block;
 }
 
@@ -497,4 +499,13 @@ a {
 
 .default-input-wishket.icon-right>input:focus {
     border-color: #3ba3c7;
+}
+
+@media screen and (max-width: 430px) {
+    .gaia {
+        min-width: 100% !important;
+        height: auto !important;
+        min-height: 70% !important;
+        background-color: #f5f5f5;
+    }
 }
