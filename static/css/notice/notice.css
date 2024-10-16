@@ -26,7 +26,7 @@
 .content-header {
     margin-bottom: 5px;
  }
- .content-header {
+.content-header {
     padding: 30px;
  }
  .content-header {
@@ -44,19 +44,109 @@
  }
  body {
     margin: 0;
-    font-family: "Nanum Gothic", "Apple SD Gothic Neo" "맑은 고딕", "Malgun Gothic" "AppleGothic", "돋움" ,Dotum, Helvetica, Arial, sans-serif;
+    font-family: "NotoSansKR";
     font-size: 14px;
     line-height: 1.428571429;
     color: #555;
     background-color: #f5f5f5; 
 }
-.content-inner
+.content-inner{
 
   padding: 30px;
-
+}
 .content-inner {
     background-color: #fff;
   }
 .tab-content>.active {
     display: block;
 }
+.content-header .header-text {
+  margin: 0;
+}
+
+h3{
+  line-height: 1.1;
+}
+
+.news-center {
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+.news-center-search-box-container {
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+.news-center {
+float: right;
+}
+
+.news-center-search-box-container {
+float: right;
+}
+
+.news-center-search-box {
+float: right;
+}
+
+.news-center{
+height: 26px;
+margin-right: 6px;
+border:1px solid #dedede;
+} 
+
+.news-center-search-box-container{
+height: 26px;
+margin-right: 6px;
+border:1px solid #dedede;
+} 
+.news-center-search-box {
+height: 26px;
+margin-right: 6px;
+border:1px solid #dedede;
+} 
+.news-center-search{
+height: 26px;
+margin-right: 6px;
+border:1px solid #dedede;
+} 
+input {
+line-height: normal; 
+} 
+
+.news-center {
+padding: 5px 10px;
+background-color: #2099bb;
+border: solid 1px #1c87a5;
+font-size: 12px;
+font-weight: bold;
+color: #fff
+} 
+
+.news-center-search-box-container {
+padding: 5px 10px;
+background-color: #2099bb;
+border: solid 1px #1c87a5;
+font-size: 12px;
+font-weight: bold;
+color: #fff
+} 
+
+.news-center-search-box {
+padding: 5px 10px;
+background-color: #2099bb;
+border: solid 1px #1c87a5;
+font-size: 12px;
+font-weight: bold;
+color: #fff
+} 
+
+.news-center-search-add-on {
+padding: 5px 10px;
+background-color: #2099bb;
+border: solid 1px #1c87a5;
+font-size: 12px;
+font-weight: bold;
+color: #fff
+} 
