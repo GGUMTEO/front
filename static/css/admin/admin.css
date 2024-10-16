@@ -17,25 +17,20 @@ body {
     box-sizing: border-box;
 }
 
-#root,
 body {
     height: 100%;
     overflow: auto;
 }
 
-#root,
 body,
 html {
     margin: 0;
     padding: 0;
 }
 
-button:not(:disabled) {
-    cursor: pointer;
-}
-
 button {
     color: inherit;
+    cursor: pointer;
 }
 
 button,
@@ -216,28 +211,10 @@ video {
     color: #868e96;
 }
 
-.admin-page-state-box {
-    display: flex;
-    flex-wrap: wrap;
-    grid-gap: 4px;
-    gap: 4px;
-}
-
-.admin-page-state-box .admin-page-state {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.5;
-    border-radius: 4px;
-    background-color: #f2f4f6;
-    padding: 1px 6px;
-    color: #495057;
-}
-
 .header-nav {
     display: flex;
     flex: 1 1;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .header-nav-right-box {
@@ -274,15 +251,6 @@ video {
     font-weight: 700;
     line-height: 1.5;
     color: #00c4c4;
-}
-
-.admin-info-button .admin-info-trigger {
-    margin-left: 12px;
-    color: #495057;
-}
-
-.admin-info-button[aria-expanded="true"] [class*="withIcon_icon"] {
-    transform: rotate(180deg);
 }
 
 .ProjectInfo_infoBox {
@@ -325,14 +293,6 @@ video {
     gap: 8px;
 }
 
-.ProjectInfo_infoBox .ProjectInfo_profileImage {
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 50%;
-    background-color: #fff;
-    width: 24px;
-    height: 24px;
-}
-
 .Avatar_avatar {
     display: inline-flex;
     position: relative;
@@ -361,84 +321,14 @@ video {
     object-fit: cover;
 }
 
-
-
-.ProjectInfo_infoBox .ProjectInfo_makerName {
-    font-weight: 700;
-    overflow-wrap: anywhere;
-}
-
-.BlindText_textHidden {
-    position: absolute;
-    margin: -1px;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.ProjectInfo-state-box {
-    flex-wrap: wrap;
-}
-
-.ProjectInfo-state-box .ProjectInfo-state {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.5;
-    border-radius: 4px;
-    background-color: #f2f4f6;
-    padding: 1px 6px;
-    color: #495057;
-}
-
-.Button_button.Button_primary.Button_contained {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
-    color: #fff;
-}
-
-.Button_button.Button_sm {
-    padding: 6px 11px;
-    height: 32px;
-    font-size: 14px;
-}
-
-.Button_button.Button_block {
-    width: 100%;
-}
-
-.Button_button {
-    position: relative;
-    transition-property: background-color, border-color, color, opacity;
-    transition-duration: 0.15s;
+.logout-button {
     border: 1px solid #cdd3d8;
     border-radius: 4px;
-    vertical-align: middle;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-.Button_button span {
-    display: inline-flex;
-    align-items: center;
-    vertical-align: top;
-}
-
-.Button_button.Button_sm svg.Button_icon:first-child {
-    margin-right: 4px;
-}
-
-.Button_button.Button_sm svg.Button_icon {
-    width: 16px;
-    height: 16px;
-}
-
-.Button_button span svg {
-    display: inline-block;
-}
-
-.Button_button .Button_children {
-    vertical-align: top;
+    font-size: 14px;
+    font-weight: 500;
+    border-color: #e9ecef;
+    padding: 8px 24px;
+    color: #495057;
 }
 
 .AnnouncementButton_container {
@@ -463,7 +353,7 @@ video {
     vertical-align: middle;
 }
 
-.PreviewExitButtons_container {
+.logout-button-container {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -471,61 +361,28 @@ video {
     gap: 0;
 }
 
-.PreviewExitButtons_container
-    .PreviewExitButtons[class*="Button_button"]:first-child {
-    border-radius: 4px 0 0 4px;
-}
-
-.PreviewExitButtons_container .PreviewExitButtons[class*="Button_button"] {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.5;
-    display: block;
-    border-color: #e9ecef;
-    padding: 8px 24px;
-    height: auto;
-    color: #495057;
-}
-
-.PreviewExitButtons_container
-    .PreviewExitButtons[class*="Button_button"]:last-child {
-    border-radius: 0 4px 4px 0;
-}
-
-.PreviewExitButtons_container
-    .PreviewExitButtons[class*="Button_button"]
-    ~ .PreviewExitButtons {
+.logout-button-container
+    .logout[class*="logout-button"]
+    ~ .logout {
     margin-left: -1px;
     border-left: 1px solid #e9ecef;
 }
 
-.PreviewExitButtons_container .PreviewExitButtons[class*="Button_button"] {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.5;
-    display: block;
-    border-radius: 0;
-    border-color: #e9ecef;
-    padding: 8px 24px;
-    height: auto;
-    color: #495057;
-}
-
 /* 사이드 바 */
-.layout-container .AppLayout_main {
+.layout-container .layout-body {
     display: flex;
     padding-top: 72px;
     height: 100%;
 }
 
-.AppNavbarLayout_container.AppNavbarLayout_expand {
+.aside-navbar-container.aside-navbar-expand {
     display: block;
     visibility: visible;
     opacity: 1;
     width: 240px;
 }
 
-.AppNavbarLayout_container {
+.aside-navbar-container {
     position: relative;
     transform: none;
     transition: width 0.2s;
@@ -541,25 +398,25 @@ video {
     background-color: #fff;
 }
 
-.AppNavbarLayout_content {
+.aside-navbar-content {
     padding-bottom: 80px;
     overflow-x: hidden;
     overflow-y: auto;
     margin-top: 35px;
 }
 
-.MenuItems_section {
+.menu-items-section {
     padding: 0;
 }
 
-.MenuItems_menu.MenuItems_hasSubmenu {
+.menu-items-menu.menu-items-sub-menu {
     display: block;
     outline: none;
     border: none;
     width: 100%;
 }
 
-.MenuItems_menu {
+.menu-items-menu {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -569,7 +426,7 @@ video {
     width: 100%;
 }
 
-.MenuItems_menu .MenuItems_label {
+.menu-items-menu .menu-items-label {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.5;
@@ -579,29 +436,29 @@ video {
     gap: 12px;
 }
 
-.MenuItems_active .MenuItems_label {
+.menu-items-active .menu-items-label {
     color: #212529;
     font-weight: 700;
 }
 
-.MenuItems_menu .MenuItems_label svg {
+.menu-items-menu .menu-items-label svg {
     width: 16px;
     height: 16px;
 }
 
-.withIcon_icon {
+.icon-arrow {
     display: block;
     transform: scale(1);
     transition: transform 0.3s ease-out;
     fill: currentColor;
 }
 
-.MenuItems_menu.MenuItems_hasSubmenu .MenuItems_downIcon.MenuItems_open {
+.menu-items-menu.menu-items-sub-menu .menu-items-down-icon.MenuItems_open {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
-.MenuItems_menu.MenuItems_hasSubmenu .MenuItems_downIcon {
+.menu-items-menu.menu-items-sub-menu .menu-items-down-icon {
     position: absolute;
     top: 50%;
     right: 16px;
@@ -609,21 +466,21 @@ video {
     color: #adb5bd;
 }
 
-.MenuItems_submenuContainer.MenuItems_show {
+.menu-items-sub-menu-container.MenuItems_show {
     max-height: 400px;
 }
 
-.MenuItems_submenuContainer {
+.menu-items-sub-menu-container {
     transition: max-height 0.3s ease-out;
     max-height: 0;
     overflow-y: hidden;
 }
 
-.MenuItems_submenuContainer .MenuItems_submenu:hover {
+.menu-items-sub-menu-container .menu-items-sub-menu:hover {
     background-color: #f2f4f6;
 }
 
-.MenuItems_submenuContainer .MenuItems_submenu {
+.menu-items-sub-menu-container .menu-items-sub-menu {
     display: block;
     background-color: #f9fafb;
     cursor: pointer;
@@ -640,7 +497,7 @@ video {
     min-width: 28px;
 }
 
-.layout-container .AppLayout_main .AppLayout_expandNavButton {
+.layout-container .layout-body .AppLayout_expandNavButton {
     display: flex;
     position: fixed;
     top: 84px;
@@ -658,7 +515,7 @@ video {
 }
 
 .layout-container
-    .AppLayout_main
+    .layout-body
     .AppLayout_expandNavButton
     .AppLayout_icon {
     background: url(https://static.wadiz.kr/studio/funding/static/media/icon-expand-more.21864999.svg)
@@ -671,12 +528,12 @@ video {
 
 /* 사이드바 열렸을 때 버튼 */
 .layout-container
-    .AppLayout_main
+    .layout-body
     .AppLayout_expandNavButton.AppLayout_expand {
     left: 224px;
 }
 .layout-container
-    .AppLayout_main
+    .layout-body
     .AppLayout_expandNavButton.AppLayout_expand
     .AppLayout_icon {
     -webkit-transform: rotate(180deg);
@@ -684,7 +541,7 @@ video {
 }
 
 /* body */
-.SortFilterOptions {
+.sort-filter-options {
     display: flex;
     gap: 5px;
     align-items: center;
@@ -715,7 +572,7 @@ video {
     content: none;
 }
 
-.filter_wrap {
+.filter-wrap {
     justify-content: space-between;
     display: flex;
     border-top: 1px solid #e2e8f0;
@@ -759,7 +616,7 @@ video {
     background-color: rgb(0, 196, 196) !important;
 }
 
-.Filter_searchInput {
+.filter-search-input {
     flex-grow: 1;
     padding: 8px 12px;
     font-size: 14px;
@@ -770,7 +627,7 @@ video {
     transition: border-color 0.3s;
 }
 
-.Filter_searchInput:focus {
+.filter-search-input:focus {
     border-color: var(--gray50);
 }
 /* 버튼 */
@@ -780,7 +637,7 @@ video {
 /* ********************************************************************************************** */
 /* ********************************************************************************************** */
 /* ********************************************************************************************** */
-.layout-container .AppLayout_main .AppLayout_contents {
+.layout-container .layout-body .layout-contents {
     position: relative;
     -ms-flex: 1 1;
     flex: 1 1;
@@ -805,18 +662,18 @@ video {
     flex-direction: column;
 }
 
-.CommonHeader_container {
+.common-header-container {
     color: #000;
 }
 
-.CommonHeader_container .CommonHeader_title {
+.common-header-container .common-header-title {
     line-height: 44px;
     font-size: 36px;
     margin: 0 0 16px;
     font-weight: 700;
 }
 
-.CommonHeader_container .CommonHeader_description {
+.common-header-container .common-header-description {
     margin-bottom: 32px;
     line-height: 24px;
     color: #495057;
@@ -825,7 +682,7 @@ video {
 }
 
 /* User Table Styles */
-.CommonLayout_container {
+.common-layout-container {
     width: 1400px;
 }
 .UserTable_container {
@@ -941,7 +798,7 @@ video {
 }
 
 /* Apply Table Styles */
-.CommonLayout_container {
+.common-layout-container {
     width: 1400px;
 }
 .ApplyTable_container {
@@ -1060,7 +917,7 @@ video {
 }
 
 /* announcement Table Styles */
-.CommonLayout_container {
+.common-layout-container {
     width: 1400px;
 }
 .announcementTable_container {
@@ -1183,7 +1040,7 @@ video {
 }
 
 /* Post Table Styles */
-.CommonLayout_container {
+.common-layout-container {
     width: 1400px;
 }
 .PostTable_container {
@@ -1309,7 +1166,7 @@ video {
 }
 
 /* payment Table Styles */
-.CommonLayout_container {
+.common-layout-container {
     width: 1400px;
 }
 .paymentTable_container {
@@ -1438,7 +1295,7 @@ video {
 }
 
 /* Post Table Styles */
-.CommonLayout_container {
+.common-layout-container {
     width: 1400px;
 }
 .inquiryTable_container {
