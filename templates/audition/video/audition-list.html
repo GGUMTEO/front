@@ -12,6 +12,19 @@
     <body>
         <header></header>
         <main>
+            <div class="main-header">
+                <div class="container">
+                    <a class="sub-navigation" href="">
+                        <div>작품</div>
+                    </a>
+                    <a class="sub-navigation" href="">
+                        <div>펀딩</div>
+                    </a>
+                    <a class="sub-navigation" href="">
+                        <div>모집</div>
+                    </a>
+                </div>
+            </div>
             <div class="gaia">
                 <div class="container audition-list-view">
                     <form
@@ -21,35 +34,19 @@
                     >
                         <div class="search-header">
                             <div class="page-title subtitle">모집 찾기</div>
-                            <div
-                                class="text-search-box"
-                                id="inner-text-search-box"
-                            >
-                                <div class="default-input-type icon-right">
-                                    <div
-                                        class="default-input-wishket icon-right"
-                                    >
-                                        <input
-                                            autocomplete="off"
-                                            class="theme-wishket wishket-text search-text"
-                                            data-input-type="text-input"
-                                            name="search-text"
-                                            type="text"
-                                            style="padding-right: 48px"
-                                        /><span
-                                            class="text-unit active"
-                                            data-action-icon="search"
-                                            ><img
-                                                src="/static/images/audition/icon-search@2x.png"
-                                                style="
-                                                    margin-right: 0px;
-                                                    cursor: pointer;
-                                                "
-                                        /></span>
-                                    </div>
-                                    <span class="error-text"
-                                        >에러상세 메시지</span
-                                    >
+
+                            <div class="text-input-ggumteo icon-right">
+                                <div>
+                                    <input
+                                        type="text"
+                                        class="theme-ggumteo search-input"
+                                        placeholder="원하는 작품을 찾아보세요"
+                                    />
+                                    <i class="search-btn">
+                                        <img
+                                            src="https://www.wishket.com/static/renewal/img/stack/icon-search.png"
+                                        />
+                                    </i>
                                 </div>
                             </div>
                         </div>
@@ -454,27 +451,6 @@
                                     <span class="sri-btn-immediately"
                                         >모집중</span
                                     >
-                                </button>
-                            </div>
-                            <div class="pagination-media">
-                                <button
-                                    class="btnPrev page_move"
-                                    page="5"
-                                    type="button"
-                                >
-                                    <span class="hide">이전</span>
-                                </button>
-                                <span class="page on">1</span>
-                                <a page="2" class="page page_move">2</a>
-                                <a page="3" class="page page_move">3</a>
-                                <a page="4" class="page page_move">4</a>
-                                <a page="5" class="page page_move">5</a>
-                                <button
-                                    class="btnNext page_move"
-                                    page="6"
-                                    type="button"
-                                >
-                                    <span class="hide">다음</span>
                                 </button>
                             </div>
                         </section>
