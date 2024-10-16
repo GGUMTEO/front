@@ -24,17 +24,7 @@
     src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
 }
 
-@media screen and (max-width: 1290px) {
-    .container {
-        width: 100%;
-        padding: 0 20px;
-    }
-    .item-recruit .area-job {
-        width: 100%;
-        font-size: 14px;
-    }
-    /* 필요한 다른 스타일 수정 */
-}
+
 
 
 
@@ -317,7 +307,7 @@ a {
     font-size: 12px !important;
     line-height: 12px;
     vertical-align: top;
-    background: var(--white);
+    background: #fff;
 }
 
 .sri-btn-xs span.sri-btn-immediately{
@@ -473,13 +463,13 @@ a {
 .pagination .btnPrev {
     margin-right: 19px;
     padding-left: 10px;
-    background: url(//www.saraminimage.co.kr/sri/common/ico/bul-page-prev.png) 0 50% no-repeat;
+    background: url(/static/images/audition/bul_page_prev.png) 0 50% no-repeat;
 }
 
 .pagination .btnNext {
     margin-left: 14px;
     padding-right: 10px;
-    background: url(//www.saraminimage.co.kr/sri/common/ico/bul-page-next.png) 100% 50% no-repeat;
+    background: url(/static/images/audition/bul_page_next.png) 100% 50% no-repeat;
 }
 
 .pagination .btnPrev, .pagination .btnNext {
@@ -501,6 +491,10 @@ a {
     border-color: #3ba3c7;
 }
 
+.section-search-media{
+    display: none;
+}
+
 @media screen and (max-width: 430px) {
     .gaia {
         min-width: 100% !important;
@@ -508,4 +502,214 @@ a {
         min-height: 70% !important;
         background-color: #f5f5f5;
     }
+    .container {
+        width: 100% !important;
+    }
+
+    .search-header{
+        padding: 0 20px;
+    }
+
+    .section-search{
+        display: none;
+    }
+
+    .section-search-media{
+        display: block;
+        border: 1px solid #e5e6eb;
+        background-color: #fff;
+        border-radius: 16px;
+    }
+
+    .recruit-container-media{
+        position: relative;
+        width: auto;
+        
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+    .item-recruit{
+        position: relative;
+        margin: 0 20px;
+        padding: 16px 0;
+    }
+
+    .item-recruit > span[class*="badge"] +.tit {
+        width: 100%;
+    }
+
+    .tit {
+        overflow: hidden;
+        width: calc(100% - 27px);
+        color: #373f57;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 22px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .meta {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2px;
+        align-items: center;
+    }
+
+    .meta span {
+        color: #5c667b;
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .meta span+span:before {
+        display: inline-block;
+        margin: 0 4px;
+        content: '·';
+    }
+
+    .corp {
+        display: flex;
+        margin-top: 4px;
+        align-items: center;
+    }
+
+    .corp_name {
+        color: #373f57;
+        font-size: 14px;
+        line-height: 24px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .corp_thumb {
+        margin-left: 10px;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        display: inline-block;
+        flex-shrink: 0;
+    }
+
+    .size-s > img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        max-width: 100%;
+        width: auto;
+        max-height: 100%;
+        height: auto;
+        transform: translateY(-50%);
+        border-radius: 20px;
+    }
+    .applicant {
+        display: flex;
+        margin-top: 4px;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .date {
+        color: #8491a7;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .sri_btn_sm {
+        position: absolute;
+        top: 50px;
+        right: 12px;
+        margin-right: 10px;
+    }
+
+    .pagination-media{
+        font-size: 16px;
+        text-align: center;
+        padding: 15px 0 27px;
+    }
+
+    .pagination-media .page {
+        display: inline-block;
+        margin-left: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #ededed;
+        box-sizing: border-box;
+        color: #999;
+        font-size: 16px;
+        line-height: 30px;
+        vertical-align: middle;
+        background: #fff;
+    }
+
+    .pagination-media .page:first-child, .pagiNation .btnPrev+.page {
+        margin-left: 0;
+    }
+
+    .pagination-media .page.on {
+        border: 1px solid #4075ff;
+        color: #fff;
+        background: #4075ff;
+        margin-left: 0;
+    }
+
+    .pagination-media .btnPrev, .pagination-media .btnNext {
+
+        display: inline-block;
+        position: relative;
+        width: 40px;
+        height: 30px;
+        border: 1px solid #d8d8d8;
+        box-sizing: border-box;
+        line-height: 33px;
+        text-indent: -9999em;
+        vertical-align: middle;
+        background: #fdfdfd;
+        padding: 0;
+        border-radius: 0;
+        font-size: 14px;
+    }
+
+    .pagination-media .btnNext {
+        margin-left: 1px;
+    }
+
+    .hide, .blind {
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+        position: absolute;
+        width: 1px;
+        height: 1px;
+    }
+
+    .pagination-media .btnNext:after {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 17px;
+        width: 6px;
+        height: 11px;
+        background: url(/static/images/audition/bul_page_next.png) no-repeat 0 0;
+        /* background-size: 8px 8px; */
+        content: "";
+    }
+
+    .pagination-media .btnPrev:after{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 17px;
+        width: 6px;
+        height: 11px;
+        background: url(/static/images/audition/bul_page_prev.png) no-repeat 0 0;
+        /* background-size: 8px 8px; */
+        content: "";
+    }
+
+    .btnNext:after {
+        background-position: -6px -12px;
+    }
+
+    
 }
