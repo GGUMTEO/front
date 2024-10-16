@@ -541,7 +541,7 @@ video {
 }
 
 /* body */
-.SortFilterOptions {
+.sort-filter-options {
     display: flex;
     gap: 5px;
     align-items: center;
@@ -572,7 +572,7 @@ video {
     content: none;
 }
 
-.filter_wrap {
+.filter-wrap {
     justify-content: space-between;
     display: flex;
     border-top: 1px solid #e2e8f0;
@@ -616,7 +616,7 @@ video {
     background-color: rgb(0, 196, 196) !important;
 }
 
-.Filter_searchInput {
+.filter-search-input {
     flex-grow: 1;
     padding: 8px 12px;
     font-size: 14px;
@@ -627,7 +627,7 @@ video {
     transition: border-color 0.3s;
 }
 
-.Filter_searchInput:focus {
+.filter-search-input:focus {
     border-color: var(--gray50);
 }
 /* 버튼 */
@@ -637,7 +637,7 @@ video {
 /* ********************************************************************************************** */
 /* ********************************************************************************************** */
 /* ********************************************************************************************** */
-.layout-container .layout-body .AppLayout_contents {
+.layout-container .layout-body .layout-contents {
     position: relative;
     -ms-flex: 1 1;
     flex: 1 1;
@@ -662,18 +662,18 @@ video {
     flex-direction: column;
 }
 
-.CommonHeader_container {
+.common-header-container {
     color: #000;
 }
 
-.CommonHeader_container .CommonHeader_title {
+.common-header-container .common-header-title {
     line-height: 44px;
     font-size: 36px;
     margin: 0 0 16px;
     font-weight: 700;
 }
 
-.CommonHeader_container .CommonHeader_description {
+.common-header-container .common-header-description {
     margin-bottom: 32px;
     line-height: 24px;
     color: #495057;
@@ -682,7 +682,7 @@ video {
 }
 
 /* User Table Styles */
-.CommonLayout_container {
+.common-layout-container {
     width: 1400px;
 }
 .UserTable_container {
@@ -798,7 +798,7 @@ video {
 }
 
 /* Apply Table Styles */
-.CommonLayout_container {
+.common-layout-container {
     width: 1400px;
 }
 .ApplyTable_container {
@@ -917,7 +917,7 @@ video {
 }
 
 /* announcement Table Styles */
-.CommonLayout_container {
+.common-layout-container {
     width: 1400px;
 }
 .announcementTable_container {
@@ -1040,7 +1040,7 @@ video {
 }
 
 /* Post Table Styles */
-.CommonLayout_container {
+.common-layout-container {
     width: 1400px;
 }
 .PostTable_container {
@@ -1166,7 +1166,7 @@ video {
 }
 
 /* payment Table Styles */
-.CommonLayout_container {
+.common-layout-container {
     width: 1400px;
 }
 .paymentTable_container {
@@ -1295,7 +1295,7 @@ video {
 }
 
 /* Post Table Styles */
-.CommonLayout_container {
+.common-layout-container {
     width: 1400px;
 }
 .inquiryTable_container {

@@ -122,9 +122,6 @@
                                 <a class="menu-items-sub-menu"
                                     >일반 회원 정보</a
                                 >
-                                <a class="menu-items-sub-menu"
-                                    >기업 회원 정보</a
-                                >
                             </div>
                         </div>
                         <div class="menu-items-section">
@@ -324,24 +321,24 @@
                     </div>
                 </nav>
                 <!-- body (메인 내용) -->
-                <div id="AppLayout_Contents" class="AppLayout_contents">
+                <div id="layout-contents" class="layout-contents">
                     <div class="layout-sections">
                         <!-- section1: 일반회원 -->
                         <section id="user-section" class="common-section">
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">
                                     일반회원 관리
                                 </h2>
-                                <p class="CommonHeader_description">
+                                <p class="common-header-description">
                                     일반회원 정보를 조회합니다.
                                 </p>
                             </div>
 
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >가입일 순</span
@@ -357,7 +354,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                         <button
@@ -614,330 +611,21 @@
                                 </ul>
                             </nav>
                         </section>
-                        <!-- section2: 기업회원 -->
-                        <section
-                            id="corporation-section"
-                            class="common-section"
-                        >
-                            <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
-                                    기업회원 관리
-                                </h2>
-                                <p class="CommonHeader_description">
-                                    기업회원 정보를 조회합니다.
-                                </p>
-                            </div>
-
-                            <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
-                                        <span
-                                            class="sort-filter-option selected"
-                                            >가입일 순</span
-                                        >
-                                        <span class="sort-filter-option"
-                                            >이름순</span
-                                        >
-                                        <span class="sort-filter-option"
-                                            >활동 상태</span
-                                        >
-                                    </div>
-                                    <!-- Action Buttons -->
-                                    <div class="action-buttons">
-                                        <input
-                                            type="text"
-                                            class="Filter_searchInput"
-                                            placeholder="검색어 입력"
-                                        />
-                                        <button
-                                            id="addServiceBtn"
-                                            class="addServiceBtn"
-                                        >
-                                            메일 전송
-                                        </button>
-                                        <button
-                                            id="deleteSelectedBtn"
-                                            class="deleteSelectedBtn"
-                                        >
-                                            문자 전송
-                                        </button>
-                                    </div>
-                                </div>
-                                <!-- 여기까지 -->
-                                <div class="UserTable_container">
-                                    <div class="UserTable_row UserTable_header">
-                                        <div
-                                            class="UserTable_cell User-headerCell selectAllCell"
-                                        >
-                                            <input
-                                                type="checkbox"
-                                                id="selectAll"
-                                            />
-                                        </div>
-                                        <div
-                                            class="UserTable_cell User-headerCell"
-                                        >
-                                            기업명
-                                        </div>
-                                        <div
-                                            class="UserTable_cell User-headerCell"
-                                        >
-                                            가입일
-                                        </div>
-                                        <div
-                                            class="UserTable_cell User-headerCell"
-                                        >
-                                            이메일
-                                        </div>
-
-                                        <div
-                                            class="UserTable_cell User-headerCell"
-                                        >
-                                            주소
-                                        </div>
-                                        <div
-                                            class="UserTable_cell User-headerCell"
-                                        >
-                                            대표번호
-                                        </div>
-                                        <div
-                                            class="UserTable_cell User-headerCell"
-                                        >
-                                            사업자번호
-                                        </div>
-                                        <div
-                                            class="UserTable_cell User-headerCell"
-                                        >
-                                            상태
-                                        </div>
-                                        <div
-                                            class="UserTable_cell User-headerCell"
-                                        >
-                                            Action
-                                        </div>
-                                    </div>
-
-                                    <!-- Example row (Initial data) -->
-                                    <div class="UserTable_row">
-                                        <div class="UserTable_cell">
-                                            <input
-                                                type="checkbox"
-                                                class="userCheckbox"
-                                            />
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            쿠팡(주)
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            2024-01-01
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            coopang@google.com
-                                        </div>
-
-                                        <div class="UserTable_cell">
-                                            서울 강남구 태헤란로 244-10
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            010-1234-1234
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            052-12-12345
-                                        </div>
-                                        <div class="UserTable_cell">활동중</div>
-                                        <div class="UserTable_cell">
-                                            <button class="editBtn">
-                                                수정
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="UserTable_row">
-                                        <div class="UserTable_cell">
-                                            <input
-                                                type="checkbox"
-                                                class="userCheckbox"
-                                            />
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            롯데자인언츠(주)
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            1982-02-12
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            LotteGiants@google.com
-                                        </div>
-
-                                        <div class="UserTable_cell">
-                                            부산광역시 동래구 사직로 45
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            010-1234-1234
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            052-12-12345
-                                        </div>
-                                        <div class="UserTable_cell">활동중</div>
-                                        <div class="UserTable_cell">
-                                            <button class="editBtn">
-                                                수정
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="UserTable_row">
-                                        <div class="UserTable_cell">
-                                            <input
-                                                type="checkbox"
-                                                class="userCheckbox"
-                                            />
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            챔프스터디(주)
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            2024-01-01
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            champstudy@google.com
-                                        </div>
-
-                                        <div class="UserTable_cell">
-                                            서울 서초구 강남대로61길 23
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            010-1234-1234
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            752-12-12345
-                                        </div>
-                                        <div class="UserTable_cell">활동중</div>
-                                        <div class="UserTable_cell">
-                                            <button class="editBtn">
-                                                수정
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="UserTable_row">
-                                        <div class="UserTable_cell">
-                                            <input
-                                                type="checkbox"
-                                                class="userCheckbox"
-                                            />
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            한국전력공사
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            2024-01-01
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            kepco@google.com
-                                        </div>
-
-                                        <div class="UserTable_cell">
-                                            전남 나주시 전력로 55
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            010-1234-1234
-                                        </div>
-                                        <div class="UserTable_cell">
-                                            863-12-12345
-                                        </div>
-                                        <div class="UserTable_cell">활동중</div>
-                                        <div class="UserTable_cell">
-                                            <button class="editBtn">
-                                                수정
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <nav class="pagination">
-                                <ul class="pagination-list">
-                                    <!-- 처음 페이지로 이동하는 버튼 -->
-                                    <li class="pagination-first">
-                                        <a
-                                            href="#"
-                                            class="pagination-first-link"
-                                            rel="nofollow"
-                                        >
-                                            <span
-                                                class="pagination-first-icon"
-                                                aria-hidden="true"
-                                                >«</span
-                                            >
-                                        </a>
-                                    </li>
-                                    <!-- 이전 페이지로 이동하는 버튼 -->
-                                    <li class="pagination-prev">
-                                        <a
-                                            href="#"
-                                            class="pagination-prev-link"
-                                            rel="prev nofollow"
-                                        >
-                                            <span
-                                                class="pagination-prev-icon"
-                                                aria-hidden="true"
-                                                >‹</span
-                                            >
-                                        </a>
-                                    </li>
-                                    <!-- 페이지 번호 버튼 -->
-                                    <li class="pagination-page active">
-                                        <a href="#" class="pagination-page-link"
-                                            >1</a
-                                        >
-                                    </li>
-
-                                    <!-- 다음 페이지로 이동하는 버튼 -->
-                                    <li class="pagination-next">
-                                        <a
-                                            href="#"
-                                            class="pagination-next-link"
-                                            rel="next nofollow"
-                                        >
-                                            <span
-                                                class="pagination-next-icon"
-                                                aria-hidden="true"
-                                                >›</span
-                                            >
-                                        </a>
-                                    </li>
-                                    <!-- 마지막 페이지로 이동하는 버튼 -->
-                                    <li class="pagination-last">
-                                        <a
-                                            href="#"
-                                            class="pagination-last-link"
-                                            rel="nofollow"
-                                        >
-                                            <span
-                                                class="pagination-last-icon"
-                                                aria-hidden="true"
-                                                >»</span
-                                            >
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </section>
                         <!-- section3: 지원 현황 -->
                         <section id="Apply-section" class="common-section">
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">
                                     지원현황 관리
                                 </h2>
-                                <p class="CommonHeader_description">
+                                <p class="common-header-description">
                                     사용자들의 공고지원 내역을 조회합니다.
                                 </p>
                             </div>
-
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >최신순</span
@@ -953,7 +641,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                         <button
@@ -1237,19 +925,19 @@
                         <!-- section4: 면접 현황 -->
                         <section id="Interview-section" class="common-section">
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">
                                     면접현황 관리
                                 </h2>
-                                <p class="CommonHeader_description">
+                                <p class="common-header-description">
                                     지원 합격자들의 면접현황을 조회합니다.
                                 </p>
                             </div>
 
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >최신순</span
@@ -1265,7 +953,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                         <button
@@ -1549,19 +1237,19 @@
                         <!-- section5: 인턴쉽 현황 -->
                         <section id="Internship-section" class="common-section">
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">
                                     인턴십현황 관리
                                 </h2>
-                                <p class="CommonHeader_description">
+                                <p class="common-header-description">
                                     사용자들의 인턴십내역을 조회합니다.
                                 </p>
                             </div>
 
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >최신순</span
@@ -1577,7 +1265,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                         <button
@@ -1861,19 +1549,19 @@
                         <!-- section6: 결제 내역 -->
                         <section id="-section" class="common-section">
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">
                                     결제 내역 관리
                                 </h2>
-                                <p class="CommonHeader_description">
+                                <p class="common-header-description">
                                     사용자의 결제내역을 조회합니다.
                                 </p>
                             </div>
 
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >최신순</span
@@ -1889,7 +1577,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                     </div>
@@ -2168,19 +1856,19 @@
                             class="common-section"
                         >
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">
                                     공고 작성 관리
                                 </h2>
-                                <p class="CommonHeader_description">
+                                <p class="common-header-description">
                                     기업의 공고 작성내역을 조회합니다.
                                 </p>
                             </div>
 
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >최신순</span
@@ -2196,7 +1884,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                     </div>
@@ -2472,19 +2160,19 @@
                         <!-- section8: 게시글 작성 -->
                         <section id="Post-section" class="common-section">
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">
                                     게시글 작성 관리
                                 </h2>
-                                <p class="CommonHeader_description">
+                                <p class="common-header-description">
                                     커뮤니티 게시글 내역을 조회합니다.
                                 </p>
                             </div>
 
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >최신순</span
@@ -2500,7 +2188,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                     </div>
@@ -2763,19 +2451,19 @@
                         <!-- section9: 댓글 작성 -->
                         <section id="reply-section" class="common-section">
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">
                                     댓글 작성 관리
                                 </h2>
-                                <p class="CommonHeader_description">
+                                <p class="common-header-description">
                                     커뮤니티 댓글 내역을 조회합니다.
                                 </p>
                             </div>
 
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >최신순</span
@@ -2791,7 +2479,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                     </div>
@@ -3054,20 +2742,20 @@
                         <!-- section10: 인턴쉽 후기(기업) -->
                         <section id="corpReview-section" class="common-section">
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">
                                     인턴십 후기 관리(기업)
                                 </h2>
-                                <p class="CommonHeader_description">
+                                <p class="common-header-description">
                                     기업이 작성한 인턴십 경험자들의 후기내역을
                                     조회합니다.
                                 </p>
                             </div>
 
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >최신순</span
@@ -3083,7 +2771,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                         <!-- <button
@@ -3367,19 +3055,19 @@
                         <!-- section11: 인턴쉽 후기(일반) -->
                         <section id="userReply-section" class="common-section">
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">
                                     인턴십 후기 관리(일반)
                                 </h2>
-                                <p class="CommonHeader_description">
+                                <p class="common-header-description">
                                     인턴십 경험자들의 후기내역을 조회합니다.
                                 </p>
                             </div>
 
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >최신순</span
@@ -3395,7 +3083,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                         <!-- <button
@@ -3677,24 +3365,21 @@
                             </nav>
                         </section>
                         <!-- section12: 면접 후기 -->
-                        <section
-                            id="InterwiewReply-section"
-                            class="common-section"
-                        >
+                        <section class="common-section">
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">
                                     면접 후기 관리
                                 </h2>
-                                <p class="CommonHeader_description">
+                                <p class="common-header-description">
                                     면접 경험자들의 후기내역을 조회합니다.
                                 </p>
                             </div>
 
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >최신순</span
@@ -3710,7 +3395,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                         <!-- <button
@@ -3994,19 +3679,19 @@
                         <!-- section13: 일반 문의 -->
                         <section id="inquiry-section" class="common-section">
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">
                                     일반 문의 관리
                                 </h2>
-                                <p class="CommonHeader_description">
+                                <p class="common-header-description">
                                     일반 사용자의 문의 내역을 조회합니다.
                                 </p>
                             </div>
 
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >최신순</span
@@ -4022,7 +3707,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                     </div>
@@ -4317,19 +4002,19 @@
                         <!-- section14: 기업 문의 -->
                         <section id="inquiry-section" class="common-section">
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">
                                     기업 문의 관리
                                 </h2>
-                                <p class="CommonHeader_description">
+                                <p class="common-header-description">
                                     기업 사용자의 문의 내역을 조회합니다.
                                 </p>
                             </div>
 
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >최신순</span
@@ -4345,7 +4030,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                     </div>
@@ -4622,17 +4307,17 @@
                         <!-- section15: 신고 관리 -->
                         <section id="Internship-section" class="common-section">
                             <!-- body_header -->
-                            <div class="CommonHeader_container">
-                                <h2 class="CommonHeader_title">신고 관리</h2>
-                                <p class="CommonHeader_description">
+                            <div class="common-header-container">
+                                <h2 class="common-header-title">신고 관리</h2>
+                                <p class="common-header-description">
                                     신고내역을 조회합니다.
                                 </p>
                             </div>
 
                             <!-- body_layout -->
-                            <div class="CommonLayout_container">
-                                <div class="filter_wrap">
-                                    <div class="SortFilterOptions">
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
                                         <span
                                             class="sort-filter-option selected"
                                             >최신순</span
@@ -4648,7 +4333,7 @@
                                     <div class="action-buttons">
                                         <input
                                             type="text"
-                                            class="Filter_searchInput"
+                                            class="filter-search-input"
                                             placeholder="검색어 입력"
                                         />
                                         <button

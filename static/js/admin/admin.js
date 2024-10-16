@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cancelBtns = document.querySelectorAll(".cancel-btn"); //모달 취소 버튼
     const deleteSelectedBtn = document.getElementById("deleteSelectedBtn"); // 내역 삭제 버튼
     const saveBtn = document.querySelector(".verify-btn.save"); //수정하기 저장 버튼
-    const sortFilterOptions = document.querySelectorAll(".sort-filter-option"); //결제일 순/ 결제 수단 선택
+    const sort-filter-options = document.querySelectorAll(".sort-filter-option"); //결제일 순/ 결제 수단 선택
 
     let actionToPerform = null; // 전역 변수로 초기화
 
@@ -313,7 +313,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // });
 
     // 결제일 수, 결제 수단, 결제 상태 눌렀을 때
-    sortFilterOptions.forEach((option) => {
+    sort-filter-options.forEach((option) => {
         option.addEventListener("click", () => {
             // selected 클래스 추가/제거
             document
