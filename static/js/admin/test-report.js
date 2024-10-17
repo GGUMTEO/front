@@ -8,7 +8,7 @@ const reportBackgroundOverlay = document.querySelector(
     "#report-management-modal .background-overlay"
 );
 
-// 수정 버튼 클릭했을 때
+// 신고관리 버튼 클릭했을 때
 reportManagements.forEach((reportManagement) => {
     reportManagement.addEventListener("click", () => {
         // 모달창 나옴.
@@ -41,8 +41,6 @@ choiceButtons.forEach((choiceButton, i) => {
         console.log(choiceButtons[clickedIndex].classList.contains("on"));
     });
 });
-
-const chargingButton = document.querySelector(".charging-button");
 
 btnComplete.addEventListener("click", () => {
     // 버튼 클릭 시 상태 확인

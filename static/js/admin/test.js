@@ -19,6 +19,7 @@ textButton.addEventListener("click", () => {
     textWrapper.style.display = "block";
 });
 
+// 체크박스 클릭했을 때 기능 구현(수정 필요!)
 const headerCheckbox = document.getElementById("selectAll"); // 헤더 체크박스
 const applyCheckboxes = document.querySelectorAll(".ApplyCheckbox");
 
@@ -47,6 +48,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 );
                 headerCheckbox.checked = allChecked;
             }
+        });
+    });
+});
+
+// 페이지 로드 시 초기화 및 이벤트 리스너 추가
+document.addEventListener("DOMContentLoaded", () => {
+    const sortFilterOptions = document.querySelectorAll(".sort-filter-option"); //작성일, 조회수, 평점, 신고관리
+
+    // 필터링(눌렀을 때)
+    sortFilterOptions.forEach((option) => {
+        option.addEventListener("click", () => {
+            // selected 클래스 추가/제거
+            document
+                .querySelector(".sort-filter-option.selected")
+                .classList.remove("selected");
+            option.classList.add("selected");
         });
     });
 });
