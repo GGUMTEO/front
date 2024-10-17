@@ -1672,12 +1672,39 @@ p {
     vertical-align: middle;
 }
 
+.item-recruit .area-badge .badge {
+    display: inline-flex;
+    padding: 0 6px;
+    border-radius: 4px;
+    color: #f4f6fa;
+    font-size: 12px;
+    line-height: 24px;
+    background-color: #2099bb;
+    align-items: center;
+}
 
 
 
 
-
-
+.sri-btn-xs span.sri-btn-immediately {
+    position: relative;
+    width: 52px;
+    border: 1px solid #2099bb;
+    color: #2099bb;
+}
+.sri-btn-xs span {
+    display: inline-block;
+    padding-top: 1px;
+    width: 78px;
+    height: 18px;
+    border: 1px solid #dce2ef;
+    box-sizing: border-box;
+    color: var(--gray100);
+    font-size: 12px !important;
+    line-height: 12px;
+    vertical-align: top;
+    background: #fff;
+}
 
 
 
@@ -1944,14 +1971,106 @@ p {
         background: #fff;
         border-radius: 16px;
     }
-
-
-    .section_search {
-        width: 419px;
-        padding-left: 5px;
+    #my-audition-content .content-container{
+        display: none !important;
+    }
+    #my-apply-audition-content .content-container{
+        display: none !important;
+    }
+    .section-search-media{
+        display: block !important;
         border: 1px solid #e5e6eb;
-        font-size: 13px;
-        background: #fff;
+        background-color: #fff;
         border-radius: 16px;
+    }
+    .recruit-container-media {
+        position: relative;
+        width: auto;
+        border-bottom: 1px solid #d6d6d6;
+    }
+    .item-recruit {
+        position: relative;
+        margin: 0 20px;
+        padding: 16px 0;
+        line-height: 20px;
+    }
+    .tit {
+        overflow: hidden;
+        width: calc(100% - 27px);
+        color: #373f57;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 22px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .meta {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2px;
+        align-items: center;
+    }
+    .meta span {
+        color: #5c667b;
+        font-size: 13px;
+        line-height: 22px;
+        margin-right: 5px;
+    }
+    .corp {
+        display: flex;
+        margin-top: 4px;
+        align-items: center;
+    }
+    .corp_name {
+        color: #373f57;
+        font-size: 14px;
+        line-height: 24px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .corp_thumb {
+        margin-left: 10px;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        display: inline-block;
+        flex-shrink: 0;
+    }
+    .size-s > img {
+        position: absolute;
+        top: 89%;
+        left: 0;
+        max-width: 100%;
+        width: auto;
+        max-height: 100%;
+        height: auto;
+        transform: translateY(-50%);
+        border-radius: 20px;
+    }
+    .applicant {
+        display: flex;
+        margin-top: 4px;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .date {
+        color: #8491a7;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .sri_btn_sm {
+        position: absolute;
+        top: 37px;
+        right: 12px;
+        margin-right: 10px;
+    }
+    .corp .btn-wrapper .btn{
+        background: white;
+
+    }
+    .corp .btn-wrapper{
+        left: 200px;
+
     }
 }
