@@ -346,6 +346,10 @@ li:last-child > .page-link {
     font-weight: 400;
     margin-bottom: 10px;
     color: #9e9e9e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
 }
 
 .box-group {
