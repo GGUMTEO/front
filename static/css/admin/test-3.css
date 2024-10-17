@@ -618,6 +618,10 @@ video {
     background-color: rgb(0, 196, 196) !important;
 }
 
+.icon-report {
+    width: 20px;
+}
+
 .Filter_searchInput {
     flex-grow: 1;
     padding: 8px 12px;
@@ -722,6 +726,7 @@ video {
     margin: 0 auto;
 }
 
+/* section1: 회원 관리 */
 /* 기존의 너비 설정 유지 */
 /* 체크박스 열 */
 .User-headerCell:nth-child(1),
@@ -791,7 +796,7 @@ video {
     opacity: 0.8;
 }
 /* section style 끝 */
-/* 여기서부터 Apply-section */
+/* 여기서부터 notice-section */
 /* ******************************************* */
 .common-section {
     padding: 40px 66px;
@@ -838,77 +843,196 @@ video {
     margin: 0 auto;
 }
 
+/* section2: 공지 관리 */
 /* 기존의 너비 설정 유지 */
 /* 체크박스 열 */
-.Apply-headerCell:nth-child(1),
-.ApplyTable_cell:nth-child(1) {
+#notice-section .Apply-headerCell:nth-child(1),
+#notice-section .ApplyTable_cell:nth-child(1) {
     width: 3%;
 }
 
 /* 첫번째 열 */
-.Apply-headerCell:nth-child(2),
-.ApplyTable_cell:nth-child(2) {
-    width: 12%;
+#notice-section .Apply-headerCell:nth-child(2),
+#notice-section .ApplyTable_cell:nth-child(2) {
+    width: 4%;
 }
 
 /* 두번째 열 */
-.Apply-headerCell:nth-child(3),
-.ApplyTable_cell:nth-child(3) {
+#notice-section .Apply-headerCell:nth-child(3),
+#notice-section .ApplyTable_cell:nth-child(3) {
     width: 10%;
 }
 
 /* 세번째 열 */
-.Apply-headerCell:nth-child(4),
-.ApplyTable_cell:nth-child(4) {
-    width: 17%;
+#notice-section .Apply-headerCell:nth-child(4),
+#notice-section .ApplyTable_cell:nth-child(4) {
+    width: 16%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 /* 네번째 열 */
-.Apply-headerCell:nth-child(5),
-.ApplyTable_cell:nth-child(5) {
+#notice-section .Apply-headerCell:nth-child(5),
+#notice-section .ApplyTable_cell:nth-child(5) {
+    width: 11%;
+}
+
+/* 다섯번째 열 */
+#notice-section .Apply-headerCell:nth-child(6),
+#notice-section .ApplyTable_cell:nth-child(6) {
+    width: 5%;
+}
+
+/* 여섯번째 열 */
+#notice-section .Apply-headerCell:nth-child(7),
+#notice-section .ApplyTable_cell:nth-child(7) {
+    width: 9%;
+}
+
+/* 일곱 열 */
+#notice-section .Apply-headerCell:nth-child(8),
+#notice-section .ApplyTable_cell:nth-child(8) {
+    width: 6%;
+}
+/* 마지막 열 */
+#notice-section .Apply-headerCell:nth-child(9),
+#notice-section .ApplyTable_cell:nth-child(9) {
+    width: 8%;
+}
+
+/* section3 : 작품 관리 */
+/* 기존의 너비 설정 유지 */
+/* 체크박스 열 */
+#work-section .Apply-headerCell:nth-child(1),
+#work-section .ApplyTable_cell:nth-child(1) {
+    width: 4%;
+}
+
+/* 첫번째 열 */
+#work-section .Apply-headerCell:nth-child(2),
+#work-section .ApplyTable_cell:nth-child(2) {
+    width: 6%;
+}
+
+/* 두번째 열 */
+#work-section .Apply-headerCell:nth-child(3),
+#work-section .ApplyTable_cell:nth-child(3) {
+    width: 9%;
+}
+
+/* 세번째 열 */
+#work-section .Apply-headerCell:nth-child(4),
+#work-section .ApplyTable_cell:nth-child(4) {
+    width: 11%;
+
+}
+
+/* 네번째 열 */
+#work-section .Apply-headerCell:nth-child(5),
+#work-section .ApplyTable_cell:nth-child(5) {
     width: 10%;
 }
 
 /* 다섯번째 열 */
-.Apply-headerCell:nth-child(6),
-.ApplyTable_cell:nth-child(6) {
-    width: 11%;
+#work-section .Apply-headerCell:nth-child(6),
+#work-section .ApplyTable_cell:nth-child(6) {
+    width: 16%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* 여섯번째 열 */
-.Apply-headerCell:nth-child(7),
-.ApplyTable_cell:nth-child(7) {
-    width: 11%;
+#work-section .Apply-headerCell:nth-child(7),
+#work-section .ApplyTable_cell:nth-child(7) {
+    width: 9%;
 }
 
 /* 일곱 열 */
-.Apply-headerCell:nth-child(8),
-.ApplyTable_cell:nth-child(8) {
-    width: 9%;
-}
-/* 마지막 열 */
-.Apply-headerCell:nth-child(9),
-.ApplyTable_cell:nth-child(9) {
+#work-section .Apply-headerCell:nth-child(8),
+#work-section .ApplyTable_cell:nth-child(8) {
     width: 8%;
 }
-
-/* 수정 버튼 */
-.editBtn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    width: 70%;
-    padding: 8px;
-    box-sizing: border-box;
+/* 여덟 열 */
+#work-section .Apply-headerCell:nth-child(9),
+#work-section .ApplyTable_cell:nth-child(9) {
+    width: 9%;
 }
 
-.editBtn:hover {
-    opacity: 0.8;
+/* 마지막 열 */
+#work-section .Apply-headerCell:nth-child(10),
+#work-section .ApplyTable_cell:nth-child(10) {
+    width: 9%;
 }
+
+
+/* section4 : 펀딩 관리 */
+/* 기존의 너비 설정 유지 */
+/* 체크박스 열 */
+#funding-section .Apply-headerCell:nth-child(1),
+#funding-section .ApplyTable_cell:nth-child(1) {
+    width: 4%;
+}
+
+/* 첫번째 열 */
+#funding-section .Apply-headerCell:nth-child(2),
+#funding-section .ApplyTable_cell:nth-child(2) {
+    width: 6%;
+}
+
+/* 두번째 열 */
+#funding-section .Apply-headerCell:nth-child(3),
+#funding-section .ApplyTable_cell:nth-child(3) {
+    width: 9%;
+}
+
+/* 세번째 열 */
+#funding-section .Apply-headerCell:nth-child(4),
+#funding-section .ApplyTable_cell:nth-child(4) {
+    width: 11%;
+
+}
+
+/* 네번째 열 */
+#funding-section .Apply-headerCell:nth-child(5),
+#funding-section .ApplyTable_cell:nth-child(5) {
+    width: 10%;
+}
+
+/* 다섯번째 열 */
+#funding-section .Apply-headerCell:nth-child(6),
+#funding-section .ApplyTable_cell:nth-child(6) {
+    width: 16%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 여섯번째 열 */
+#funding-section .Apply-headerCell:nth-child(7),
+#funding-section .ApplyTable_cell:nth-child(7) {
+    width: 9%;
+}
+
+/* 일곱 열 */
+#funding-section .Apply-headerCell:nth-child(8),
+#funding-section .ApplyTable_cell:nth-child(8) {
+    width: 8%;
+}
+/* 여덟 열 */
+#funding-section .Apply-headerCell:nth-child(9),
+#funding-section .ApplyTable_cell:nth-child(9) {
+    width: 9%;
+}
+
+/* 마지막 열 */
+#funding-section .Apply-headerCell:nth-child(10),
+#funding-section .ApplyTable_cell:nth-child(10) {
+    width: 9%;
+}
+
+
 /* section style 끝 */
 /* 여기서부터 announcement-section */
 /* ******************************************* */
@@ -1017,20 +1141,6 @@ video {
     width: 8%;
 }
 
-/* 수정 버튼 */
-.editBtn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    width: 70%;
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-.editBtn:hover {
-    opacity: 0.8;
-}
 /* section style 끝 */
 /* Post */
 /* 여기서부터 Post-section */
@@ -1143,20 +1253,6 @@ video {
     width: 8%;
 } */
 
-/* 수정 버튼 */
-.editBtn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    width: 70%;
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-.editBtn:hover {
-    opacity: 0.8;
-}
 /* section style 끝 */
 /* payment */
 /* 여기서부터 payment-section */
@@ -1272,20 +1368,6 @@ video {
     width: 8%;
 }
 
-/* 수정 버튼 */
-.editBtn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    width: 70%;
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-.editBtn:hover {
-    opacity: 0.8;
-}
 /* section style 끝 */
 /* inquiry */
 /* 여기서부터 inquiry-section */
@@ -1398,20 +1480,6 @@ video {
     width: 8%;
 }
 
-/* 수정 버튼 */
-.editBtn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    width: 70%;
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-.editBtn:hover {
-    opacity: 0.8;
-}
 /* section style 끝 */
 /* modal 창 */
 /* Modal Styles */
@@ -1462,9 +1530,6 @@ video {
 .modal-content {
     background-color: #ffffff;
     padding: 30px;
-    border-radius: 10px;
-    width: 150%;
-    max-height: 80vh; /* 화면 높이의 80%로 설정 */
     overflow-y: auto; /* 내용이 넘칠 경우 스크롤 생성 */
 }
 /* 스크롤바의 전체 컨테이너 */
@@ -1665,18 +1730,6 @@ video {
     cursor: pointer;
 }
 
-.close-button {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 24px;
-    color: #999;
-    cursor: pointer;
-}
-
-.close-button:hover {
-    color: #666;
-}
 .editButtonWrap {
     display: flex;
     justify-content: center;
@@ -1739,14 +1792,14 @@ ul {
 }
 
 .pagination-list a:hover {
-    background-color: var(--blue80);
-    border: var(--blue80);
+    background-color: #4876ef;
+    border: #4876ef;
     color: #ffffff;
 }
 
 .pagination-list .active a {
-    background-color: var(--blue80);
-    border: var(--blue80); /* 배경을 검정색으로 */
+    background-color: #4876ef;
+    border: #4876ef; /* 배경을 검정색으로 */
     color: #ffffff; /* 글자를 하얀색으로 */
 }
 /* 아이콘들 */
@@ -1761,4 +1814,171 @@ ul {
     z-index: 3;
     width: 24px;
     height: 24px;
+}
+
+/* ======================== */
+/* test-3 작품 관리 */
+h1.CommonHeader_description {
+    background-color: #eeeeeead;
+    height: 28px;
+    width: 85px;
+    text-align: center;
+    align-content: center;
+    border-radius: 3px;
+}
+
+.CommonHeader_container .CommonHeader_title {
+    line-height: 20px;
+    font-size: 36px;
+    margin: 0 0 16px;
+    font-weight: 700;
+}
+
+.section-label {
+    display: flex;
+    padding-left: 170px;
+    padding-top: 10px;
+}
+
+.CommonHeader_container {
+    position: relative;
+}
+
+.service-introdution-group-button > .container {
+    padding-left: 2px;
+    gap: 32px;
+}
+
+.service-introdution-group-button .container {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+}
+
+.container {
+    padding-top: 33px;
+    padding-bottom: 35px;
+}
+
+.service-introdution-group-button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.service-introdution-group-button .group-button.active div {
+    padding: 12px 0 10px 0;
+    color: #212121;
+    font-weight: 500;
+    border-bottom: solid 3px #007bff;
+}
+
+.service-introdution-group-button .group-button div {
+    padding: 12px 0;
+    height: 100%;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #424242;
+    cursor: pointer;
+}
+
+.ApplyTable_cell > a {
+    color: rgba(0, 0, 255, 0.823);
+}
+
+/* 간단 상세 모달창 */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.close-button {
+    align-self: flex-end;
+}
+
+.modal-content > h2 {
+    text-align: center
+}
+
+#editForm {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#editForm > div {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+#editPostTitle {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+}
+
+#editPostContent {
+    width: 100%;
+    height: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+}
+
+#editFiles {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#filePreviewContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#editForm h3 {
+    margin-top: 30px
+}
+
+#commentList {
+    list-style-type: none;
+    padding: 0;
+    min-height: 200px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+#filePreviewContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#saveChanges {
+    width: 100%;
+    padding: 12px;
+    background-color: #1890ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#text-wrapper {
+    display: none;
 }
