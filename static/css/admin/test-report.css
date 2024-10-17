@@ -1,0 +1,94 @@
+
+.report-management-btn {
+    background-color: rgba(41, 153, 41, 0.818);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 70%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.report-management-btn.report {
+    background-color: #ff0000;
+}
+
+.report-management-btn.hold {
+    background-color: #ffa600;
+}
+
+/* 신고관리 모달창 */
+.report-management-modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 103;
+    width: 100%;
+    height: 100%;
+}
+
+.background-overlay {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.7);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.choice-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.choice-container input[type="button"] {
+    margin-top: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #b2b2b2;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn-complete {
+    margin-top: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+}
+
+.choice-container input[type="button"]:hover {
+    transform: translateY(-4px) scale(1.02);
+    background-color: hsla(240, 2%, 57%, 0.19);
+}
+
+.choice-container input[type="button"].on {
+    background-color: hsla(0, 0%, 74%, 0.417);
+}

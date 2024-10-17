@@ -1,11 +1,18 @@
-.modal {
+.edit-full-modal {
     display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.edit-full-modal .edit-modal {
     position: fixed;
     z-index: 1000;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 60%; 
+    width: 60%;
     height: 90%; 
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -14,8 +21,7 @@
 }
 
 
-.background-overlay {
-    display: none;
+.edit-full-modal .background-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -25,7 +31,11 @@
     z-index: 999;
 }
 
-.close-button {
+.edit-full-modal .edit-modal .modal-content {
+    padding: 25px 35px;
+}
+
+.edit-full-modal .edit-modal .modal-content .close-button {
     position: absolute;
     top: 10px;
     right: 17px;
@@ -35,32 +45,37 @@
     cursor: pointer;
 }
 
-.close-button:hover {
+.edit-full-modal .edit-modal .modal-content .close-button:hover {
     color: #000;
 }
 
-.close-button:hover,
-.close-button:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
 
-.modal-content {
-    padding: 25px 35px;
-}
-
-.modal-content h2 {
+.edit-full-modal .edit-modal .modal-content h2 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.modal-content label {
+.edit-full-modal .edit-modal .modal-content label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
 }
+
+#edit-form h3 {
+    margin-top: 20px;
+}
+
+.comment-list{
+    height: 100%;
+    list-style:none;
+    padding-left:0px;
+    margin-top: 10px;
+ }
+ 
+ .comment-list li {
+     margin-bottom: 4px;
+ }
 
 .edit-post-title {
     width: 100%;
@@ -74,7 +89,7 @@
 
 .edit-post-content {
     width: 100%;
-    padding: 8px 4px;
+    padding: 8px;
     margin-top: 5px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -84,25 +99,22 @@
 }
 
 .modal-content .file-preview-container {
+    display: grid;
+    gap: 5px;
     margin-top: 20px;
 }
 
-.image-wrapper {
+.media-wrapper video,
+.media-wrapper img {
+    width: 50%;
+}
+
+.media-wrapper {
     display: flex;
     gap: 5px;
 }
 
-.comment-list{
-   list-style:none;
-   padding-left:0px;
-}
-
-.comment-list li {
-    margin-bottom: 4px;
-}
-
 .comment-writer-img {
-    position: absolute;
     width: 20px;
     height: 20px;
     margin: 0px 7px 1px 0px;
@@ -113,7 +125,6 @@
 .comment-writer-name {
     font-size: 14px;
     line-height: 1.71;
-    margin-left: 27px;
     color: #212121;
     font-weight: 500;
 }
@@ -141,17 +152,17 @@
     word-break: break-word;
     margin: 6px 0px 2px 0px;
     overflow: auto;
-    width: 99.2%;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 5px 2px;
+    padding: 8px;
 }
 
 #save-button {
     background-color: #007bff;
     width: 100%;
     color: white;
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
