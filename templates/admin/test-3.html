@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>test-3</title>
+        <link rel="stylesheet" href="/static/css/admin/test-3.css" />
+        <link rel="stylesheet" href="/static/css/admin/test-modal.css" />
+        <style></style>
+    </head>
+    <body>
+        <!-- section3: 작품 관리 -->
+        <section id="work-section" class="common-section">
+            <!-- body_header -->
+            <div class="CommonHeader_container">
+                <div class="service-introdution-group-button">
+                    <div class="container">
+                        <a class="group-button active" id="video-button">
+                            <div><h2 class="CommonHeader_title">영상</h2></div>
+                        </a>
+                        <a class="group-button" id="text-button">
+                            <div><h2 class="CommonHeader_title">글</h2></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="section-label">
+                    <h1 class="CommonHeader_description">작품 관리</h1>
+                </div>
+                <p class="CommonHeader_description">
+                    작품 정보를 조회하고 상태를 관리합니다.
+                </p>
+            </div>
+
+            <div id="video-wrapper">
+                <!-- body_layout -->
+                <div class="CommonLayout_container">
+                    <div class="filter_wrap">
+                        <div class="SortFilterOptions">
+                            <span class="sort-filter-option selected"
+                                >작성일</span
+                            >
+                            <span class="sort-filter-option">조회수</span>
+                            <span class="sort-filter-option">평점수</span>
+                            <!-- 신고관리 defalt  -->
+                            <span class="sort-filter-option">신고관리</span>
+                        </div>
+                        <!-- Action Buttons -->
+                        <div class="action-buttons">
+                            <input
+                                type="text"
+                                class="Filter_searchInput"
+                                placeholder="통합검색"
+                            />
+                            <button
+                                id="deleteSelectedBtn"
+                                class="deleteSelectedBtn"
+                            >
+                                게시글 삭제
+                            </button>
+                        </div>
+                    </div>
+                    <!-- 면접 내역 테이블 -->
+                    <div class="ApplyTable_container">
+                        <div class="ApplyTable_row ApplyTable_header">
+                            <div
+                                class="ApplyTable_cell Apply-headerCell selectAllCell"
+                            >
+                                <input type="checkbox" id="selectAll" />
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                번호
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                작성자
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                작성일
+                            </div>
+
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                장르
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                제목
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                조회수
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                평점
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                작품 가격
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                신고상태
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                Action
+                            </div>
+                        </div>
+
+                        <!-- Example row (Initial data) -->
+                        <div class="ApplyTable_row">
+                            <div class="ApplyTable_cell">
+                                <input type="checkbox" class="ApplyCheckbox" />
+                            </div>
+                            <div class="ApplyTable_cell">1</div>
+                            <div class="ApplyTable_cell">홍길동</div>
+                            <div class="ApplyTable_cell">2024-01-01</div>
+
+                            <div class="ApplyTable_cell">드라마</div>
+                            <div class="ApplyTable_cell post-title">
+                                <a href="">영상 작품 테스트 제목입니다.</a>
+                            </div>
+                            <div class="ApplyTable_cell">30</div>
+                            <div class="ApplyTable_cell">4.5</div>
+                            <div class="ApplyTable_cell">10,000원</div>
+                            <div class="ApplyTable_cell">
+                                <button class="editBtn">수정</button>
+                            </div>
+                            <div class="ApplyTable_cell">
+                                <button id="edit-btn" class="editBtn">
+                                    수정
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ApplyTable_row">
+                            <div class="ApplyTable_cell">
+                                <input type="checkbox" class="ApplyCheckbox" />
+                            </div>
+                            <div class="ApplyTable_cell">2</div>
+                            <div class="ApplyTable_cell">홍길동</div>
+                            <div class="ApplyTable_cell">2024-01-01</div>
+
+                            <div class="ApplyTable_cell">코미디</div>
+                            <div class="ApplyTable_cell post-title">
+                                <a href="">영상 작품 테스트 제목입니다.</a>
+                            </div>
+                            <div class="ApplyTable_cell">100</div>
+                            <div class="ApplyTable_cell">4.9</div>
+                            <div class="ApplyTable_cell">-</div>
+                            <div class="ApplyTable_cell">-</div>
+                            <div class="ApplyTable_cell">
+                                <button id="edit-btn" class="editBtn">
+                                    수정
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ApplyTable_row">
+                            <div class="ApplyTable_cell">
+                                <input type="checkbox" class="ApplyCheckbox" />
+                            </div>
+                            <div class="ApplyTable_cell">3</div>
+                            <div class="ApplyTable_cell">홍길동</div>
+                            <div class="ApplyTable_cell">2024-01-01</div>
+
+                            <div class="ApplyTable_cell">액션</div>
+                            <div class="ApplyTable_cell post-title">
+                                <a href="">영상 작품 테스트 제목입니다.</a>
+                            </div>
+                            <div class="ApplyTable_cell">0</div>
+                            <div class="ApplyTable_cell">-</div>
+                            <div class="ApplyTable_cell">-</div>
+                            <div class="ApplyTable_cell">
+                                <button class="editBtn">수정</button>
+                            </div>
+                            <div class="ApplyTable_cell">
+                                <button id="edit-btn" class="editBtn">
+                                    수정
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ApplyTable_row">
+                            <div class="ApplyTable_cell">
+                                <input type="checkbox" class="ApplyCheckbox" />
+                            </div>
+                            <div class="ApplyTable_cell">4</div>
+                            <div class="ApplyTable_cell">홍길동</div>
+                            <div class="ApplyTable_cell">2024-01-01</div>
+
+                            <div class="ApplyTable_cell">액션</div>
+                            <div class="ApplyTable_cell post-title">
+                                <a href="">영상 작품 테스트 제목입니다.</a>
+                            </div>
+                            <div class="ApplyTable_cell">1</div>
+                            <div class="ApplyTable_cell">3.0</div>
+                            <div class="ApplyTable_cell">30,000원</div>
+                            <div class="ApplyTable_cell">
+                                <button class="editBtn">수정</button>
+                            </div>
+                            <div class="ApplyTable_cell">
+                                <button id="edit-btn" class="editBtn">
+                                    수정
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="text-wrapper">
+                <!-- body_layout -->
+                <div class="CommonLayout_container">
+                    <div class="filter_wrap">
+                        <div class="SortFilterOptions">
+                            <span class="sort-filter-option selected"
+                                >작성일</span
+                            >
+                            <span class="sort-filter-option">조회수</span>
+                            <span class="sort-filter-option">평점수</span>
+                        </div>
+                        <!-- Action Buttons -->
+                        <div class="action-buttons">
+                            <input
+                                type="text"
+                                class="Filter_searchInput"
+                                placeholder="통합검색"
+                            />
+                            <button
+                                id="deleteSelectedBtn"
+                                class="deleteSelectedBtn"
+                            >
+                                게시글 삭제
+                            </button>
+                            <button
+                                id="deleteSelectedBtn"
+                                class="deleteSelectedBtn"
+                            >
+                                신고
+                            </button>
+                        </div>
+                    </div>
+                    <!-- 면접 내역 테이블 -->
+                    <div class="ApplyTable_container">
+                        <div class="ApplyTable_row ApplyTable_header">
+                            <div
+                                class="ApplyTable_cell Apply-headerCell selectAllCell"
+                            >
+                                <input type="checkbox" id="selectAll" />
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                번호
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                작성자
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                작성일
+                            </div>
+
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                장르
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                제목
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                조회수
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                평점
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                작품 가격
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                신고상태
+                            </div>
+                            <div class="ApplyTable_cell Apply-headerCell">
+                                Action
+                            </div>
+                        </div>
+
+                        <!-- Example row (Initial data) -->
+                        <div class="ApplyTable_row">
+                            <div class="ApplyTable_cell">
+                                <input type="checkbox" class="ApplyCheckbox" />
+                            </div>
+                            <div class="ApplyTable_cell">1</div>
+                            <div class="ApplyTable_cell">홍길동</div>
+                            <div class="ApplyTable_cell">2024-01-01</div>
+
+                            <div class="ApplyTable_cell">드라마</div>
+                            <div class="ApplyTable_cell post-title">
+                                <a href="">글 작품 테스트용 제목입니다.</a>
+                            </div>
+                            <div class="ApplyTable_cell">30</div>
+                            <div class="ApplyTable_cell">4.5</div>
+                            <div class="ApplyTable_cell">10,000원</div>
+                            <div class="ApplyTable_cell">-</div>
+                            <div class="ApplyTable_cell">
+                                <button id="edit-btn" class="editBtn">
+                                    수정
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ApplyTable_row">
+                            <div class="ApplyTable_cell">
+                                <input type="checkbox" class="ApplyCheckbox" />
+                            </div>
+                            <div class="ApplyTable_cell">2</div>
+                            <div class="ApplyTable_cell">홍길동</div>
+                            <div class="ApplyTable_cell">2024-01-01</div>
+
+                            <div class="ApplyTable_cell">코미디</div>
+                            <div class="ApplyTable_cell post-title">
+                                <a href="">글 작품 테스트용 제목입니다.</a>
+                            </div>
+                            <div class="ApplyTable_cell">100</div>
+                            <div class="ApplyTable_cell">4.9</div>
+                            <div class="ApplyTable_cell">-</div>
+                            <div class="ApplyTable_cell">-</div>
+                            <div class="ApplyTable_cell">
+                                <button id="edit-btn" class="editBtn">
+                                    수정
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ApplyTable_row">
+                            <div class="ApplyTable_cell">
+                                <input type="checkbox" class="ApplyCheckbox" />
+                            </div>
+                            <div class="ApplyTable_cell">3</div>
+                            <div class="ApplyTable_cell">홍길동</div>
+                            <div class="ApplyTable_cell">2024-01-01</div>
+
+                            <div class="ApplyTable_cell">액션</div>
+                            <div class="ApplyTable_cell post-title">
+                                <a href="">글 작품 테스트용 제목입니다.</a>
+                            </div>
+                            <div class="ApplyTable_cell">0</div>
+                            <div class="ApplyTable_cell">-</div>
+                            <div class="ApplyTable_cell">-</div>
+                            <div class="ApplyTable_cell">-</div>
+                            <div class="ApplyTable_cell">
+                                <button id="edit-btn" class="editBtn">
+                                    수정
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ApplyTable_row">
+                            <div class="ApplyTable_cell">
+                                <input type="checkbox" class="ApplyCheckbox" />
+                            </div>
+                            <div class="ApplyTable_cell">4</div>
+                            <div class="ApplyTable_cell">홍길동</div>
+                            <div class="ApplyTable_cell">2024-01-01</div>
+
+                            <div class="ApplyTable_cell">액션</div>
+                            <div class="ApplyTable_cell post-title">
+                                <a href="">글 작품 테스트용 제목입니다.</a>
+                            </div>
+                            <div class="ApplyTable_cell">1</div>
+                            <div class="ApplyTable_cell">3.0</div>
+                            <div class="ApplyTable_cell">30,000원</div>
+                            <div class="ApplyTable_cell">신고</div>
+                            <div class="ApplyTable_cell">
+                                <button id="edit-btn" class="editBtn">
+                                    수정
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="pagination">
+                    <ul class="pagination-list">
+                        <!-- 처음 페이지로 이동하는 버튼 -->
+                        <li class="pagination-first">
+                            <a
+                                href="#"
+                                class="pagination-first-link"
+                                rel="nofollow"
+                            >
+                                <span
+                                    class="pagination-first-icon"
+                                    aria-hidden="true"
+                                    >«</span
+                                >
+                            </a>
+                        </li>
+                        <!-- 이전 페이지로 이동하는 버튼 -->
+                        <li class="pagination-prev">
+                            <a
+                                href="#"
+                                class="pagination-prev-link"
+                                rel="prev nofollow"
+                            >
+                                <span
+                                    class="pagination-prev-icon"
+                                    aria-hidden="true"
+                                    >‹</span
+                                >
+                            </a>
+                        </li>
+                        <!-- 페이지 번호 버튼 -->
+                        <li class="pagination-page active">
+                            <a href="#" class="pagination-page-link">1</a>
+                        </li>
+
+                        <!-- 다음 페이지로 이동하는 버튼 -->
+                        <li class="pagination-next">
+                            <a
+                                href="#"
+                                class="pagination-next-link"
+                                rel="next nofollow"
+                            >
+                                <span
+                                    class="pagination-next-icon"
+                                    aria-hidden="true"
+                                    >›</span
+                                >
+                            </a>
+                        </li>
+                        <!-- 마지막 페이지로 이동하는 버튼 -->
+                        <li class="pagination-last">
+                            <a
+                                href="#"
+                                class="pagination-last-link"
+                                rel="nofollow"
+                            >
+                                <span
+                                    class="pagination-last-icon"
+                                    aria-hidden="true"
+                                    >»</span
+                                >
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </body>
+    <script src="/static/js/admin/test.js"></script>
+</html>
