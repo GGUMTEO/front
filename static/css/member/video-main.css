@@ -44,8 +44,8 @@ html {
     justify-content: space-between;
 }
 .sidebar-menu.active-menu {
-    background-color: #faf6ff;
-    color: #6b16ee;
+    background-color: #bbe9f1;
+    color: #2099bb;
     transition: .5s;
 }
 .sidebar-menu {
@@ -161,24 +161,24 @@ html {
 }
 
 .container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage:hover {
-    border: 1px solid #6b16ee;
+    border: 1px solid #2099bb;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
     transform: translateY(-4px);
     transition-duration: .5s;
 }
 .mypage-link:hover {
-    background-color: #f0f0f0; /* 아주 연한 회색 배경 */
+    background-color: #cbeff0; /* 아주 연한 회색 배경 */
     border-radius: 8px; /* 모서리를 부드럽게 깎음 */
     transition: background-color 0.3s ease, border-radius 0.3s ease; /* 부드러운 전환 효과 */
 }
 
 .highlight-memo:hover {
-    background-color: #f0f0f0; /* 아주 연한 회색 배경 */
+    background-color: #cbeff0; /* 아주 연한 회색 배경 */
     border-radius: 8px; /* 모서리를 부드럽게 깎음 */
     transition: background-color 0.3s ease, border-radius 0.3s ease; /* 부드러운 전환 효과 */
 }
 .read-news:hover {
-    background-color: #f0f0f0; /* 아주 연한 회색 배경 */
+    background-color: #cbeff0; /* 아주 연한 회색 배경 */
     border-radius: 8px; /* 모서리를 부드럽게 깎음 */
     transition: background-color 0.3s ease, border-radius 0.3s ease; /* 부드러운 전환 효과 */
 }
@@ -277,14 +277,14 @@ html {
 
 
 .container.mypage .main-content-container .main-content .last-open-mypages .last-open-mypage:hover {
-    border: 1px solid #6b16ee;
+    border: 1px solid #2099bb;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
     transform: translateY(-4px);
     transition-duration: .5s;
 }
 
 .mypage-link:hover, .highlight-memo:hover, .read-products:hover, #mypage-fold:hover {
-    background-color: #f0f0f0; /* 아주 연한 회색 배경 */
+    background-color: #cbf2f2; /* 아주 연한 회색 배경 */
     border-radius: 8px; /* 모서리를 부담게 까임 */
     transition: background-color 0.3s ease, border-radius 0.3s ease; /* 부담한 전환 후과 */
 }
@@ -518,7 +518,7 @@ ul li {
     margin: 0;
 }
 .pagination.theme-yozm .page-link.active {
-    color: #6b16ee;
+    color: #2099bb;
     border-radius: 8px;
     background-color: #faf6ff;
 }
@@ -611,7 +611,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 }
 
 .setting-td.with-text.primary {
-    color: #00a878;
+    color: #2099bb;
     font-weight: 600;
 }
 .setting-td.with-text {
@@ -626,9 +626,9 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
     border-radius: 4px;
 }
 .btn-choice.active {
-    border: solid 1px #00a878;
+    border: solid 1px #2099bb;
     background-color: #fff;
-    color: #00a878;
+    color: #2099bb;
     border-radius: 4px;
 }
 .btn-choice {
@@ -1022,7 +1022,7 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
 }
 
 .setting-td.with-text.primary {
-    color: #00a878;
+    color: #2099bb;
     font-weight: 600;
 }
 .setting-td.with-text {
@@ -1037,9 +1037,9 @@ body.partners_profile .edit-menu-box .profile-menu-setting .setting-table .setti
     border-radius: 4px;
 }
 .btn-choice.active {
-    border: solid 1px #00a878;
+    border: solid 1px #2099bb;
     background-color: #fff;
-    color: #00a878;
+    color: #2099bb;
     border-radius: 4px;
 }
 .btn-choice {
