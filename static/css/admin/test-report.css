@@ -1,0 +1,129 @@
+.report-management-btn {
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 70%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.report-management-btn.report {
+    background-color: #ff0000;
+}
+
+.report-management-btn.processing-completed {
+    background-color: rgba(41, 153, 41, 0.818);
+    cursor: default;
+}
+
+.report-management-btn.hold {
+    background-color: #ffa600;
+}
+
+.report-management-btn.no-issue {
+    background-color: #b7b7b7;
+    cursor: default;
+}
+
+/* 신고관리 모달창 */
+.report-management-modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 103;
+    width: 100%;
+    height: 100%;
+}
+
+.report-management-modal .background-overlay {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.7);
+}
+
+.report-management-modal .modal-content {
+    background-color: #ffffff;
+    padding: 25px 40px 30px 40px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.report-management-modal .choice-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.choice-container input[type="button"] {
+    margin-top: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.choice-container .btn-processing-completed {
+    background-color: rgba(107, 188, 107, 0.443);
+}
+
+.choice-container .btn-hold {
+    background-color: #ffa60075;
+}
+
+.choice-container #btn-hold {
+    width: 100px;
+}
+
+.choice-container .btn-no-issue {
+    background-color: #b7b7b769;
+}
+
+.report-management-modal .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.report-management-modal .btn-complete {
+    margin-top: auto;
+    padding: 10px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+}
+
+.report-management-modal .choice-container .btn-processing-completed:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+.report-management-modal .choice-container .btn-hold:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+.report-management-modal .choice-container .btn-no-issue:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+
+
+.report-management-modal .choice-container .btn-processing-completed.on {
+    background-color: rgba(41, 153, 41, 0.818);
+}
+.report-management-modal .choice-container .btn-hold.on {
+    background-color: #ffa600;
+}
+.report-management-modal .choice-container .btn-no-issue.on {
+    background-color: #b7b7b7;
+}
