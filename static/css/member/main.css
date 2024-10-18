@@ -823,10 +823,11 @@ a {
     cursor: pointer;
 }
 .sri_btn_xs span.sri_btn_immediately {
+    background: white;
     position: relative;
     width: 49px;
-    border: 1px solid #d63131;
-    color: #d63131;
+    border: 1px solid #2099bb;
+    color: #2099bb;
 }
 .sri_btn_xs span {
     display: inline-block;
@@ -1686,25 +1687,6 @@ p {
 
 
 
-.sri-btn-xs span.sri-btn-immediately {
-    position: relative;
-    width: 52px;
-    border: 1px solid #2099bb;
-    color: #2099bb;
-}
-.sri-btn-xs span {
-    display: inline-block;
-    padding-top: 1px;
-    width: 78px;
-    height: 18px;
-    border: 1px solid #dce2ef;
-    box-sizing: border-box;
-    color: var(--gray100);
-    font-size: 12px !important;
-    line-height: 12px;
-    vertical-align: top;
-    background: #fff;
-}
 
 
 
@@ -2060,6 +2042,8 @@ p {
         line-height: 16px;
     }
     .sri_btn_sm {
+        background: none;
+        border: none;
         position: absolute;
         top: 37px;
         right: 12px;
@@ -2073,4 +2057,25 @@ p {
         left: 200px;
 
     }
+    .sri-btn-xs span.sri-btn-immediately {
+        position: relative;
+        width: 52px;
+        border: 1px solid #2099bb;
+        color: #2099bb;
+    }
+    .sri-btn-xs span {
+        display: inline-block;
+        padding-top: 1px;
+        width: 78px;
+        height: 18px;
+        border: 1px solid #dce2ef;
+        box-sizing: border-box;
+        color: var(--gray100);
+        font-size: 12px !important;
+        line-height: 12px;
+        vertical-align: top;
+        background: #fff;
+    }
+    
+    
 }
