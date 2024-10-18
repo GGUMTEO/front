@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/static/css/test-modal.css" />
+        <title>test-모달창</title>
+    </head>
+    <body>
+        <!-- 모달창 -->
+        <div id="edit-full-modal" class="edit-full-modal">
+            <div id="edit-modal" class="edit-modal">
+                <div class="modal-content">
+                    <span id="close-button" class="close-button">&times;</span>
+                    <h2>게시글 수정</h2>
+                    <form id="edit-form">
+                        <div>
+                            <label for="edit-post-title">게시글 제목:</label>
+                            <input
+                                type="text"
+                                id="edit-post-title"
+                                class="edit-post-title"
+                                placeholder="'게시글 제목'을 가져와서 여기에 표시해야 합니다."
+                            />
+
+                            <label for="edit-post-content">게시글 내용:</label>
+                            <textarea
+                                id="edit-post-content"
+                                class="edit-post-content"
+                                name="edit-post-content"
+                                placeholder="'게시글 내용'을 가져와서 여기에 표시해야 합니다."
+                            ></textarea>
+
+                            <label for="edit-files">첨부파일:</label>
+                            <input
+                                type="file"
+                                id="edit-files"
+                                name="edit-files"
+                                accept="image/*, video/*"
+                                multiple
+                            />
+
+                            <!-- 첨부된 이미지/동영상 미리보기 -->
+                            <div class="file-preview-container">
+                                <div class="media-wrapper">
+                                    <video controls="">
+                                        <source
+                                            src="첨부된_비디오_파일_URL"
+                                            type="video/mp4"
+                                        />
+                                    </video>
+                                </div>
+                                <div class="media-wrapper">
+                                    <img
+                                        src="/static/images/test-img.jpg"
+                                        alt=""
+                                    />
+                                    <img
+                                        src="/static/images/test-img2.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+
+                            <h3>댓글 목록</h3>
+                            <ul id="commen-list" class="comment-list">
+                                <li>
+                                    <div>
+                                        <div class="comment-header-wrapper">
+                                            <div>
+                                                <img
+                                                    src="https://yozm.wishket.com/static/img/default_avatar.png"
+                                                    class="comment-writer-img"
+                                                /><a class="comment-writer-name"
+                                                    >댓글작성자</a
+                                                >
+                                            </div>
+                                            <div class="delelte-button-box">
+                                                <button
+                                                    type="button"
+                                                    class="delelte-button"
+                                                >
+                                                    삭제
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <textarea
+                                            class="comment comment-textarea"
+                                            id="comment"
+                                            name="comment"
+                                            placeholder="'댓글'을 가져와서 여기에 표시해야 합니다."
+                                        ></textarea>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="comment-header-wrapper">
+                                            <div>
+                                                <img
+                                                    src="https://yozm.wishket.com/static/img/default_avatar.png"
+                                                    class="comment-writer-img"
+                                                /><a class="comment-writer-name"
+                                                    >댓글작성자</a
+                                                >
+                                            </div>
+                                            <div class="delelte-button-box">
+                                                <button
+                                                    type="button"
+                                                    class="delelte-button"
+                                                >
+                                                    삭제
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <textarea
+                                            class="comment comment-textarea"
+                                            id="comment"
+                                            name="comment"
+                                            placeholder="'댓글'을 가져와서 여기에 표시해야 합니다."
+                                        ></textarea>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 저장 버튼 -->
+                        <div class="save">
+                            <button type="button" id="save-button">저장</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="background-overlay" class="background-overlay"></div>
+        </div>
+        <!-- 여기까지 모달창 -->
+    </body>
+</html>

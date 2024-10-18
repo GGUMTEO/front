@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>test-3</title>
+        <link rel="stylesheet" href="/static/css/admin/test-3(modify).css" />
+        <style></style>
+    </head>
+    <body>
+        <!-- body (메인 내용) -->
+        <div id="layout-contents" class="layout-contents">
+            <div class="layout-sections">
+                <!-- section3: 작품 관리 -->
+                <section id="work-section" class="common-section">
+                    <!-- body_header -->
+                    <div class="common-header-container">
+                        <div class="service-introdution-group-button">
+                            <div class="container">
+                                <a
+                                    class="group-button active"
+                                    id="video-button"
+                                >
+                                    <div>
+                                        <h2 class="common-header-title">
+                                            영상
+                                        </h2>
+                                    </div>
+                                </a>
+                                <a class="group-button" id="text-button">
+                                    <div>
+                                        <h2 class="common-header-title">글</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-label">
+                            <h1 class="common-header-description">작품 관리</h1>
+                        </div>
+                        <p class="common-header-description">
+                            작품 정보를 조회하고 상태를 관리합니다.
+                        </p>
+                    </div>
+
+                    <div id="video-wrapper">
+                        <!-- body_layout -->
+                        <div class="common-layout-container">
+                            <div class="filter-wrap">
+                                <div class="sort-filter-options">
+                                    <span class="sort-filter-option"
+                                        >작성일 순</span
+                                    >
+                                    <span class="sort-filter-option"
+                                        >조회수 순</span
+                                    >
+                                    <span class="sort-filter-option"
+                                        >평점수 순</span
+                                    >
+                                    <!-- 신고관리 defalt  -->
+                                    <span class="sort-filter-option selected"
+                                        >신고관리</span
+                                    >
+                                </div>
+                                <!-- Action Buttons -->
+                                <div class="action-buttons">
+                                    <input
+                                        type="text"
+                                        class="filter-search-input"
+                                        placeholder="통합검색"
+                                    />
+                                    <button
+                                        id="delete-selected-btn"
+                                        class="delete-selected-btn"
+                                    >
+                                        게시글 삭제
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- 작품 정보 테이블 -->
+                            <div class="apply-table-container">
+                                <div class="apply-table-row apply-table-header">
+                                    <div
+                                        class="apply-table-cell apply-header-cell select-all-cell"
+                                    >
+                                        <input
+                                            type="checkbox"
+                                            id="select-all"
+                                        />
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        번호
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        작성자
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        작성일
+                                    </div>
+
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        장르(유형?)
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        제목
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        조회수
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        평점
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        작품 가격
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        신고상태
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell edit"
+                                    >
+                                        Action
+                                    </div>
+                                </div>
+
+                                <!-- Example row (Initial data) -->
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">1</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">드라마</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >영상 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">30</div>
+                                    <div class="apply-table-cell">4.5</div>
+                                    <div class="apply-table-cell">10,000원</div>
+                                    <div class="apply-table-cell">
+                                        <button
+                                            id="report-management"
+                                            class="report-management-btn hold"
+                                        >
+                                            보류
+                                        </button>
+                                    </div>
+                                    <div class="apply-table-cell editl">
+                                        <button id="edit-btn" class="edit-btn">
+                                            수정
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">2</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">코미디</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >영상 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">100</div>
+                                    <div class="apply-table-cell">4.9</div>
+                                    <div class="apply-table-cell">-</div>
+                                    <div class="apply-table-cell">-</div>
+                                    <div class="apply-table-cell edit">
+                                        <button id="edit-btn" class="edit-btn">
+                                            수정
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">3</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">액션</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >영상 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">0</div>
+                                    <div class="apply-table-cell">-</div>
+                                    <div class="apply-table-cell">-</div>
+                                    <div class="apply-table-cell">
+                                        <button
+                                            id="report-management"
+                                            class="report-management-btn report"
+                                        >
+                                            신고
+                                        </button>
+                                    </div>
+                                    <div class="apply-table-cell edit">
+                                        <button id="edit-btn" class="edit-btn">
+                                            수정
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">4</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">액션</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >영상 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">1</div>
+                                    <div class="apply-table-cell">3.0</div>
+                                    <div class="apply-table-cell">30,000원</div>
+                                    <div class="apply-table-cell">
+                                        <button
+                                            id="report-management-btn"
+                                            class="report-management-btn processing-completed"
+                                        >
+                                            처리 완료
+                                        </button>
+                                    </div>
+                                    <div class="apply-table-cell edit">
+                                        <button id="edit-btn" class="edit-btn">
+                                            수정
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">5</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">액션</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >영상 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">1</div>
+                                    <div class="apply-table-cell">3.0</div>
+                                    <div class="apply-table-cell">30,000원</div>
+                                    <div class="apply-table-cell">
+                                        <button
+                                            id="report-management-btn"
+                                            class="report-management-btn no-issue"
+                                        >
+                                            이상 없음
+                                        </button>
+                                    </div>
+                                    <div class="apply-table-cell edit">
+                                        <button id="edit-btn" class="edit-btn">
+                                            수정
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="pagination">
+                            <ul class="pagination-list">
+                                <!-- 처음 페이지로 이동하는 버튼 -->
+                                <li class="pagination-first">
+                                    <a
+                                        href="#"
+                                        class="pagination-first-link"
+                                        rel="nofollow"
+                                    >
+                                        <span
+                                            class="pagination-first-icon"
+                                            aria-hidden="true"
+                                            >«</span
+                                        >
+                                    </a>
+                                </li>
+                                <!-- 이전 페이지로 이동하는 버튼 -->
+                                <li class="pagination-prev">
+                                    <a
+                                        href="#"
+                                        class="pagination-prev-link"
+                                        rel="prev nofollow"
+                                    >
+                                        <span
+                                            class="pagination-prev-icon"
+                                            aria-hidden="true"
+                                            >‹</span
+                                        >
+                                    </a>
+                                </li>
+                                <!-- 페이지 번호 버튼 -->
+                                <li class="pagination-page active">
+                                    <a href="#" class="pagination-page-link"
+                                        >1</a
+                                    >
+                                </li>
+
+                                <!-- 다음 페이지로 이동하는 버튼 -->
+                                <li class="pagination-next">
+                                    <a
+                                        href="#"
+                                        class="pagination-next-link"
+                                        rel="next nofollow"
+                                    >
+                                        <span
+                                            class="pagination-next-icon"
+                                            aria-hidden="true"
+                                            >›</span
+                                        >
+                                    </a>
+                                </li>
+                                <!-- 마지막 페이지로 이동하는 버튼 -->
+                                <li class="pagination-last">
+                                    <a
+                                        href="#"
+                                        class="pagination-last-link"
+                                        rel="nofollow"
+                                    >
+                                        <span
+                                            class="pagination-last-icon"
+                                            aria-hidden="true"
+                                            >»</span
+                                        >
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- 신고관리 모달창 -->
+                    <div
+                        id="report-management-modal"
+                        class="report-management-modal"
+                    >
+                        <div class="background-overlay"></div>
+                        <div class="modal-content">
+                            <div class="choice-container">
+                                <input
+                                    id="btn-processing-completed"
+                                    class="btn-processing-completed"
+                                    type="button"
+                                    value="처리 완료"
+                                />
+                                <input
+                                    id="btn-hold"
+                                    class="btn-hold"
+                                    type="button"
+                                    value="보류"
+                                />
+                                <input
+                                    id="btn-no-issue"
+                                    class="btn-no-issue"
+                                    type="button"
+                                    value="이상 없음"
+                                />
+                            </div>
+                            <div class="button-container">
+                                <button id="btn-complete" class="btn-complete">
+                                    저장
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 여기까지(신고관리 모달창)!! -->
+                    <!-- 수정 모달창 -->
+                    <div id="edit-full-modal" class="edit-full-modal">
+                        <div id="edit-modal" class="edit-modal">
+                            <div class="modal-content">
+                                <span id="close-button" class="close-button"
+                                    >&times;</span
+                                >
+                                <h2>작품글 수정</h2>
+                                <form id="edit-form" class="edit-form">
+                                    <div>
+                                        <label for="edit-post-title"
+                                            >작품제목:</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="edit-post-title"
+                                            class="edit-post-title"
+                                            placeholder="'제목'을 가져와서 여기에 표시해야 합니다."
+                                        />
+                                        <label for="edit-post-title"
+                                            >작품장르:</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="edit-post-title"
+                                            class="edit-post-title"
+                                            placeholder="'장르'를 가져와서 여기에 표시해야 합니다."
+                                        />
+                                        <label for="edit-post-content"
+                                            >작품설명:</label
+                                        >
+                                        <textarea
+                                            id="edit-post-content"
+                                            class="edit-post-content"
+                                            name="edit-post-content"
+                                            placeholder="'내용'을 가져와서 여기에 표시해야 합니다."
+                                        ></textarea>
+
+                                        <label for="edit-files"
+                                            >첨부파일:</label
+                                        >
+                                        <input
+                                            type="file"
+                                            id="edit-files"
+                                            name="edit-files"
+                                            accept="image/*, video/*"
+                                            multiple
+                                        />
+
+                                        <!-- 첨부된 이미지/동영상 미리보기 -->
+                                        <div class="file-preview-container">
+                                            <div class="media-wrapper">
+                                                <video controls="">
+                                                    <source
+                                                        src="첨부된_비디오_파일_URL"
+                                                        type="video/mp4"
+                                                    />
+                                                </video>
+                                            </div>
+                                            <div class="media-wrapper">
+                                                <img
+                                                    src="/static/images/admin/test-img.jpg"
+                                                    alt=""
+                                                />
+                                                <img
+                                                    src="/static/images/admin/test-img2.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <h3>댓글 목록</h3>
+                                        <ul
+                                            id="commen-list"
+                                            class="comment-list"
+                                        >
+                                            <li>
+                                                <div>
+                                                    <div
+                                                        class="comment-header-wrapper"
+                                                    >
+                                                        <div>
+                                                            <img
+                                                                src="/static/images/admin/profile-image.png"
+                                                                class="comment-writer-img"
+                                                            /><a
+                                                                class="comment-writer-name"
+                                                                >댓글작성자</a
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="delelte-button-box"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="delelte-button"
+                                                            >
+                                                                삭제
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <textarea
+                                                        class="comment comment-textarea"
+                                                        id="comment"
+                                                        name="comment"
+                                                        placeholder="'댓글'을 가져와서 여기에 표시해야 합니다."
+                                                    ></textarea>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div
+                                                        class="comment-header-wrapper"
+                                                    >
+                                                        <div>
+                                                            <img
+                                                                src="/static/images/admin/profile-image.png"
+                                                                class="comment-writer-img"
+                                                            /><a
+                                                                class="comment-writer-name"
+                                                                >댓글작성자</a
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="delelte-button-box"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="delelte-button"
+                                                            >
+                                                                삭제
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <textarea
+                                                        class="comment comment-textarea"
+                                                        id="comment"
+                                                        name="comment"
+                                                        placeholder="'댓글'을 가져와서 여기에 표시해야 합니다."
+                                                    ></textarea>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- 저장 버튼 -->
+                                    <div class="save">
+                                        <button type="button" id="save-button">
+                                            저장
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div
+                            id="background-overlay"
+                            class="background-overlay"
+                        ></div>
+                    </div>
+                    <!-- 여기까지(수정 모달창)!! -->
+
+                    <div id="text-wrapper">
+                        <!-- body_layout -->
+                        <div class="common-layout-container">
+                            <div class="filter-wrap">
+                                <div class="sort-filter-options">
+                                    <span class="sort-filter-option"
+                                        >작성일</span
+                                    >
+                                    <span class="sort-filter-option"
+                                        >조회수</span
+                                    >
+                                    <span class="sort-filter-option"
+                                        >평점수</span
+                                    >
+                                    <!-- 신고관리 defalt  -->
+                                    <span class="sort-filter-option selected"
+                                        >신고관리</span
+                                    >
+                                </div>
+                                <!-- Action Buttons -->
+                                <div class="action-buttons">
+                                    <input
+                                        type="text"
+                                        class="filter-search-input"
+                                        placeholder="통합검색"
+                                    />
+                                    <button
+                                        id="delete-selected-btn"
+                                        class="delete-selected-btn"
+                                    >
+                                        게시글 삭제
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- 작품 정보 테이블 -->
+                            <div class="apply-table-container">
+                                <div class="apply-table-row apply-table-header">
+                                    <div
+                                        class="apply-table-cell apply-header-cell select-all-cell"
+                                    >
+                                        <input
+                                            type="checkbox"
+                                            id="select-all"
+                                        />
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        번호
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        작성자
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        작성일
+                                    </div>
+
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        장르(유형?)
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        제목
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        조회수
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        평점
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        <!-- 수수료? -->
+                                        작품 가격
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        신고상태
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell edit"
+                                    >
+                                        Action
+                                    </div>
+                                </div>
+
+                                <!-- Example row (Initial data) -->
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">1</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">드라마</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >글 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">30</div>
+                                    <div class="apply-table-cell">4.5</div>
+                                    <div class="apply-table-cell">10,000원</div>
+                                    <div class="apply-table-cell">
+                                        <button
+                                            id="report-management"
+                                            class="report-management-btn hold"
+                                        >
+                                            보류
+                                        </button>
+                                    </div>
+                                    <div class="apply-table-cell edit">
+                                        <button id="edit-btn" class="edit-btn">
+                                            수정
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">2</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">코미디</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >글 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">100</div>
+                                    <div class="apply-table-cell">4.9</div>
+                                    <div class="apply-table-cell">-</div>
+                                    <div class="apply-table-cell">-</div>
+                                    <div class="apply-table-cell edit">
+                                        <button id="edit-btn" class="edit-btn">
+                                            수정
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">3</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">액션</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >글 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">0</div>
+                                    <div class="apply-table-cell">-</div>
+                                    <div class="apply-table-cell">-</div>
+                                    <div class="apply-table-cell">
+                                        <button
+                                            id="report-management"
+                                            class="report-management-btn report"
+                                        >
+                                            신고
+                                        </button>
+                                    </div>
+                                    <div class="apply-table-cell edit">
+                                        <button id="edit-btn" class="edit-btn">
+                                            수정
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">4</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">액션</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >글 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">1</div>
+                                    <div class="apply-table-cell">3.0</div>
+                                    <div class="apply-table-cell">30,000원</div>
+                                    <div class="apply-table-cell">
+                                        <button
+                                            id="report-management-btn"
+                                            class="report-management-btn processing-completed"
+                                        >
+                                            처리 완료
+                                        </button>
+                                    </div>
+                                    <div class="apply-table-cell edit">
+                                        <button id="edit-btn" class="edit-btn">
+                                            수정
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">5</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">액션</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >글 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">1</div>
+                                    <div class="apply-table-cell">3.0</div>
+                                    <div class="apply-table-cell">30,000원</div>
+                                    <div class="apply-table-cell">
+                                        <button
+                                            id="report-management-btn"
+                                            class="report-management-btn no-issue"
+                                        >
+                                            이상 없음
+                                        </button>
+                                    </div>
+                                    <div class="apply-table-cell edit">
+                                        <button id="edit-btn" class="edit-btn">
+                                            수정
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="pagination">
+                            <ul class="pagination-list">
+                                <!-- 처음 페이지로 이동하는 버튼 -->
+                                <li class="pagination-first">
+                                    <a
+                                        href="#"
+                                        class="pagination-first-link"
+                                        rel="nofollow"
+                                    >
+                                        <span
+                                            class="pagination-first-icon"
+                                            aria-hidden="true"
+                                            >«</span
+                                        >
+                                    </a>
+                                </li>
+                                <!-- 이전 페이지로 이동하는 버튼 -->
+                                <li class="pagination-prev">
+                                    <a
+                                        href="#"
+                                        class="pagination-prev-link"
+                                        rel="prev nofollow"
+                                    >
+                                        <span
+                                            class="pagination-prev-icon"
+                                            aria-hidden="true"
+                                            >‹</span
+                                        >
+                                    </a>
+                                </li>
+                                <!-- 페이지 번호 버튼 -->
+                                <li class="pagination-page active">
+                                    <a href="#" class="pagination-page-link"
+                                        >1</a
+                                    >
+                                </li>
+
+                                <!-- 다음 페이지로 이동하는 버튼 -->
+                                <li class="pagination-next">
+                                    <a
+                                        href="#"
+                                        class="pagination-next-link"
+                                        rel="next nofollow"
+                                    >
+                                        <span
+                                            class="pagination-next-icon"
+                                            aria-hidden="true"
+                                            >›</span
+                                        >
+                                    </a>
+                                </li>
+                                <!-- 마지막 페이지로 이동하는 버튼 -->
+                                <li class="pagination-last">
+                                    <a
+                                        href="#"
+                                        class="pagination-last-link"
+                                        rel="nofollow"
+                                    >
+                                        <span
+                                            class="pagination-last-icon"
+                                            aria-hidden="true"
+                                            >»</span
+                                        >
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- 신고관리 모달창 -->
+                    <div
+                        id="report-management-modal"
+                        class="report-management-modal"
+                    >
+                        <div class="background-overlay"></div>
+                        <div class="modal-content">
+                            <div class="choice-container">
+                                <input
+                                    id="btn-processing-completed"
+                                    class="btn-processing-completed"
+                                    type="button"
+                                    value="처리 완료"
+                                />
+                                <input
+                                    id="btn-hold"
+                                    class="btn-hold"
+                                    type="button"
+                                    value="보류"
+                                />
+                                <input
+                                    id="btn-no-issue"
+                                    class="btn-no-issue"
+                                    type="button"
+                                    value="이상 없음"
+                                />
+                            </div>
+                            <div class="button-container">
+                                <button id="btn-complete" class="btn-complete">
+                                    저장
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 여기까지(신고관리 모달창)!! -->
+                    <!-- 모달창 -->
+                    <div id="edit-full-modal" class="edit-full-modal">
+                        <div id="edit-modal" class="edit-modal">
+                            <div class="modal-content">
+                                <span id="close-button" class="close-button"
+                                    >&times;</span
+                                >
+                                <h2>게시글 수정</h2>
+                                <form id="edit-form">
+                                    <div>
+                                        <label for="edit-post-title"
+                                            >게시글 제목:</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="edit-post-title"
+                                            class="edit-post-title"
+                                            placeholder="'게시글 제목'을 가져와서 여기에 표시해야 합니다."
+                                        />
+
+                                        <label for="edit-post-content"
+                                            >게시글 내용:</label
+                                        >
+                                        <textarea
+                                            id="edit-post-content"
+                                            class="edit-post-content"
+                                            name="edit-post-content"
+                                            placeholder="'게시글 내용'을 가져와서 여기에 표시해야 합니다."
+                                        ></textarea>
+
+                                        <label for="edit-files"
+                                            >첨부파일:</label
+                                        >
+                                        <input
+                                            type="file"
+                                            id="edit-files"
+                                            name="edit-files"
+                                            accept="image/*, video/*"
+                                            multiple
+                                        />
+
+                                        <!-- 첨부된 이미지/동영상 미리보기 -->
+                                        <div class="file-preview-container">
+                                            <div class="media-wrapper">
+                                                <video controls="">
+                                                    <source
+                                                        src="첨부된_비디오_파일_URL"
+                                                        type="video/mp4"
+                                                    />
+                                                </video>
+                                            </div>
+                                            <div class="media-wrapper">
+                                                <img
+                                                    src="/static/images/admin/test-img.jpg"
+                                                    alt=""
+                                                />
+                                                <img
+                                                    src="/static/images/admin/test-img2.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <h3>댓글 목록</h3>
+                                        <ul
+                                            id="commen-list"
+                                            class="comment-list"
+                                        >
+                                            <li>
+                                                <div>
+                                                    <div
+                                                        class="comment-header-wrapper"
+                                                    >
+                                                        <div>
+                                                            <img
+                                                                src="/static/images/admin/profile-image.png"
+                                                                class="comment-writer-img"
+                                                            /><a
+                                                                class="comment-writer-name"
+                                                                >댓글작성자</a
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="delelte-button-box"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="delelte-button"
+                                                            >
+                                                                삭제
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <textarea
+                                                        class="comment comment-textarea"
+                                                        id="comment"
+                                                        name="comment"
+                                                        placeholder="'댓글'을 가져와서 여기에 표시해야 합니다."
+                                                    ></textarea>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div
+                                                        class="comment-header-wrapper"
+                                                    >
+                                                        <div>
+                                                            <img
+                                                                src="/static/images/admin/profile-image.png"
+                                                                class="comment-writer-img"
+                                                            /><a
+                                                                class="comment-writer-name"
+                                                                >댓글작성자</a
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="delelte-button-box"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="delelte-button"
+                                                            >
+                                                                삭제
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <textarea
+                                                        class="comment comment-textarea"
+                                                        id="comment"
+                                                        name="comment"
+                                                        placeholder="'댓글'을 가져와서 여기에 표시해야 합니다."
+                                                    ></textarea>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- 저장 버튼 -->
+                                    <div class="save">
+                                        <button type="button" id="save-button">
+                                            저장
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div
+                            id="background-overlay"
+                            class="background-overlay"
+                        ></div>
+                    </div>
+                    <!-- 여기까지 모달창 -->
+                </section>
+            </div>
+        </div>
+    </body>
+    <script src="/static/js/admin/test.js"></script>
+    <script src="/static/js/admin/test-modal.js"></script>
+    <script src="/static/js/admin/test-report.js"></script>
+</html>
