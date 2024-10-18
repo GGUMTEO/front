@@ -124,7 +124,7 @@
                                     />
                                     <button id="report-btn">신고하기</button>
                                 </div>
-                                <!-- 신고 모달창 -->
+                                <!-- 작품 신고 모달창 -->
                                 <div id="report-modal" class="modal">
                                     <div class="modal-content">
                                         <span class="close">&times;</span>
@@ -146,6 +146,40 @@
                                             ><br /><br />
                                             <button
                                                 class="report-submit"
+                                                type="submit"
+                                            >
+                                                신고하기
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- 댓글 신고 모달창 -->
+                                <div
+                                    id="report-modal-reply"
+                                    class="modal-reply"
+                                >
+                                    <div class="modal-reply-content">
+                                        <span class="modal-reply-close"
+                                            >&times;</span
+                                        >
+                                        <h2>댓글 신고</h2>
+                                        <br />
+                                        <br />
+                                        <form>
+                                            <label for="reason"
+                                                >신고하려는 이유를
+                                                적어주세요:</label
+                                            ><br />
+                                            <br />
+                                            <textarea
+                                                id="reason"
+                                                name="reason"
+                                                rows="4"
+                                                cols="50"
+                                            ></textarea
+                                            ><br /><br />
+                                            <button
+                                                class="report-submit-reply"
                                                 type="submit"
                                             >
                                                 신고하기
@@ -186,6 +220,14 @@
                                                                 class="btn-comment-delete cursor"
                                                             >
                                                                 삭제
+                                                            </button>
+                                                            <img
+                                                                src="/static/images/video/report.jpg"
+                                                            />
+                                                            <button
+                                                                class="btn-comment-report cursor"
+                                                            >
+                                                                신고
                                                             </button>
                                                         </div>
                                                     </div>
