@@ -287,7 +287,7 @@ video {
 /* 두번째 열 */
 #work-section .apply-header-cell:nth-child(3),
 #work-section .apply-table-cell:nth-child(3) {
-    width: 9%;
+    width: 8%;
 }
 
 /* 세번째 열 */
@@ -306,7 +306,7 @@ video {
 /* 다섯번째 열 */
 #work-section .apply-header-cell:nth-child(6),
 #work-section .apply-table-cell:nth-child(6) {
-    width: 16%;
+    width: 17%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -326,79 +326,19 @@ video {
 /* 여덟 열 */
 #work-section .apply-header-cell:nth-child(9),
 #work-section .apply-table-cell:nth-child(9) {
-    width: 9%;
-}
-
-/* 마지막 열 */
-#work-section .apply-header-cell:nth-child(10),
-#work-section .apply-table-cell:nth-child(10) {
-    width: 9%;
-}
-
-
-/* section4 : 펀딩 관리 */
-/* 기존의 너비 설정 유지 */
-/* 체크박스 열 */
-#funding-section .apply-header-cell:nth-child(1),
-#funding-section .apply-table-cell:nth-child(1) {
-    width: 4%;
-}
-
-/* 첫번째 열 */
-#funding-section .apply-header-cell:nth-child(2),
-#funding-section .apply-table-cell:nth-child(2) {
-    width: 6%;
-}
-
-/* 두번째 열 */
-#funding-section .apply-header-cell:nth-child(3),
-#funding-section .apply-table-cell:nth-child(3) {
-    width: 9%;
-}
-
-/* 세번째 열 */
-#funding-section .apply-header-cell:nth-child(4),
-#funding-section .apply-table-cell:nth-child(4) {
-    width: 11%;
-
-}
-
-/* 네번째 열 */
-#funding-section .apply-header-cell:nth-child(5),
-#funding-section .apply-table-cell:nth-child(5) {
     width: 10%;
 }
 
-/* 다섯번째 열 */
-#funding-section .apply-header-cell:nth-child(6),
-#funding-section .apply-table-cell:nth-child(6) {
-    width: 16%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* 여섯번째 열 */
-#funding-section .apply-header-cell:nth-child(7),
-#funding-section .apply-table-cell:nth-child(7) {
-    width: 9%;
-}
-
-/* 일곱 열 */
-#funding-section .apply-header-cell:nth-child(8),
-#funding-section .apply-table-cell:nth-child(8) {
-    width: 8%;
-}
-/* 여덟 열 */
-#funding-section .apply-header-cell:nth-child(9),
-#funding-section .apply-table-cell:nth-child(9) {
-    width: 9%;
+/* 아홉 열 */
+#work-section .apply-header-cell:nth-child(10),
+#work-section .apply-table-cell:nth-child(10) {
+    width: 11%;
 }
 
 /* 마지막 열 */
-#funding-section .apply-header-cell:nth-child(10),
-#funding-section .apply-table-cell:nth-child(10) {
-    width: 9%;
+#work-section .apply-header-cell:nth-child(11),
+#work-section .apply-table-cell:nth-child(11) {
+    width: 11%;
 }
 
 
@@ -735,7 +675,6 @@ video {
 /* ****************************** */
 
 .pagination {
-    width: 1291px;
     margin: auto;
     margin-top: 20px;
     text-align: center;
