@@ -1,3 +1,5 @@
+/* 수정 모달창 */
+/* edit-modal  */
 .edit-full-modal {
     display: none;
     position: fixed;
@@ -5,7 +7,6 @@
     top: 0;
     width: 100%;
 }
-
 .edit-full-modal .edit-modal {
     position: fixed;
     z-index: 1000;
@@ -19,8 +20,6 @@
     overflow-y: auto; /* 모달창 안에만 스크롤바 표시 */
     border-radius: 8px;
 }
-
-
 .edit-full-modal .background-overlay {
     position: fixed;
     top: 0;
@@ -30,12 +29,13 @@
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 999;
 }
-
-.edit-full-modal .edit-modal .modal-content {
+.edit-full-modal .modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    overflow-y: auto; /* 내용이 넘칠 경우 스크롤 생성 */
     padding: 25px 35px;
 }
-
-.edit-full-modal .edit-modal .modal-content .close-button {
+.edit-full-modal .modal-content .close-button {
     position: absolute;
     top: 10px;
     right: 17px;
@@ -44,39 +44,19 @@
     color: #aaa;
     cursor: pointer;
 }
-
-.edit-full-modal .edit-modal .modal-content .close-button:hover {
+.edit-full-modal .modal-content .close-button:hover {
     color: #000;
 }
-
-
-.edit-full-modal .edit-modal .modal-content h2 {
+.edit-full-modal .modal-content h2 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
 }
-
-.edit-full-modal .edit-modal .modal-content label {
+.edit-full-modal .modal-content label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
 }
-
-#edit-form h3 {
-    margin-top: 20px;
-}
-
-.comment-list{
-    height: 100%;
-    list-style:none;
-    padding-left:0px;
-    margin-top: 10px;
- }
- 
- .comment-list li {
-     margin-bottom: 4px;
- }
-
 .edit-post-title {
     width: 100%;
     padding: 8px;
@@ -86,7 +66,6 @@
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 .edit-post-content {
     width: 100%;
     padding: 8px;
@@ -97,13 +76,12 @@
     box-sizing: border-box;
     resize: none;
 }
-
+/* 미디어 파일(file: media) */
 .modal-content .file-preview-container {
     display: grid;
     gap: 5px;
     margin-top: 20px;
 }
-
 .media-wrapper video,
 .media-wrapper img {
     width: 50%;
@@ -113,7 +91,19 @@
     display: flex;
     gap: 5px;
 }
-
+/* 댓글 */
+.edit-form h3 {
+    margin-top: 20px;
+}
+.comment-list{
+    height: 100%;
+    list-style:none;
+    padding-left:0px;
+    margin-top: 10px;
+}
+.comment-list li {
+     margin-bottom: 4px;
+}
 .comment-writer-img {
     width: 20px;
     height: 20px;
@@ -132,7 +122,17 @@
     display: flex;
     justify-content: space-between;
 }
-
+.comment {
+    resize: none;
+    color: #424242;
+    word-break: break-word;
+    margin: 6px 0px 2px 0px;
+    overflow: auto;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+}
 .delelte-button {
     background-color: #c9c9c999;
     color: #2c2c2c;
@@ -145,19 +145,7 @@
 .delelte-button:hover {
     background-color: #c9c9c9;
 }
-
-.comment {
-    resize: none;
-    color: #424242;
-    word-break: break-word;
-    margin: 6px 0px 2px 0px;
-    overflow: auto;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 8px;
-}
-
+/* 저장 버튼 */
 #save-button {
     background-color: #007bff;
     width: 100%;
@@ -169,7 +157,6 @@
     cursor: pointer;
 
 }
-
 #save-button:hover {
     background-color: #0066d3;
 }
