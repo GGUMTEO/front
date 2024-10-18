@@ -76,7 +76,7 @@ chargeIimage.addEventListener("mouseout", () => {
     chargePtag.style.display = "none";
 });
 
-// 모달과 버튼 요소
+// 작품 신고 모달
 var modal = document.getElementById("report-modal");
 var btn = document.getElementById("report-btn");
 var span = document.getElementsByClassName("close")[0];
@@ -95,5 +95,27 @@ span.addEventListener("click", () => {
 window.addEventListener("click", (event) => {
     if (event.target == modal) {
         modal.style.display = "none";
+    }
+});
+
+// 댓글 신고 모달
+var replyModal = document.getElementById("report-modal-reply");
+var replyReportBtn = document.querySelector(".btn-comment-report");
+var spanReply = document.getElementsByClassName("modal-reply-close")[0];
+
+// 버튼을 클릭하면 모달을 보여줌
+replyReportBtn.addEventListener("click", () => {
+    replyModal.style.display = "block";
+});
+
+// x  클릭하면 모달을 닫기
+spanReply.addEventListener("click", () => {
+    replyModal.style.display = "none";
+});
+
+// 모달 바깥을 클릭하면 모달을 닫습니다
+window.addEventListener("click", (event) => {
+    if (event.target == replyModal) {
+        replyModal.style.display = "none";
     }
 });
