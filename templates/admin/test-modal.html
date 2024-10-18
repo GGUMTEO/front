@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/static/css/admin/test-modal.css" />
+        <link rel="stylesheet" href="/static/css/test-modal.css" />
         <title>test-모달창</title>
     </head>
     <body>
         <!-- 모달창 -->
-        <div id="edit-full-modal">
-            <div id="edit-modal" class="modal">
+        <div id="edit-full-modal" class="edit-full-modal">
+            <div id="edit-modal" class="edit-modal">
                 <div class="modal-content">
-                    <span class="close-button">&times;</span>
+                    <span id="close-button" class="close-button">&times;</span>
                     <h2>게시글 수정</h2>
                     <form id="edit-form">
                         <div>
@@ -42,26 +42,22 @@
 
                             <!-- 첨부된 이미지/동영상 미리보기 -->
                             <div class="file-preview-container">
-                                <video
-                                    class="work-video"
-                                    controls=""
-                                    width="50%"
-                                >
-                                    <source
-                                        src="첨부된_비디오_파일_URL"
-                                        type="video/mp4"
-                                    />
-                                </video>
-                                <div class="image-wrapper">
+                                <div class="media-wrapper">
+                                    <video controls="">
+                                        <source
+                                            src="첨부된_비디오_파일_URL"
+                                            type="video/mp4"
+                                        />
+                                    </video>
+                                </div>
+                                <div class="media-wrapper">
                                     <img
-                                        src="/images/test-img.jpg"
+                                        src="/static/images/test-img.jpg"
                                         alt=""
-                                        width="40%"
                                     />
                                     <img
-                                        src="/images/test-img2.jpg"
+                                        src="/static/images/test-img2.jpg"
                                         alt=""
-                                        width="40%"
                                     />
                                 </div>
                             </div>
@@ -134,7 +130,7 @@
                     </form>
                 </div>
             </div>
-            <div class="background-overlay"></div>
+            <div id="background-overlay" class="background-overlay"></div>
         </div>
         <!-- 여기까지 모달창 -->
     </body>
