@@ -473,3 +473,32 @@ function showReviewDetailModal(sectionId) {
     });
 }
 showReviewDetailModal("#review-section");
+
+// **문의사항 답변 모달창**
+function showAnsweredModal(sectionId, type) {
+    const btns = document.querySelectorAll(`.answered-btn.${type}`);
+    const modal = document.querySelector(`.answered-modal.${type}`);
+    const closeBtn = modal.querySelector(".close-button");
+    const backgroundOverlay = modal.querySelector(".background-overlay");
+
+    // 수정 버튼 클릭 시 모달창 표시
+    btns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            modal.style.display = "flex";
+        });
+    });
+
+    // 닫기 버튼 클릭 시 모달창 닫기
+    closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    // 배경 클릭 시 모달창 닫기
+    backgroundOverlay.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+}
+
+// **함수 호출**
+showAnsweredModal("#inquiry-section", "unanswered");
+showAnsweredModal("#inquiry-section", "completed");
