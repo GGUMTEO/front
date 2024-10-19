@@ -235,7 +235,7 @@ setupServiceFilterOptions("#review-section");
 // ####공통 로직: 신고 처리 모달창을 수행하는 함수
 function showReporProcessingtModal(sectionId) {
     const btnsVideo = document.querySelectorAll(
-        `${sectionId} .video-wrapper .report-status-btn`
+        `${sectionId} .video-wrapper .report-management-btn.status`
     );
     const modalVideo = document.querySelector(
         `${sectionId} .video.report-management-modal`
@@ -292,7 +292,7 @@ function showReporProcessingtModal(sectionId) {
     });
 
     const btnsText = document.querySelectorAll(
-        `${sectionId} .text-wrapper .report-status-btn`
+        `${sectionId} .text-wrapper .report-management-btn.status`
     );
     const modalText = document.querySelector(
         `${sectionId} .text.report-management-modal`
@@ -423,3 +423,53 @@ showReportDetailsModal("#work-section");
 showReportDetailsModal("#funding-section");
 showReportDetailsModal("#audition-section");
 showReportDetailsModal("#review-section");
+
+// ####공통 로직: 리뷰 상세 모달창을 수행하는 함수
+function showReviewDetailModal(sectionId) {
+    const btnsVideo = document.querySelectorAll(
+        `${sectionId} .video-wrapper .apply-table-cell.detail`
+    );
+    const modalVideo = document.querySelector(
+        `${sectionId} .video.review-detail-modal`
+    );
+    const backgroundOverlayVideo = document.querySelector(
+        `${sectionId} .video.review-detail-modal .background-overlay`
+    );
+
+    // 신고 사유 버튼 클릭했을 때
+    btnsVideo.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            // 모달창 나옴.
+            modalVideo.style.display = "flex";
+        });
+    });
+    // 백그라운드 클릭했을 때
+    backgroundOverlayVideo.addEventListener("click", () => {
+        // 모달창 사라짐.
+        modalVideo.style.display = "none";
+    });
+
+    const btnsText = document.querySelectorAll(
+        `${sectionId} .text-wrapper .apply-table-cell.detail`
+    );
+    const modalText = document.querySelector(
+        `${sectionId} .text.review-detail-modal`
+    );
+    const backgroundOverlayText = document.querySelector(
+        `${sectionId} .text.review-detail-modal .background-overlay`
+    );
+
+    // 신고 사유 버튼 클릭했을 때
+    btnsText.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            // 모달창 나옴.
+            modalText.style.display = "flex";
+        });
+    });
+    // 백그라운드 클릭했을 때
+    backgroundOverlayText.addEventListener("click", () => {
+        // 모달창 사라짐.
+        modalText.style.display = "none";
+    });
+}
+showReviewDetailModal("#review-section");

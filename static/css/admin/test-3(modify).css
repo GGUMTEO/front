@@ -402,8 +402,8 @@ video {
     background-color: #b7b7b7;
 }
 
-/* (모달창 아님.) 테이블: 신고관리 버튼 */
-.report-status-btn{
+/* (모달창 아님.) 신고상태 버튼, 문의 처리 상태 버튼 */
+.status{
     color: white;
     border: none;
     border-radius: 4px;
@@ -411,23 +411,27 @@ video {
     padding: 8px;
     box-sizing: border-box;
 }
-.report-status-btn.report {
+.status.report {
     background-color: #ff0000;
 }
-.report-status-btn.delete-processing {
+.status.delete-processing {
     background-color: rgba(41, 153, 41, 0.818);
     cursor: default;
 }
-.report-status-btn.hold {
+.status.hold {
     background-color: #ffa600;
 }
-.report-status-btn.no-issue {
+.status.no-issue {
     background-color: #b7b7b7;
     cursor: default;
 }
 
-/* 신고 사유 모달창 */
-.reasons-report-modal {
+.status.unanswered {
+    background-color: #b7b7b7;
+}
+
+/* 신고 사유 모달창, 리뷰 상세 모달창 */
+.reasons-report-modal, .review-detail-modal {
     display: none;
     position: fixed;
     top: 0;
@@ -436,7 +440,8 @@ video {
     right: 0;
 }
 
-.reasons-report-modal .modal-content {
+.reasons-report-modal .modal-content,
+.review-detail-modal .modal-content{
     background-color: #fff;
     width: 645px;
     margin: auto;
@@ -447,7 +452,7 @@ video {
     box-shadow: 0 32px 40px -2px rgba(10, 22, 70, .12), 0 0 5px 0 rgba(10, 22, 70, .06);
 }
 
-.reasons-report-modal .reasons-report-header {
+.reasons-report-header {
     margin: auto 40px;
     display: flex;
     justify-content: space-between;
@@ -460,12 +465,13 @@ video {
     font-weight: 700;
 }
 
-.reasons-report-modal .close-btn {
+.close-btn {
     flex-shrink: 0;
     font-size: 25px;
 }
 
-.reasons-report-modal .reasons-report-contents {
+.reasons-report-contents,
+.review-detail-contents {
     margin: auto 40px;
     margin-top: 12px 0;
     overflow: auto;
@@ -477,24 +483,24 @@ video {
     width: 24px;
 }
 
-.reporter-detail .detail {
+.detail-wrapper .detail {
     margin-top: 8px;
     font-size: 16px;
     color: #3b3b3b;
 }
 
 
-.reporter-detail .name,
-.reporter-detail .email,
-.reporter-detail .time {
+.detail-wrapper .name,
+.detail-wrapper .email,
+.detail-wrapper .time {
     font-weight: 400;
 }
 
-.reporter-detail {
+.detail-wrapper {
     margin-bottom: 14px;
 }
 
-.reporter-detail, .report-content {
+.detail-wrapper, .content-detail {
     font-size: 20px;
     font-weight: 700;
     line-height: 1.5;
@@ -502,19 +508,14 @@ video {
     color: #323232;
 }
 
-.reasons-report-modal textarea {
+.review-detail-modal .content-detail {
+    margin-top: 0px;
+}
+
+.reasons-report-modal textarea,
+.review-detail-modal textarea{
     height: 218px;
     resize: none;
-}
-
-.reasons-report-modal .close-btn:hover,
-.reasons-report-modal .close-btn:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.reasons-report-modal textarea {
     width: 100%;
     margin-top: 10px;
     padding: 15px;
@@ -525,9 +526,19 @@ video {
     resize: none; /* 크기 조절 기능 비활성화 */
 }
 
-.reasons-report-modal textarea:focus {
+.reasons-report-modal textarea:focus,
+.review-detail-modal textarea:focus {
     outline: none;
 }
+
+.reasons-report-modal .close-btn:hover,
+.reasons-report-modal .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /* (모달창 아님.) 테이블: 신고사유 버튼 */
 .reasons-report-btn, .edit-btn {
     background-color: #007bff;
@@ -1056,6 +1067,70 @@ h1.common-header-description {
     width: 9%;
 }
 
+/*section7: 문의 관리  */
+/* 기존의 너비 설정 유지 */
+/* 체크박스 열 */
+#inquiry-section .apply-header-cell:nth-child(1),
+#inquiry-section .apply-table-cell:nth-child(1) {
+    width: 4%;
+}
+
+/* 첫번째 열 */
+#inquiry-section .apply-header-cell:nth-child(2),
+#inquiry-section .apply-table-cell:nth-child(2) {
+    width: 4%;
+}
+
+/* 두번째 열 */
+#inquiry-section .apply-header-cell:nth-child(3),
+#inquiry-section .apply-table-cell:nth-child(3) {
+    width: 8%;
+}
+
+/* 세번째 열 */
+#inquiry-section .apply-header-cell:nth-child(4),
+#inquiry-section .apply-table-cell:nth-child(4) {
+    width: 13%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+/* 네번째 열 */
+#inquiry-section .apply-header-cell:nth-child(5),
+#inquiry-section .apply-table-cell:nth-child(5) {
+    width: 18%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 다섯번째 열 */
+#inquiry-section .apply-header-cell:nth-child(6),
+#inquiry-section .apply-table-cell:nth-child(6) {
+    width: 7%;
+}
+
+/* 여섯번째 열 */
+#inquiry-section .apply-header-cell:nth-child(7),
+#inquiry-section .apply-table-cell:nth-child(7) {
+    width: 17%;
+}
+
+/* 일곱 열 */
+#inquiry-section .apply-header-cell:nth-child(8),
+#inquiry-section .apply-table-cell:nth-child(8) {
+    width: 8%;
+}
+
+/* 여덟 열 */
+#inquiry-section .apply-header-cell:nth-child(9),
+#inquiry-section .apply-table-cell:nth-child(9) {
+    width: 9%;
+}
+
+
 
 .apply-table-row .active-member {
     color: rgba(41, 153, 41, 0.818);
@@ -1064,7 +1139,8 @@ h1.common-header-description {
     color: #00000076;
 }
 
-#member-section .service-introdution-group-button {
+#member-section .service-introdution-group-button,
+#inquiry-section .service-introdution-group-button {
     position: unset;
     height: 48px;
     padding: 0;
