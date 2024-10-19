@@ -411,17 +411,20 @@ video {
     padding: 8px;
     box-sizing: border-box;
 }
-.status.report {
+.status.report,
+.status.refund-request {
     background-color: #ff0000;
 }
-.status.delete-processing {
+.status.delete-processing,
+.status.refund-completed{
     background-color: rgba(41, 153, 41, 0.818);
     cursor: default;
 }
 .status.hold {
     background-color: #ffa600;
 }
-.status.no-issue {
+.status.no-issue, 
+.status.refund-cancelled {
     background-color: #b7b7b7;
     cursor: default;
 }
@@ -1133,17 +1136,91 @@ h1.common-header-description {
     width: 9%;
 }
 
+/*section8: 결제 관리  */
+/* 기존의 너비 설정 유지 */
+/* 체크박스 열 */
+#payment-section .apply-header-cell:nth-child(1),
+#payment-section .apply-table-cell:nth-child(1) {
+    width: 4%;
+}
+
+/* 첫번째 열 */
+#payment-section .apply-header-cell:nth-child(2),
+#payment-section .apply-table-cell:nth-child(2) {
+    width: 4%;
+}
+
+/* 두번째 열 */
+#payment-section .apply-header-cell:nth-child(3),
+#payment-section .apply-table-cell:nth-child(3) {
+    width: 10%;
+}
+
+/* 세번째 열 */
+#payment-section .apply-header-cell:nth-child(4),
+#payment-section .apply-table-cell:nth-child(4) {
+    width: 5%;
+}
+
+/* 네번째 열 */
+#payment-section .apply-header-cell:nth-child(5),
+#payment-section .apply-table-cell:nth-child(5) {
+    width: 15%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 다섯번째 열 */
+#payment-section .apply-header-cell:nth-child(6),
+#payment-section .apply-table-cell:nth-child(6) {
+    width: 7%;
+}
+
+/* 여섯번째 열 */
+#payment-section .apply-header-cell:nth-child(7),
+#payment-section .apply-table-cell:nth-child(7) {
+    width: 9%;
+
+}
+
+/* 일곱 열 */
+#payment-section .apply-header-cell:nth-child(8),
+#payment-section .apply-table-cell:nth-child(8) {
+    width: 15%;
+}
+
+/* 여덟 열 */
+#payment-section .apply-header-cell:nth-child(9),
+#payment-section .apply-table-cell:nth-child(9) {
+    width: 8%;
+}
+
+/* 아홉 열 */
+#payment-section .apply-header-cell:nth-child(10),
+#payment-section .apply-table-cell:nth-child(10) {
+    width: 8%;
+}
+
+/* 마지막 열 */
+#payment-section .apply-header-cell:nth-child(11),
+#payment-section .apply-table-cell:nth-child(11) {
+    width: 8%;
+}
 
 
-.apply-table-row .active-member {
+.apply-table-row .active-member,
+.apply-table-row .payment-complete {
     color: rgba(41, 153, 41, 0.818);
 }
-.apply-table-row .terminated-member {
+.apply-table-row .terminated-member,
+.apply-table-row .payment-cancelled {
     color: #00000076;
 }
 
 #member-section .service-introdution-group-button,
-#inquiry-section .service-introdution-group-button {
+#inquiry-section .service-introdution-group-button,
+#payment-section .service-introdution-group-button {
     position: unset;
     height: 48px;
     padding: 0;

@@ -4806,6 +4806,393 @@
                     </div>
                   
                 </section>
+
+                <!-- section8: 결제 관리 -->
+                <section id="payment-section" class="common-section">
+                    <!-- body_header -->
+                    <div class="common-header-container">
+                        <div class="service-introdution-group-button">
+                            <div class="container">
+                                <div>
+                                    <h2 class="common-header-title">
+                                        결제 관리
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-label"></div>
+                        <p class="common-header-description">
+                            결제 정보를 조회하고 결제 상태를 관리합니다.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div>
+                            <!-- body_layout -->
+                            <div class="common-layout-container">
+                                <div class="filter-wrap">
+                                    <div class="sort-filter-options">
+                                        <span
+                                            class="sort-filter-option"
+                                            >최신순</span
+                                        >
+                                        <span class="sort-filter-option"
+                                            >결제완료</span
+                                        >
+                                        <span class="sort-filter-option selected"
+                                            >환불요청</span
+                                        >
+                                        <span class="sort-filter-option"
+                                            >환불완료</span
+                                        >
+                                        <span class="sort-filter-option"
+                                            >환불취소/불가</span
+                                        >
+                                    </div>
+                                    <!-- Action Buttons -->
+                                    <div class="action-buttons">
+                                        <input
+                                            type="text"
+                                            class="filter-search-input"
+                                            placeholder="통합검색"
+                                        />
+                                        <button class="selected-btn">
+                                            문의사항 삭제
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- 회원 정보 테이블 -->
+                                <div class="apply-table-container">
+                                    <div
+                                        class="apply-table-row apply-table-header"
+                                    >
+                                        <div
+                                            class="apply-table-cell apply-header-cell select-all-cell"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                class="select-all"
+                                            />
+                                        </div>
+                                        <div
+                                            class="apply-table-cell apply-header-cell"
+                                        >
+                                            번호
+                                        </div>
+                                        <div
+                                            class="apply-table-cell apply-header-cell"
+                                        >
+                                            결제번호
+                                        </div>
+                                        <div
+                                            class="apply-table-cell apply-header-cell"
+                                        >
+                                            구분
+                                        </div>
+                                        <div
+                                            class="apply-table-cell apply-header-cell"
+                                        >
+                                            구매 상품
+                                        </div>
+                                        <div
+                                        class="apply-table-cell apply-header-cell"
+                                        >
+                                        구매자
+                                        </div>
+                                        <div
+                                            class="apply-table-cell apply-header-cell"
+                                        >
+                                            결제일
+                                        </div>
+                                        <div
+                                            class="apply-table-cell apply-header-cell"
+                                        >
+                                            결제 수단
+                                        </div>
+                                        <div
+                                            class="apply-table-cell apply-header-cell"
+                                        >
+                                            결제 상태
+                                        </div>
+                                        
+                                        <div
+                                            class="apply-table-cell apply-header-cell"
+                                        >
+                                            환불상태
+                                        </div>
+                                        <div
+                                            class="apply-table-cell apply-header-cell"
+                                        >
+                                            환불 완료일
+                                        </div>
+                                    </div>
+
+                                    <!-- Example row (Initial data) -->
+                                    <div class="apply-table-row">
+                                        <div class="apply-table-cell">
+                                            <input
+                                                type="checkbox"
+                                                class="apply-checkbox"
+                                            />
+                                        </div>
+                                        <div class="apply-table-cell">1</div>
+                                        <div class="apply-table-cell">
+                                            405-9380-098
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            작품
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            독립영화 액션 시나리오
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            홍길동
+                                        </div>
+                                        <div class="apply-table-cell"> 2024-01-01</div>
+                                        <div class="apply-table-cell">
+                                            (신한)352-1234-1234-12
+                                        </div>
+                                        <div
+                                            class="apply-table-cell payment-complete"
+                                        >
+                                            결제 완료
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            <button
+                                                class="refund-processing-btn status refund-request"
+                                            >
+                                                환불 요청
+                                            </button>
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            -
+                                        </div>
+                                    </div>
+                                    <div class="apply-table-row">
+                                        <div class="apply-table-cell">
+                                            <input
+                                                type="checkbox"
+                                                class="apply-checkbox"
+                                            />
+                                        </div>
+                                        <div class="apply-table-cell">1</div>
+                                        <div class="apply-table-cell">
+                                            405-9380-098
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            작품
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            독립영화 액션 시나리오
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            홍길동
+                                        </div>
+                                        <div class="apply-table-cell"> 2024-01-01</div>
+                                        <div class="apply-table-cell">
+                                            (국민)352-1234-1234-12
+                                        </div>
+                                        <div
+                                            class="apply-table-cell payment-complete"
+                                        >
+                                            결제 완료
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            -
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            -
+                                        </div>
+                                    </div>
+                                    <div class="apply-table-row">
+                                        <div class="apply-table-cell">
+                                            <input
+                                                type="checkbox"
+                                                class="apply-checkbox"
+                                            />
+                                        </div>
+                                        <div class="apply-table-cell">1</div>
+                                        <div class="apply-table-cell">
+                                            405-9380-098
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            작품
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            독립영화 액션 시나리오
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            홍길동
+                                        </div>
+                                        <div class="apply-table-cell"> 2024-01-01</div>
+                                        <div class="apply-table-cell">
+                                            (카카오)352-1234-1234-12
+                                        </div>
+                                        <div
+                                            class="apply-table-cell payment-complete"
+                                        >
+                                            결제 완료
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            <button
+                                                class="refund-processing-btn status refund-completed"
+                                            >
+                                                환불 완료
+                                            </button>
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            2024-02-02
+                                        </div>
+                                    </div>
+                                    <div class="apply-table-row">
+                                        <div class="apply-table-cell">
+                                            <input
+                                                type="checkbox"
+                                                class="apply-checkbox"
+                                            />
+                                        </div>
+                                        <div class="apply-table-cell">1</div>
+                                        <div class="apply-table-cell">
+                                            405-9380-098
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            작품
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            독립영화 액션 시나리오
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            홍길동
+                                        </div>
+                                        <div class="apply-table-cell"> 2024-01-01</div>
+                                        <div class="apply-table-cell">
+                                            (농협)352-1234-1234-12
+                                        </div>
+                                        <div
+                                            class="apply-table-cell payment-cancelled"
+                                        >
+                                            결제 취소
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            <button
+                                                class="refund-processing-btn status refund-cancelled"
+                                            >
+                                            환불 불가
+                                            </button>
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            -
+                                        </div>
+                                    </div>
+                                    <div class="apply-table-row">
+                                        <div class="apply-table-cell">
+                                            <input
+                                                type="checkbox"
+                                                class="apply-checkbox"
+                                            />
+                                        </div>
+                                        <div class="apply-table-cell">1</div>
+                                        <div class="apply-table-cell">
+                                            405-9380-098
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            작품
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            독립영화 액션 시나리오
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            홍길동
+                                        </div>
+                                        <div class="apply-table-cell"> 2024-01-01</div>
+                                        <div class="apply-table-cell">
+                                            (농협)352-1234-1234-12
+                                        </div>
+                                        <div
+                                            class="apply-table-cell payment-cancelled"
+                                        >
+                                            결제 취소
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            -
+                                        </div>
+                                        <div class="apply-table-cell">
+                                            -
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav class="pagination">
+                                <ul class="pagination-list">
+                                    <!-- 처음 페이지로 이동하는 버튼 -->
+                                    <li class="pagination-first">
+                                        <a
+                                            href="#"
+                                            class="pagination-first-link"
+                                            rel="nofollow"
+                                        >
+                                            <span
+                                                class="pagination-first-icon"
+                                                aria-hidden="true"
+                                                >«</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <!-- 이전 페이지로 이동하는 버튼 -->
+                                    <li class="pagination-prev">
+                                        <a
+                                            href="#"
+                                            class="pagination-prev-link"
+                                            rel="prev nofollow"
+                                        >
+                                            <span
+                                                class="pagination-prev-icon"
+                                                aria-hidden="true"
+                                                >‹</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <!-- 페이지 번호 버튼 -->
+                                    <li class="pagination-page active">
+                                        <a href="#" class="pagination-page-link"
+                                            >1</a
+                                        >
+                                    </li>
+
+                                    <!-- 다음 페이지로 이동하는 버튼 -->
+                                    <li class="pagination-next">
+                                        <a
+                                            href="#"
+                                            class="pagination-next-link"
+                                            rel="next nofollow"
+                                        >
+                                            <span
+                                                class="pagination-next-icon"
+                                                aria-hidden="true"
+                                                >›</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <!-- 마지막 페이지로 이동하는 버튼 -->
+                                    <li class="pagination-last">
+                                        <a
+                                            href="#"
+                                            class="pagination-last-link"
+                                            rel="nofollow"
+                                        >
+                                            <span
+                                                class="pagination-last-icon"
+                                                aria-hidden="true"
+                                                >»</span
+                                            >
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>  
+                        
+                    </div>
+                </section>
             </div>
         </div>
     </body>
