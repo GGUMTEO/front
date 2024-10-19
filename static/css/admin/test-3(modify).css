@@ -213,7 +213,8 @@ video {
 }
 
 /* 게시글 삭제 버튼 */
-.delete-selected-btn {
+.selected-btn {
+    width: 120px;
     height: 40px;
     font-weight: 400;
     line-height: 1.5;
@@ -225,7 +226,7 @@ video {
     border: 1px solid #e2e8f0;
     transition: background-color 0.3s;
 }
-.delete-selected-btn:hover {
+.selected-btn:hover {
     background-color: #e2e8f0; 
 }
 
@@ -297,81 +298,20 @@ video {
     margin: 0 auto;
 }
 
-/* section3 : 작품 관리 */
-/* 기존의 너비 설정 유지 */
-/* 체크박스 열 */
-#work-section .apply-header-cell:nth-child(1),
-#work-section .apply-table-cell:nth-child(1) {
-    width: 4%;
-}
-
-/* 첫번째 열 */
-#work-section .apply-header-cell:nth-child(2),
-#work-section .apply-table-cell:nth-child(2) {
-    width: 6%;
-}
-
-/* 두번째 열 */
-#work-section .apply-header-cell:nth-child(3),
-#work-section .apply-table-cell:nth-child(3) {
-    width: 8%;
-}
-
-/* 세번째 열 */
-#work-section .apply-header-cell:nth-child(4),
-#work-section .apply-table-cell:nth-child(4) {
-    width: 11%;
-
-}
-
-/* 네번째 열 */
-#work-section .apply-header-cell:nth-child(5),
-#work-section .apply-table-cell:nth-child(5) {
-    width: 10%;
-}
-
-/* 다섯번째 열 */
-#work-section .apply-header-cell:nth-child(6),
-#work-section .apply-table-cell:nth-child(6) {
-    width: 17%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* 여섯번째 열 */
-#work-section .apply-header-cell:nth-child(7),
-#work-section .apply-table-cell:nth-child(7) {
-    width: 9%;
-}
-
-/* 일곱 열 */
-#work-section .apply-header-cell:nth-child(8),
-#work-section .apply-table-cell:nth-child(8) {
-    width: 8%;
-}
-/* 여덟 열 */
-#work-section .apply-header-cell:nth-child(9),
-#work-section .apply-table-cell:nth-child(9) {
-    width: 10%;
-}
-
-/* 아홉 열 */
-#work-section .apply-header-cell:nth-child(10),
-#work-section .apply-table-cell:nth-child(10) {
-    width: 11%;
-}
-
-/* 마지막 열 */
-#work-section .apply-header-cell:nth-child(11),
-#work-section .apply-table-cell:nth-child(11) {
-    width: 11%;
-}
-
 
 /*********** 모달창 **************/
-/* 신고관리 모달창 */
-/* report-management-modal  */
+/* 상태 수정 모달창, 신고관리 모달창 */
+.background-overlay {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.status-edit-modal,
 .report-management-modal {
     display: none;
     align-items: center;
@@ -383,21 +323,14 @@ video {
     width: 100%;
     height: 100%;
 }
-.report-management-modal .background-overlay {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-}
+.status-edit-modal .modal-content,
 .report-management-modal .modal-content {
     background-color: #ffffff;
     padding: 25px 40px 30px 40px;
     border-radius: 10px;
     overflow-y: auto;
 }
+.status-edit-modal .choice-container,
 .report-management-modal .choice-container {
     display: flex;
     justify-content: center;
@@ -414,7 +347,8 @@ video {
     border: none;
     border-radius: 5px;
 }
-.choice-container .btn-processing-completed {
+.choice-container .btn-delete-processing,
+.choice-container .btn-active-member {
     background-color: rgba(107, 188, 107, 0.443);
 }
 .choice-container .btn-hold {
@@ -423,14 +357,17 @@ video {
 .choice-container #btn-hold {
     width: 100px;
 }
-.choice-container .btn-no-issue {
+.choice-container .btn-no-issue,
+.choice-container .btn-terminated-member {
     background-color: #00000026;
 }
+.status-edit-modal .button-container,
 .report-management-modal .button-container {
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
+.status-edit-modal .btn-complete,
 .report-management-modal .btn-complete {
     margin-top: auto;
     padding: 10px 35px;
@@ -442,45 +379,49 @@ video {
     border-radius: 5px;
     background-color: #007bff;
 }
-.report-management-modal .choice-container .btn-processing-completed:hover {
+.choice-container .btn-delete-processing:hover,
+.choice-container .btn-active-member:hover {
     transform: translateY(-4px) scale(1.02);
 }
-.report-management-modal .choice-container .btn-hold:hover {
+.choice-container .btn-hold:hover {
     transform: translateY(-4px) scale(1.02);
 }
-.report-management-modal .choice-container .btn-no-issue:hover {
+.choice-container .btn-no-issue:hover,
+.choice-container .btn-terminated-member:hover {
     transform: translateY(-4px) scale(1.02);
 }
-.report-management-modal .choice-container .btn-processing-completed.on {
+.choice-container .btn-delete-processing.on,
+.choice-container .btn-active-member.on {
     background-color: rgba(41, 153, 41, 0.818);
 }
-.report-management-modal .choice-container .btn-hold.on {
+.choice-container .btn-hold.on {
     background-color: #ffa600;
 }
-.report-management-modal .choice-container .btn-no-issue.on {
+.choice-container .btn-no-issue.on,
+.choice-container .btn-terminated-member.on {
     background-color: #b7b7b7;
 }
 
 /* (모달창 아님.) 테이블: 신고관리 버튼 */
-.report-status {
+.report-status-btn{
     color: white;
     border: none;
     border-radius: 4px;
-    width: 70%;
+    width: 80px;
     padding: 8px;
     box-sizing: border-box;
 }
-.report-status.report {
+.report-status-btn.report {
     background-color: #ff0000;
 }
-.report-status.processing-completed {
+.report-status-btn.delete-processing {
     background-color: rgba(41, 153, 41, 0.818);
     cursor: default;
 }
-.report-status.hold {
+.report-status-btn.hold {
     background-color: #ffa600;
 }
-.report-status.no-issue {
+.report-status-btn.no-issue {
     background-color: #b7b7b7;
     cursor: default;
 }
@@ -493,18 +434,6 @@ video {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.reasons-report-modal .background-overlay {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
 }
 
 .reasons-report-modal .modal-content {
@@ -600,16 +529,17 @@ video {
     outline: none;
 }
 /* (모달창 아님.) 테이블: 신고사유 버튼 */
-.reasons-report-btn {
+.reasons-report-btn, .edit-btn {
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
-    width: 70%;
+    width: 80px;
     padding: 8px;
     box-sizing: border-box;
 }
-.reasons-report-btn:hover {
+.reasons-report-btn:hover, 
+.edit-btn:hover {
     opacity: 0.8;
 }
 
@@ -762,19 +692,393 @@ h1.common-header-description {
     border-radius: 3px;
 }
 .section-label {
-    display: flex;
     padding-left: 170px;
     padding-top: 10px;
 }
 
 /* 게시글 제목 클릭 시, 해당 게시글 상세페이지로 이동 */
-.apply-table-cell > a {
+.apply-table-cell.post-title > a {
     color: rgba(0, 0, 255, 0.823);
 }
 
-/* 글-wrapper(display:none//defalt) */
+/* section3: 작품 관리 .글 display none  */
 #work-section .text-wrapper {
     display: none;
 }
+/* section4: 펀딩 관리 .글 display none  */
+#funding-section .text-wrapper {
+    display: none;
+}
+/* section5: 모집 관리 .글 display none  */
+#audition-section .text-wrapper {
+    display: none;
+}
+/* section6: 작품 리뷰 관리 .글 display none  */
+#review-section .text-wrapper {
+    display: none;
+}
+
+/* section1 : 회원 관리 */
+/* 기존의 너비 설정 유지 */
+/* 체크박스 열 */
+#member-section .apply-header-cell:nth-child(1),
+#member-section .apply-table-cell:nth-child(1) {
+    width: 4%;
+}
+
+/* 첫번째 열 */
+#member-section .apply-header-cell:nth-child(2),
+#member-section .apply-table-cell:nth-child(2) {
+    width: 4%;
+}
+
+/* 두번째 열 */
+#member-section .apply-header-cell:nth-child(3),
+#member-section .apply-table-cell:nth-child(3) {
+    width: 8%;
+}
+
+/* 세번째 열 */
+#member-section .apply-header-cell:nth-child(4),
+#member-section .apply-table-cell:nth-child(4) {
+    width: 8%;
+
+}
+
+/* 네번째 열 */
+#member-section .apply-header-cell:nth-child(5),
+#member-section .apply-table-cell:nth-child(5) {
+    width: 16%;
+}
+
+/* 다섯번째 열 */
+#member-section .apply-header-cell:nth-child(6),
+#member-section .apply-table-cell:nth-child(6) {
+    width: 10%;
+}
+
+/* 여섯번째 열 */
+#member-section .apply-header-cell:nth-child(7),
+#member-section .apply-table-cell:nth-child(7) {
+    width: 6%;
+}
+
+/* 일곱 열 */
+#member-section .apply-header-cell:nth-child(8),
+#member-section .apply-table-cell:nth-child(8) {
+    width: 16%;
+}
+/* 여덟 열 */
+#member-section .apply-header-cell:nth-child(9),
+#member-section .apply-table-cell:nth-child(9) {
+    width: 11%;
+}
+
+/* 아홉 열 */
+#member-section .apply-header-cell:nth-child(10),
+#member-section .apply-table-cell:nth-child(10) {
+    width: 8%;
+}
+
+/* 마지막 열 */
+#member-section .apply-header-cell:nth-child(11),
+#member-section .apply-table-cell:nth-child(11) {
+    width: 8%;
+}
+
+/* section3 : 작품 관리 */
+/* 기존의 너비 설정 유지 */
+/* 체크박스 열 */
+#work-section .apply-header-cell:nth-child(1),
+#work-section .apply-table-cell:nth-child(1) {
+    width: 4%;
+}
+
+/* 첫번째 열 */
+#work-section .apply-header-cell:nth-child(2),
+#work-section .apply-table-cell:nth-child(2) {
+    width: 6%;
+}
+
+/* 두번째 열 */
+#work-section .apply-header-cell:nth-child(3),
+#work-section .apply-table-cell:nth-child(3) {
+    width: 8%;
+}
+
+/* 세번째 열 */
+#work-section .apply-header-cell:nth-child(4),
+#work-section .apply-table-cell:nth-child(4) {
+    width: 11%;
+
+}
+
+/* 네번째 열 */
+#work-section .apply-header-cell:nth-child(5),
+#work-section .apply-table-cell:nth-child(5) {
+    width: 10%;
+}
+
+/* 다섯번째 열 */
+#work-section .apply-header-cell:nth-child(6),
+#work-section .apply-table-cell:nth-child(6) {
+    width: 16%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 여섯번째 열 */
+#work-section .apply-header-cell:nth-child(7),
+#work-section .apply-table-cell:nth-child(7) {
+    width: 9%;
+}
+
+/* 일곱 열 */
+#work-section .apply-header-cell:nth-child(8),
+#work-section .apply-table-cell:nth-child(8) {
+    width: 8%;
+}
+/* 여덟 열 */
+#work-section .apply-header-cell:nth-child(9),
+#work-section .apply-table-cell:nth-child(9) {
+    width: 10%;
+}
+
+/* 아홉 열 */
+#work-section .apply-header-cell:nth-child(10),
+#work-section .apply-table-cell:nth-child(10) {
+    width: 9%;
+}
+
+/* 마지막 열 */
+#work-section .apply-header-cell:nth-child(11),
+#work-section .apply-table-cell:nth-child(11) {
+    width: 9%;
+}
 
 
+/* section4 : 펀딩 관리 */
+/* 기존의 너비 설정 유지 */
+/* 체크박스 열 */
+#funding-section .apply-header-cell:nth-child(1),
+#funding-section .apply-table-cell:nth-child(1) {
+    width: 4%;
+}
+
+/* 첫번째 열 */
+#funding-section .apply-header-cell:nth-child(2),
+#funding-section .apply-table-cell:nth-child(2) {
+    width: 4%;
+}
+
+/* 두번째 열 */
+#funding-section .apply-header-cell:nth-child(3),
+#funding-section .apply-table-cell:nth-child(3) {
+    width: 8%;
+}
+
+/* 세번째 열 */
+#funding-section .apply-header-cell:nth-child(4),
+#funding-section .apply-table-cell:nth-child(4) {
+    width: 9%;
+
+}
+
+/* 네번째 열 */
+#funding-section .apply-header-cell:nth-child(5),
+#funding-section .apply-table-cell:nth-child(5) {
+    width: 8%;
+}
+
+/* 다섯번째 열 */
+#funding-section .apply-header-cell:nth-child(6),
+#funding-section .apply-table-cell:nth-child(6) {
+    width: 15%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 여섯번째 열 */
+#funding-section .apply-header-cell:nth-child(7),
+#funding-section .apply-table-cell:nth-child(7) {
+    width: 10%;
+}
+
+/* 일곱 열 */
+#funding-section .apply-header-cell:nth-child(8),
+#funding-section .apply-table-cell:nth-child(8) {
+    width: 10%;
+}
+/* 여덟 열 */
+#funding-section .apply-header-cell:nth-child(9),
+#funding-section .apply-table-cell:nth-child(9) {
+    width: 9%;
+}
+
+/* 아홉 열 */
+#funding-section .apply-header-cell:nth-child(10),
+#funding-section .apply-table-cell:nth-child(10) {
+    width: 9%;
+}
+
+/* 마지막 열 */
+#funding-section .apply-header-cell:nth-child(11),
+#funding-section .apply-table-cell:nth-child(11) {
+    width: 8%;
+}
+
+/* section5 : 모집 관리 */
+/* 기존의 너비 설정 유지 */
+/* 체크박스 열 */
+#audition-section .apply-header-cell:nth-child(1),
+#audition-section .apply-table-cell:nth-child(1) {
+    width: 4%;
+}
+
+/* 첫번째 열 */
+#audition-section .apply-header-cell:nth-child(2),
+#audition-section .apply-table-cell:nth-child(2) {
+    width: 4%;
+}
+
+/* 두번째 열 */
+#audition-section .apply-header-cell:nth-child(3),
+#audition-section .apply-table-cell:nth-child(3) {
+    width: 8%;
+}
+
+/* 세번째 열 */
+#audition-section .apply-header-cell:nth-child(4),
+#audition-section .apply-table-cell:nth-child(4) {
+    width: 9%;
+
+}
+
+/* 네번째 열 */
+#audition-section .apply-header-cell:nth-child(5),
+#audition-section .apply-table-cell:nth-child(5) {
+    width: 8%;
+}
+
+/* 다섯번째 열 */
+#audition-section .apply-header-cell:nth-child(6),
+#audition-section .apply-table-cell:nth-child(6) {
+    width: 15%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 여섯번째 열 */
+#audition-section .apply-header-cell:nth-child(7),
+#audition-section .apply-table-cell:nth-child(7) {
+    width: 10%;
+}
+
+/* 일곱 열 */
+#audition-section .apply-header-cell:nth-child(8),
+#audition-section .apply-table-cell:nth-child(8) {
+    width: 10%;
+}
+/* 여덟 열 */
+#audition-section .apply-header-cell:nth-child(9),
+#audition-section .apply-table-cell:nth-child(9) {
+    width: 9%;
+}
+
+/* 아홉 열 */
+#audition-section .apply-header-cell:nth-child(10),
+#audition-section .apply-table-cell:nth-child(10) {
+    width: 9%;
+}
+
+/* 마지막 열 */
+#audition-section .apply-header-cell:nth-child(11),
+#audition-section .apply-table-cell:nth-child(11) {
+    width: 8%;
+}
+
+/*section6: 작품 리뷰 관리  */
+/* 기존의 너비 설정 유지 */
+/* 체크박스 열 */
+#review-section .apply-header-cell:nth-child(1),
+#review-section .apply-table-cell:nth-child(1) {
+    width: 4%;
+}
+
+/* 첫번째 열 */
+#review-section .apply-header-cell:nth-child(2),
+#review-section .apply-table-cell:nth-child(2) {
+    width: 4%;
+}
+
+/* 두번째 열 */
+#review-section .apply-header-cell:nth-child(3),
+#review-section .apply-table-cell:nth-child(3) {
+    width: 22%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 세번째 열 */
+#review-section .apply-header-cell:nth-child(4),
+#review-section .apply-table-cell:nth-child(4) {
+    width: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 네번째 열 */
+#review-section .apply-header-cell:nth-child(5),
+#review-section .apply-table-cell:nth-child(5) {
+    width: 8%;
+}
+
+/* 다섯번째 열 */
+#review-section .apply-header-cell:nth-child(6),
+#review-section .apply-table-cell:nth-child(6) {
+    width: 11%;
+}
+
+/* 여섯번째 열 */
+#review-section .apply-header-cell:nth-child(7),
+#review-section .apply-table-cell:nth-child(7) {
+    width: 8%;
+}
+
+/* 일곱 열 */
+#review-section .apply-header-cell:nth-child(8),
+#review-section .apply-table-cell:nth-child(8) {
+    width: 9%;
+}
+
+
+.apply-table-row .active-member {
+    color: rgba(41, 153, 41, 0.818);
+}
+.apply-table-row .terminated-member {
+    color: #00000076;
+}
+
+#member-section .service-introdution-group-button {
+    position: unset;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.apply-table-cell svg {
+    width: 16px;
+}
+
+#review-section .apply-table-cell.detail {
+    cursor: pointer;
+}
+#review-section .apply-table-cell.detail:hover {
+    color: #4876ef;
+}
