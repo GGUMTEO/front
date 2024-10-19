@@ -17,17 +17,14 @@
                     <div class="common-header-container">
                         <div class="service-introdution-group-button">
                             <div class="container">
-                                <a
-                                    class="group-button active"
-                                    id="video-button"
-                                >
+                                <a class="group-button video-button active">
                                     <div>
                                         <h2 class="common-header-title">
                                             영상
                                         </h2>
                                     </div>
                                 </a>
-                                <a class="group-button" id="text-button">
+                                <a class="group-button text-button">
                                     <div>
                                         <h2 class="common-header-title">글</h2>
                                     </div>
@@ -42,7 +39,8 @@
                         </p>
                     </div>
 
-                    <div id="video-wrapper">
+                    <!-- 1. 영상 -->
+                    <div class="video-wrapper">
                         <!-- body_layout -->
                         <div class="common-layout-container">
                             <div class="filter-wrap">
@@ -68,10 +66,7 @@
                                         class="filter-search-input"
                                         placeholder="통합검색"
                                     />
-                                    <button
-                                        id="delete-selected-btn"
-                                        class="delete-selected-btn"
-                                    >
+                                    <button class="delete-selected-btn">
                                         게시글 삭제
                                     </button>
                                 </div>
@@ -84,7 +79,7 @@
                                     >
                                         <input
                                             type="checkbox"
-                                            id="select-all"
+                                            class="select-all"
                                         />
                                     </div>
                                     <div
@@ -136,7 +131,7 @@
                                     <div
                                         class="apply-table-cell apply-header-cell edit"
                                     >
-                                        신고사유
+                                        신고내역
                                     </div>
                                 </div>
 
@@ -165,15 +160,16 @@
                                     <div class="apply-table-cell">10,000원</div>
                                     <div class="apply-table-cell">
                                         <button
-                                            id="report-management"
-                                            class="report-management-btn hold"
+                                            class="report-management-btn report-status hold"
                                         >
                                             보류/숨김
                                         </button>
                                     </div>
-                                    <div class="apply-table-cell editl">
-                                        <button id="edit-btn" class="edit-btn">
-                                            사유
+                                    <div
+                                        class="apply-table-cell reasons-report"
+                                    >
+                                        <button class="reasons-report-btn">
+                                            보기
                                         </button>
                                     </div>
                                 </div>
@@ -200,11 +196,7 @@
                                     <div class="apply-table-cell">4.9</div>
                                     <div class="apply-table-cell">-</div>
                                     <div class="apply-table-cell">-</div>
-                                    <div class="apply-table-cell edit">
-                                        <button id="edit-btn" class="edit-btn">
-                                            수정
-                                        </button>
-                                    </div>
+                                    <div class="apply-table-cell edit">-</div>
                                 </div>
                                 <div class="apply-table-row">
                                     <div class="apply-table-cell">
@@ -230,15 +222,16 @@
                                     <div class="apply-table-cell">-</div>
                                     <div class="apply-table-cell">
                                         <button
-                                            id="report-management"
-                                            class="report-management-btn report"
+                                            class="report-management-btn report-status report"
                                         >
                                             신고
                                         </button>
                                     </div>
-                                    <div class="apply-table-cell edit">
-                                        <button id="edit-btn" class="edit-btn">
-                                            수정
+                                    <div
+                                        class="apply-table-cell edit reasons-report"
+                                    >
+                                        <button class="reasons-report-btn">
+                                            보기
                                         </button>
                                     </div>
                                 </div>
@@ -266,15 +259,16 @@
                                     <div class="apply-table-cell">30,000원</div>
                                     <div class="apply-table-cell">
                                         <button
-                                            id="report-management-btn"
-                                            class="report-management-btn processing-completed"
+                                            class="report-status processing-completed"
                                         >
                                             삭제 처리
                                         </button>
                                     </div>
-                                    <div class="apply-table-cell edit">
-                                        <button id="edit-btn" class="edit-btn">
-                                            수정
+                                    <div
+                                        class="apply-table-cell reasons-report"
+                                    >
+                                        <button class="reasons-report-btn">
+                                            보기
                                         </button>
                                     </div>
                                 </div>
@@ -301,16 +295,15 @@
                                     <div class="apply-table-cell">3.0</div>
                                     <div class="apply-table-cell">30,000원</div>
                                     <div class="apply-table-cell">
-                                        <button
-                                            id="report-management-btn"
-                                            class="report-management-btn no-issue"
-                                        >
+                                        <button class="report-status no-issue">
                                             이상 없음
                                         </button>
                                     </div>
-                                    <div class="apply-table-cell edit">
-                                        <button id="edit-btn" class="edit-btn">
-                                            수정
+                                    <div
+                                        class="apply-table-cell reasons-report"
+                                    >
+                                        <button class="reasons-report-btn">
+                                            보기
                                         </button>
                                     </div>
                                 </div>
@@ -385,68 +378,539 @@
                         </nav>
                     </div>
                     <!-- 신고관리 모달창 -->
-                    <div
-                        id="report-management-modal"
-                        class="report-management-modal"
-                    >
+                    <div class="report-management-modal video">
                         <div class="background-overlay"></div>
                         <div class="modal-content">
                             <div class="choice-container">
                                 <input
-                                    id="btn-processing-completed"
                                     class="btn-processing-completed"
                                     type="button"
-                                    value="처리 완료"
+                                    value="삭제 처리"
                                 />
                                 <input
-                                    id="btn-hold"
                                     class="btn-hold"
                                     type="button"
-                                    value="보류"
+                                    value="보류/숨김"
                                 />
                                 <input
-                                    id="btn-no-issue"
                                     class="btn-no-issue"
                                     type="button"
                                     value="이상 없음"
                                 />
                             </div>
                             <div class="button-container">
-                                <button id="btn-complete" class="btn-complete">
-                                    저장
-                                </button>
+                                <button class="btn-complete">저장</button>
                             </div>
                         </div>
                     </div>
                     <!-- 여기까지(신고관리 모달창)!! -->
-                </section>
-                <!-- 신고 모달창 -->
-                <div id="report-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h2>작품 신고</h2>
-                        <br />
-                        <br />
-                        <form>
-                            <label for="reason"
-                                >신고하려는 이유를 적어주세요:</label
-                            ><br />
-                            <br />
-                            <textarea
-                                id="reason"
-                                name="reason"
-                                rows="4"
-                                cols="50"
-                            ></textarea
-                            ><br /><br />
-                            <button class="report-submit" type="submit">
-                                신고하기
-                            </button>
-                        </form>
+                    <!-- 신고내역 모달창 -->
+                    <div class="reasons-report-modal video">
+                        <div class="modal-content">
+                            <div class="reasons-report-header">
+                                <div class="header-title-wrapper">
+                                    <strong class="header-title"
+                                        >신고 내역</strong
+                                    >
+                                </div>
+                                <span class="close-btn">&times;</span>
+                            </div>
+                            <div class="reasons-report-contents">
+                                <form>
+                                    <div>
+                                        <div class="reporter-detail">
+                                            <legend>
+                                                <img
+                                                    src="/static/images/admin/icon-siren.png"
+                                                />
+                                                신고자 정보
+                                            </legend>
+                                            <hr />
+                                            <p
+                                                class="reporter-name-wrapper detail"
+                                            >
+                                                <strong>이름 :</strong>
+                                                <span class="name">
+                                                    정지수
+                                                </span>
+                                            </p>
+                                            <p
+                                                class="reporter-email-wrapper detail"
+                                            >
+                                                <strong>이메일 : </strong>
+                                                <span class="email"
+                                                    >000jisoo@naver.com</span
+                                                >
+                                            </p>
+                                            <p
+                                                class="report-time-wrapper detail"
+                                            >
+                                                <strong>신고 시간 : </strong>
+                                                <span class="time"
+                                                    >2024-10-19 15:00</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <hr />
+                                        <div class="report-content">
+                                            <img
+                                                src="/static/images/admin/icon-siren.png"
+                                            />
+                                            신고내용
+                                        </div>
+                                        <textarea
+                                            name="reason"
+                                            rows="4"
+                                            cols="50"
+                                        >
+작품 결제를 했는데, 작품 영상 링크를 아직까지 안 보냈습니다. 메일로 연락해도 답이 없습니다.....</textarea
+                                        >
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="background-overlay"></div>
                     </div>
-                </div>
+                    <!-- 여기까지(신고내역 모달창)!! -->
+                    <!-- 여기까지 !!영상!! -->
+
+                    <!-- 2. 글 -->
+                    <div class="text-wrapper">
+                        <!-- body_layout -->
+                        <div class="common-layout-container">
+                            <div class="filter-wrap">
+                                <div class="sort-filter-options">
+                                    <span class="sort-filter-option"
+                                        >작성일 순</span
+                                    >
+                                    <span class="sort-filter-option"
+                                        >조회수 순</span
+                                    >
+                                    <span class="sort-filter-option"
+                                        >평점수 순</span
+                                    >
+                                    <!-- 신고관리 defalt  -->
+                                    <span class="sort-filter-option selected"
+                                        >신고관리</span
+                                    >
+                                </div>
+                                <!-- Action Buttons -->
+                                <div class="action-buttons">
+                                    <input
+                                        type="text"
+                                        class="filter-search-input"
+                                        placeholder="통합검색"
+                                    />
+                                    <button class="delete-selected-btn">
+                                        게시글 삭제
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- 작품 정보 테이블 -->
+                            <div class="apply-table-container">
+                                <div class="apply-table-row apply-table-header">
+                                    <div
+                                        class="apply-table-cell apply-header-cell select-all-cell"
+                                    >
+                                        <input
+                                            type="checkbox"
+                                            class="select-all"
+                                        />
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        번호
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        작성자
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        작성일
+                                    </div>
+
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        장르
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        제목
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        조회수
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        평점
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        작품 가격
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell"
+                                    >
+                                        신고상태
+                                    </div>
+                                    <div
+                                        class="apply-table-cell apply-header-cell edit"
+                                    >
+                                        신고내역
+                                    </div>
+                                </div>
+
+                                <!-- Example row (Initial data) -->
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">1</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">드라마</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >영상 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">30</div>
+                                    <div class="apply-table-cell">4.5</div>
+                                    <div class="apply-table-cell">10,000원</div>
+                                    <div class="apply-table-cell">
+                                        <button
+                                            class="report-management-btn report-status hold"
+                                        >
+                                            보류/숨김
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="apply-table-cell reasons-report"
+                                    >
+                                        <button class="reasons-report-btn">
+                                            보기
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">2</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">코미디</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >영상 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">100</div>
+                                    <div class="apply-table-cell">4.9</div>
+                                    <div class="apply-table-cell">-</div>
+                                    <div class="apply-table-cell">-</div>
+                                    <div class="apply-table-cell edit">-</div>
+                                </div>
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">3</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">액션</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >영상 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">0</div>
+                                    <div class="apply-table-cell">-</div>
+                                    <div class="apply-table-cell">-</div>
+                                    <div class="apply-table-cell">
+                                        <button
+                                            class="report-management-btn report-status report"
+                                        >
+                                            신고
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="apply-table-cell edit reasons-report"
+                                    >
+                                        <button class="reasons-report-btn">
+                                            보기
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">4</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">액션</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >영상 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">1</div>
+                                    <div class="apply-table-cell">3.0</div>
+                                    <div class="apply-table-cell">30,000원</div>
+                                    <div class="apply-table-cell">
+                                        <button
+                                            class="report-status processing-completed"
+                                        >
+                                            삭제 처리
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="apply-table-cell reasons-report"
+                                    >
+                                        <button class="reasons-report-btn">
+                                            보기
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="apply-table-row">
+                                    <div class="apply-table-cell">
+                                        <input
+                                            type="checkbox"
+                                            class="apply-checkbox"
+                                        />
+                                    </div>
+                                    <div class="apply-table-cell">5</div>
+                                    <div class="apply-table-cell">홍길동</div>
+                                    <div class="apply-table-cell">
+                                        2024-01-01
+                                    </div>
+
+                                    <div class="apply-table-cell">액션</div>
+                                    <div class="apply-table-cell post-title">
+                                        <a href=""
+                                            >영상 작품 테스트 제목입니다.</a
+                                        >
+                                    </div>
+                                    <div class="apply-table-cell">1</div>
+                                    <div class="apply-table-cell">3.0</div>
+                                    <div class="apply-table-cell">30,000원</div>
+                                    <div class="apply-table-cell">
+                                        <button class="report-status no-issue">
+                                            이상 없음
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="apply-table-cell reasons-report"
+                                    >
+                                        <button class="reasons-report-btn">
+                                            보기
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="pagination">
+                            <ul class="pagination-list">
+                                <!-- 처음 페이지로 이동하는 버튼 -->
+                                <li class="pagination-first">
+                                    <a
+                                        href="#"
+                                        class="pagination-first-link"
+                                        rel="nofollow"
+                                    >
+                                        <span
+                                            class="pagination-first-icon"
+                                            aria-hidden="true"
+                                            >«</span
+                                        >
+                                    </a>
+                                </li>
+                                <!-- 이전 페이지로 이동하는 버튼 -->
+                                <li class="pagination-prev">
+                                    <a
+                                        href="#"
+                                        class="pagination-prev-link"
+                                        rel="prev nofollow"
+                                    >
+                                        <span
+                                            class="pagination-prev-icon"
+                                            aria-hidden="true"
+                                            >‹</span
+                                        >
+                                    </a>
+                                </li>
+                                <!-- 페이지 번호 버튼 -->
+                                <li class="pagination-page active">
+                                    <a href="#" class="pagination-page-link"
+                                        >1</a
+                                    >
+                                </li>
+
+                                <!-- 다음 페이지로 이동하는 버튼 -->
+                                <li class="pagination-next">
+                                    <a
+                                        href="#"
+                                        class="pagination-next-link"
+                                        rel="next nofollow"
+                                    >
+                                        <span
+                                            class="pagination-next-icon"
+                                            aria-hidden="true"
+                                            >›</span
+                                        >
+                                    </a>
+                                </li>
+                                <!-- 마지막 페이지로 이동하는 버튼 -->
+                                <li class="pagination-last">
+                                    <a
+                                        href="#"
+                                        class="pagination-last-link"
+                                        rel="nofollow"
+                                    >
+                                        <span
+                                            class="pagination-last-icon"
+                                            aria-hidden="true"
+                                            >»</span
+                                        >
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- 신고관리 모달창 -->
+                    <div class="report-management-modal text">
+                        <div class="background-overlay"></div>
+                        <div class="modal-content">
+                            <div class="choice-container">
+                                <input
+                                    class="btn-processing-completed"
+                                    type="button"
+                                    value="삭제 처리"
+                                />
+                                <input
+                                    class="btn-hold"
+                                    type="button"
+                                    value="보류/숨김"
+                                />
+                                <input
+                                    class="btn-no-issue"
+                                    type="button"
+                                    value="이상 없음"
+                                />
+                            </div>
+                            <div class="button-container">
+                                <button class="btn-complete">저장</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 여기까지(신고관리 모달창)!! -->
+                    <!-- 신고내역 모달창 -->
+                    <div class="reasons-report-modal text">
+                        <div class="modal-content">
+                            <div class="reasons-report-header">
+                                <div class="header-title-wrapper">
+                                    <strong class="header-title"
+                                        >신고 내역</strong
+                                    >
+                                </div>
+                                <span class="close-btn">&times;</span>
+                            </div>
+                            <div class="reasons-report-contents">
+                                <form>
+                                    <div>
+                                        <div class="reporter-detail">
+                                            <legend>
+                                                <img
+                                                    src="/static/images/admin/icon-siren.png"
+                                                />
+                                                신고자 정보
+                                            </legend>
+                                            <hr />
+                                            <p
+                                                class="reporter-name-wrapper detail"
+                                            >
+                                                <strong>이름 :</strong>
+                                                <span class="name">
+                                                    정지수
+                                                </span>
+                                            </p>
+                                            <p
+                                                class="reporter-email-wrapper detail"
+                                            >
+                                                <strong>이메일 : </strong>
+                                                <span class="email"
+                                                    >000jisoo@naver.com</span
+                                                >
+                                            </p>
+                                            <p
+                                                class="report-time-wrapper detail"
+                                            >
+                                                <strong>신고 시간 : </strong>
+                                                <span class="time"
+                                                    >2024-10-19 15:00</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <hr />
+                                        <div class="report-content">
+                                            <img
+                                                src="/static/images/admin/icon-siren.png"
+                                            />
+                                            신고내용
+                                        </div>
+                                        <textarea
+                                            name="reason"
+                                            rows="4"
+                                            cols="50"
+                                        >
+작품 결제를 했는데, 작품 영상 링크를 아직까지 안 보냈습니다. 메일로 연락해도 답이 없습니다.....</textarea
+                                        >
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="background-overlay"></div>
+                    </div>
+                    <!-- 여기까지(신고내역 모달창)!! -->
+                    <!-- 여기까지 !!글!! -->
+                </section>
             </div>
         </div>
     </body>
-    <script src="/static/js/admin/test-3.js"></script>
+    <script src="/static/js/admin/test-3(modify).js"></script>
 </html>

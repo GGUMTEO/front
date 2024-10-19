@@ -1,4 +1,31 @@
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 700;
+    src: url("/fonts/NotoSansKR-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 500;
+    src: url("/fonts/NotoSansKR-Medium.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 400;
+    src: url("/fonts/NotoSansKR-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 300;
+    src: url("/fonts/NotoSansKR-Light.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 100;
+    src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
+}
+
 body {
+    font-family: "NotoSansKR";
     line-height: 1.3;
     word-break: keep-all;
     color: #343a40;
@@ -363,7 +390,7 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(17, 17, 17, 0.7);
+    background: rgba(0, 0, 0, 0.2);
 }
 .report-management-modal .modal-content {
     background-color: #ffffff;
@@ -397,7 +424,7 @@ video {
     width: 100px;
 }
 .choice-container .btn-no-issue {
-    background-color: #b7b7b769;
+    background-color: #00000026;
 }
 .report-management-modal .button-container {
     display: flex;
@@ -435,7 +462,7 @@ video {
 }
 
 /* (모달창 아님.) 테이블: 신고관리 버튼 */
-.report-management-btn {
+.report-status {
     color: white;
     border: none;
     border-radius: 4px;
@@ -443,188 +470,137 @@ video {
     padding: 8px;
     box-sizing: border-box;
 }
-.report-management-btn.report {
+.report-status.report {
     background-color: #ff0000;
 }
-.report-management-btn.processing-completed {
+.report-status.processing-completed {
     background-color: rgba(41, 153, 41, 0.818);
     cursor: default;
 }
-.report-management-btn.hold {
+.report-status.hold {
     background-color: #ffa600;
 }
-.report-management-btn.no-issue {
+.report-status.no-issue {
     background-color: #b7b7b7;
     cursor: default;
 }
 
-/* 수정 모달창 */
-/* edit-modal  */
-.edit-full-modal {
-    z-index: 1000;
+/* 신고 사유 모달창 */
+.reasons-report-modal {
     display: none;
     position: fixed;
-    left: 0;
     top: 0;
-}
-.edit-full-modal .edit-modal {
-    position: fixed;
-    z-index: 1000;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    height: 90%; 
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow-y: auto; /* 모달창 안에만 스크롤바 표시 */
-    border-radius: 8px;
-}
-.edit-full-modal .background-overlay {
-    position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 999;
-}
-.edit-full-modal .modal-content {
-    background-color: #ffffff;
-    padding: 30px;
-    overflow-y: auto; /* 내용이 넘칠 경우 스크롤 생성 */
-    padding: 25px 35px;
-}
-.edit-full-modal .modal-content .close-button {
-    position: absolute;
-    top: 10px;
-    right: 17px;
-    float: right;
-    font-size: 30px;
-    color: #aaa;
-    cursor: pointer;
-}
-.edit-full-modal .modal-content .close-button:hover {
-    color: #000;
-}
-.edit-full-modal .modal-content h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-}
-.edit-full-modal .modal-content label {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 6px;
-    font-weight: bold;
-}
-.edit-post-title {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.edit-post-content {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: none;
-}
-/* 미디어 파일(file: media) */
-.modal-content .file-preview-container {
-    display: grid;
-    gap: 5px;
-    margin-top: 20px;
-}
-.media-wrapper video,
-.media-wrapper img {
-    width: 50%;
+    right: 0;
 }
 
-.media-wrapper {
-    display: flex;
-    gap: 5px;
-}
-/* 댓글 */
-.edit-form h3 {
-    margin-top: 20px;
-}
-.comment-list{
+.reasons-report-modal .background-overlay {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     height: 100%;
-    list-style:none;
-    padding-left:0px;
-    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.2);
 }
-.comment-list li {
-     margin-bottom: 4px;
-}
-.comment-writer-img {
-    width: 20px;
-    height: 20px;
-    margin: 0px 7px 1px 0px;
+
+.reasons-report-modal .modal-content {
+    background-color: #fff;
+    width: 645px;
+    margin: auto;
+    padding: 30px 0;
     border-radius: 10px;
-    border: solid 1px #e0e0e0;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 32px 40px -2px rgba(10, 22, 70, .12), 0 0 5px 0 rgba(10, 22, 70, .06);
 }
 
-.comment-writer-name {
-    font-size: 14px;
-    line-height: 1.71;
-    color: #212121;
-    font-weight: 500;
-}
-.comment-header-wrapper {
+.reasons-report-modal .reasons-report-header {
+    margin: auto 40px;
     display: flex;
     justify-content: space-between;
+    gap: 12px;
 }
-.comment {
-    resize: none;
-    color: #424242;
-    word-break: break-word;
-    margin: 6px 0px 2px 0px;
+
+.reasons-report-modal .header-title-wrapper {
+    padding-left: 215px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.reasons-report-modal .close-btn {
+    flex-shrink: 0;
+    font-size: 25px;
+}
+
+.reasons-report-modal .reasons-report-contents {
+    margin: auto 40px;
+    margin-top: 12px 0;
     overflow: auto;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 8px;
+    color: #495057;
 }
-.delelte-button {
-    background-color: #c9c9c999;
-    color: #2c2c2c;
-    padding: 4px 20px;
-    border: none;
-    border-radius: 4px;
+
+.reasons-report-contents img {
+    padding-top: 3px;
+    width: 24px;
+}
+
+.reporter-detail .detail {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #3b3b3b;
+}
+
+
+.reporter-detail .name,
+.reporter-detail .email,
+.reporter-detail .time {
+    font-weight: 400;
+}
+
+.reporter-detail {
+    margin-bottom: 14px;
+}
+
+.reporter-detail, .report-content {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 24px;
+    color: #323232;
+}
+
+.reasons-report-modal textarea {
+    height: 218px;
+    resize: none;
+}
+
+.reasons-report-modal .close-btn:hover,
+.reasons-report-modal .close-btn:focus {
+    color: black;
+    text-decoration: none;
     cursor: pointer;
 }
 
-.delelte-button:hover {
-    background-color: #c9c9c9;
-}
-/* 저장 버튼 */
-#save-button {
-    background-color: #007bff;
+.reasons-report-modal textarea {
     width: 100%;
-    color: white;
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-
-}
-#save-button:hover {
-    background-color: #0066d3;
+    margin-top: 10px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: border-color 0.3s ease;
+    resize: none; /* 크기 조절 기능 비활성화 */
 }
 
-/* (모달창 아님.) 테이블: 수정 버튼 */
-.edit-btn {
+.reasons-report-modal textarea:focus {
+    outline: none;
+}
+/* (모달창 아님.) 테이블: 신고사유 버튼 */
+.reasons-report-btn {
     background-color: #007bff;
     color: white;
     border: none;
@@ -633,27 +609,13 @@ video {
     padding: 8px;
     box-sizing: border-box;
 }
-.edit-btn:hover {
+.reasons-report-btn:hover {
     opacity: 0.8;
-}
-
-.modal-content p {
-    font-size: 20px;
-    color: #343a40;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
 }
 
 /* 모달2 - 수정 */
 
-.modal-content input[type="text"],
+/* .modal-content input[type="text"],
 .modal-content input[type="date"],
 .modal-content input[type="email"],
 .modal-content select {
@@ -669,7 +631,7 @@ video {
 .modal-content select {
     background-color: #fff;
     cursor: pointer;
-}
+} */
 
 /* ****************************** */
 
@@ -811,6 +773,8 @@ h1.common-header-description {
 }
 
 /* 글-wrapper(display:none//defalt) */
-#text-wrapper {
+#work-section .text-wrapper {
     display: none;
 }
+
+
