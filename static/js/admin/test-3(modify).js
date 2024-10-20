@@ -595,3 +595,52 @@ function showStatusRefund(sectionId) {
     });
 }
 showStatusRefund("#payment-section");
+
+// ////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+// 모든 메뉴 아이템과 서브메뉴 컨테이너를 선택합니다.
+const menuItems = document.querySelectorAll(".menu-items-menu");
+const sections = document.querySelectorAll(".layout-sections  > section");
+
+// 초기 상태 첫 번째 섹션만 보이기
+sections.forEach((section, index) => {
+    //section[0]만 block 나머지는 none
+    section.style.display = index === 0 ? "block" : "none";
+});
+
+menuItems.forEach((menu, index) => {
+    menu.addEventListener("click", () => {
+        sections.forEach((section) => {
+            section.style.display = "none";
+        });
+        sections[index].style.display = "block"; // 해당 인덱스의 섹션만 보이기
+    });
+});
+
+// 사이드바 사라짐
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".layout-expand-nav-button");
+    const nav = document.getElementById("layout-aside-nav");
+    const mainDiv = document.querySelector("div.layout-main");
+    const layoutSections = document.querySelector(".layout-sections");
+    let dividerAdded = false;
+
+    button.addEventListener("click", () => {
+        button.classList.toggle("layout-expand");
+        nav.classList.toggle("navbar-expand");
+
+        if (!dividerAdded) {
+            const newDivider = document.createElement("div");
+            newDivider.className = "navbar-divider";
+            layoutSections.style.marginLeft = "-20px";
+            mainDiv.insertBefore(newDivider, nav);
+            dividerAdded = true;
+        } else {
+            const existingDivider = mainDiv.querySelector(".navbar-divider");
+            if (existingDivider) {
+                mainDiv.removeChild(existingDivider);
+                dividerAdded = false;
+            }
+        }
+    });
+});

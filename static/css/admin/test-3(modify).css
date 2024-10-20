@@ -29,7 +29,7 @@ body {
     line-height: 1.3;
     word-break: keep-all;
     color: #343a40;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     overflow-wrap: break-word;
 }
@@ -172,6 +172,249 @@ img,
 video {
     vertical-align: top;
 }
+/* header */
+
+.header {
+    height: 72px;
+}
+.header {
+    box-shadow: 0 1px 0 0 rgba(10, 22, 70, 0.06);
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 16;
+    background-color: #fff;
+    padding: 0 16px;
+    width: 100%;
+}
+
+.ggumteo-logo-container {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.ggumteo-logo {
+    background-image: url(/static/images/corporation/saramin.svg);
+    width: 142px;
+    height: 35px;
+    display: block;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    outline: 0;
+    background-size: cover;
+}
+.page-type {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-right: 8px;
+    color: #868e96;
+}
+
+.header-container {
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-right-box {
+    justify-content: flex-end;
+
+    gap: 24px;
+}
+
+.admin-info-container {
+    padding: 0;
+    position: relative;
+    margin-right: 0;
+}
+
+.admin-id-title {
+    height: 37px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #f2f4f6;
+    background-color: #f9fafb;
+    padding: 0 16px;
+    width: 100%;
+    color: #868e96;
+    gap: 4px;
+}
+
+.admin-id-title .admin-id {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #00c4c4;
+}
+
+.logout-btn {
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    border-color: #e9ecef;
+    padding: 8px 24px;
+    color: #495057;
+}
+
+
+/* 사이드 바 */
+.admin-layout-container .layout-main {
+    display: flex;
+    padding-top: 72px;
+    height: 100%;
+}
+
+.layout-aside.navbar-expand {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    width: 210px;
+}
+
+.layout-aside {
+    position: relative;
+    transform: none;
+    transition: width 0.2s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+    width: 0;
+    height: 100%;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.navbar-layout-content {
+    padding-bottom: 80px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 35px;
+}
+
+.menu-items-section {
+    padding: 0;
+}
+
+
+.menu-items-menu {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px 16px;
+    width: 100%;
+}
+
+.menu-items-menu:hover {
+    background-color: #e0e0e060;
+}
+
+.menu-items-menu .menu-items-label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    color: #495057;
+    gap: 12px;
+}
+
+.menu-items-active .menu-items-label {
+    color: #212529;
+    font-weight: 700;
+}
+
+.menu-items-menu .menu-items-label svg {
+    width: 16px;
+    height: 16px;
+}
+
+.with-icon {
+    display: block;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+    fill: currentColor;
+}
+
+/* 사이드바 사라졌을 때 */
+.navbar-divider {
+    background-color: #fff;
+    min-width: 28px;
+}
+
+.admin-layout-container .layout-main .layout-expand-nav-button {
+    display: flex;
+    position: fixed;
+    top: 84px;
+    left: 12px;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.2s;
+    border: 0.75px solid #e9ecef;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843);
+}
+
+.admin-layout-container
+    .layout-main
+    .layout-expand-nav-button
+    .layout-icon {
+    background: url(https://static.wadiz.kr/studio/funding/static/media/icon-expand-more.21864999.svg)
+        no-repeat 50%;
+    background-size: 12px 12px;
+    pointer-events: none;
+    width: 12px;
+    height: 12px;
+}
+
+/* 사이드바 열렸을 때 버튼 */
+.admin-layout-container
+    .layout-main
+    .layout-expand-nav-button.layout-expand {
+    left: 195px;
+}
+.admin-layout-container
+    .layout-main
+    .layout-expand-nav-button.layout-expand
+    .layout-icon {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+/* 아이콘들 */
+#sri_gnb_wrap .gnb_inner .gnb > li > a > svg use {
+    color: #afbac8;
+}
+#sri_gnb_wrap .gnb_inner .gnb > li > a > svg {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    z-index: 3;
+    width: 24px;
+    height: 24px;
+}
 
 /* body */
 .layout-contents {
@@ -188,7 +431,7 @@ video {
 
 /* 필터링 */
 .filter-wrap {
-    width: 1291px;
+    width: 1250px;
     justify-content: space-between;
     display: flex;
     border-top: 1px solid #e2e8f0;
@@ -254,23 +497,18 @@ video {
 .common-header-container {
     color: #000;
 }
-.common-header-container .common-header-title {
-    line-height: 44px;
-    font-size: 36px;
-    margin: 0 0 16px;
-    font-weight: 700;
-}
+
 .common-header-container .common-header-description {
     margin-bottom: 32px;
     line-height: 24px;
     color: #495057;
-    font-size: 17px;
+    font-size: 16px;
     margin: 0 0 32px;
 }
 
 /* ******************************************* */
 .apply-table-container {
-    width: 1291px;
+    width: 1250px;
     border: 1px solid #dee2e6;
     border-radius: 8px;
     overflow: hidden;
@@ -291,7 +529,7 @@ video {
 }
 .apply-table-header {
     background-color: #f8f9fa;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
 }
 .apply-table-cell input[type="checkbox"] {
@@ -342,7 +580,7 @@ video {
 .choice-container input[type="button"] {
     margin-top: auto;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
@@ -374,7 +612,7 @@ video {
 .btn-complete {
     margin-top: auto;
     padding: 10px 35px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
@@ -450,6 +688,7 @@ video {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 }
 
 .reasons-report-modal .modal-content,
@@ -473,7 +712,7 @@ video {
 
 .reasons-report-modal .header-title-wrapper {
     padding-left: 215px;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
 }
 
@@ -513,7 +752,7 @@ video {
 }
 
 .detail-wrapper, .content-detail {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 700;
     line-height: 1.5;
     margin-top: 24px;
@@ -536,6 +775,7 @@ video {
     font-size: 13px;
     transition: border-color 0.3s ease;
     resize: none; /* 크기 조절 기능 비활성화 */
+    font-size: 15px;
 }
 
 .reasons-report-modal textarea:focus,
@@ -606,7 +846,7 @@ ul {
 }
 
 .pagination-list {
-    width: 1291px;
+    width: 1250px;
     list-style: none;
     display: flex;
     padding-left: 0;
@@ -658,7 +898,7 @@ ul {
 /* body제목: 영상(defalt)/글 => 클릭 시 해당 display: block)  */
 .common-header-container .common-header-title {
     line-height: 20px;
-    font-size: 36px;
+    font-size: 35px;
     margin: 0 0 16px;
     font-weight: 700;
 }
@@ -667,7 +907,7 @@ ul {
 }
 .service-introdution-group-button > .container {
     padding-left: 2px;
-    gap: 32px;
+    gap: 28px;
 }
 .service-introdution-group-button .container {
     overflow-x: auto;
@@ -1303,17 +1543,15 @@ h1.common-header-description {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 1000;
 
-}
-.notice-full-modal .edit-post-content {
-    height: 520px;
 }
 
 .answered-modal .edit-modal, .notice-full-modal .edit-modal {
-    width: 1000px;
-    height: 810px;
+    width: 900px;
+    height: 750px;
     position: fixed;
-    z-index: 1000;
+    z-index: 100;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -1338,7 +1576,7 @@ h1.common-header-description {
     top: 19px;
     right: 30px;
     float: right;
-    font-size: 28px;
+    font-size: 27px;
     color: #aaa;
     cursor: pointer;
 }
@@ -1374,12 +1612,12 @@ h1.common-header-description {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .edit-post-content {
     width: 100%;
-    height: 300px;
+    height: 250px;
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -1387,11 +1625,16 @@ h1.common-header-description {
     border-radius: 4px;
     box-sizing: border-box;
     resize: none;
-    font-size: 18px;
+    font-size: 15px;
 }
 
+.notice-full-modal .edit-post-content {
+    height: 455px;
+}
+ 
+
 .answered-modal .comment-textarea {
-    height: 170px;
+    height: 150px;
     resize: none;
     color: #424242;
     word-break: break-word;
@@ -1401,6 +1644,11 @@ h1.common-header-description {
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 8px;
+    font-size: 15px;
+}
+
+.answered-modal.completed .edit-post-content {
+    height: 315px;
 }
 
 .save-button {

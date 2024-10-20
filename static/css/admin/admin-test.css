@@ -2,10 +2,6 @@ body {
     line-height: 1.3;
     word-break: keep-all;
     color: #343a40;
-    font-family: pretendard, -apple-system, blinkmacsystemfont, system-ui,
-        roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
-        "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
-        "Segoe UI Symbol", sans-serif;
     font-size: 16px;
     font-weight: 400;
     overflow-wrap: break-word;
@@ -41,7 +37,7 @@ html {
     padding: 0;
 }
 
-.AppLayout_container {
+.admin-layout-container {
     overflow-y: auto;
     position: relative;
 }
@@ -126,10 +122,10 @@ video {
     padding: 0;
     vertical-align: baseline;
 }
-.AppGNBbar_container {
+.header {
     height: 72px;
 }
-.AppGNBbar_container {
+.header {
     box-shadow: 0 1px 0 0 rgba(10, 22, 70, 0.06);
     display: flex;
     position: fixed;
@@ -144,7 +140,7 @@ video {
     width: 100%;
 }
 
-.StudioLogo_container {
+.ggumteo-logo-container {
     padding: 0;
     display: flex;
     align-items: center;
@@ -175,7 +171,7 @@ a {
     color: inherit;
 }
 
-.StudioLogo_logo {
+.ggumteo-logo {
     background-image: url(/static/images/corporation/saramin.svg);
     width: 142px;
     height: 35px;
@@ -185,7 +181,7 @@ a {
     outline: 0;
     background-size: cover;
 }
-.StudioLogo_type {
+.page-type {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
@@ -193,26 +189,26 @@ a {
     color: #868e96;
 }
 
-.AppGNBbar_flex {
+.header-container {
     display: flex;
     flex: 1 1;
     align-items: center;
     justify-content: flex-start;
 }
 
-.AppGNBbar_rightBox {
+.header-right-box {
     justify-content: flex-end;
 
     gap: 24px;
 }
 
-.ProjectInfo_container {
+.admin-info-container {
     padding: 0;
     position: relative;
     margin-right: 0;
 }
 
-.ProjectInfo_infoButton {
+.admin-id-title {
     height: 37px;
     font-size: 12px;
     font-weight: 500;
@@ -229,92 +225,14 @@ a {
     gap: 4px;
 }
 
-.ProjectInfo_infoButton .ProjectInfo_emphasis {
+.admin-id-title .admin-id {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     color: #00c4c4;
 }
 
-.ProjectInfo_infoButton[aria-expanded="true"] [class*="withIcon_icon"] {
-    transform: rotate(180deg);
-}
 
-.ProjectInfo_infoBox {
-    display: flex;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    margin-top: 8px;
-    border-radius: 16px;
-    box-shadow: 0 0 5px 0 rgba(33, 37, 41, 0.06),
-        0 32px 40px -2px rgba(33, 37, 41, 0.12);
-    background-color: #fff;
-    width: 280px;
-    flex-direction: column;
-    gap: 16px;
-    padding: 24px;
-}
-
-.BlindText_textHidden {
-    position: absolute;
-    margin: -1px;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.ProjectInfo_infoBox .ProjectInfo_content:first-of-type {
-    margin-top: 0;
-}
-
-.ProjectInfo_infoBox .ProjectInfo_content {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 16px;
-    gap: 8px;
-}
-
-.ProjectInfo_infoBox .ProjectInfo_profileImage {
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 50%;
-    background-color: #fff;
-    width: 24px;
-    height: 24px;
-}
-
-.Avatar_avatar {
-    display: inline-flex;
-    position: relative;
-    outline: none;
-    border: none;
-    border-radius: 100%;
-    padding: 0;
-    width: 64px;
-    height: 64px;
-    overflow: hidden;
-    vertical-align: middle;
-}
-
-.Avatar_avatar > .Avatar_inner {
-    display: inline-block;
-    border: 1px solid #e9ecef;
-    border-radius: 100%;
-}
-
-.Avatar_avatar > .Avatar_inner > img {
-    border-radius: 100%;
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1 / 1;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
 
 img,
 video {
@@ -327,52 +245,7 @@ img,
 video {
     vertical-align: top;
 }
-
-.ProjectInfo_infoBox .ProjectInfo_makerName {
-    font-weight: 700;
-    overflow-wrap: anywhere;
-}
-
-.BlindText_textHidden {
-    position: absolute;
-    margin: -1px;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.ProjectInfo_stateBox {
-    flex-wrap: wrap;
-}
-
-.ProjectInfo_stateBox .ProjectInfo_state {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.5;
-    border-radius: 4px;
-    background-color: #f2f4f6;
-    padding: 1px 6px;
-    color: #495057;
-}
-
-.Button_button.Button_primary.Button_contained {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
-    color: #fff;
-}
-
-.Button_button.Button_sm {
-    padding: 6px 11px;
-    height: 32px;
-    font-size: 14px;
-}
-
-.Button_button.Button_block {
-    width: 100%;
-}
-
-.Button_button {
+.logout-btn {
     border: 1px solid #cdd3d8;
     border-radius: 4px;
     font-size: 14px;
@@ -384,20 +257,20 @@ video {
 }
 
 /* 사이드 바 */
-.AppLayout_container .AppLayout_main {
+.admin-layout-container .layout-main {
     display: flex;
     padding-top: 72px;
     height: 100%;
 }
 
-.AppNavbarLayout_container.AppNavbarLayout_expand {
+.layout-aside.navbar-expand {
     display: block;
     visibility: visible;
     opacity: 1;
     width: 240px;
 }
 
-.AppNavbarLayout_container {
+.layout-aside {
     position: relative;
     transform: none;
     transition: width 0.2s;
@@ -413,25 +286,19 @@ video {
     background-color: #fff;
 }
 
-.AppNavbarLayout_content {
+.navbar-layout-content {
     padding-bottom: 80px;
     overflow-x: hidden;
     overflow-y: auto;
     margin-top: 35px;
 }
 
-.MenuItems_section {
+.menu-items-section {
     padding: 0;
 }
 
-.MenuItems_menu.MenuItems_hasSubmenu {
-    display: block;
-    outline: none;
-    border: none;
-    width: 100%;
-}
 
-.MenuItems_menu {
+.menu-items-menu {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -441,7 +308,7 @@ video {
     width: 100%;
 }
 
-.MenuItems_menu .MenuItems_label {
+.menu-items-menu .menu-items-label {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.5;
@@ -451,68 +318,30 @@ video {
     gap: 12px;
 }
 
-.MenuItems_active .MenuItems_label {
+.menu-items-active .menu-items-label {
     color: #212529;
     font-weight: 700;
 }
 
-.MenuItems_menu .MenuItems_label svg {
+.menu-items-menu .menu-items-label svg {
     width: 16px;
     height: 16px;
 }
 
-.withIcon_icon {
+.with-icon {
     display: block;
     transform: scale(1);
     transition: transform 0.3s ease-out;
     fill: currentColor;
 }
 
-.MenuItems_menu.MenuItems_hasSubmenu .MenuItems_downIcon.MenuItems_open {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-.MenuItems_menu.MenuItems_hasSubmenu .MenuItems_downIcon {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    margin-top: -8px;
-    color: #adb5bd;
-}
-
-.MenuItems_submenuContainer.MenuItems_show {
-    max-height: 400px;
-}
-
-.MenuItems_submenuContainer {
-    transition: max-height 0.3s ease-out;
-    max-height: 0;
-    overflow-y: hidden;
-}
-
-.MenuItems_submenuContainer .MenuItems_submenu:hover {
-    background-color: #f2f4f6;
-}
-
-.MenuItems_submenuContainer .MenuItems_submenu {
-    display: block;
-    background-color: #f9fafb;
-    cursor: pointer;
-    padding: 12px 16px 12px 44px;
-    color: #495057;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.5;
-}
-
 /* 사이드바 사라졌을 때 */
-.AppNavbarLayout_divider {
+.navbar-divider {
     background-color: #fff;
     min-width: 28px;
 }
 
-.AppLayout_container .AppLayout_main .AppLayout_expandNavButton {
+.admin-layout-container .layout-main .layout-expand-nav-button {
     display: flex;
     position: fixed;
     top: 84px;
@@ -529,10 +358,10 @@ video {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843);
 }
 
-.AppLayout_container
-    .AppLayout_main
-    .AppLayout_expandNavButton
-    .AppLayout_icon {
+.admin-layout-container
+    .layout-main
+    .layout-expand-nav-button
+    .layout-icon {
     background: url(https://static.wadiz.kr/studio/funding/static/media/icon-expand-more.21864999.svg)
         no-repeat 50%;
     background-size: 12px 12px;
@@ -542,15 +371,15 @@ video {
 }
 
 /* 사이드바 열렸을 때 버튼 */
-.AppLayout_container
-    .AppLayout_main
-    .AppLayout_expandNavButton.AppLayout_expand {
+.admin-layout-container
+    .layout-main
+    .layout-expand-nav-button.layout-expand {
     left: 224px;
 }
-.AppLayout_container
-    .AppLayout_main
-    .AppLayout_expandNavButton.AppLayout_expand
-    .AppLayout_icon {
+.admin-layout-container
+    .layout-main
+    .layout-expand-nav-button.layout-expand
+    .layout-icon {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
@@ -639,7 +468,7 @@ video {
 /* ********************************************************************************************** */
 /* ********************************************************************************************** */
 /* ********************************************************************************************** */
-.AppLayout_container .AppLayout_main .AppLayout_contents {
+.admin-layout-container .layout-main .AppLayout_contents {
     position: relative;
     -ms-flex: 1 1;
     flex: 1 1;
