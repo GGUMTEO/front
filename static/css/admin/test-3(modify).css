@@ -312,7 +312,8 @@ video {
 }
 
 .status-edit-modal,
-.report-management-modal {
+.report-management-modal,
+.refund-status-modal {
     display: none;
     align-items: center;
     justify-content: center;
@@ -323,15 +324,16 @@ video {
     width: 100%;
     height: 100%;
 }
+
 .status-edit-modal .modal-content,
-.report-management-modal .modal-content {
+.report-management-modal .modal-content,
+.refund-status-modal .modal-content {
     background-color: #ffffff;
     padding: 25px 40px 30px 40px;
     border-radius: 10px;
     overflow-y: auto;
 }
-.status-edit-modal .choice-container,
-.report-management-modal .choice-container {
+.choice-container {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -346,9 +348,11 @@ video {
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    width: 101px;
 }
 .choice-container .btn-delete-processing,
-.choice-container .btn-active-member {
+.choice-container .btn-active-member,
+.choice-container .btn-refund-completed {
     background-color: rgba(107, 188, 107, 0.443);
 }
 .choice-container .btn-hold {
@@ -358,17 +362,16 @@ video {
     width: 100px;
 }
 .choice-container .btn-no-issue,
-.choice-container .btn-terminated-member {
+.choice-container .btn-terminated-member,
+.choice-container .btn-cancel.not-allowed {
     background-color: #00000026;
 }
-.status-edit-modal .button-container,
-.report-management-modal .button-container {
+.button-container {
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
-.status-edit-modal .btn-complete,
-.report-management-modal .btn-complete {
+.btn-complete {
     margin-top: auto;
     padding: 10px 35px;
     font-size: 16px;
@@ -380,28 +383,31 @@ video {
     background-color: #007bff;
 }
 .choice-container .btn-delete-processing:hover,
-.choice-container .btn-active-member:hover {
+.choice-container .btn-active-member:hover,
+.choice-container .btn-refund-completed:hover {
     transform: translateY(-4px) scale(1.02);
 }
 .choice-container .btn-hold:hover {
     transform: translateY(-4px) scale(1.02);
 }
 .choice-container .btn-no-issue:hover,
-.choice-container .btn-terminated-member:hover {
+.choice-container .btn-terminated-member:hover,
+.choice-container .btn-cancel.not-allowed:hover {
     transform: translateY(-4px) scale(1.02);
 }
 .choice-container .btn-delete-processing.on,
-.choice-container .btn-active-member.on {
+.choice-container .btn-active-member.on,
+.choice-container .btn-refund-completed.on {
     background-color: rgba(41, 153, 41, 0.818);
 }
 .choice-container .btn-hold.on {
     background-color: #ffa600;
 }
 .choice-container .btn-no-issue.on,
-.choice-container .btn-terminated-member.on {
+.choice-container .btn-terminated-member.on,
+.choice-container .btn-cancel.not-allowed.on {
     background-color: #b7b7b7;
 }
-
 /* (모달창 아님.) 신고상태 버튼, 문의 처리 상태 버튼 */
 .status{
     color: white;
@@ -801,6 +807,56 @@ h1.common-header-description {
 #member-section .apply-header-cell:nth-child(11),
 #member-section .apply-table-cell:nth-child(11) {
     width: 8%;
+}
+
+/* section2 : 공지 관리 */
+/* 기존의 너비 설정 유지 */
+/* 체크박스 열 */
+#notice-section .apply-header-cell:nth-child(1),
+#notice-section .apply-table-cell:nth-child(1) {
+    width: 2%;
+}
+
+/* 첫번째 열 */
+#notice-section .apply-header-cell:nth-child(2),
+#notice-section .apply-table-cell:nth-child(2) {
+    width: 3%;
+}
+
+/* 두번째 열 */
+#notice-section .apply-header-cell:nth-child(3),
+#notice-section .apply-table-cell:nth-child(3) {
+    width: 4%;
+}
+
+/* 세번째 열 */
+#notice-section .apply-header-cell:nth-child(4),
+#notice-section .apply-table-cell:nth-child(4) {
+    width: 9%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 네번째 열 */
+#notice-section .apply-header-cell:nth-child(5),
+#notice-section .apply-table-cell:nth-child(5) {
+    width: 15%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 다섯번째 열 */
+#notice-section .apply-header-cell:nth-child(6),
+#notice-section .apply-table-cell:nth-child(6) {
+    width: 5%;
+}
+
+/* 여섯번째 열 */
+#notice-section .apply-header-cell:nth-child(7),
+#notice-section .apply-table-cell:nth-child(7) {
+    width: 5%;
 }
 
 /* section3 : 작품 관리 */
@@ -1219,6 +1275,7 @@ h1.common-header-description {
 }
 
 #member-section .service-introdution-group-button,
+#notice-section .service-introdution-group-button,
 #inquiry-section .service-introdution-group-button,
 #payment-section .service-introdution-group-button {
     position: unset;
@@ -1240,16 +1297,19 @@ h1.common-header-description {
 }
 
 
-/* 문의사항 답변 */
-.answered-modal {
+/* 공지사항 작성, 수정, 문의사항 답변 */
+.answered-modal, .notice-full-modal {
     display: none;
     position: fixed;
     left: 0;
     top: 0;
 
 }
+.notice-full-modal .edit-post-content {
+    height: 520px;
+}
 
-.answered-modal .edit-modal {
+.answered-modal .edit-modal, .notice-full-modal .edit-modal {
     width: 1000px;
     height: 810px;
     position: fixed;
@@ -1267,32 +1327,35 @@ h1.common-header-description {
     height: 760px;
 }
 
-.answered-modal .modal-content {
-    padding: 25px 35px;
+.answered-modal .modal-content,
+.notice-full-modal .modal-content{
+    padding: 27px 35px;
 }
 
-.answered-modal .modal-content .close-button {
+.answered-modal .modal-content .close-button,
+.notice-full-modal .modal-content .close-button {
     position: absolute;
-    top: 10px;
-    right: 17px;
+    top: 19px;
+    right: 30px;
     float: right;
-    font-size: 30px;
+    font-size: 28px;
     color: #aaa;
     cursor: pointer;
 }
 
-.answered-modal .modal-content .close-button:hover {
+.answered-modal .modal-content .close-button:hover,
+.notice-full-modal .modal-content .close-button:hover {
     color: #000;
 }
 
 
-.answered-modal .modal-content h2 {
+.modal-content h2 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.answered-modal .modal-content label {
+.modal-content label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
@@ -1302,7 +1365,8 @@ h1.common-header-description {
     margin-top: 20px;
     margin-bottom: 3px;
 }
-.answered-modal .edit-post-title {
+
+.edit-post-title {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
@@ -1310,9 +1374,10 @@ h1.common-header-description {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 20px;
 }
 
-.answered-modal .edit-post-content {
+.edit-post-content {
     width: 100%;
     height: 300px;
     padding: 8px;
@@ -1322,6 +1387,7 @@ h1.common-header-description {
     border-radius: 4px;
     box-sizing: border-box;
     resize: none;
+    font-size: 18px;
 }
 
 .answered-modal .comment-textarea {
@@ -1337,7 +1403,7 @@ h1.common-header-description {
     padding: 8px;
 }
 
-.answered-modal .save-button {
+.save-button {
     background-color: #007bff;
     width: 100%;
     color: white;
@@ -1349,6 +1415,6 @@ h1.common-header-description {
 
 }
 
-.answered-modal .save-button:hover {
+.save-button:hover {
     background-color: #0066d3;
 }
