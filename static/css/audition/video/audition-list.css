@@ -598,6 +598,13 @@ a {
     transition: width 0.3s ease;
 }
 
+.sri-btn-sm .btn-gray{
+    position: relative;
+    width: 52px;
+    border: 1px solid gray !important;
+    color: gray !important;
+}
+
 @media screen and (max-width: 430px) {
     .gaia {
         min-width: 100% !important;
@@ -719,7 +726,7 @@ a {
         line-height: 16px;
     }
 
-    .sri_btn_sm {
+    .sri-btn-sm {
         position: absolute;
         top: 50px;
         right: 12px;
@@ -821,4 +828,11 @@ a {
     .text-input-ggumteo.icon-right div .search-input {
         width: 194px;
     }
+}
+
+.btn-gray{
+    position: relative;
+    width: 52px;
+    border: 1px solid gray;
+    color: gray;
 }
