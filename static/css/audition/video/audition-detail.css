@@ -767,3 +767,62 @@ a {
     
     /* 더 작은 해상도에서 필요한 스타일 추가 */
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 60px;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    z-index: 10;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover{
+    color: black;
+}
+
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: border-color 0.3s ease;
+    resize: none;
+}
+
+.modal-content textarea {
+    height: 218px;
+    resize: none;
+}
+
+.report-submit {
+    cursor: pointer;
+    float: right;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: lightpink;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+}
