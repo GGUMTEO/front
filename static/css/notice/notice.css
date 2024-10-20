@@ -1,4 +1,5 @@
-@font-face {
+
+ @font-face {
   font-family: "NotoSansKR";
   font-weight: 700;
   src: url("/fonts/NotoSansKR-Bold.woff2") format("woff2");
@@ -23,6 +24,14 @@
   font-weight: 100;
   src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
   }
+
+body
+html
+h3
+input
+table
+a
+section
 
 .content-header {
   margin-bottom: 5px;
@@ -198,6 +207,7 @@ content:" ";
 display: table;
 line-height: 0;
 }
+
 *:before, *after {
 box-sizing: border-box;
 }
@@ -235,19 +245,19 @@ margin-left: 0;
 .pagination>active>a:hover, .pagination>.active>a:focus,
 .pagination>.active>span, .pagination>.active>span:hover,
 .pagination>.active>span:focus {
-z-index: 2;
-color: #2099bb;
-cursor:default;
+  z-index: 2;
+  color: #2099bb;
+  cursor:default;
 }
 
 .paginaion>li>a, .paginaion>li>span {
-position: relative;
-float: left;
-padding: 4px 8px;
-line-height: 20px;
-font-weight: bold;
-font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-text-decoration: none;
+  position: relative;
+  float: left;
+  padding: 4px 8px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
 }
 
 a {
@@ -259,15 +269,16 @@ box-sizing: border-box;
 }
 
 .fa-arrow-right:before {
-content: "f061";
+  content: "f061";
 }
 
 .fa {
-display: inline-block;
-font: normal normal normal 14px / 1 FontAwesome;
-font-size: inherit;
-text-rendering: auto;
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
 }
+
 section {
 display: block;
 }

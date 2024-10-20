@@ -6,7 +6,36 @@
     <title>공지사항</title>
     <link rel="stylesheet" href="/static/css/notice/notice.css">  
     <style>
-    
+  
+  @font-face {
+  font-family: "NotoSansKR";
+  font-weight: 700;
+  src: url("/fonts/NotoSansKR-Bold.woff2") format("woff2");
+  }
+  @font-face {
+  font-family: "NotoSansKR";
+  font-weight: 500;
+  src: url("/fonts/NotoSansKR-Medium.woff2") format("woff2");
+  }
+  @font-face {
+  font-family: "NotoSansKR";
+  font-weight: 400;
+  src: url("/fonts/NotoSansKR-Regular.woff2") format("woff2");
+  }
+  @font-face {
+  font-family: "NotoSansKR";
+  font-weight: 300;
+  src: url("/fonts/NotoSansKR-Light.woff2") format("woff2");
+  }
+  @font-face {
+  font-family: "NotoSansKR";
+  font-weight: 100;
+  src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
+  }    
+
+   section
+   a
+
     .content.inner {
       padding: 30px;
       background-color: #fff;
@@ -41,10 +70,581 @@
     color: #fff;
     background: #77bb66;
     }
+    
+    .news-center-detail {
+        width:705px;
+        margin:0 auto;
+    }
+    
+    section {
+     display: block;
+    }
+    
+    .news-center-detail .news-center-detail-category {
+        margin-top: 6px;
+        margin-bottom: 20px;
+        line-height: 16px;
+    }
+    .news-center-detail .news-center-detail-category a:active .news-center-detail .news-center-detail-category a:visited, .news-center-detail-category a:link{
+        text-decoration: none;
+    }   
+    .news-center-detail .news-center-detail-category .news-center-detail-category-text {
+        padding-bottom: 2px;
+        border-bottom: 1px solid #2099bb;
+        color: #2099bb;
+        font-weight: bold;
+    }
+    a {
+        color: #2099bb;
+    }
+    a {
+        background: transparent;
+    }
+    
+    .tos .content-inner .news-center-detail h1 {
+        margin-top: 20px;
+    }
+    .news-center-detail .news-center-detail-title {
+        margin-top: 20px;
+    }
+    .news-center-detail .news-center-detail-title {
+        margin-bottom: 15px;
+        padding: 0;
+        font-size: 24px;
+        line-height: 1.33;
+        font-weight: bold;
+        color: #454545;
+    }
+    h1 {
+        letter-spacing: -0.04em;
+    }
+    
+    h1,h2,h3,h4,h5,h6 {
+        margin: 0 0 0 -0.05em;
+        font-style: normal;
+        font-family: inherit;
+        text-transform: uppercase;
+    }
 
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        text-rendering: optimizeLegibility;
+    }
+    
+    .news-center-detail .news-center-detail-publication {
+        margin-bottom: 20px;
+        line-height: 16px;
+    }
+    
+    .news-center-detail .news-center-detail-publication .news-center-detail-publication-publisher {
+        color: #666;
+    }
+    .news-center-detail .news-center-detail-publication .news-center-detail-publication-divider {
+        margin: 0 5px;
+        color: #dedede;
+    }
+    
+    .news-center-detail .news-center-detail-publication .news-center-detail-publication-date {
+        color: #999;
+    }    
+
+    .news-center-detail .news-detail-content-divider {
+        width: 100%;
+        height: 1px;
+        margin-bottom: 25px;
+        border-top: 1px dashed #dedede;
+    }
+
+    .tos .content-inner .news-ceneter-detail p {
+        margin-bottom: 20px;
+    }
+
+    .privacy .content-inner p, .tos .content-inner p{
+        line-height: 24px;
+    }
+    
+    p{
+        margin: 0 0 10px;
+    }
+
+    .tos .content-inner .news-center-detail p {
+        line-height: 24px;
+    }
+    .privacy .content-inner p, .tos .content-inner p {
+        line-height: 24px;
+    }
+
+    p { 
+     margin: 0 0 10px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    b, strong {
+        font-weight: bold;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .content-inner p {
+        margin-bottom: 0;
+        line-height: 24px;
+    }
+
+    .tos .content-inner .news-center-detail p {
+        margin-bottom: 20px;
+    }
+
+    .privacy .content-inner p, .tos .content-inner p {
+        line-height: 24px;
+    }
+
+    p {
+        margin: 0 0 10px;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    .news-ceneter-detail .news-detail-content-divider {
+        width: 100%;
+        height: 1px;
+        border-top: 1px dashed #dedede;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .news-center-detail .news-center-detail-publication {
+        line-height: 16px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .news-ceneter-detail .news-center-detail-publication .news-center-detail-publication-publisher {
+        color: #666;
+    }
+
+    .news-ceneter-detail .news-center-detail-publication {
+        margin-bottom: 20px;
+        line-height: 16px;
+    }
+    
+    .news-ceneter-detail .news-center-detail-publication .news-center-detail-publication-divider{
+       margin: 0 5px;
+       color: #dedede
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .news-ceneter-detail .news-center-detail-publication-date .news-center-detail-publication-date{
+      color: #999;
+    }
+   
+    * {
+        box-sizing: border-box;
+    }
+
+    .news-center-detail-divider {
+        width: 100%;
+        height: 1px;
+        margin-bottom: 25px;
+        border-top: 1px solid #dedede;    
+    }
+
+    .news-center-table-title {
+        font-size: 18px;
+        color: #454545;
+        font-weight: bold;
+    }
+
+    p {
+        margin: 0 0 10px;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .news-center-detail p .news-center-more-content {
+        margin-top: 9px;
+        font-size: 14px;
+        width: 705px;
+        height: 16px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    .news-center-detail .news-center-more-content .news-center-more-content-title {
+        max-width: 495px;
+        margin-right: 5px;
+        float: left;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: bold;
+        color: #2099bb
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .news-ceneter-detail .news-center-more-content .news-center-more-content-title.active-news a {
+        font-weight: bold;
+        color: #0d647b;
+        text-decoration: underline;
+    }
+
+    a {
+        background: transparent;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .news-center-detail .news-center-more-content .news-center-more-content-category {
+        width: 110px;
+        font-size: 13px;
+        margin-right: 10px;
+        padding-top: 1px;
+        float: left;
+        color:#666;
+    }
+
+    * {
+        box-sizing: border-box; 
+    }
+
+    .news-center-detail .news-center-more-content .news-center-more-content-date {
+        float: right;
+        color:#666;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    .news-center-detail p.news-center-more-content { 
+       margin-bottom: 10px !important;
+    }
+
+    .privacy .content-inner p, .tos .content-inner p {
+        line-height: 24px;
+    }
+
+    .news-center-detail .news-center-more-content {
+        margin-top: 9px;
+        font-size: 14px;
+        width: 705px;
+        height: 16px;
+    }
+
+    p {
+        margin: 0 0 10px;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    .news-center-detail .news-center-more-content .news-center-more-content-title {
+        max-width: 495px;
+        margin-right: 5px;
+        float: left;
+        white-space: nowrap;
+        text-overflow: hidden;
+        font-weight: bold;
+        color: #2099bb;
+    } 
+
+    * {
+        box-sizing: border-box;
+    }
+
+    a {
+        color:#2099bb;
+        text-decoration: none;
+    }
+
+    a {
+        background: transparent;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .news-center-detail .news-center-more-content .news-center-more-content-category {
+        width: 110px;
+        font-size: 13px;
+        margin-right: 10px;
+        padding-top: 1px;
+        float: left;
+        color: #666;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    .news-center-detail .news-center-more-content .news-center-more-content-category {
+        float:right;
+        color: #666;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    .news-center-detail p .news-center-more-content {
+        margin-bottom: 10px iimportant;
+    }
+
+    .privacy .content-inner p, .tos .content-inner p {
+        line-height: 24px;
+    }
+
+    .news-center-detail .news-center-more-content {
+        margin-top: 9px;
+        font-size: 14px;
+        width: 705px;
+        height: 16px;
+    }
+
+    p {
+        margin: 0 0 10px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+   
+    .news-center-detail .news-center-more-content .news-center-more-content-category {
+        width: 110px;
+        font-size: 13px;
+        margin-right: 10px;
+        padding-top: 1px;
+        float: left;
+        color: #666;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .news-center-detail .news-center-more-content .news-center-more-content-date {
+        float:right;
+        color: #666;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .news-center-detail p .news-center-more-content {
+        margin-bottom: 10px !important;
+    }
+
+    .privacy .content-inner p .tos .content-inner p {
+        line-height: 24px;
+    }
+
+    .news-center-detail .news-center-more-content {
+        margin-top: 9px;
+        font-size: 14px;
+        width: 705px;
+        height: 16px;
+    }
+    
+    p {
+        margin: 0 0 10px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    .more-news-center {
+        float: right;
+        margin-top: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 14px;
+        color: #333;
+        text-decoration: underline;
+    }
+
+    a {
+        background: transparent;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    .more-news-center {
+        float: right;
+        margin-top: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 14px;
+        color: #333;
+        text-decoration: underline;
+    }
+
+    .news-center-detail {
+        width: 705px;
+        margin: 0 auto;
+    }
+    
+    article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+        display: block;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    
     </style>
+    
     <div class="content-inner">
         <section class="news-center-detail">
-        
-        </section>
+           <div class="news-center-table-body-category">
+              <a class="sub-tab-link" href="/news-center-notice/">
+                <span class="news-center-detail-category-text">공지사항</span>
+              </a>
+           </div>            
+        <h1 class="news-center-detail-title">[공지사항] 꿈터 이용약관 및 개인정보 처리방침 일부 개정 안내</h1>
+        <div class="news-center-detail-publication">
+            <span class="news-center-detail-publication-publisher">꿈터</span>
+            <span class="news-center-detail-publication-date">2024.03.14</span>
+        </div>
     </div>
+        <div class="news-detail-content-divider"></div>
+        <div class="news-detail-content">
+            <p></p>
+            <p>
+               안녕하세요. 꿈터입니다.
+               <br>
+               "항상 꿈터를 이용해 주셔서 감사합니다."
+               <br>
+               <br>
+               "꿈터 통합회원들에게 더 나은 서비스를 제공하기 위해, 이용약관 및 개인정보 처리 방침의 일부를 개정하고자 합니다."
+               <br>
+               <br>
+               <strong> [개정 일시]</strong>
+               <br>
+               "■ 공지 일자: 2024년 03년 15일"
+               <br>
+               "■ 시행 일자: 2024년 03년 25일"
+               <br>
+               "(개정 이용약관과 개인정보 처리방침과 개정 전후 비교는 아래 링크에서 확인 가능합니다.)"
+               <strong>[개정]</strong>       
+               <br>
+               "■ 이용약관"
+               <a href="../../../../wishcat-member/terms-of-service/next/">
+                http://www.wishcat.com/wishcat-member/privacy/next/
+               </a>
+               <br>
+               "■ 개인정보 처리방침:&nbsp;"
+               <a href="../../../../wishcat-member/privacy/next/">
+                http://www.wishcat-member/privacy/next/</a>
+               </p>
+               <br>
+               <p>
+                <strong>[개정 전후 비교표]</strong>
+               <br>
+               "■ 이용약관:&nbsp;"
+               <a href="../../../../wishcat-member/privacy/next"</a>
+               <br>
+                "■ 개인정보 처리방침:&nbsp;"
+               <a href="../../../../wishcat-member/terms-change-preview/privacy/">
+                http://www.wishcat.com/wishcat-member/terms-change-preview/privacy/</a>
+               </p>
+               <br>
+               <p>
+                <strong>[개정 전후 비교표]</strong>
+                <br>
+                "■ 이용약관:&nbsp;"
+                <a href="../../../../wishcat-member/terms-change-preview/tos/">
+                    http://wishcat.com/wishcat-member/terms-change-preview/tos/</a>
+                <br>
+                "■ 개인정보 처리방침: &nbsp;"
+                <a href="../../../../wishcat-member/terms-change-preview/privacy/"></a> 
+                </p>
+                <br>
+                <br>
+                 <strong>[관련 문의 및 이의 제기]</strong>
+                 <br>
+                 "이용약관 및 개인정보 처리방침에 대한 이의제기는 꿈터 고객센터
+                 (help@ggumteo.com)로 연락 부탁드립니다. 만일, 이용약관 및 개인정보 처리방침 개정에 동의하지 않으신다면 현행 약관
+                 제 3조 6항에 따라 회원 탈퇴를 통해 꿈터 서비스의 이용을 중단할 수 있습니다."
+                 <br>
+                 "개정된 이용 약관 및 개인정보 처리방침 시행 이후에도, 꿈터 통합회원으로서 서비스를 이용하는 경우 개정 내용에 동의하신 것으로 간주되어, 
+                 시행일에 개정된 이용약관 및 개인정보 처리방침이 적용됩니다."
+                 <br>
+                 <br>
+                 "앞으로도 저희 꿈터는 '세상이 일하는 방식을 더 행복하게 변화시킨다.'라는 비전 하에 더 좋은 서비스를
+                 만들어 나가겠습니다."
+                 <br>
+                 <br>
+                 "감사합니다."
+                 <br>
+                 "꿈터 드림."
+                 </p>
+                 <br> 
+                <div class="news-detail-content-divider"style="margin:0;;"></div>
+                <div class="news-center-detail-publication" style="margin-top: 20px;margin-bottom:25px;">
+                <span class="news-center-detail-publication-publisher">꿈터</span>
+                <span class="news-center-detail-publication-divider">|</span>
+                <span class="news-center-detail-publication-date">2024.03.14</span>
+                </div>
+                <section class="news-ceneter-detail"></section>
+                  <div class="news-center-detail-divider"></div>
+                <p class="news-center-table-title">
+                    "'"
+                <span class="before_tab_text">뉴스센터</span>
+                "'의 다른 글 보기"
+                </p>
+                <p class="news-center-more-content">
+                    <span class="news-center-more-content-title active news">
+                     <a href="/news-center/detail/812">[공지사항]꿈터 이용약관 및 개인정보 처리방침 일부 개정 안내</a>
+                    </span>
+                <span class="news-center-more-content-category">| 공지사항</span>
+                <span class="news-center-more-content-date">2024.03.14</span>
+                </p>
+                <span class="news-center-more-content-title">
+                  <a href="/news-center/detail/811">[공지사항] 2024년 설 연휴 꿈터 휴무 안내</a>
+                </a>
+                </span>
+                <span class="news-center-more-content-category">| 공지사항</span>
+                <span class="news-center-more-content-date">2024.02.07</span>
+                <p class="news-center-more-content-title">
+                    <a href="/news-center/detail/810">[공지사항] 2023년 추석 연휴 꿈터 휴무 안내 </a>
+                </span>
+                <span class="news-center-more-content-category">| 공지사항</span>
+                <span class="news-center-more-content-date">2023.09.26</span>
+                </p>
+                <a class="more-news-center" href="news-center/all/">
+                    <span class="before_tab_text">뉴스센터</span>
+                    "더 보기>"
+                </a>
+                <div style="clear: both"></div>
+            </section>
