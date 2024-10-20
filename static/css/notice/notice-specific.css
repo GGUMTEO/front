@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: "NotoSansKR";
+    font-weight: 700;
+    src: url("/fonts/NotoSansKR-Bold.woff2") format("woff2");
+    }
+    @font-face {
+    font-family: "NotoSansKR";
+    font-weight: 500;
+    src: url("/fonts/NotoSansKR-Medium.woff2") format("woff2");
+    }
+    @font-face {
+    font-family: "NotoSansKR";
+    font-weight: 400;
+    src: url("/fonts/NotoSansKR-Regular.woff2") format("woff2");
+    }
+    @font-face {
+    font-family: "NotoSansKR";
+    font-weight: 300;
+    src: url("/fonts/NotoSansKR-Light.woff2") format("woff2");
+    }
+    @font-face {
+    font-family: "NotoSansKR";
+    font-weight: 100;
+    src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
+    }
+    
+   section
+
+
+  .content.inner{
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    border-bottom-width: 2px;
+    border: 1px solid #dedede;
+
+  * {
+      box-sizing: border-box;
+  }
+
+  .content-inner:before {
+    content: " ";
+    display:table;
+    line-height: 0;
+  }
+
+  * before {
+      box-sizing: border-box;
+  }
+  .content-inner:after {
+      clear: both;
+  }
+
+  .content-inner:after {
+      content: " ";
+      display: table;
+      line-height: 0;
+  }
