@@ -397,14 +397,38 @@
                                 />
                                 신고</button
                             ><button class="btn-proposal btn btn-partner">
-                                모집 신청하기
+                                모집 지원하기
                             </button>
                         </div>
                         <div style="clear: both"></div>
                     </div>
                 </div>
             </div>
+            <div id="report-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>작품 신고</h2>
+                    <br />
+                    <br />
+                    <form>
+                        <label for="reason">신고하려는 이유를 적어주세요:</label
+                        ><br />
+                        <br />
+                        <textarea
+                            id="reason"
+                            name="reason"
+                            rows="4"
+                            cols="50"
+                        ></textarea
+                        ><br /><br />
+                        <button class="report-submit" type="submit">
+                            신고하기
+                        </button>
+                    </form>
+                </div>
+            </div>
         </main>
         <footer></footer>
     </body>
+    <script src="/static/js/audition/detail.js"></script>
 </html>

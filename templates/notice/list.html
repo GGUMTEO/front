@@ -6,7 +6,8 @@
     <title>공지사항</title>
     <link rel="stylesheet" href="/static/css/notice/notice.css">  
     <style>  
- @font-face {
+  
+  @font-face {
   font-family: "NotoSansKR";
   font-weight: 700;
   src: url("/fonts/NotoSansKR-Bold.woff2") format("woff2");
@@ -32,7 +33,17 @@
   src: url("/fonts/NotoSansKR-Thin.woff2") format("woff2");
   }
    
-  .content-header {
+  body
+  html
+  h3
+  input
+  table
+  body
+  a
+  section
+  
+  
+.content-header {
       margin-bottom: 5px;
       padding: 30px;
       background-color: #fff;
@@ -41,79 +52,65 @@
       border-radius: 3px;
     }
 
-   * {
+* {
      box-sizing: border-box;
    }
- body {
+   
+body {
       margin: 0;
       font-family:"NotoSansKR";
       font-size: 14px;
       line-height: 1.428571429;
       color: #555;
       background-color: #f5f5f5; 
-  }
+      height: 100%; 
+    }
 
-  body {
-      margin: 0;
-      font-family:"NotoSansKR";
-      font-size: 14px;
-      color: #555;
-      background-color: #f5f5f5;
-      height: 100%;
-  }
-
-  .h3 {
+.h3 {
    line-height: 1.1;
   }
 
-  html {
-    height: 100px;
+html {
+    height: 100%;
   }
  
-  .small-text {
+.small-text {
     line-height: 20px;
   }
 
-  .cent-header .header-text {
+.cent-header .header-text {
     margin: 0;
   }
 
-  h3, .h3{
-    font-size: 24px
+h3, .h3{
+    font-size: 24px;
+    line-height: 1.1;
   }
   
-  h3, .h3 {
-   line-height: 1.1;
-
-  }
-
-  .news-center .news-center-search-box-container:before, .news-center, .news-center-search-box-container:after{
+.news-center .news-center-search-box-container:before, .news-center, .news-center-search-box-container:after{
     content: " ";
     display: table;
   }
 
-  .news-center .news-center-search-box-container:after {
+.news-center .news-center-search-box-container:after {
     clear: both;
+    display: table;
   }
 
-  .news-center .news-center-search-box-container:after {
-   content: " ";
-   display: table;
-   }
-
-   .news-center .news-center-search-box-container .news-center-search-box .news-center-search {
+.news-center .news-center-search-box-container .news-center-search-box {
     width: 250px;
     height: 26px;
-    margin: right 6px;
+    margin-right: 6px;
     border: 1px solid #dedede;
-   }
+    float: right; 
+  }
 
-   input {
+input {
    margin: 0;
    vertical-align: middle;
   }
 
-  .news-center .news-center-search-box-container .news-center-search-box .news-center-add-on {
+.news-center .news-center-search-box-container .news-center-search-box .news-center-add-on {
     padding: 5px 10px;
     background-color: #2099bb;
     border: solid 1px #1c87a5;
@@ -122,76 +119,31 @@
     color: #fff
   }
 
-  .tab-content>.active {
+.tab-content>.active {
     display: block;
   }
 
-  table{
+table{
     border-collapse: collapse;
   }
 
-  .news-center-table .news-center-table-head tr th {
-    height: 36px;
-    background-color: #f7f7f7;
-    border-top : 2px solid #dedede;
-    text-align: center;
-  }
-
-  .news-center-table .news-center-table-head tr th+th {
+.news-center-table .news-center-table-head tr th+th {
    border-left: 1px solid #dedede;
   }
-
-  table {
-    border-collapse: collapse;
+  
+.news-center-table .news-center-table-body tr td+td {
+   border-left: 1px solid #dedede;
   }
-
-  .news-center-table .news-center-table-head tr th+th {
-  border-left: 1px solid #dedede;
-  }
-
-  .news-center-table .news-center-table-head tr th {
+  
+.news-center-table .news-center-table-head tr th {
     height: 36px;
     background-color: #f7f7f7;
     border-top : 2px solid #dedede;
     text-align: center;
-  }
-  
-  .news-center-table .news-center-table-head tr th+th {
-  border-left: 1px solid #dedede;
-  }
-  
-  .news-center-table .news-center-table-head tr th {
-    height: 36px;
-    background-color: #f7f7f7;
-    border-top : 2px solid #dedede;
-    text-align: center;
-  }
-
-  .news-center-table .news-center-table-body tr td+td {
-  border-left: 1px solid #dedede;
-  }
-  
-  .news-center-table .news-center-table-head tr th {
-    height: 36px;
-    background-color: #f7f7f7;
-    border-top : 2px solid #dedede;
-    text-align: center;
-  }
-  table {
-    border-collapse: collapse;
+    border-left: 1px solid #dedede;
   }
  
-  body {
-    margin: 0;
-    font-family: ""; 
-    font-size: 14px;
-    line-height: 1.428571429;
-    color: #555;
-    background-color: #f5f5f5;
-    height: 100%
-  }
-
-  .news-center-table .news-center-table-body tr td {
+.news-center-table .news-center-table-body tr td {
     height: 36px;
     border-top: 1px solid #dedede;
     border-bottom: 1px solid #dedede;
@@ -201,30 +153,23 @@
     text-align: center;
   }
 
-   table {
-    border-collapse: collapse;
-   }
-
-   body {
-    font-family: "";
-    background-color: #f5f5f5;
-    height: 100%
-   }
-
-   .news-center-table .news-center-table-body tr td+td {
+.news-center-table .news-center-table-body tr td+td {
     border-left: 1px solid #dedede;
    }
    
-   .news-center-table .news-center-table-body tr td {
-  height: 36px;
-  border-top: 1px solid #dedede;
-  border-bottom: 1px solid #dedede;
-  font-size: 13px; 
-  text-align: center;   
-}
+.news-center-table .news-center-table-head tr th+th {
+    border-left: 1px solid #dedede;
+  }
+
+.news-center-table .news-center-table-body tr .news-center-table-body-title {
+    text-align: left;
+    padding-left: 14px;
+  }
+
 .news-center-table .news-center-table-head tr th+th {
   border-left: 1px solid #dedede;
 }
+
 .news-center-table .news-center-table-body tr td {
   height: 36px;
   border-top: 1px solid #dedede;
@@ -238,53 +183,6 @@
   padding-left: 14px;
 }
 
-.news-center-table .news-center-table-head tr th+th {
-  border-left: 1px solid #dedede;
-}
-
-.news-center-table .news-center-table-body tr td {
-  height: 36px;
-  border-top: 1px solid #dedede;
-  border-bottom: 1px solid #dedede;
-  font-size: 13px; 
-  text-align: center;   
-}
-
-table {
-  border-collapse: collapse; 
-}
-
-a {
-  text-decoration: none;
-}
-
-a {
-background: transparent;
-
-}
-
-.news-center-table .news-center-table-body tr .news-center-table-body-title {
-text-align: left;
-padding-left: 14px;
-}
-
-.news-center-table .news-center-table-body tr td {
-  height: 36px;
-  border-top: 1px solid #dedede;
-  border-bottom: 1px solid #dedede;
-  font-size: 13px; 
-  text-align: center;   
-}
-
-a {
-text-decoration: none;
-}
-
-.news-center-table .news-center-table-body tr .news-center-table-body-title {
-text-align: left;
-padding-left: 14px; 
-}
-
 .news-center-table .news-center-table-body tr td+td {
   border-left: 1px solid #dedede;
 }
@@ -295,39 +193,32 @@ padding-left: 14px;
   border-bottom: 1px solid #dedede;
   font-size: 13px;
   line-height: 15px;
-
-}
-table {
-  border-collapse: collapse;
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
 }
 
-a {
-background: transparent;
-}
-
-table {
-  border-collapse: collapse; 
-}
-
-element.style {
-  margin-bottom: 20px;
-}
-
-.news-ceneter-table {
+.news-center-table {
   table-layout: fixed;
 }
-element.style{
-  clear: both;
+
+.pagination-wrapper {
+  text-align: center;
 }
+
+* {
+  box-sizing: border-box;
+}  
 
 .pagination-wrapper:before, .pagination-wrapper:after {
   content:" ";
   display: table;
   line-height: 0;
+}
+*:before, *after {
+  box-sizing: border-box;
 }
 
 .pagination-wrapper:after {
@@ -338,17 +229,66 @@ element.style{
   display: table;
   line-height: 0;
 }
-section {
-  display: block;
+* bofore, *after {
+  box-sizing: border-box;
 }
-.page::after {
-  clear: both;
+.pagination {
+  margin-top: 0;
+  margin-bottom: 0;
+  display:inline-block;
+  padding-left: 0;
+  margin: 10px 0;
+  vertical-align: top;
 }
 
-.page::after{
-  content: "";
-  display: table;
-  line-height: 0;
+.pagination>li {
+  display: inline;
+}
+
+.pagination>li:first-child>a
+.paginaion>li:child-child>span{
+  margin-left: 0;
+}
+
+.pagination>active>a,
+.pagination>active>a:hover, .pagination>.active>a:focus,
+.pagination>.active>span, .pagination>.active>span:hover,
+.pagination>.active>span:focus {
+  z-index: 2;
+  color: #2099bb;
+  cursor:default;
+}
+
+.paginaion>li>a, .paginaion>li>span {
+  position: relative;
+  float: left;
+  padding: 4px 8px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+}
+
+a {
+  background: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.fa-arrow-right:before {
+  content: "f061";
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+}
+section {
+  display: block;
 }
 
 .content {
@@ -358,151 +298,150 @@ section {
   margin-right: 10px;
   width: 1060px;
 }
-
 </style>
 </head>
 <body>
 <div class="content">
     <div class="content-header"> 
-        <h1 class="header-text">
-        공지사항</h1>
+        <h1 class="header-text">공지사항</h1>
         <small class="small-text">꿈터의  새로운 소식을 확인할 수 있습니다.</small>
-    </h1>
     </div>
     </div>
-    <div class="content-inner"> 
-    <form>
-      <input class="news-center-search" id="news_center_search"name="q"type="text"/></div>
-    </form>    
-      <span class="news-center-search-add-on" id="news-center-search-submit">검색</span>
+    <div class="news-center-search-box-container">
+    <form method="GET" name class="has-validation-callback">  
+    <input class="news-center-search" id="news_center_search name="q" type="text"
+    <span class="news-center-search-add-on" id="news-center-search-submit">검색
+    </span>
+    </form>
+    </div>
+    </div>
+<div class="tab-content">                     
+  <div class="tab-pane active" id="all" role="tabpanel">
+    <table class="news-center-table" style="margin-top:0; "margin-bottom: 20px;>
+    <colgroup>
+     <col style="width: 57px;">
+     <col style="width: 132px">
+     <col style="width: 703px">
+     <col style="width: 104px">
+    </colgroup>      
+    <thead class="news-center-table-head">
+      <tr>
+        <th>번호</th>
+        <th>구분</th>
+        <th>제목</th>
+        <th>등록일</th>
+      </tr>
+    </thead>
+    <tbody class = "news-center-table-body">
+      <tr class="news-data-rows"data-forloop= "1">
+        <td class="news-center-table-body-number">273</td>
+        <td class="news-center-table-body-category">공지사항</td>
+        <td class="news-center-table-body-title">
+          <a href="/news-center-detail/812/" style="color:#535353;">
+            <span style="cursor: pointer;">[공지사항] 꿈터 이용약관 및 개인정보 처리방침 일부 개정 안내</span>
+          </a>
+        </td>  
+       <td class="news-center-table-body-date">2024.03.14</td>
+      </tr>
+      <tr class="news-data-rows"data-forloop= "2">
+        <td class="news-center-table-body-number">273</td>
+        <td class="news-center-table-body-category">공지사항</td>
+        <td class="news-center-table-body-title">
+          <a href="/news-center-detail/811/" style="color:#535353;">
+            <span style="cursor: pointer;">[공지사항] 2024년 설 연휴 꿈터 휴무 안내</span>
+          </a>
+        </td>  
+       <td class="news-center-table-body-date">2024.02.07</td>
+      </tr>
+      <tr class="news-data-rows"data-forloop= "3">
+        <td class="news-center-table-body-number">271</td>
+        <td class="news-center-table-body-category">공지사항</td>
+        <td class="news-center-table-body-title">
+          <a href="/news-center-detail/810/" style="color:#535353;">
+            <span style="cursor: pointer;">[공지사항]2023년 추석 연휴 꿈터 휴무 안내</span>
+          </a>
+        </td>  
+       <td class="news-center-table-body-date">2023.09.26</td>
+      </tr>
+      <tr class="news-data-rows"data-forloop= "4">
+        <td class="news-center-table-body-number">270</td>
+        <td class="news-center-table-body-category">공지사항</td>
+        <td class="news-center-table-body-title">
+          <a href="/news-center-detail/809/" style="color:#535353;">
+            <span style="cursor: pointer;"> 정부지원사업 창업가를 위한 꿈터 이용 가이드</span>
+          </a>
+        </td>  
+       <td class="news-center-table-body-date">2023.09.24</td>
+      </tr>
+      <tr class="news-data-rows"data-forloop= "5">
+        <td class="news-center-table-body-number">270</td>
+        <td class="news-center-table-body-category">공지사항</td>
+        <td class="news-center-table-body-title">
+          <a href="/news-center-detail/808/" style="color:#535353;">
+            <span style="cursor: pointer;">MVP 제작, 외주로 개발하려는 스타트업이 꼭 알아야할 3가지</span>
+          </a>
+        </td>  
+       <td class="news-center-table-body-date">2023.08.24</td>
+      </tr>
+      <tr class="news-data-rows"data-forloop= "6">
+        <td class="news-center-table-body-number">268</td>
+        <td class="news-center-table-body-category">공지사항</td>
+        <td class="news-center-table-body-title">
+          <a href="/news-center-detail/807/" style="color:#535353;">
+            <span style="cursor: pointer;">정부지원사업 앱/웹 개발, 외주 플랫폼 써도 될까?5분 팩트 체크</span>
+          </a>
+        </td>  
+       <td class="news-center-table-body-date">2023.03.24</td>
+      </tr>
+      <tr class="news-data-rows"data-forloop= "7">
+        <td class="news-center-table-body-number">267</td>
+        <td class="news-center-table-body-category">공지사항</td>
+        <td class="news-center-table-body-title">
+          <a href="/news-center-detail/806/" style="color:#535353;">
+            <span style="cursor: pointer;">정부지원사업 외주 개발사, 어떤 기준으로 골라야 할까?</span>
+          </a>
+        </td>  
+       <td class="news-center-table-body-date">2023.03.24</td>
+      </tr>
+      <tr class="news-data-rows"data-forloop= "8">
+        <td class="news-center-table-body-number">266</td>
+        <td class="news-center-table-body-category">공지사항</td>
+        <td class="news-center-table-body-title">
+          <a href="/news-center-detail/805/" style="color:#535353;">
+            <span style="cursor: pointer;">정부지원사업 선정기업이 개발사 13곳 만나보고 얻은 외주 노하우</span>
+          </a>
+        </td>  
+       <td class="news-center-table-body-date">2023.03.24</td>
+      </tr>
+      <tr class="news-data-rows"data-forloop= "9">
+        <td class="news-center-table-body-number">265</td>
+        <td class="news-center-table-body-category">공지사항</td>
+        <td class="news-center-table-body-title">
+          <a href="/news-center-detail/804/" style="color:#535353;">
+            <span style="cursor: pointer;">기획만 있던 메타버스 메신저 프로젝트,아웃소싱으로 해낸 후기: S사 시스템 운영팀 김동주님 인터뷰</span>
+          </a>
+        </td>  
+       <td class="news-center-table-body-date">2023.03.09</td>
+      </tr>
+      <tr class="news-data-rows"data-forloop= "10">
+        <td class="news-center-table-body-number">264</td>
+        <td class="news-center-table-body-category">공지사항</td>
+        <td class="news-center-table-body-title">
+          <a href="/news-center-detail/803/" style="color:#535353;">
+            <span style="cursor: pointer;">IT 아웃소싱이 회사 성장에 '도움이 된다'는 확신이 든 순간:씨드로닉스 CTO 김한근님 인터뷰</span>
+          </a>
+        </td>  
+       <td class="news-center-table-body-date">2023.03.09</td>
+      </tr>  
+    </tbody>
+  </table>
   </div>
-</div>
-<div class="tab-content"> 
-    <div class="news-center-table" style="margin-top:0; margin-bottom:20px">
-        <table class="news-center-table" style="margin-top:0; margin-bottom: 20px;">
-            <colgroup> 
-                <col style="width: 57px;">
-                <col style="width: 132px;">
-                <col style="width: 703px;">
-                <col style="width: 104px;">
-            </colgroup>
-            <thead class="news-center-table-head">  
-               <tr>
-                <th>번호</th>
-                <th>구분</th>
-                <th>제목</th>
-                <th>등록일</th>
-               </tr>
-            </thead>
-            <tr class="news-data-rows" data-forloop="1">
-              <td class="news-center-table-body-number">273</td>
-              <td class="news-center-table-body-category">공지사항</td>
-              <td class="news-center-table-body-title">
-              <a href="/news-center/detail/812/" style="color: #535353;">
-              <span style="cursor:pointer;">[공지사항] 꿈터 이용약관 및 개인정보 처리방침 일부 개정 안내</span>
-              </a>  
-              </td>
-              <td class="news-center-table-body-date">2024.03.14</td>
-            </tr>
-            <tr class="news-data-rows" data-forloop="2">>
-              <td class="news-center-table-body-number">272</td>
-              <td class="news-center-table-body-category">공지사항</td>
-              <td class="news-center-table-body-title">
-              <a href="/news-center/detail/811/" style="color: #535353;">
-              <span style="cursor:pointer;">[공지사항] 2024년 설 연휴 꿈터 휴무 안내</span>
-              </a>  
-              </td>
-              <td class="news-center-table-body-date">2024.03.14</td>
-            </tr>
-            <tr class="news-data-rows" data-forloop="3">>
-              <td class="news-center-table-body-number">271</td>
-              <td class="news-center-table-body-category">공지사항</td>
-              <td class="news-center-table-body-title">
-              <a href="/news-center/detail/810/" style="color: #535353;">
-              <span style="cursor:pointer;">[공지사항] 2023년 추석 연휴 꿈터 휴무 안내</span>
-              </a>  
-              </td>
-              <td class="news-center-table-body-date">2023.09.26</td>
-              </tr>
-              <tr class="news-data-rows" data-forloop="4">>
-                <td class="news-center-table-body-number">270</td>
-                <td class="news-center-table-body-category">꿈터 이용 팁</td>
-                <td class="news-center-table-body-title">
-                <a href="/news-center/detail/809/" style="color: #535353;">
-                <span style="cursor:pointer;">정부지원사업 창업가를 위한 꿈터 이용가이드</span>
-                </a>  
-                </td>
-                <td class="news-center-table-body-date">2023.09.14</td>
-              </tr>
-            <tr class="news-data-rows" data-forloop="5">>
-              <td class="news-center-table-body-number">269</td>
-              <td class="news-center-table-body-category">프로젝트 성공사례</td>
-              <td class="news-center-table-body-title">
-              <a href="/news-center/detail/808/" style="color: #535353;">
-              <span style="cursor:pointer;">MVP 제작, 외주로 개발하려는 스타트업이 꼭 알아야 할 3가지</span>
-              </a>  
-              </td>
-              <td class="news-center-table-body-date">2023.08.24</td>
-            </tr>
-            <tr class="news-data-rows" data-forloop="6">>
-              <td class="news-center-table-body-number">268</td>
-              <td class="news-center-table-body-category">꿈터 이용 팁</td>
-              <td class="news-center-table-body-title">
-              <a href="/news-center/detail/807/" style="color: #535353;">
-              <span style="cursor:pointer;">정부지원사업 앱/웹 개발, 외주 플랫폼 써도 될까? 5분 팩트 체크</span>
-              </a>  
-              </td>
-              <td class="news-center-table-body-date">2023.03.24</td>
-            </tr>
-            <tr class="news-data-rows" data-forloop="7">>
-              <td class="news-center-table-body-number">267</td>
-              <td class="news-center-table-body-category">꿈터 이용 팁</td>
-              <td class="news-center-table-body-title">
-              <a href="/news-center/detail/806/" style="color: #535353;">
-              <span style="cursor:pointer;">정부지원사업 외주 개발사, 어떤 기준으로 골라야 할까?</span>
-              </a>  
-              </td>
-              <td class="news-center-table-body-date">2023.03.24.</td>
-            </tr> 
-            <tr class="news-data-rows" data-forloop="8">
-              <td class="news-center-table-body-number">266</td>
-              <td class="news-center-table-body-category">프로젝트 성공사례</td>
-              <td class="news-center-table-body-title">
-              <a href="/news-center/detail/805/" style="color: #535353;">
-              <span style="cursor:pointer;">정부지원사업 선정기업이 개발사 13곳 만나보고 얻은 외주 노하우</span>
-              </a>  
-              </td>
-              <td class="news-center-table-body-date">2023.03.24.</td>
-            </tr> 
-            <tr class="news-data-rows" data-forloop="9">>
-              <td class="news-center-table-body-number">265</td>
-              <td class="news-center-table-body-category">프로젝트 성공사례</td>
-              <td class="news-center-table-body-title">
-              <a href="/news-center/detail/812/" style="color: #535353;">
-              <span style="cursor:pointer;">기획만 있던 메타버스 메신저 프로젝트, 아웃소싱으로 해낸 후기: S사 시스템 운영팀 김동주님 인터뷰</span>
-              </a>  
-              </td>
-              <td class="news-center-table-body-date">2023.03.09.</td>
-            </tr> 
-            <tr class="news-data-rows" data-forloop="10">>
-              <td class="news-center-table-body-number">264</td>
-              <td class="news-center-table-body-category">프로젝트 성공사례</td>
-              <td class="news-center-table-body-title">
-              <a href="/news-center/detail/812/" style="color: #535353;">
-              <span style="cursor:pointer;">IT 아웃소싱이 회사 성장에 '도움이 된다'는 확신이 든 순간</span>
-              </a>  
-              </td>
-              <td class="news-center-table-body-date">2023.03.09.</td>
-            </tr> 
-                    </tbody>
-                    </table>
-                    </div>
-                    <div class="pagination-wrapper" style="clear: both">
+          <div class="pagination-wrapper" style="clear: both">
                     <ul class="pagination" id="pagination_box">
                      <li id="page_1" class="active">
                         <a style="cursor: pointer" onclick="sendPaginationNumber(1);">1</a>   
                      </li>   
-                    <li id="page_2">
+                     <li id="page_2">
                         <a style="cursor: pointer;" onclick="sendPaginationNumber(2);">2</a>
                     </li>
                     <li id="page_3">
@@ -529,9 +468,23 @@ section {
                     <li id="page_10">
                         <a style="cursor: pointer;" onclick="sendPaginationNumber(10);">10</a>
                     </li>
+                    <li>
+                      <a style="cursor:pointer;" onclick="sendPaginationNumber(2)" class="next">
+                        <i class="fa fa-arrow-right">
+                        </i>
+                      </a>
+                    </li>
                     </ul>
                     </div>
+                    <input id="current_page" type="hidden" value="1">
+                    <input id="max_count" type="hidden" value="273">
                     </div>
-                    </body>                  
-                    </html>
+                   </section>
+                  </div>
+                 </div>
+                </div>
+                <div id="push"></div>
+              </div> 
+             </body>                  
+            </html>
                     

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>모집 신청하기</title>
+        <link
+            rel="stylesheet"
+            href="/static/css/member/view-registration.css"
+        />
+    </head>
+    <body>
+        <header class="header"></header>
+        <main>
+            <div id="wrap">
+                <div class="container">
+                    <div id="messages"></div>
+                </div>
+                <a
+                    class="advertisement no_message"
+                    id="message_advertisement"
+                ></a>
+                <div class="page">
+                    <div
+                        class="page-inner"
+                        style="
+                            display: flex;
+                            flex-direction: row;
+                            gap: 33px;
+                            justify-content: center;
+                        "
+                    >
+                        <div class="content">
+                            <div class="content-header action">
+                                <h3 class="header-text">
+                                    신청자 정보
+                                    <small class="small-text"
+                                        >신청자 정보는 수정할 수 없습니다.
+                                    </small>
+                                </h3>
+                            </div>
+                            <div class="content-inner">
+                                <h4 style="margin-top: 0px">
+                                    신청자 정보<button
+                                        class="btn btn-default"
+                                        id="show_base_button"
+                                        onclick="show_base_form()"
+                                        style="display: none; float: right"
+                                    >
+                                        수정
+                                    </button>
+                                </h4>
+
+                                <div
+                                    action=""
+                                    class="form-horizontal has-validation-callback"
+                                    id="base-edit-form"
+                                    style="
+                                        border-bottom: 1px dashed #dedede;
+                                        padding-bottom: 25px;
+                                        margin-bottom: 25px;
+                                        height: 100%;
+                                    "
+                                >
+                                    <div class="form-group">
+                                        <label
+                                            class="control-label required"
+                                            id="full_name_label"
+                                            ><span></span> 이름</label
+                                        >
+                                        <div class="control-wrapper">
+                                            <div
+                                                class="form-control"
+                                                id="full_name"
+                                                name="full_name"
+                                                type="text"
+                                                value=""
+                                            >
+                                                홍길동
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="form-group"
+                                        style="margin-top: -10px"
+                                    >
+                                        <label
+                                            class="control-label"
+                                            for="gender"
+                                            >성별</label
+                                        >
+                                        <div class="control-wrapper">
+                                            <div
+                                                class="form-control"
+                                                id="gender"
+                                                name="gender"
+                                                type="text"
+                                                value=""
+                                            >
+                                                남성
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="form-group"
+                                        style="margin-top: -10px"
+                                    >
+                                        <label class="control-label" for="birth"
+                                            >생년월일</label
+                                        >
+                                        <div class="control-wrapper">
+                                            <div
+                                                class="form-control"
+                                                id="birth"
+                                                name="birth"
+                                                type="text"
+                                                value=""
+                                            >
+                                                2000-11-18
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="form-group"
+                                        style="margin-top: -10px"
+                                    >
+                                        <label class="control-label" for="email"
+                                            >이메일</label
+                                        >
+                                        <div class="control-wrapper">
+                                            <div
+                                                class="form-control"
+                                                id="email"
+                                                name="email"
+                                                type="text"
+                                                value=""
+                                            >
+                                                qbnmfh@gmail.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="form-group"
+                                        style="margin-top: -10px"
+                                    >
+                                        <label
+                                            class="control-label"
+                                            for="phonenumber"
+                                            >연락처</label
+                                        >
+                                        <div class="control-wrapper">
+                                            <div
+                                                class="form-control"
+                                                id="phonenumber"
+                                                name="phonenumber"
+                                                type="text"
+                                                value=""
+                                            >
+                                                010-1111-1111
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="form-group"
+                                        style="margin-top: -10px"
+                                    >
+                                        <label
+                                            class="control-label"
+                                            for="pluscontent"
+                                            >추가 작성사항</label
+                                        >
+                                        <div class="control-wrapper">
+                                            <div
+                                                class="form-control"
+                                                id="pluscontent"
+                                                name="pluscontent"
+                                                type="text"
+                                                value=""
+                                                style="height: auto"
+                                            >
+                                                안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다안녕하세요
+                                                오현준입니다
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="form-group"
+                                        style="margin-top: 500px"
+                                    >
+                                        <label class="control-label"
+                                            >첨부파일</label
+                                        >
+                                        <div class="control-wrapper">
+                                            <input
+                                                accept=".pdf, .docx, .doc, .hwp"
+                                                class="temp-upload-resume"
+                                                hidden=""
+                                                type="file"
+                                            />
+
+                                            <div class="selected-file-viewer">
+                                                <input
+                                                    class="remove-request"
+                                                    hidden=""
+                                                    name="remove_request"
+                                                    type="checkbox"
+                                                />
+                                                <p
+                                                    class="placeholder-attachment"
+                                                >
+                                                    첨부파일 내용
+                                                </p>
+                                                <div class="tooltip-group">
+                                                    <img
+                                                        class="viewer-file-icon"
+                                                        src="/static/images/audition/attachment_file_icon@2x.png"
+                                                        style="width: 15px"
+                                                    /><a
+                                                        download=""
+                                                        id="resume_download"
+                                                        ><p
+                                                            class="file-name-viewer text300 body-2-medium"
+                                                            id="selected_file_name_viewer"
+                                                        ></p></a
+                                                    ><img
+                                                        class="btn-delete-resume"
+                                                        id="btn_delete_resume"
+                                                        src="/static/images/audition/chip_btn_delete_normal@2x.png"
+                                                        style="width: 15px"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <button
+                                                class="btn btn-file-select"
+                                                id="file_select_btn"
+                                                type="button"
+                                            >
+                                                다운로드 받기
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>
