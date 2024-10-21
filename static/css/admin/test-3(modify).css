@@ -964,6 +964,11 @@ h1.common-header-description {
     color: rgba(0, 0, 255, 0.823);
 }
 
+.apply-table-cell.post-title > a:hover {
+    text-decoration: currentColor underline;
+    text-underline-position : under;
+}
+
 /* section3: 작품 관리 .글 display none  */
 #work-section .text-wrapper {
     display: none;
@@ -1011,44 +1016,37 @@ h1.common-header-description {
 /* 네번째 열 */
 #member-section .apply-header-cell:nth-child(5),
 #member-section .apply-table-cell:nth-child(5) {
-    width: 16%;
+    width: 15%;
 }
 
 /* 다섯번째 열 */
 #member-section .apply-header-cell:nth-child(6),
 #member-section .apply-table-cell:nth-child(6) {
-    width: 10%;
+    width: 9%;
 }
 
 /* 여섯번째 열 */
 #member-section .apply-header-cell:nth-child(7),
 #member-section .apply-table-cell:nth-child(7) {
-    width: 6%;
+    width: 7%;
 }
 
 /* 일곱 열 */
 #member-section .apply-header-cell:nth-child(8),
 #member-section .apply-table-cell:nth-child(8) {
-    width: 16%;
+    width: 15%;
 }
 /* 여덟 열 */
 #member-section .apply-header-cell:nth-child(9),
 #member-section .apply-table-cell:nth-child(9) {
-    width: 11%;
+    width: 8%;
 }
 
 /* 아홉 열 */
 #member-section .apply-header-cell:nth-child(10),
 #member-section .apply-table-cell:nth-child(10) {
-    width: 8%;
+    width: 9%;
 }
-
-/* 마지막 열 */
-#member-section .apply-header-cell:nth-child(11),
-#member-section .apply-table-cell:nth-child(11) {
-    width: 8%;
-}
-
 /* section2 : 공지 관리 */
 /* 기존의 너비 설정 유지 */
 /* 체크박스 열 */
@@ -1060,13 +1058,13 @@ h1.common-header-description {
 /* 첫번째 열 */
 #notice-section .apply-header-cell:nth-child(2),
 #notice-section .apply-table-cell:nth-child(2) {
-    width: 3%;
+    width: 2%;
 }
 
 /* 두번째 열 */
 #notice-section .apply-header-cell:nth-child(3),
 #notice-section .apply-table-cell:nth-child(3) {
-    width: 4%;
+    width: 5%;
 }
 
 /* 세번째 열 */
@@ -1081,7 +1079,7 @@ h1.common-header-description {
 /* 네번째 열 */
 #notice-section .apply-header-cell:nth-child(5),
 #notice-section .apply-table-cell:nth-child(5) {
-    width: 15%;
+    width: 13%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1090,7 +1088,7 @@ h1.common-header-description {
 /* 다섯번째 열 */
 #notice-section .apply-header-cell:nth-child(6),
 #notice-section .apply-table-cell:nth-child(6) {
-    width: 5%;
+    width: 4%;
 }
 
 /* 여섯번째 열 */
@@ -1110,32 +1108,32 @@ h1.common-header-description {
 /* 첫번째 열 */
 #work-section .apply-header-cell:nth-child(2),
 #work-section .apply-table-cell:nth-child(2) {
-    width: 6%;
+    width: 4%;
 }
 
 /* 두번째 열 */
 #work-section .apply-header-cell:nth-child(3),
 #work-section .apply-table-cell:nth-child(3) {
-    width: 8%;
+    width: 5%;
 }
 
 /* 세번째 열 */
 #work-section .apply-header-cell:nth-child(4),
 #work-section .apply-table-cell:nth-child(4) {
-    width: 11%;
+    width: 7%;
 
 }
 
 /* 네번째 열 */
 #work-section .apply-header-cell:nth-child(5),
 #work-section .apply-table-cell:nth-child(5) {
-    width: 10%;
+    width: 5%;
 }
 
 /* 다섯번째 열 */
 #work-section .apply-header-cell:nth-child(6),
 #work-section .apply-table-cell:nth-child(6) {
-    width: 16%;
+    width: 13%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1144,30 +1142,35 @@ h1.common-header-description {
 /* 여섯번째 열 */
 #work-section .apply-header-cell:nth-child(7),
 #work-section .apply-table-cell:nth-child(7) {
-    width: 9%;
+    width: 4%;
 }
 
 /* 일곱 열 */
 #work-section .apply-header-cell:nth-child(8),
 #work-section .apply-table-cell:nth-child(8) {
-    width: 8%;
+    width: 5%;
 }
 /* 여덟 열 */
 #work-section .apply-header-cell:nth-child(9),
 #work-section .apply-table-cell:nth-child(9) {
-    width: 10%;
+    width: 6%;
 }
 
 /* 아홉 열 */
 #work-section .apply-header-cell:nth-child(10),
 #work-section .apply-table-cell:nth-child(10) {
-    width: 9%;
+    width: 6%;
 }
 
-/* 마지막 열 */
+/* 열 열 */
 #work-section .apply-header-cell:nth-child(11),
 #work-section .apply-table-cell:nth-child(11) {
-    width: 9%;
+    width: 5%;
+}
+/* 마지막 열 */
+#work-section .apply-header-cell:nth-child(12),
+#work-section .apply-table-cell:nth-child(12) {
+    width: 7%;
 }
 
 
@@ -1194,7 +1197,7 @@ h1.common-header-description {
 /* 세번째 열 */
 #funding-section .apply-header-cell:nth-child(4),
 #funding-section .apply-table-cell:nth-child(4) {
-    width: 9%;
+    width: 8%;
 
 }
 
@@ -1207,7 +1210,7 @@ h1.common-header-description {
 /* 다섯번째 열 */
 #funding-section .apply-header-cell:nth-child(6),
 #funding-section .apply-table-cell:nth-child(6) {
-    width: 15%;
+    width: 14%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1216,29 +1219,35 @@ h1.common-header-description {
 /* 여섯번째 열 */
 #funding-section .apply-header-cell:nth-child(7),
 #funding-section .apply-table-cell:nth-child(7) {
-    width: 10%;
+    width: 9%;
 }
 
 /* 일곱 열 */
 #funding-section .apply-header-cell:nth-child(8),
 #funding-section .apply-table-cell:nth-child(8) {
-    width: 10%;
+    width: 9%;
 }
 /* 여덟 열 */
 #funding-section .apply-header-cell:nth-child(9),
 #funding-section .apply-table-cell:nth-child(9) {
-    width: 9%;
+    width: 6%;
 }
 
 /* 아홉 열 */
 #funding-section .apply-header-cell:nth-child(10),
 #funding-section .apply-table-cell:nth-child(10) {
-    width: 9%;
+    width: 8%;
+}
+
+/* 열 열 */
+#funding-section .apply-header-cell:nth-child(11),
+#funding-section .apply-table-cell:nth-child(11) {
+    width: 8%;
 }
 
 /* 마지막 열 */
-#funding-section .apply-header-cell:nth-child(11),
-#funding-section .apply-table-cell:nth-child(11) {
+#funding-section .apply-header-cell:nth-child(12),
+#funding-section .apply-table-cell:nth-child(12) {
     width: 8%;
 }
 
@@ -1548,8 +1557,8 @@ h1.common-header-description {
 }
 
 .answered-modal .edit-modal, .notice-full-modal .edit-modal {
-    width: 900px;
-    height: 750px;
+    width: 770px;
+    height: 670px;
     position: fixed;
     z-index: 100;
     left: 50%;
@@ -1559,10 +1568,6 @@ h1.common-header-description {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow-y: auto; /* 모달창 안에만 스크롤바 표시 */
     border-radius: 8px;
-}
-
-.answered-modal.completed .edit-modal {
-    height: 760px;
 }
 
 .answered-modal .modal-content,
@@ -1595,12 +1600,11 @@ h1.common-header-description {
 
 .modal-content label {
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
     font-weight: bold;
 }
 
 .answered-modal .edit-form h3 {
-    margin-top: 20px;
     margin-bottom: 3px;
 }
 
@@ -1617,7 +1621,7 @@ h1.common-header-description {
 
 .edit-post-content {
     width: 100%;
-    height: 250px;
+    height: 202px;
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -1629,7 +1633,7 @@ h1.common-header-description {
 }
 
 .notice-full-modal .edit-post-content {
-    height: 455px;
+    height: 380px;
 }
  
 
@@ -1648,7 +1652,7 @@ h1.common-header-description {
 }
 
 .answered-modal.completed .edit-post-content {
-    height: 315px;
+    height: 257px;
 }
 
 .save-button {
@@ -1670,6 +1674,32 @@ h1.common-header-description {
 
 /* ----인증번호 (모달창)---- */
 /* Enter Modal Content */
+.verify-modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 103;
+    width: 100%;
+    height: 100%;
+}
+
+.verify-modal .dim {
+    display: block;
+}
+.dim {
+    display: none;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.7);
+}
+
 .enterModal_content {
     background-color: #ffffff;
     padding: 30px;
@@ -1749,25 +1779,43 @@ h1.common-header-description {
     background-color: #004080;
 }
 
-/* modal Verify Button */
-.verify-btn {
-    margin-top: 20px;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
+/* 문자발송에 대한 설명 caption */
+.btn-wrapper {
+    display: unset;
+    position: relative;
+}
+
+.btn-wrapper .caption {
+    opacity: 0;
+    top: -56px;
+    left: -99%;
+    transition: all .4s ease-in-out;
+    cursor: default;
+    position: absolute;
+    width: max-content;
     color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #00c4c4;
+    border-radius: 8px;
+    padding: 9px 11px;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.27;
 }
 
-.verify-btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+.btn-wrapper:hover .caption {
+    opacity: 1;  
 }
 
-.verify-btn:active {
-    background-color: #004080;
+.btn-wrapper .caption:after {
+    border-top: 8px solid #00c4c4;
+    border-left: 7px solid rgba(0, 0, 0, 0);
+    border-right: 7px solid rgba(0, 0, 0, 0);
+    border-bottom: 8px solid rgba(0, 0, 0, 0);
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%);
 }

@@ -8,7 +8,7 @@
     </head>
     <body>
         <!-- 관리자 로그인(모달창) -->
-        <div id="enterModal" class="modal">
+        <!-- <div id="enter-modal" class="verify-modal">
             <div class="dim"></div>
             <div class="modal-wrap">
                 <div class="enterModal_content">
@@ -56,7 +56,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div id="root">
             <div id="admin-layout-container" class="admin-layout-container">
                 <header class="header">
@@ -337,11 +337,6 @@
                                                     <div
                                                         class="apply-table-cell apply-header-cell"
                                                     >
-                                                        전화번호(연락용)
-                                                    </div>
-                                                    <div
-                                                        class="apply-table-cell apply-header-cell"
-                                                    >
                                                         활동상태
                                                     </div>
                                                     <div
@@ -376,9 +371,6 @@
                                                     <div class="apply-table-cell">30</div>
                                                     <div class="apply-table-cell">
                                                         test-service@gmail.com
-                                                    </div>
-                                                    <div class="apply-table-cell">
-                                                        010-1235-1235
                                                     </div>
                                                     <div
                                                         class="apply-table-cell active-member"
@@ -416,9 +408,6 @@
                                                     <div class="apply-table-cell">
                                                         test-service@gmail.com
                                                     </div>
-                                                    <div class="apply-table-cell">
-                                                        010-1235-1235
-                                                    </div>
                                                     <div
                                                         class="apply-table-cell active-member"
                                                     >
@@ -454,9 +443,6 @@
                                                     <div class="apply-table-cell">30</div>
                                                     <div class="apply-table-cell">
                                                         test-service@gmail.com
-                                                    </div>
-                                                    <div class="apply-table-cell">
-                                                        010-1235-1235
                                                     </div>
                                                     <div
                                                         class="apply-table-cell terminated-member"
@@ -494,9 +480,6 @@
                                                     <div class="apply-table-cell">
                                                         test-service@gmail.com
                                                     </div>
-                                                    <div class="apply-table-cell">
-                                                        010-1235-1235
-                                                    </div>
                                                     <div
                                                         class="apply-table-cell terminated-member"
                                                     >
@@ -532,9 +515,6 @@
                                                     <div class="apply-table-cell">30</div>
                                                     <div class="apply-table-cell">
                                                         test-service@gmail.com
-                                                    </div>
-                                                    <div class="apply-table-cell">
-                                                        010-1235-1235
                                                     </div>
                                                     <div
                                                         class="apply-table-cell terminated-member"
@@ -1082,6 +1062,12 @@
                                                         class="filter-search-input"
                                                         placeholder="통합검색"
                                                     />
+                                                    <div class="btn-wrapper">
+                                                        <p class="caption">작품 판매 시 판매금액과 수수료를 문자로 안내해주세요.</p>
+                                                        <button class="selected-btn">
+                                                            문자 발송
+                                                        </button>
+                                                    </div>
                                                     <button class="selected-btn">
                                                         게시글 삭제
                                                     </button>
@@ -1144,6 +1130,11 @@
                                                     <div
                                                         class="apply-table-cell apply-header-cell"
                                                     >
+                                                       수수료(%)
+                                                    </div>
+                                                    <div
+                                                        class="apply-table-cell apply-header-cell"
+                                                    >
                                                         신고상태
                                                     </div>
                                                     <div
@@ -1185,10 +1176,13 @@
                                                         10,000원
                                                     </div>
                                                     <div class="apply-table-cell">
+                                                        1,000원
+                                                    </div>
+                                                    <div class="apply-table-cell">
                                                         <button
                                                             class="report-management-btn status hold"
                                                         >
-                                                            보류/숨김
+                                                            보류
                                                         </button>
                                                     </div>
                                                     <div class="apply-table-cell">
@@ -1224,6 +1218,7 @@
                                                     </div>
                                                     <div class="apply-table-cell">100</div>
                                                     <div class="apply-table-cell">4.9</div>
+                                                    <div class="apply-table-cell">0</div>
                                                     <div class="apply-table-cell">-</div>
                                                     <div class="apply-table-cell">-</div>
                                                     <div class="apply-table-cell edit">
@@ -1254,6 +1249,7 @@
                                                         >
                                                     </div>
                                                     <div class="apply-table-cell">0</div>
+                                                    <div class="apply-table-cell">-</div>
                                                     <div class="apply-table-cell">-</div>
                                                     <div class="apply-table-cell">-</div>
                                                     <div class="apply-table-cell">
@@ -1298,6 +1294,9 @@
                                                         30,000원
                                                     </div>
                                                     <div class="apply-table-cell">
+                                                        3,000원
+                                                    </div>
+                                                    <div class="apply-table-cell">
                                                         <button
                                                             class="status delete-processing"
                                                         >
@@ -1337,6 +1336,9 @@
                                                     <div class="apply-table-cell">3.0</div>
                                                     <div class="apply-table-cell">
                                                         30,000원
+                                                    </div>
+                                                    <div class="apply-table-cell">
+                                                        3,000원
                                                     </div>
                                                     <div class="apply-table-cell">
                                                         <button
@@ -1434,7 +1436,7 @@
                                                 <input
                                                     class="btn-hold"
                                                     type="button"
-                                                    value="보류/숨김"
+                                                    value="보류"
                                                 />
                                                 <input
                                                     class="btn-no-issue"
@@ -1550,6 +1552,12 @@
                                                         class="filter-search-input"
                                                         placeholder="통합검색"
                                                     />
+                                                    <div class="btn-wrapper">
+                                                        <p class="caption">작품 판매 시 판매금액과 수수료를 문자로 안내해주세요.</p>
+                                                        <button class="selected-btn">
+                                                            문자 발송
+                                                        </button>
+                                                    </div>
                                                     <button class="selected-btn">
                                                         게시글 삭제
                                                     </button>
@@ -1656,7 +1664,7 @@
                                                         <button
                                                             class="report-management-btn status hold"
                                                         >
-                                                            보류/숨김
+                                                            보류
                                                         </button>
                                                     </div>
                                                     <div class="apply-table-cell">
@@ -1902,7 +1910,7 @@
                                                 <input
                                                     class="btn-hold"
                                                     type="button"
-                                                    value="보류/숨김"
+                                                    value="보류"
                                                 />
                                                 <input
                                                     class="btn-no-issue"
@@ -1976,8 +1984,7 @@
                                                             name="reason"
                                                             rows="4"
                                                             cols="50"
-                                                        >
-            글 내용이 부적절합니다!</textarea
+                                                        >글 내용이 부적절합니다!</textarea
                                                         >
                                                     </div>
                                                 </form>
@@ -2047,6 +2054,18 @@
                                                         class="filter-search-input"
                                                         placeholder="통합검색"
                                                     />
+                                                    <div class="btn-wrapper">
+                                                        <p class="caption">펀딩 종료 시 모인금액과 수수료를 문자로 안내해주세요.</p>
+                                                        <button class="selected-btn">
+                                                            문자 발송
+                                                        </button>
+                                                    </div>
+                                                    <!-- <div class="btn-wrapper">
+                                                        <p class="caption">펀딩 종료 시 모인금액과 수수료를 문자로 안내합니다.</p>
+                                                        <button class="selected-btn">
+                                                            문자 발송
+                                                        </button>
+                                                    </div> -->
                                                     <button class="selected-btn">
                                                         게시글 삭제
                                                     </button>
@@ -2107,6 +2126,11 @@
                                                         투자자수
                                                     </div>
                                                     <div
+                                                    class="apply-table-cell apply-header-cell"
+                                                >
+                                                    펀딩 종료
+                                                </div>
+                                                    <div
                                                         class="apply-table-cell apply-header-cell"
                                                     >
                                                         신고상태
@@ -2152,10 +2176,13 @@
                                                     </div>
                                                     <div class="apply-table-cell">1</div>
                                                     <div class="apply-table-cell">
+                                                        진행 중
+                                                    </div>
+                                                    <div class="apply-table-cell">
                                                         <button
                                                             class="report-management-btn status hold"
                                                         >
-                                                            보류/숨김
+                                                            보류
                                                         </button>
                                                     </div>
                                                     <div class="apply-table-cell">
@@ -2196,6 +2223,9 @@
                                                         700,000
                                                     </div>
                                                     <div class="apply-table-cell">5</div>
+                                                    <div class="apply-table-cell">
+                                                        종료
+                                                    </div>
                                                     <div class="apply-table-cell">-</div>
                                                     <div class="apply-table-cell edit">
                                                         -
@@ -2229,6 +2259,9 @@
                                                         500,000
                                                     </div>
                                                     <div class="apply-table-cell">-</div>
+                                                    <div class="apply-table-cell">
+                                                        진행 중
+                                                    </div>
                                                     <div class="apply-table-cell">
                                                         <button
                                                             class="report-management-btn status report"
@@ -2273,6 +2306,9 @@
                                                     </div>
                                                     <div class="apply-table-cell">10</div>
                                                     <div class="apply-table-cell">
+                                                        종료
+                                                    </div>
+                                                    <div class="apply-table-cell">
                                                         <button
                                                             class="status delete-processing"
                                                         >
@@ -2315,6 +2351,9 @@
                                                         3,450,000
                                                     </div>
                                                     <div class="apply-table-cell">15</div>
+                                                    <div class="apply-table-cell">
+                                                        진행 중
+                                                    </div>
                                                     <div class="apply-table-cell">
                                                         <button
                                                             class="status no-issue"
@@ -2398,6 +2437,60 @@
                                             </ul>
                                         </nav>
                                     </div>
+                                      <!-- 신고내역 모달창 -->
+                                      <div class="reasons-report-modal video">
+                                        <div class="modal-content">
+                                            <div class="reasons-report-header">
+                                                <div class="header-title-wrapper">
+                                                    <strong class="header-title"
+                                                        >문자 발송</strong
+                                                    >
+                                                </div>
+                                                <span class="close-btn">&times;</span>
+                                            </div>
+                                            <div class="reasons-report-contents">
+                                                <form>
+                                                    <div>
+                                                        <div class="detail-wrapper">
+                                                            <legend>
+                                                                회원 정보
+                                                            </legend>
+                                                            <hr />
+                                                            <p
+                                                                class="name-wrapper detail"
+                                                            >
+                                                                <strong>이름 :</strong>
+                                                                <span class="name">
+                                                                    정지수
+                                                                </span>
+                                                            </p>
+                                                            <p
+                                                                class="email-wrapper detail"
+                                                            >
+                                                                <strong>전화번호 : </strong>
+                                                                <span class="email"
+                                                                    >010-1234-1234</span
+                                                                >
+                                                            </p>
+                                                        </div>
+                                                        <hr />
+                                                        <div class="content-detail">
+                                                            문자 내용
+                                                        </div>
+                                                        <textarea
+                                                            name="reason"
+                                                            rows="4"
+                                                            cols="50"
+                                                        >'정지수'님의 펀딩이 종료되었습니다. 총 모인 금액은
+                                                        2,000,000원이며, 수수료는 50,000원(2.5%)입니다. 수수료는 꿈터 계좌번호로 입금해주세요.</textarea
+                                                        >
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="background-overlay"></div>
+                                    </div>
+                                    <!-- 여기까지(신고내역 모달창)!! -->
                                     <!-- 신고관리 모달창 -->
                                     <div class="report-management-modal video">
                                         <div class="background-overlay"></div>
@@ -2411,7 +2504,7 @@
                                                 <input
                                                     class="btn-hold"
                                                     type="button"
-                                                    value="보류/숨김"
+                                                    value="보류"
                                                 />
                                                 <input
                                                     class="btn-no-issue"
@@ -2527,8 +2620,14 @@
                                                         class="filter-search-input"
                                                         placeholder="통합검색"
                                                     />
+                                                    <div class="btn-wrapper">
+                                                        <p class="caption">펀딩 종료 시 모인금액과 수수료를 문자로 안내해주세요.</p>
+                                                        <button class="selected-btn">
+                                                            문자 발송
+                                                        </button>
+                                                    </div>
                                                     <button class="selected-btn">
-                                                        게시글 삭제
+                                                        게시글 삭제 
                                                     </button>
                                                 </div>
                                             </div>
@@ -2635,7 +2734,7 @@
                                                         <button
                                                             class="report-management-btn status hold"
                                                         >
-                                                            보류/숨김
+                                                            보류
                                                         </button>
                                                     </div>
                                                     <div class="apply-table-cell">
@@ -2891,7 +2990,7 @@
                                                 <input
                                                     class="btn-hold"
                                                     type="button"
-                                                    value="보류/숨김"
+                                                    value="보류"
                                                 />
                                                 <input
                                                     class="btn-no-issue"
@@ -3142,7 +3241,7 @@
                                                         <button
                                                             class="report-management-btn status hold"
                                                         >
-                                                            보류/숨김
+                                                            보류
                                                         </button>
                                                     </div>
                                                     <div class="apply-table-cell">
@@ -3392,7 +3491,7 @@
                                                 <input
                                                     class="btn-hold"
                                                     type="button"
-                                                    value="보류/숨김"
+                                                    value="보류"
                                                 />
                                                 <input
                                                     class="btn-no-issue"
@@ -3614,7 +3713,7 @@
                                                         <button
                                                             class="report-management-btn status hold"
                                                         >
-                                                            보류/숨김
+                                                            보류
                                                         </button>
                                                     </div>
                                                     <div class="apply-table-cell">
@@ -3864,7 +3963,7 @@
                                                 <input
                                                     class="btn-hold"
                                                     type="button"
-                                                    value="보류/숨김"
+                                                    value="보류"
                                                 />
                                                 <input
                                                     class="btn-no-issue"
@@ -4097,7 +4196,7 @@
                                                         <button
                                                             class="report-management-btn status hold"
                                                         >
-                                                            보류/숨김
+                                                            보류
                                                         </button>
                                                     </div>
                                                     <div class="apply-table-cell">
@@ -4372,7 +4471,7 @@
                                                 <input
                                                     class="btn-hold"
                                                     type="button"
-                                                    value="보류/숨김"
+                                                    value="보류"
                                                 />
                                                 <input
                                                     class="btn-no-issue"
@@ -4597,7 +4696,7 @@
                                                         <button
                                                             class="report-management-btn status hold"
                                                         >
-                                                            보류/숨김
+                                                            보류
                                                         </button>
                                                     </div>
                                                     <div class="apply-table-cell">
@@ -4872,7 +4971,7 @@
                                                 <input
                                                     class="btn-hold"
                                                     type="button"
-                                                    value="보류/숨김"
+                                                    value="보류"
                                                 />
                                                 <input
                                                     class="btn-no-issue"
