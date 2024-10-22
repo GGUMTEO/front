@@ -213,20 +213,17 @@ a {
 .list-box-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 30px;
 }
 .box {
     width: 246px;
     margin-bottom: 16px;
     cursor: pointer;
 }
-.thumbnail-img {
-    width: 100%;
-}
 .thumbnail {
     border: none;
-    width: 246px;
-    height: 180px;
+    width: 250px;
+    height: 160px;
     background-size: cover;
     background-position: center center;
 }
@@ -427,7 +424,7 @@ li:last-child > .page-link {
     .thumbnail {
         border: none;
         width: 170px;
-        height: 135px;
+        height: 130px;
         background-size: cover;
         background-position: center center;
         margin-left: 220px;
