@@ -175,6 +175,11 @@
                                                     placeholder="무료일 경우 0원이라고 입력해주세요."
                                                 />
                                             </div>
+                                            <div class="input-guide-helpertext">
+                                                작품 판매완료시 제시한
+                                                작품가격의 10%는 수수료로
+                                                청구됩니다.
+                                            </div>
                                         </div>
                                         <div
                                             class="write-description-box write-detail"
@@ -334,7 +339,7 @@
                                                     <input
                                                         type="file"
                                                         id="thumbnail-upload"
-                                                        accept="image/*"
+                                                        accept="image/*,video/*"
                                                         style="display: none"
                                                         onchange="previewImage(event)"
                                                     />
@@ -372,6 +377,11 @@
                                                                     src="https://www.wishket.com/static/renewal/img/partner/profile/icon_btn_add_portfolio_image.png"
                                                                     alt="Preview"
                                                                 />
+                                                                <video
+                                                                    id="thumbnail-video"
+                                                                    class="video-tag"
+                                                                    controls=""
+                                                                ></video>
                                                             </div>
                                                             <div
                                                                 class="preview"

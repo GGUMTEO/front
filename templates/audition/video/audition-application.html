@@ -64,7 +64,7 @@
                                 <h3 class="header-text">
                                     신청자 정보
                                     <small class="small-text"
-                                        >신청자 정보를 수정할 수 있습니다.
+                                        >추가 작성사항만 작성 가능합니다.
                                     </small>
                                 </h3>
                             </div>
@@ -79,6 +79,9 @@
                                         수정
                                     </button>
                                 </h4>
+                                <p style="color: #2099bb">
+                                    마이페이지의 내 정보
+                                </p>
                                 <div
                                     class="inactive account-setting-basic-block-basic"
                                     id="base-show-form"
@@ -147,7 +150,7 @@
                                             id="full_name_label"
                                             ><span></span> 이름</label
                                         >
-                                        <div class="control-wrapper">
+                                        <!--<div class="control-wrapper">
                                             <input
                                                 class="form-control"
                                                 id="full_name"
@@ -161,11 +164,28 @@
                                                 ></i>
                                                 이 항목을 채워주십시오.
                                             </div>
+                                        </div>-->
+                                        <div class="control-wrapper">
+                                            <div
+                                                class="form-control"
+                                                id="member-name"
+                                                name="member-name"
+                                                type="text"
+                                                value=""
+                                            >
+                                                마이페이지에서 불러온 이름
+                                            </div>
+                                            <div class="error-message">
+                                                <i
+                                                    class="fa fa-exclamation-circle"
+                                                ></i>
+                                                이 항목을 채워주십시오.
+                                            </div>
                                         </div>
                                     </div>
                                     <div
                                         class="form-group"
-                                        style="margin-top: -10px"
+                                        style="margin-top: -5px"
                                     >
                                         <label
                                             class="control-label"
@@ -173,6 +193,23 @@
                                             >성별</label
                                         >
                                         <div class="control-wrapper">
+                                            <div
+                                                class="form-control"
+                                                id="member-gender"
+                                                name="member-gender"
+                                                type="text"
+                                                value=""
+                                            >
+                                                마이페이지에서 불러온 성별
+                                            </div>
+                                            <div class="error-message">
+                                                <i
+                                                    class="fa fa-exclamation-circle"
+                                                ></i>
+                                                이 항목을 채워주십시오.
+                                            </div>
+                                        </div>
+                                        <!--<div class="control-wrapper">
                                             <ul
                                                 class="list-unstyled"
                                                 style="margin-bottom: 0"
@@ -210,16 +247,33 @@
                                                 ></i>
                                                 이 항목을 채워주십시오.
                                             </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                     <div class="form-group">
                                         <label
                                             class="control-label"
                                             for="date_of_birth"
                                             id="date_of_birth_label"
-                                            >생년월일</label
+                                            >나이</label
                                         >
                                         <div class="control-wrapper">
+                                            <div
+                                                class="form-control"
+                                                id="member-age"
+                                                name="member-age"
+                                                type="text"
+                                                value=""
+                                            >
+                                                마이페이지에서 불러온 나이
+                                            </div>
+                                            <div class="error-message">
+                                                <i
+                                                    class="fa fa-exclamation-circle"
+                                                ></i>
+                                                이 항목을 채워주십시오.
+                                            </div>
+                                        </div>
+                                        <!--<div class="control-wrapper">
                                             <div
                                                 class="dropdown-customize"
                                                 data-role="dropdown"
@@ -1263,13 +1317,30 @@
                                                 ></i>
                                                 이 항목을 채워주십시오.
                                             </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label"
                                             >이메일</label
                                         >
                                         <div class="control-wrapper">
+                                            <div
+                                                class="form-control"
+                                                id="member-email"
+                                                name="member-email"
+                                                type="text"
+                                                value=""
+                                            >
+                                                마이페이지에서 불러온 이메일
+                                            </div>
+                                            <div class="error-message">
+                                                <i
+                                                    class="fa fa-exclamation-circle"
+                                                ></i>
+                                                이 항목을 채워주십시오.
+                                            </div>
+                                        </div>
+                                        <!--<div class="control-wrapper">
                                             <input
                                                 class="form-control"
                                                 data-exception="yes"
@@ -1285,13 +1356,13 @@
                                                 올바른 이메일 주소를
                                                 입력해주세요.
                                             </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label"
                                             >연락처</label
                                         >
-                                        <div class="control-wrapper">
+                                        <!--<div class="control-wrapper">
                                             <input
                                                 class="form-control"
                                                 data-exception="yes"
@@ -1304,6 +1375,23 @@
                                                     class="fa fa-exclamation-circle"
                                                 ></i>
                                                 올바른 전화번호를 입력해주세요.
+                                            </div>
+                                        </div>-->
+                                        <div class="control-wrapper">
+                                            <div
+                                                class="form-control"
+                                                id="member-phone"
+                                                name="member-phone"
+                                                type="text"
+                                                value=""
+                                            >
+                                                마이페이지에서 불러온 전화번호
+                                            </div>
+                                            <div class="error-message">
+                                                <i
+                                                    class="fa fa-exclamation-circle"
+                                                ></i>
+                                                이 항목을 채워주십시오.
                                             </div>
                                         </div>
                                     </div>
