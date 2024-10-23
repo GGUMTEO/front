@@ -261,6 +261,8 @@ body.body .ggumteo-do-not-fail .container .fail-answer {
 
 .service-introdution-group .service-introdution-box .introdution-image-layer {
     width: 500px;
+    padding-top: 20px;
+    padding-right: 100px;
     text-align: center;
 }
 

@@ -1,4 +1,4 @@
-// 체크박스 기능구현
+// ####공통 로직: 체크박스 기능구현
 function setupCheckboxes(sectionId) {
     const applyCheckboxesMember = document.querySelectorAll(
         `${sectionId} .apply-checkbox`
@@ -50,7 +50,7 @@ setupFilterOptions("#notice-section");
 setupFilterOptions("#inquiry-section");
 setupFilterOptions("#payment-section");
 
-// 회원 상태 모달창을 수행하는 함수
+// **회원 상태 모달창을 수행하는 함수**
 function showStatusEditModal(sectionId) {
     const editbtns = document.querySelectorAll(`${sectionId} .edit-btn`);
     const modal = document.querySelector(`${sectionId} .status-edit-modal`);
@@ -138,6 +138,8 @@ function showNoticeModal(type) {
 showNoticeModal("write"); // 공지사항 작성 모달
 showNoticeModal("edit"); // 공지사항 수정 모달
 
+// *************영상/글*************** //
+
 // ####공통 로직: '영상' 또는 '글' 클릭 시 처리####
 function toggleContent(sectionId) {
     const section = document.querySelector(`#${sectionId}`);
@@ -155,7 +157,6 @@ function toggleContent(sectionId) {
         activate(textButton, videoButton, textWrapper, videoWrapper);
     });
 }
-
 // 활성화된 버튼과 콘텐츠를 전환하는 함수
 function activate(activeButton, inactiveButton, showWrapper, hideWrapper) {
     activeButton.classList.add("active");
@@ -163,7 +164,6 @@ function activate(activeButton, inactiveButton, showWrapper, hideWrapper) {
     showWrapper.style.display = "block";
     hideWrapper.style.display = "none";
 }
-// ####각 섹션에 적용####
 toggleContent("work-section");
 toggleContent("funding-section");
 toggleContent("audition-section");
@@ -218,7 +218,6 @@ function setupServiceCheckboxes(sectionId) {
         });
     });
 }
-// 각 섹션에 대해 setupCheckboxes 함수 호출
 setupServiceCheckboxes("#work-section");
 setupServiceCheckboxes("#funding-section");
 setupServiceCheckboxes("#audition-section");
@@ -262,7 +261,6 @@ function setupServiceFilterOptions(sectionId) {
         });
     });
 }
-// 각 섹션에 대해 setupFilterOptions 함수 호출
 setupServiceFilterOptions("#work-section");
 setupServiceFilterOptions("#funding-section");
 setupServiceFilterOptions("#audition-section");
@@ -384,7 +382,6 @@ function showReporProcessingtModal(sectionId) {
         }
     });
 }
-// 각 섹션에 대해 showReporProcessingtModal 함수 호출
 showReporProcessingtModal("#work-section");
 showReporProcessingtModal("#funding-section");
 showReporProcessingtModal("#audition-section");
@@ -454,13 +451,12 @@ function showReportDetailsModal(sectionId) {
         modalText.style.display = "none";
     });
 }
-// 각 섹션에 대해 showReportDetailsModal 함수 호출
 showReportDetailsModal("#work-section");
 showReportDetailsModal("#funding-section");
 showReportDetailsModal("#audition-section");
 showReportDetailsModal("#review-section");
 
-// ####공통 로직: 리뷰 상세 모달창을 수행하는 함수
+// **리뷰 상세 모달창을 수행하는 함수**
 function showReviewDetailModal(sectionId) {
     const btnsVideo = document.querySelectorAll(
         `${sectionId} .video-wrapper .apply-table-cell.detail`
@@ -558,7 +554,6 @@ function showMesaageModal(sectionId) {
         modalText.style.display = "none";
     });
 }
-// 각 섹션에 대해 showReportDetailsModal 함수 호출
 showMesaageModal("#work-section");
 showMesaageModal("#funding-section");
 
@@ -586,12 +581,10 @@ function showAnsweredModal(sectionId, type) {
         modal.style.display = "none";
     });
 }
-
-// **함수 호출**
 showAnsweredModal("#inquiry-section", "unanswered");
 showAnsweredModal("#inquiry-section", "completed");
 
-// 환불 상태 모달창을 수행하는 함수
+// **환불 상태 모달창을 수행하는 함수**
 function showStatusRefund(sectionId) {
     const editbtns = document.querySelectorAll(`${sectionId} .edit-btn`);
     const modal = document.querySelector(`${sectionId} .refund-status-modal`);
