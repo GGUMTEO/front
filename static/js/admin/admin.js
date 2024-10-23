@@ -510,6 +510,58 @@ function showReviewDetailModal(sectionId) {
 }
 showReviewDetailModal("#review-section");
 
+// ####공통 로직: 문자 발송 모달창을 수행하는 함수
+function showMesaageModal(sectionId) {
+    const btnsVideo = document.querySelectorAll(
+        `${sectionId} .video-wrapper .selected-btn.message`
+    );
+    const modalVideo = document.querySelector(
+        `${sectionId} .video.message-modal`
+    );
+    const backgroundOverlayVideo = document.querySelector(
+        `${sectionId} .video.message-modal .background-overlay`
+    );
+
+    // 문자발송 버튼 클릭했을 때
+    btnsVideo.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            // 모달창 나옴.
+            modalVideo.style.display = "flex";
+        });
+    });
+    // 백그라운드 클릭했을 때
+    backgroundOverlayVideo.addEventListener("click", () => {
+        // 모달창 사라짐.
+        modalVideo.style.display = "none";
+    });
+
+    const btnsText = document.querySelectorAll(
+        `${sectionId} .text-wrapper .selected-btn.message`
+    );
+    const modalText = document.querySelector(
+        `${sectionId} .text.message-modal`
+    );
+    const backgroundOverlayText = document.querySelector(
+        `${sectionId} .text.message-modal .background-overlay`
+    );
+
+    // 문자발송 버튼 클릭했을 때
+    btnsText.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            // 모달창 나옴.
+            modalText.style.display = "flex";
+        });
+    });
+    // 백그라운드 클릭했을 때
+    backgroundOverlayText.addEventListener("click", () => {
+        // 모달창 사라짐.
+        modalText.style.display = "none";
+    });
+}
+// 각 섹션에 대해 showReportDetailsModal 함수 호출
+showMesaageModal("#work-section");
+showMesaageModal("#funding-section");
+
 // **문의사항 답변 모달창**
 function showAnsweredModal(sectionId, type) {
     const btns = document.querySelectorAll(`.answered-btn.${type}`);

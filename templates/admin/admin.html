@@ -993,7 +993,7 @@
                                                     />
                                                     <div class="btn-wrapper">
                                                         <p class="caption">작품 판매에 대한 추가적인 안내 또는 전달사항이 있는 경우</p>
-                                                        <button class="selected-btn">
+                                                        <button class="selected-btn message">
                                                             문자 발송
                                                         </button>
                                                     </div>
@@ -1334,6 +1334,31 @@
                                                 </li>
                                             </ul>
                                         </nav>
+                                    </div>
+                                    <!-- 문자 발송 모달창 -->
+                                    <div class="message-modal video">
+                                        <div class="modal-content">
+                                            <div class="message-modal-contents">
+                                                <form>
+                                                    <div>
+                                                        <div class="content-detail">
+                                                            문자 내용을 입력해주세요.
+                                                        </div>
+                                                        <textarea
+                                                            name="reason"
+                                                            rows="4"
+                                                            cols="50"
+                                                        ></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="save">
+                                                <button type="button" class="save-button">
+                                                    발송하기
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="background-overlay"></div>
                                     </div>
                                     <!-- 신고관리 모달창 -->
                                     <div class="report-management-modal video">
@@ -1466,7 +1491,7 @@
                                                     />
                                                     <div class="btn-wrapper">
                                                         <p class="caption">작품 판매에 대한 추가적인 안내 또는 전달사항이 있는 경우</p>
-                                                        <button class="selected-btn">
+                                                        <button class="selected-btn message">
                                                             문자 발송
                                                         </button>
                                                     </div>
@@ -1808,6 +1833,31 @@
                                                 </li>
                                             </ul>
                                         </nav>
+                                    </div>
+                                    <!-- 문자 발송 모달창 -->
+                                    <div class="message-modal text">
+                                        <div class="modal-content">
+                                            <div class="message-modal-contents">
+                                                <form>
+                                                    <div>
+                                                        <div class="content-detail">
+                                                            문자 내용을 입력해주세요.
+                                                        </div>
+                                                        <textarea
+                                                            name="reason"
+                                                            rows="4"
+                                                            cols="50"
+                                                        ></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="save">
+                                                <button type="button" class="save-button">
+                                                    발송하기
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="background-overlay"></div>
                                     </div>
                                     <!-- 신고관리 모달창 -->
                                     <div class="report-management-modal text">
@@ -1968,7 +2018,7 @@
                                                     />
                                                     <div class="btn-wrapper">
                                                         <p class="caption">펀딩에 대한 추가적인 안내 또는 전달사항이 있는 경우</p>
-                                                        <button class="selected-btn">
+                                                        <button class="selected-btn message">
                                                             문자 발송
                                                         </button>
                                                     </div>
@@ -2377,60 +2427,31 @@
                                             </ul>
                                         </nav>
                                     </div>
-                                      <!-- 문자발송 모달창 -->
-                                      <div class="reasons-report-modal video">
+                                    <!-- 문자 발송 모달창 -->
+                                    <div class="message-modal video">
                                         <div class="modal-content">
-                                            <div class="reasons-report-header">
-                                                <div class="header-title-wrapper">
-                                                    <strong class="header-title"
-                                                        >문자 발송</strong
-                                                    >
-                                                </div>
-                                                <span class="close-btn">&times;</span>
-                                            </div>
-                                            <div class="reasons-report-contents">
+                                            <div class="message-modal-contents">
                                                 <form>
                                                     <div>
-                                                        <div class="detail-wrapper">
-                                                            <legend>
-                                                                회원 정보
-                                                            </legend>
-                                                            <hr />
-                                                            <p
-                                                                class="name-wrapper detail"
-                                                            >
-                                                                <strong>이름 :</strong>
-                                                                <span class="name">
-                                                                    정지수
-                                                                </span>
-                                                            </p>
-                                                            <p
-                                                                class="email-wrapper detail"
-                                                            >
-                                                                <strong>전화번호 : </strong>
-                                                                <span class="email"
-                                                                    >010-1234-1234</span
-                                                                >
-                                                            </p>
-                                                        </div>
-                                                        <hr />
                                                         <div class="content-detail">
-                                                            문자 내용
+                                                            문자 내용을 입력해주세요.
                                                         </div>
                                                         <textarea
                                                             name="reason"
                                                             rows="4"
                                                             cols="50"
-                                                        >'정지수'님의 펀딩이 종료되었습니다. 총 모인 금액은
-                                                        2,000,000원이며, 수수료는 50,000원(2.5%)입니다. 수수료는 꿈터 계좌번호로 입금해주세요.</textarea
-                                                        >
+                                                        ></textarea>
                                                     </div>
                                                 </form>
+                                            </div>
+                                            <div class="save">
+                                                <button type="button" class="save-button">
+                                                    발송하기
+                                                </button>
                                             </div>
                                         </div>
                                         <div class="background-overlay"></div>
                                     </div>
-                                    <!-- 여기까지(신고내역 모달창)!! -->
                                     <!-- 신고관리 모달창 -->
                                     <div class="report-management-modal video">
                                         <div class="background-overlay"></div>
@@ -2518,8 +2539,8 @@
                                                             name="reason"
                                                             rows="4"
                                                             cols="50"
-                                                        >
-            작품 결제를 했는데, 작품 영상 링크를 아직까지 안 보냈습니다. 메일로 연락해도 답이 없습니다.....ㅠㅠ</textarea
+                                                            readonly
+                                                        >작품 결제를 했는데, 작품 영상 링크를 아직까지 안 보냈습니다. 메일로 연락해도 답이 없습니다.....ㅠㅠ</textarea
                                                         >
                                                     </div>
                                                 </form>
@@ -2528,8 +2549,6 @@
                                         <div class="background-overlay"></div>
                                     </div>
                                     <!-- 여기까지(신고내역 모달창)!! -->
-                                    <!-- 여기까지 !!영상!! -->
-                                </div>
 
                                 <!-- 2. 글 -->
                                 <div>
@@ -2562,7 +2581,7 @@
                                                     />
                                                     <div class="btn-wrapper">
                                                         <p class="caption">펀딩에 대한 추가적인 안내 또는 전달사항이 있는 경우</p>
-                                                        <button class="selected-btn">
+                                                        <button class="selected-btn message">
                                                             문자 발송
                                                         </button>
                                                     </div>
@@ -2916,6 +2935,31 @@
                                                 </li>
                                             </ul>
                                         </nav>
+                                    </div>
+                                    <!-- 문자 발송 모달창 -->
+                                    <div class="message-modal text">
+                                        <div class="modal-content">
+                                            <div class="message-modal-contents">
+                                                <form>
+                                                    <div>
+                                                        <div class="content-detail">
+                                                            문자 내용을 입력해주세요.
+                                                        </div>
+                                                        <textarea
+                                                            name="reason"
+                                                            rows="4"
+                                                            cols="50"
+                                                        ></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="save">
+                                                <button type="button" class="save-button">
+                                                    발송하기
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="background-overlay"></div>
                                     </div>
                                     <!-- 신고관리 모달창 -->
                                     <div class="report-management-modal text">

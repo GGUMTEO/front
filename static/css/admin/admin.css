@@ -681,7 +681,7 @@ video {
 }
 
 /* 신고 사유 모달창, 리뷰 상세 모달창 */
-.reasons-report-modal, .review-detail-modal {
+.reasons-report-modal, .review-detail-modal, .message-modal {
     display: none;
     position: fixed;
     top: 0;
@@ -692,7 +692,8 @@ video {
 }
 
 .reasons-report-modal .modal-content,
-.review-detail-modal .modal-content{
+.review-detail-modal .modal-content,
+.message-modal .modal-content{
     background-color: #fff;
     width: 645px;
     margin: auto;
@@ -722,7 +723,8 @@ video {
 }
 
 .reasons-report-contents,
-.review-detail-contents {
+.review-detail-contents,
+.message-modal-contents {
     margin: auto 40px;
     margin-top: 12px 0;
     overflow: auto;
@@ -759,12 +761,14 @@ video {
     color: #323232;
 }
 
-.review-detail-modal .content-detail {
+.review-detail-modal .content-detail,
+.message-modal .content-detail {
     margin-top: 0px;
 }
 
 .reasons-report-modal textarea,
-.review-detail-modal textarea{
+.review-detail-modal textarea,
+.message-modal textarea{
     height: 218px;
     resize: none;
     width: 100%;
@@ -779,12 +783,14 @@ video {
 }
 
 .reasons-report-modal textarea:focus,
-.review-detail-modal textarea:focus {
+.review-detail-modal textarea:focus,
+.message-modal textarea:focus  {
     outline: none;
 }
 
 .reasons-report-modal .close-btn:hover,
-.reasons-report-modal .close-btn:focus {
+.reasons-report-modal .close-btn:focus,
+.message-modal .close-btn:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -1662,7 +1668,7 @@ h1.common-header-description {
     height: 257px;
 }
 
-.save-button {
+.save-button{
     background-color: #007bff;
     width: 100%;
     color: white;
@@ -1676,6 +1682,12 @@ h1.common-header-description {
 
 .save-button:hover {
     background-color: #0066d3;
+}
+
+.message-modal .save-button {
+    width: 565px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 /* 문자발송에 대한 설명 caption */
