@@ -729,7 +729,17 @@ img {
     width: 240px;
     height: 240px;
     border-radius: 8px 8px 0 0;
+    overflow: hidden; /* 넘치는 요소를 숨김 */
+    position: relative;
 }
+
+.video-tag {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 비디오 크기를 조절하여 넘치지 않도록 */
+    border-radius: 8px 8px 0 0; /* 부모의 모서리와 동일하게 */
+}
+
 .sample {
     padding: 86px;
     border: dashed 2px #e0e0e0;

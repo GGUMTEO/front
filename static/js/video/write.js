@@ -243,30 +243,70 @@ function previewFile(fileInput, previewSelector, videoPreviewSelector) {
     }
 }
 
+// function previewImage(event) {
+//     const previewContainer = document.getElementById("preview-container");
+//     const file = event.target.files[0];
+
+//     // 이전 이미지를 지웁니다 (존재하는 경우)
+//     previewContainer.innerHTML = "";
+
+//     if (file) {
+//         const reader = new FileReader();
+//         reader.onload = function (e) {
+//             // 새 이미지 요소를 생성합니다
+//             const img = document.createElement("img");
+//             img.src = e.target.result;
+//             img.alt = "Uploaded Preview";
+//             img.style.width = "100%";
+//             img.style.borderRadius = "10px";
+
+//             // 새 이미지를 미리보기 컨테이너에 추가
+//             previewContainer.appendChild(img);
+//         };
+//         // 업로드된 파일을 데이터 URL로 읽음
+//         reader.readAsDataURL(file);
+//     }
+// }
 function previewImage(event) {
     const previewContainer = document.getElementById("preview-container");
     const file = event.target.files[0];
 
-    // 이전 이미지를 지웁니다 (존재하는 경우)
+    // 이전 내용을 지웁니다 (존재하는 경우)
     previewContainer.innerHTML = "";
 
     if (file) {
+        const fileType = file.type.split("/")[0]; // 파일 타입 확인 (image, video 등)
+
         const reader = new FileReader();
         reader.onload = function (e) {
-            // 새 이미지 요소를 생성합니다
-            const img = document.createElement("img");
-            img.src = e.target.result;
-            img.alt = "Uploaded Preview";
-            img.style.width = "100%";
-            img.style.borderRadius = "10px";
+            if (fileType === "image") {
+                // 이미지 파일인 경우
+                const img = document.createElement("img");
+                img.src = e.target.result;
+                img.alt = "Uploaded Preview";
+                img.style.width = "100%";
+                img.style.borderRadius = "10px";
 
-            // 새 이미지를 미리보기 컨테이너에 추가
-            previewContainer.appendChild(img);
+                // 이미지 미리보기 추가
+                previewContainer.appendChild(img);
+            } else if (fileType === "video") {
+                // 비디오 파일인 경우
+                const video = document.createElement("video");
+                video.src = e.target.result;
+                video.controls = true; // 비디오 컨트롤 추가
+                video.style.width = "100%";
+                video.style.borderRadius = "10px";
+
+                // 비디오 미리보기 추가
+                previewContainer.appendChild(video);
+            }
         };
+
         // 업로드된 파일을 데이터 URL로 읽음
         reader.readAsDataURL(file);
     }
 }
+
 // radio-div 어디를 눌러도 클릭되게 함
 document.addEventListener("click", () => {
     const categoryBoxes = document.querySelectorAll(".project-category-box");

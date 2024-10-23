@@ -226,7 +226,7 @@ a {
 }
 .title {
     color: #212121;
-    margin: 15px 0 6px;
+    margin: 3px 0 6px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -369,4 +369,35 @@ li:last-child > .page-link {
     line-height: 24px;
     border-radius: 13px;
     font-weight: 500;
+}
+.funding-status-div {
+    margin-top: 5px;
+    position: relative;
+    display: flex;
+}
+.funding-status {
+    border-color: #00a878;
+    background-color: #ebfff9;
+    color: #00a878;
+    display: flex;
+    align-items: center;
+    padding: 1px 7px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.funding-status-end {
+    border-color: #a1a6ad;
+    background-color: #e6ebf0;
+    color: #242933;
+    display: flex;
+    align-items: center;
+    padding: 1px 5px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
 }
