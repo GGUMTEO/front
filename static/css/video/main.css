@@ -120,8 +120,7 @@ a {
 .card-thumbnail {
     margin-bottom: 24px;
 }
-.card-image {
-    border-radius: 12px;
+.card-video {
     border: solid 1px #e0e0e0;
     width: 580px;
     height: 277px;
@@ -513,8 +512,7 @@ button {
         height: 200px;
         object-fit: cover;
     }
-    .card-image {
-        border-radius: 12px;
+    .card-video {
         border: solid 1px #e0e0e0;
         width: 95%;
         height: 214px;

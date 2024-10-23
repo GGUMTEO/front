@@ -62,19 +62,19 @@ replyBtn.addEventListener("mouseout", () => {
     replyPtag.style.display = "none";
 });
 
-// 수수료 물음표 아이콘
-const chargeIimage = document.querySelector(".charge-image");
+// // 수수료 물음표 아이콘
+// const chargeIimage = document.querySelector(".charge-image");
 
-// 수수료 말풍선
-const chargePtag = document.querySelector(".charge-p");
+// // 수수료 말풍선
+// const chargePtag = document.querySelector(".charge-p");
 
-chargeIimage.addEventListener("mouseover", () => {
-    chargePtag.style.display = "block";
-});
+// chargeIimage.addEventListener("mouseover", () => {
+//     chargePtag.style.display = "block";
+// });
 
-chargeIimage.addEventListener("mouseout", () => {
-    chargePtag.style.display = "none";
-});
+// chargeIimage.addEventListener("mouseout", () => {
+//     chargePtag.style.display = "none";
+// });
 
 // 작품 신고 모달
 var modal = document.getElementById("report-modal");

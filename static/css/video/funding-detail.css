@@ -472,3 +472,35 @@ textarea {
 textarea:focus {
     outline: none;
 }
+.funding-status-div {
+    position: relative;
+    display: flex;
+}
+.funding-status {
+    border-color: #2099bb;
+    background-color: #ebfff9;
+    color: #2099bb;
+    display: flex;
+    align-items: center;
+    padding: 1px 7px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.funding-status-end {
+    border-color: #a1a6ad;
+    background-color: #e6ebf0;
+    color: #242933;
+    display: flex;
+    align-items: center;
+    padding: 1px 7px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
