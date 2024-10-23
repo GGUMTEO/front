@@ -1528,11 +1528,13 @@ h1.common-header-description {
 
 
 .apply-table-row .active-member,
-.apply-table-row .payment-complete {
+.apply-table-row .payment-complete,
+.apply-table-row .progress {
     color: rgba(41, 153, 41, 0.818);
 }
 .apply-table-row .terminated-member,
-.apply-table-row .payment-cancelled {
+.apply-table-row .payment-cancelled,
+.apply-table-row .end {
     color: #00000076;
 }
 
