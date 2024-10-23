@@ -1,0 +1,101 @@
+/* ----인증번호 (모달창)---- */
+/* Enter Modal Content */
+.verify-modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 103;
+    width: 100%;
+    height: 100%;
+    background-color: #4d4f50;
+}
+
+.verify-modal .header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.enterModal_content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    height: 200px;
+}
+.enterModal_content p {
+    font-size: 20px;
+    color: #343a40;
+    font-weight: 700;
+}
+.enterModal_content.vibration {
+    animation: vibration 0.1s infinite;
+}
+
+/* enter Container */
+.enter-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.enter-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 5px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.enter-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+.enter-input.vibration {
+    border-color: #ff002f; /* 빨간색 테두리 */
+    box-shadow: 0 0 5px rgba(255, 0, 47, 0.3); /* 빨간색 그림자 */
+    outline: none;
+    animation: vibration 0.1s infinite;
+}
+@keyframes vibration {
+    from {
+        transform: rotate(1deg);
+    }
+    to {
+        transform: rotate(-1deg);
+    }
+}
+/* modal Enter Verify Button */
+.enterVerify_btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.enterVerify_btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.enterVerify_btn:active {
+    background-color: #004080;
+}

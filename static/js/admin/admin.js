@@ -1,4 +1,4 @@
-// 체크박스 기능구현
+// ####공통 로직: 체크박스 기능구현
 function setupCheckboxes(sectionId) {
     const applyCheckboxesMember = document.querySelectorAll(
         `${sectionId} .apply-checkbox`
@@ -23,8 +23,34 @@ function setupCheckboxes(sectionId) {
         });
     });
 }
+setupCheckboxes("#member-section");
+setupCheckboxes("#notice-section");
+setupCheckboxes("#inquiry-section");
+setupCheckboxes("#payment-section");
 
-// 상태 수정 모달창을 수행하는 함수
+// ####공통 로직: 필터링 기능을 수행하는 함수
+function setupFilterOptions(sectionId) {
+    const sortFilterOptionsVideo = document.querySelectorAll(
+        `${sectionId} .sort-filter-option`
+    );
+
+    // 필터링(눌렀을 때)
+    sortFilterOptionsVideo.forEach((option) => {
+        option.addEventListener("click", () => {
+            // selected 클래스 추가/제거
+            document
+                .querySelector(`${sectionId} .sort-filter-option.selected`)
+                .classList.remove("selected");
+            option.classList.add("selected");
+        });
+    });
+}
+setupFilterOptions("#member-section");
+setupFilterOptions("#notice-section");
+setupFilterOptions("#inquiry-section");
+setupFilterOptions("#payment-section");
+
+// **회원 상태 모달창을 수행하는 함수**
 function showStatusEditModal(sectionId) {
     const editbtns = document.querySelectorAll(`${sectionId} .edit-btn`);
     const modal = document.querySelector(`${sectionId} .status-edit-modal`);
@@ -34,7 +60,7 @@ function showStatusEditModal(sectionId) {
     const backgroundOverlay = document.querySelector(
         `${sectionId} .status-edit-modal .background-overlay`
     );
-    // 신고 버튼 클릭했을 때
+    // 버튼 클릭했을 때
     editbtns.forEach((btns) => {
         btns.addEventListener("click", () => {
             // 모달창 나옴.
@@ -46,7 +72,7 @@ function showStatusEditModal(sectionId) {
         // 모달창 사라짐.
         modal.style.display = "none";
     });
-    // 신고 처리 선택 및 저장
+    // 선택 및 저장
     const choiceBtns = document.querySelectorAll(
         `${sectionId} .status-edit-modal .choice-container > input[type=button]`
     );
@@ -81,26 +107,38 @@ function showStatusEditModal(sectionId) {
 }
 showStatusEditModal("#member-section");
 
-// ####공통 로직: 필터링 기능을 수행하는 함수
-function setupFilterOptions(sectionId) {
-    const sortFilterOptionsVideo = document.querySelectorAll(
-        `${sectionId} .sort-filter-option`
+// **공지사항 작성/수정 모달창**
+function showNoticeModal(type) {
+    const modal = document.querySelector(`.notice-full-modal.${type}`);
+    const openBtns = document.querySelectorAll(
+        type === "write"
+            ? ".notice-write.selected-btn"
+            : ".edit-btn.notice-edit"
     );
+    const closeBtn = modal.querySelector(".close-button");
+    const backgroundOverlay = modal.querySelector(".background-overlay");
 
-    // 필터링(눌렀을 때)
-    sortFilterOptionsVideo.forEach((option) => {
-        option.addEventListener("click", () => {
-            // selected 클래스 추가/제거
-            document
-                .querySelector(`${sectionId} .sort-filter-option.selected`)
-                .classList.remove("selected");
-            option.classList.add("selected");
+    // 열기 버튼 클릭 시 모달창 표시
+    openBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            modal.style.display = "flex";
         });
     });
-}
 
-// ####각 섹션에 적용####
-setupFilterOptions("#member-section");
+    // 닫기 버튼 클릭 시 모달창 닫기
+    closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    // 배경 클릭 시 모달창 닫기
+    backgroundOverlay.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+}
+showNoticeModal("write"); // 공지사항 작성 모달
+showNoticeModal("edit"); // 공지사항 수정 모달
+
+// *************영상/글*************** //
 
 // ####공통 로직: '영상' 또는 '글' 클릭 시 처리####
 function toggleContent(sectionId) {
@@ -119,7 +157,6 @@ function toggleContent(sectionId) {
         activate(textButton, videoButton, textWrapper, videoWrapper);
     });
 }
-
 // 활성화된 버튼과 콘텐츠를 전환하는 함수
 function activate(activeButton, inactiveButton, showWrapper, hideWrapper) {
     activeButton.classList.add("active");
@@ -127,7 +164,6 @@ function activate(activeButton, inactiveButton, showWrapper, hideWrapper) {
     showWrapper.style.display = "block";
     hideWrapper.style.display = "none";
 }
-// ####각 섹션에 적용####
 toggleContent("work-section");
 toggleContent("funding-section");
 toggleContent("audition-section");
@@ -182,7 +218,6 @@ function setupServiceCheckboxes(sectionId) {
         });
     });
 }
-// 각 섹션에 대해 setupCheckboxes 함수 호출
 setupServiceCheckboxes("#work-section");
 setupServiceCheckboxes("#funding-section");
 setupServiceCheckboxes("#audition-section");
@@ -226,7 +261,6 @@ function setupServiceFilterOptions(sectionId) {
         });
     });
 }
-// 각 섹션에 대해 setupFilterOptions 함수 호출
 setupServiceFilterOptions("#work-section");
 setupServiceFilterOptions("#funding-section");
 setupServiceFilterOptions("#audition-section");
@@ -348,7 +382,6 @@ function showReporProcessingtModal(sectionId) {
         }
     });
 }
-// 각 섹션에 대해 showReporProcessingtModal 함수 호출
 showReporProcessingtModal("#work-section");
 showReporProcessingtModal("#funding-section");
 showReporProcessingtModal("#audition-section");
@@ -418,13 +451,12 @@ function showReportDetailsModal(sectionId) {
         modalText.style.display = "none";
     });
 }
-// 각 섹션에 대해 showReportDetailsModal 함수 호출
 showReportDetailsModal("#work-section");
 showReportDetailsModal("#funding-section");
 showReportDetailsModal("#audition-section");
 showReportDetailsModal("#review-section");
 
-// ####공통 로직: 리뷰 상세 모달창을 수행하는 함수
+// **리뷰 상세 모달창을 수행하는 함수**
 function showReviewDetailModal(sectionId) {
     const btnsVideo = document.querySelectorAll(
         `${sectionId} .video-wrapper .apply-table-cell.detail`
@@ -474,6 +506,57 @@ function showReviewDetailModal(sectionId) {
 }
 showReviewDetailModal("#review-section");
 
+// ####공통 로직: 문자 발송 모달창을 수행하는 함수
+function showMesaageModal(sectionId) {
+    const btnsVideo = document.querySelectorAll(
+        `${sectionId} .video-wrapper .selected-btn.message`
+    );
+    const modalVideo = document.querySelector(
+        `${sectionId} .video.message-modal`
+    );
+    const backgroundOverlayVideo = document.querySelector(
+        `${sectionId} .video.message-modal .background-overlay`
+    );
+
+    // 문자발송 버튼 클릭했을 때
+    btnsVideo.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            // 모달창 나옴.
+            modalVideo.style.display = "flex";
+        });
+    });
+    // 백그라운드 클릭했을 때
+    backgroundOverlayVideo.addEventListener("click", () => {
+        // 모달창 사라짐.
+        modalVideo.style.display = "none";
+    });
+
+    const btnsText = document.querySelectorAll(
+        `${sectionId} .text-wrapper .selected-btn.message`
+    );
+    const modalText = document.querySelector(
+        `${sectionId} .text.message-modal`
+    );
+    const backgroundOverlayText = document.querySelector(
+        `${sectionId} .text.message-modal .background-overlay`
+    );
+
+    // 문자발송 버튼 클릭했을 때
+    btnsText.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            // 모달창 나옴.
+            modalText.style.display = "flex";
+        });
+    });
+    // 백그라운드 클릭했을 때
+    backgroundOverlayText.addEventListener("click", () => {
+        // 모달창 사라짐.
+        modalText.style.display = "none";
+    });
+}
+showMesaageModal("#work-section");
+showMesaageModal("#funding-section");
+
 // **문의사항 답변 모달창**
 function showAnsweredModal(sectionId, type) {
     const btns = document.querySelectorAll(`.answered-btn.${type}`);
@@ -498,7 +581,111 @@ function showAnsweredModal(sectionId, type) {
         modal.style.display = "none";
     });
 }
-
-// **함수 호출**
 showAnsweredModal("#inquiry-section", "unanswered");
 showAnsweredModal("#inquiry-section", "completed");
+
+// **환불 상태 모달창을 수행하는 함수**
+function showStatusRefund(sectionId) {
+    const editbtns = document.querySelectorAll(`${sectionId} .edit-btn`);
+    const modal = document.querySelector(`${sectionId} .refund-status-modal`);
+    const btnComplete = document.querySelector(
+        `${sectionId} .refund-status-modal .btn-complete`
+    );
+    const backgroundOverlay = document.querySelector(
+        `${sectionId} .refund-status-modal .background-overlay`
+    );
+    // 버튼 클릭했을 때
+    editbtns.forEach((btns) => {
+        btns.addEventListener("click", () => {
+            // 모달창 나옴.
+            modal.style.display = "flex";
+        });
+    });
+    // 백그라운드 클릭했을 때
+    backgroundOverlay.addEventListener("click", () => {
+        // 모달창 사라짐.
+        modal.style.display = "none";
+    });
+    // 선택 및 저장
+    const choiceBtns = document.querySelectorAll(
+        `${sectionId} .refund-status-modal .choice-container > input[type=button]`
+    );
+    choiceBtns.forEach((choiceBtn, i) => {
+        choiceBtn.addEventListener("click", (e) => {
+            const clickedIndex = i;
+            choiceBtns.forEach((choice, index) => {
+                if (index !== clickedIndex) {
+                    choice.classList.remove("on");
+                }
+            });
+            choiceBtns[clickedIndex].classList.toggle("on");
+            console.log(choiceBtns[clickedIndex].classList.contains("on"));
+        });
+    });
+    btnComplete.addEventListener("click", () => {
+        let anyChoiseSelected = false;
+        // choiceBtns "on" 클래스를 가진 항목이 있는지 확인
+        choiceBtns.forEach((choice) => {
+            if (choice.classList.contains("on")) {
+                anyChoiseSelected = true;
+            }
+        });
+        // 선택된 항목이 있으면 모달창이 닫힌다.
+        if (anyChoiseSelected) {
+            alert("변경합니다.");
+            modal.style.display = "none";
+        } else {
+            alert("선택해주세요.");
+        }
+    });
+}
+showStatusRefund("#payment-section");
+
+// ////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+// 모든 메뉴 아이템과 서브메뉴 컨테이너를 선택합니다.
+const menuItems = document.querySelectorAll(".menu-items-menu");
+const sections = document.querySelectorAll(".layout-sections  > section");
+
+// 초기 상태 첫 번째 섹션만 보이기
+sections.forEach((section, index) => {
+    //section[0]만 block 나머지는 none
+    section.style.display = index === 0 ? "block" : "none";
+});
+
+menuItems.forEach((menu, index) => {
+    menu.addEventListener("click", () => {
+        sections.forEach((section) => {
+            section.style.display = "none";
+        });
+        sections[index].style.display = "block"; // 해당 인덱스의 섹션만 보이기
+    });
+});
+
+// 사이드바 사라짐
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".layout-expand-nav-button");
+    const nav = document.getElementById("layout-aside-nav");
+    const mainDiv = document.querySelector("div.layout-main");
+    const layoutSections = document.querySelector(".layout-sections");
+    let dividerAdded = false;
+
+    button.addEventListener("click", () => {
+        button.classList.toggle("layout-expand");
+        nav.classList.toggle("navbar-expand");
+
+        if (!dividerAdded) {
+            const newDivider = document.createElement("div");
+            newDivider.className = "navbar-divider";
+            layoutSections.style.marginLeft = "-20px";
+            mainDiv.insertBefore(newDivider, nav);
+            dividerAdded = true;
+        } else {
+            const existingDivider = mainDiv.querySelector(".navbar-divider");
+            if (existingDivider) {
+                mainDiv.removeChild(existingDivider);
+                dividerAdded = false;
+            }
+        }
+    });
+});
