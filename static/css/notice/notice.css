@@ -40,13 +40,13 @@ ul
 min-height: 100%;
 height: auto !important;
 margin: 0 auto -250px;
-min-width: 1080px;
+min-width: 980px;
 }
 
 .tos .container {
 margin-left: auto;
 margin-right: auto;
-width: 1500px;
+width: 1080px;
 }
 
 *{
@@ -97,7 +97,7 @@ box-sizing: border-box;
 .tos .page {
 margin-left: auto;
 margin-right: auto;
-width: 1180px;
+width: 1060px;
 }
 
 .tos .page:before {
@@ -112,7 +112,7 @@ display: inline;
 float: left;
 margin-left: 10px;
 margin-right: 10px;
-width: 1060px;
+width: 500px;
 }
 
 .content-header {
@@ -140,7 +140,7 @@ h3, .h3 {
 }
 
 h3 {
-  font-weight: 700;
+  font-weight: 350;
   line-height: 1.1;
   color: inherit;
   text-rendering: optimizeLegibility;
@@ -148,16 +148,16 @@ h3 {
 
 .tos .content-header {
   line-height: 30px;
-  margin-top: 40px;
+  margin-top: 10px;
   display: block;
 }
 
 .small-text {
-  font-size: 15px;
+  font-size : 20px;
   line-height: 20px;
-  margin-top: 40px;
+  margin-top: 10px;
   display: block;
-  color: #808080;
+  color: #999;      
 }
 
 .h3 small {
@@ -168,7 +168,7 @@ h3 {
 
 .content-header .header-text {
   margin: 100;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   color:#555;
 }
@@ -186,12 +186,12 @@ h3 {
   padding: 30px;  
   background-color: #fff;
   border-radius: 3px;
-  border-bottom-width: 2px;
+  border-bottom-width: 50px;
   border: 1px solid #dedede;
 }
 
 .tos .content-inner {
-  padding: 30px;
+  padding: 40px;
   background-color:#fff;
   border-radius: 3px;
   border-bottom-width: 2px;
@@ -225,7 +225,6 @@ form {
 .news-center .news-center-search-box-container .news-center-search-box .news-center-search {
   width: 250px;
   height: 26px;
-  margin-right: 6px;
   border: 1px solid #dedede;
   border-radius: 2px;
 }
@@ -234,8 +233,8 @@ input {
   font-family: inherit;
   font-size: inherit;
   line-height:inherit;
-  margin: 0;
-  vertical-align: middle;
+  margin: 100;
+  vertical-align: center;
 }
 
 .news-center .news-center-search-box-container .news-center-search-box .news-center-search-add-on {
@@ -244,7 +243,7 @@ input {
   border:solid 1px #1c87a5;
   border-radius: 2px;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 68px;
   font-weight: bold;
   color:#fff; 
 }
@@ -517,7 +516,7 @@ a {
 .pagination-wrapper:before, .pagination-wrapper:after {
   content: " ";
   display: table;
-  line-height: 0;
+  line-height: 100;
 }
 
 .news-center .tab-content .pagination {
@@ -530,7 +529,7 @@ a {
 }
 
 .pagination {
-  display:inline-block;
+  display: inline-block;
   padding-left: 0;
   margin: 10px 0;
   vertical-align: top;
@@ -554,18 +553,17 @@ ul {
 
 .pagination>li>a,
 .pagination>li>span {
-  position: relative;
+  position: left;
   float: left;
-  padding:8px 16px;
-  line-height: 20px;
+  padding: 4px 8px;
+  line-height: 0px;
   font-weight: bold;
   text-decoration: none;
   color: #999;
-  margin-left: 10px;
 }
 
 .fa {
-  display: inline-block;
+  display: inline;
   font: normal normal normal 14px / 1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
@@ -576,6 +574,36 @@ ul {
   content: \f061;
 }
 
+.tos .content-inner div ul li{
+  margin-top: 0;
+} 
+
+.tos .content-inner ul li {
+  line-height: 24px;
+}
+
+.pagination>li {
+  display: inline;
+}
+
+.news-center .tab-content .pagination {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tos .content-inner div ul {
+  margin-left: 300px;
+}
+
+.pagination {
+  display: inline-block;
+  margin: 10px 0;
+  vertical-align: top;
+}
+
+ul {
+  padding: 0;
+}
 
 
  
