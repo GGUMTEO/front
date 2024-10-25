@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>공지사항</title>
+ <title>공지사항</title>
   <link rel="stylesheet" href="/static/css/notice/notice.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
 <body class="tos">
  <div id="wrap">
   <div class="container">
    <div id="message"></div>
   </div>
   <div class="page">
-    <div class="cohttp://127.0.0.1:5500/templates/notice/list.htmlntent">
+    <div class="content"></div>
       <div class="content-header">
         <h3 class= "header-text">
           공지사항
@@ -186,8 +187,9 @@
      </li>
      <li>
         <a style="cursor:pointer" onclick="sendPaginationNumber(2);" class="next">
-           <i class="fa fa-arrow-right">
-           </i>
+          <div style="position: relative;">
+            <i class="fas fa-arrow-right" style="position: absolute; top: -7px; left: 0px;"></i>
+          </div>   
         </a>
      </li>
     </ul>

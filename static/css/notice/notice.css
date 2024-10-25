@@ -40,7 +40,7 @@ ul
 min-height: 100%;
 height: auto !important;
 margin: 0 auto -250px;
-min-width: 980px;
+min-width: 1080px;
 }
 
 .tos .container {
@@ -592,7 +592,7 @@ ul {
 }
 
 .tos .content-inner div ul {
-  margin-left: 300px;
+  margin-left: 380px;
 }
 
 .pagination {
